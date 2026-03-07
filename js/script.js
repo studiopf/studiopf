@@ -3268,7 +3268,8 @@ function convertirMois() {
         delaidispo = moisFrancais;
         document.getElementById("resultat").textContent = delaidispo; // Affichage du mois sur la page
     } else {
-        alert("Veuillez entrer un mois valide (entre 1 et 12).");
+       delaidispo = "1";
+         document.getElementById("resultat").textContent ="Janvier";
     }
 }
 
@@ -5103,4 +5104,3 @@ imageFilenamesStudio.forEach(filename => {
   'expo/expo_15.jpg', 'jeuxvideo/expo_16.jpg', 'manga/expo_17.jpg', 'manga/expo_18.jpg',  'jeuxvideo/expo_19.jpg', 'jeuxvideo/expo_20.jpg', 'concours/expo_21.jpg'
 ];
 }
-
