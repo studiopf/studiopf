@@ -40,53 +40,28 @@ function changelanguegalerie() {
 </p>
 
 <div class="menugallery">   
-  <div>
-    <button class="moi" onclick="loadPage('galeriegeneral.html'); scrollToTop(); return false;">All Photos</button>
-  </div>
+   <div>
+         <button class="moi" onclick="loadPage('galeriegeneral.html');  scrollToTop(); return false;">All Pictures</button>
+   </div>
+  
+   <div>
+      <button  class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
+    </div>
+  
+   <div>
+      <button  class="concours" onclick="loadPage('galerieconcours.html');  scrollToTop(); return false;">Concours</button>
+    </div>
 
-  <div>
-    <button class="studio" onclick="loadPage('galeriestudio.html'); scrollToTop(); return false;">Studio Painting</button>
-  </div>
+   <div>
+      <button  class="niv3" onclick="loadPage('galerieniv3.html');  scrollToTop(); return false;">Level 3</button>
+    </div>
+  
+    <div>
+      <button  class="niv4" onclick="loadPage('galerieniv4.html');  scrollToTop(); return false;">Level 4</button>
+    </div>
 
-  <div>
-    <button class="asoiaf" onclick="loadPage('song-of-ice-and-fire.html'); scrollToTop(); return false;">A Song of Ice and Fire</button>
-  </div>
 
-  <div>
-    <button class="w40k" onclick="loadPage('warhammer-40k.html'); scrollToTop(); return false;">Warhammer 40K</button>
-  </div>
-
-  <div>
-    <button class="hh" onclick="loadPage('horus-heresy.html'); scrollToTop(); return false;">The Horus Heresy</button>
-  </div>
-
-  <div>
-    <button class="middle" onclick="loadPage('middle-earth.html'); scrollToTop(); return false;">Middle-Earth</button>
-  </div>
-
-  <div>
-    <button class="niv3" onclick="loadPage('age-of-sigmar.html'); scrollToTop(); return false;">Age of Sigmar</button>
-  </div>
-
-  <div>
-    <button class="tow" onclick="loadPage('warhammer-old-world.html'); scrollToTop(); return false;">Warhammer: The Old World</button>
-  </div>
-
-  <div>
-    <button class="bb" onclick="loadPage('blood-bowl.html'); scrollToTop(); return false;">Blood Bowl</button>
-  </div>
-
-  <div>
-    <button class="swlegion" onclick="loadPage('star-wars-legion.html'); scrollToTop(); return false;">Star Wars Legion</button>
-  </div>
-
-  <div>
-    <button class="swshatterpoint" onclick="loadPage('star-wars-shatterpoint.html'); scrollToTop(); return false;">Star Wars Shatterpoint</button>
-  </div>
-
-  <div>
-    <button class="marvel" onclick="loadPage('marvel-crisis-protocol.html'); scrollToTop(); return false;">Marvel Crisis Protocol</button>
-  </div>
+    </div>
 </div>
 `;
                }
@@ -106,53 +81,28 @@ function changelanguegalerie() {
 </p>
 
 <div class="menugallery">   
-  <div>
-    <button class="moi" onclick="loadPage('galeriegeneral.html'); scrollToTop(); return false;">Todas las fotos</button>
-  </div>
+   <div>
+         <button class="moi" onclick="loadPage('galeriegeneral.html');  scrollToTop(); return false;">Todas las fotos</button>
+   </div>
+  
+   <div>
+      <button  class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
+    </div>
+  
+   <div>
+      <button  class="concours" onclick="loadPage('galerieconcours.html');  scrollToTop(); return false;">Concours</button>
+    </div>
 
-  <div>
-    <button class="studio" onclick="loadPage('galeriestudio.html'); scrollToTop(); return false;">Pintura del Estudio</button>
-  </div>
+   <div>
+      <button  class="niv3" onclick="loadPage('galerieniv3.html');  scrollToTop(); return false;">Niveau 3</button>
+    </div>
+  
+    <div>
+      <button  class="niv4" onclick="loadPage('galerieniv4.html');  scrollToTop(); return false;">Niveau 4</button>
+    </div>
 
-  <div>
-    <button class="asoiaf" onclick="loadPage('song-of-ice-and-fire.html'); scrollToTop(); return false;">A Song of Ice and Fire</button>
-  </div>
 
-  <div>
-    <button class="w40k" onclick="loadPage('warhammer-40k.html'); scrollToTop(); return false;">Warhammer 40K</button>
-  </div>
-
-  <div>
-    <button class="hh" onclick="loadPage('horus-heresy.html'); scrollToTop(); return false;">The Horus Heresy</button>
-  </div>
-
-  <div>
-    <button class="middle" onclick="loadPage('middle-earth.html'); scrollToTop(); return false;">Middle-Earth</button>
-  </div>
-
-  <div>
-    <button class="niv3" onclick="loadPage('age-of-sigmar.html'); scrollToTop(); return false;">Age of Sigmar</button>
-  </div>
-
-  <div>
-    <button class="tow" onclick="loadPage('warhammer-old-world.html'); scrollToTop(); return false;">Warhammer: El Viejo Mundo</button>
-  </div>
-
-  <div>
-    <button class="bb" onclick="loadPage('blood-bowl.html'); scrollToTop(); return false;">Blood Bowl</button>
-  </div>
-
-  <div>
-    <button class="swlegion" onclick="loadPage('star-wars-legion.html'); scrollToTop(); return false;">Star Wars Legion</button>
-  </div>
-
-  <div>
-    <button class="swshatterpoint" onclick="loadPage('star-wars-shatterpoint.html'); scrollToTop(); return false;">Star Wars Shatterpoint</button>
-  </div>
-
-  <div>
-    <button class="marvel" onclick="loadPage('marvel-crisis-protocol.html'); scrollToTop(); return false;">Marvel Crisis Protocol</button>
-  </div>
+    </div>
 </div>
 `;
                }
@@ -177,54 +127,24 @@ function changelanguegalerie() {
    </div>
   
    <div>
-      <button  class="studio" onclick="loadPage('galeriestudio.html');  scrollToTop(); return false;">Peinture Studio</button>
+      <button  class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Peinture Expo</button>
     </div>
   
-  <div>
-        
-<button class="asoiaf" onclick="loadPage('song-of-ice-and-fire.html');  scrollToTop(); return false;">A Song of Ice and Fire</button>
+   <div>
+      <button  class="concours" onclick="loadPage('galerieconcours.html');  scrollToTop(); return false;">Peinture Concours</button>
     </div>
-
-
-  <div>
-                <button class="w40k" onclick="loadPage('warhammer-40k.html');  scrollToTop(); return false;">Warhammer 40K</button>
-       </div>
 
    <div>
-    <button class="hh" onclick="loadPage('horus-heresy.html');  scrollToTop(); return false;">The Horus Heresy</button>
-       </div>
+      <button  class="niv3" onclick="loadPage('galerieniv3.html');  scrollToTop(); return false;">Niveau 3</button>
+    </div>
   
- <div>
-                       <button class="middle" onclick="loadPage('middle-earth.html');  scrollToTop(); return false;">Middle-Earth</button>
-       </div>
-  
-   <div>         
-            <button class="niv3" onclick="loadPage('age-of-sigmar.html');  scrollToTop(); return false;">Age of Sigmar</button>
-       </div>
-
- <div>
-                     <button class="tow"  onclick="loadPage('warhammer-old-world.html');  scrollToTop(); return false;">Warhammer The Old World</button>
-       </div>
-  
- <div>
-     <button class="bb" onclick="loadPage('blood-bowl.html');  scrollToTop(); return false;">Blood Bowl</button>
-       </div>
- 
-  <div>
-           <button class="swlegion" onclick="loadPage('star-wars-legion.html');  scrollToTop(); return false;">Star Wars Legion</button>
-       </div>
-   <div>
-        <button class="swshatterpoint" onclick="loadPage('star-wars-shatterpoint.html');  scrollToTop(); return false;">Star Wars Shatterpoint</button>
-   </div>
- <div>
-  
-<button class="marvel" onclick="loadPage('marvel-crisis-protocol.html');  scrollToTop(); return false;">Marvel Crisis Protocol</button>
-       </div>
-  
- 
+    <div>
+      <button  class="niv4" onclick="loadPage('galerieniv4.html');  scrollToTop(); return false;">Niveau 4</button>
+    </div>
 
 
     </div>
+</div>
 `;
                }
 }
