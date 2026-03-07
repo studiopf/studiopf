@@ -188,6 +188,37 @@ nav ul li a:hover {
 /* ==========================================================================
    RÉSEAUX SOCIAUX & LANGUES – inchangé
    ========================================================================== */
+ //bandeau défile
+.info-container{
+   width: 100%;
+                       padding: 10px 10px;
+            position: relative;
+  
+}
+.info {
+ background: linear-gradient(to bottom, #8B0000, #FF6347 );
+      padding: 0px;
+     border: 0px;
+     width: 100%; 
+            position: center;
+            font-size: 22x;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px #555;
+animation: info 2s linear infinite alternate;
+    
+        }
+ @keyframes info {
+            from {
+                transform: translateX(5%);
+            }
+            to {
+                transform: translateX(-5%);
+            }
+        }
+
+
 .social, .social-container {
     display: flex;
     justify-content: center;
