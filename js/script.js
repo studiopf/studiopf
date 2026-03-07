@@ -3940,10 +3940,7 @@ document.addEventListener("DOMContentLoaded", changelanguecondition);
 document.addEventListener("DOMContentLoaded", changelanguefigconcours);
 document.addEventListener("DOMContentLoaded", changelanguepiecepop);
 document.addEventListener('DOMContentLoaded', initializeGalerie);
-    document.addEventListener('DOMContentLoaded', initializegalerieconcours);
-    document.addEventListener('DOMContentLoaded', initializegaleriniv3);
-    document.addEventListener('DOMContentLoaded', initializegalerieniv4);
-    document.addEventListener('DOMContentLoaded', initializegalerieexpo);
+
     
 
 // Initialisation du formulaire de formation
@@ -3988,94 +3985,159 @@ ${prenom} ${nom}`;
 
 
 function appelimg() {
-  return [
-   
-  // Concours
-  'concours/concours1.png',  'concours/concours2.png',  'concours/concours3.png',  'concours/concours4.png',
+    return [
+        // Concours
+        'concours/concours1.png',
+        'concours/concours2.png',
+        'concours/concours3.png',
+        'concours/concours4.png',
+
         // Niv3
-  'niv3/nivtrois1.png', 'niv3/nivtrois2.png', 'niv3/nivtrois3.png', 'niv3/nivtrois4.png', 'niv3/nivtrois5.png', 'niv3/nivtrois6.png', 'niv3/nivtrois7.png', 'niv3/nivtrois8.png', 'niv3/nivtrois9.png',
-       'niv3/nivtrois10.png', 'niv3/nivtrois11.png', 'niv3/nivtrois12.png', 'niv3/nivtrois13.png', 'niv3/nivtrois14.png', 'niv3/nivtrois15.png',
-       'niv3/nivtrois16.png', 'niv3/nivtrois17.png', 'niv3/nivtrois18.png', 'niv3/nivtrois19.png', 'niv3/nivtrois20.png', 'niv3/nivtrois21.png', 'niv3/nivtrois22.png',
-       'niv3/nivtrois23.png', 'niv3/nivtrois24.png', 'niv3/nivtrois25.png', 'niv3/nivtrois26.png',
-        // Niv4 
-       'niv4/nivtquatre1.png',   'niv4/nivtquatre2.png',   'niv4/nivtquatre3.png',   'niv4/nivtquatre4.png',   'niv4/nivtquatre5.png',
-         'niv4/nivtquatre6.png',   'niv4/nivtquatre7.png',   'niv4/nivtquatre8.png',
-  // Expo
-  'expo/expo1.png',   'expo/expo2.png',  'expo/expo3.png',  'expo/expo4.png',  'expo/expo5.png',  'expo/expo6.png',  'expo/expo7.png',  'expo/expo8.png',  'expo/expo9.png',  'expo/expo10.png'
-];
+        'niv3/nivtrois1.png',
+        'niv3/nivtrois2.png',
+        'niv3/nivtrois3.png',
+        'niv3/nivtrois4.png',
+        'niv3/nivtrois5.png',
+        'niv3/nivtrois6.png',
+        'niv3/nivtrois7.png',
+        'niv3/nivtrois8.png',
+        'niv3/nivtrois9.png',
+        'niv3/nivtrois10.png',
+        'niv3/nivtrois11.png',
+        'niv3/nivtrois12.png',
+        'niv3/nivtrois13.png',
+        'niv3/nivtrois14.png',
+        'niv3/nivtrois15.png',
+        'niv3/nivtrois16.png',
+        'niv3/nivtrois17.png',
+        'niv3/nivtrois18.png',
+        'niv3/nivtrois19.png',
+        'niv3/nivtrois20.png',
+        'niv3/nivtrois21.png',
+        'niv3/nivtrois22.png',
+        'niv3/nivtrois23.png',
+        'niv3/nivtrois24.png',
+        'niv3/nivtrois25.png',
+        'niv3/nivtrois26.png',
+
+        // Niv4
+        'niv4/nivtquatre1.png',
+        'niv4/nivtquatre2.png',
+        'niv4/nivtquatre3.png',
+        'niv4/nivtquatre4.png',
+        'niv4/nivtquatre5.png',
+        'niv4/nivtquatre6.png',
+        'niv4/nivtquatre7.png',
+        'niv4/nivtquatre8.png',
+
+        // Expo
+        'expo/expo1.png',
+        'expo/expo2.png',
+        'expo/expo3.png',
+        'expo/expo4.png',
+        'expo/expo5.png',
+        'expo/expo6.png',
+        'expo/expo7.png',
+        'expo/expo8.png',
+        'expo/expo9.png',
+        'expo/expo10.png'
+    ];
 }
 
 function initializeGalerie() {
-  const imageFilenames = appelimg();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filters = document.getElementById('filters');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
+    const imageFilenames = appelimg();
+    const basePath = 'img/';
+    const gallery = document.getElementById('gallery');
+    const filters = document.getElementById('filters');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
 
- // Catégorisation automatique par dossier
-imageFilenames.forEach(filename => {
-  const category = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[category]) categorized[category] = [];
-  categorized[category].push(basePath + filename);
-});
+    if (!gallery || !filters || !lightbox || !lightboxImg) {
+        console.error("Un ou plusieurs éléments du DOM manquent (gallery, filters, lightbox, lightbox-img)");
+        return;
+    }
 
-// Ajout de la catégorie "Tous"
-categorized['Tous'] = imageFilenames.map(f => basePath + f);
+    const categorized = {};
 
-// Création des boutons de filtre
-Object.keys(categorized).forEach(cat => {
-  const btn = document.createElement('button');
-  
-  // Texte affiché (première lettre en majuscule)
-  btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-  
-  // Ajout de la classe correspondant au nom de la catégorie
-  // "Tous" → class="tous"
-  // "nature" → class="nature"
-  btn.classList.add(cat.toLowerCase());
-  
-  // Classe "active" pour le bouton "Tous" au démarrage
-  if (cat === 'Tous') {
-    btn.classList.add('active');
-  }
-  
-  btn.addEventListener('click', () => {
-    // Retire "active" de tous les boutons
-    document.querySelectorAll('#filters button').forEach(b => {
-      b.classList.remove('active');
+    // Catégorisation automatique par dossier
+    imageFilenames.forEach(filename => {
+        const parts = filename.split('/');
+        if (parts.length < 2) return; // sécurité
+
+        const category = parts[0];
+        const fullPath = basePath + filename;
+
+        if (!categorized[category]) {
+            categorized[category] = [];
+        }
+        categorized[category].push(fullPath);
     });
-    
-    // Ajoute "active" au bouton cliqué
-    btn.classList.add('active');
-    
-    showImages(cat);
-  });
-  
-  filters.appendChild(btn);
-});
 
-  function showImages(category) {
-    gallery.innerHTML = '';
-    categorized[category].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
+    // Catégorie "Tous"
+    categorized['Tous'] = imageFilenames.map(f => basePath + f);
+
+    // Création des boutons de filtre
+    Object.keys(categorized)
+        .sort() // optionnel : trie alphabétique
+        .forEach(cat => {
+            const btn = document.createElement('button');
+            btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+            btn.classList.add(cat.toLowerCase());
+
+            if (cat === 'Tous') {
+                btn.classList.add('active');
+            }
+
+            btn.addEventListener('click', () => {
+                // Retire .active de tous les boutons
+                filters.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                // Ajoute .active au bouton cliqué
+                btn.classList.add('active');
+
+                showImages(cat);
+            });
+
+            filters.appendChild(btn);
+        });
+
+    // Fonction d'affichage des images
+    function showImages(category) {
+        gallery.innerHTML = ''; // on vide
+
+        if (!categorized[category]) return;
+
+        const fragment = document.createDocumentFragment(); // plus performant
+
+        categorized[category].forEach(src => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = "Peinture figurine studio – " + category;
+            img.classList.add('gallery-img');
+            img.loading = "lazy";           // amélioration perf + SEO
+            // img decoding="async";        // optionnel (support variable)
+
+            img.addEventListener('click', () => {
+                lightbox.classList.add('active');
+                lightboxImg.src = src;
+                lightboxImg.alt = img.alt;
+            });
+
+            fragment.appendChild(img);
+        });
+
+        gallery.appendChild(fragment);
+    }
+
+    // Fermeture de la lightbox (clic n'importe où)
+    lightbox.addEventListener('click', (e) => {
+        // On ferme seulement si on clique en dehors de l'image
+        if (e.target === lightbox || e.target === lightboxImg) {
+            lightbox.classList.remove('active');
+            // lightboxImg.src = '';     // pas obligatoire (mais évite de garder l'ancienne src)
+        }
     });
-  }
 
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
+    // Affichage initial
+    showImages('Tous');
 }
+
