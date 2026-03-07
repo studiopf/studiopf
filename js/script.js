@@ -3482,15 +3482,10 @@ window.onload = function() {
 changelangueinfo();
     changelanguesimulateur();
     changelanguegalerie();
-    initializegalerieniv3();
-    initializegalerieniv4();
-    initializegalerieexpo();
-    initializegalerieconcours();
     initializeFormationForm();
     initializeFormCalculations();
        initializeCardToggle();
 initializeGalerie();
-
 
     // Ajuster la visibilité du menu
     adjustMenuVisibility();
