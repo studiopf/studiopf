@@ -43,42 +43,24 @@
  
 <div id="contenu-principal">
  <div id="contenupage-galerie">
-  <h2 class="galerie-title">🎨 Galerie</h2>
-  <p class="galerie-description">
-    ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.
-    <br>
+<h2 class="galerie-title">🎨 Galerie</h2>
     
- <div class="menugallery">   
-   <div>
-         <button class="tous" onclick="showImages('tous'); return false;">Toutes les photos</button>
-   </div>
-  
-   <div>
-      <button class="expo" onclick="showImages('expo'); return false;">Peinture Expo</button>
-    </div>
-  
-   <div>
-      <button  class="concours" onclick="showImages('concours'); return false;">Peinture Concours</button>
-    </div>
+    <p class="galerie-description">
+      ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.<br>
+      Découvrez mes peintures à différents niveaux de maîtrise et mes participations en concours & expositions.
+    </p>
 
-   <div>
-      <button  class="niv3" onclick="showImages('niv3');  return false;">Niveau 3</button>
-    </div>
-  
-    <div>
-      <button  class="niv4" onclick="showImages('niv4');  return false;">Niveau 4</button>
-    </div>
+    <!-- Les filtres seront insérés ici automatiquement par JS -->
+    <div class="menugallery" id="filters"></div>
 
+    <div class="gallery" id="gallery"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <img id="lightbox-img" src="" alt="">
     </div>
-</div>
-
-  <div class="gallery" id="gallery"></div>
-
-  <div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="https://studiopf.fr/img/logo.png" alt="Miniature Studio Peinture Figurine">
   </div>
-</div>
-
+  </div>
 
 </body>
 </html>
