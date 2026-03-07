@@ -346,6 +346,27 @@ nav ul li a:hover {
         .menugallery button:hover {
             opacity: 0.8;
         }
+.carousel-container {
+            max-width: 800px;
+            height: 250px; /* Limite la hauteur à 250px */
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel img {
+            width: 100%;
+           
+            object-fit: contain; /* Affiche l'image à sa taille maximale dans les limites */
+            object-position: center 80%; /* Décale l'affichage d'un tiers vers le haut */
+            flex: 0 0 100%; /* Une seule image visible à la fois */
+        }
 
               .asoiaf{
               background-size: contain; /* L'image s'adapte pour être entièrement visible */
@@ -578,6 +599,27 @@ gap: 5px;
         padding: 14px;
         font-size: 12px;
     }
+   .carousel-container {
+            max-width: 300px;
+            height: 250px; /* Limite la hauteur à 250px */
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            width: 700%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel img {
+            width: 70%;
+           
+            object-fit: contain; /* Affiche l'image à sa taille maximale dans les limites */
+            object-position: center 80%; /* Décale l'affichage d'un tiers vers le haut */
+            flex: 0 0 100%; /* Une seule image visible à la fois */
+        }
 }
 
 /* Pour très petits écrans (320–400px) */
