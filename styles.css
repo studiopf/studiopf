@@ -226,6 +226,20 @@ nav ul li a:hover {
     cursor: pointer;
     /* Plus de border ni de box-shadow → pas de cadre */
 }
+.language-selector img,
+.language-selector button {     /* si tu utilises des <button> ou des <img> */
+    width: 24px;                /* petite taille mobile-friendly */
+    height: auto;
+    border: none !important;    /* zéro bordure, même forcée */
+    border-radius: 4px;         /* coins doux sans cadre visible */
+    box-shadow: none !important;
+    outline: none;              /* enlève le contour focus par défaut */
+    background: transparent;    /* pas de fond si c'est un bouton */
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.18s ease;
+}
 
 .language-selector img:hover {
     transform: scale(1.18);
