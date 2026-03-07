@@ -414,13 +414,14 @@ animation: info 2s linear infinite alternate;
             
         }
     .expo{
-               background-size: contain; /* L'image s'adapte pour être entièrement visible */
+                background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
         background-image: url('img/expo.png');
-        }
+   }
+            
               
              
                 .concours{
