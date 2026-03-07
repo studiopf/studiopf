@@ -18,7 +18,30 @@ body {
     radial-gradient(circle at 15% 85%, rgba(180,140,60,0.08) 0%, transparent 40%),
     radial-gradient(circle at 85% 20%, rgba(180,140,60,0.06) 0%, transparent 50%);
 }
+.social, .social-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 1rem 0 0.8rem;
+}
 
+.social-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background: rgba(180,140,60,0.12);
+    color: #d4a76c;
+    transition: all 0.28s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.22);
+    background: rgba(244,200,118,0.32);
+    color: #ffda79;
+    box-shadow: 0 0 14px rgba(255,218,121,0.35);
+}
 .container {
   text-align: center;
   max-width: 780px;
