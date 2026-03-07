@@ -1,11 +1,29 @@
-/* ==========================================================================
-   RESET & BASE – inchangé
-   ========================================================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(135deg, #1a1108 0%, #3a2a1a 100%);
+  color: #e8d9c0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: 
+    radial-gradient(circle at 15% 85%, rgba(180,140,60,0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(180,140,60,0.06) 0%, transparent 50%);
+}
+
+.container {
+  text-align: center;
+  max-width: 780px;
+}
+
 .logo {
   width: 260px;
   height: auto;
@@ -14,479 +32,73 @@
   border-radius: 8px;
 }
 
-body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: linear-gradient(135deg, #0f0a05 0%, #251a10 100%); /* ← plus sombre que #1a1108 → #3a2a1a */
-    color: #e8d9c0;
-    min-height: 100vh;
-    background-image: 
-        radial-gradient(circle at 15% 85%, rgba(180,140,60,0.04) 0%, transparent 50%),  /* glow très atténué */
-        radial-gradient(circle at 85% 20%, rgba(180,140,60,0.03) 0%, transparent 60%);
-    padding: 20px 12px 120px;
-    line-height: 1.55;
-}
-ul, ol { list-style: none; }
-
-/* ==========================================================================
-   TYPOGRAPHIE – inchangé
-   ========================================================================== */
-h1, h2, h3, h4, h5 {
-    color: #f4c876;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
-    text-align: center;
+h1 {
+  font-size: 3.1rem;
+  color: #f4c876;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+  margin-bottom: 0.4em;
+  letter-spacing: 1px;
 }
 
-h1 { font-size: clamp(2.4rem, 6.5vw, 3.1rem); font-weight: 800; letter-spacing: 1px; margin: 1.1rem 0 0.5rem; }
-h2 { font-size: clamp(1.8rem, 5vw, 2.3rem); margin: 1.2rem 0 0.7rem; }
-h3 { font-size: clamp(1.4rem, 4vw, 1.7rem); color: #d4a76c; }
-
-p, li, .p-social {
-    font-size: clamp(1.05rem, 3vw, 1.25rem);
-    line-height: 1.6;
-    text-align: center;
-    margin: 0.8rem auto;
-    max-width: 92%;
-    color: #e8d9c0;
+.subtitle {
+  font-size: 1.45rem;
+  color: #d4a76c;
+  margin-bottom: 2.2rem;
+  font-weight: 300;
 }
 
-/* ==========================================================================
-   LIENS & HIGHLIGHT – inchangé
-   ========================================================================== */
-a {
-    color: #d4b68c;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.25s ease;
+.maintenance-box {
+  background: rgba(30, 20, 12, 0.75);
+  border: 1px solid #6b4e2f;
+  border-radius: 12px;
+  padding: 2.2rem 1.8rem;
+  margin: 0 auto 2.5rem;
+  max-width: 580px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.65);
 }
 
-a:hover,
+.maintenance-box p {
+  font-size: 1.35rem;
+  line-height: 1.55;
+  margin: 0.8em 0;
+}
+
 .highlight {
-    color: #ffda79;
+  color: #ffda79;
+  font-weight: 600;
 }
 
-/* ==========================================================================
-   PARTENAIRES – version renforcée anti-débordement
-   ========================================================================== */
-.partenaires-container,
-.card-container2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
-    justify-content: center;
-    margin: 1.2rem auto;
-    max-width: 1100px;
-    padding: 0 10px;
-}
-
-.cardpartenaire {
-    height: 62px;
-    width: 100%;                        /* force la carte à prendre toute la largeur de sa cellule grid */
-    padding: 6px;
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    transition: all 0.26s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;                   /* coupe TOUT ce qui dépasse */
-    position: relative;                 /* aide pour le positionnement interne si besoin */
-}
-
-.cardpartenaire:hover {
-    transform: translateY(-5px);
-    border-color: #f4c876;
-    box-shadow: 0 10px 24px rgba(244,200,118,0.18);
-}
-
-.cardpartenaire a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-}
-
-/* Images : containment maximal */
-.cardpartenaire img {
-    width: auto;
-    height: auto;
-    max-width: 100%;                    /* ne dépasse jamais la largeur de la carte */
-    max-height: 100%;                   /* ne dépasse jamais la hauteur de la carte */
-    object-fit: contain;                /* garde les proportions, centre l'image */
-    object-position: center;
-    display: block;
-}
-
-/* Variante ultra-sécurisée si certains logos persistent à déborder (option) */
-.cardpartenaire img.safe-fit {
-    max-width: 92%;
-    max-height: 92%;
-}
-/* ==========================================================================
-   FOOTER – texte en #b89e7a (cohérent avec ta page maintenance)
-   ========================================================================== */
-.footer,
-.footer p,
-.footer a,
-.footer .p-social,
-.p-social {                           /* au cas où utilisé en bas de page */
-    color: #b89e7a;
-    font-size: 0.98rem;
-    line-height: 1.7;
-    opacity: 0.92;
-    text-align: center;
-    margin: 0.6rem 0;
+.footer {
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  color: #b89e7a;
+  line-height: 1.7;
+  opacity: 0.92;
 }
 
 .footer a {
-    color: #d4b68c;                   /* lien reste en couleur normale */
+  color: #d4b68c;
+  text-decoration: none;
+  transition: color 0.25s;
 }
 
 .footer a:hover {
-    color: #ffda79;
+  color: #ffda79;
 }
 
-/* ==========================================================================
-   MENU – inchangé
-   ========================================================================== */
-nav {
-    padding: 10px 0 6px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px 16px;
-    margin: 0.4rem 0;
-}
-
-nav ul li a {
-    color: #f4c876;
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: clamp(0.95rem, 2.4vw, 1.02rem);
-    background: rgba(30, 20, 12, 0.55);
-    white-space: nowrap;
-    transition: all 0.24s ease;
-}
-
-nav ul li a:hover {
-    background: rgba(244,200,118,0.20);
-    color: #ffda79;
-}
-
-/* ==========================================================================
-   RÉSEAUX SOCIAUX & LANGUES – inchangé
-   ========================================================================== */
-.social, .social-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 14px;
-    padding: 1rem 0 0.8rem;
-}
-
-.social-icon {
-    width: 44px;
-    height: 44px;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    background: rgba(180,140,60,0.12);
-    color: #d4a76c;
-    transition: all 0.28s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.22);
-    background: rgba(244,200,118,0.32);
-    color: #ffda79;
-    box-shadow: 0 0 14px rgba(255,218,121,0.35);
-}
-
-.language-selector {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 0.7rem 0 1rem;
-}
-
-.language-selector img {
-    width: 30px;
-    height: auto;
-    border-radius: 0px;
-    transition: all 0.26s ease;
-    cursor: pointer;
-    /* Plus de border ni de box-shadow → pas de cadre */
-}
-
-.language-selector img:hover {
-    transform: scale(1.18);
-    /* Option : tu peux remettre un léger effet si tu veux, mais sans cadre */
-    /* ex: box-shadow: 0 4px 12px rgba(244,200,118,0.2); si tu changes d'avis */
-}
-/* Le reste (cartes, gallery, lightbox, boutons scroll, media queries) reste IDENTIQUE */
-
-    /* Galerie */
-.gallery2 {
-  display: flex;
-  gap: 0px;
-  justify-items: center;
-  margin-top: 0px;
-  width: 100%;
-  max-width: 1200px; /* Limite de largeur pour éviter trop de photos par ligne */
-}
-
-.gallery2 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.gallery2 img:hover {
-  transform: scale(2.05);
-}
-
-
- .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 15px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .gallery img {
-      width: 100%;
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.5);
-    }
-
-    .lightbox {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.9);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    .lightbox.active {
-      display: flex;
-    }
-
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 10px;
-    }
-
-    .lightbox::after {
-      content: '✕';
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 2rem;
-      color: white;
-      cursor: pointer;
-    }
-.menugallery {
-            display: grid;
-             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            align-items: center;
-            gap: 10px;
-            padding: 20px;
-        }
-        .menugallery button {
-            width: 400px;
-            height: 150px;
-            background-size: cover;
-            background-position: center;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            color: white;
-            text-shadow: 1px 1px 2px black;
-        }
-        .menugallery button:hover {
-            opacity: 0.8;
-        }
-
-              .asoiaf{
-              background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logoasoiaf.png');
-        }
-                     .swlegion{
-                      background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logolegion.png');
-        }
-                .swshatterpoint{
-                 background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logoswm.png');
-        }
-
- .moi{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/moi.png');
-   }
-                .bb{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logobb.png');
-        }
-    .studio{
-               background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logo.png');
-        }
-                .marvel{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logomarvel.png');
-        }
-                .middle{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logomiddle.png');
-        }
-                .tow{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logotow.png');
-        }
-                     .w40k{
-                     background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logo40k.png');
-        }
-                     .aos{
-                      background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logoaos.png');
-        }
-                     .hh{
-                      background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logohh.png');
-        }
-.section {
-display: grid; 
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 5px;
-}
-
-
-/* Style du bouton fleche */
-#scrollToTopBtn {
-    border: 2px solid #FFD700;
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    background-color: #555;
-    color: #FFD700;
-    border: none;
-    padding: 15px;
-    font-size: 24px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none; /* Masqué au départ */
-    z-index: 2000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Style du bouton fleche */
-#scrollTotal {
-    border: 1px solid #FFD700;
-    position: fixed;
-    bottom: 400px;
-    right: 20px;
-    background-color: #555;
-    color: #FFD700;
-    border: none;
-    padding: 25px;
-    font-size: 14px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none; /* Masqué au départ */
-    z-index: 2000;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-
-/* ==========================================================================
-   CARTES GÉNÉRIQUES – inchangé
-   ========================================================================== */
-.card, .card2, .card3, .cardform, .logopart {
-    background: rgba(30, 20, 12, 0.75);
-    border: 1px solid #6b4e2f;
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.65);
-    padding: 1.3rem;
-    transition: all 0.28s ease;
-    text-align: center;
-}
-
-.card:hover, .card2:hover, .card3:hover, .logopart:hover {
-    transform: translateY(-6px) scale(1.02);
-    border-color: #f4c876;
+/* Responsive */
+@media (max-width: 580px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .logo {
+    width: 220px;
+  }
+  .maintenance-box {
+    padding: 1.6rem 1.2rem;
+  }
 }
