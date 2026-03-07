@@ -357,6 +357,7 @@ animation: info 2s linear infinite alternate;
       cursor: pointer;
     }
 .menugallery {
+   text-align: center;
             display: grid;
              grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, 1fr);
@@ -613,9 +614,10 @@ gap: 5px;
         grid-template-columns: 1fr; /* 1 colonne sur petits écrans */
         gap: 10px;
         padding: 10px;
+       
     }
     .menugallery button {
-         width: 100px;
+         width: 200px;
         height: 70px;
         font-size: 13px;
     }
