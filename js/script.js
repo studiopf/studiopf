@@ -65,7 +65,7 @@ function changelanguegalerie() {
   </div>
 
   <div>
-    <button class="aos" onclick="loadPage('age-of-sigmar.html'); scrollToTop(); return false;">Age of Sigmar</button>
+    <button class="niv3" onclick="loadPage('age-of-sigmar.html'); scrollToTop(); return false;">Age of Sigmar</button>
   </div>
 
   <div>
@@ -131,7 +131,7 @@ function changelanguegalerie() {
   </div>
 
   <div>
-    <button class="aos" onclick="loadPage('age-of-sigmar.html'); scrollToTop(); return false;">Age of Sigmar</button>
+    <button class="niv3" onclick="loadPage('age-of-sigmar.html'); scrollToTop(); return false;">Age of Sigmar</button>
   </div>
 
   <div>
@@ -199,7 +199,7 @@ function changelanguegalerie() {
        </div>
   
    <div>         
-            <button class="aos" onclick="loadPage('age-of-sigmar.html');  scrollToTop(); return false;">Age of Sigmar</button>
+            <button class="niv3" onclick="loadPage('age-of-sigmar.html');  scrollToTop(); return false;">Age of Sigmar</button>
        </div>
 
  <div>
@@ -3491,91 +3491,35 @@ function initializePageSpecificScripts(page) {
       } else {
         console.error('initializeGalerie non défini');
       }
-      break;
-    case 'age-of-sigmar.html':
-      if (typeof initializeGalerieAoS === 'function') {
-        console.log('Appel de initializeGalerieAoS');
-        initializeGalerieAoS();
+      break;   
+    case 'galerieniv3.html':
+      if (typeof initializegalerieniv3 === 'function') {
+        console.log('Appel de initializegalerieniv3');
+        initializegalerieniv3();
       } else {
-        console.error('initializeGalerieAoS non défini');
+        console.error('initializegalerieniv3 non défini');
       }
       break;
-    case 'blood-bowl.html':
-      if (typeof initializeGalerieBB === 'function') {
-        console.log('Appel de initializeGalerieBB');
-        initializeGalerieBB();
+           case 'galerieniv4.html':
+      if (typeof initializegalerieniv3 === 'function') {
+        console.log('Appel de initializegalerieniv4');
+        initializegalerieniv4();
       } else {
-        console.error('initializeGalerieBB non défini');
+        console.error('initializegalerieniv3 non défini');
       }
       break;
-    case 'horus-heresy.html':
-      if (typeof initializeGalerieHH === 'function') {
-        console.log('Appel de initializeGalerieHH');
-        initializeGalerieHH();
+    case 'galerieexpo.html':
+      if (typeof initializegalerieexpo === 'function') {
+        console.log('Appel de initializegalerieexpo');
+        initializegalerieexpo();
       } else {
-        console.error('initializeGalerieHH non défini');
+        console.error('initializeGalerieStudio non défini');
       }
       break;
-    case 'marvel-crisis-protocol.html':
-      if (typeof initializeGalerieMarvel === 'function') {
-        console.log('Appel de initializeGalerieMarvel');
-        initializeGalerieMarvel();
-      } else {
-        console.error('initializeGalerieMarvel non défini');
-      }
-      break;
-    case 'middle-earth.html':
-      if (typeof initializeGalerieMiddle === 'function') {
-        console.log('Appel de initializeGalerieMiddle');
-        initializeGalerieMiddle();
-      } else {
-        console.error('initializeGalerieMiddle non défini');
-      }
-      break;
-    case 'song-of-ice-and-fire.html':
-      if (typeof initializeGalerieASOIAF === 'function') {
-        console.log('Appel de initializeGalerieASOIAF');
-        initializeGalerieASOIAF();
-      } else {
-        console.error('initializeGalerieASOIAF non défini');
-      }
-      break;
-    case 'star-wars-legion.html':
-      if (typeof initializeGalerieSWL === 'function') {
-        console.log('Appel de initializeGalerieSWL');
-        initializeGalerieSWL();
-      } else {
-        console.error('initializeGalerieSWL non défini');
-      }
-      break;
-    case 'star-wars-shatterpoint.html':
-      if (typeof initializeGalerieSWS === 'function') {
-        console.log('Appel de initializeGalerieSWS');
-        initializeGalerieSWS();
-      } else {
-        console.error('initializeGalerieSWS non défini');
-      }
-      break;
-    case 'warhammer-40k.html':
-      if (typeof initializeGalerie40k === 'function') {
-        console.log('Appel de initializeGalerie40k');
-        initializeGalerie40k();
-      } else {
-        console.error('initializeGalerie40k non défini');
-      }
-      break;
-    case 'warhammer-old-world.html':
-      if (typeof initializeGalerieToW === 'function') {
-        console.log('Appel de initializeGalerieToW');
-        initializeGalerieToW();
-      } else {
-        console.error('initializeGalerieToW non défini');
-      }
-      break;
-    case 'galeriestudio.html':
-      if (typeof initializeGalerieStudio === 'function') {
-        console.log('Appel de initializeGalerieStudio');
-        initializeGalerieStudio();
+          case 'galerieconcours.html':
+      if (typeof initializegalerieconcours === 'function') {
+        console.log('Appel de initializegalerieconcours');
+        initializegalerieconcours();
       } else {
         console.error('initializeGalerieStudio non défini');
       }
@@ -3657,21 +3601,15 @@ window.onload = function() {
 changelangueinfo();
     changelanguesimulateur();
     changelanguegalerie();
+    initializegalerieniv3();
+    initializegalerieniv4();
+    initializegalerieexpo();
+    initializegalerieconcours();
     initializeFormationForm();
     initializeFormCalculations();
        initializeCardToggle();
 initializeGalerie();
-    initializeGalerieBB();
- initializeGalerieHH();
- initializeGalerieMarvel();
- initializeGalerieMiddle();
-initializeGalerieASOIAF();
-initializeGalerieSWL();
-initializeGalerieSWS();
- initializeGalerieToW();
-    initializeGalerie40k();
-initializeGalerieStudio();
-    initializeGalerieAoS();
+
 
     // Ajuster la visibilité du menu
     adjustMenuVisibility();
@@ -4126,17 +4064,10 @@ document.addEventListener("DOMContentLoaded", changelanguecondition);
 document.addEventListener("DOMContentLoaded", changelanguefigconcours);
 document.addEventListener("DOMContentLoaded", changelanguepiecepop);
 document.addEventListener('DOMContentLoaded', initializeGalerie);
-document.addEventListener('DOMContentLoaded', initializeGalerieAoS);
-document.addEventListener('DOMContentLoaded', initializeGalerieBB);
-    document.addEventListener('DOMContentLoaded', initializeGalerieHH);
-    document.addEventListener('DOMContentLoaded', initializeGalerieMarvel);
-    document.addEventListener('DOMContentLoaded', initializeGalerieMiddle);
-    document.addEventListener('DOMContentLoaded', initializeGalerieASOIAF);
-    document.addEventListener('DOMContentLoaded', initializeGalerieSWL);
-    document.addEventListener('DOMContentLoaded', initializeGalerieSWS);
-    document.addEventListener('DOMContentLoaded', initializeGalerie40k);
-        document.addEventListener('DOMContentLoaded', initializeGalerieToW);
-    document.addEventListener('DOMContentLoaded', initializeGalerieStudio);
+    document.addEventListener('DOMContentLoaded', initializegalerieconcours);
+    document.addEventListener('DOMContentLoaded', initializegaleriniv3);
+    document.addEventListener('DOMContentLoaded', initializegalerieniv4);
+    document.addEventListener('DOMContentLoaded', initializegalerieexpo);
     
 
 // Initialisation du formulaire de formation
@@ -4183,71 +4114,18 @@ ${prenom} ${nom}`;
 function appelimg() {
   return [
    
-  // Monstres
-  'monstres/monstres_1.jpg', 'monstres/monstres_2.jpg', 'monstres/monstres_3.jpg', 'monstres/monstres_4.jpg', 'monstres/monstres_5.jpg',
-   'monstres/monstres_6.jpg', 'monstres/monstres_7.jpg', 'monstres/monstres_8.jpg', 'monstres/monstres_9.jpg',
-'monstres/monstres_10.jpg', 'monstres/monstres_11.jpg', 'monstres/monstres_12.jpg', 'monstres/monstres_13.jpg',
-'monstres/monstres_14.jpg', 'monstres/monstres_15.jpg', 'monstres/monstres_16.jpg', 'monstres/monstres_17.jpg',
-   'monstres/monstres_18.jpg', 'monstres/monstres_19.jpg', 
-
-
-
-     // Bandes
-  'bandes/bandes_1.jpg', 'bandes/bandes_2.jpg', 'bandes/bandes_3.jpg', 'bandes/bandes_4.jpg',  'bandes/bandes_5.jpg', 'bandes/bandes_6.jpg', 'bandes/bandes_7.jpg', 'bandes/bandes_8.jpg',
-     'bandes/bandes_9.jpg', 'bandes/bandes_10.jpg', 'bandes/bandes_11.jpg', 'bandes/bandes_12.jpg',  'bandes/bandes_13.jpg', 'bandes/bandes_14.jpg', 'bandes/bandes_15.jpg', 'bandes/bandes_16.jpg',
-     'bandes/bandes_17.jpg', 'bandes/bandes_18.jpg', 
-     // Armées
-   'armées/armées_1.jpg', 'armées/armées_2.jpg', 'armées/armées_3.jpg', 'armées/armées_4.jpg',
-      'armées/armées_5.jpg', 'armées/armées_6.jpg', 'armées/armées_7.jpg', 'armées/armées_8.jpg',
-  // Titans
-   'titans/titans_1.jpg', 'titans/titans_2.jpg', 'titans/titans_3.jpg', 'titans/titans_4.jpg',
-      'titans/titans_5.jpg', 'titans/titans_6.jpg', 'titans/titans_7.jpg', 'titans/titans_8.jpg',
-      'titans/titans_9.jpg', 'titans/titans_10.jpg', 'titans/titans_11.jpg', 'titans/titans_12.jpg',
-     // Décors
-  'décors/décors_1.jpg', 'décors/décors_2.jpg', 'décors/décors_3.jpg', 'décors/décors_4.jpg',
-  'décors/décors_5.jpg', 'décors/décors_6.jpg', 'décors/décors_7.jpg', 'décors/décors_8.jpg',
-     'décors/décors_9.jpg', 'décors/décors_10.jpg', 'décors/décors_11.jpg', 'décors/décors_12.jpg',
-     'décors/décors_13.jpg', 'décors/décors_14.jpg', 'décors/décors_15.jpg', 'décors/décors_16.jpg','décors/décors_17.jpg',
-
-  // Cavalerie
-  'cavaleries/cavaleries_1.jpg', 'cavaleries/cavaleries_2.jpg', 'cavaleries/cavaleries_3.jpg', 'cavaleries/cavaleries_4.jpg', 'cavaleries/cavaleries_5.jpg',
-  'cavaleries/cavaleries_6.jpg', 'cavaleries/cavaleries_7.jpg', 'cavaleries/cavaleries_8.jpg', 'cavaleries/cavaleries_9.jpg', 'cavaleries/cavaleries_10.jpg',
-  'cavaleries/cavaleries_11.jpg','cavaleries/cavaleries_12.jpg','cavaleries/cavaleries_13.jpg','cavaleries/cavaleries_14.jpg','cavaleries/cavaleries_15.jpg','cavaleries/cavaleries_16.jpg',
-
-  // Véhicules
-  'vehicules/vehicules_1.jpg', 'vehicules/vehicules_2.jpg', 'vehicules/vehicules_3.jpg', 'vehicules/vehicules_4.jpg', 'vehicules/vehicules_5.jpg',
-  'vehicules/vehicules_6.jpg', 'vehicules/vehicules_7.jpg', 'vehicules/vehicules_8.jpg', 'vehicules/vehicules_9.jpg', 'vehicules/vehicules_10.jpg',
-  'vehicules/vehicules_11.jpg','vehicules/vehicules_12.jpg','vehicules/vehicules_13.jpg',
-'vehicules/vehicules_14.jpg', 'vehicules/vehicules_15.jpg', 'vehicules/vehicules_16.jpg', 'vehicules/vehicules_17.jpg',
-'vehicules/vehicules_18.jpg', 'vehicules/vehicules_19.jpg', 'vehicules/vehicules_20.jpg','vehicules/vehicules_21.jpg', 'vehicules/vehicules_22.jpg', 'vehicules/vehicules_23.jpg',
-'vehicules/vehicules_24.jpg', 'vehicules/vehicules_25.jpg',
-
-  // Infanterie
-  'infanteries/infanteries_1.jpg', 'infanteries/infanteries_2.jpg', 'infanteries/infanteries_3.jpg', 'infanteries/infanteries_4.jpg', 'infanteries/infanteries_5.jpg',
-  'infanteries/infanteries_6.jpg', 'infanteries/infanteries_7.jpg', 'infanteries/infanteries_8.jpg', 'infanteries/infanteries_9.jpg', 'infanteries/infanteries_10.jpg',
-  'infanteries/infanteries_11.jpg', 'infanteries/infanteries_12.jpg', 'infanteries/infanteries_13.jpg', 'infanteries/infanteries_14.jpg', 'infanteries/infanteries_15.jpg',
-  'infanteries/infanteries_16.jpg', 'infanteries/infanteries_17.jpg', 'infanteries/infanteries_18.jpg', 'infanteries/infanteries_19.jpg', 'infanteries/infanteries_20.jpg',
-  'infanteries/infanteries_21.jpg', 'infanteries/infanteries_22.jpg', 'infanteries/infanteries_23.jpg',  'infanteries/infanteries_24.jpg', 
-   'infanteries/infanteries_25.jpg', 'infanteries/infanteries_26.jpg', 'infanteries/infanteries_27.jpg', 'infanteries/infanteries_28.jpg',
-  'infanteries/infanteries_29.jpg', 'infanteries/infanteries_30.jpg', 'infanteries/infanteries_31.jpg', 'infanteries/infanteries_32.jpg',
-  'infanteries/infanteries_33.jpg', 'infanteries/infanteries_34.jpg', 'infanteries/infanteries_35.jpg', 'infanteries/infanteries_40.jpg', 'infanteries/infanteries_41.jpg',
-  'infanteries/infanteries_42.jpg', 'infanteries/infanteries_43.jpg', 'infanteries/infanteries_44.jpg',  'infanteries/infanteries_45.jpg', 'infanteries/infanteries_46.jpg',
-   'infanteries/infanteries_47.jpg',  'infanteries/infanteries_48.jpg', 'infanteries/infanteries_49.jpg', 'infanteries/infanteries_50.jpg',
-
-  // Personnages
-  'personnages/personnages_1.jpg', 'personnages/personnages_2.jpg', 'personnages/personnages_3.jpg', 'personnages/personnages_4.jpg', 'personnages/personnages_5.jpg',
-  'personnages/personnages_6.jpg', 'personnages/personnages_7.jpg', 'personnages/personnages_8.jpg', 'personnages/personnages_9.jpg', 'personnages/personnages_10.jpg',
-  'personnages/personnages_11.jpg', 'personnages/personnages_12.jpg', 'personnages/personnages_13.jpg', 'personnages/personnages_14.jpg', 'personnages/personnages_15.jpg',
-  'personnages/personnages_16.jpg', 'personnages/personnages_17.jpg', 'personnages/personnages_18.jpg', 'personnages/personnages_19.jpg', 'personnages/personnages_20.jpg',
-     'personnages/personnages_21.jpg', 'personnages/personnages_22.jpg', 'personnages/personnages_23.jpg', 'personnages/personnages_24.jpg', 'personnages/personnages_25.jpg',
-  'personnages/personnages_26.jpg', 'personnages/personnages_27.jpg', 'personnages/personnages_28.jpg', 'personnages/personnages_29.jpg', 'personnages/personnages_30.jpg',
-  'personnages/personnages_31.jpg', 'personnages/personnages_32.jpg', 'personnages/personnages_33.jpg', 'personnages/personnages_34.jpg', 'personnages/personnages_35.jpg',
-  'personnages/personnages_36.jpg', 'personnages/personnages_37.jpg', 'personnages/personnages_38.jpg',
-   
+  // Concours
+  'concours/concours1.png',  'concours/concours2.png',  'concours/concours3.png',  'concours/concours4.png',
+        // Niv3
+  'niv3/nivtrois1.png', 'niv3/nivtrois2.png', 'niv3/nivtrois3.png', 'niv3/nivtrois4.png', 'niv3/nivtrois5.png', 'niv3/nivtrois6.png', 'niv3/nivtrois7.png', 'niv3/nivtrois8.png', 'niv3/nivtrois9.png',
+       'niv3/nivtrois10.png', 'niv3/nivtrois11.png', 'niv3/nivtrois12.png', 'niv3/nivtrois13.png', 'niv3/nivtrois14.png', 'niv3/nivtrois15.png',
+       'niv3/nivtrois16.png', 'niv3/nivtrois17.png', 'niv3/nivtrois18.png', 'niv3/nivtrois19.png', 'niv3/nivtrois20.png', 'niv3/nivtrois21.png', 'niv3/nivtrois22.png',
+       'niv3/nivtrois23.png', 'niv3/nivtrois24.png', 'niv3/nivtrois25.png', 'niv3/nivtrois26.png',
+        // Niv4 
+       'niv4/nivtquatre1.png',   'niv4/nivtquatre2.png',   'niv4/nivtquatre3.png',   'niv4/nivtquatre4.png',   'niv4/nivtquatre5.png',
+         'niv4/nivtquatre6.png',   'niv4/nivtquatre7.png',   'niv4/nivtquatre8.png',
   // Expo
-  'jeuxvideo/expo_1.jpg', 'expo/expo_2.jpg', 'expo/expo_3.jpg', 'jeuxvideo/expo_4.jpg', 'jeuxvideo/expo_5.jpg',
-  'expo/expo_6.jpg', 'manga/expo_7.jpg', 'concours/expo_9.jpg',  'manga/expo_10.jpg', 'expo/expo_11.jpg', 'concours/expo_12.jpg', 'concours/expo_13.jpg', 'concours/expo_14.jpg',
-  'expo/expo_15.jpg', 'jeuxvideo/expo_16.jpg', 'manga/expo_17.jpg', 'manga/expo_18.jpg',  'jeuxvideo/expo_19.jpg', 'jeuxvideo/expo_20.jpg', 'concours/expo_21.jpg'
+  'expo/expo1.png',   'expo/expo2.png',  'expo/expo3.png',  'expo/expo4.png',  'expo/expo5.png',  'expo/expo6.png',  'expo/expo7.png',  'expo/expo8.png',  'expo/expo9.png',  'expo/expo10.png'
 ];
 }
 
@@ -4306,24 +4184,25 @@ imageFilenames.forEach(filename => {
   // Affichage initial
   showImages('Tous');
 }
-function initializeGalerieAoS() {
-  const imageFilenamesAoS = appelimgAoS();
+
+function initializegalerieniv3() {
+  const imageFilenamesniv3 = appelimgniv3();
   const basePath = 'img/';
   const gallery = document.getElementById('gallery');
-  const filtersAoS = document.getElementById('filtersAoS');
+  const filtersniv3 = document.getElementById('filtersniv3');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const categorized = {};
 
  // Catégorisation automatique par dossier
-imageFilenamesAoS.forEach(filename => {
-  const categoryAoS = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryAoS]) categorized[categoryAoS] = [];
-  categorized[categoryAoS].push(basePath + filename);
+imageFilenamesniv3.forEach(filename => {
+  const categoryniv3 = filename.split('/')[0]; // ← récupère le dossier avant le "/"
+  if (!categorized[categoryniv3]) categorized[categoryniv3] = [];
+  categorized[categoryniv3].push(basePath + filename);
 });
 
   // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesAoS.map(f => basePath + f);
+  categorized['Tous'] = imageFilenamesniv3.map(f => basePath + f);
 
   // Création des boutons de filtre
   Object.keys(categorized).forEach(cat => {
@@ -4331,16 +4210,16 @@ imageFilenamesAoS.forEach(filename => {
     btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     if (cat === 'Tous') btn.classList.add('active');
     btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersAoS button').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#filtersniv3 button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       showImages(cat);
     });
-    filtersAoS.appendChild(btn);
+    filtersniv3.appendChild(btn);
   });
 
-  function showImages(categoryAoS) {
+  function showImages(categoryniv3) {
     gallery.innerHTML = '';
-    categorized[categoryAoS].forEach(src => {
+    categorized[categoryniv3].forEach(src => {
       const img = document.createElement('img');
       img.src = src;
        img.alt = "Miniature Studio Peinture Figurine";
@@ -4361,60 +4240,33 @@ imageFilenamesAoS.forEach(filename => {
   // Affichage initial
   showImages('Tous');
 }
-function appelimgAoS() {
+function appelimgniv3() {
   return [
-   
-  // Monstres
-  'monstres/monstres_2.jpg', 'monstres/monstres_4.jpg', 'monstres/monstres_8.jpg', 'monstres/monstres_9.jpg', 'monstres/monstres_12.jpg',
-   'monstres/monstres_13.jpg', 'monstres/monstres_15.jpg', 'monstres/monstres_16.jpg', 'monstres/monstres_18.jpg',
-
-     // Bandes
-  'bandes/bandes_1.jpg', 'bandes/bandes_18.jpg',
-     // Armées
-   'armées/armées_4.jpg', 'armées/armées_5.jpg', 'armées/armées_8.jpg', 'armées/armées_7.jpg',
-   
- 
-     // Décors
-  'décors/décors_1.jpg', 'décors/décors_3.jpg', 'décors/décors_5.jpg', 'décors/décors_6.jpg',
-  'décors/décors_7.jpg', 'décors/décors_9.jpg', 'décors/décors_10.jpg', 'décors/décors_11.jpg',
-     'décors/décors_14.jpg', 'décors/décors_15.jpg',
-
-  // Cavalerie
-'cavaleries/cavaleries_3.jpg', 'cavaleries/cavaleries_4.jpg', 'cavaleries/cavaleries_5.jpg',
-  'cavaleries/cavaleries_6.jpg', 'cavaleries/cavaleries_7.jpg', 'cavaleries/cavaleries_8.jpg', 'cavaleries/cavaleries_9.jpg', 'cavaleries/cavaleries_10.jpg',
-  'cavaleries/cavaleries_11.jpg','cavaleries/cavaleries_12.jpg','cavaleries/cavaleries_13.jpg','cavaleries/cavaleries_14.jpg','cavaleries/cavaleries_16.jpg',
-
- 
-
-  // Infanterie
-  'infanteries/infanteries_10.jpg', 'infanteries/infanteries_14.jpg', 'infanteries/infanteries_11.jpg', 'infanteries/infanteries_17.jpg', 'infanteries/infanteries_20.jpg',
-  'infanteries/infanteries_21.jpg', 'infanteries/infanteries_29.jpg', 'infanteries/infanteries_33.jpg', 'infanteries/infanteries_31.jpg', 'infanteries/infanteries_42.jpg',
-  'infanteries/infanteries_43.jpg', 'infanteries/infanteries_44.jpg', 'infanteries/infanteries_50.jpg',
-  'infanteries/infanteries_48.jpg', 
-  // Personnages
-  'personnages/personnages_5.jpg', 'personnages/personnages_9.jpg', 'personnages/personnages_13.jpg', 'personnages/personnages_11.jpg', 'personnages/personnages_15.jpg',
-  'personnages/personnages_16.jpg', 'personnages/personnages_17.jpg', 'personnages/personnages_18.jpg', 'personnages/personnages_21.jpg', 'personnages/personnages_28.jpg',
-  'personnages/personnages_32.jpg', 'personnages/personnages_36.jpg'
-];
+     // Niv3
+  'niv3/nivtrois1.png', 'niv3/nivtrois2.png', 'niv3/nivtrois3.png', 'niv3/nivtrois4.png', 'niv3/nivtrois5.png', 'niv3/nivtrois6.png', 'niv3/nivtrois7.png', 'niv3/nivtrois8.png', 'niv3/nivtrois9.png',
+       'niv3/nivtrois10.png', 'niv3/nivtrois11.png', 'niv3/nivtrois12.png', 'niv3/nivtrois13.png', 'niv3/nivtrois14.png', 'niv3/nivtrois15.png',
+       'niv3/nivtrois16.png', 'niv3/nivtrois17.png', 'niv3/nivtrois18.png', 'niv3/nivtrois19.png', 'niv3/nivtrois20.png', 'niv3/nivtrois21.png', 'niv3/nivtrois22.png',
+       'niv3/nivtrois23.png', 'niv3/nivtrois24.png', 'niv3/nivtrois25.png', 'niv3/nivtrois26.png'
+ ];
 }
-    function initializeGalerieBB() {
-  const imageFilenamesBB = appelimgBB();
+function initializegalerieniv4() {
+  const imageFilenamesniv4 = appelimgniv4();
   const basePath = 'img/';
   const gallery = document.getElementById('gallery');
-  const filtersBB = document.getElementById('filtersBB');
+  const filtersniv4 = document.getElementById('filtersniv4');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const categorized = {};
 
  // Catégorisation automatique par dossier
-imageFilenamesBB.forEach(filename => {
-  const categoryBB = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryBB]) categorized[categoryBB] = [];
-  categorized[categoryBB].push(basePath + filename);
+imageFilenamesniv4.forEach(filename => {
+  const categoryniv4 = filename.split('/')[0]; // ← récupère le dossier avant le "/"
+  if (!categorized[categoryniv4]) categorized[categoryniv4] = [];
+  categorized[categoryniv4].push(basePath + filename);
 });
 
   // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesBB.map(f => basePath + f);
+  categorized['Tous'] = imageFilenamesniv4.map(f => basePath + f);
 
   // Création des boutons de filtre
   Object.keys(categorized).forEach(cat => {
@@ -4422,16 +4274,16 @@ imageFilenamesBB.forEach(filename => {
     btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     if (cat === 'Tous') btn.classList.add('active');
     btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersBB button').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#filtersniv4 button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       showImages(cat);
     });
-    filtersBB.appendChild(btn);
+    filtersniv4.appendChild(btn);
   });
 
-  function showImages(categoryBB) {
+  function showImages(categoryniv4) {
     gallery.innerHTML = '';
-    categorized[categoryBB].forEach(src => {
+    categorized[categoryniv4].forEach(src => {
       const img = document.createElement('img');
       img.src = src;
        img.alt = "Miniature Studio Peinture Figurine";
@@ -4452,32 +4304,31 @@ imageFilenamesBB.forEach(filename => {
   // Affichage initial
   showImages('Tous');
 }
-    function appelimgBB() {
+function appelimgniv4() {
   return [
-   
-     // Bandes
-  'bandes/bandes_16.jpg', 'bandes/bandes_2.jpg', 'bandes/bandes_3.jpg'
-];
+    // Niv4 
+       'niv4/nivtquatre1.png',   'niv4/nivtquatre2.png',   'niv4/nivtquatre3.png',   'niv4/nivtquatre4.png',   'niv4/nivtquatre5.png',
+         'niv4/nivtquatre6.png',   'niv4/nivtquatre7.png',   'niv4/nivtquatre8.png'
+ ];
 }
-    
-    function initializeGalerieHH() {
-  const imageFilenamesHH = appelimgHH();
+function initializegalerieconcours() {
+  const imageFilenamesconcours = appelimgconcours();
   const basePath = 'img/';
   const gallery = document.getElementById('gallery');
-  const filtersHH = document.getElementById('filtersHH');
+  const filtersconcours = document.getElementById('filtersconcours');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const categorized = {};
 
  // Catégorisation automatique par dossier
-imageFilenamesHH.forEach(filename => {
-  const categoryHH = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryHH]) categorized[categoryHH] = [];
-  categorized[categoryHH].push(basePath + filename);
+imageFilenamesconcours.forEach(filename => {
+  const categoryconcours = filename.split('/')[0]; // ← récupère le dossier avant le "/"
+  if (!categorized[categoryconcours]) categorized[categoryconcours] = [];
+  categorized[categoryconcours].push(basePath + filename);
 });
 
   // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesHH.map(f => basePath + f);
+  categorized['Tous'] = imageFilenamesconcours.map(f => basePath + f);
 
   // Création des boutons de filtre
   Object.keys(categorized).forEach(cat => {
@@ -4485,16 +4336,16 @@ imageFilenamesHH.forEach(filename => {
     btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     if (cat === 'Tous') btn.classList.add('active');
     btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersHH button').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#filtersconcours button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       showImages(cat);
     });
-    filtersHH.appendChild(btn);
+    filtersconcours.appendChild(btn);
   });
 
-  function showImages(categoryHH) {
+  function showImages(categoryconcours) {
     gallery.innerHTML = '';
-    categorized[categoryHH].forEach(src => {
+    categorized[categoryconcours].forEach(src => {
       const img = document.createElement('img');
       img.src = src;
        img.alt = "Miniature Studio Peinture Figurine";
@@ -4515,33 +4366,30 @@ imageFilenamesHH.forEach(filename => {
   // Affichage initial
   showImages('Tous');
 }
-    function appelimgHH() {
+function appelimgconcours() {
   return [
-   
-    // Véhicules
-  'vehicules/vehicules_7.jpg'
-];
+    // Concours
+  'concours/concours1.png',  'concours/concours2.png',  'concours/concours3.png',  'concours/concours4.png'
+ ];
 }
-
-
-    function initializeGalerieMarvel() {
-  const imageFilenamesMarvel = appelimgMarvel();
+function initializegalerieexpo() {
+  const imageFilenamesexpo = appelimgexpo();
   const basePath = 'img/';
   const gallery = document.getElementById('gallery');
-  const filtersMarvel = document.getElementById('filtersMarvel');
+  const filtersexpo = document.getElementById('filtersexpo');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const categorized = {};
 
  // Catégorisation automatique par dossier
-imageFilenamesMarvel.forEach(filename => {
-  const categoryMarvel = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryMarvel]) categorized[categoryMarvel] = [];
-  categorized[categoryMarvel].push(basePath + filename);
+imageFilenamesexpo.forEach(filename => {
+  const categoryexpo = filename.split('/')[0]; // ← récupère le dossier avant le "/"
+  if (!categorized[categoryexpo]) categorized[categoryexpo] = [];
+  categorized[categoryexpo].push(basePath + filename);
 });
 
   // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesMarvel.map(f => basePath + f);
+  categorized['Tous'] = imageFilenamesexpo.map(f => basePath + f);
 
   // Création des boutons de filtre
   Object.keys(categorized).forEach(cat => {
@@ -4549,16 +4397,16 @@ imageFilenamesMarvel.forEach(filename => {
     btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     if (cat === 'Tous') btn.classList.add('active');
     btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersMarvel button').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#filtersexpo button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       showImages(cat);
     });
-    filtersMarvel.appendChild(btn);
+    filtersexpo.appendChild(btn);
   });
 
-  function showImages(categoryMarvel) {
+  function showImages(categoryexpo) {
     gallery.innerHTML = '';
-    categorized[categoryMarvel].forEach(src => {
+    categorized[categoryexpo].forEach(src => {
       const img = document.createElement('img');
       img.src = src;
        img.alt = "Miniature Studio Peinture Figurine";
@@ -4579,522 +4427,9 @@ imageFilenamesMarvel.forEach(filename => {
   // Affichage initial
   showImages('Tous');
 }
-    function appelimgMarvel() {
+function appelimgexpo() {
   return [
-   
-
-];
-}
-    function initializeGalerieASOIAF() {
-  const imageFilenamesASOIAF = appelimgASOIAF();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filtersASOIAF = document.getElementById('filtersASOIAF');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
-
- // Catégorisation automatique par dossier
-imageFilenamesASOIAF.forEach(filename => {
-  const categoryASOIAF = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryASOIAF]) categorized[categoryASOIAF] = [];
-  categorized[categoryASOIAF].push(basePath + filename);
-});
-
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesASOIAF.map(f => basePath + f);
-
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersASOIAF button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
-    });
-    filtersASOIAF.appendChild(btn);
-  });
-
-  function showImages(categoryASOIAF) {
-    gallery.innerHTML = '';
-    categorized[categoryASOIAF].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
-    });
-  }
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
-}
-    function appelimgASOIAF() {
-  return [
-   
-   // Cavalerie
-  'cavaleries/cavaleries_2.jpg', 
-
-  // Infanterie
-  'infanteries/infanteries_4.jpg', 
-
-  // Personnages
-  'personnages/personnages_10.jpg'
-];
-}
-    function initializeGalerieMiddle() {
-  const imageFilenamesMiddle = appelimgMiddle();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filtersMiddle = document.getElementById('filtersMiddle');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
-
- // Catégorisation automatique par dossier
-imageFilenamesMiddle.forEach(filename => {
-  const categoryMiddle = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryMiddle]) categorized[categoryMiddle] = [];
-  categorized[categoryMiddle].push(basePath + filename);
-});
-
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesMiddle.map(f => basePath + f);
-
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersMiddle button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
-    });
-    filtersMiddle.appendChild(btn);
-  });
-
-  function showImages(categoryMiddle) {
-    gallery.innerHTML = '';
-    categorized[categoryMiddle].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
-    });
-  }
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
-}
-    function appelimgMiddle() {
-  return [
-   
- // Monstres
-  'monstres/monstres_1.jpg',
-     // Armées
-'armées/armées_3.jpg',
-
-  // Cavalerie
-  'cavaleries/cavaleries_1.jpg', 'cavaleries/cavaleries_11.jpg', 
-  // Infanterie
-  'infanteries/infanteries_40.jpg', 'infanteries/infanteries_26.jpg', 'infanteries/infanteries_27.jpg'
-  
-];
-}
-    
-    function initializeGalerieSWL() {
-  const imageFilenamesSWL = appelimgSWL();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filtersSWL = document.getElementById('filtersSWL');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
-
- // Catégorisation automatique par dossier
-imageFilenamesSWL.forEach(filename => {
-  const categorySWL = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categorySWL]) categorized[categorySWL] = [];
-  categorized[categorySWL].push(basePath + filename);
-});
-
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesSWL.map(f => basePath + f);
-
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersSWL button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
-    });
-    filtersSWL.appendChild(btn);
-  });
-
-  function showImages(categorySWL) {
-    gallery.innerHTML = '';
-    categorized[categorySWL].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
-    });
-  }
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
-}
-    function appelimgSWL() {
-  return [
-   
- // vehicules
-  'vehicules/vehicules_1.jpg', 'vehicules/vehicules_2.jpg'
-];
-}
-    function initializeGalerieSWS() {
-  const imageFilenamesSWS = appelimgSWS();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filtersSWS = document.getElementById('filtersSWS');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
-
- // Catégorisation automatique par dossier
-imageFilenamesSWS.forEach(filename => {
-  const categorySWS = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categorySWS]) categorized[categorySWS] = [];
-  categorized[categorySWS].push(basePath + filename);
-});
-
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesSWS.map(f => basePath + f);
-
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersSWS button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
-    });
-    filtersSWS.appendChild(btn);
-  });
-
-  function showImages(categorySWS) {
-    gallery.innerHTML = '';
-    categorized[categorySWS].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
-    });
-  }
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
-}
-    function appelimgSWS() {
-  return [
-   
- 
-
-      // Bandes
- 'bandes/bandes_8.jpg',
-     'bandes/bandes_9.jpg', 'bandes/bandes_10.jpg', 'bandes/bandes_11.jpg', 'bandes/bandes_12.jpg', 'bandes/bandes_14.jpg', 'bandes/bandes_15.jpg',
- 
-     // Décors
-  'décors/décors_2.jpg', 'décors/décors_12.jpg', 'décors/décors_13.jpg'
-];
-}
-    function initializeGalerie40k() {
-  const imageFilenames40k = appelimg40k();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filters40k = document.getElementById('filters40k');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
-
- // Catégorisation automatique par dossier
-imageFilenames40k.forEach(filename => {
-  const category40k = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[category40k]) categorized[category40k] = [];
-  categorized[category40k].push(basePath + filename);
-});
-
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenames40k.map(f => basePath + f);
-
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filters40k button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
-    });
-    filters40k.appendChild(btn);
-  });
-
-  function showImages(category40k) {
-    gallery.innerHTML = '';
-    categorized[category40k].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
-    });
-  }
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
-}
-    function appelimg40k() {
-  return [
-   
-   // Monstres
-  'monstres/monstres_5.jpg', 'monstres/monstres_10.jpg', 'monstres/monstres_6.jpg', 'monstres/monstres_12.jpg', 'monstres/monstres_19.jpg',
-   'monstres/monstres_17.jpg',
-
-     // Bandes
-  'bandes/bandes_5.jpg',
-     // Armées
-   'armées/armées_2.jpg', 'armées/armées_6.jpg', 'armées/armées_4.jpg', 
-  // Titans
-   'titans/titans_1.jpg', 'titans/titans_2.jpg', 'titans/titans_3.jpg', 'titans/titans_4.jpg',
-      'titans/titans_5.jpg', 'titans/titans_6.jpg', 'titans/titans_7.jpg',   'titans/titans_8.jpg', 'titans/titans_9.jpg', 'titans/titans_12.jpg', 
-     // Décors
-  'décors/décors_4.jpg','décors/décors_9.jpg','décors/décors_14.jpg','décors/décors_15.jpg',
-  // Cavalerie
-  'cavaleries/cavaleries_13.jpg', 'cavaleries/cavaleries_15.jpg', 
-  // Véhicules
-  'vehicules/vehicules_7.jpg', 'vehicules/vehicules_5.jpg', 'vehicules/vehicules_3.jpg', 'vehicules/vehicules_6.jpg', 'vehicules/vehicules_9.jpg',
-  'vehicules/vehicules_10.jpg', 'vehicules/vehicules_11.jpg', 'vehicules/vehicules_12.jpg', 'vehicules/vehicules_13.jpg', 'vehicules/vehicules_14.jpg',
-  'vehicules/vehicules_15.jpg','vehicules/vehicules_16.jpg','vehicules/vehicules_17.jpg',
-'vehicules/vehicules_18.jpg', 'vehicules/vehicules_19.jpg', 'vehicules/vehicules_20.jpg', 'vehicules/vehicules_25.jpg',
-
-
-  // Infanterie
-  'infanteries/infanteries_1.jpg', 'infanteries/infanteries_3.jpg', 
-  'infanteries/infanteries_8.jpg',
-  'infanteries/infanteries_11.jpg', 'infanteries/infanteries_13.jpg', 
- 'infanteries/infanteries_18.jpg', 'infanteries/infanteries_19.jpg', 'infanteries/infanteries_20.jpg',
-  'infanteries/infanteries_21.jpg', 'infanteries/infanteries_22.jpg', 'infanteries/infanteries_23.jpg',  'infanteries/infanteries_24.jpg', 
-   'infanteries/infanteries_25.jpg', 'infanteries/infanteries_26.jpg', 'infanteries/infanteries_28.jpg',
- 'infanteries/infanteries_30.jpg', 
-  'infanteries/infanteries_33.jpg',
- 'infanteries/infanteries_44.jpg',  'infanteries/infanteries_45.jpg', 'infanteries/infanteries_41.jpg',
- 'infanteries/infanteries_49.jpg', 
-  // Personnages
-  'personnages/personnages_4.jpg', 'personnages/personnages_2.jpg', 'personnages/personnages_7.jpg', 'personnages/personnages_14.jpg',
-  'personnages/personnages_12.jpg', 'personnages/personnages_19.jpg', 'personnages/personnages_24.jpg', 'personnages/personnages_20.jpg', 'personnages/personnages_25.jpg',
-  'personnages/personnages_29.jpg', 'personnages/personnages_34.jpg', 'personnages/personnages_33.jpg', 'personnages/personnages_31.jpg', 
-  'personnages/personnages_30.jpg', 'personnages/personnages_35.jpg', 'personnages/personnages_37.jpg', 'personnages/personnages_38.jpg'
-];
-}
-    function initializeGalerieToW() {
-  const imageFilenamesToW = appelimgToW();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filtersToW = document.getElementById('filtersToW');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
-
- // Catégorisation automatique par dossier
-imageFilenamesToW.forEach(filename => {
-  const categoryToW = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryToW]) categorized[categoryToW] = [];
-  categorized[categoryToW].push(basePath + filename);
-});
-
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesToW.map(f => basePath + f);
-
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersToW button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
-    });
-    filtersToW.appendChild(btn);
-  });
-
-  function showImages(categoryToW) {
-    gallery.innerHTML = '';
-    categorized[categoryToW].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
-    });
-  }
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
-}
-    function appelimgToW() {
-  return [
-   
-   // Monstres
-  'monstres/monstres_3.jpg', 'monstres/monstres_14.jpg', 'monstres/monstres_11.jpg', 
- 
-  // Titans
-   'titans/titans_10.jpg',   'titans/titans_11.jpg', 
-     // Décors
-  'décors/décors_14.jpg', 'décors/décors_15.jpg', 'décors/décors_9.jpg',
-
-
-
-  // Véhicules
-  'vehicules/vehicules_4.jpg', 'vehicules/vehicules_8.jpg', 
-
-  // Infanterie
-  'infanteries/infanteries_9.jpg', 'infanteries/infanteries_6.jpg', 'infanteries/infanteries_27.jpg', 'infanteries/infanteries_35.jpg', 'infanteries/infanteries_46.jpg',
-  'infanteries/infanteries_47.jpg', 'infanteries/infanteries_2.jpg', 
-
-  // Personnages
-  'personnages/personnages_6.jpg', 'personnages/personnages_23.jpg'
-];
-}
-
-        function initializeGalerieStudio() {
-  const imageFilenamesStudio = appelimgStudio();
-  const basePath = 'img/';
-  const gallery = document.getElementById('gallery');
-  const filtersStudio = document.getElementById('filtersStudio');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const categorized = {};
-
- // Catégorisation automatique par dossier
-imageFilenamesStudio.forEach(filename => {
-  const categoryStudio = filename.split('/')[0]; // ← récupère le dossier avant le "/"
-  if (!categorized[categoryStudio]) categorized[categoryStudio] = [];
-  categorized[categoryStudio].push(basePath + filename);
-});
-
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenamesStudio.map(f => basePath + f);
-
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filtersStudio button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
-    });
-    filtersStudio.appendChild(btn);
-  });
-
-  function showImages(categoryStudio) {
-    gallery.innerHTML = '';
-    categorized[categoryStudio].forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-       img.alt = "Miniature Studio Peinture Figurine";
-      img.classList.add('gallery-img');
-      img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = src;
-      });
-      gallery.appendChild(img);
-    });
-  }
-
-  lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
-  });
-
-  // Affichage initial
-  showImages('Tous');
-}
-    function appelimgStudio() {
-  return [
-
-
-   
-  // Expo
-  'jeuxvideo/expo_1.jpg', 'expo/expo_2.jpg', 'expo/expo_3.jpg', 'jeuxvideo/expo_4.jpg', 'jeuxvideo/expo_5.jpg',
-  'expo/expo_6.jpg', 'manga/expo_7.jpg', 'jeuxvideo/expo_8.jpg', 'concours/expo_9.jpg',  'manga/expo_10.jpg', 'expo/expo_11.jpg', 'concours/expo_12.jpg', 'concours/expo_13.jpg', 'concours/expo_14.jpg',
-  'expo/expo_15.jpg', 'jeuxvideo/expo_16.jpg', 'manga/expo_17.jpg', 'manga/expo_18.jpg',  'jeuxvideo/expo_19.jpg', 'jeuxvideo/expo_20.jpg', 'concours/expo_21.jpg'
-];
+     // Expo
+  'expo/expo1.png',   'expo/expo2.png',  'expo/expo3.png',  'expo/expo4.png',  'expo/expo5.png',  'expo/expo6.png',  'expo/expo7.png',  'expo/expo8.png',  'expo/expo9.png',  'expo/expo10.png'
+ ];
 }
