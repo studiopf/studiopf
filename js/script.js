@@ -4043,21 +4043,40 @@ imageFilenames.forEach(filename => {
   categorized[category].push(basePath + filename);
 });
 
-  // Ajout de la catégorie "Tous"
-  categorized['Tous'] = imageFilenames.map(f => basePath + f);
+// Ajout de la catégorie "Tous"
+categorized['Tous'] = imageFilenames.map(f => basePath + f);
 
-  // Création des boutons de filtre
-  Object.keys(categorized).forEach(cat => {
-    const btn = document.createElement('button');
-    btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    if (cat === 'Tous') btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#filters button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      showImages(cat);
+// Création des boutons de filtre
+Object.keys(categorized).forEach(cat => {
+  const btn = document.createElement('button');
+  
+  // Texte affiché (première lettre en majuscule)
+  btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+  
+  // Ajout de la classe correspondant au nom de la catégorie
+  // "Tous" → class="tous"
+  // "nature" → class="nature"
+  btn.classList.add(cat.toLowerCase());
+  
+  // Classe "active" pour le bouton "Tous" au démarrage
+  if (cat === 'Tous') {
+    btn.classList.add('active');
+  }
+  
+  btn.addEventListener('click', () => {
+    // Retire "active" de tous les boutons
+    document.querySelectorAll('#filters button').forEach(b => {
+      b.classList.remove('active');
     });
-    filters.appendChild(btn);
+    
+    // Ajoute "active" au bouton cliqué
+    btn.classList.add('active');
+    
+    showImages(cat);
   });
+  
+  filters.appendChild(btn);
+});
 
   function showImages(category) {
     gallery.innerHTML = '';
