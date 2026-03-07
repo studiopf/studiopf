@@ -138,15 +138,15 @@
 
  <div class="carousel-container">
         <div class="carousel" id="carousel">
-            <img src="https://studiopf.fr/carroussel/carrousel1.jpg" alt="Studio PF">
-            <img src="https://studiopf.fr/carroussel/carrousel2.jpg" alt="Studio PF">
-                        <img src="https://studiopf.fr/carroussel/carrousel3.jpg" alt="Studio PF">
-                        <img src="https://studiopf.fr/carroussel/carrousel4.jpg" alt="Studio PF">
-                        <img src="https://studiopf.fr/carroussel/carrousel5.jpg" alt="Studio PF">
-                        <img src="https://studiopf.fr/carroussel/carrousel6.jpg" alt="Studio PF">
-                        <img src="https://studiopf.fr/carroussel/carrousel7.jpg" alt="Studio PF">
-                        <img src="https://studiopf.fr/carroussel/carrousel8.jpg" alt="Studio PF">
-                        <img src="https://studiopf.fr/carroussel/carrousel9.jpg" alt="Studio PF">
+            <img src="https://studiopf.fr/carroussel/carrousel1.jpg" alt="Studio PF"  loading="eager">
+            <img src="https://studiopf.fr/carroussel/carrousel2.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel3.jpg" alt="Studio PF"  loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel4.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel5.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel6.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel7.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel8.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel9.jpg" alt="Studio PF" loading="eager">
         </div>
 
     </div>
@@ -413,152 +413,14 @@ const images = document.querySelectorAll("#carousel img");
 let index = 0;
 
 function nextSlide() {
-    index++;
-
-    if (index >= images.length) {
-        index = 0;
-    }
-
-    carousel.style.transform = `translateX(-${index * 100}%)`;
+    index = (index + 1) % images.length;
+    carousel.style.transform = `translate3d(-${index * 100}%,0,0)`;
 }
 
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 5000);
 </script>
 
     </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
