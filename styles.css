@@ -533,7 +533,8 @@ gap: 5px;
 
     .partenaires-container,
     .card-container2 {
-        grid-template-columns: repeat(2, 1fr);
+            display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 8px;
     }
     .cardpartenaire {
