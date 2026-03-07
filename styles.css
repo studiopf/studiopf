@@ -384,8 +384,8 @@ animation: info 2s linear infinite alternate;
             opacity: 0.8;
         }
 .carousel-container {
-            max-width: 800px;
-            height: 250px; /* Limite la hauteur à 250px */
+            max-width: 400px;
+            height: 150px; /* Limite la hauteur à 250px */
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -646,8 +646,8 @@ gap: 5px;
         font-size: 12px;
     }
    .carousel-container {
-            max-width: 300px;
-            height: 250px; /* Limite la hauteur à 250px */
+            max-width: 100px;
+            height: 150px; /* Limite la hauteur à 250px */
             margin: 0 auto;
             position: relative;
             overflow: hidden;
