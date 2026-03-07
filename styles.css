@@ -372,7 +372,7 @@ animation: info 2s linear infinite alternate;
             background-position: center;
             border: none;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 0px;
             color: white;
             text-shadow: 1px 1px 2px black;
         }
@@ -570,7 +570,7 @@ gap: 5px;
     .menugallery button {
          width: 50px;
         height: 50px;
-        font-size: 9px;
+        font-size: 0px;
     }
 
 
@@ -615,5 +615,5 @@ gap: 5px;
     .logo { width: 140px; margin: 12px auto 16px; }
     .cardpartenaire { height: 42px; }
     .language-selector img { width: 18px; }
-    .menugallery button { height: 30px; font-size: 12px; }
+    .menugallery button { height: 30px; font-size: 0px; }
 }
