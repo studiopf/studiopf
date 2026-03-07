@@ -490,3 +490,83 @@ gap: 5px;
     transform: translateY(-6px) scale(1.02);
     border-color: #f4c876;
 }
+
+/* ==========================================================================
+   MEDIA QUERIES – base résolution (mobile first)
+   ========================================================================== */
+@media (max-width: 640px) {
+    body {
+        padding: 10px 8px 90px;
+    }
+
+    .logo {
+        width: 160px;
+        margin: 15px auto 20px;
+    }
+
+    h1 { font-size: clamp(1.7rem, 8vw, 2.2rem); }
+    h2 { font-size: clamp(1.3rem, 6vw, 1.7rem); }
+
+    nav ul {
+        gap: 4px 8px;
+    }
+    nav ul li a {
+        padding: 5px 9px;
+        font-size: 0.9rem;
+    }
+
+    .partenaires-container,
+    .card-container2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .cardpartenaire {
+        height: 45px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+
+    .language-selector img {
+        width: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 8px;
+    }
+
+    .menugallery {
+        grid-template-columns: 1fr; /* 1 colonne sur petits écrans */
+        gap: 10px;
+        padding: 10px;
+    }
+    .menugallery button {
+        height: 90px;
+        font-size: 13px;
+    }
+
+    #scrollToTopBtn {
+        bottom: 60px;
+        right: 12px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    #scrollTotal {
+        bottom: 110px;
+        right: 12px;
+        padding: 14px;
+        font-size: 12px;
+    }
+}
+
+/* Pour très petits écrans (320–400px) */
+@media (max-width: 400px) {
+    .logo { width: 140px; margin: 12px auto 16px; }
+    .cardpartenaire { height: 42px; }
+    .language-selector img { width: 18px; }
+    .menugallery button { height: 80px; font-size: 12px; }
+}
