@@ -412,14 +412,12 @@ animation: info 2s linear infinite alternate;
         background-image: url('img/toutes.png');
    }
             
-        }
     .expo{
                 background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
-      
-        background-image: url('img/expo.png');
+    background-image: url('/img/expo.png')
    }
             
               
