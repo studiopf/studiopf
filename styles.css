@@ -640,12 +640,12 @@ gap: 5px;
 
         .carousel {
             display: flex;
-            width: 70%;
+            width: 100%;
             transition: transform 0.5s ease-in-out;
         }
 
         .carousel img {
-            width: 70%;
+            width: 100%;
            
             object-fit: contain; /* Affiche l'image à sa taille maximale dans les limites */
             object-position: center 80%; /* Décale l'affichage d'un tiers vers le haut */
