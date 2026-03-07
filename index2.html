@@ -407,8 +407,23 @@ function scrollTotal(offset=100) {
 }
 
 
+const carousel = document.getElementById("carousel");
+const images = document.querySelectorAll("#carousel img");
 
-  </script>
+let index = 0;
+
+function nextSlide() {
+    index++;
+
+    if (index >= images.length) {
+        index = 0;
+    }
+
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(nextSlide, 4000);
+</script>
 
     </footer>
 
