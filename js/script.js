@@ -30,14 +30,7 @@ function changelanguegalerie() {
 <p class="galerie-description">
   ✨ Step into a world where every miniature becomes a work of art.
   <br>
-  Through this gallery, I invite you to discover a realm of details 🖌️, textures 🧵, and emotions ❤️, crafted with brush and passion.
-</p>
-<p class="galerie-description">
-  ⚔️ Whether it’s epic infantry, fantastical creatures 🐉, or titanic machines 🛡️, each piece tells a unique story 📖, captured in the frozen moment of painting.
-</p>
-<p class="galerie-description">
-  👁️‍🗨️ Take your time to explore… and let yourself be inspired.
-</p>
+
 
 <div class="menugallery">   
    <div>
@@ -45,7 +38,7 @@ function changelanguegalerie() {
    </div>
   
    <div>
-      <button  class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
+      <button class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
     </div>
   
    <div>
@@ -71,14 +64,6 @@ function changelanguegalerie() {
 <p class="galerie-description">
   ✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.
   <br>
-  A través de esta galería, te invito a descubrir un universo de detalles 🖌️, texturas 🧵 y emociones ❤️, creado con pincel y pasión.
-</p>
-<p class="galerie-description">
-  ⚔️ Ya sean infanterías épicas, criaturas fantásticas 🐉 o máquinas titánicas 🛡️, cada pieza cuenta una historia única 📖, capturada en el instante detenido de la pintura.
-</p>
-<p class="galerie-description">
-  👁️‍🗨️ Tómate tu tiempo para explorar… y déjate inspirar.
-</p>
 
 <div class="menugallery">   
    <div>
@@ -86,7 +71,7 @@ function changelanguegalerie() {
    </div>
   
    <div>
-      <button  class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
+      <button class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
     </div>
   
    <div>
@@ -112,14 +97,7 @@ function changelanguegalerie() {
   <p class="galerie-description">
     ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.
     <br>
-    À travers cette galerie, je vous invite à découvrir un monde de détails 🖌️, de textures 🧵, et d’émotions ❤️, façonné au pinceau et à la passion.
-  </p>
-  <p class="galerie-description">
-    ⚔️ Qu’il s’agisse d’infanteries épiques, de créatures fantastiques 🐉 ou de machines titanesques 🛡️, chaque pièce raconte une histoire unique 📖, capturée dans l’instant figé de la peinture.
-  </p>
-  <p class="galerie-description">
-    👁️‍🗨️ Prenez le temps d’explorer… et laissez-vous inspirer.
-  </p>
+
     
  <div class="menugallery">   
    <div>
@@ -127,7 +105,7 @@ function changelanguegalerie() {
    </div>
   
    <div>
-      <button  class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Peinture Expo</button>
+      <button class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Peinture Expo</button>
     </div>
   
    <div>
