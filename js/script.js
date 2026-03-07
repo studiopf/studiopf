@@ -34,28 +34,35 @@ function changelanguegalerie() {
 
 <div class="menugallery">   
    <div>
-         <button class="moi" onclick="loadPage('galeriegeneral.html');  scrollToTop(); return false;">All Pictures</button>
+         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Toutes les photos</button>
    </div>
   
    <div>
-      <button class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
+      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Peinture Expo</button>
     </div>
   
    <div>
-      <button  class="concours" onclick="loadPage('galerieconcours.html');  scrollToTop(); return false;">Concours</button>
+      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Peinture Concours</button>
     </div>
 
    <div>
-      <button  class="niv3" onclick="loadPage('galerieniv3.html');  scrollToTop(); return false;">Level 3</button>
+      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Niveau 3</button>
     </div>
   
     <div>
-      <button  class="niv4" onclick="loadPage('galerieniv4.html');  scrollToTop(); return false;">Level 4</button>
+      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Niveau 4</button>
     </div>
-
 
     </div>
 </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="https://studiopf.fr/img/logo.png" alt="Miniature Studio Peinture Figurine">
+  </div>
+</div>
+
 `;
                }
         if (langueselect === "spanish") {
@@ -67,28 +74,35 @@ function changelanguegalerie() {
 
 <div class="menugallery">   
    <div>
-         <button class="moi" onclick="loadPage('galeriegeneral.html');  scrollToTop(); return false;">Todas las fotos</button>
+         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Toutes les photos</button>
    </div>
   
    <div>
-      <button class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Expo</button>
+      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Peinture Expo</button>
     </div>
   
    <div>
-      <button  class="concours" onclick="loadPage('galerieconcours.html');  scrollToTop(); return false;">Concours</button>
+      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Peinture Concours</button>
     </div>
 
    <div>
-      <button  class="niv3" onclick="loadPage('galerieniv3.html');  scrollToTop(); return false;">Niveau 3</button>
+      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Niveau 3</button>
     </div>
   
     <div>
-      <button  class="niv4" onclick="loadPage('galerieniv4.html');  scrollToTop(); return false;">Niveau 4</button>
+      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Niveau 4</button>
     </div>
-
 
     </div>
 </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="https://studiopf.fr/img/logo.png" alt="Miniature Studio Peinture Figurine">
+  </div>
+</div>
+
 `;
                }
         if (langueselect === "french") {
@@ -101,28 +115,35 @@ function changelanguegalerie() {
     
  <div class="menugallery">   
    <div>
-         <button class="moi" onclick="loadPage('galeriegeneral.html');  scrollToTop(); return false;">Toutes les photos</button>
+         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Toutes les photos</button>
    </div>
   
    <div>
-      <button class="expo" onclick="loadPage('galerieexpo.html');  scrollToTop(); return false;">Peinture Expo</button>
+      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Peinture Expo</button>
     </div>
   
    <div>
-      <button  class="concours" onclick="loadPage('galerieconcours.html');  scrollToTop(); return false;">Peinture Concours</button>
+      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Peinture Concours</button>
     </div>
 
    <div>
-      <button  class="niv3" onclick="loadPage('galerieniv3.html');  scrollToTop(); return false;">Niveau 3</button>
+      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Niveau 3</button>
     </div>
   
     <div>
-      <button  class="niv4" onclick="loadPage('galerieniv4.html');  scrollToTop(); return false;">Niveau 4</button>
+      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Niveau 4</button>
     </div>
-
 
     </div>
 </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="https://studiopf.fr/img/logo.png" alt="Miniature Studio Peinture Figurine">
+  </div>
+</div>
+
 `;
                }
 }
@@ -3374,54 +3395,16 @@ function initializePageSpecificScripts(page) {
         console.error('initializeFormationForm non défini');
       }
       break;
-              case 'galerie.html':
-      if (typeof changelanguegalerie === 'function') {
-        console.log('Appel de changelanguegalerie');
-    changelanguegalerie();
-      } else {
-        console.error('initializeGalerie non défini');
-      }
-      break;
-    case 'galeriegeneral.html':
+          
+    case 'galerie.html':
       if (typeof initializeGalerie === 'function') {
         console.log('Appel de initializeGalerie');
         initializeGalerie();
+            changelanguegalerie();
       } else {
         console.error('initializeGalerie non défini');
       }
       break;   
-    case 'galerieniv3.html':
-      if (typeof initializegalerieniv3 === 'function') {
-        console.log('Appel de initializegalerieniv3');
-        initializegalerieniv3();
-      } else {
-        console.error('initializegalerieniv3 non défini');
-      }
-      break;
-           case 'galerieniv4.html':
-      if (typeof initializegalerieniv3 === 'function') {
-        console.log('Appel de initializegalerieniv4');
-        initializegalerieniv4();
-      } else {
-        console.error('initializegalerieniv3 non défini');
-      }
-      break;
-    case 'galerieexpo.html':
-      if (typeof initializegalerieexpo === 'function') {
-        console.log('Appel de initializegalerieexpo');
-        initializegalerieexpo();
-      } else {
-        console.error('initializeGalerieStudio non défini');
-      }
-      break;
-          case 'galerieconcours.html':
-      if (typeof initializegalerieconcours === 'function') {
-        console.log('Appel de initializegalerieconcours');
-        initializegalerieconcours();
-      } else {
-        console.error('initializeGalerieStudio non défini');
-      }
-      break;
     default:
       console.log(`Aucun script spécifique pour ${page}`);
       break;
