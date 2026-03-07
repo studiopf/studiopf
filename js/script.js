@@ -3410,7 +3410,6 @@ function initializePageSpecificScripts(page) {
       if (typeof initializeGalerie === 'function') {
         console.log('Appel de initializeGalerie');
         initializeGalerie();
-            changelanguegalerie();
       } else {
         console.error('initializeGalerie non défini');
       }
