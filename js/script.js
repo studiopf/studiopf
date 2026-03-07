@@ -34,23 +34,23 @@ function changelanguegalerie() {
 
 <div class="menugallery">   
    <div>
-         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Toutes les photos</button>
+         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">All pictures</button>
    </div>
   
    <div>
-      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Peinture Expo</button>
+      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Expo</button>
     </div>
   
    <div>
-      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Peinture Concours</button>
+      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Concours</button>
     </div>
 
    <div>
-      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Niveau 3</button>
+      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Level 3</button>
     </div>
   
     <div>
-      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Niveau 4</button>
+      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Level 4</button>
     </div>
 
     </div>
@@ -74,15 +74,15 @@ function changelanguegalerie() {
 
 <div class="menugallery">   
    <div>
-         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Toutes les photos</button>
+         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Todas las fotos</button>
    </div>
   
    <div>
-      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Peinture Expo</button>
+      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Expo</button>
     </div>
   
    <div>
-      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Peinture Concours</button>
+      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Concours</button>
     </div>
 
    <div>
