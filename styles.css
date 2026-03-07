@@ -401,102 +401,51 @@ animation: info 2s linear infinite alternate;
             flex: 0 0 100%; /* Une seule image visible à la fois */
         }
 
-              .asoiaf{
-              background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
+              
       
-        background-image: url('img/logoasoiaf.png');
-        }
-                     .swlegion{
-                      background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logolegion.png');
-        }
-                .swshatterpoint{
-                 background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logoswm.png');
-        }
-
  .moi{
                 background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/moi.png');
+        background-image: url('img/logo.png');
    }
-                .bb{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logobb.png');
+            
         }
-    .studio{
+    .expo{
                background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/logo.png');
+        background-image: url('img/expo.png');
         }
-                .marvel{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
+              
+             
+                .concours{
+               background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/logomarvel.png');
+        background-image: url('img/concours.png');
         }
-                .middle{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
+                .niv3{
+               background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/logomiddle.png');
+        background-image: url('img/niv3.png');
         }
-                .tow{
-                background-size: contain; /* L'image s'adapte pour être entièrement visible */
+                .niv4{
+               background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/logotow.png');
-        }
-                     .w40k{
-                     background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logo40k.png');
-        }
-                     .aos{
-                      background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logoaos.png');
-        }
-                     .hh{
-                      background-size: contain; /* L'image s'adapte pour être entièrement visible */
-  background-repeat: no-repeat; /* Évite la répétition */
-  background-position: center; /* Centre l'image dans le div */
- width: 250px;
-      
-        background-image: url('img/logohh.png');
+        background-image: url('img/niv4.png');
         }
 .section {
 display: grid; 
