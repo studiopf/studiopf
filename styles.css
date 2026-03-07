@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .logo {
-  width: 250px;
+  width: 280px;
   height: auto;
   margin-bottom: 35px;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
@@ -516,7 +516,7 @@ gap: 5px;
     }
 
     .logo {
-        width: 160px;
+        width: 180px;
         margin: 15px auto 20px;
     }
 
