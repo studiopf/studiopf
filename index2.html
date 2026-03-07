@@ -407,17 +407,6 @@ function scrollTotal(offset=100) {
 }
 
 
-const carousel = document.getElementById("carousel");
-const images = document.querySelectorAll("#carousel img");
-
-let index = 0;
-
-function nextSlide() {
-    index = (index + 1) % images.length;
-    carousel.style.transform = `translate3d(-${index * 100}%,0,0)`;
-}
-
-setInterval(nextSlide, 5000);
 </script>
 
     </footer>
