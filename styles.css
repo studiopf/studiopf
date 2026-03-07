@@ -437,7 +437,7 @@ animation: info 2s linear infinite alternate;
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/niv3.png');
+        background-image: url('img/nivtrois.png');
         }
                 .niv4{
                background-size: contain; /* L'image s'adapte pour être entièrement visible */
@@ -445,7 +445,7 @@ animation: info 2s linear infinite alternate;
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/niv4.png');
+        background-image: url('img/nivquatre.png');
         }
 .section {
 display: grid; 
