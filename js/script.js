@@ -292,11 +292,9 @@ function changelanguemenu() {
         if (langueselect === "french") {
 
                menucontenu.innerHTML = `  <ul class="menu">
-                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Peinture TableTop Supérieur 🎨</a></li>
-                <li><a href="figconcours.html" onclick="loadPage('figconcours.html'); changelanguefigconcours(); return false;">Figurines de concours/exposition 🏆</a></li>
-                <li><a href="piecepopculture.html" onclick="loadPage('piecepopculture.html');  changelanguepiecepop(); return false;">Figurine Geek/Pop Culture 🔥</a></li>
+       <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Commission Peinture 🎨</a></li>
                 <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
-                <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Simulateur de devis 💰</a></li>
+                <li><a href=" _devis.html" onclick="loadPage(' _devis.html'); return false;">Demande de devis 💰</a></li>
                 <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galerie 🖼️</a></li>
             </ul>
 `
