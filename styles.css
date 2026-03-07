@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .logo {
-  width: 280px;
+  width: 350px;
   height: auto;
   margin-bottom: 35px;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
@@ -516,7 +516,7 @@ gap: 5px;
     }
 
     .logo {
-        width: 180px;
+        width: 250px;
         margin: 15px auto 20px;
     }
 
@@ -534,7 +534,7 @@ gap: 5px;
     .partenaires-container,
     .card-container2 {
             display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
         gap: 8px;
     }
     .cardpartenaire {
@@ -552,7 +552,7 @@ gap: 5px;
     }
 
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: 8px;
     }
 
@@ -562,7 +562,7 @@ gap: 5px;
         padding: 10px;
     }
     .menugallery button {
-        height: 90px;
+        height: 70px;
         font-size: 13px;
     }
 
