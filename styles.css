@@ -640,7 +640,7 @@ gap: 5px;
 
         .carousel {
             display: flex;
-            width: 700%;
+            width: 70%;
             transition: transform 0.5s ease-in-out;
         }
 
