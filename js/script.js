@@ -3961,14 +3961,14 @@ function appelimg() {
         'niv3/nivtrois26.png',
 
         // Niv4
-        'niv4/nivtquatre1.png',
-        'niv4/nivtquatre2.png',
-        'niv4/nivtquatre3.png',
-        'niv4/nivtquatre4.png',
-        'niv4/nivtquatre5.png',
-        'niv4/nivtquatre6.png',
-        'niv4/nivtquatre7.png',
-        'niv4/nivtquatre8.png',
+        'niv4/nivquatre1.png',
+        'niv4/nivquatre2.png',
+        'niv4/nivquatre3.png',
+        'niv4/nivquatre4.png',
+        'niv4/nivquatre5.png',
+        'niv4/nivquatre6.png',
+        'niv4/nivquatre7.png',
+        'niv4/nivquatre8.png',
 
         // Expo
         'expo/expo1.png',
