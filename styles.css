@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    RESET & BASE – inchangé
    ========================================================================== */
@@ -79,12 +80,6 @@ a:hover,
     max-width: 1100px;
     padding: 0 10px;
 }
-.artist-photo {
-  
-      width: 150px;
-      object-fit: cover;
- 
-      }
 
 .cardpartenaire {
     height: 62px;
@@ -384,8 +379,8 @@ animation: info 2s linear infinite alternate;
             opacity: 0.8;
         }
 .carousel-container {
-            max-width: 400px;
-            height: 150px; /* Limite la hauteur à 250px */
+            max-width: 800px;
+            height: 250px; /* Limite la hauteur à 250px */
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -572,12 +567,6 @@ gap: 5px;
     body {
         padding: 10px 8px 90px;
     }
-.artist-photo {
-  
-      width: 70px;
-      object-fit: cover;
- 
-      }
 
     .logo {
         width: 250px;
@@ -646,8 +635,8 @@ gap: 5px;
         font-size: 12px;
     }
    .carousel-container {
-            max-width: 100px;
-            height: 150px; /* Limite la hauteur à 250px */
+            max-width: 300px;
+            height: 250px; /* Limite la hauteur à 250px */
             margin: 0 auto;
             position: relative;
             overflow: hidden;
