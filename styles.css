@@ -403,7 +403,7 @@ animation: info 2s linear infinite alternate;
 
               
       
- .moi{
+ .Tous{
                 background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
@@ -413,7 +413,7 @@ animation: info 2s linear infinite alternate;
    }
             
         }
-    .expo{
+    .Expo{
                background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
@@ -423,7 +423,7 @@ animation: info 2s linear infinite alternate;
         }
               
              
-                .concours{
+                .Concours{
                background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
@@ -431,7 +431,7 @@ animation: info 2s linear infinite alternate;
       
         background-image: url('img/concours.png');
         }
-                .niv3{
+                .Niv3{
                background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
@@ -439,7 +439,7 @@ animation: info 2s linear infinite alternate;
       
         background-image: url('img/nivtrois.png');
         }
-                .niv4{
+                .Niv4{
                background-size: contain; /* L'image s'adapte pour être entièrement visible */
   background-repeat: no-repeat; /* Évite la répétition */
   background-position: center; /* Centre l'image dans le div */
