@@ -54,14 +54,18 @@ function changelanguegalerie() {
     </div>
 
     </div>
-</div>
 
-  <div class="gallery" id="gallery"></div>
 
-  <div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="https://studiopf.fr/img/logo.png" alt="Miniature Studio Peinture Figurine">
-  </div>
-</div>
+  <!-- Les filtres seront insérés ici automatiquement par JS -->
+    <div class="menugallery" id="filters"></div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
 
 `;
                }
@@ -94,14 +98,17 @@ function changelanguegalerie() {
     </div>
 
     </div>
-</div>
+    
+  <!-- Les filtres seront insérés ici automatiquement par JS -->
+    <div class="menugallery" id="filters"></div>
 
-  <div class="gallery" id="gallery"></div>
+    <div class="gallery" id="gallery"></div>
 
-  <div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="https://studiopf.fr/img/logo.png" alt="Miniature Studio Peinture Figurine">
-  </div>
-</div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
 
 `;
                }
@@ -123,7 +130,7 @@ function changelanguegalerie() {
     </div>
   
    <div>
-      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Peinture Concours</button>
+      <button  class="concours" onclick="showImages(concours);  scrollToTop(); return false;">Peinture Concours</button>
     </div>
 
    <div>
@@ -131,18 +138,21 @@ function changelanguegalerie() {
     </div>
   
     <div>
-      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Niveau 4</button>
+      <button  class="niv4" onclick="showImages(Niv4);  scrollToTop(); return false;">Niveau 4</button>
     </div>
 
     </div>
-</div>
+    
+  <!-- Les filtres seront insérés ici automatiquement par JS -->
+    <div class="menugallery" id="filters"></div>
 
-  <div class="gallery" id="gallery"></div>
+    <div class="gallery" id="gallery"></div>
 
-  <div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="https://studiopf.fr/img/logo.png" alt="Miniature Studio Peinture Figurine">
-  </div>
-</div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
 
 `;
                }
