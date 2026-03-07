@@ -409,7 +409,7 @@ animation: info 2s linear infinite alternate;
   background-position: center; /* Centre l'image dans le div */
  width: 250px;
       
-        background-image: url('img/logo.png');
+        background-image: url('img/toutes.png');
    }
             
         }
