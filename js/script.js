@@ -32,30 +32,6 @@ function changelanguegalerie() {
   <br>
 
 
-<div class="menugallery">   
-   <div>
-         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">All pictures</button>
-   </div>
-  
-   <div>
-      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Expo</button>
-    </div>
-  
-   <div>
-      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Concours</button>
-    </div>
-
-   <div>
-      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Level 3</button>
-    </div>
-  
-    <div>
-      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Level 4</button>
-    </div>
-
-    </div>
-
-
   <!-- Les filtres seront insérés ici automatiquement par JS -->
     <div class="menugallery" id="filters"></div>
 
@@ -76,28 +52,6 @@ function changelanguegalerie() {
   ✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.
   <br>
 
-<div class="menugallery">   
-   <div>
-         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Todas las fotos</button>
-   </div>
-  
-   <div>
-      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Expo</button>
-    </div>
-  
-   <div>
-      <button  class="concours" onclick="showImages('concours');  scrollToTop(); return false;">Concours</button>
-    </div>
-
-   <div>
-      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Niveau 3</button>
-    </div>
-  
-    <div>
-      <button  class="niv4" onclick="showImages('niv4');  scrollToTop(); return false;">Niveau 4</button>
-    </div>
-
-    </div>
     
   <!-- Les filtres seront insérés ici automatiquement par JS -->
     <div class="menugallery" id="filters"></div>
@@ -119,29 +73,6 @@ function changelanguegalerie() {
     ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.
     <br>
 
-    
- <div class="menugallery">   
-   <div>
-         <button class="tous" onclick="showImages('tous');  scrollToTop(); return false;">Toutes les photos</button>
-   </div>
-  
-   <div>
-      <button class="expo" onclick="showImages('expo');  scrollToTop(); return false;">Peinture Expo</button>
-    </div>
-  
-   <div>
-      <button  class="concours" onclick="showImages(concours);  scrollToTop(); return false;">Peinture Concours</button>
-    </div>
-
-   <div>
-      <button  class="niv3" onclick="showImages('niv3');  scrollToTop(); return false;">Niveau 3</button>
-    </div>
-  
-    <div>
-      <button  class="niv4" onclick="showImages(Niv4);  scrollToTop(); return false;">Niveau 4</button>
-    </div>
-
-    </div>
     
   <!-- Les filtres seront insérés ici automatiquement par JS -->
     <div class="menugallery" id="filters"></div>
