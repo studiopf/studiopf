@@ -364,7 +364,7 @@ animation: info 2s linear infinite alternate;
             padding: 20px;
         }
         .menugallery button {
-            width: 400px;
+            width: 300px;
             height: 150px;
             background-size: cover;
             background-position: center;
@@ -614,10 +614,13 @@ gap: 5px;
         padding: 10px;
     }
     .menugallery button {
+         width: 100px;
         height: 70px;
         font-size: 13px;
     }
 
+
+   
     #scrollToTopBtn {
         bottom: 60px;
         right: 12px;
