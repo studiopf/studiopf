@@ -22,13 +22,13 @@
 
  <h1>En pleine expédition artistique !</h1>
  <div class="social">
-        <div class="social-bloc">
+       <!--      <div class="social-bloc">
 
-        <div class="social-container">
+   <div class="social-container">
            <div class="social-align"> <a href="https://peinturefigurine.etsy.com" target="_blank" rel="noopener noreferrer" class="social-icon etsy" aria-label="etsy"><i class="fab fa-etsy"></i></a> </div>
            <div class="social-align"> <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon patreon" aria-label="patreon"><i class="fab fa-patreon"></i></a> </div>
-        </div>
-                 </div>
+        </div> 
+                 </div>-->
    
            <div class="social-bloc-vide">  </div>
        <div class="social-bloc">
@@ -48,7 +48,20 @@
          </div>
             </div>
         </div>
+ <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img src="https://studiopf.fr/carroussel/carrousel1.jpg" alt="Studio PF"  loading="eager">
+            <img src="https://studiopf.fr/carroussel/carrousel2.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel3.jpg" alt="Studio PF"  loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel4.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel5.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel6.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel7.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel8.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel9.jpg" alt="Studio PF" loading="eager">
+        </div>
 
+    </div>
     <div class="maintenance-box">
       <p>Je reviens très prochainement avec de nouvelles aventures peintes !</p>
       <p>Réouverture des disponibilités et prises de commande</p>
@@ -56,7 +69,31 @@
        <p class="highlight">→ contactez-moi pour vos futures projets ←</p>
 
     </div>
+ <script>
+             let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel img');
+const totalSlides = slides.length;
 
+function moveSlide(direction) {
+    currentSlide += direction;
+
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+
+    const carousel = document.getElementById('carousel');
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+// Auto-advance every 5 seconds
+setInterval(() => {
+    moveSlide(1);
+}, 3000);
+            
+
+  </script>
     <div class="footer">
       <strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
