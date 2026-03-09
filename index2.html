@@ -234,31 +234,37 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
         </div>
 </div>
 
-     <script>
-             let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel img');
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+let currentSlide = 0;
+const carousel = document.getElementById("carousel");
+const slides = document.querySelectorAll("#carousel img");
 const totalSlides = slides.length;
 
-function moveSlide(direction) {
+function moveSlide(direction){
+
     currentSlide += direction;
 
-    if (currentSlide >= totalSlides) {
+    if(currentSlide >= totalSlides){
         currentSlide = 0;
-    } else if (currentSlide < 0) {
+    }
+
+    if(currentSlide < 0){
         currentSlide = totalSlides - 1;
     }
 
-    const carousel = document.getElementById('carousel');
     carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
-// Auto-advance every 5 seconds
-setInterval(() => {
+setInterval(function(){
     moveSlide(1);
-}, 3000);
-            
+},3000);
 
-  </script>
+});
+
+</script>
 </div>
 
 
