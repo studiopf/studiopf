@@ -3,7 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+.carousel-container {
+    max-width: 800px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.carousel img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    flex: 0 0 100%;
+}
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   background: linear-gradient(135deg, #1a1108 0%, #3a2a1a 100%);
