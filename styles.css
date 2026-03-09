@@ -7,6 +7,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.menu{
+     margin-top: 0;
+    margin-bottom: 0;
+}
+.menu-mobile
+{
+   margin-top: 0;
+    margin-bottom: 0;  
+}
 .logo {
   width: 350px;
   height: auto;
@@ -226,6 +235,8 @@ animation: info 2s linear infinite alternate;
     flex-wrap: wrap;
     gap: 14px;
     padding: 1rem 0 0.8rem;
+     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .social-icon {
