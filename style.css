@@ -10,7 +10,18 @@
     overflow: hidden;
 }
 
+.menu{
+     margin-top: 0;
+    margin-bottom: 0;
+}
+.menu-mobile
+{
+   margin-top: 0;
+    margin-bottom: 0;  
+}
 .carousel {
+       margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     transition: transform 1s ease-in-out;
     will-change: transform;
@@ -38,6 +49,8 @@ body {
     radial-gradient(circle at 85% 20%, rgba(180,140,60,0.06) 0%, transparent 50%);
 }
 .social, .social-container {
+       margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -73,6 +86,8 @@ body {
   
 }
 .info {
+       margin-top: 0;
+    margin-bottom: 0;
  background: linear-gradient(to bottom, #8B0000, #FF6347 );
       padding: 0px;
      border: 0px;
