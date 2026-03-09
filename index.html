@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>STUDIO PF - En maintenance</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
       <link rel="icon" href="/img/favicon.png">
@@ -70,29 +70,37 @@
        <p class="highlight">→ contactez-moi pour vos futures projets ←</p>
 
     </div>
- <script>
-           document.addEventListener("DOMContentLoaded", () => {
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
 
 let currentSlide = 0;
 const carousel = document.getElementById("carousel");
 const slides = document.querySelectorAll("#carousel img");
 const totalSlides = slides.length;
 
-function moveSlide(direction) {
-  currentSlide += direction;
+function moveSlide(direction){
 
-  if (currentSlide >= totalSlides) currentSlide = 0;
-  if (currentSlide < 0) currentSlide = totalSlides - 1;
+    currentSlide += direction;
 
-  carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+    if(currentSlide >= totalSlides){
+        currentSlide = 0;
+    }
+
+    if(currentSlide < 0){
+        currentSlide = totalSlides - 1;
+    }
+
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
-setInterval(() => moveSlide(1), 3000);
+setInterval(function(){
+    moveSlide(1);
+},3000);
 
 });
-            
 
-  </script>
+</script>
     <div class="footer">
       <strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
