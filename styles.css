@@ -15,6 +15,8 @@
 {
    margin-top: 0;
     margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
 }
 .container {
   text-align: center;
@@ -346,6 +348,10 @@ animation: info 2s linear infinite alternate;
       gap: 0px;
       max-width: 800px;
       margin: auto;
+       margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
     }
 
     .gallery img {
@@ -362,6 +368,10 @@ animation: info 2s linear infinite alternate;
     }
 
     .lightbox {
+          margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
       display: none;
       position: fixed;
       top: 0; left: 0;
@@ -392,6 +402,10 @@ animation: info 2s linear infinite alternate;
       cursor: pointer;
     }
 .menugallery {
+      margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -549,6 +563,10 @@ gap: 5px;
          align-items: center;
   justify-content: center;
         padding: 0px 8px 90px;
+          margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
     }
 
     .logo {
@@ -587,11 +605,19 @@ gap: 5px;
 
     .language-selector img {
         width: 20px;
+          margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
     }
 
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: 0px;
+          margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
     }
 
     .menugallery {
@@ -599,6 +625,10 @@ gap: 5px;
             grid-template-rows: repeat(5, 1fr);
         gap: 0px;
         padding: 0px;
+          margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
        
     }
     .menugallery button {
