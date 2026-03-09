@@ -207,6 +207,8 @@ nav ul li a:hover {
 }
 .info {
  background: linear-gradient(to bottom, #8B0000, #FF6347 );
+     margin-top: 0;
+    margin-bottom: 0;
       padding: 0px;
      border: 0px;
      width: 100%; 
@@ -261,6 +263,8 @@ animation: info 2s linear infinite alternate;
     justify-content: center;
     gap: 10px;
     padding: 0.7rem 0 1rem;
+     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .language-selector img {
