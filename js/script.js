@@ -131,8 +131,8 @@ function changelanguemenu() {
     if (langueselect === "english") {
 
                menucontenu.innerHTML = `<ul class="menu">
-    <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">TableTop Painting 🎨</a></li>
-    <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Quote Simulator 💰</a></li>
+    <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">TableTop Painting 🎨</a></li>-->
+    <!--<li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Quote Simulator 💰</a></li>-->
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Gallery 🖼️</a></li>
 </ul>
 `
@@ -140,8 +140,8 @@ function changelanguemenu() {
         if (langueselect === "spanish") {
 
                menucontenu.innerHTML = `<ul class="menu">
-    <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Pintura TableTop 🎨</a></li>
-    <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Simulador de Presupuesto 💰</a></li>
+   <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Pintura TableTop 🎨</a></li>-->
+   <!-- <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Simulador de Presupuesto 💰</a></li>-->
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galería 🖼️</a></li>
 </ul>
 `
@@ -149,9 +149,9 @@ function changelanguemenu() {
         if (langueselect === "french") {
 
                menucontenu.innerHTML = `  <ul class="menu">
-       <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Commission Peinture 🎨</a></li>
-                <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
-                <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>
+     <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Commission Peinture 🎨</a></li>-->
+              <!--  <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>-->
+              <!--  <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>-->
                 <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galerie 🖼️</a></li>
             </ul>
 `
