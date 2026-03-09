@@ -50,6 +50,7 @@
 }
 body {
     display: flex;
+   flex-direction: column;
   align-items: center;
   justify-content: center;
     font-family: 'Segoe UI', system-ui, sans-serif;
@@ -59,7 +60,7 @@ body {
     background-image: 
         radial-gradient(circle at 15% 85%, rgba(180,140,60,0.04) 0%, transparent 50%),  /* glow très atténué */
         radial-gradient(circle at 85% 20%, rgba(180,140,60,0.03) 0%, transparent 60%);
-    padding: 20px 12px 120px;
+    padding: 00px 0px 0px;
     line-height: 1.55;
 }
 ul, ol { list-style: none; }
@@ -226,7 +227,7 @@ nav ul li a:hover {
  //bandeau défile
 .info-container{
    width: 100%;
-                       padding: 10px 10px;
+                       padding: 0px 0px;
             position: relative;
   
 }
@@ -234,7 +235,7 @@ nav ul li a:hover {
  background: linear-gradient(to bottom, #8B0000, #FF6347 );
      margin-top: 0;
     margin-bottom: 0;
-      padding: 0px;
+
      border: 0px;
      width: 100%; 
             position: center;
@@ -569,6 +570,8 @@ gap: 5px;
     body {
          align-items: center;
   justify-content: center;
+       display: flex;
+         flex-direction: column;
         padding: 0px 8px 90px;
           margin-top: 0;
     margin-bottom: 0;  
