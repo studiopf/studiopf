@@ -546,7 +546,9 @@ gap: 5px;
    ========================================================================== */
 @media (max-width: 640px) {
     body {
-        padding: 10px 8px 90px;
+         align-items: center;
+  justify-content: center;
+        padding: 0px 8px 90px;
     }
 
     .logo {
@@ -570,6 +572,8 @@ gap: 5px;
             display: grid;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
         gap: 8px;
+         align-items: center;
+  justify-content: center;
     }
     .cardpartenaire {
         height: 45px;
