@@ -62,7 +62,10 @@ animation: info 2s linear infinite alternate;
   max-width: 780px;
 }
 .maintenance-box {
- 
+    width: 100%;
+                
+            position: relative;
+   
  margin-left: 0;
   margin-right: 0;
    margin-top: 0px;
@@ -88,11 +91,9 @@ animation: info 2s linear infinite alternate;
   border-radius: 8px;
 }
 .logo-a {
-  margin-bottom: 0px;
- width: 100%;
-     justify-content: center; /* Centrage horizontal */
-  align-items: center; /* Centrage vertical */
-      text-align: center; /* Centre tout le texte à l'intérieur de ce bloc */
+     width: 100%;
+                 padding: 20px;
+            position: relative;
 }
 .center{
   justify-content: center; /* Centrage horizontal */
