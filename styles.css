@@ -89,6 +89,10 @@ animation: info 2s linear infinite alternate;
   margin-bottom: 0px;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
   border-radius: 8px;
+}
+.logo-a {
+  margin-bottom: 0px;
+ width: 100%;
      justify-content: center; /* Centrage horizontal */
   align-items: center; /* Centrage vertical */
       text-align: center; /* Centre tout le texte à l'intérieur de ce bloc */
