@@ -225,6 +225,15 @@ a:hover,
     padding: 0 0px;
 }
 
+.card-container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+    justify-content: center;
+    margin: 0rem auto;
+    max-width: 1100px;
+    padding: 0 0px;
+}
 .cardpartenaire {
     height: 62px;
     width: 100%;                        /* force la carte à prendre toute la largeur de sa cellule grid */
@@ -741,6 +750,17 @@ gap: 5px;
 
     .partenaires-container,
     .card-container2 {
+          margin-top: 0;
+    margin-bottom: 0;  
+     align-items: center;
+  justify-content: center;
+            display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 8px;
+         align-items: center;
+  justify-content: center;
+    }
+    .card-container3 {
           margin-top: 0;
     margin-bottom: 0;  
      align-items: center;
