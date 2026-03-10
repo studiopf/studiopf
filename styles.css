@@ -61,6 +61,10 @@ animation: info 2s linear infinite alternate;
   max-width: 780px;
 }
 .maintenance-box {
+     justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+ margin-left: 0;
+  margin-right: 0;
    margin-top: 0px;
   padding: 5px;
   background: rgba(30, 20, 12, 0.75);
@@ -705,6 +709,10 @@ gap: 5px;
     }
 
     .logo {
+         justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+ margin-left: 0;
+  margin-right: 0;
         width: 250px;
         margin: 0px auto;
     }
