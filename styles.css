@@ -13,8 +13,8 @@
 }
 .menu-mobile
 {
-   margin-top: 0;
-    margin-bottom: 0;  
+   margin-top: 5px;
+    margin-bottom: 5px; 
      align-items: center;
   justify-content: center;
 }
@@ -258,8 +258,8 @@ animation: info 2s linear infinite alternate;
 
 
 .social, .social-container {
-        margin-top: 2px;
-    margin-bottom: 2px;
+        margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -406,14 +406,10 @@ animation: info 2s linear infinite alternate;
       cursor: pointer;
     }
 .menugallery {
-      margin-top: 0;
-    margin-bottom: 0;  
-
+      margin-top: 5px;
+    margin-bottom: 5px;  
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
-
-
     gap: 0px;
     padding: 0px;
 }
@@ -667,22 +663,28 @@ gap: 5px;
   
     }
 
-    .menugallery {
-       grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-        gap: 0px;
-        padding: 0px;
-          margin-top: 0;
-    margin-bottom: 0;  
-
-       
-    }
-    .menugallery button {
-         width: 50px;
-        height: 50px;
-        font-size: 0px;
-    }
-
+.menugallery {
+      margin-top: 5px;
+    margin-bottom: 5px;  
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+    padding: 0px;
+}
+        .menugallery button {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border: none;
+            cursor: pointer;
+            font-size: 0px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        .menugallery button:hover {
+            opacity: 0.8;
+        }
 
    
     #scrollToTopBtn {
@@ -730,20 +732,6 @@ gap: 5px;
   justify-content: center; width: 140px; margin: 0px auto 0px; }
     .cardpartenaire { height: 42px; }
     .language-selector img { width: 18px; }
-         .menugallery {
-       grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-        gap: 0px;
-        padding: 0px;
-          margin-top: 0;
-    margin-bottom: 0;  
-
-       
-    }
-    .menugallery button {
-         width: 50px;
-        height: 50px;
-        font-size: 0px;
-    }
+      
 
 }
