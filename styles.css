@@ -17,8 +17,8 @@
 }
 .menu-mobile
 {
-   margin-top: 5px;
-    margin-bottom: 5px; 
+   margin-top: 15px;
+    margin-bottom: 15px; 
      align-items: center;
   justify-content: center;
 }
@@ -263,8 +263,8 @@ animation: info 2s linear infinite alternate;
 
 
 .social, .social-container {
-        margin-top: 5px;
-    margin-bottom: 5px;
+        margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -676,8 +676,8 @@ gap: 5px;
     padding: 0px;
 }
         .menugallery button {
-            width: 200px;
-            height: 200px;
+            width: 80px;
+            height: 80px;
             background-size: cover;
             background-position: center;
             border: none;
