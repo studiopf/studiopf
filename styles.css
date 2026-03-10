@@ -40,10 +40,13 @@ animation: info 2s linear infinite alternate;
   transform-origin: center; /* Centre l'origine de la transformation */
 }
 #contenu-principal {
+     justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+      text-align: center; /* Centre tout le texte à l'intérieur de ce bloc */
         width: 100%;
       padding: 0px;
      border: 0px;
-   text-align: center; /* Centre tout le texte à l'intérieur de ce bloc */
+
     }
 .menu{
      margin-top: 5px;
@@ -86,6 +89,9 @@ animation: info 2s linear infinite alternate;
   margin-bottom: 0px;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
   border-radius: 8px;
+     justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+      text-align: center; /* Centre tout le texte à l'intérieur de ce bloc */
 }
 .center{
   justify-content: center; /* Centrage horizontal */
