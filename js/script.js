@@ -26,7 +26,7 @@ function changelanguegalerie() {
 
     if (langueselect === "english") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Miniature Art Gallery</h2>
+               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Gallery</h2>
 <p class="galerie-description">
   ✨ Step into a world where every miniature becomes a work of art.
     
@@ -47,7 +47,7 @@ function changelanguegalerie() {
                }
         if (langueselect === "spanish") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Galería de Arte en Miniatura</h2>
+               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Galería</h2>
 <p class="galerie-description">
   ✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.
     </p>
@@ -66,10 +66,11 @@ function changelanguegalerie() {
                }
         if (langueselect === "french") {
 
-               contenupagegalerie.innerHTML = `  <h2 class="galerie-title">🎨 Galerie d’Art en Miniature</h2>
-  <p class="galerie-description">
-    ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.
-
+               contenupagegalerie.innerHTML = `  <h2 class="galerie-title">🎨 Galerie</h2>
+    
+    <p class="galerie-description">
+      ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.<br>
+      Découvrez mes peintures à différents niveaux de maîtrise et mes participations en concours & expositions.
     </p>
 
      <!-- Les filtres seront insérés ici automatiquement par JS -->
@@ -3419,6 +3420,7 @@ window.onload = function() {
 changelangueinfo();
     changelanguesimulateur();
     changelanguegalerie();
+    changelangueindex();
     initializeFormationForm();
     initializeFormCalculations();
        initializeCardToggle();
