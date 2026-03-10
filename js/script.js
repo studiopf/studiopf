@@ -131,7 +131,7 @@ function changelanguemenu() {
     if (langueselect === "english") {
 
                menucontenu.innerHTML = `<ul class="menu">
-    <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">TableTop Painting 🎨</a></li>-->
+    <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">TableTop Painting 🎨</a></li>-->
     <!--<li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Quote Simulator 💰</a></li>-->
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Gallery 🖼️</a></li>
 </ul>
@@ -140,7 +140,7 @@ function changelanguemenu() {
         if (langueselect === "spanish") {
 
                menucontenu.innerHTML = `<ul class="menu">
-   <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Pintura TableTop 🎨</a></li>-->
+   <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">Pintura TableTop 🎨</a></li>-->
    <!-- <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Simulador de Presupuesto 💰</a></li>-->
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galería 🖼️</a></li>
 </ul>
@@ -149,7 +149,7 @@ function changelanguemenu() {
         if (langueselect === "french") {
 
                menucontenu.innerHTML = `  <ul class="menu">
-     <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Commission Peinture 🎨</a></li>-->
+     <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">Commission Peinture 🎨</a></li>-->
               <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
               <!--  <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>-->
                 <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galerie 🖼️</a></li>
@@ -1003,7 +1003,7 @@ At <strong>Studio Peinture Figurine</strong>, every project becomes a collectibl
         </p>
         <p>
           <a href="simulateur_devis.html" class="button"
-             onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); scrollToTop(); return false;">
+             onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
             Request a quote ➜
           </a>
         </p>
@@ -2029,14 +2029,14 @@ function changelanguefigconcours() {
    <div class="card" role="button" aria-expanded="true" tabindex="0">
         <h2>🌟 Pourquoi Choisir Nos Pièces de Concours ?</h2>
         <p>Contrairement aux figurines de jeu, conçues pour la durabilité et la jouabilité, nos pièces de concours sont des œuvres d’art destinées à l’exposition. Avec des techniques de peinture de pointe et des socles en bois élégants, elles sont créées pour éblouir dans les vitrines des <strong>Golden Demon</strong> ou <strong>OctoPainting</strong>. Chaque projet est unique, évalué sur devis pour un résultat sur mesure. </p>
-       <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+       <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); scrollToTop(); return false;">Demander un devis 💬</a>
    </div>
 <p> Consultez notre <a href="galerie.html" onclick="loadPage('galerie.html'); return false;">galerie 🖼️</a> pour voir nos créations primées.</p>
 
 </div>
                
                        <div class="banniere">
-          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); scrollToTop(); return false;">Demander un devis 💬</a>
         </div>`;
     }
 }
