@@ -30,9 +30,21 @@
 animation: info 2s linear infinite alternate;
     
         }
-.contenu-principal{
-
+/* Style pour centrer et réduire */
+.widget-container {
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement (si nécessaire dans un conteneur plus grand) */
+  text-align: center; /* Optionnel si Flexbox n'est pas utilisé */
+    transform: scale(0.7); /* Réduit la taille à 50% */
+  transform-origin: center; /* Centre l'origine de la transformation */
 }
+#contenu-principal {
+        width: 100%;
+      padding: 0px;
+     border: 0px;
+   text-align: center; /* Centre tout le texte à l'intérieur de ce bloc */
+    }
 .menu{
      margin-top: 5px;
     margin-bottom: 5px;
@@ -72,8 +84,67 @@ animation: info 2s linear infinite alternate;
   border-radius: 8px;
 }
 .center{
-          text-align: center;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+ margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* Ou toute autre valeur selon la taille désirée */
 }
+/* Tableau */
+table{
+     text-align: center;
+    border-collapse: collapse; /* Supprime les espaces entre les bordures */
+  width: auto;              /* Réduit la largeur du tableau à son contenu */
+    justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+ margin-left: auto;
+  margin-right: auto;
+    margin-bottom:10px;
+  width: 90%; /* Ou toute autre valeur selon la taille désirée */
+}
+.table-container{
+               text-align: center;
+      font-size: 18px;       
+}
+.tableborder1{
+           border: 1px solid #ddd;
+}
+.col{
+   width: 100px; /* Largeur de la cellule */
+}
+  .colprix{
+   width: 10px; /* Largeur de la cellule */
+}
+td {
+            padding: 0px;
+            text-align: left;
+            border: 1px solid #ddd;
+             width: 50px; /* Largeur de la cellule */
+        }
+        th {
+           padding: 0px;
+            text-align: left;
+            background-color: #333;
+            color: #fff;
+            width: 100px; /* Largeur de la cellule */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .check {
+            color: green;
+            font-weight: bold; 
+          text-align: center;
+          width: 10px; /* Largeur de la cellule */
+        }
+        .cross {
+            color: red;
+            font-weight: bold;
+           text-align: center;
+            width: 10px; /* Largeur de la cellule */
+        }
+
+
 body {
     display: flex;
    flex-direction: column;
@@ -583,6 +654,10 @@ gap: 5px;
    MEDIA QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+ .table-container{
+               text-align: center;
+      font-size: 12px;       
+}
 
    
     .lightbox {
