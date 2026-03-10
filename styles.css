@@ -84,6 +84,8 @@ animation: info 2s linear infinite alternate;
   margin: 0em 0;
 }
 .logo {
+     position: relative;
+}
   width: 350px;
   height: auto;
   margin-bottom: 0px;
