@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.contenu-principal{
+     align-items: center;
+  justify-content: center;]
 .menu{
      margin-top: 5px;
     margin-bottom: 5px;
@@ -429,7 +432,6 @@ animation: info 2s linear infinite alternate;
         }
 .carousel-container {
     max-width: 800px;
-    height: 250px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -702,9 +704,7 @@ gap: 5px;
 .carousel-container {
       margin-top: 0;
     margin-bottom: 0;  
-
     max-width: 300px;
-    height: 250px;
     margin: 0 auto;
     overflow: hidden;
 }
