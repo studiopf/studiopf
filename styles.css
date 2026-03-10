@@ -7,6 +7,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+ //bandeau défile
+.info-container{
+   width: 100%;
+                 padding: 20px;
+            position: relative;
+  
+}
+.info {
+ background: linear-gradient(to bottom, #8B0000, #FF6347 );
+     margin-top: 0;
+    margin-bottom: 0;
+
+     border: 0px;
+     width: 100%; 
+            position: center;
+            font-size: 22x;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px #555;
+animation: info 2s linear infinite alternate;
+    
+        }
 .contenu-principal{
      align-items: center;
   justify-content: center;
@@ -232,7 +255,7 @@ nav ul li a:hover {
  //bandeau défile
 .info-container{
    width: 100%;
-                 padding: 0px 0px;
+                 padding: 10px;
             position: relative;
   
 }
@@ -244,7 +267,7 @@ nav ul li a:hover {
      border: 0px;
      width: 100%; 
             position: center;
-            font-size: 22x;
+            font-size: 15x;
             font-weight: bold;
             color: white;
             text-transform: uppercase;
@@ -296,7 +319,7 @@ animation: info 2s linear infinite alternate;
     justify-content: center;
     gap: 10px;
     padding: 0rem 0 0rem;
-     margin-top: 0;
+     margin-top: 10px;
     margin-bottom: 0;
 }
 
