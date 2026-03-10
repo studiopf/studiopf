@@ -40,9 +40,7 @@ animation: info 2s linear infinite alternate;
   transform-origin: center; /* Centre l'origine de la transformation */
 }
 #contenu-principal {
-     justify-content: center; /* Centrage horizontal */
-  align-items: center; /* Centrage vertical */
-      text-align: center; /* Centre tout le texte à l'intérieur de ce bloc */
+   
         width: 100%;
       padding: 0px;
      border: 0px;
