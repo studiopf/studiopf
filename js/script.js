@@ -150,7 +150,7 @@ function changelanguemenu() {
 
                menucontenu.innerHTML = `  <ul class="menu">
      <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Commission Peinture 🎨</a></li>-->
-              <!--  <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>-->
+              <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
               <!--  <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>-->
                 <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galerie 🖼️</a></li>
             </ul>
