@@ -49,13 +49,11 @@ animation: info 2s linear infinite alternate;
   max-width: 780px;
 }
 .maintenance-box {
-   margin-top: 5px;
+   margin-top: 0px;
   padding: 5px;
   background: rgba(30, 20, 12, 0.75);
   border: 1px solid #6b4e2f;
   border-radius: 12px;
-     align-items: center;
-  justify-content: center;
   max-width: 580px;
   backdrop-filter: blur(4px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.65);
