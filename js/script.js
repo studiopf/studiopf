@@ -106,6 +106,7 @@ function changelangueenglish() {
 loadPage(urlencours);
      changelanguemenu();
     changelangueinfo();
+        changelangueindex();
 } 
 
 function changelanguespanish() {
@@ -114,6 +115,7 @@ function changelanguespanish() {
     loadPage(urlencours);
     changelanguemenu();
       changelangueinfo();
+        changelangueindex();
 }
 
 function changelanguefrench() {
@@ -122,6 +124,7 @@ function changelanguefrench() {
     loadPage(urlencours);
       changelanguemenu();
    changelangueinfo();
+    changelangueindex();
 }
 function changelanguemenu() {
     const menucontenu = document.getElementById("menu-contenu");
@@ -132,28 +135,28 @@ function changelanguemenu() {
     if (langueselect === "english") {
 
                menucontenu.innerHTML = `<ul class="menu">
-    <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">TableTop Painting 🎨</a></li>-->
+    <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); return false;">TableTop Painting 🎨</a></li>-->
     <!--<li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Quote Simulator 💰</a></li>-->
-    <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Gallery 🖼️</a></li>
+    <li><a href="galerie.html" onclick="loadPage('galerie.html');  return false;">Gallery 🖼️</a></li>
 </ul>
 `
                }
         if (langueselect === "spanish") {
 
                menucontenu.innerHTML = `<ul class="menu">
-   <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Pintura TableTop 🎨</a></li>-->
+   <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); return false;">Pintura TableTop 🎨</a></li>-->
    <!-- <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Simulador de Presupuesto 💰</a></li>-->
-    <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galería 🖼️</a></li>
+    <li><a href="galerie.html" onclick="loadPage('galerie.html');  return false;">Galería 🖼️</a></li>
 </ul>
 `
                }
         if (langueselect === "french") {
 
                menucontenu.innerHTML = `  <ul class="menu">
-     <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Commission Peinture 🎨</a></li>-->
+     <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); return false;">Commission Peinture 🎨</a></li>-->
               <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
               <!--  <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>-->
-                <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galerie 🖼️</a></li>
+                <li><a href="galerie.html" onclick="loadPage('galerie.html');  return false;">Galerie 🖼️</a></li>
             </ul>
 `
                }}
@@ -944,7 +947,7 @@ function changelanguepeinturecommission() {
 /*****************************************
  * Page index
  *****************************************/
-function changelangueindex() {
+function changelanguepeinturecommission() {
       // Calcul automatique des âges
     const currentYear = new Date().getFullYear();
     
@@ -3285,9 +3288,9 @@ function initializePageSpecificScripts(page) {
       break;
           
       case 'index.html':
-      if (typeof changelangueindex === 'function') {
-        console.log('Appel de changelangueindex');
-        changelangueindex();
+      if (typeof changelanguepeinturecommission === 'function') {
+        console.log('Appel de changelanguepeinturecommission');
+        changelanguepeinturecommission();
       } else {
         console.error('changelangue non défini');
       }
@@ -3419,7 +3422,7 @@ window.onload = function() {
           changelanguemenu();
 changelangueinfo();
     changelanguesimulateur();
-    changelanguegalerie();
+    
     initializeFormationForm();
     initializeFormCalculations();
        initializeCardToggle();
@@ -3872,7 +3875,7 @@ document.addEventListener("DOMContentLoaded", initializeFormCalculations);
     
 // Appelle la fonction au chargement de la page
 document.addEventListener("DOMContentLoaded", changelanguepeinturecommission);
-document.addEventListener("DOMContentLoaded", changelangueindex);
+document.addEventListener("DOMContentLoaded", changelanguepeinturecommission);
 document.addEventListener("DOMContentLoaded", changelanguesimulateur);
 document.addEventListener("DOMContentLoaded", changelanguecondition);
 document.addEventListener("DOMContentLoaded", changelanguefigconcours);
