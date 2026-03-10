@@ -146,7 +146,7 @@ function changelanguemenu() {
                menucontenu.innerHTML = `<ul class="menu">
     <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">TableTop Painting 🎨</a></li>-->
     <!--<li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Quote Simulator 💰</a></li>-->
-    <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Gallery 🖼️</a></li>
+    <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Gallery 🖼️</a></li>
 </ul>
 `
                }
@@ -155,7 +155,7 @@ function changelanguemenu() {
                menucontenu.innerHTML = `<ul class="menu">
    <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">Pintura TableTop 🎨</a></li>-->
    <!-- <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Simulador de Presupuesto 💰</a></li>-->
-    <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galería 🖼️</a></li>
+    <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galería 🖼️</a></li>
 </ul>
 `
                }
@@ -165,7 +165,7 @@ function changelanguemenu() {
      <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">Commission Peinture 🎨</a></li>-->
               <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
               <!--  <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>-->
-                <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galerie 🖼️</a></li>
+                <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
             </ul>
 `
                }}
@@ -3432,7 +3432,7 @@ window.onload = function() {
           changelanguemenu();
 changelangueinfo();
     changelanguesimulateur();
-    changelanguegalerie();
+  
     changelangueindex();
     initializeFormationForm();
     initializeFormCalculations();
