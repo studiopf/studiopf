@@ -1,3 +1,4 @@
+
 let urlencours;
 urlencours = "index.html";
 
@@ -26,7 +27,7 @@ function changelanguegalerie() {
 
     if (langueselect === "english") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Gallery</h2>
+               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Miniature Art Gallery</h2>
 <p class="galerie-description">
   ✨ Step into a world where every miniature becomes a work of art.
     
@@ -47,7 +48,7 @@ function changelanguegalerie() {
                }
         if (langueselect === "spanish") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Galería</h2>
+               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Galería de Arte en Miniatura</h2>
 <p class="galerie-description">
   ✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.
     </p>
@@ -66,11 +67,10 @@ function changelanguegalerie() {
                }
         if (langueselect === "french") {
 
-               contenupagegalerie.innerHTML = `  <h2 class="galerie-title">🎨 Galerie</h2>
-    
-    <p class="galerie-description">
-      ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.<br>
-      Découvrez mes peintures à différents niveaux de maîtrise et mes participations en concours & expositions.
+               contenupagegalerie.innerHTML = `  <h2 class="galerie-title">🎨 Galerie d’Art en Miniature</h2>
+  <p class="galerie-description">
+    ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.
+
     </p>
 
      <!-- Les filtres seront insérés ici automatiquement par JS -->
@@ -106,10 +106,6 @@ function changelangueenglish() {
 loadPage(urlencours);
      changelanguemenu();
     changelangueinfo();
-     changelangueindex();
- changelanguepegalerie();
- changelanguecondition();
- changelanguesimulateur();
 } 
 
 function changelanguespanish() {
@@ -118,10 +114,6 @@ function changelanguespanish() {
     loadPage(urlencours);
     changelanguemenu();
       changelangueinfo();
-     changelangueindex();
- changelanguepegalerie();
- changelanguecondition();
- changelanguesimulateur();
 }
 
 function changelanguefrench() {
@@ -130,10 +122,6 @@ function changelanguefrench() {
     loadPage(urlencours);
       changelanguemenu();
    changelangueinfo();
-     changelangueindex();
- changelanguepegalerie();
- changelanguecondition();
- changelanguesimulateur();
 }
 function changelanguemenu() {
     const menucontenu = document.getElementById("menu-contenu");
@@ -144,28 +132,28 @@ function changelanguemenu() {
     if (langueselect === "english") {
 
                menucontenu.innerHTML = `<ul class="menu">
-    <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">TableTop Painting 🎨</a></li>-->
+    <!--<li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">TableTop Painting 🎨</a></li>-->
     <!--<li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Quote Simulator 💰</a></li>-->
-    <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Gallery 🖼️</a></li>
+    <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Gallery 🖼️</a></li>
 </ul>
 `
                }
         if (langueselect === "spanish") {
 
                menucontenu.innerHTML = `<ul class="menu">
-   <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">Pintura TableTop 🎨</a></li>-->
+   <!-- <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Pintura TableTop 🎨</a></li>-->
    <!-- <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); return false;">Simulador de Presupuesto 💰</a></li>-->
-    <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galería 🖼️</a></li>
+    <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galería 🖼️</a></li>
 </ul>
 `
                }
         if (langueselect === "french") {
 
                menucontenu.innerHTML = `  <ul class="menu">
-     <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelanguecommissionpeinture(); return false;">Commission Peinture 🎨</a></li>-->
-              <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
+     <!--  <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); changelangueindex(); return false;">Commission Peinture 🎨</a></li>-->
+              <!--  <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>-->
               <!--  <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>-->
-                <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
+                <li><a href="galerie.html" onclick="loadPage('galerie.html'); changelanguegalerie(); return false;">Galerie 🖼️</a></li>
             </ul>
 `
                }}
@@ -1016,7 +1004,7 @@ At <strong>Studio Peinture Figurine</strong>, every project becomes a collectibl
         </p>
         <p>
           <a href="simulateur_devis.html" class="button"
-             onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+             onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); scrollToTop(); return false;">
             Request a quote ➜
           </a>
         </p>
@@ -2042,14 +2030,14 @@ function changelanguefigconcours() {
    <div class="card" role="button" aria-expanded="true" tabindex="0">
         <h2>🌟 Pourquoi Choisir Nos Pièces de Concours ?</h2>
         <p>Contrairement aux figurines de jeu, conçues pour la durabilité et la jouabilité, nos pièces de concours sont des œuvres d’art destinées à l’exposition. Avec des techniques de peinture de pointe et des socles en bois élégants, elles sont créées pour éblouir dans les vitrines des <strong>Golden Demon</strong> ou <strong>OctoPainting</strong>. Chaque projet est unique, évalué sur devis pour un résultat sur mesure. </p>
-       <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); scrollToTop(); return false;">Demander un devis 💬</a>
+       <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
    </div>
 <p> Consultez notre <a href="galerie.html" onclick="loadPage('galerie.html'); return false;">galerie 🖼️</a> pour voir nos créations primées.</p>
 
 </div>
                
                        <div class="banniere">
-          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); changelanguesimulateur(); scrollToTop(); return false;">Demander un devis 💬</a>
+          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
         </div>`;
     }
 }
@@ -3351,7 +3339,6 @@ function initializePageSpecificScripts(page) {
       if (typeof initializeGalerie === 'function') {
         console.log('Appel de initializeGalerie');
         initializeGalerie();
-          changelanguepegalerie();
       } else {
         console.error('initializeGalerie non défini');
       }
@@ -3432,8 +3419,7 @@ window.onload = function() {
           changelanguemenu();
 changelangueinfo();
     changelanguesimulateur();
-  
-    changelangueindex();
+    changelanguegalerie();
     initializeFormationForm();
     initializeFormCalculations();
        initializeCardToggle();
@@ -4092,4 +4078,3 @@ function initializeGalerie() {
     // Affichage initial
     showImages('Tous');
 }
-
