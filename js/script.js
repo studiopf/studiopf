@@ -18,7 +18,7 @@ function highlightLanguage(langId) {
     });
 }
 
-function setLanguage(lang) {
+function setLanguage(lang) {f
     currentLanguage = lang;
     
     highlightLanguage(lang);
@@ -132,7 +132,7 @@ function applyLanguageAndInit() {
         changelanguehoraires();
     }
 
-
+scrollToTop();
 
 }
 
