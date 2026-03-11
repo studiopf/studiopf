@@ -82,7 +82,7 @@
 
 <div class="card-container2logo">
         <div class="cardlogoimg">
-    <a href="index.html" onclick="loadPage('index.html'); changelangueindex(); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
     
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
@@ -343,6 +343,7 @@ setInterval(function(){
               
 
 </div>
+
            
        <!-- <p><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></p>-->
         <p><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></p>
@@ -413,6 +414,7 @@ const select = document.getElementById('niveau');
        function scrollToTop() {
              if (currentPage.includes("simulateur_devis")) {
    document.getElementById('scrollTotal').style.display = 'block';}
+           
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
@@ -427,6 +429,8 @@ const select = document.getElementById('niveau');
             }
             
 function scrollTotal(offset=100) {
+              if (currentPage.includes("simulateur_devis")) {
+   document.getElementById('scrollTotal').style.display = 'block';}
      document.getElementById('scrollTotal').style.display = 'none';
   const totalElement = document.querySelector("h3.total");
   if (totalElement) {
