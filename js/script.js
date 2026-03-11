@@ -45,7 +45,7 @@ function setLanguage(lang) {
     updateDebugDisplay();
     
     changelangueinfo();
-  if (currentPage.includes("peinturecommission") && currentLanguage !== "french") {
+  if (currentPage.includes("formation") && currentLanguage !== "french") {
       currentPage = "index.html";
     }
     loadPage(currentPage); // recharge la page courante avec la nouvelle langue
