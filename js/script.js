@@ -123,13 +123,13 @@ function applyLanguageAndInit() {
         initializeFormationForm();
     }
             if (currentPage.includes("conditions")) {
-       
+       changelangueconditions();
     }
                     if (currentPage.includes("mentionslegales")) {
-       
+       changelanguementionslegales();
     }
                             if (currentPage.includes("horaires")) {
-        
+        changelanguehoraires();
     }
 
 
