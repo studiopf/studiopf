@@ -17,11 +17,33 @@ function highlightLanguage(langId) {
         btn.classList.toggle('selected', btn.id === langId);
     });
 }
+function updateDebugDisplay() {
+    // Mise à jour de la langue
+    const langSpan = document.getElementById("currentLanguage");
+    if (langSpan) {
+        // On affiche un nom lisible plutôt que "french", "english", etc.
+        let displayLang = "Français";
+        if (currentLanguage === "english") displayLang = "English";
+        if (currentLanguage === "spanish")  displayLang = "Español";
+        
+        langSpan.textContent = displayLang;
+    }
+
+    // Mise à jour de la page
+    const pageSpan = document.getElementById("currentPage");
+    if (pageSpan) {
+        pageSpan.textContent = currentPage || "inconnue";
+    }
+}
 
 function setLanguage(lang) {
     currentLanguage = lang;
    
     highlightLanguage(lang);
+
+    // ← Ajoute ici
+    updateDebugDisplay();
+    
     changelangueinfo();
   if (currentPage.includes("peinturecommission") && currentLanguage !== "french") {
       currentPage = "index.html";
