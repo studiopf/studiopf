@@ -972,10 +972,15 @@ nav ul li a:hover {
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
       .logo {
-        width: 80px;              /* un peu plus petit que sur 640px */
+        width: 150px;              /* un peu plus petit que sur 640px */
         max-width: 70%;
     }
-
+h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0rem 0 0rem;
+}
     .maintenance-box,
     .card,
     .card2,
