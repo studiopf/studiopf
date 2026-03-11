@@ -990,13 +990,37 @@ function changelanguementionslegales() {
                 <h2>Publisher</h2>
                 <p>Studio PF: Pierre-François Frasse<br>Micro-entreprise<br>17 route de Lare, 42510 Saint Georges de Baroille, France</p>
             </div>
-            <!-- etc. -->
+          
         `;
     }
     else if (currentLanguage === "spanish") {
-        main.innerHTML = `... version espagnole ...`;
+       main.innerHTML = `
+            <h1>✨ Legal Notice ✨</h1>
+            <p><strong>Website:</strong> studiopf.fr<br>
+            <strong>Last updated:</strong> January 19, 2026</p>
+            <!-- Traduction anglaise complète ici -->
+            <div class="section">
+                <h2>Publisher</h2>
+                <p>Studio PF: Pierre-François Frasse<br>Micro-entreprise<br>17 route de Lare, 42510 Saint Georges de Baroille, France</p>
+            </div>
+          
+        `;
     }
     // français = version par défaut → rien à faire, le HTML statique suffit
+else { // français (par défaut)
+       main.innerHTML = `
+            <h1>✨ Legal Notice ✨</h1>
+            <p><strong>Website:</strong> studiopf.fr<br>
+            <strong>Last updated:</strong> January 19, 2026</p>
+            <!-- Traduction anglaise complète ici -->
+            <div class="section">
+                <h2>Publisher</h2>
+                <p>Studio PF: Pierre-François Frasse<br>Micro-entreprise<br>17 route de Lare, 42510 Saint Georges de Baroille, France</p>
+            </div>
+          
+        `;
+}
+        main.innerHTML = html;
 }
 // ────────────────────────────────────────────────
 // Conditions générales de vente — multilingue
