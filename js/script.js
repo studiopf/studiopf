@@ -321,6 +321,13 @@ fetch('/data/messageinfo-es.txt')
     });
 }
 }
+function updateParagraph() {
+    const paragraph = document.getElementById('infoParagraph');
+    if (paragraph) {
+        paragraph.textContent = messageinfo; // Met le contenu dans le <p>
+    }
+}
+
 
 // ────────────────────────────────────────────────
 // Scroll / boutons flottants
