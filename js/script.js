@@ -29,14 +29,19 @@ function ecriturl(url){
 }
 
 function changelanguegalerie() {
-    const contenupagegalerie = document.getElementById("contenupage-galerie");
-    if (!contenupagegalerie) {
+    
+      const contenuPrincipal = document.getElementById("contenu-principal");
+  if (!contenuPrincipal) {
+    console.error("Element contenu-principal non trouvé");
+    return;
+  }
+    if (!contenuPrincipal) {
         return;
     }
 
     if (langueselect === "english") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨Gallery</h2>
+               contenuPrincipal.innerHTML = `<h2 class="galerie-title">🎨Gallery</h2>
 <p class="galerie-description">
   ✨ Step into a world where every miniature becomes a work of art.
     
@@ -57,7 +62,7 @@ function changelanguegalerie() {
                }
         if (langueselect === "spanish") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Galería</h2>
+               contenuPrincipal.innerHTML = `<h2 class="galerie-title">🎨 Galería</h2>
 <p class="galerie-description">
   ✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.
     </p>
@@ -76,7 +81,7 @@ function changelanguegalerie() {
                }
         if (langueselect === "french") {
 
-               contenupagegalerie.innerHTML = `  <h2 class="galerie-title">🎨 Galerie</h2>
+               contenuPrincipal.innerHTML = `  <h2 class="galerie-title">🎨 Galerie</h2>
   <p class="galerie-description">
     ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.
 
@@ -176,14 +181,20 @@ function changelanguemenu() {
  * Page peinture sur commission
  *****************************************/
 function changelanguepeinturecommission() {
-    const contenupagepeinturecommission = document.getElementById("contenupage-peinturecommission");
-    if (!contenupagepeinturecommission) {
+     const contenuPrincipal = document.getElementById("contenu-principal");
+  if (!contenuPrincipal) {
+    console.error("Element contenu-principal non trouvé");
+    return;
+  }
+      
+    
+    if (!contenuPrincipal) {
         return;
     }
 
     if (langueselect === "english") {
 
-               contenupagepeinturecommission.innerHTML = `<h1>Tabletop & Display Commission Painting 🎲</h1>
+               contenuPrincipal.innerHTML = `<h1>Tabletop & Display Commission Painting 🎲</h1>
 <p>Your miniatures deserve more than a simple paint job: turn them into unique pieces.</p>
 
 <div class="card" role="region" aria-expanded="true" tabindex="0">
@@ -352,7 +363,7 @@ function changelanguepeinturecommission() {
 `;
     } else if (langueselect === "spanish") {
 
-      contenupagepeinturecommission.innerHTML = `<h1>Pintura por Encargo Tabletop y Vitrina 🎲</h1>
+      contenuPrincipal.innerHTML = `<h1>Pintura por Encargo Tabletop y Vitrina 🎲</h1>
 <p>Tus miniaturas merecen más que una simple pintura: transfórmalas en piezas únicas.</p>
 
 <div class="card" role="region" aria-expanded="true" tabindex="0">
@@ -516,7 +527,7 @@ function changelanguepeinturecommission() {
 
     } else if (langueselect === "french") {
 
-          contenupagepeinturecommission.innerHTML = `<h1>Peinture sur Commission TableTop et Vitrine 🎲</h1>
+          contenuPrincipal.innerHTML = `<h1>Peinture sur Commission TableTop et Vitrine 🎲</h1>
   <p>Vos figurines méritent plus qu’une simple peinture : transformez-les en pièces uniques.</p>
     <div class="card" role="region" aria-expanded="true" tabindex="0">
                 <h2>🎨Niveaux de peinture</h2>
@@ -960,9 +971,10 @@ function changelanguepeinturecommission() {
  * Page index
  *****************************************/
    function changelangueindex() {
-    const contenupageindex = document.getElementById("contenupage-index");
+  const contenuPrincipal = document.getElementById("contenu-principal");
+    
     console.log("changelangueindex appelée – langueselect =", langueselect);
-    console.log("Élément contenupage-index existe ?", !!contenupageindex);
+    console.log("Élément contenupage-index existe ?", !!contenuPrincipal);
 
     if (!contenu) {
         console.warn("Element #contenupage-index introuvable !");
@@ -972,7 +984,7 @@ function changelanguepeinturecommission() {
     if (langueselect === "english") {
         console.log("→ anglais activé");
     
-        contenupageindex.innerHTML = `<h1>🎨 Turn your miniatures into true works of art</h1>
+        contenuPrincipal.innerHTML = `<h1>🎨 Turn your miniatures into true works of art</h1>
 <p>High-end painting for passionate hobbyists, collectors, and demanding players.</p>
 <p>Your miniatures deserve more than a simple brushstroke: they deserve to be elevated, showcased, and made unique.  
 At <strong>Studio Peinture Figurine</strong>, every project becomes a collectible piece.</p>
@@ -1106,7 +1118,7 @@ At <strong>Studio Peinture Figurine</strong>, every project becomes a collectibl
 </div>
 `;
     } else if (langueselect === "spanish") {
-        contenupageindex.innerHTML = `<h1>🎨 Transforma tus miniaturas en auténticas obras de arte</h1>
+        contenuPrincipal.innerHTML = `<h1>🎨 Transforma tus miniaturas en auténticas obras de arte</h1>
 <p>Pintura de alta gama para aficionados apasionados, coleccionistas y jugadores exigentes.</p>
 <p>Tus miniaturas merecen más que una simple pincelada: merecen ser realzadas, puestas en valor y ser únicas.  
 En <strong>Studio Peinture Figurine</strong>, cada proyecto se convierte en una pieza de colección.</p>
@@ -1240,7 +1252,7 @@ En <strong>Studio Peinture Figurine</strong>, cada proyecto se convierte en una 
 </div>
 `;
     } else if (langueselect === "french") {
-        contenupageindex.innerHTML = `  <p>Je reviens très prochainement avec de nouvelles aventures peintes !</p>
+        contenuPrincipal.innerHTML = `  <p>Je reviens très prochainement avec de nouvelles aventures peintes !</p>
       <p>Réouverture des disponibilités et prises de commande</p>
       <p class="highlight">→ début octobre 2026 ←</p>
        <p class="highlight">→ contactez-moi pour vos futures projets ←</p>
@@ -1264,13 +1276,14 @@ En <strong>Studio Peinture Figurine</strong>, cada proyecto se convierte en una 
  * Page simulateur
  *****************************************/
 function changelanguesimulateur() {
-    const contenupagesimulateur = document.getElementById("contenupage-simulateur");
-    if (!contenupagesimulateur) {
+      
+    const contenuPrincipal = document.getElementById("contenupage-principal");
+    if (!contenuPrincipal) {
         return;
     }
 
     if (langueselect === "english") {
-        contenupagesimulateur.innerHTML = `<h1>Quote Request</h1>
+        contenuPrincipal.innerHTML = `<h1>Quote Request</h1>
 
 <div class="form-container">
   <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
@@ -1425,7 +1438,7 @@ function changelanguesimulateur() {
 </div>
 `;
     } else if (langueselect === "spanish") {
-        contenupagesimulateur.innerHTML = `<h1>Solicitud de Presupuesto</h1>
+        contenuPrincipal.innerHTML = `<h1>Solicitud de Presupuesto</h1>
 
 <div class="form-container">
   <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
@@ -1578,7 +1591,7 @@ function changelanguesimulateur() {
 </div>
 `;
     } else if (langueselect === "french") {
-        contenupagesimulateur.innerHTML = `   <h1>Demande de Devis</h1>
+        contenuPrincipal.innerHTML = `   <h1>Demande de Devis</h1>
      
            <div class="form-container">
         <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
@@ -1807,13 +1820,14 @@ function changelanguesimulateur() {
  * Page figurines concours
  *****************************************/
 function changelanguefigconcours() {
-    const contenupagefigconcours = document.getElementById("contenupage-figconcours");
-    if (!contenupagefigconcours) {
+    const contenuPrincipal = document.getElementById("contenupage-principal");
+  
+    if (!contenuPrincipal) {
         return;
     }
 
     if (langueselect === "english") {
-        contenupagefigconcours.innerHTML = `<h1>🎨 Display Painting</h1>
+        contenuPrincipal.innerHTML = `<h1>🎨 Display Painting</h1>
 <p>
   Turn your miniatures into works of art for competitions such as <strong>Golden Demon</strong> or <strong>OctoPainting</strong>.
   Our advanced techniques (NMM, freehand, OSL, weathering) and attention to detail ensure pieces that captivate judges and shine in display cases.
@@ -1875,7 +1889,7 @@ function changelanguefigconcours() {
 </div>
 `;
     } else if (langueselect === "spanish") {
-        contenupagefigconcours.innerHTML = `<h1>🎨 Pintura de Exposición</h1>
+        contenuPrincipal.innerHTML = `<h1>🎨 Pintura de Exposición</h1>
 <p>
   Transforma tus miniaturas en auténticas obras de arte para concursos como <strong>Golden Demon</strong> u <strong>OctoPainting</strong>.
   Nuestras técnicas avanzadas (NMM, freehand, OSL, weathering) y la atención al detalle garantizan piezas que cautivan a los jueces y brillan en vitrinas.
@@ -1937,7 +1951,7 @@ function changelanguefigconcours() {
 </div>
 `;
     } else if (langueselect === "french") {
-        contenupagefigconcours.innerHTML = `  <h1>🎨 Peinture d'Exposition</h1>
+        contenuPrincipal.innerHTML = `  <h1>🎨 Peinture d'Exposition</h1>
     <p>Transformez vos figurines en œuvres d'art pour des concours comme le <strong>Golden Demon</strong> ou <strong>OctoPainting</strong>. Nos techniques avancées (NMM, freehand, OSL, weathering) et notre soin du détail garantissent des pièces qui captivent les juges et brillent en vitrine. </p>
        
       
@@ -2203,13 +2217,14 @@ function changelanguepiecepop() {
  * Page simulateur
  *****************************************/
 function changelanguecondition() {
-    const contenupagecondition = document.getElementById("contenupage-condition");
-    if (!contenupagecondition) {
+   const contenuPrincipal = document.getElementById("contenupage-principal");
+   
+    if (!contenuPrincipal) {
         return;
     }
 
     if (langueselect === "english") {
-        contenupagecondition.innerHTML = `<h1 class="emoji">🎨 Studio PF: Miniature Painting</h1>
+        contenuPrincipal.innerHTML = `<h1 class="emoji">🎨 Studio PF: Miniature Painting</h1>
 <h2 class="emoji">📜 General Terms and Conditions of Sale 2026</h2>
 <hr>
 
@@ -2377,7 +2392,7 @@ function changelanguecondition() {
 `;
     }
         if (langueselect === "spanish") {
-        contenupagecondition.innerHTML = `<h1 class="emoji">🎨 Studio PF: Pintura de Miniaturas</h1>
+        contenuPrincipal.innerHTML = `<h1 class="emoji">🎨 Studio PF: Pintura de Miniaturas</h1>
 <h2 class="emoji">📜 Condiciones Generales de Venta 2026</h2>
 <hr>
 
@@ -2531,7 +2546,7 @@ function changelanguecondition() {
 `;
     }
         if (langueselect === "french") {
-        contenupagecondition.innerHTML = ` <h1 class="emoji">🎨 Studio PF : Peinture Figurine</h1>
+        contenuPrincipal.innerHTML = ` <h1 class="emoji">🎨 Studio PF : Peinture Figurine</h1>
     <h2 class="emoji">📜 Conditions Générales de Vente 2026</h2>
     <hr>
 
