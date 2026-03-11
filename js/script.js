@@ -181,29 +181,29 @@ function changelanguefoot() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = ` <nav class="menu-mobile">
+        html = ` 
             <ul class="menu">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></li>
         <li><a href="horaires.html"  onclick="loadPage('horaires.html');  scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
 </ul>  
-        </nav>`;
+        `;
     } else if (currentLanguage === "spanish") {
-        html = ` <nav class="menu-mobile">
+        html = ` 
             <ul class="menu">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></li>
         <li><a href="horaires.html"  onclick="loadPage('horaires.html');  scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
 </ul>  
-        </nav>`;
+       `;
     } else {
-        html = ` <nav class="menu-mobile">
+        html = ` 
             <ul class="menu">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></li>
         <li><a href="horaires.html"  onclick="loadPage('horaires.html');  scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
 </ul>  
-        </nav>`;
+       `;
     }
 
     foot.innerHTML = html;
