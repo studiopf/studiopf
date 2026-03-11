@@ -41,11 +41,7 @@ animation: info 2s linear infinite alternate;
   transform-origin: center; /* Centre l'origine de la transformation */
 }
 #contenu-principal {
-   
-        width: 100%;
-      padding: 0px;
-     border: 0px;
-
+ 
     }
 .menu{
      margin-top: 5px;
