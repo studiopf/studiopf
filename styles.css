@@ -6,7 +6,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ==========================================================================
+   BOUTON PRINCIPAL – style cohérent avec les cartes
+   ========================================================================== */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 12px auto;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: clamp(1rem, 3.5vw, 1.1rem);
+    font-weight: 600;
+    color: #ffda79;                    /* jaune clair / doré clair */
+    text-align: center;
+    text-decoration: none;
+    background: rgba(30, 20, 12, 0.75); /* même fond que .card / .maintenance-box */
+    border: 2px solid #f4c876;         /* bordure jaune/dorée principale */
+    border-radius: 10px;
+    backdrop-filter: blur(6px);         /* effet verre dépoli */
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 218, 121, 0.12); /* léger reflet intérieur */
+    transition: all 0.28s ease;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
 
+/* Hover + focus */
+.button:hover,
+.button:focus {
+    color: #ffffff;
+    background: rgba(50, 35, 20, 0.85);
+    border-color: #ffda79;             /* jaune plus lumineux au survol */
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 
+        0 12px 28px rgba(244, 200, 118, 0.35),
+        0 0 0 3px rgba(244, 200, 118, 0.18);
+    outline: none;
+}
+
+/* Active / clic */
+.button:active {
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: 
+        0 4px 12px rgba(244, 200, 118, 0.25);
+}
+
+/* Variante plus petite (optionnelle) */
+.button.small {
+    padding: 8px 18px;
+    font-size: clamp(0.9rem, 3vw, 0.95rem);
+}
+
+/* Variante pleine largeur (utile pour mobile) */
+.button.full {
+    display: block;
+    width: 90%;
+    max-width: 360px;
+    margin: 20px auto;
+}
+
+/* Variante secondaire (si tu veux un bouton plus discret) */
+.button.secondary {
+    background: rgba(180, 140, 60, 0.18);
+    border-color: #d4a76c;
+    color: #d4b68c;
+}
+
+.button.secondary:hover {
+    background: rgba(244, 200, 118, 0.28);
+    border-color: #ffda79;
+    color: #ffda79;
+}
 /* bandeau défile */
 .info-container {
     margin-top: 0;
