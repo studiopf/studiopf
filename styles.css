@@ -107,7 +107,7 @@ animation: info 2s linear infinite alternate;
     gap: 0px;
 
     margin: 0rem auto;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 0 0px;
 }
 /* Tableau */
@@ -696,7 +696,7 @@ gap: 5px;
     gap: 0px;
 
     margin: 0rem auto;
-    max-width: 400px;
+    max-width: 600px;
     padding: 0 0px;
 }
  .table-container{
