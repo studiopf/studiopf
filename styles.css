@@ -1037,6 +1037,17 @@ nav ul li a:hover {
         padding: 0 15px;
         margin-top: -10px;         /* rapproche un peu le texte du logo */
     }
+
+   .button {
+        padding: 14px 24px;           /* un peu moins large */
+        font-size: clamp(1.05rem, 4.8vw, 1.18rem);
+        min-height: 52px;             /* zone de clic confortable */
+    }
+
+    .button.full-width {
+        width: 96%;
+        padding: 16px 20px;
+    }
 }
 
 /* Pour très petits écrans (320–400px) */
