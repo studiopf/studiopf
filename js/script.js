@@ -18,7 +18,7 @@ function highlightLanguage(langId) {
     });
 }
 
-function setLanguage(lang) {f
+function setLanguage(lang) {
     currentLanguage = lang;
     
     highlightLanguage(lang);
