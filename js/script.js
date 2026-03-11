@@ -1102,7 +1102,7 @@ En <strong>Studio Peinture Figurine</strong>, cada proyecto se convierte en una 
 
 <div class="card" role="region" aria-expanded="true" tabindex="0">
   <h2>👋 ¿Quién está detrás de los pinceles?</h2>
-  <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">`+pfAge+`</span> años.</strong><br>
+  <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">`+`</span> años.</strong><br>
      Pintor apasionado y fundador de Studio Peinture Figurine.<br><br>
      En el mundo de las miniaturas desde 2020, el hobby comenzó un poco por casualidad.<br>
      El Covid transformó esta pasión en una verdadera búsqueda artística.<br>
