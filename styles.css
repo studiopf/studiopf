@@ -666,6 +666,9 @@ gap: 5px;
     transition: all 0.28s ease;
     text-align: center;
 }
+.cardlogo {
+    text-align: center;
+}
 
 .card:hover, .card2:hover, .card3:hover, .logopart:hover {
     transform: translateY(-6px) scale(1.02);
