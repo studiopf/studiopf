@@ -106,7 +106,7 @@ function changelangueenglish() {
 loadPage(urlencours);
      changelanguemenu();
     changelangueinfo();
-        changelangueindex();
+
 } 
 
 function changelanguespanish() {
@@ -115,7 +115,7 @@ function changelanguespanish() {
     loadPage(urlencours);
     changelanguemenu();
       changelangueinfo();
-        changelangueindex();
+
 }
 
 function changelanguefrench() {
@@ -124,7 +124,7 @@ function changelanguefrench() {
     loadPage(urlencours);
       changelanguemenu();
    changelangueinfo();
-    changelangueindex();
+
 }
 function changelanguemenu() {
     const menucontenu = document.getElementById("menu-contenu");
@@ -947,7 +947,7 @@ function changelanguepeinturecommission() {
 /*****************************************
  * Page index
  *****************************************/
-function changelanguepeinturecommission() {
+function changelangueindex() {
       // Calcul automatique des âges
     const currentYear = new Date().getFullYear();
     
@@ -3874,7 +3874,7 @@ document.addEventListener("DOMContentLoaded", initializeFormCalculations);
 
     
 // Appelle la fonction au chargement de la page
-document.addEventListener("DOMContentLoaded", changelanguepeinturecommission);
+document.addEventListener("DOMContentLoaded", changelangueindex);
 document.addEventListener("DOMContentLoaded", changelanguepeinturecommission);
 document.addEventListener("DOMContentLoaded", changelanguesimulateur);
 document.addEventListener("DOMContentLoaded", changelanguecondition);
