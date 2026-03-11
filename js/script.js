@@ -979,7 +979,7 @@ function initializeGalerie() {
 function changelanguementionslegales() {
      const main = document.getElementById("contenu-principal");
     if (!main) return;
-
+let html = "";
     if (currentLanguage === "english") {
         html = `
             <h1>✨ Legal Notice ✨</h1>
@@ -995,7 +995,7 @@ function changelanguementionslegales() {
     }
     else if (currentLanguage === "spanish") {
       html = `
-            <h1>✨ Legal Notice ✨</h1>
+            <h1>✨ Legal Noticias ✨</h1>
             <p><strong>Website:</strong> studiopf.fr<br>
             <strong>Last updated:</strong> January 19, 2026</p>
             <!-- Traduction anglaise complète ici -->
@@ -1009,7 +1009,7 @@ function changelanguementionslegales() {
     // français = version par défaut → rien à faire, le HTML statique suffit
 else { // français (par défaut)
       html = `
-            <h1>✨ Legal Notice ✨</h1>
+            <h1>✨Mentions Legal ✨</h1>
             <p><strong>Website:</strong> studiopf.fr<br>
             <strong>Last updated:</strong> January 19, 2026</p>
             <!-- Traduction anglaise complète ici -->
