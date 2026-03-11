@@ -387,7 +387,7 @@ else if (currentLanguage === "spanish") {
 
 function changelangueindex() {
     const main = document.getElementById("contenu-principal");
-    if (!main) return;
+   
 
     let html = "";
 
