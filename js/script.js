@@ -23,8 +23,8 @@ function setLanguage(lang) {
     
     highlightLanguage(lang);
     changelangueinfo();
-    if (currentPage.includes("peinturecommission")&&currentLanguage!="french") {
-         loadPage(index); 
+    if (currentPage.includes("peinturecommission") && currentLanguage!="french") {
+         loadPage('index.html'); 
     }else{
     loadPage(currentPage); // recharge la page courante avec la nouvelle langue
     }
