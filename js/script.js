@@ -977,11 +977,11 @@ function initializeGalerie() {
 }
 
 function changelanguementionslegales() {
-    const main = document.getElementById("contenu-principal");
+     const main = document.getElementById("contenu-principal");
     if (!main) return;
 
     if (currentLanguage === "english") {
-        main.innerHTML = `
+        html = `
             <h1>✨ Legal Notice ✨</h1>
             <p><strong>Website:</strong> studiopf.fr<br>
             <strong>Last updated:</strong> January 19, 2026</p>
@@ -994,7 +994,7 @@ function changelanguementionslegales() {
         `;
     }
     else if (currentLanguage === "spanish") {
-       main.innerHTML = `
+      html = `
             <h1>✨ Legal Notice ✨</h1>
             <p><strong>Website:</strong> studiopf.fr<br>
             <strong>Last updated:</strong> January 19, 2026</p>
@@ -1008,7 +1008,7 @@ function changelanguementionslegales() {
     }
     // français = version par défaut → rien à faire, le HTML statique suffit
 else { // français (par défaut)
-       main.innerHTML = `
+      html = `
             <h1>✨ Legal Notice ✨</h1>
             <p><strong>Website:</strong> studiopf.fr<br>
             <strong>Last updated:</strong> January 19, 2026</p>
