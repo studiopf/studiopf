@@ -825,14 +825,24 @@ nav ul li a:hover {
         justify-content: center;
     }
 
-    .card-container2logo {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 0px;
-        justify-content: center;
-        margin: 0rem auto;
-        max-width: 600px;
-        padding: 0 0px;
+/* On s'assure que le contenu principal respire aussi */
+    #contenu-principal {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+   /* Blocs marrons (maintenance-box + card) → on réduit la largeur + marges latérales */
+    .maintenance-box,
+    .card,
+    .card2,
+    .card3,
+    .cardform,
+    .logopart {
+        max-width: 92%;            /* ← au lieu de 100% → laisse ~4% de chaque côté */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 15px 12px;        /* un peu moins de padding interne pour compenser */
     }
 
     .card-container3 {
@@ -934,38 +944,47 @@ nav ul li a:hover {
         flex: 0 0 100%;
     }
 
-    .logo {
-        position: relative;
-        width: 150px; /* Petit sur mobile */
+   .logo {
+        width: 220px;          /* ← agrandi (au lieu de 150px) */
+        max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
         height: auto;
-        margin-bottom: 0px;
-        justify-content: center;
-        align-items: center;
-        filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
-        border-radius: 8px;
+        margin: 10px auto;     /* un peu d'air autour */
     }
 
     .cardlogoimg {
+        width: 100%;
         text-align: center;
-        width: 150px;
-        height: auto;
     }
 
-    .logo-a {
-        width: 100%;
-        padding: 10px;
-        position: relative;
+/* On force le conteneur logo + texte à être plus harmonieux */
+    .card-container2logo {
+        flex-direction: column;     /* déjà le cas normalement, mais on sécurise */
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .cardlogo {
+        padding: 0 15px;
+        margin-top: -10px;         /* rapproche un peu le texte du logo */
     }
 }
 
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
-    .logo {
-        justify-content: center;
-        width: 80px;
-        margin: 0px auto 0px;
+      .logo {
+        width: 180px;              /* un peu plus petit que sur 640px */
+        max-width: 70%;
     }
 
+    .maintenance-box,
+    .card,
+    .card2,
+    .card3,
+    .cardform,
+    .logopart {
+        max-width: 94%;            /* encore un peu plus d'air */
+        padding: 12px 10px;
+    }
     .cardpartenaire {
         height: 42px;
     }
@@ -974,3 +993,4 @@ nav ul li a:hover {
         width: 18px;
     }
 }
+
