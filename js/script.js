@@ -3422,7 +3422,7 @@ window.onload = function() {
           changelanguemenu();
 changelangueinfo();
     changelanguesimulateur();
-    
+       changelangueindex();
     initializeFormationForm();
     initializeFormCalculations();
        initializeCardToggle();
