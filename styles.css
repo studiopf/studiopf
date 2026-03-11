@@ -9,9 +9,12 @@
 }
  //bandeau défile
 .info-container{
-   width: 100%;
-                 padding: 20px;
-            position: relative;
+  margin-top: 0;
+    margin-bottom: 0;
+
+     border: 0px;
+     width: 100%; 
+            position: center;
   
 }
 .info {
@@ -59,13 +62,12 @@ animation: info 2s linear infinite alternate;
   max-width: 780px;
 }
 .maintenance-box {
-    width: 100%;
-                
-            position: relative;
-   
- margin-left: 0;
-  margin-right: 0;
-   margin-top: 0px;
+      margin-top: 0;
+    margin-bottom: 0;
+
+     border: 0px;
+     width: 100%; 
+            position: center;
   padding: 5px;
   background: rgba(30, 20, 12, 0.75);
   border: 1px solid #6b4e2f;
@@ -557,9 +559,12 @@ animation: info 2s linear infinite alternate;
             opacity: 0.8;
         }
 .carousel-container {
-     width: 100%;
-                 padding: 10px;
-            position: relative;
+  margin-top: 0;
+    margin-bottom: 0;
+
+     border: 0px;
+     width: 100%; 
+            position: center;
 }
 
 .carousel {
@@ -680,6 +685,12 @@ gap: 5px;
 .cardlogo {
     text-align: center;
    width: auto;
+   height: auto;
+}
+
+.cardlogoimg {
+    text-align: center;
+   width: 350px;
    height: auto;
 }
 
@@ -902,6 +913,11 @@ gap: 5px;
    
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
   border-radius: 8px;
+}
+.cardlogoimg {
+    text-align: center;
+   width: 150px;
+   height: auto;
 }
 .logo-a {
      width: 100%;
