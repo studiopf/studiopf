@@ -144,6 +144,8 @@ function changelanguemenu() {
         </ul>`;
     } else {
         html = `<ul class="menu">
+          <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html');return false;">TEST peinture commission</a></li>
+            <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html');return false;">TEST Simulateur devis</a></li>
             <li><a href="formation.html" onclick="loadPage('formation.html');return false;">Formation 📚</a></li>
             <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galerie 🖼️</a></li>
         </ul>`;
