@@ -19,14 +19,30 @@ function highlightLanguage(langId) {
 }
 
 function setLanguage(lang) {
-    currentLanguage = lang;
-    
+    // ... normalisation comme ci-dessus ...
+
     highlightLanguage(lang);
-    changelangueinfo();
-    if (currentPage.includes("peinturecommission") && currentLanguage!="french") {
-         loadPage('index.html'); 
-    }else{
-    loadPage(currentPage); // recharge la page courante avec la nouvelle langue
+
+    if (typeof changelangueinfo === "function") {
+        changelangueinfo();
+    }
+
+    // On recharge TOUJOURS la page courante
+    // → les pages non-traduites resteront en français (ou afficheront un message)
+    loadPage(currentPage);
+
+    // Option : ajouter un message temporaire si la page n'est pas traduite
+    if (currentPage.includes("peinturecommission") && currentLanguage !== "french") {
+        setTimeout(() => {
+            const info = document.getElementById("infoParagraph") || document.querySelector(".info");
+            if (info) {
+                const oldText = info.textContent;
+                info.textContent = currentLanguage === "english"
+                    ? "This page is only available in French"
+                    : "Esta página solo está disponible en francés";
+                setTimeout(() => { info.textContent = oldText; }, 5000);
+            }
+        }, 800);
     }
 }
 
