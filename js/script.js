@@ -123,10 +123,6 @@ function applyLanguageAndInit() {
     initializeCarousel();
     initScrollBehaviors();
 
-    // Initialisations spécifiques par page
-    if (currentPage.includes("index")) {
-        changelangueindex();
-    }
 
     if (currentPage.includes("galerie")) {
         initGalerieWithLang();   // met le titre + structure
@@ -165,7 +161,10 @@ function applyLanguageAndInit() {
                                   }
     }
 
-
+    // Initialisations spécifiques par page
+    if (currentPage.includes("index")) {
+        changelangueindex();
+    }
 }
 
 // ────────────────────────────────────────────────
