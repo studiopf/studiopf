@@ -3290,7 +3290,7 @@ function initializePageSpecificScripts(page) {
       case 'index.html':
       if (typeof changelanguepeinturecommission === 'function') {
         console.log('Appel de changelanguepeinturecommission');
-        changelanguepeinturecommission();
+        changelangueindex();
       } else {
         console.error('changelangue non défini');
       }
