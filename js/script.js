@@ -21,6 +21,7 @@ function highlightLanguage(langId) {
 function setLanguage(lang) {
     currentLanguage = lang;
     highlightLanguage(lang);
+    changelangueinfo();
     loadPage(currentPage); // recharge la page courante avec la nouvelle langue
 }
 
