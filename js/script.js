@@ -116,6 +116,7 @@ loadPage(urlencours);
      changelanguemenu();
     changelangueinfo();
 changelangueindex();
+      changelanguegalerie();
 } 
 
 function changelanguespanish() {
@@ -125,6 +126,7 @@ function changelanguespanish() {
     changelanguemenu();
       changelangueinfo();
 changelangueindex();
+      changelanguegalerie();
 }
 
 function changelanguefrench() {
@@ -134,6 +136,7 @@ function changelanguefrench() {
       changelanguemenu();
    changelangueinfo();
 changelangueindex();
+      changelanguegalerie();
 }
 function changelanguemenu() {
     const menucontenu = document.getElementById("menu-contenu");
@@ -3349,6 +3352,7 @@ window.onload = function() {
 changelangueinfo();
     changelanguesimulateur();
        changelangueindex();
+      changelanguegalerie();
     initializeFormationForm();
     initializeFormCalculations();
        initializeCardToggle();
@@ -3913,6 +3917,7 @@ function appelimg() {
 }
 
 function initializeGalerie() {
+      changelanguegalerie();
     const imageFilenames = appelimg();
     const basePath = 'img/';
     const gallery = document.getElementById('gallery');
