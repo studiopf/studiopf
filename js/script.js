@@ -947,21 +947,20 @@ function changelanguepeinturecommission() {
 /*****************************************
  * Page index
  *****************************************/
-function changelangueindex() {
-      // Calcul automatique des âges
-    const currentYear = new Date().getFullYear();
-    
-    // Âge de Pierre-François
-    const pfBirthYear = 1987;
-    const pfAge = currentYear - pfBirthYear;
-    document.getElementById("pf-age").textContent = pfAge;
-    
-    const contenupageindex = document.getElementById("contenupage-index");
-    if (!contenupageindex) {
+   function changelangueindex() {
+    const contenu = document.getElementById("contenupage-index");
+    console.log("changelangueindex appelée – langueselect =", langueselect);
+    console.log("Élément contenupage-index existe ?", !!contenu);
+
+    if (!contenu) {
+        console.warn("Element #contenupage-index introuvable !");
         return;
     }
 
     if (langueselect === "english") {
+        console.log("→ anglais activé");
+        contenu.innerHTML = `... ton texte anglais ...`;
+    }
         contenupageindex.innerHTML = `<h1>🎨 Turn your miniatures into true works of art</h1>
 <p>High-end painting for passionate hobbyists, collectors, and demanding players.</p>
 <p>Your miniatures deserve more than a simple brushstroke: they deserve to be elevated, showcased, and made unique.  
@@ -969,7 +968,7 @@ At <strong>Studio Peinture Figurine</strong>, every project becomes a collectibl
 
 <div class="card" role="region" aria-expanded="true" tabindex="0">
   <h2>👋 Who’s behind the brushes?</h2>
-  <p>I am <strong>Pierre-François, aka PF, <span id="pf-age">`+ pfAge +`</span> years old.</strong><br>
+  <p>I am <strong>Pierre-François, aka PF, <span id="pf-age">`+`</span> years old.</strong><br>
      A passionate painter and founder of Studio Peinture Figurine.<br><br>
      In the miniature world since 2020, the hobby began somewhat by chance.<br>
      Covid turned that passion into a true artistic quest.<br>
