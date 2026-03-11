@@ -120,6 +120,18 @@ function applyLanguageAndInit() {
     if (currentPage.includes("formation")) {
         initializeFormationForm();
     }
+            if (currentPage.includes("conditions")) {
+       
+    }
+                    if (currentPage.includes("mentionslegales")) {
+       
+    }
+                            if (currentPage.includes("horaires")) {
+        
+    }
+
+
+
 }
 
 // ────────────────────────────────────────────────
