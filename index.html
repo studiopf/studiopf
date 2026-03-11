@@ -67,14 +67,16 @@
     <header>
      
         <div class="language-selector">
-           <button  onclick="changelanguefrench(); return false;" id="french">
+           <button  onclick="setLanguage(id); return false;" id="french">
         <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="Français"></button>
-             <button onclick="changelangueenglish(); return false;" id="english">
+             <button onclick="setLanguage(id); return false;" id="english">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg" alt="English"></button>
-               <button  onclick="changelanguespanish(); return false;" id="spanish">
+               <button  onclick="setLanguage(id); return false;" id="spanish">
         <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Español"></button>
     
-          
+                  <p><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></p>
+        <p><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></p>
+        <p><a href="horaires.html"  onclick="loadPage('horaires.html'); scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></p>
     </div>
             <div id="info-container" class="info-container">
         <p class="info" id="infoParagraph">Site en maintenance...</p>  
