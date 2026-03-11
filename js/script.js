@@ -1,8 +1,8 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage;
-let currentLanguage;
+let currentPage="index.html";
+let currentLanguage="french";
 
 // Âge dynamique
 const currentYear = new Date().getFullYear();
