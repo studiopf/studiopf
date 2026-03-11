@@ -134,12 +134,12 @@ function changelanguemenu() {
 
     if (currentLanguage === "english") {
         html = `<ul class="menu">
-            <li><a href="formation.html" onclick="loadPage('formation.html');return false;">Training 📚</a></li>
+        
             <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Gallery 🖼️</a></li>
         </ul>`;
     } else if (currentLanguage === "spanish") {
         html = `<ul class="menu">
-            <li><a href="formation.html" onclick="loadPage('formation.html');return false;">Formación 📚</a></li>
+            
             <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galería 🖼️</a></li>
         </ul>`;
     } else {
@@ -249,6 +249,63 @@ function initGalerieWithLang() {
     }
 
     main.innerHTML = html;
+}
+
+function changelangueinfo(){
+if(langueselect === "french"){
+// Chargement du message d'information
+fetch('/data/messageinfo.txt')
+    .then(response => response.text())
+    .then(texte => {
+        // Vérifie si le texte est vide ou contient uniquement des espaces
+        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
+       if (messageinfo === '') {
+    document.querySelector('.info-container').style.display = 'none';
+    document.querySelector('.info').style.display = 'none';
+}
+        updateParagraph(); // Appel de la fonction après avoir récupéré le message
+    })
+    .catch(error => {
+        messageinfo = "error";
+        updateParagraph();
+    });
+}
+if(langueselect === "english"){
+// Chargement du message d'information
+fetch('/data/messageinfoUK.txt')
+    .then(response => response.text())
+    .then(texte => {
+        // Vérifie si le texte est vide ou contient uniquement des espaces
+        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
+       if (messageinfo === '') {
+    document.querySelector('.info-container').style.display = 'none';
+    document.querySelector('.info').style.display = 'none';
+}
+        updateParagraph(); // Appel de la fonction après avoir récupéré le message
+    })
+    .catch(error => {
+        messageinfo = "error";
+        updateParagraph();
+    });
+}
+if(langueselect === "spanish"){
+// Chargement du message d'information
+fetch('/data/messageinfo-es.txt')
+    .then(response => response.text())
+    .then(texte => {
+        // Vérifie si le texte est vide ou contient uniquement des espaces
+        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
+       if (messageinfo === '') {
+    document.querySelector('.info-container').style.display = 'none';
+    document.querySelector('.info').style.display = 'none';
+}
+        updateParagraph(); // Appel de la fonction après avoir récupéré le message
+    })
+    .catch(error => {
+        messageinfo = "error";
+        updateParagraph();
+    });
+}
 }
 
 // ────────────────────────────────────────────────
