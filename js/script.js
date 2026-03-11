@@ -948,9 +948,9 @@ function changelanguepeinturecommission() {
  * Page index
  *****************************************/
    function changelangueindex() {
-    const contenu = document.getElementById("contenupage-index");
+    const contenupageindex = document.getElementById("contenupage-index");
     console.log("changelangueindex appelée – langueselect =", langueselect);
-    console.log("Élément contenupage-index existe ?", !!contenu);
+    console.log("Élément contenupage-index existe ?", !!contenupageindex);
 
     if (!contenu) {
         console.warn("Element #contenupage-index introuvable !");
@@ -959,8 +959,7 @@ function changelanguepeinturecommission() {
 
     if (langueselect === "english") {
         console.log("→ anglais activé");
-        contenu.innerHTML = `... ton texte anglais ...`;
-    }
+    
         contenupageindex.innerHTML = `<h1>🎨 Turn your miniatures into true works of art</h1>
 <p>High-end painting for passionate hobbyists, collectors, and demanding players.</p>
 <p>Your miniatures deserve more than a simple brushstroke: they deserve to be elevated, showcased, and made unique.  
