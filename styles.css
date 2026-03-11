@@ -554,6 +554,11 @@ nav ul li a:hover {
     transition: transform 0.18s ease;
 }
 
+.language-selector button.selected {
+    opacity: 1;                 /* le bouton choisi devient bien visible */
+    border: 3px solid #007bff;  /* ou une bordure bleue, ou un fond différent */
+    box-shadow: 0 0 8px rgba(0,123,255,0.5);
+}
 .language-selector img:hover {
     transform: scale(1.18);
 }
