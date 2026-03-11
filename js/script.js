@@ -3288,11 +3288,11 @@ function initializePageSpecificScripts(page) {
       break;
           
       case 'index.html':
-      if (typeof changelanguepeinturecommission === 'function') {
-        console.log('Appel de changelanguepeinturecommission');
+      if (typeof changelangueindex === 'function') {
+        console.log('Appel de changelangueindex');
         changelangueindex();
       } else {
-        console.error('changelangue non défini');
+        console.error('changelangueindex non défini');
       }
       break;
                 case 'conditions.html':
