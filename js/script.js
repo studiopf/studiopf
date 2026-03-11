@@ -20,6 +20,7 @@ function highlightLanguage(langId) {
 
 function setLanguage(lang) {
     currentLanguage = lang;
+    
     highlightLanguage(lang);
     changelangueinfo();
     loadPage(currentPage); // recharge la page courante avec la nouvelle langue
@@ -267,7 +268,7 @@ function initGalerieWithLang() {
 }
 
 function changelangueinfo(){
-if(langueselect === "french"){
+if(currentLanguage=== "french"){
 // Chargement du message d'information
 fetch('/data/messageinfo.txt')
     .then(response => response.text())
@@ -285,7 +286,7 @@ fetch('/data/messageinfo.txt')
         updateParagraph();
     });
 }
-if(langueselect === "english"){
+if(currentLanguage=== "english"){
 // Chargement du message d'information
 fetch('/data/messageinfoUK.txt')
     .then(response => response.text())
@@ -303,7 +304,7 @@ fetch('/data/messageinfoUK.txt')
         updateParagraph();
     });
 }
-if(langueselect === "spanish"){
+if(currentLanguage=== "spanish"){
 // Chargement du message d'information
 fetch('/data/messageinfo-es.txt')
     .then(response => response.text())
