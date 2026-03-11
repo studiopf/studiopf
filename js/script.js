@@ -2,6 +2,15 @@
 let urlencours;
 urlencours = "index.html";
 
+      // Calcul automatique des âges
+    const currentYear = new Date().getFullYear();
+
+// Âge de Pierre-François
+    const pfBirthYear = 1987;
+    const pfAge = currentYear - pfBirthYear;
+    document.getElementById("pf-age").textContent = pfAge;
+
+
 function highlightLanguage(selectedId) {
     // Récupère tous les boutons
     const buttons = document.querySelectorAll('.language-selector button');
@@ -27,7 +36,7 @@ function changelanguegalerie() {
 
     if (langueselect === "english") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Miniature Art Gallery</h2>
+               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨Gallery</h2>
 <p class="galerie-description">
   ✨ Step into a world where every miniature becomes a work of art.
     
@@ -48,7 +57,7 @@ function changelanguegalerie() {
                }
         if (langueselect === "spanish") {
 
-               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Galería de Arte en Miniatura</h2>
+               contenupagegalerie.innerHTML = `<h2 class="galerie-title">🎨 Galería</h2>
 <p class="galerie-description">
   ✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.
     </p>
@@ -67,7 +76,7 @@ function changelanguegalerie() {
                }
         if (langueselect === "french") {
 
-               contenupagegalerie.innerHTML = `  <h2 class="galerie-title">🎨 Galerie d’Art en Miniature</h2>
+               contenupagegalerie.innerHTML = `  <h2 class="galerie-title">🎨 Galerie</h2>
   <p class="galerie-description">
     ✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.
 
