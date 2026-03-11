@@ -40,24 +40,21 @@ function updateAgeDisplay() {
 // ────────────────────────────────────────────────
 
 function loadPage(page) {
-    currentPage = page; // on met à jour la page courante
-
+    currentPage = page;
     const mainContainer = document.getElementById("contenu-principal");
     if (!mainContainer) {
-        console.error("Élément #contenu-principal introuvable dans la page");
+        console.error("Conteneur principal introuvable sur la page actuelle");
         return;
     }
 
-    console.log(`Chargement de : ${page}`);
+    console.log(`[loadPage] Tentative de chargement : ${page}`);
 
     mainContainer.style.opacity = "0";
 
     setTimeout(() => {
         fetch(page)
             .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status} — ${page} introuvable`);
-                }
+                if (!response.ok) throw new Error(`Statut ${response.status}`);
                 return response.text();
             })
             .then(html => {
@@ -65,24 +62,31 @@ function loadPage(page) {
                 const doc = parser.parseFromString(html, "text/html");
                 const newContent = doc.querySelector("#contenu-principal");
 
+                console.log(`[loadPage] #contenu-principal trouvé ? → ${!!newContent}`);
+
                 if (!newContent) {
-                    console.error(`Aucun #contenu-principal trouvé dans ${page}`);
-                    mainContainer.innerHTML = "<p style='color:red'>Erreur : contenu principal non trouvé dans la page chargée.</p>";
+                    console.warn(`Aucun #contenu-principal dans ${page}`);
+                    mainContainer.innerHTML = `
+                        <div style="color:darkred; padding:2rem; text-align:center;">
+                            <h2>Erreur de chargement</h2>
+                            <p>Contenu principal non trouvé dans <strong>${page}</strong></p>
+                            <small>Vérifie que l'ID "contenu-principal" existe bien dans le fichier.</small>
+                        </div>`;
                 } else {
                     mainContainer.innerHTML = newContent.innerHTML;
+                    console.log(`[loadPage] Contenu chargé avec succès depuis ${page}`);
                 }
 
                 mainContainer.style.opacity = "1";
-                applyLanguageAndInit(); // ← tout passe par ici après chargement
+                applyLanguageAndInit();
             })
             .catch(err => {
-                console.error(`Erreur chargement ${page} :`, err);
-                mainContainer.innerHTML = "<p style='color:red'>Une erreur est survenue lors du chargement.</p>";
+                console.error(`Échec chargement ${page} :`, err);
+                mainContainer.innerHTML = `<p style="color:red">Erreur réseau ou fichier introuvable : ${page}</p>`;
                 mainContainer.style.opacity = "1";
             });
     }, 200);
 }
-
 // ────────────────────────────────────────────────
 // Initialisation globale après chaque chargement / changement langue
 // ────────────────────────────────────────────────
