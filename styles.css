@@ -234,7 +234,7 @@ a:hover,
 
 .card-container2logo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 0px;
     justify-content: center;
     margin: 10px;
