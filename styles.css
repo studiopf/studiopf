@@ -87,7 +87,7 @@ animation: info 2s linear infinite alternate;
 .logo {
      position: relative;
 
-  width: 350px;
+  width: 450px;
   height: auto;
   margin-bottom: 0px;
      justify-content: center; /* Centrage horizontal */
@@ -235,6 +235,15 @@ a:hover,
     padding: 0 0px;
 }
 
+.card-container2logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0px;
+    justify-content: center;
+    margin: 10px;
+    max-width: 1200px;
+    padding: 0 0px;
+}
 .card-container3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -386,12 +395,12 @@ animation: info 2s linear infinite alternate;
 
 
 .social, .social-container {
-        margin-top: 10px;
-    margin-bottom: 10px;
+        margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 10px;
     padding: 0rem 0 0rem;
      margin-top: 0;
     margin-bottom: 0;
@@ -778,8 +787,17 @@ gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
         gap: 8px;
          align-items: center;
-  justify-content: center;
+  justify-content: center;.
     }
+.card-container2logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0px;
+    justify-content: center;
+    margin: 0rem auto;
+    max-width: 600px;
+    padding: 0 0px;
+}
     .card-container3 {
           margin-top: 0;
     margin-bottom: 0;  
@@ -892,7 +910,7 @@ gap: 5px;
 }
 .logo-a {
      width: 100%;
-                 padding: 20px;
+                 padding: 10px;
             position: relative;
 }
 
