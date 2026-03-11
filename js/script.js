@@ -2,7 +2,7 @@
 
 // Variables globales
 let currentPage;
-let currentLanguage = "french";
+let currentLanguage;
 
 // Âge dynamique
 const currentYear = new Date().getFullYear();
