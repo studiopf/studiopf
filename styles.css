@@ -102,6 +102,13 @@ animation: info 2s linear infinite alternate;
   justify-content: center; /* Centrage horizontal */
   align-items: center; /* Centrage vertical */
  text-align: center;
+       display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0px;
+
+    margin: 0rem auto;
+    max-width: 800px;
+    padding: 0 0px;
 }
 /* Tableau */
 table{
@@ -678,6 +685,20 @@ gap: 5px;
    MEDIA QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+
+   }
+.center{
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+ text-align: center;
+       display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0px;
+
+    margin: 0rem auto;
+    max-width: 400px;
+    padding: 0 0px;
+}
  .table-container{
                text-align: center;
       font-size: 12px;       
