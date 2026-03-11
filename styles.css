@@ -233,7 +233,9 @@ a:hover,
 }
 
 .card-container2logo {
-
+  width: 100%;
+                 padding: 10px;
+            position: relative;
 }
 .card-container3 {
     display: grid;
@@ -555,9 +557,9 @@ animation: info 2s linear infinite alternate;
             opacity: 0.8;
         }
 .carousel-container {
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
+     width: 100%;
+                 padding: 10px;
+            position: relative;
 }
 
 .carousel {
