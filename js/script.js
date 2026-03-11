@@ -796,6 +796,253 @@ function initializeGalerie() {
     showImages('Tous');
 }
 
+function changelanguementionslegales() {
+    const main = document.getElementById("contenu-principal");
+    if (!main) return;
+
+    if (currentLanguage === "english") {
+        main.innerHTML = `
+            <h1>✨ Legal Notice ✨</h1>
+            <p><strong>Website:</strong> studiopf.fr<br>
+            <strong>Last updated:</strong> January 19, 2026</p>
+            <!-- Traduction anglaise complète ici -->
+            <div class="section">
+                <h2>Publisher</h2>
+                <p>Studio PF: Pierre-François Frasse<br>Micro-entreprise<br>17 route de Lare, 42510 Saint Georges de Baroille, France</p>
+            </div>
+            <!-- etc. -->
+        `;
+    }
+    else if (currentLanguage === "spanish") {
+        main.innerHTML = `... version espagnole ...`;
+    }
+    // français = version par défaut → rien à faire, le HTML statique suffit
+}
+// ────────────────────────────────────────────────
+// Conditions générales de vente — multilingue
+// ────────────────────────────────────────────────
+
+function changelangueconditions() {
+    const main = document.getElementById("contenu-principal");
+    if (!main) return;
+
+    let html = "";
+
+    if (currentLanguage === "english") {
+        html = `
+            <h1>✨ General Terms and Conditions of Sale ✨</h1>
+            <p><strong>Website:</strong> studiopf.fr<br>
+            <strong>Last updated:</strong> March 2026</p>
+
+            <div class="section">
+                <h2>1. Scope of application</h2>
+                <p>These general terms and conditions apply to all painting commissions, training courses, and related services offered by Studio PF (Pierre-François Frasse, micro-entrepreneur, SIRET 832 040 380 00020).</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Ordering process</h2>
+                <p>Any order is confirmed by written agreement (email or message) and payment of a deposit (usually 50%). The order is firm and final once the miniatures are received by the painter.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Prices – Payment</h2>
+                <p>Prices are in euros (€), quoted individually or via the simulator. Payment is made by PayPal, bank transfer or cash (hand delivery only). Full payment is required before shipping unless otherwise agreed.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Delivery – Shipping</h2>
+                <p>Shipping is done via Colissimo with tracking and insurance. Shipping costs are the responsibility of the client. Studio PF is not liable for loss or damage after handover to the carrier.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Right of withdrawal</h2>
+                <p>No right of withdrawal applies to custom-made products (painted miniatures) as per article L.221-28 of the French Consumer Code.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Intellectual property – Photography</h2>
+                <p>Studio PF retains the right to photograph and publish the finished work on its website, social networks and portfolio unless the client explicitly objects in writing before starting the project.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Liability</h2>
+                <p>Studio PF commits to the best possible execution of the work. In case of dispute, French law applies and the competent court is that of Saint-Étienne.</p>
+            </div>
+
+            <p><em>Last updated: March 2026 – Studio PF – All rights reserved.</em></p>
+        `;
+    } 
+    else if (currentLanguage === "spanish") {
+        html = `
+            <h1>✨ Condiciones Generales de Venta ✨</h1>
+            <p><strong>Sitio web:</strong> studiopf.fr<br>
+            <strong>Última actualización:</strong> Marzo 2026</p>
+
+            <div class="section">
+                <h2>1. Ámbito de aplicación</h2>
+                <p>Estas condiciones generales se aplican a todos los encargos de pintura, cursos de formación y servicios relacionados ofrecidos por Studio PF (Pierre-François Frasse, microempresario, SIRET 832 040 380 00020).</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Proceso de pedido</h2>
+                <p>Cualquier pedido se confirma por acuerdo escrito (correo o mensaje) y pago de un depósito (generalmente 50 %). El pedido es firme una vez recibidas las miniaturas.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Precios – Pago</h2>
+                <p>Los precios están en euros (€), presupuestados individualmente o mediante el simulador. El pago se realiza por PayPal, transferencia bancaria o en efectivo (entrega en mano). El pago total es exigible antes del envío.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Entrega – Envío</h2>
+                <p>El envío se realiza mediante Colissimo con seguimiento y seguro. Los gastos de envío corren a cargo del cliente. Studio PF no se responsabiliza de pérdidas o daños tras la entrega al transportista.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Derecho de desistimiento</h2>
+                <p>No se aplica derecho de desistimiento a productos personalizados (miniaturas pintadas) según el artículo L.221-28 del Código del Consumo francés.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Propiedad intelectual – Fotografías</h2>
+                <p>Studio PF se reserva el derecho de fotografiar y publicar el trabajo terminado en su web, redes sociales y portafolio, salvo oposición expresa por escrito del cliente antes del inicio del proyecto.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Responsabilidad</h2>
+                <p>Studio PF se compromete a realizar el trabajo de la mejor manera posible. En caso de litigio, se aplica la ley francesa y el tribunal competente es el de Saint-Étienne.</p>
+            </div>
+
+            <p><em>Última actualización: Marzo 2026 – Studio PF – Todos los derechos reservados.</em></p>
+        `;
+    } 
+    else { // français (par défaut)
+        html = `
+            <h1>✨ Conditions Générales de Vente ✨</h1>
+            <p><strong>Site :</strong> studiopf.fr<br>
+            <strong>Dernière mise à jour :</strong> Mars 2026</p>
+
+            <div class="section">
+                <h2>1. Champ d'application</h2>
+                <p>Ces conditions générales de vente s'appliquent à l'ensemble des prestations de peinture, formations et services associés proposés par Studio PF (Pierre-François Frasse, micro-entrepreneur, SIRET 832 040 380 00020).</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Processus de commande</h2>
+                <p>Toute commande est confirmée par accord écrit (email ou message) et versement d'un acompte (généralement 50 %). La commande devient ferme et définitive dès réception des figurines par le peintre.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Tarifs – Paiement</h2>
+                <p>Les prix sont exprimés en euros (€), établis sur devis individuel ou via le simulateur. Le règlement s'effectue par PayPal, virement bancaire ou espèces (remise en main propre). Le solde est exigible avant expédition sauf accord contraire.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Livraison – Expédition</h2>
+                <p>L'expédition est réalisée via Colissimo avec suivi et assurance. Les frais de port sont à la charge du client. Studio PF décline toute responsabilité en cas de perte ou avarie après remise au transporteur.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Droit de rétractation</h2>
+                <p>Aucun droit de rétractation ne s'applique aux produits sur mesure (figurines peintes) conformément à l'article L.221-28 du Code de la consommation.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Propriété intellectuelle – Droit à l'image des œuvres</h2>
+                <p>Studio PF se réserve le droit de photographier et publier les réalisations terminées sur son site, ses réseaux sociaux et son portfolio, sauf opposition expresse et écrite du client avant le début du projet.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Responsabilité – Litiges</h2>
+                <p>Studio PF s'engage à réaliser les prestations avec le plus grand soin. En cas de litige, la loi française est applicable et les tribunaux compétents sont ceux de Saint-Étienne.</p>
+            </div>
+
+            <p><em>Dernière mise à jour : Mars 2026 – Studio PF – Tous droits réservés.</em></p>
+        `;
+    }
+
+    main.innerHTML = html;
+}
+// ────────────────────────────────────────────────
+// Horaires d'ouverture — multilingue
+// ────────────────────────────────────────────────
+
+function changelanguehoraires() {
+    const main = document.getElementById("contenu-principal");
+    if (!main) return;
+
+    let html = "";
+
+    if (currentLanguage === "english") {
+        html = `
+            <h1>🕖 Opening Hours & Closures 🕖</h1>
+            <p><strong>Current status (March 2026):</strong> Studio closed until early October 2026</p>
+
+            <div class="section">
+                <h2>Normal opening hours (when active)</h2>
+                <ul>
+                    <li><strong>Monday – Tuesday – Thursday – Friday :</strong> 10:00 – 19:00</li>
+                    <li><strong>Wednesday, Saturday, Sunday :</strong> Closed</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Exceptions & temporary closures</h2>
+                <p>→ Studio closed for painting commissions until beginning of October 2026<br>
+                → Training sessions and coaching possible by appointment only during this period</p>
+            </div>
+
+            <p><em>Last updated: March 2026 – Studio PF</em></p>
+        `;
+    } 
+    else if (currentLanguage === "spanish") {
+        html = `
+            <h1>🕖 Horarios de apertura y cierres 🕖</h1>
+            <p><strong>Estado actual (marzo 2026):</strong> Estudio cerrado hasta principios de octubre de 2026</p>
+
+            <div class="section">
+                <h2>Horario habitual (cuando está activo)</h2>
+                <ul>
+                    <li><strong>Lunes – Martes – Jueves – Viernes :</strong> 10:00 – 19:00</li>
+                    <li><strong>Miércoles, Sábado, Domingo :</strong> Cerrado</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Excepciones y cierres temporales</h2>
+                <p>→ Estudio cerrado para encargos de pintura hasta principios de octubre de 2026<br>
+                → Sesiones de formación y coaching posibles solo con cita previa durante este período</p>
+            </div>
+
+            <p><em>Última actualización: Marzo 2026 – Studio PF</em></p>
+        `;
+    } 
+    else { // français
+        html = `
+            <h1>🕖 Horaires d'ouverture et Fermetures 🕖</h1>
+            <p><strong>État actuel (mars 2026) :</strong> Studio fermé jusqu'au début octobre 2026</p>
+
+            <div class="section">
+                <h2>Horaires habituels (lorsque le studio est ouvert)</h2>
+                <ul>
+                    <li><strong>Lundi – Mardi – Jeudi – Vendredi :</strong> 10h00 – 19h00</li>
+                    <li><strong>Mercredi, Samedi, Dimanche :</strong> Fermé</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Exceptions & fermetures temporaires</h2>
+                <p>→ Studio fermé aux commandes de peinture jusqu'au début octobre 2026<br>
+                → Formations et coachings possibles uniquement sur rendez-vous durant cette période</p>
+            </div>
+
+            <p><em>Dernière mise à jour : Mars 2026 – Studio PF</em></p>
+        `;
+    }
+
+    main.innerHTML = html;
+}
+
 // ────────────────────────────────────────────────
 // Lancement global
 // ────────────────────────────────────────────────
