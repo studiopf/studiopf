@@ -1,7 +1,7 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage = "index.html";
+let currentPage;
 let currentLanguage = "french";
 
 // Âge dynamique
@@ -24,10 +24,10 @@ function setLanguage(lang) {
     highlightLanguage(lang);
     changelangueinfo();
   if (currentPage.includes("peinturecommission") && currentLanguage !== "french") {
-         loadPage("index.html");
-    }else{
-    loadPage(currentPage); // recharge la page courante avec la nouvelle langue
+      currentPage = "index.html";
     }
+    loadPage(currentPage); // recharge la page courante avec la nouvelle langue
+    
 }
 function isMobile() {
     return window.innerWidth <= 768;
