@@ -180,22 +180,23 @@ function changelanguefoot() {
 
     let html = "";
 
-    if (currentLanguage === "english") {
-        html = ` 
-            <ul class="menu">
-                     <li><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></li>
-        <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></li>
-        <li><a href="horaires.html"  onclick="loadPage('horaires.html');  scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
-</ul>  
-        `;
-    } else if (currentLanguage === "spanish") {
-        html = ` 
-            <ul class="menu">
-                     <li><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></li>
-        <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></li>
-        <li><a href="horaires.html"  onclick="loadPage('horaires.html');  scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
-</ul>  
-       `;
+   if (currentLanguage === "english") {
+    html = `
+        <ul class="menu">
+            <li><a href="conditions.html" onclick="loadPage('conditions.html'); scrollToTop(); return false;">General Terms and Conditions 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Legal Notice 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); scrollToTop(); return false;">Opening Hours & Closures 🕖</a></li>
+        </ul>
+    `;
+} 
+else if (currentLanguage === "spanish") {
+    html = `
+        <ul class="menu">
+            <li><a href="conditions.html" onclick="loadPage('conditions.html'); scrollToTop(); return false;">Condiciones Generales de Venta 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Aviso Legal 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); scrollToTop(); return false;">Horarios de Apertura y Cierres 🕖</a></li>
+        </ul>
+    `;
     } else {
         html = ` 
             <ul class="menu">
@@ -215,96 +216,91 @@ function changelanguepartenaires() {
 
     let html = "";
 
-    if (currentLanguage === "english") {
-        html = `    <h3>Nos Partenaires</h3>
+   if (currentLanguage === "english") {
+    html = `
+        <h3>Our Partners</h3>
+  
+        <div class="partenaires-container">
+           
+            <div>
+                <div class="cardpartenaire">
+                    <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-totalwar.png" alt="Total Wargames Logo">
+                    </a>
+                </div>
+                <div class="ppartenaire">
+                    <p>Buy cheaper second-hand<br>5% discount with code:<br><strong>STUDIOPF</strong></p>
+                </div>
+            </div>
+                   
+            <div>
+                <div class="cardpartenaire">
+                    <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">
+                    </a>
+                </div>
+                <div class="ppartenaire">
+                    <p>Your dream miniatures at Maxi discount!<br>up to -19% with code:<br><strong>MAXIPF</strong></p>
+                </div>
+            </div>
+        </div>
    
         <div class="partenaires-container">
-            
-            
-             <div>
-          <div class="cardpartenaire">
-          <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-          <img src="img/logo-totalwar.png" alt="Total Wargames Logo">        </a>
-          </div>
-              <div class="ppartenaire">
-             <p>Achetez moins cher d'occasion<br>5% de remise :<br> <strong>STUDIOPF</strong></p>
-             </div>
-        </div>
-                    
-
-     <div>
-    <div class="cardpartenaire">
-        <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
-          <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">        </a>
-            </div> 
-              <div class="ppartenaire">
-             <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><strong>MAXIPF</strong></p>
+            <div>
+                <div class="cardpartenaire">
+                    <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-mezgike.png" alt="Mezgike Logo">
+                    </a>
+                </div>
+                <div class="ppartenaire">
+                    <p>Superb pre-supported STL miniatures for your sci-fi & fantasy tabletop battle games.<br>-10% on your order<br>with promo code:<br><strong>STUDIOPF</strong></p>
+                </div>
             </div>
         </div>
-       
+    `;
+} 
+else if (currentLanguage === "spanish") {
+    html = `
+        <h3>Nuestros Socios / Partners</h3>
+  
+        <div class="partenaires-container">
            
-      </div>
-    
-                 <div class="partenaires-container">
-                                   
-                                     <div>
-                                         
-          <div class="cardpartenaire">
-        <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
-          <img src="img/logo-mezgike.png" alt="Mezgike Logo">        </a>
-            </div> 
-              
-                                         <div class="ppartenaire">
-             <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy. <br>- 10% sur votre commande<br> avec le code promo :<br><strong>STUDIOPF</strong></p>
+            <div>
+                <div class="cardpartenaire">
+                    <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-totalwar.png" alt="Total Wargames Logo">
+                    </a>
+                </div>
+                <div class="ppartenaire">
+                    <p>Compra más barato de segunda mano<br>5% de descuento con el código:<br><strong>STUDIOPF</strong></p>
+                </div>
             </div>
-                                         
+                   
+            <div>
+                <div class="cardpartenaire">
+                    <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">
+                    </a>
+                </div>
+                <div class="ppartenaire">
+                    <p>¡Tus miniaturas de ensueño con Maxi descuento!<br>hasta -19% con el código:<br><strong>MAXIPF</strong></p>
+                </div>
+            </div>
         </div>
- </div> `;
-    } else if (currentLanguage === "spanish") {
-        html = `    <h3>Nos Partenaires</h3>
    
         <div class="partenaires-container">
-            
-            
-             <div>
-          <div class="cardpartenaire">
-          <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-          <img src="img/logo-totalwar.png" alt="Total Wargames Logo">        </a>
-          </div>
-              <div class="ppartenaire">
-             <p>Achetez moins cher d'occasion<br>5% de remise :<br> <strong>STUDIOPF</strong></p>
-             </div>
-        </div>
-                    
-
-     <div>
-    <div class="cardpartenaire">
-        <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
-          <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">        </a>
-            </div> 
-              <div class="ppartenaire">
-             <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><strong>MAXIPF</strong></p>
+            <div>
+                <div class="cardpartenaire">
+                    <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-mezgike.png" alt="Mezgike Logo">
+                    </a>
+                </div>
+                <div class="ppartenaire">
+                    <p>Preciosas miniaturas STL pre-soportadas para tus juegos de mesa de batalla sci-fi y fantasía.<br>-10% en tu pedido<br>con el código promocional:<br><strong>STUDIOPF</strong></p>
+                </div>
             </div>
         </div>
-       
-           
-      </div>
-    
-                 <div class="partenaires-container">
-                                   
-                                     <div>
-                                         
-          <div class="cardpartenaire">
-        <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
-          <img src="img/logo-mezgike.png" alt="Mezgike Logo">        </a>
-            </div> 
-              
-                                         <div class="ppartenaire">
-             <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy. <br>- 10% sur votre commande<br> avec le code promo :<br><strong>STUDIOPF</strong></p>
-            </div>
-                                         
-        </div>
- </div> `;
+    `;
     } else {
         html = `    <h3>Nos Partenaires</h3>
    
