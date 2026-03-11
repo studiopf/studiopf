@@ -328,13 +328,18 @@ fetch('/data/messageinfo-es.txt')
 
 function initScrollBehaviors() {
     const scrollBtn = document.getElementById("scrollToTopBtn");
+    const scrollBtnTo = document.getElementById("scrollTotal");
+    
     const formSection = document.getElementById("formSection");
-
+    
+    
     if (!scrollBtn) return;
 
     const update = () => {
         const scrolled = document.documentElement.scrollTop > 10;
         scrollBtn.style.display = scrolled ? "block" : "none";
+         if (currentPage.includes("simulateur_devis")) {
+        scrollBtnTo.style.display = scrolled ? "block" : "none";}
         if (formSection) {
             formSection.style.display = (scrolled && !isMobile()) ? "block" : "none";
         }
