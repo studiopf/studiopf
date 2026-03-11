@@ -411,7 +411,8 @@ const select = document.getElementById('niveau');
 
 }
        function scrollToTop() {
-   document.getElementById('scrollTotal').style.display = 'block';
+             if (currentPage.includes("simulateur_devis")) {
+   document.getElementById('scrollTotal').style.display = 'block';}
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
