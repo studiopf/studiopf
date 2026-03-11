@@ -98,6 +98,7 @@ animation: info 2s linear infinite alternate;
 }
 .logo-a {
      width: 100%;
+   height: auto;
                  padding: 20px;
             position: relative;
 }
@@ -686,6 +687,8 @@ gap: 5px;
 }
 .cardlogo {
     text-align: center;
+   width: auto;
+   height: auto;
 }
 
 .card:hover, .card2:hover, .card3:hover, .logopart:hover {
