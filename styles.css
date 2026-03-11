@@ -89,7 +89,7 @@
 
 .logo {
     position: relative;
-    width: 450px; /* Augmenté pour PC */
+    width: 350px; /* Augmenté pour PC */
     height: auto;
     margin-bottom: 0px;
     justify-content: center;
@@ -945,7 +945,7 @@ nav ul li a:hover {
     }
 
    .logo {
-        width: 220px;          /* ← agrandi (au lieu de 150px) */
+        width: 150px;          /* ← agrandi (au lieu de 150px) */
         max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
         height: auto;
         margin: 10px auto;     /* un peu d'air autour */
@@ -972,7 +972,7 @@ nav ul li a:hover {
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
       .logo {
-        width: 180px;              /* un peu plus petit que sur 640px */
+        width: 80px;              /* un peu plus petit que sur 640px */
         max-width: 70%;
     }
 
