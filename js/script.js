@@ -90,6 +90,7 @@ function loadPage(page) {
 function applyLanguageAndInit() {
     changelanguemenu();
     changelanguefoot();
+    changelanguelogo();
     changelanguepartenaires();
     updateAgeDisplay();
 
@@ -1220,6 +1221,71 @@ function changelanguehoraires() {
     }
 
     main.innerHTML = html;
+}
+
+
+function changelanguelogo() {
+    const logo = document.getElementById("logo-conten");
+    if (!logo) return;
+
+    let html = "";
+
+    if (currentLanguage === "english") {
+        html = `
+            <div class="cardlogoimg">
+    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+
+    
+        <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
+
+         </a>    
+</div>
+         <div class="cardlogo">
+            <h1>Dare the artistic adventure!</h1>
+            <p>Reopening:</p>
+            <p class="highlight">→ early October 2026 ←</p>
+            </div>
+
+        `;
+    } 
+    else if (currentLanguage === "spanish") {
+        html = `
+          <div class="cardlogoimg">
+    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+
+    
+        <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
+
+         </a>    
+</div>
+         <div class="cardlogo">
+          <h1>¡Atrévete a la aventura artística!</h1>
+            <p>Reapertura:</p>
+            <p class="highlight">→ principios de octubre de 2026 ←</p>
+            </div>
+
+        `;
+    } 
+    else { // français
+        html = `
+         <div class="cardlogoimg">
+    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+
+    
+        <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
+
+         </a>    
+</div>
+         <div class="cardlogo">
+            <h1>Osez l'aventure artistique !</h1>
+     <p>Réouverture :</p>
+          <p class="highlight">→ début octobre 2026 ←</p>
+            </div>
+
+        `;
+    }
+
+    logo.innerHTML = html;
 }
 
 // ────────────────────────────────────────────────
