@@ -42,27 +42,57 @@ function updateAgeDisplay() {
 // ────────────────────────────────────────────────
 
 function loadPage(page) {
-  currentPage = page;
-
-  const $main = $('#contenu-principal');
-  if (!$main.length) {
-    console.error("Élément #contenu-principal introuvable");
+    ecriturl(page);
+  const contenuPrincipal = document.getElementById("contenu-principal");
+  if (!contenuPrincipal) {
+    console.error("Element contenu-principal non trouvé");
     return;
   }
 
-  $main.html('<p style="text-align:center; padding:3rem;">Chargement...</p>');
+  console.log(`Chargement de la page : ${page}`);
+  contenuPrincipal.style.opacity = 0;
+  setTimeout(() => {
+    fetch(page)
+      .then(response => {
+        if (!response.ok) {
+          console.error(`Échec du fetch pour ${page}: ${response.status}`);
+          throw new Error('Page non trouvée');
+        }
+        return response.text();
+      })
+      .then(data => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, 'text/html');
+        const newContent = doc.querySelector('#contenu-principal');
+        if (!newContent) {
+          console.error("Aucun élément #contenu-principal trouvé dans la page chargée");
+          contenuPrincipal.innerHTML = "<p>Erreur : contenu principal non trouvé.</p>";
+        } else {
+          contenuPrincipal.innerHTML = newContent.innerHTML;
+        }
+        contenuPrincipal.style.opacity = 1;
+        console.log(`Page ${page} chargée, initialisation des scripts`);
+        if (typeof initializeCardToggle === 'function') {
+          console.log('Appel de initializeCardToggle');
+          initializeCardToggle();
+       
+        }
+     
+         
+            applyLanguageAndInit();
+          // Auto-advance every 5 seconds
+setInterval(() => {
+    moveSlide(1);
+}, 5000);
+      })
+      .catch(error => {
+        console.error(`Erreur lors du chargement de ${page}:`, error);
+        contenuPrincipal.innerHTML = "<p>Une erreur est survenue lors du chargement de la page.</p>";
+        contenuPrincipal.style.opacity = 1;
+      });
+  }, 200);
 
-  $main.load(`${page} #contenu-principal > *`, function(response, status, xhr) {
-    if (status === "error") {
-      console.error(`Erreur chargement ${page} : ${xhr.status} ${xhr.statusText}`);
-      $main.html('<p style="color:red; text-align:center; padding:3rem;">Erreur de chargement de la page</p>');
-      return;
-    }
 
-    // Après chargement réussi :
-    applyLanguageAndInit();
-  });
-}
 
 // Applique langue + initialise tous les composants possibles
 function applyLanguageAndInit() {
