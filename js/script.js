@@ -956,8 +956,10 @@ function changelangueindex() {
     const pfAge = currentYear - pfBirthYear;
     document.getElementById("pf-age").textContent = pfAge;
     
-     const conteneur = document.getElementById("contenupage-index") || document.getElementById("contenu-principal");
-    if (!conteneur) return;
+    const contenupageindex = document.getElementById("contenupage-index");
+    if (!contenupageindex) {
+        return;
+    }
 
     if (langueselect === "english") {
         contenupageindex.innerHTML = `<h1>🎨 Turn your miniatures into true works of art</h1>
