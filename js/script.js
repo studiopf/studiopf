@@ -1225,7 +1225,7 @@ function changelanguehoraires() {
 
 
 function changelanguelogo() {
-    const logo = document.getElementById("logo-conten");
+    const logo = document.getElementById("logo-contenu");
     if (!logo) return;
 
     let html = "";
