@@ -392,22 +392,32 @@ const select = document.getElementById('niveau');
     scrollTotal();
 
 }
-       function scrollToTop() {
-             if (currentPage.includes("simulateur_devis")) {
-   document.getElementById('scrollTotal').style.display = 'block';}
-           
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                    
-                });
-                   
-  if ( testscrolltotal === 1) {
-     document.getElementById('scrollTotal').style.display = 'block';
-  } else {
-       document.getElementById('scrollTotal').style.display = 'none';
-  } 
-            }
+      function scrollToTop() {
+    // 1. Remonter tout en haut de la page (toujours)
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+    // 2. Gestion de l'affichage du bouton/élément #scrollTotal
+    const scrollTotal = document.getElementById('scrollTotal');
+    
+    // Si l'élément n'existe pas → on arrête tout de suite
+    if (!scrollTotal) return;
+
+    // Cas particulier : page du simulateur
+    if (currentPage.includes("simulateur_devis")) {
+        scrollTotal.style.display = 'block';
+        return; // on sort, pas besoin d'aller plus loin
+    }
+
+    // Sinon : logique normale basée sur testscrolltotal
+    if (testscrolltotal === 1) {
+        scrollTotal.style.display = 'block';
+    } else {
+        scrollTotal.style.display = 'none';
+    }
+}
             
 function scrollTotal(offset=100) {
               if (currentPage.includes("simulateur_devis")) {
