@@ -152,6 +152,23 @@ function applyLanguageAndInit() {
         initializeFormationForm();
     }
 
+                if (currentPage.includes("conditions")) {
+                  if (typeof changelangueconditions === "function") {
+       changelangueconditions();
+                  }
+    }
+                    if (currentPage.includes("mentionslegales")) {
+                          if (typeof changelanguementionslegales === "function") {
+       changelanguementionslegales();
+                          }
+    }
+                            if (currentPage.includes("horaires")) {
+                                  if (typeof changelanguehoraires === "function") {
+        changelanguehoraires();
+                                  }
+    }
+
+    
 }
 
    function changelangueindex() {
