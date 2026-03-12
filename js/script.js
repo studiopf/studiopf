@@ -1,7 +1,7 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage = "formation.html";
+let currentPage = "index.html";
 let currentLanguage = "french";
 
 // Âge dynamique
@@ -1332,8 +1332,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Langue par défaut
     highlightLanguage("french");
 
-    // Chargement page initiale
-    loadPage(currentPage);
+
 
     // Sélecteurs de langue
     document.getElementById("english")?.addEventListener("click", () => setLanguage("english"));
