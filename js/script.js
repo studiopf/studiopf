@@ -1,7 +1,7 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage = "index.html";
+let currentPage;
 let currentLanguage = "french";
 
 // Âge dynamique
@@ -162,6 +162,20 @@ function applyLanguageAndInit() {
 
     if (currentLanguage === "english") {
         html = `
+        <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img src="https://studiopf.fr/carroussel/carrousel1.jpg" alt="Studio PF"  loading="eager">
+            <img src="https://studiopf.fr/carroussel/carrousel2.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel3.jpg" alt="Studio PF"  loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel4.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel5.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel6.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel7.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel8.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel9.jpg" alt="Studio PF" loading="eager">
+        </div>
+
+    </div>
             <p>I'll be back very soon with new painted adventures!</p>
             <p>Reopening of availability and orders</p>
             <p class="highlight">→ early October 2026 ←</p>
@@ -177,6 +191,20 @@ function applyLanguageAndInit() {
         `;
     } else if (currentLanguage === "spanish") {
         html = `
+        <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img src="https://studiopf.fr/carroussel/carrousel1.jpg" alt="Studio PF"  loading="eager">
+            <img src="https://studiopf.fr/carroussel/carrousel2.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel3.jpg" alt="Studio PF"  loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel4.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel5.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel6.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel7.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel8.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel9.jpg" alt="Studio PF" loading="eager">
+        </div>
+
+    </div>
             <p>¡Volveré muy pronto con nuevas aventuras pintadas!</p>
             <p>Reapertura de disponibilidad y pedidos</p>
             <p class="highlight">→ principios de octubre de 2026 ←</p>
@@ -192,6 +220,20 @@ function applyLanguageAndInit() {
         `;
     } else {
         html = `
+        <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img src="https://studiopf.fr/carroussel/carrousel1.jpg" alt="Studio PF"  loading="eager">
+            <img src="https://studiopf.fr/carroussel/carrousel2.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel3.jpg" alt="Studio PF"  loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel4.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel5.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel6.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel7.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel8.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carrousel9.jpg" alt="Studio PF" loading="eager">
+        </div>
+
+    </div>
             <p>Je reviens très prochainement avec de nouvelles aventures peintes !</p>
             <p>Réouverture des disponibilités et prises de commande</p>
             <p class="highlight">→ début octobre 2026 ←</p>
