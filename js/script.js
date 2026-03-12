@@ -309,9 +309,9 @@ function changelanguefoot() {
    if (currentLanguage === "english") {
     html = `
         <ul class="menu">
-            <li><a href="conditions.html" onclick="loadPage('conditions.html'); scrollToTop(); return false;">General Terms and Conditions 📜</a></li>
-            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Legal Notice 💼</a></li>
-            <li><a href="horaires.html" onclick="loadPage('horaires.html'); scrollToTop(); return false;">Opening Hours & Closures 🕖</a></li>
+            <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
              <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
         </ul>
     `;
@@ -319,18 +319,18 @@ function changelanguefoot() {
 else if (currentLanguage === "spanish") {
     html = `
         <ul class="menu">
-            <li><a href="conditions.html" onclick="loadPage('conditions.html'); scrollToTop(); return false;">Condiciones Generales de Venta 📜</a></li>
-            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Aviso Legal 💼</a></li>
-            <li><a href="horaires.html" onclick="loadPage('horaires.html'); scrollToTop(); return false;">Horarios de Apertura y Cierres 🕖</a></li>
+            <li><a href="conditions.html" onclick="loadPage('conditions.html');  return false;">Condiciones Generales de Venta 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Aviso Legal 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html');  return false;">Horarios de Apertura y Cierres 🕖</a></li>
              <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
         </ul>
     `;
     } else {
         html = ` 
             <ul class="menu">
-                     <li><a href="conditions.html"  onclick="loadPage('conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></li>
-        <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></li>
-        <li><a href="horaires.html"  onclick="loadPage('horaires.html');  scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
+                     <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
+        <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html');  return false;">Mentions Légales 💼</a></li>
+        <li><a href="horaires.html"  onclick="loadPage('horaires.html');  return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
          <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
 </ul>  
        `;
