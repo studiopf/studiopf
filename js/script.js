@@ -117,6 +117,7 @@ function loadPage(page) {
 // ────────────────────────────────────────────────
 
 function applyLanguageAndInit() {
+    document.getElementById('scrollTotal').style.display = 'none';
         updateDebugDisplay();
     changelanguemenu();
     changelanguefoot();
