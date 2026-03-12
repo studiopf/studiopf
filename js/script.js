@@ -166,10 +166,6 @@ function applyLanguageAndInit() {
                                   }
     }
 
-    // Initialisations spécifiques par page
-    if (currentPage.includes("index")) {
-        changelangueindex();
-    }
 }
 
 // ────────────────────────────────────────────────
@@ -447,7 +443,8 @@ function changelangueindex() {
 
 function initGalerieWithLang() {
     const main = document.getElementById("contenu-principal");
-    if (!main) return;
+  
+    
 
     let html = "";
 
