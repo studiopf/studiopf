@@ -1,7 +1,7 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage = "index.html";
+let currentPage = "formation.html";
 let currentLanguage = "french";
 
 // Âge dynamique
@@ -152,6 +152,62 @@ function applyLanguageAndInit() {
         initializeFormationForm();
     }
 
+}
+
+   function changelangueindex() {
+    const main = document.getElementById("contenu-principal");
+   
+
+    let html = "";
+
+    if (currentLanguage === "english") {
+        html = `
+            <p>I'll be back very soon with new painted adventures!</p>
+            <p>Reopening of availability and orders</p>
+            <p class="highlight">→ early October 2026 ←</p>
+            <p class="highlight">→ contact me for your future projects ←</p>
+            <div class="center">
+                <div class="maintenance-box">
+                    <h2>🎨 Transform your miniatures into true works of art</h2>
+                    <p>High-end painting for enthusiasts, collectors and demanding players.</p>
+                    <p>Your miniatures deserve better than a simple brush stroke!</p>
+                    <p>At <strong>Studio PF</strong>, each project becomes a unique collectible piece.</p>
+                </div>
+            </div>
+        `;
+    } else if (currentLanguage === "spanish") {
+        html = `
+            <p>¡Volveré muy pronto con nuevas aventuras pintadas!</p>
+            <p>Reapertura de disponibilidad y pedidos</p>
+            <p class="highlight">→ principios de octubre de 2026 ←</p>
+            <p class="highlight">→ contáctame para tus proyectos futuros ←</p>
+            <div class="center">
+                <div class="maintenance-box">
+                    <h2>🎨 Transforma tus miniaturas en verdaderas obras de arte</h2>
+                    <p>Pintura de alta gama para entusiastas, coleccionistas y jugadores exigentes.</p>
+                    <p>¡Tus miniaturas merecen más que un simple pincelada!</p>
+                    <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
+                </div>
+            </div>
+        `;
+    } else {
+        html = `
+            <p>Je reviens très prochainement avec de nouvelles aventures peintes !</p>
+            <p>Réouverture des disponibilités et prises de commande</p>
+            <p class="highlight">→ début octobre 2026 ←</p>
+            <p class="highlight">→ contactez-moi pour vos futures projets ←</p>
+            <div class="center">
+                <div class="maintenance-box">
+                    <h2>🎨 Transformez vos figurines en véritables œuvres d’art</h2>
+                    <p>Peinture haut de gamme pour passionnés, collectionneurs et joueurs exigeants.</p>
+                    <p>Vos figurines méritent mieux qu’un simple coup de pinceau !</p>
+                    <p>Chez <strong>Studio PF</strong>, chaque projet devient une pièce unique de collection.</p>
+                </div>
+            </div>
+        `;
+    }
+
+    main.innerHTML = html;
 }
 
 // ────────────────────────────────────────────────
