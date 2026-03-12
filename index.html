@@ -374,35 +374,6 @@ setInterval(function(){
         <script>
 
 
-function initializeCardToggle() {
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        // Supprimer les anciens écouteurs pour éviter les doublons
-        card.removeEventListener('click', toggleCard);
-        card.removeEventListener('keypress', handleKeyPress);
-
-        // Ajouter les nouveaux écouteurs
-        card.addEventListener('click', toggleCard);
-        card.addEventListener('keypress', handleKeyPress);
-    });
-}
-
-function toggleCard(event) {
-    const card = event.currentTarget;
-    const isExpanded = card.getAttribute('aria-expanded') === 'true';
-    card.setAttribute('aria-expanded', !isExpanded);
-    card.classList.toggle('collapsed', isExpanded);
-}
-
-function handleKeyPress(event) {
-    if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        toggleCard(event);
-    }
-}
-
-// Appeler la fonction après le chargement du DOM
-document.addEventListener('DOMContentLoaded', initializeCardToggle);
  function changeniveau() {
 const select = document.getElementById('niveau');
     
