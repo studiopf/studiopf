@@ -399,24 +399,6 @@ const select = document.getElementById('niveau');
         behavior: "smooth"
     });
 
-    // 2. Gestion de l'affichage du bouton/élément #scrollTotal
-    const scrollTotal = document.getElementById('scrollTotal');
-    
-    // Si l'élément n'existe pas → on arrête tout de suite
-    if (!scrollTotal) return;
-
-    // Cas particulier : page du simulateur
-    if (currentPage.includes("simulateur_devis")) {
-        scrollTotal.style.display = 'block';
-        return; // on sort, pas besoin d'aller plus loin
-    }
-
-    // Sinon : logique normale basée sur testscrolltotal
-    if (testscrolltotal === 1) {
-        scrollTotal.style.display = 'block';
-    } else {
-        scrollTotal.style.display = 'none';
-    }
 }
             
 function scrollTotal(offset=100) {
