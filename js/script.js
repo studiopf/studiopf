@@ -117,6 +117,7 @@ function loadPage(page) {
 // ────────────────────────────────────────────────
 
 function applyLanguageAndInit() {
+        updateDebugDisplay();
     changelanguemenu();
     changelanguefoot();
     changelanguelogo();
@@ -149,21 +150,6 @@ function applyLanguageAndInit() {
 
     if (currentPage.includes("formation")) {
         initializeFormationForm();
-    }
-            if (currentPage.includes("conditions")) {
-                  if (typeof changelangueconditions === "function") {
-       changelangueconditions();
-                  }
-    }
-                    if (currentPage.includes("mentionslegales")) {
-                          if (typeof changelanguementionslegales === "function") {
-       changelanguementionslegales();
-                          }
-    }
-                            if (currentPage.includes("horaires")) {
-                                  if (typeof changelanguehoraires === "function") {
-        changelanguehoraires();
-                                  }
     }
 
 }
@@ -444,7 +430,7 @@ function changelangueindex() {
 function initGalerieWithLang() {
     const main = document.getElementById("contenu-principal");
   
-    
+      if (!main) return;
 
     let html = "";
 
