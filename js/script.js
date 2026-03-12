@@ -155,19 +155,19 @@ function applyLanguageAndInit() {
                 if (currentPage.includes("conditions")) {
                   if (typeof changelangueconditions === "function") {
        changelangueconditions();
-                       scrollToTop();
+                       
                   }
     }
                     if (currentPage.includes("mentionslegales")) {
                           if (typeof changelanguementionslegales === "function") {
        changelanguementionslegales();
-                               scrollToTop();
+                             
                           }
     }
                             if (currentPage.includes("horaires")) {
                                   if (typeof changelanguehoraires === "function") {
         changelanguehoraires();
-                                       scrollToTop();
+                                     
                                   }
     }
 
@@ -1322,6 +1322,8 @@ function changelanguehoraires() {
     }
 
     main.innerHTML = html;
+
+    scrollToTop();
 }
 
 
