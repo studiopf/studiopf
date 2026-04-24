@@ -1574,7 +1574,7 @@ function changelanguelogo() {
     if (currentLanguage === "english") {
         html = `
             <div class="cardlogoimg">
-    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <a href="index.html" onclick="loadPage('\index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
     
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
@@ -1592,7 +1592,7 @@ function changelanguelogo() {
     else if (currentLanguage === "spanish") {
         html = `
           <div class="cardlogoimg">
-    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <a href="index.html" onclick="loadPage('\index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
     
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
@@ -1610,7 +1610,7 @@ function changelanguelogo() {
     else { // français
         html = `
          <div class="cardlogoimg">
-    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <a href="index.html" onclick="loadPage('\index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
     
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
