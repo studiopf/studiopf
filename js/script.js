@@ -351,91 +351,119 @@ function changelanguepartenaires() {
 
    if (currentLanguage === "english") {
     html = `
-        <h3>Our Partners</h3>
-  
-        <div class="partenaires-container">
-           
-            <div>
-                <div class="cardpartenaire">
-                    <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-                        <img src="img/logo-totalwar.png" alt="Total Wargames Logo">
-                    </a>
-                </div>
-                <div class="ppartenaire">
-                    <p>Buy cheaper second-hand<br>5% discount with code:<br><strong>STUDIOPF</strong></p>
-                </div>
-            </div>
-                   
-            <div>
-                <div class="cardpartenaire">
-                    <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
-                        <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">
-                    </a>
-                </div>
-                <div class="ppartenaire">
-                    <p>Your dream miniatures at Maxi discount!<br>up to -19% with code:<br><strong>MAXIPF</strong></p>
-                </div>
-            </div>
+       <h3>Our Partners</h3>
+
+<div class="partenaires-container">
+    
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-totalwar.png" alt="Total Wargames Logo">
+            </a>
         </div>
-   
-        <div class="partenaires-container">
-            <div>
-                <div class="cardpartenaire">
-                    <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/logo-mezgike.png" alt="Mezgike Logo">
-                    </a>
-                </div>
-                <div class="ppartenaire">
-                    <p>Superb pre-supported STL miniatures for your sci-fi & fantasy tabletop battle games.<br>-10% on your order<br>with promo code:<br><strong>STUDIOPF</strong></p>
-                </div>
-            </div>
+        <div class="ppartenaire">
+            <p>Buy second-hand for less<br>5% discount:<br><strong>STUDIOPF</strong></p>
         </div>
+    </div>
+
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">
+            </a>
+        </div> 
+        <div class="ppartenaire">
+            <p>Your dream miniatures at a huge discount!<br>up to -19%:<br><strong>MAXIPF</strong></p>
+        </div>
+    </div>
+       
+</div>
+
+<div class="partenaires-container">
+    
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-mezgike.png" alt="Mezgike Logo">
+            </a>
+        </div> 
+        <div class="ppartenaire">
+            <p>High-quality pre-supported STL miniatures for your sci-fi and fantasy tabletop battles.<br>-10% on your order<br>with the promo code:<br><strong>STUDIOPF</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo">
+            </a>
+        </div>
+        <div class="ppartenaire">
+            <p>3D printed scenery for immersive gaming sessions.<br><br><strong></strong></p>
+        </div>
+    </div>
+
+</div>
     `;
 } 
 else if (currentLanguage === "spanish") {
     html = `
-        <h3>Nuestros Socios / Partners</h3>
-  
-        <div class="partenaires-container">
-           
-            <div>
-                <div class="cardpartenaire">
-                    <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-                        <img src="img/logo-totalwar.png" alt="Total Wargames Logo">
-                    </a>
-                </div>
-                <div class="ppartenaire">
-                    <p>Compra más barato de segunda mano<br>5% de descuento con el código:<br><strong>STUDIOPF</strong></p>
-                </div>
-            </div>
-                   
-            <div>
-                <div class="cardpartenaire">
-                    <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
-                        <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">
-                    </a>
-                </div>
-                <div class="ppartenaire">
-                    <p>¡Tus miniaturas de ensueño con Maxi descuento!<br>hasta -19% con el código:<br><strong>MAXIPF</strong></p>
-                </div>
-            </div>
+      <h3>Nuestros Socios</h3>
+
+<div class="partenaires-container">
+    
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-totalwar.png" alt="Logo de Total Wargames">
+            </a>
         </div>
-   
-        <div class="partenaires-container">
-            <div>
-                <div class="cardpartenaire">
-                    <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/logo-mezgike.png" alt="Mezgike Logo">
-                    </a>
-                </div>
-                <div class="ppartenaire">
-                    <p>Preciosas miniaturas STL pre-soportadas para tus juegos de mesa de batalla sci-fi y fantasía.<br>-10% en tu pedido<br>con el código promocional:<br><strong>STUDIOPF</strong></p>
-                </div>
-            </div>
+        <div class="ppartenaire">
+            <p>Compra de segunda mano más barato<br>5% de descuento:<br><strong>STUDIOPF</strong></p>
         </div>
+    </div>
+
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-maxireve.png" alt="Logo de Maxi Rêve">
+            </a>
+        </div> 
+        <div class="ppartenaire">
+            <p>¡Tus miniaturas soñadas con grandes descuentos!<br>hasta -19%:<br><strong>MAXIPF</strong></p>
+        </div>
+    </div>
+       
+</div>
+
+<div class="partenaires-container">
+    
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-mezgike.png" alt="Logo de Mezgike">
+            </a>
+        </div> 
+        <div class="ppartenaire">
+            <p>Impresionantes miniaturas STL pre-soportadas para tus batallas de mesa de ciencia ficción y fantasía.<br>-10% en tu pedido<br>con el código promocional:<br><strong>STUDIOPF</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <div class="cardpartenaire">
+            <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                <img src="img/logo-wargamesceneries.png" alt="Logo de Wargame Sceneries">
+            </a>
+        </div>
+        <div class="ppartenaire">
+            <p>Escenografía impresa en 3D para partidas inmersivas.<br><br><strong></strong></p>
+        </div>
+    </div>
+
+</div>
     `;
     } else {
-        html = `    <h3>Nos Partenaires</h3>
+        html = `      <h3>Nos Partenaires</h3>
    
         <div class="partenaires-container">
             
@@ -478,7 +506,18 @@ else if (currentLanguage === "spanish") {
             </div>
                                          
         </div>
- </div> `;
+   
+
+                 <div>
+          <div class="cardpartenaire">
+          <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+          <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo">        </a>
+          </div>
+              <div class="ppartenaire">
+             <p>Des décors en impression 3D pour des parties immersives.<br><br> <strong></strong></p>
+             </div>
+        </div>
+ `;
     }
 
     partenaires.innerHTML = html;
