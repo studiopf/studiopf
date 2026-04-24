@@ -1257,68 +1257,153 @@ function changelanguehoraires() {
 
     if (currentLanguage === "english") {
         html = `
-            <h1>🕖 Opening Hours & Closures 🕖</h1>
-            <p><strong>Current status (March 2026):</strong> Studio closed until early October 2026</p>
+           <h2>🕓 Studio Opening Hours</h2>
+<ul>
+    <li>Monday: 🕘 09:00 - 18:00 🕖</li>
+    <li>Tuesday: 🕘 09:00 - 18:00 🕖</li>
+    <li>Wednesday: 🚫 Closed 🚫</li>
+    <li>Thursday: 🕘 09:00 - 18:00 🕖</li>
+    <li>Friday: 🕘 09:00 - 18:00 🕖</li>
+    <li>Saturday: 🚫 Closed 🚫</li>
+    <li>Sunday: 🚫 Closed 🚫</li>
+</ul>
 
-            <div class="section">
-                <h2>Normal opening hours (when active)</h2>
-                <ul>
-                    <li><strong>Monday – Tuesday – Thursday – Friday :</strong> 10:00 – 19:00</li>
-                    <li><strong>Wednesday, Saturday, Sunday :</strong> Closed</li>
-                </ul>
-            </div>
+<h2>🕓 Twitch Live Schedule</h2>
+<ul>
+    <li>Monday: 🕘 13:00 - 16:00 🕖</li>
+    <li>Tuesday: 🕘 13:00 - 16:00 🕖</li>
+    <li>Wednesday: 🚫 OFF 🚫</li>
+    <li>Thursday: 🕘 13:00 - 16:00 🕖</li>
+    <li>Friday: 🕘 13:00 - 16:00 🕖</li>
+    <li>Saturday: 🚫 OFF 🚫</li>
+    <li>Sunday: 🚫 OFF 🚫</li>
+</ul>
 
-            <div class="section">
-                <h2>Exceptions & temporary closures</h2>
-                <p>→ Studio closed for painting commissions until beginning of October 2026<br>
-                → Training sessions and coaching possible by appointment only during this period</p>
-            </div>
+<hr>
 
-            <p><em>Last updated: March 2026 – Studio PF</em></p>
+<h2>🕓 School Holidays: Studio Closed</h2>
+<h3>📅 The studio will be closed for holidays during the following school holiday periods:</h3>
+
+<h4>📅 2026:</h4>
+<ul>
+    <li><strong>Winter Holidays ⛄ :</strong> <br> 📅 From Saturday, February 7, 2026 to Monday, February 23, 2026 🏔️</li>
+    <li><strong>Spring Holidays 🌷 :</strong> <br> 📅 From Saturday, April 4, 2026 to Monday, April 20, 2026 🌸</li>
+    <li><strong>Summer Holidays ☀️ :</strong> <br> 📅 From Saturday, July 4, 2026 to Monday, August 31, 2026 included 🏖️</li>
+    <li><strong>Autumn Holidays (All Saints) 🎃 :</strong> <br> 📅 From Saturday, October 17, 2026 to Monday, November 2, 2026 🍂</li>
+    <li><strong>Christmas Holidays 🎄 :</strong> <br> 📅 From Saturday, December 19, 2026 to Monday, January 4, 2027 ❄️</li>
+    <li><strong>Winter Holidays 2027 ⛄ :</strong> <br> 📅 From Saturday, February 20, 2027 to Monday, March 8, 2027 🏔️</li>
+    <li><strong>Spring Holidays 2027 🌷 :</strong> <br> 📅 From Saturday, April 17, 2027 to Monday, May 3, 2027 🌸</li>
+</ul>
+
+<h4>📅 2027:</h4>
+<ul>
+    <li><strong>Winter Holidays ⛄ :</strong> <br> 📅 From Saturday, February 20, 2027 to Monday, March 8, 2027 🏔️</li>
+    <li><strong>Spring Holidays 🌷 :</strong> <br> 📅 From Saturday, April 17, 2027 to Monday, May 3, 2027 🌸</li>
+    <li><strong>Summer Holidays ☀️ :</strong> <br> 📅 From Saturday, July 3, 2027 to Monday, August 30, 2027 included 🏖️</li>
+    <li><strong>Autumn Holidays (All Saints) 🎃 :</strong> <br> 📅 From Saturday, October 23, 2027 to Monday, November 8, 2027 🍂</li>
+    <li><strong>Christmas Holidays 🎄 :</strong> <br> 📅 From Saturday, December 18, 2027 to Monday, January 3, 2028 ❄️</li>
+    <li><strong>Winter Holidays 2028 ⛄ :</strong> <br> 📅 From Saturday, February 5, 2028 to Monday, February 21, 2028 🏔️</li>
+    <li><strong>Spring Holidays 2028 🌷 :</strong> <br> 📅 From Saturday, April 1, 2028 to Monday, April 17, 2028 🌸</li>
+</ul>
         `;
     } 
     else if (currentLanguage === "spanish") {
         html = `
-            <h1>🕖 Horarios de apertura y cierres 🕖</h1>
-            <p><strong>Estado actual (marzo 2026):</strong> Estudio cerrado hasta principios de octubre de 2026</p>
+         <h2>🕓 Horario de apertura del estudio</h2>
+<ul>
+    <li>Lunes: 🕘 09:00 - 18:00 🕖</li>
+    <li>Martes: 🕘 09:00 - 18:00 🕖</li>
+    <li>Miércoles: 🚫 Cerrado 🚫</li>
+    <li>Jueves: 🕘 09:00 - 18:00 🕖</li>
+    <li>Viernes: 🕘 09:00 - 18:00 🕖</li>
+    <li>Sábado: 🚫 Cerrado 🚫</li>
+    <li>Domingo: 🚫 Cerrado 🚫</li>
+</ul>
 
-            <div class="section">
-                <h2>Horario habitual (cuando está activo)</h2>
-                <ul>
-                    <li><strong>Lunes – Martes – Jueves – Viernes :</strong> 10:00 – 19:00</li>
-                    <li><strong>Miércoles, Sábado, Domingo :</strong> Cerrado</li>
-                </ul>
-            </div>
+<h2>🕓 Horario de directos en Twitch</h2>
+<ul>
+    <li>Lunes: 🕘 13:00 - 16:00 🕖</li>
+    <li>Martes: 🕘 13:00 - 16:00 🕖</li>
+    <li>Miércoles: 🚫 OFF 🚫</li>
+    <li>Jueves: 🕘 13:00 - 16:00 🕖</li>
+    <li>Viernes: 🕘 13:00 - 16:00 🕖</li>
+    <li>Sábado: 🚫 OFF 🚫</li>
+    <li>Domingo: 🚫 OFF 🚫</li>
+</ul>
 
-            <div class="section">
-                <h2>Excepciones y cierres temporales</h2>
-                <p>→ Estudio cerrado para encargos de pintura hasta principios de octubre de 2026<br>
-                → Sesiones de formación y coaching posibles solo con cita previa durante este período</p>
-            </div>
+<hr>
 
-            <p><em>Última actualización: Marzo 2026 – Studio PF</em></p>
+<h2>🕓 Vacaciones escolares: Estudio cerrado</h2>
+<h3>📅 El estudio estará cerrado por vacaciones durante los siguientes periodos de vacaciones escolares:</h3>
+
+<h4>📅 2026:</h4>
+<ul>
+    <li><strong>Vacaciones de invierno ⛄ :</strong> <br> 📅 Desde el sábado 7 de febrero de 2026 hasta el lunes 23 de febrero de 2026 🏔️</li>
+    <li><strong>Vacaciones de primavera 🌷 :</strong> <br> 📅 Desde el sábado 4 de abril de 2026 hasta el lunes 20 de abril de 2026 🌸</li>
+    <li><strong>Vacaciones de verano ☀️ :</strong> <br> 📅 Desde el sábado 4 de julio de 2026 hasta el lunes 31 de agosto de 2026 inclusive 🏖️</li>
+    <li><strong>Vacaciones de otoño (Todos los Santos) 🎃 :</strong> <br> 📅 Desde el sábado 17 de octubre de 2026 hasta el lunes 2 de noviembre de 2026 🍂</li>
+    <li><strong>Vacaciones de Navidad 🎄 :</strong> <br> 📅 Desde el sábado 19 de diciembre de 2026 hasta el lunes 4 de enero de 2027 ❄️</li>
+    <li><strong>Vacaciones de invierno 2027 ⛄ :</strong> <br> 📅 Desde el sábado 20 de febrero de 2027 hasta el lunes 8 de marzo de 2027 🏔️</li>
+    <li><strong>Vacaciones de primavera 2027 🌷 :</strong> <br> 📅 Desde el sábado 17 de abril de 2027 hasta el lunes 3 de mayo de 2027 🌸</li>
+</ul>
+
+<h4>📅 2027:</h4>
+<ul>
+    <li><strong>Vacaciones de invierno ⛄ :</strong> <br> 📅 Desde el sábado 20 de febrero de 2027 hasta el lunes 8 de marzo de 2027 🏔️</li>
+    <li><strong>Vacaciones de primavera 🌷 :</strong> <br> 📅 Desde el sábado 17 de abril de 2027 hasta el lunes 3 de mayo de 2027 🌸</li>
+    <li><strong>Vacaciones de verano ☀️ :</strong> <br> 📅 Desde el sábado 3 de julio de 2027 hasta el lunes 30 de agosto de 2027 inclusive 🏖️</li>
+    <li><strong>Vacaciones de otoño (Todos los Santos) 🎃 :</strong> <br> 📅 Desde el sábado 23 de octubre de 2027 hasta el lunes 8 de noviembre de 2027 🍂</li>
+    <li><strong>Vacaciones de Navidad 🎄 :</strong> <br> 📅 Desde el sábado 18 de diciembre de 2027 hasta el lunes 3 de enero de 2028 ❄️</li>
+    <li><strong>Vacaciones de invierno 2028 ⛄ :</strong> <br> 📅 Desde el sábado 5 de febrero de 2028 hasta el lunes 21 de febrero de 2028 🏔️</li>
+    <li><strong>Vacaciones de primavera 2028 🌷 :</strong> <br> 📅 Desde el sábado 1 de abril de 2028 hasta el lunes 17 de abril de 2028 🌸</li>
+</ul>
         `;
     } 
     else { // français
         html = `
-            <h1>🕖 Horaires d'ouverture et Fermetures 🕖</h1>
-            <p><strong>État actuel (mars 2026) :</strong> Studio fermé jusqu'au début octobre 2026</p>
-
-            <div class="section">
-                <h2>Horaires habituels (lorsque le studio est ouvert)</h2>
-                <ul>
-                    <li><strong>Lundi – Mardi – Jeudi – Vendredi :</strong> 10h00 – 19h00</li>
-                    <li><strong>Mercredi, Samedi, Dimanche :</strong> Fermé</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Exceptions & fermetures temporaires</h2>
-                <p>→ Studio fermé aux commandes de peinture jusqu'au début octobre 2026<br>
-                → Formations et coachings possibles uniquement sur rendez-vous durant cette période</p>
-            </div>
-
-            <p><em>Dernière mise à jour : Mars 2026 – Studio PF</em></p>
+               <h2>🕓 Horaires d'ouverture du Studio</h2>
+    <ul>
+        <li>Lundi : 🕘 09:00 - 18:00 🕖</li>
+        <li>Mardi : 🕘 09:00 - 18:00 🕖</li>
+        <li>Mercredi : 🚫 Fermé 🚫</li>
+        <li>Jeudi : 🕘 09:00 - 18:00 🕖</li>
+        <li>Vendredi : 🕘 09:00 - 18:00 🕖</li>
+        <li>Samedi : 🚫 Fermé 🚫</li>
+        <li>Dimanche : 🚫 Fermé 🚫</li>
+    </ul>
+  <h2>🕓 Horaires des lives Twitch</h2>
+    <ul>
+        <li>Lundi : 🕘 13:00 - 16:00 🕖</li>
+        <li>Mardi : 🕘 13:00 - 16:00 🕖</li>
+        <li>Mercredi : 🚫 OFF 🚫</li>
+        <li>Jeudi : 🕘 13:00 - 16:00 🕖</li>
+        <li>Vendredi : 🕘 13:00 - 16:00 🕖</li>
+        <li>Samedi : 🚫 OFF 🚫</li>
+        <li>Dimanche : 🚫 OFF 🚫</li>
+    </ul>
+    <hr>
+  <h2>🕓 Congès Scolaires : Fermeture du Studio</h2>
+    <h3>📅 Le studio sera fermé pour congés pendant les périodes de vacances scolaires suivantes :</h3>
+    <h4>📅 2026:</h4>
+ <ul>
+    <li><strong>Vacances d'hiver ⛄ :</strong> <br> 📅 Du samedi 7 février 2026 au lundi 23 février 2026 🏔️</li>
+    <li><strong>Vacances de printemps 🌷 :</strong> <br> 📅 Du samedi 4 avril 2026 au lundi 20 avril 2026 🌸</li>
+    <li><strong>Vacances d'été ☀️ :</strong> <br> 📅 À partir du samedi 4 juillet 2026 au lundi 31 août 2026 inclus 🏖️</li>
+    <li><strong>Vacances de la Toussaint 🎃 :</strong> <br> 📅 Du samedi 17 octobre 2026 au lundi 2 novembre 2026 🍂</li>
+    <li><strong>Vacances de Noël 🎄 :</strong> <br> 📅 Du samedi 19 décembre 2026 au lundi 4 janvier 2027 ❄️</li>
+    <li><strong>Vacances d'hiver 2027 ⛄ :</strong> <br> 📅 Du samedi 20 février 2027 au lundi 8 mars 2027 🏔️</li>
+    <li><strong>Vacances de printemps 2027 🌷 :</strong> <br> 📅 Du samedi 17 avril 2027 au lundi 3 mai 2027 🌸</li>
+</ul>
+  <h4>📅 2026:</h4>
+<ul>
+    <li><strong>Vacances d'hiver ⛄ :</strong> <br> 📅 Du samedi 20 février 2027 au lundi 8 mars 2027 🏔️</li>
+    <li><strong>Vacances de printemps 🌷 :</strong> <br> 📅 Du samedi 17 avril 2027 au lundi 3 mai 2027 🌸</li>
+    <li><strong>Vacances d'été ☀️ :</strong> <br> 📅 À partir du samedi 3 juillet 2027 au lundi 30 août 2027 inclus 🏖️</li>
+    <li><strong>Vacances de la Toussaint 🎃 :</strong> <br> 📅 Du samedi 23 octobre 2027 au lundi 8 novembre 2027 🍂</li>
+    <li><strong>Vacances de Noël 🎄 :</strong> <br> 📅 Du samedi 18 décembre 2027 au lundi 3 janvier 2028 ❄️</li>
+    <li><strong>Vacances d'hiver 2028 ⛄ :</strong> <br> 📅 Du samedi 5 février 2028 au lundi 21 février 2028 🏔️</li>
+    <li><strong>Vacances de printemps 2028 🌷 :</strong> <br> 📅 Du samedi 1 avril 2028 au lundi 17 avril 2028 🌸</li>
+</ul>
         `;
     }
 
