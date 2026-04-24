@@ -1635,7 +1635,7 @@ function changelanguelogo() {
          <div class="cardlogo">
             <h1>Dare the artistic adventure!</h1>
             <p>Reopening:</p>
-            <p class="highlight">→ early October 2026 ←</p>
+            <p class="highlight">→ early January 2027 ←</p>
             </div>
 
         `;
@@ -1653,7 +1653,7 @@ function changelanguelogo() {
          <div class="cardlogo">
           <h1>¡Atrévete a la aventura artística!</h1>
             <p>Reapertura:</p>
-            <p class="highlight">→ principios de octubre de 2026 ←</p>
+            <p class="highlight">→ principios de Enero de 2027 ←</p>
             </div>
 
         `;
@@ -1671,7 +1671,7 @@ function changelanguelogo() {
          <div class="cardlogo">
             <h1>Osez l'aventure artistique !</h1>
      <p>Réouverture :</p>
-          <p class="highlight">→ début octobre 2026 ←</p>
+          <p class="highlight">→ début Janvier 2027 ←</p>
             </div>
 
         `;
