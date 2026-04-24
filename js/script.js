@@ -312,31 +312,82 @@ function changelanguefoot() {
 
    if (currentLanguage === "english") {
     html = `
+     <nav class="menu-mobile">
         <ul class="menu">
             <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">General Terms and Conditions 📜</a></li>
             <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html'); return false;">Legal Notice 💼</a></li>
             <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
     
         </ul>
+                </nav>
+                <button id="scrollToTopBtn" title="Back to top ⬆️" onclick="scrollToTop()">↑</button>
+<button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
+
+<div class="footer">
+  <strong>STUDIO PF</strong><br>
+  Frasse Pierre-François<br>
+  17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
+
+  <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Phone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
+  <p>© 2026 Studio PF. All rights reserved.</p>
+</div>
+
+<p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
+
     `;
 } 
 else if (currentLanguage === "spanish") {
     html = `
+     <nav class="menu-mobile">
         <ul class="menu">
             <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
             <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html');return false;">Aviso Legal 💼</a></li>
             <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
  
         </ul>
+                </nav>
+                <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
+<button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
+
+<div class="footer">
+  <strong>STUDIO PF</strong><br>
+  Frasse Pierre-François<br>
+  17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
+
+  <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Teléfono 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
+  <p>© 2026 Studio PF. Todos los derechos reservados.</p>
+</div>
+
+<p>Sitio web de presentación creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
+
     `;
     } else {
         html = ` 
+             <div id="foot-contenu">
+        
+ <nav class="menu-mobile">
             <ul class="menu">
-                     <li><a href="/conditions.html"  onclick="loadPage('/conditions.html'); scrollToTop(); return false;">Conditions générales de vente 📜</a></li>
-        <li><a href="/mentionslegales.html"  onclick="loadPage('/mentionslegales.html'); scrollToTop(); return false;">Mentions Légales 💼</a></li>
-        <li><a href="/horaires.html"  onclick="loadPage('/horaires.html'); scrollToTop(); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
-
+                     <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
+        <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
+        <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
+                
 </ul>  
+        </nav>
+
+   
+       
+        <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
+            <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
+              <div class="footer">
+      <strong>STUDIO PF</strong><br>
+      Frasse Pierre-François<br>
+      17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
+        <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
+        <p>© 2026 Studio PF. Tous droits réservés.</p>
+
+     </div>  
+        <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
+        <!-- Bouton de retour en haut -->
        `;
     }
 
