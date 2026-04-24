@@ -199,7 +199,7 @@ function applyLanguageAndInit() {
     </div>
             <p>I'll be back very soon with new painted adventures!</p>
             <p>Reopening of availability and orders</p>
-            <p class="highlight">→ early October 2026 ←</p>
+            <p class="highlight">→ early January 2027 ←</p>
             <p class="highlight">→ contact me for your future projects ←</p>
             <div class="center">
                 <div class="maintenance-box">
@@ -228,7 +228,7 @@ function applyLanguageAndInit() {
     </div>
             <p>¡Volveré muy pronto con nuevas aventuras pintadas!</p>
             <p>Reapertura de disponibilidad y pedidos</p>
-            <p class="highlight">→ principios de octubre de 2026 ←</p>
+            <p class="highlight">→ principios de Enero de 2027 ←</p>
             <p class="highlight">→ contáctame para tus proyectos futuros ←</p>
             <div class="center">
                 <div class="maintenance-box">
@@ -257,7 +257,7 @@ function applyLanguageAndInit() {
     </div>
             <p>Je reviens très prochainement avec de nouvelles aventures peintes !</p>
             <p>Réouverture des disponibilités et prises de commande</p>
-            <p class="highlight">→ début octobre 2026 ←</p>
+            <p class="highlight">→ début Janvier 2027 ←</p>
             <p class="highlight">→ contactez-moi pour vos futures projets ←</p>
             <div class="center">
                 <div class="maintenance-box">
