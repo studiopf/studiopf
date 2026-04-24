@@ -1060,42 +1060,155 @@ function changelanguementionslegales() {
 let html = "";
     if (currentLanguage === "english") {
         html = `
-            <h1>✨ Legal Notice ✨</h1>
-            <p><strong>Website:</strong> studiopf.fr<br>
-            <strong>Last updated:</strong> January 19, 2026</p>
-            <!-- Traduction anglaise complète ici -->
-            <div class="section">
-                <h2>Publisher</h2>
-                <p>Studio PF: Pierre-François Frasse<br>Micro-entreprise<br>17 route de Lare, 42510 Saint Georges de Baroille, France</p>
-            </div>
-          
+       
+          <h1>✨ Legal Notice ✨</h1>
+<p><strong>Website:</strong> studiopf.fr<br> <strong>Last updated:</strong> January 19, 2026</p>
+
+<div class="section">
+  <h2>📌 Publisher</h2> 
+  <p>
+    <strong>Studio PF: Miniature Painting</strong><br>
+    Pierre-François Frasse<br>
+    <!-- Status: Sole proprietorship<br>
+    SIRET: 832 040 380 00020<br>-->
+    Address: 17 route de lare, 42510 Saint Georges de Baroille, France<br>
+    Phone: +33 7 75 86 08 37<br>
+    Email: <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+  </p>
+</div>
+
+<div class="section"> 
+  <h2>💻 Hosting Provider</h2>
+  <p>
+    GitHub Inc.<br>
+    88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA<br>
+    Website: <a href="https://pages.github.com" target="_blank">https://pages.github.com</a>
+  </p>
+  <p>
+    Domain registered with: Gandi SAS<br>
+    63-65 boulevard Massena, 75013 Paris, France<br>
+    Website: <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a>
+  </p> 
+</div> 
+
+<div class="section">
+  <h2>🔒 Intellectual Property</h2> 
+  <p>
+    All content on this website (texts, images, videos, logos, icons, etc.) is the exclusive property of Studio PF, unless otherwise stated. Any reproduction or use without prior written permission is prohibited.
+  </p> 
+</div> 
+
+<div class="section">
+  <h2>📊 Personal Data</h2>
+  <p>
+    The data collected is used solely for customer relationship purposes. In accordance with GDPR, you may request access to, modification, or deletion of your data by email at:
+    <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+  </p>
+</div>
+
+<div class="section"> 
+  <h2>🌐 Cookies</h2>
+  <p>
+    This website may use cookies to improve navigation and statistical analysis. You can disable cookies in your browser settings.
+  </p> 
+</div>
+
+<p>
+  Showcase website created by <strong>Studio PF</strong> – Last updated: 03/09/2026 – All rights reserved.
+</p>
         `;
     }
     else if (currentLanguage === "spanish") {
       html = `
-            <h1>✨ Legal Noticias ✨</h1>
-            <p><strong>Website:</strong> studiopf.fr<br>
-            <strong>Last updated:</strong> January 19, 2026</p>
-            <!-- Traduction anglaise complète ici -->
-            <div class="section">
-                <h2>Publisher</h2>
-                <p>Studio PF: Pierre-François Frasse<br>Micro-entreprise<br>17 route de Lare, 42510 Saint Georges de Baroille, France</p>
-            </div>
-          
+           
+          <h1>✨ Aviso Legal ✨</h1>
+<p><strong>Sitio web:</strong> studiopf.fr<br> <strong>Fecha de actualización:</strong> 19 de enero de 2026</p>
+
+<div class="section">
+  <h2>📌 Editor</h2> 
+  <p>
+    <strong>Studio PF: Pintura de Miniaturas</strong><br>
+    Pierre-François Frasse<br>
+    <!-- Estado: Autónomo<br>
+    SIRET: 832 040 380 00020<br>-->
+    Dirección: 17 route de lare, 42510 Saint Georges de Baroille, Francia<br>
+    Teléfono: +33 7 75 86 08 37<br>
+    Correo electrónico: <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+  </p>
+</div>
+
+<div class="section"> 
+  <h2>💻 Proveedor de alojamiento</h2>
+  <p>
+    GitHub Inc.<br>
+    88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, EE. UU.<br>
+    Sitio web: <a href="https://pages.github.com" target="_blank">https://pages.github.com</a>
+  </p>
+  <p>
+    Dominio registrado en: Gandi SAS<br>
+    63-65 boulevard Massena, 75013 París, Francia<br>
+    Sitio web: <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a>
+  </p> 
+</div> 
+
+<div class="section">
+  <h2>🔒 Propiedad intelectual</h2> 
+  <p>
+    Todos los contenidos del sitio (textos, imágenes, vídeos, logotipos, iconos, etc.) son propiedad exclusiva de Studio PF, salvo indicación contraria. Queda prohibida cualquier reproducción o uso sin autorización previa por escrito.
+  </p> 
+</div> 
+
+<div class="section">
+  <h2>📊 Datos personales</h2>
+  <p>
+    Los datos recopilados se utilizan únicamente con fines de relación con el cliente. De acuerdo con el RGPD, puede solicitar el acceso, la modificación o la eliminación de sus datos enviando un correo electrónico a:
+    <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+  </p>
+</div>
+
+<div class="section"> 
+  <h2>🌐 Cookies</h2>
+  <p>
+    El sitio puede utilizar cookies para mejorar la navegación y el análisis estadístico. Puede desactivar las cookies en la configuración de su navegador.
+  </p> 
+</div>
+
+<p>
+  Sitio web escaparate creado por <strong>Studio PF</strong> – Última actualización: 09/03/2026 – Todos los derechos reservados.
+</p>
         `;
     }
     // français = version par défaut → rien à faire, le HTML statique suffit
 else { // français (par défaut)
       html = `
-            <h1>✨Mentions Legal ✨</h1>
-            <p><strong>Website:</strong> studiopf.fr<br>
-            <strong>Last updated:</strong> January 19, 2026</p>
-            <!-- Traduction anglaise complète ici -->
-            <div class="section">
-                <h2>Publisher</h2>
-                <p>Studio PF: Pierre-François Frasse<br>Micro-entreprise<br>17 route de Lare, 42510 Saint Georges de Baroille, France</p>
-            </div>
-          
+          <h1>✨ Mentions Légales ✨</h1>
+<p><strong>Site :</strong> studiopf.fr<br> <strong>Date de mise à jour :</strong> 19 janvier 2026</p> <div class="section">
+  <h2>📌 Éditeur</h2> 
+  <p> <strong>Studio PF : Peinture Figurine</strong><br>
+    Pierre-François Frasse<br>
+    <!-- Statut : Micro-entreprise<br>
+   SIRET : 832 040 380 00020<br>-->
+    Adresse : 17 route de lare, 42510 Saint Georges de Baroille, France<br>
+    Téléphone : 07 75 860 837<br>
+    E-mail : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> </p> </div>
+  <div class="section"> 
+    <h2>💻 Hébergeur</h2>
+    <p> GitHub Inc.<br> 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA<br>
+      Site : <a href="https://pages.github.com" target="_blank">https://pages.github.com</a> </p>
+    <p> Domaine enregistré chez : Gandi SAS<br> 63-65 boulevard Massena, 75013 Paris, France<br>
+      Site : <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a> </p> 
+  </div> 
+   <div class="section">
+        <h2>🔒 Propriété intellectuelle</h2> 
+        <p> Tous les contenus du site (textes, images, vidéos, logos, icônes, etc.) sont la propriété exclusive de Studio PF, sauf mention contraire. Toute reproduction ou utilisation sans autorisation écrite est interdite. </p> 
+   </div> 
+   <div class="section"> <h2>📊 Données personnelles</h2> <p> Les données collectées sont utilisées uniquement à des fins de relation client. Conformément au RGPD, vous pouvez demander l'accès, la modification ou la suppression de vos données par e-mail à : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> </p>
+   </div>
+  <div class="section"> 
+     <h2>🌐 Cookies</h2>
+    <p> Le site peut utiliser des cookies pour améliorer la navigation et l’analyse sttistique. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur. </p> 
+  </div>
+          <p>Site Vitrine créé par <strong>Studio PF</strong> - @ dernière mise à jour 09.03.2026 - Tous droits réservés. </p>
         `;
 }
         main.innerHTML = html;
