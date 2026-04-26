@@ -124,6 +124,7 @@ function applyLanguageAndInit() {
     updateDebugDisplay();
 
     changelanguemenu();
+      changelanguepeinture();
     changelangueindex();
     changelanguefoot();
     changelanguelogo();
