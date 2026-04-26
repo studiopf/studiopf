@@ -128,7 +128,6 @@ function applyLanguageAndInit() {
     changelangueindex();
     changelanguefoot();
     changelanguelogo();
-    changelanguesimu();
     
     changelanguepartenaires();
     updateAgeDisplay();
@@ -160,9 +159,7 @@ function applyLanguageAndInit() {
     if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
     }
-        if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
-        changelanguesimu();
-    }
+       
     if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
         changelanguehoraires();
     }
