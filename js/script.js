@@ -128,6 +128,7 @@ function applyLanguageAndInit() {
     changelangueindex();
     changelanguefoot();
     changelanguelogo();
+    changelanguesimu();
     
     changelanguepartenaires();
     updateAgeDisplay();
