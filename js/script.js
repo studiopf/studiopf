@@ -1,10 +1,10 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage ="index.html";
+let currentPage;
 let currentLanguage = "french";
 
-g/ Âge dynamique
+// Âge dynamique
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
 
@@ -63,42 +63,54 @@ function updateAgeDisplay() {
 // ────────────────────────────────────────────────
 // Chargement dynamique des pages (cœur du système)
 // ────────────────────────────────────────────────
+
 function loadPage(page) {
     currentPage = page;
     const mainContainer = document.getElementById("contenu-principal");
-
     if (!mainContainer) {
-        console.error("Conteneur principal introuvable");
+        console.error("Conteneur principal introuvable sur la page actuelle");
         return;
     }
 
+    console.log(`[loadPage] Tentative de chargement : ${page}`);
+
     mainContainer.style.opacity = "0";
 
-    fetch(page)
-        .then(res => {
-            if (!res.ok) throw new Error(res.status);
-            return res.text();
-        })
-        .then(html => {
-            const doc = new DOMParser().parseFromString(html, "text/html");
-            const newContent = doc.getElementById("contenu-principal");
+    setTimeout(() => {
+        fetch(page)
+            .then(response => {
+                if (!response.ok) throw new Error(`Statut ${response.status}`);
+                return response.text();
+            })
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, "text/html");
+                const newContent = doc.querySelector("#contenu-principal");
 
-            if (!newContent) {
-                mainContainer.innerHTML = "<p>Erreur : contenu introuvable</p>";
-            } else {
-                mainContainer.innerHTML = newContent.innerHTML;
-                executeScripts(mainContainer);
-            }
+                console.log(`[loadPage] #contenu-principal trouvé ? → ${!!newContent}`);
 
-            mainContainer.style.opacity = "1";
-            applyLanguageAndInit();
-            history.pushState({}, "", page);
-        })
-        .catch(err => {
-            console.error(err);
-            mainContainer.innerHTML = "<p>Erreur de chargement</p>";
-            mainContainer.style.opacity = "1";
-        });
+                if (!newContent) {
+                    console.warn(`Aucun #contenu-principal dans ${page}`);
+                    mainContainer.innerHTML = `
+                        <div style="color:darkred; padding:2rem; text-align:center;">
+                            <h2>Erreur de chargement</h2>
+                            <p>Contenu principal non trouvé dans <strong>${page}</strong></p>
+                            <small>Vérifie que l'ID "contenu-principal" existe bien dans le fichier.</small>
+                        </div>`;
+                } else {
+                    mainContainer.innerHTML = newContent.innerHTML;
+                    console.log(`[loadPage] Contenu chargé avec succès depuis ${page}`);
+                }
+
+                mainContainer.style.opacity = "1";
+                applyLanguageAndInit();
+            })
+            .catch(err => {
+                console.error(`Échec chargement ${page} :`, err);
+                mainContainer.innerHTML = `<p style="color:red">Erreur réseau ou fichier introuvable : ${page}</p>`;
+                mainContainer.style.opacity = "1";
+            });
+    }, 200);
 }
 // ────────────────────────────────────────────────
 // Initialisation globale après chaque chargement / changement langue
@@ -326,8 +338,8 @@ function changelanguefoot() {
 } 
 else if (currentLanguage === "spanish") {
     html = `
-     <nav class="-mobile">
-        <ul class="">
+     <nav class="menu-mobile">
+        <ul class="menu">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
             <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
@@ -353,8 +365,8 @@ else if (currentLanguage === "spanish") {
         html = ` 
              <div id="foot-contenu">
         
- <nav class="-mobile">
-            <ul class="">
+ <nav class="menu-mobile">
+            <ul class="menu">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
         <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
@@ -583,7 +595,7 @@ function initGalerieWithLang() {
         html = `
             <h2 class="galerie-title">🎨 Gallery</h2>
             <p class="galerie-description">✨ Step into a world where every miniature becomes a work of art.</p>
-            <div class="gallery" id="filters"></div>
+            <div class="menugallery" id="filters"></div>
             <div class="gallery" id="gallery"></div>
             <div class="lightbox" id="lightbox"><img id="lightbox-img" src="" alt=""></div>
         `;
