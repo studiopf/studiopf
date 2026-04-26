@@ -1,10 +1,10 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage ="/index.html";
+let currentPage ="index.html";
 let currentLanguage = "french";
 
-// Âge dynamique
+g/ Âge dynamique
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
 
@@ -46,7 +46,7 @@ function setLanguage(lang) {
     
     changelangueinfo();
   if (currentPage.includes("formation") && currentLanguage !== "french") {
-      currentPage = "/index.html";
+      currentPage = "index.html";
     }
     loadPage(currentPage); // recharge la page courante avec la nouvelle langue
     
@@ -274,18 +274,18 @@ function changelanguemenu() {
     if (currentLanguage === "english") {
         html = `<ul class="menu">
         
-            <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Gallery 🖼️</a></li>
+            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Gallery 🖼️</a></li>
         </ul>`;
     } else if (currentLanguage === "spanish") {
         html = `<ul class="menu">
             
-            <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Galería 🖼️</a></li>
+            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galería 🖼️</a></li>
         </ul>`;
     } else {
         html = `<ul class="menu">
          
-            <li><a href="/formation.html" onclick="loadPage('/formation.html');return false;">Formation 📚</a></li>
-            <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Galerie 🖼️</a></li>
+            <li><a href="formation.html" onclick="loadPage('formation.html');return false;">Formation 📚</a></li>
+            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galerie 🖼️</a></li>
         </ul>`;
     }
 
@@ -302,9 +302,9 @@ function changelanguefoot() {
     html = `
      <nav class="menu-mobile">
         <ul class="menu">
-            <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">General Terms and Conditions 📜</a></li>
-            <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html'); return false;">Legal Notice 💼</a></li>
-            <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
+            <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
     
         </ul>
                 </nav>
@@ -326,11 +326,11 @@ function changelanguefoot() {
 } 
 else if (currentLanguage === "spanish") {
     html = `
-     <nav class="menu-mobile">
-        <ul class="menu">
-            <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
-            <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html');return false;">Aviso Legal 💼</a></li>
-            <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
+     <nav class="-mobile">
+        <ul class="">
+            <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
  
         </ul>
                 </nav>
@@ -353,8 +353,8 @@ else if (currentLanguage === "spanish") {
         html = ` 
              <div id="foot-contenu">
         
- <nav class="menu-mobile">
-            <ul class="menu">
+ <nav class="-mobile">
+            <ul class="">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
         <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
@@ -583,7 +583,7 @@ function initGalerieWithLang() {
         html = `
             <h2 class="galerie-title">🎨 Gallery</h2>
             <p class="galerie-description">✨ Step into a world where every miniature becomes a work of art.</p>
-            <div class="menugallery" id="filters"></div>
+            <div class="gallery" id="filters"></div>
             <div class="gallery" id="gallery"></div>
             <div class="lightbox" id="lightbox"><img id="lightbox-img" src="" alt=""></div>
         `;
@@ -1613,7 +1613,7 @@ function changelanguelogo() {
     if (currentLanguage === "english") {
         html = `
             <div class="cardlogoimg">
-    <a href="/index.html" onclick="loadPage('/index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
     
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
@@ -1631,7 +1631,7 @@ function changelanguelogo() {
     else if (currentLanguage === "spanish") {
         html = `
           <div class="cardlogoimg">
-    <a href="/index.html" onclick="loadPage('/index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
     
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
@@ -1649,7 +1649,7 @@ function changelanguelogo() {
     else { // français
         html = `
          <div class="cardlogoimg">
-    <a href="/index.html" onclick="loadPage('/index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
     
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
