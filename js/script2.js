@@ -433,7 +433,7 @@ Un accompagnement personnalisé pour chaque projet.
         </div> `;
     }
 
-    menu.innerHTML = html;
+    main.innerHTML = html;
 }
 
 function changelanguemenu() {
