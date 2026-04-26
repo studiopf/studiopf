@@ -41,6 +41,26 @@
                     <p>At <strong>Studio PF</strong>, each project becomes a unique collectible piece.</p>
                 </div>
             </div>
+            <div class="card" role="region" aria-expanded="true" tabindex="0">
+  <h2>👋 Who’s behind the brush?</h2>
+  <p>I’m <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
+  A passionate painter and founder of Studio PF.<br><br>
+
+  I’ve been involved in miniature painting since 2020 — it all started a bit by chance.<br>
+  Covid turned this hobby into a true artistic journey.<br>
+
+  Today, I work with acrylics, pigments, and oils, developing a style that brings miniatures to life.<br><br>
+
+  My goal: to make your miniatures feel alive, as if they were coming to life.</p>
+
+  <blockquote>“Every miniature tells a story. My role is to make it shine.” ✨</blockquote>
+
+  <p>
+    <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">
+      Learn more about my journey ➜
+    </a>
+  </p>
+</div>
         `;
     } else if (currentLanguage === "spanish") {
         html = `
@@ -70,6 +90,26 @@
                     <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
                 </div>
             </div>
+            <div class="card" role="region" aria-expanded="true" tabindex="0">
+  <h2>👋 ¿Quién está detrás de los pinceles?</h2>
+  <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
+  Pintor apasionado y fundador de Studio PF.<br><br>
+
+  Formo parte del mundo de las miniaturas desde 2020 — todo comenzó un poco por casualidad.<br>
+  El Covid transformó este hobby en una verdadera búsqueda artística.<br>
+
+  Hoy trabajo con acrílicos, pigmentos y óleos, desarrollando un estilo que da vida a las miniaturas.<br><br>
+
+  Mi objetivo: hacer que tus miniaturas cobren vida.</p>
+
+  <blockquote>“Cada miniatura cuenta una historia. Mi papel es hacerla brillar.” ✨</blockquote>
+
+  <p>
+    <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">
+      Saber más sobre mi trayectoria ➜
+    </a>
+  </p>
+</div>
         `;
     } else {
         html = `
@@ -99,6 +139,19 @@
                     <p>Chez <strong>Studio PF</strong>, chaque projet devient une pièce unique de collection.</p>
                 </div>
             </div>
+             <div class="card" role="region" aria-expanded="true" tabindex="0">
+  <h2>👋 Qui se cache derrière les pinceaux ?</h2>
+  <p>Je suis  <strong>Pierre-François, alias PF, <span id="pf-age">39</span> ans. </strong><br>
+            peintre passionné et fondateur de Studio PF.  <br><br>
+Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasard.<br>Le Covid à transformé la passion en véritable quête artistique.<br> 
+      Aujourd’hui, je manie acrylique, pigments et huiles, avec un style qui fait vibrer les figurines.<br>
+              
+
+
+  Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.</p>
+  <blockquote>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</blockquote>
+  <p>  <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">En savoir plus sur mon parcours ➜</a></p>
+</div>
         `;
     }
 
@@ -143,9 +196,7 @@ A premium service with no compromise on quality.
 
     <p><strong>⚠️ Intentionally limited production to guarantee quality.</strong></p>
 
-    <div>
-        <a href="simulateur_devis.html" class="button">Request a quote 🎨</a>
-    </div>
+   
 </div>
 
 <h3>Preparation (included) 🛠️</h3>
@@ -218,9 +269,7 @@ Personalized support for every project.
 </tbody>
 </table>
 
-<div class="banniere">
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-</div>`;
+`;
     } else if (currentLanguage === "spanish") {
         html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
 <p>
@@ -250,9 +299,7 @@ Un servicio premium, sin compromisos en la calidad.
 
     <p><strong>⚠️ Producción voluntariamente limitada para garantizar la calidad.</strong></p>
 
-    <div>
-        <a href="simulateur_devis.html" class="button">Solicitar un presupuesto 🎨</a>
-    </div>
+   
 </div>
 
 <h3>Preparación (incluida) 🛠️</h3>
@@ -325,9 +372,7 @@ Acompañamiento personalizado para cada proyecto.
 </tbody>
 </table>
 
-<div class="banniere">
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
-</div>`;
+`;
     } else {
         html = `<h1>Peinture de Figurines Haut de Gamme 🎨</h1>
 <p>
@@ -356,9 +401,7 @@ Un service premium, sans compromis sur la qualité.
 
     <p><strong>⚠️ Production volontairement limitée pour garantir la qualité.</strong></p>
 
-    <div>
-        <a href="simulateur_devis.html" class="button">Demander un devis 🎨</a>
-    </div>
+  
 </div>
        <h3>Préparation (incluse) 🛠️</h3>
 <ul>
@@ -426,11 +469,7 @@ Un accompagnement personnalisé pour chaque projet.
 </tbody>
 </table>
        
-          <div class="banniere">
-         
-            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-           
-        </div> `;
+         `;
     }
 
     main.innerHTML = html;
