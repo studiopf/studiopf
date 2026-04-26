@@ -108,6 +108,333 @@
 // ────────────────────────────────────────────────
 // Menus multilingues
 // ────────────────────────────────────────────────
+function changelanguepeinture() {
+      const main = document.getElementById("contenu-principal");
+   
+
+    let html = "";
+
+    if (currentLanguage === "english") {
+        html = `<h1>High-End Miniature Painting 🎨</h1>
+<p>
+Each miniature is treated as a unique piece.<br>
+A premium service with no compromise on quality.
+</p>
+<p><strong>⏱️ Minimum 2h per miniature (infantry) • 5 to 8h for characters</strong></p>
+
+<div class="card" role="region" aria-expanded="true" tabindex="0">
+    <h2>🎨 Premium Offers</h2>
+
+    <ul>
+        <li>
+            <strong>⭐ Premium:</strong><br>
+            Clean, high-contrast and immersive finish.<br>
+            Ideal for high-end armies and display pieces.<br>
+            <em>⏱️ Around 2h+ per miniature</em>
+        </li>
+
+        <li>
+            <strong>👑 Signature:</strong><br>
+            Advanced display-level quality, refined details, complex effects.<br>
+            Designed for characters, heroes and centerpiece models.<br>
+            <em>⏱️ 5 to 8h per miniature</em>
+        </li>
+    </ul>
+
+    <p><strong>⚠️ Intentionally limited production to guarantee quality.</strong></p>
+
+    <div>
+        <a href="simulateur_devis.html" class="button">Request a quote 🎨</a>
+    </div>
+</div>
+
+<h3>Preparation (included) 🛠️</h3>
+<ul>
+    <li>Full cleaning of parts</li>
+    <li>Mold line removal</li>
+    <li>Clean and optimized assembly</li>
+    <li>Preparation adapted to the level of finish</li>
+</ul>
+<p><em>Each miniature is prepared for optimal results.</em></p>
+
+<h3>Painting 🎨</h3>
+<ul>
+    <li><strong>⭐ Premium:</strong> clean blends, strong contrasts, essential details, consistent finish</li>
+    <li><strong>👑 Signature:</strong> advanced blending, textures, OSL, NMM, freehand, highly detailed work</li>
+</ul>
+
+<p><strong>🎯 Goal: a realistic, readable and impactful result both from a distance and up close.</strong></p>
+
+<h3>Basing 🌿</h3>
+<ul>
+    <li><strong>Premium:</strong> detailed base consistent with the army</li>
+    <li><strong>Signature:</strong> scenic base with 3D elements and visual storytelling</li>
+</ul>
+
+<h2>Premium Service 🤝</h2>
+
+<p>
+Personalized support for every project.
+</p>
+
+<ul>
+    <li>🎯 Artistic guidance and visual direction</li>
+    <li>🎨 Fully hand-painted</li>
+    <li>⭐ High-end materials and techniques</li>
+    <li>📦 Limited production to ensure top-tier quality</li>
+</ul>
+
+<p><strong>⏳ Lead time: 4 to 8 months depending on project and volume</strong></p>
+
+<table class="tableborder1">
+<thead>
+<tr>
+    <th>🎨 Features</th>
+    <th>⭐ Premium</th>
+    <th>👑 Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Work time</td>
+    <td>2h+</td>
+    <td>5 to 8h</td>
+</tr>
+<tr>
+    <td>Finish</td>
+    <td>Clean and contrasted</td>
+    <td>Very high level of detail</td>
+</tr>
+<tr>
+    <td>Details</td>
+    <td>Clean and readable</td>
+    <td>Highly refined and realistic</td>
+</tr>
+<tr>
+    <td>Base</td>
+    <td>Detailed</td>
+    <td>Scenic / display</td>
+</tr>
+</tbody>
+</table>
+
+<div class="banniere">
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+</div>`;
+    } else if (currentLanguage === "spanish") {
+        html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
+<p>
+Cada miniatura se trata como una pieza única.<br>
+Un servicio premium, sin compromisos en la calidad.
+</p>
+<p><strong>⏱️ Mínimo 2h por miniatura (infantería) • 5 a 8h para personajes</strong></p>
+
+<div class="card" role="region" aria-expanded="true" tabindex="0">
+    <h2>🎨 Ofertas Premium</h2>
+
+    <ul>
+        <li>
+            <strong>⭐ Premium:</strong><br>
+            Acabado limpio, contrastado e inmersivo.<br>
+            Ideal para ejércitos de alta gama y piezas de exposición.<br>
+            <em>⏱️ Aproximadamente 2h+ por miniatura</em>
+        </li>
+
+        <li>
+            <strong>👑 Signature:</strong><br>
+            Nivel avanzado de vitrina, detalles muy elaborados, efectos complejos.<br>
+            Diseñado para personajes, héroes y piezas principales.<br>
+            <em>⏱️ 5 a 8h por miniatura</em>
+        </li>
+    </ul>
+
+    <p><strong>⚠️ Producción voluntariamente limitada para garantizar la calidad.</strong></p>
+
+    <div>
+        <a href="simulateur_devis.html" class="button">Solicitar un presupuesto 🎨</a>
+    </div>
+</div>
+
+<h3>Preparación (incluida) 🛠️</h3>
+<ul>
+    <li>Limpieza completa de las piezas</li>
+    <li>Eliminación de líneas de molde</li>
+    <li>Montaje limpio y optimizado</li>
+    <li>Preparación adaptada al nivel de acabado</li>
+</ul>
+<p><em>Cada miniatura se prepara para un resultado óptimo.</em></p>
+
+<h3>Pintura 🎨</h3>
+<ul>
+    <li><strong>⭐ Premium:</strong> degradados limpios, contrastes marcados, detalles esenciales, acabado homogéneo</li>
+    <li><strong>👑 Signature:</strong> degradados avanzados, texturas, OSL, NMM, freehand, detalles muy elaborados</li>
+</ul>
+
+<p><strong>🎯 Objetivo: un resultado realista, legible e impactante tanto a distancia como de cerca.</strong></p>
+
+<h3>Peana 🌿</h3>
+<ul>
+    <li><strong>Premium:</strong> peana trabajada y coherente con el ejército</li>
+    <li><strong>Signature:</strong> peana escénica con elementos 3D y narrativa visual</li>
+</ul>
+
+<h2>Servicio Premium 🤝</h2>
+
+<p>
+Acompañamiento personalizado para cada proyecto.
+</p>
+
+<ul>
+    <li>🎯 Asesoramiento artístico y dirección visual</li>
+    <li>🎨 Pintura completamente realizada a mano</li>
+    <li>⭐ Materiales y técnicas de alta gama</li>
+    <li>📦 Producción limitada para garantizar un alto nivel de calidad</li>
+</ul>
+
+<p><strong>⏳ Plazos: 4 a 8 meses según el proyecto y el volumen</strong></p>
+
+<table class="tableborder1">
+<thead>
+<tr>
+    <th>🎨 Características</th>
+    <th>⭐ Premium</th>
+    <th>👑 Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Tiempo de trabajo</td>
+    <td>2h+</td>
+    <td>5 a 8h</td>
+</tr>
+<tr>
+    <td>Acabado</td>
+    <td>Limpio y contrastado</td>
+    <td>Muy alto nivel de detalle</td>
+</tr>
+<tr>
+    <td>Detalles</td>
+    <td>Limpios y legibles</td>
+    <td>Muy elaborados y realistas</td>
+</tr>
+<tr>
+    <td>Peana</td>
+    <td>Trabajada</td>
+    <td>Escénica / de vitrina</td>
+</tr>
+</tbody>
+</table>
+
+<div class="banniere">
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+</div>`;
+    } else {
+        html = `<h1>Peinture de Figurines Haut de Gamme 🎨</h1>
+<p>
+Chaque figurine est traitée comme une pièce unique.<br>
+Un service premium, sans compromis sur la qualité.
+</p>
+<p><strong>⏱️ Minimum 2h par figurine (infanterie) • 5 à 8h pour les personnages</strong></p>
+       <div class="card" role="region" aria-expanded="true" tabindex="0">
+    <h2>🎨 Offres Premium</h2>
+
+    <ul>
+        <li>
+            <strong>⭐ Premium :</strong><br>
+            Finition nette, contrastée et immersive.<br>
+            Idéal pour armées haut de gamme et vitrines.<br>
+            <em>⏱️ Environ 2h+ par figurine</em>
+        </li>
+
+        <li>
+            <strong>👑 Signature :</strong><br>
+            Niveau vitrine avancé, détails poussés, effets complexes.<br>
+            Pensé pour personnages, héros et pièces fortes.<br>
+            <em>⏱️ 5 à 8h par figurine</em>
+        </li>
+    </ul>
+
+    <p><strong>⚠️ Production volontairement limitée pour garantir la qualité.</strong></p>
+
+    <div>
+        <a href="simulateur_devis.html" class="button">Demander un devis 🎨</a>
+    </div>
+</div>
+       <h3>Préparation (incluse) 🛠️</h3>
+<ul>
+    <li>Nettoyage complet des pièces</li>
+    <li>Suppression des lignes de moulage</li>
+    <li>Assemblage propre et optimisé</li>
+    <li>Préparation adaptée au niveau de finition</li>
+</ul>
+<p><em>Chaque figurine est préparée pour un rendu optimal.</em></p>
+       <h3>Peinture 🎨</h3>
+<ul>
+    <li><strong>⭐ Premium :</strong> dégradés propres, contrastes marqués, détails essentiels, rendu homogène</li>
+    <li><strong>👑 Signature :</strong> dégradés avancés, textures, OSL, MNM, freehand, détails poussés</li>
+</ul>
+
+<p><strong>🎯 Objectif : un rendu réaliste, lisible et impactant à distance comme de près.</strong></p>
+       <h3>Soclage 🌿</h3>
+<ul>
+    <li><strong>Premium :</strong> socle travaillé et cohérent avec l’armée</li>
+    <li><strong>Signature :</strong> socle scénique avec éléments 3D et narration visuelle</li>
+</ul>
+       <h2>Service Premium 🤝</h2>
+
+<p>
+Un accompagnement personnalisé pour chaque projet.
+</p>
+
+<ul>
+    <li>🎯 Conseils artistiques et direction visuelle</li>
+    <li>🎨 Peinture entièrement réalisée à la main</li>
+    <li>⭐ Matériaux et techniques haut de gamme</li>
+    <li>📦 Production limitée pour garantir un haut niveau de qualité</li>
+</ul>
+
+<p><strong>⏳ Délais : 4 à 8 mois selon projet et volume</strong></p>
+       <table class="tableborder1">
+<thead>
+<tr>
+    <th>🎨 Caractéristiques</th>
+    <th>⭐ Premium</th>
+    <th>👑 Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Temps de travail</td>
+    <td>2h+</td>
+    <td>5 à 8h</td>
+</tr>
+<tr>
+    <td>Finition</td>
+    <td>Nette et contrastée</td>
+    <td>Très haut niveau de détail</td>
+</tr>
+<tr>
+    <td>Détails</td>
+    <td>Propres et lisibles</td>
+    <td>Très poussés et réalistes</td>
+</tr>
+<tr>
+    <td>Socle</td>
+    <td>Travaillé</td>
+    <td>Scénique / vitrine</td>
+</tr>
+</tbody>
+</table>
+       
+          <div class="banniere">
+         
+            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+           
+        </div> `;
+    }
+
+    menu.innerHTML = html;
+}
 
 function changelanguemenu() {
     const menu = document.getElementById("menu-contenu");
