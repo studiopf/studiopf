@@ -162,41 +162,6 @@ function applyLanguageAndInit() {
 }
 
 
-// =============================
-// FOOTER FIX (CRITIQUE)
-// =============================
-function changelanguefoot() {
-    const foot = document.getElementById("foot-contenu");
-    if (!foot) return;
-
-    let html = "";
-
-    if (currentLanguage === "english") {
-        html = `
-        <nav class="menu-mobile">
-            <ul class="menu">
-                <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">Terms 📜</a></li>
-                <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html'); return false;">Legal 💼</a></li>
-                <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Hours 🕖</a></li>
-            </ul>
-        </nav>
-        `;
-    } else {
-        html = `
-        <nav class="menu-mobile">
-            <ul class="menu">
-                <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">Conditions 📜</a></li>
-                <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html'); return false;">Mentions 💼</a></li>
-                <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Horaires 🕖</a></li>
-            </ul>
-        </nav>
-        `;
-    }
-
-    // ⚠️ PAS DE DIV IMBRIQUÉ
-    foot.innerHTML = html;
-}
-
 
 // =============================
 // SCROLL FIX
