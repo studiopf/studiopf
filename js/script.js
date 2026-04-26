@@ -124,7 +124,10 @@ function applyLanguageAndInit() {
     updateDebugDisplay();
 
     changelanguemenu();
+    changelangueindex();
     changelanguefoot();
+    changelanguelogo();
+    
     changelanguepartenaires();
     updateAgeDisplay();
 
