@@ -1,7 +1,7 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
 
 // Variables globales
-let currentPage;
+let currentPage ="/index.html";
 let currentLanguage = "french";
 
 // Âge dynamique
@@ -63,54 +63,42 @@ function updateAgeDisplay() {
 // ────────────────────────────────────────────────
 // Chargement dynamique des pages (cœur du système)
 // ────────────────────────────────────────────────
-
 function loadPage(page) {
     currentPage = page;
     const mainContainer = document.getElementById("contenu-principal");
+
     if (!mainContainer) {
-        console.error("Conteneur principal introuvable sur la page actuelle");
+        console.error("Conteneur principal introuvable");
         return;
     }
 
-    console.log(`[loadPage] Tentative de chargement : ${page}`);
-
     mainContainer.style.opacity = "0";
 
-    setTimeout(() => {
-        fetch(page)
-            .then(response => {
-                if (!response.ok) throw new Error(`Statut ${response.status}`);
-                return response.text();
-            })
-            .then(html => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, "text/html");
-                const newContent = doc.querySelector("#contenu-principal");
+    fetch(page)
+        .then(res => {
+            if (!res.ok) throw new Error(res.status);
+            return res.text();
+        })
+        .then(html => {
+            const doc = new DOMParser().parseFromString(html, "text/html");
+            const newContent = doc.getElementById("contenu-principal");
 
-                console.log(`[loadPage] #contenu-principal trouvé ? → ${!!newContent}`);
+            if (!newContent) {
+                mainContainer.innerHTML = "<p>Erreur : contenu introuvable</p>";
+            } else {
+                mainContainer.innerHTML = newContent.innerHTML;
+                executeScripts(mainContainer);
+            }
 
-                if (!newContent) {
-                    console.warn(`Aucun #contenu-principal dans ${page}`);
-                    mainContainer.innerHTML = `
-                        <div style="color:darkred; padding:2rem; text-align:center;">
-                            <h2>Erreur de chargement</h2>
-                            <p>Contenu principal non trouvé dans <strong>${page}</strong></p>
-                            <small>Vérifie que l'ID "contenu-principal" existe bien dans le fichier.</small>
-                        </div>`;
-                } else {
-                    mainContainer.innerHTML = newContent.innerHTML;
-                    console.log(`[loadPage] Contenu chargé avec succès depuis ${page}`);
-                }
-
-                mainContainer.style.opacity = "1";
-                applyLanguageAndInit();
-            })
-            .catch(err => {
-                console.error(`Échec chargement ${page} :`, err);
-                mainContainer.innerHTML = `<p style="color:red">Erreur réseau ou fichier introuvable : ${page}</p>`;
-                mainContainer.style.opacity = "1";
-            });
-    }, 200);
+            mainContainer.style.opacity = "1";
+            applyLanguageAndInit();
+            history.pushState({}, "", page);
+        })
+        .catch(err => {
+            console.error(err);
+            mainContainer.innerHTML = "<p>Erreur de chargement</p>";
+            mainContainer.style.opacity = "1";
+        });
 }
 // ────────────────────────────────────────────────
 // Initialisation globale après chaque chargement / changement langue
