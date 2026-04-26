@@ -1,66 +1,56 @@
 // script.js — Version corrigée, consolidée et robuste — Mars 2026
-// ===============================
-// GLOBAL
-// ===============================
-let currentPage = "/index.html";
-let currentLanguage = "french";
-let scrollInitialized = false;
 
+// Variables globales
+let currentPage;
+let currentLanguage = "french";
+
+// Âge dynamique
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
-// ===============================
-// UTILITAIRE
-// ===============================
-function $(id) {
-    return document.getElementById(id);
-}
 
 // ────────────────────────────────────────────────
 // Utilitaires de base
 // ────────────────────────────────────────────────
 
-
-// ===============================
-// LANGUE
-// ===============================
 function highlightLanguage(langId) {
     document.querySelectorAll('.language-selector button').forEach(btn => {
         btn.classList.toggle('selected', btn.id === langId);
     });
 }
-
 function updateDebugDisplay() {
-    const langSpan = $("currentLanguage");
+    // Mise à jour de la langue
+    const langSpan = document.getElementById("currentLanguage");
     if (langSpan) {
-        langSpan.textContent =
-            currentLanguage === "english" ? "English" :
-            currentLanguage === "spanish" ? "Español" :
-            "Français";
+        // On affiche un nom lisible plutôt que "french", "english", etc.
+        let displayLang = "Français";
+        if (currentLanguage === "english") displayLang = "English";
+        if (currentLanguage === "spanish")  displayLang = "Español";
+        
+        langSpan.textContent = displayLang;
     }
 
-    const pageSpan = $("currentPage");
+    // Mise à jour de la page
+    const pageSpan = document.getElementById("currentPage");
     if (pageSpan) {
-        pageSpan.textContent = currentPage;
+        pageSpan.textContent = currentPage || "inconnue";
     }
 }
 
 function setLanguage(lang) {
-    currentLanguage = lang;
+    currentLanguage = lang;
+   
+    highlightLanguage(lang);
 
-    highlightLanguage(lang);
+    // ← Ajoute ici
     updateDebugDisplay();
-    changelangueinfo();
-
-    if (!currentPage) currentPage = "/index.html";
-
-    if (currentPage.includes("formation") && lang !== "french") {
-        currentPage = "/index.html";
-    }
-
-    loadPage(currentPage);
+    
+    changelangueinfo();
+  if (currentPage.includes("formation") && currentLanguage !== "french") {
+      currentPage = "/index.html";
+    }
+    loadPage(currentPage); // recharge la page courante avec la nouvelle langue
+    
 }
-
-
 function isMobile() {
     return window.innerWidth <= 768;
 }
@@ -70,66 +60,74 @@ function updateAgeDisplay() {
     if (el) el.textContent = pfAge;
 }
 
-// ===============================
-// LOAD PAGE (STABLE)
-// ===============================
+// ────────────────────────────────────────────────
+// Chargement dynamique des pages (cœur du système)
+// ────────────────────────────────────────────────
+
 function loadPage(page) {
-    if (!page) return;
-
     currentPage = page;
-
-    const main = $("contenu-principal");
-    if (!main) {
-        console.error("contenu-principal introuvable");
+    const mainContainer = document.getElementById("contenu-principal");
+    if (!mainContainer) {
+        console.error("Conteneur principal introuvable sur la page actuelle");
         return;
     }
 
-    main.style.opacity = "0";
+    console.log(`[loadPage] Tentative de chargement : ${page}`);
 
-    fetch(page)
-        .then(res => {
-            if (!res.ok) throw new Error("Erreur HTTP " + res.status);
-            return res.text();
-        })
-        .then(html => {
-            const doc = new DOMParser().parseFromString(html, "text/html");
-            const newContent = doc.getElementById("contenu-principal");
+    mainContainer.style.opacity = "0";
 
-            if (!newContent) {
-                throw new Error("contenu-principal absent dans " + page);
-            }
+    setTimeout(() => {
+        fetch(page)
+            .then(response => {
+                if (!response.ok) throw new Error(`Statut ${response.status}`);
+                return response.text();
+            })
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, "text/html");
+                const newContent = doc.querySelector("#contenu-principal");
 
-            // nettoyage complet
-            main.innerHTML = "";
-            main.append(...newContent.childNodes);
+                console.log(`[loadPage] #contenu-principal trouvé ? → ${!!newContent}`);
 
-            window.scrollTo(0, 0);
+                if (!newContent) {
+                    console.warn(`Aucun #contenu-principal dans ${page}`);
+                    mainContainer.innerHTML = `
+                        <div style="color:darkred; padding:2rem; text-align:center;">
+                            <h2>Erreur de chargement</h2>
+                            <p>Contenu principal non trouvé dans <strong>${page}</strong></p>
+                            <small>Vérifie que l'ID "contenu-principal" existe bien dans le fichier.</small>
+                        </div>`;
+                } else {
+                    mainContainer.innerHTML = newContent.innerHTML;
+                    console.log(`[loadPage] Contenu chargé avec succès depuis ${page}`);
+                }
 
-            applyLanguageAndInit();
-        })
-        .catch(err => {
-            console.error(err);
-            main.innerHTML = `<p style="color:red">Erreur de chargement</p>`;
-        })
-        .finally(() => {
-            main.style.opacity = "1";
-        });
+                mainContainer.style.opacity = "1";
+                applyLanguageAndInit();
+            })
+            .catch(err => {
+                console.error(`Échec chargement ${page} :`, err);
+                mainContainer.innerHTML = `<p style="color:red">Erreur réseau ou fichier introuvable : ${page}</p>`;
+                mainContainer.style.opacity = "1";
+            });
+    }, 200);
 }
+// ────────────────────────────────────────────────
+// Initialisation globale après chaque chargement / changement langue
+// ────────────────────────────────────────────────
 
-// ===============================
-// INIT GLOBAL
-// ===============================
 function applyLanguageAndInit() {
-    updateDebugDisplay();
-
+    document.getElementById('scrollTotal').style.display = 'none';
+        updateDebugDisplay();
     changelanguemenu();
     changelanguefoot();
+    changelanguelogo();
     changelanguepartenaires();
-
     updateAgeDisplay();
 
-    initializeCarousel();
+    // Initialisations communes
     initializeCardToggle();
+    initializeCarousel();
     initScrollBehaviors();
 
 
