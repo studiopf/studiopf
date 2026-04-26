@@ -371,7 +371,7 @@ Un service premium, sans compromis sur la qualité.
        <h3>Peinture 🎨</h3>
 <ul>
     <li><strong>⭐ Premium :</strong> dégradés propres, contrastes marqués, détails essentiels, rendu homogène</li>
-    <li><strong>👑 Signature :</strong> dégradés avancés, textures, OSL, MNM, freehand, détails poussés</li>
+    <li><strong>👑 Signature :</strong> dégradés avancés, textures, OSL, NMM, freehand, détails poussés</li>
 </ul>
 
 <p><strong>🎯 Objectif : un rendu réaliste, lisible et impactant à distance comme de près.</strong></p>
