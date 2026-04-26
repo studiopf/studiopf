@@ -1508,3 +1508,44 @@ function changelanguelogo() {
     logo.innerHTML = html;
 }
 
+ function changeniveau() {
+const select = document.getElementById('niveau');
+    
+    // Si on est déjà sur l'avant-dernier ou le dernier → on ne fait rien
+    if (select.selectedIndex >= select.options.length - 2) {
+        return; // on bloque
+    }
+    
+    // Sinon on passe à l'option suivante
+    select.selectedIndex = select.selectedIndex + 1;
+    
+    // On prévient le formulaire qu’il y a eu un changement
+    select.dispatchEvent(new Event('change'));
+       calculateTotals();
+    scrollTotal();
+
+}
+      function scrollToTop() {
+    // 1. Remonter tout en haut de la page (toujours)
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+            
+function scrollTotal(offset=100) {
+              if (currentPage.includes("simulateur_devis")) {
+   document.getElementById('scrollTotal').style.display = 'block';}
+     document.getElementById('scrollTotal').style.display = 'none';
+  const totalElement = document.querySelector("h3.total");
+  if (totalElement) {
+    const elementTop = totalElement.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: elementTop - offset,
+      behavior: "smooth"
+    });
+  }
+}
+
+
