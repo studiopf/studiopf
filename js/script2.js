@@ -483,17 +483,17 @@ function changelanguemenu() {
 
     if (currentLanguage === "english") {
         html = `<ul class="menu">
-            <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Commission 🎨</a></li>
+            <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Paint 🎨</a></li>
             <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Gallery 🖼️</a></li>
         </ul>`;
     } else if (currentLanguage === "spanish") {
         html = `<ul class="menu">
-                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Commission 🎨</a></li>
+                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Pintura 🎨</a></li>
             <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Galería 🖼️</a></li>
         </ul>`;
     } else {
         html = `<ul class="menu">
-             <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Commission Peinture 🎨</a></li>
+             <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture 🎨</a></li>
             <li><a href="/formation.html" onclick="loadPage('/formation.html');return false;">Formation 📚</a></li>
             <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Galerie 🖼️</a></li>
         </ul>`;
