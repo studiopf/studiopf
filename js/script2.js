@@ -29,10 +29,27 @@
         </div>
 
     </div>
-            <p>I'll be back very soon with new painted adventures!</p>
-            <p>Reopening of availability and orders</p>
-            <p class="highlight">→ early January 2027 ←</p>
-            <p class="highlight">→ contact me for your future projects ←</p>
+            <div class="center">
+    <div class="maintenance-box">
+        <p>Studio PF is currently temporarily closed in order to reorganize and improve the quality of its miniature painting services.</p>
+
+        <p>Following an unexpected interruption that caused significant delays, I have chosen to restart on stronger foundations, with a new approach focused on quality rather than quantity.</p>
+
+        <p>From now on, Studio PF is dedicated exclusively to high-end work: each miniature receives extended attention (minimum 2 hours for basic infantry, and 5 to 8 hours for characters and skirmish miniatures).</p>
+
+        <p class="highlight">→ Reopening in January 2027 ←</p>
+
+        <p>Bookings are already open: feel free to contact me for your miniature painting projects and to plan your future orders.</p>
+
+        <a href="mailto:studiopeinturefigurine@gmail.com">→ Contact Studio PF for your projects ←</a>
+
+        <p>
+            <a href="simulateur_devis.html" class="button" onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">
+                Request a quote ➜
+            </a>
+        </p>
+    </div>
+</div>
             <div class="center">
                 <div class="maintenance-box">
                     <h2>🎨 Transform your miniatures into true works of art</h2>
@@ -78,10 +95,27 @@
         </div>
 
     </div>
-            <p>¡Volveré muy pronto con nuevas aventuras pintadas!</p>
-            <p>Reapertura de disponibilidad y pedidos</p>
-            <p class="highlight">→ principios de Enero de 2027 ←</p>
-            <p class="highlight">→ contáctame para tus proyectos futuros ←</p>
+         <div class="center">
+    <div class="maintenance-box">
+        <p>Studio PF se encuentra actualmente cerrado temporalmente con el fin de reorganizarse y mejorar la calidad de sus servicios de pintura de miniaturas.</p>
+
+        <p>Tras una interrupción imprevista que generó retrasos importantes, he decidido retomar la actividad sobre bases más sólidas, con un nuevo enfoque centrado en la calidad en lugar de la cantidad.</p>
+
+        <p>A partir de ahora, Studio PF se dedica exclusivamente a trabajos de alto nivel: cada miniatura recibe un tiempo de trabajo más dedicado (mínimo 2 horas para infantería básica, y de 5 a 8 horas para personajes y miniaturas de escaramuzas).</p>
+
+        <p class="highlight">→ Reapertura prevista en enero de 2027 ←</p>
+
+        <p>Las reservas ya están abiertas: puedes contactarme para tus proyectos de pintura de miniaturas y planificar tus futuros pedidos.</p>
+
+        <a href="mailto:studiopeinturefigurine@gmail.com">→ Contacta con Studio PF para tus proyectos ←</a>
+
+        <p>
+            <a href="simulateur_devis.html" class="button" onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">
+                Solicitar un presupuesto ➜
+            </a>
+        </p>
+    </div>
+</div>
             <div class="center">
                 <div class="maintenance-box">
                     <h2>🎨 Transforma tus miniaturas en verdaderas obras de arte</h2>
@@ -127,10 +161,23 @@
         </div>
 
     </div>
-            <p>Je reviens très prochainement avec de nouvelles aventures peintes !</p>
-            <p>Réouverture des disponibilités et prises de commande</p>
-            <p class="highlight">→ début Janvier 2027 ←</p>
-            <p class="highlight">→ contactez-moi pour vos futures projets ←</p>
+    <div class="center">
+            <div class="maintenance-box">
+        <p>Le Studio PF est actuellement temporairement fermé afin de repenser son organisation et d'améliorer la qualité des prestations en peinture sur figurine.</p>
+
+<p>Suite à une interruption imprévue ayant entraîné du retard, j’ai fait le choix de repartir sur des bases plus solides, avec une nouvelle approche centrée sur la qualité plutôt que la quantité.</p>
+
+<p>Désormais, le Studio PF se consacre exclusivement à des réalisations de niveau supérieur : chaque figurine bénéficie d’un temps de travail approfondi (minimum 2h pour l’infanterie, et 5 à 8h pour les personnages et figurines d’escarmouche).</p>
+
+<p class="highlight">→ Réouverture prévue en janvier 2027 ←</p>
+
+<p>Les réservations sont d’ores et déjà ouvertes : vous pouvez me contacter pour vos projets de peinture figurine et planifier vos futures commandes.</p>
+
+ <a href="mailto:studiopeinturefigurine@gmail.com">→ Contactez le Studio PF pour vos projets ←</a>
+                   <p><a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis ➜</a> </p>
+                
+                        </div>
+    </div>
             <div class="center">
                 <div class="maintenance-box">
                     <h2>🎨 Transformez vos figurines en véritables œuvres d’art</h2>
