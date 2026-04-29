@@ -122,7 +122,7 @@
 .menu {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .menu-mobile {
@@ -1054,6 +1054,11 @@ nav ul li a:hover {
         object-fit: contain;
         flex: 0 0 100%;
     }
+.menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
 
    .menu-mobile {
     margin-top: 20px;
@@ -1126,6 +1131,12 @@ h1 {
     .language-selector img {
         width: 18px;
     }
+   .menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
    .menu-mobile {
     margin-top: 20px;
     margin-bottom: 25px;
