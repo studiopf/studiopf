@@ -137,9 +137,13 @@ changelangueinfo();
     }
     if (currentPage.includes("formation") && typeof changelangueforma === "function") {
         changelangueforma();
+        initializeFormationForm();
     }
         if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
         changelanguesimu();
+            initializeFormCalculations();
+            calculateTotals();
+            
     }
 
     if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
