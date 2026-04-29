@@ -1204,7 +1204,7 @@ function calculateTotals() {
     let totalPrev = 0;
     categories.forEach(cat => {
         const qty = Number(document.getElementById(`${cat}-input`)?.value) || 0;
-        totalPrev += qty * (tariffs[cat]?.[prevLevel]*tarifheure ?? 0);
+        totalPrev += qty * (tariffs[cat]?.[prevLevel])*tarifheure ?? 0);
     });
 
     const nNum  = niveau.replace("niveau", "");
