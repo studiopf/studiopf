@@ -155,6 +155,7 @@ changelangueinfo();
     }
     if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
+        tableauprix();
       
     }
            if (currentPage.includes("index") && typeof changelangueindex === "function") {
@@ -166,6 +167,32 @@ changelangueinfo();
     
 }
 
+function tableauprix(){
+        const tbody = document.getElementById("tarif-table-body");
+    if (!tbody) return;
+
+    tbody.innerHTML = "";
+
+    categories.forEach(key => {
+        const t = tariffs[key];
+
+        const fantasiaHeures = t.niveau1;
+        const premiumHeures = t.niveau2;
+
+        const fantasiaPrix = fantasiaHeures * tarifheure;
+        const premiumPrix = premiumHeures * tarifheure;
+
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+            <td>${labelscat[key]}</td>
+            <td>${premiumHeures}h / ${premiumPrix}€</td>
+            <td>${fantasiaHeures}h / ${fantasiaPrix}€</td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+}
 function changelangueforma() {
     const main = document.getElementById("contenu-principal");
     if (!main) return;
