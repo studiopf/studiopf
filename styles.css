@@ -823,6 +823,16 @@ nav ul li a:hover {
         padding: 0 0px;
     }
 
+   p, li, .p-social {
+ font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+    line-height: 1.6;
+    text-align: center;
+   margin-top: 8px;
+    margin: 0rem auto;
+    max-width: 92%;
+    color: #e8d9c0;
+}
+
     .table-container {
         text-align: center;
         font-size: 12px;
