@@ -176,12 +176,14 @@ function changelangueforma() {
  currentLanguage = "spanish";
         changelangueindex();
     } else {
-        html = ` <h3>🎨 Formation Peinture sur Figurines</h3>
+        html = `     <div class="maintenance-box">
+        <h3>🎨 Formation Peinture sur Figurines</h3>
     <p>Rejoignez <strong>Studio Peinture Figurine</strong> en cours personnalisés, pour débutant ou avancé !</p>
     <p>Premier pas ? Découvrez les premières <a href="premierpas.html" onclick="loadPage('premierpas.html'); return false;">informations théoriques en peinture sur figurine. 🎨</a></p>
     <p>Venez découvrir le pinceau et l’aérographe, et créez des œuvres uniques.</p>
+    </div>
 
-    <div class="card">
+    <div class="maintenance-box">
       <h3>💡 Pourquoi Nous Choisir ?</h3>
       <ul>
         <li>🖌️ Cours adaptés à tous les niveaux</li>
@@ -191,14 +193,14 @@ function changelangueforma() {
       <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
     </div>
 
-   
+       <div class="maintenance-box">
       <h3>🖍️ Forfaits de Cours</h3>
       <div class="card">
         <h5>🌱 Cours individuel Débutant ou Confirmé</h5>
         <p>Au premier contact : 1ère heure offerte pour se présenter et découvrir la peinture !</p>
         <p>Une pochette d’initiation sera remise.</p>
       </div>
-  
+
         
       <div class="card-container3">
         <div class="card">
@@ -226,7 +228,8 @@ function changelangueforma() {
         <a href="pdf/pdflivret-initiation-peinturefigurine.pdf" download="pdflivret-initiation-peinturefigurine.pdf" class="button">Téléchargez votre livret d’initiation</a>
       </div>
     
-   
+   </div>
+       <div class="maintenance-box">
       <h3>📆 Stage en groupe</h3>
 <p>Plusieurs thèmes possibles : lumières, théorie des couleurs, buste, choix d’un thème d’armée...</p>
     <div class="card-container2">
@@ -248,7 +251,8 @@ function changelangueforma() {
       </div>
          <p>Horaires à titre d'exemple.</p>
      
-   
+   </div>
+       <div class="maintenance-box">
         <h3>📆 Prestation événementielle</h3>
         <p>Initiation au modélisme, premiers pas pour Warhammer (montage, peinture et jeu)...</p>
         <p>Sur devis</p>
@@ -275,6 +279,8 @@ function changelangueforma() {
       </div>
 
    <p>Horaires à titre d'exemple.</p>
+   </div>
+       <div class="maintenance-box">
       <h3>🖌️🔫 Choisissez vos armes :</h3>
   
       <div class="card-container3">
@@ -292,7 +298,8 @@ function changelangueforma() {
         </div>
       </div>
   
-
+</div>
+    <div class="maintenance-box">
   
       <h3>🚀🎨 Lancez-vous !</h3>
       
@@ -307,8 +314,9 @@ function changelangueforma() {
           <p>Apprenez à transformer vos figurines en œuvres d’art 🖼️.</p>
         </div>
       </div>
-     
-  
+     </div>
+
+      <div class="maintenance-box">
    <h3>📅 Réservez divtenant et devenez expert !</h3>
     <div class="center">
    
@@ -374,6 +382,7 @@ function changelangueforma() {
         </div>
       </form>
 
+    </div>
     </div>`;
     }
 
