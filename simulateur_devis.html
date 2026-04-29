@@ -39,10 +39,12 @@
     <div id="contenu-principal">
 
         <h1>Demande de Devis</h1>
-     
+       
            <div class="form-container">
+            
         <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-            <fieldset>
+              <div class="center">
+                  <fieldset>
                 <legend>Coordonnées</legend>
                 <div class="form-group">
                     <label for="nom">Nom<span class="required">*</span></label>
@@ -87,20 +89,20 @@
                     </select>
                 </div>
             </fieldset>
-     
+       </div>
 
                 <fieldset>
                     <legend>Ma demande</legend>
                     <div class="cardform">
                         <label for="niveau">Niveaux de Peinture :</label><br>
                         <p>Niveau ⭐ Premium :<br> TableTop+, Qualité supérieur qui va à l'Approfondi :<br> 🔍 Parfait pour valoriser les figurines de jeu. (Notre recommendation).<br><br></p>
-                        <p>Niveau 👑 Signature :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
+                        <p>Niveau 👑 Fantasia :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
                         <p>Niveau 🎨 Studio :<br> ✨ Limitée et réservée aux passionnés souhaitant le meilleur:<br> 🎨 Pour la collection en vitrine.<br><br></p>
                         <p>Le soclage est inclus.</p>
                         <select id="niveau" class="select" name="niveau" required>
                             <option value="" disabled hidden>Choisissez un niveau</option>
                             <option value="niveau1" selected>Niveau Premium - TableTop+, équivalent Gold (niv3)</option>
-                            <option value="niveau2">Niveau Signature - TableTop++, équivalent Diamond (niv4)</option>
+                            <option value="niveau2">Niveau Fantasia - TableTop++, équivalent Diamond (niv4)</option>
                             <option value="expo">Niveau Studio - Pièce d'exposition pour vitrine</option>
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
@@ -249,7 +251,7 @@
 </div>
                            <div id="message" class="cardform">
                             <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span class="required">*</span></label>
-                            <textarea id="message-input" name="message" placeholder="Votre message" required></textarea>
+                            <div><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
                     </div>
 
                     <p><span class="required">*</span> Champs obligatoires</p>
