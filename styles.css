@@ -298,8 +298,17 @@ h3 {
     color: #d4a76c;
 }
 
-p, li, .p-social {
+li, .p-social {
        font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+   margin-top: 8px;
+    margin: 0rem auto;
+    max-width: 92%;
+    color: #e8d9c0;
+}
+p {
+       font-size: 16px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -831,8 +840,17 @@ nav ul li a:hover {
     animation: info 2s linear infinite alternate;
 }
 
-   p, li, .p-social {
+   li, -social {
    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+   margin-top: 8px;
+    margin: 0rem auto;
+    max-width: 92%;
+    color: #e8d9c0;
+}
+   p {
+       font-size: 12px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -922,7 +940,7 @@ nav ul li a:hover {
       font-size: 18px;
     }
 
-    .partenaires-container,
+    artenaires-container,
     .card-container2 {
         margin-top: 0;
         margin-bottom: 0;
