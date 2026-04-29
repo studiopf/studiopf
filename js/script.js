@@ -167,25 +167,39 @@ changelangueinfo();
     
 }
 
-function tableauprix(){
-        const tbody = document.getElementById("tarif-table-body");
-    if (!tbody) return;
+function tableauprix() {
+
+    const tbody = document.getElementById("tarif-table-body");
+    if (!tbody) {
+        console.error("❌ tableau tarif-table-body introuvable");
+        return;
+    }
+
+    if (!window.tariffs || !window.categories) {
+        console.error("❌ tariffs ou categories non définis");
+        return;
+    }
 
     tbody.innerHTML = "";
 
     categories.forEach(key => {
+
         const t = tariffs[key];
+        if (!t) {
+            console.warn("clé inconnue :", key);
+            return;
+        }
 
-        const fantasiaHeures = t.niveau1;
-        const premiumHeures = t.niveau2;
+        const fantasiaHeures = t.niveau1 ?? 0;
+        const premiumHeures = t.niveau2 ?? 0;
 
-        const fantasiaPrix = fantasiaHeures * tarifheure;
-        const premiumPrix = premiumHeures * tarifheure;
+        const fantasiaPrix = fantasiaHeures * (tarifheure ?? 0);
+        const premiumPrix = premiumHeures * (tarifheure ?? 0);
 
         const tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${labelscat[key]}</td>
+            <td>${labelscat?.[key] ?? key}</td>
             <td>${premiumHeures}h / ${premiumPrix}€</td>
             <td>${fantasiaHeures}h / ${fantasiaPrix}€</td>
         `;
@@ -193,6 +207,7 @@ function tableauprix(){
         tbody.appendChild(tr);
     });
 }
+
 function changelangueforma() {
     const main = document.getElementById("contenu-principal");
     if (!main) return;
