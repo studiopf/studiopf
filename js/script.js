@@ -53,9 +53,6 @@ function setLanguage(lang) {
 
     if (!currentPage) currentPage = "index.html";
 
-    changelangueinfo();
-
-
 
     loadPage(currentPage);
 }
