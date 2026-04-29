@@ -152,7 +152,9 @@ changelangueinfo();
     if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
     }
-       
+           if (currentPage.includes("index") && typeof changelangueindex === "function") {
+        changelangueindex();
+    }
     if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
         changelanguehoraires();
     }
