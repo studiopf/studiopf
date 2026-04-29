@@ -57,7 +57,8 @@
                     <p>At <strong>Studio PF</strong>, each project becomes a unique collectible piece.</p>
                 </div>
             </div>
-              <div class="maintenance-box">
+            <div class="center">
+                <div class="maintenance-box">
   <h2>👋 Who’s behind the brush?</h2>
   <p>I’m <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
   A passionate painter and founder of Studio PF.<br><br>
@@ -76,6 +77,7 @@
       Learn more about my journey ➜
     </a>
   </p>
+</div>
 </div>
         `;
     } else if (currentLanguage === "spanish") {
@@ -123,6 +125,7 @@
                     <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
                 </div>
             </div>
+             <div class="center">
                <div class="maintenance-box">
   <h2>👋 ¿Quién está detrás de los pinceles?</h2>
   <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
@@ -142,6 +145,7 @@
       Saber más sobre mi trayectoria ➜
     </a>
   </p>
+</div>
 </div>
         `;
     } else {
@@ -185,7 +189,8 @@
                     <p>Chez <strong>Studio PF</strong>, chaque projet devient une pièce unique de collection.</p>
                 </div>
             </div>
-             <div class="card" role="region" aria-expanded="true" tabindex="0">
+            <div class="center">
+                <div class="maintenance-box">
   <h2>👋 Qui se cache derrière les pinceaux ?</h2>
   <p>Je suis  <strong>Pierre-François, alias PF, <span id="pf-age">39</span> ans. </strong><br>
             peintre passionné et fondateur de Studio PF.  <br><br>
@@ -197,6 +202,7 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
   Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.</p>
   <blockquote>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</blockquote>
   <p>  <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">En savoir plus sur mon parcours ➜</a></p>
+</div>
 </div>
         `;
     }
