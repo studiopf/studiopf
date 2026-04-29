@@ -94,7 +94,7 @@
     border: 0px;
     width: 100%;
     position: relative;
-      font-size: 18px;
+      font-size: 22px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -159,7 +159,7 @@
 
 .logo {
     position: relative;
-    width: 350px; /* Augmenté pour PC */
+    width: 320px; /* Augmenté pour PC */
     height: auto;
     margin-bottom: 0px;
     justify-content: center;
@@ -280,24 +280,24 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-     font-size: 16px;
+     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
 }
 
 h2 {
-      font-size: 14px;
+      font-size: 16px;
     margin: 0rem 0 0rem;
 }
 
 h3 {
-     font-size: 14px;
+     font-size: 16px;
     color: #d4a76c;
 }
 
 p, li, .p-social {
-       font-size: 12px;
+       font-size: 14px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -449,7 +449,7 @@ nav ul li a {
     padding: 0px 0px;
     border-radius: 6px;
     font-weight: 700;
-     font-size: 12px;
+     font-size: 10px;
     background: rgba(30, 20, 12, 0.55);
     white-space: nowrap;
     transition: all 0.24s ease;
@@ -968,7 +968,7 @@ nav ul li a:hover {
     .social-icon {
         width: 32px;
         height: 32px;
-           font-size: 8px;
+           font-size: 18px;
     }
 
     .language-selector img {
@@ -1087,7 +1087,7 @@ nav ul li a:hover {
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
       .logo {
-        width: 150px;              /* un peu plus petit que sur 640px */
+        width: 130px;              /* un peu plus petit que sur 640px */
         max-width: 70%;
     }
 h1 {
