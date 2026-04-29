@@ -1160,7 +1160,6 @@ function calculateTotals() {
 
         const qty = Number(input.value) || 0;
 
-        // ✅ correction priorité opérateurs
         const unitPrice = (tariffs[cat]?.[niveau] ?? 0) * tarifheure;
         const catTotal = qty * unitPrice;
 
@@ -1170,8 +1169,19 @@ function calculateTotals() {
         totalGeneral += catTotal;
     });
 
+    // 🔥 affichage du total global
+    const totalEl = document.getElementById("oktotal");
+    if (totalEl) {
+        totalEl.textContent = `${totalGeneral.toFixed(2)} €`;
+    }
+
     // ── Comparaison ──
-    const prevMap = { niveau0: "niveau1", niveau1: "niveau2", niveau2: null };
+    const prevMap = {
+        niveau1: null,
+        niveau2: "niveau1",
+        expo: "niveau2"
+    };
+
     const prevLevel = prevMap[niveau];
 
     let totalPrev = 0;
@@ -1179,8 +1189,6 @@ function calculateTotals() {
     if (prevLevel) {
         categories.forEach(cat => {
             const qty = Number(document.getElementById(`${cat}-input`)?.value) || 0;
-
-            // ✅ correction parenthèses + ??
             const prevPrice = (tariffs[cat]?.[prevLevel] ?? 0) * tarifheure;
 
             totalPrev += qty * prevPrice;
