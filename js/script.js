@@ -51,12 +51,12 @@ function setLanguage(lang) {
     highlightLanguage(lang);
     updateDebugDisplay();
 
-    if (!currentPage) currentPage = "/index.html";
+    if (!currentPage) currentPage = "index.html";
 
     changelangueinfo();
 
     if (currentPage.includes("formation") && currentLanguage !== "french") {
-        currentPage = "/index.html";
+        currentPage = "index.html";
     }
 
     loadPage(currentPage);
@@ -70,7 +70,7 @@ function loadPage(page) {
 
     if (!page) {
         console.warn("page undefined → fallback index");
-        page = "/index.html";
+        page = "index.html";
     }
 
     currentPage = page;
