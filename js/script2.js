@@ -1294,8 +1294,7 @@ function initializeFormationForm() {
     });
    }
   else
-   {  currentPage = "index.html";
-            changelangueindex();
+   { 
     }
 }
 
