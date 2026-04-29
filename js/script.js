@@ -123,6 +123,7 @@ function applyLanguageAndInit() {
 changelangueinfo();
     changelanguemenu();
       changelanguepeinture();
+    changelangueindex();
 
     changelanguefoot();
     changelanguelogo();
