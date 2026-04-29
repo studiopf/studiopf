@@ -334,78 +334,93 @@ Personalized support for every project.
         <tbody>
             <tr>
                 <td>Infantry 20-25mm</td>
+                 <td>1h / 20€</td>
                 <td>2h / 40€</td>
-                <td>1h / 20€</td>
+               
             </tr>
             <tr>
                 <td>Infantry 28-32mm</td>
+                  <td>2h / 40€</td>
                 <td>3h / 60€</td>
-                <td>2h / 40€</td>
+              
             </tr>
             <tr>
                 <td>Elite Infantry 40-50mm</td>
+                   <td>3h / 60€</td>
                 <td>4h / 80€</td>
-                <td>3h / 60€</td>
+             
             </tr>
             <tr>
                 <td>Character on foot 25-32mm</td>
+                   <td>5h / 100€</td>
                 <td>8h / 160€</td>
-                <td>5h / 100€</td>
+             
             </tr>
             <tr>
                 <td>Elite Character 40-50mm</td>
+                  <td>6h / 120€</td>
                 <td>9h / 180€</td>
-                <td>6h / 120€</td>
+              
             </tr>
             <tr>
                 <td>Monstrous Character 60-100mm</td>
+                 <td>8h / 160€</td>
                 <td>12h / 240€</td>
-                <td>8h / 160€</td>
+               
             </tr>
             <tr>
                 <td>Character on Monster 120mm</td>
+                 <td>12h / 240€</td>
                 <td>18h / 360€</td>
-                <td>12h / 240€</td>
+               
             </tr>
             <tr>
                 <td>Character on Large Monster</td>
+                 <td>16h / 320€</td>
                 <td>24h / 480€</td>
-                <td>16h / 320€</td>
+               
             </tr>
             <tr>
                 <td>Cavalry 60-75mm</td>
-                <td>4h / 80€</td>
                 <td>3h / 60€</td>
+                <td>4h / 80€</td>
+                
             </tr>
             <tr>
                 <td>Heavy Cavalry 90-105mm</td>
-                <td>5h / 100€</td>
                 <td>4h / 80€</td>
+                <td>5h / 100€</td>
+                
             </tr>
             <tr>
                 <td>Small Vehicle / Monster</td>
-                <td>6h / 120€</td>
                 <td>4h / 80€</td>
+                <td>6h / 120€</td>
+                
             </tr>
             <tr>
                 <td>Medium Vehicle / Monster</td>
+                 <td>6h / 120€</td>
                 <td>9h / 180€</td>
-                <td>6h / 120€</td>
+               
             </tr>
             <tr>
                 <td>Large Vehicle / Monster</td>
+                  <td>8h / 160€</td>
                 <td>16h / 320€</td>
-                <td>8h / 160€</td>
+              
             </tr>
             <tr>
                 <td>Huge Vehicle / Monster</td>
+                 <td>12h / 240€</td>
                 <td>18h / 360€</td>
-                <td>12h / 240€</td>
+               
             </tr>
             <tr>
                 <td>Titanic</td>
+                  <td>16h / 320€</td>
                 <td>34h / 680€</td>
-                <td>16h / 320€</td>
+              
             </tr>
         </tbody>
     </table>
@@ -532,79 +547,94 @@ Acompañamiento personalizado para cada proyecto.
 
         <tbody>
             <tr>
-                <td>Infantería 20-25mm</td>
-                <td>2h / 40€</td>
+                <td>Infantería 20-25mm</td>  
                 <td>1h / 20€</td>
+                <td>2h / 40€</td>
+              
             </tr>
             <tr>
                 <td>Infantería 28-32mm</td>
+                 <td>2h / 40€</td>
                 <td>3h / 60€</td>
-                <td>2h / 40€</td>
+               
             </tr>
             <tr>
                 <td>Infantería élite 40-50mm</td>
+                  <td>3h / 60€</td>
                 <td>4h / 80€</td>
-                <td>3h / 60€</td>
+              
             </tr>
             <tr>
                 <td>Personaje a pie 25-32mm</td>
+                  <td>5h / 100€</td>
                 <td>8h / 160€</td>
-                <td>5h / 100€</td>
+              
             </tr>
             <tr>
                 <td>Personaje élite 40-50mm</td>
+                  <td>6h / 120€</td>
                 <td>9h / 180€</td>
-                <td>6h / 120€</td>
+              
             </tr>
             <tr>
                 <td>Personaje monstruoso 60-100mm</td>
+                  <td>8h / 160€</td>
                 <td>12h / 240€</td>
-                <td>8h / 160€</td>
+              
             </tr>
             <tr>
                 <td>Personaje sobre monstruo 120mm</td>
+                 <td>12h / 240€</td>
                 <td>18h / 360€</td>
-                <td>12h / 240€</td>
+               
             </tr>
             <tr>
                 <td>Personaje sobre gran monstruo</td>
+                  <td>16h / 320€</td>
                 <td>24h / 480€</td>
-                <td>16h / 320€</td>
+              
             </tr>
             <tr>
                 <td>Caballería 60-75mm</td>
+                  <td>3h / 60€</td>
                 <td>4h / 80€</td>
-                <td>3h / 60€</td>
+              
             </tr>
             <tr>
                 <td>Caballería pesada 90-105mm</td>
+                 <td>4h / 80€</td>
                 <td>5h / 100€</td>
-                <td>4h / 80€</td>
+               
             </tr>
             <tr>
                 <td>Vehículo / monstruo pequeño</td>
+                 <td>4h / 80€</td>
                 <td>6h / 120€</td>
-                <td>4h / 80€</td>
+               
             </tr>
             <tr>
                 <td>Vehículo / monstruo medio</td>
+                 <td>6h / 120€</td>
                 <td>9h / 180€</td>
-                <td>6h / 120€</td>
+               
             </tr>
             <tr>
                 <td>Vehículo / monstruo grande</td>
+                   <td>8h / 160€</td>
                 <td>16h / 320€</td>
-                <td>8h / 160€</td>
+             
             </tr>
             <tr>
                 <td>Vehículo / monstruo enorme</td>
+                  <td>12h / 240€</td>
                 <td>18h / 360€</td>
-                <td>12h / 240€</td>
+              
             </tr>
             <tr>
                 <td>Titánico</td>
+                  <td>16h / 320€</td>
                 <td>34h / 680€</td>
-                <td>16h / 320€</td>
+              
             </tr>
         </tbody>
     </table>
@@ -733,78 +763,94 @@ Un accompagnement personnalisé pour chaque projet.
         <tbody>
             <tr>
                 <td>Infanterie 20-25mm</td>
+                  <td>1h / 20€</td>
                 <td>2h / 40€</td>
-                <td>1h / 20€</td>
+              
             </tr>
             <tr>
                 <td>Infanterie 28-32mm</td>
+                   <td>2h / 40€</td>
                 <td>3h / 60€</td>
-                <td>2h / 40€</td>
+             
             </tr>
             <tr>
                 <td>Infanterie élite 40-50mm</td>
+                  <td>3h / 60€</td>
                 <td>4h / 80€</td>
-                <td>3h / 60€</td>
+              
             </tr>
             <tr>
                 <td>Personnage à pied 25-32mm</td>
-                <td>8h / 160€</td>
                 <td>5h / 100€</td>
+                <td>8h / 160€</td>
+                
             </tr>
             <tr>
                 <td>Personnage élite 40-50mm</td>
-                <td>9h / 180€</td>
                 <td>6h / 120€</td>
+                <td>9h / 180€</td>
+                
             </tr>
             <tr>
                 <td>Personnage monstrueux 60-100mm</td>
+                   <td>8h / 160€</td>
                 <td>12h / 240€</td>
-                <td>8h / 160€</td>
+             
             </tr>
             <tr>
                 <td>Personnage sur monstre 120mm</td>
+                  <td>12h / 240€</td>
                 <td>18h / 360€</td>
-                <td>12h / 240€</td>
+              
             </tr>
             <tr>
                 <td>Personnage sur grand monstre</td>
+                  <td>16h / 320€</td>
                 <td>24h / 480€</td>
-                <td>16h / 320€</td>
+              
             </tr>
             <tr>
                 <td>Cavalerie 60-75mm</td>
+                 <td>3h / 60€</td>
                 <td>4h / 80€</td>
-                <td>3h / 60€</td>
+               
             </tr>
             <tr>
                 <td>Cavalerie lourde 90-105mm</td>
+                  <td>4h / 80€</td>
                 <td>5h / 100€</td>
-                <td>4h / 80€</td>
+              
             </tr>
             <tr>
                 <td>Petit véhicule / monstre</td>
+                  <td>4h / 80€</td>
                 <td>6h / 120€</td>
-                <td>4h / 80€</td>
+              
             </tr>
             <tr>
                 <td>Véhicule / monstre moyen</td>
+                 <td>6h / 120€</td>
                 <td>9h / 180€</td>
-                <td>6h / 120€</td>
+               
             </tr>
             <tr>
                 <td>Gros véhicule / monstre</td>
+                 <td>8h / 160€</td>
                 <td>16h / 320€</td>
-                <td>8h / 160€</td>
+               
             </tr>
             <tr>
                 <td>Énorme véhicule / monstre</td>
+                  <td>12h / 240€</td>
                 <td>18h / 360€</td>
-                <td>12h / 240€</td>
+              
             </tr>
             <tr>
+            
                 <td>Titanesque</td>
+                 <td>16h / 320€</td>
                 <td>34h / 680€</td>
-                <td>16h / 320€</td>
+               
             </tr>
         </tbody>
     </table>
