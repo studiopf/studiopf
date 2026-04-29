@@ -531,18 +531,18 @@ function changelanguemenu() {
     if (currentLanguage === "english") {
         html = `<ul class="menu">
             <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Paint 🎨</a></li>
-            <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Gallery 🖼️</a></li>
+            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Gallery 🖼️</a></li>
         </ul>`;
     } else if (currentLanguage === "spanish") {
         html = `<ul class="menu">
                 <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Pintura 🎨</a></li>
-            <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Galería 🖼️</a></li>
+            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galería 🖼️</a></li>
         </ul>`;
     } else {
         html = `<ul class="menu">
              <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture 🎨</a></li>
-            <li><a href="/formation.html" onclick="loadPage('/formation.html');return false;">Formation 📚</a></li>
-            <li><a href="/galerie.html" onclick="loadPage('/galerie.html');return false;">Galerie 🖼️</a></li>
+            <li><a href="formation.html" onclick="loadPage('formation.html');return false;">Formation 📚</a></li>
+            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galerie 🖼️</a></li>
         </ul>`;
     }
 
@@ -559,9 +559,9 @@ function changelanguefoot() {
     html = `
      <nav class="menu-mobile">
         <ul class="menu">
-            <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">General Terms and Conditions 📜</a></li>
-            <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html'); return false;">Legal Notice 💼</a></li>
-            <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
+            <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
     
         </ul>
                 </nav>
@@ -585,9 +585,9 @@ else if (currentLanguage === "spanish") {
     html = `
      <nav class="menu-mobile">
         <ul class="menu">
-            <li><a href="/conditions.html" onclick="loadPage('/conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
-            <li><a href="/mentionslegales.html" onclick="loadPage('/mentionslegales.html');return false;">Aviso Legal 💼</a></li>
-            <li><a href="/horaires.html" onclick="loadPage('/horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
+            <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
+            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
  
         </ul>
                 </nav>
@@ -1395,7 +1395,7 @@ let html = "";
           <h1>✨ Legal Notice ✨</h1>
 <p><strong>Website:</strong> studiopf.fr<br> <strong>Last updated:</strong> January 19, 2026</p>
 
-<div class="section">
+<div class="maintenance-box">
   <h2>📌 Publisher</h2> 
   <p>
     <strong>Studio PF: Miniature Painting</strong><br>
@@ -1408,7 +1408,7 @@ let html = "";
   </p>
 </div>
 
-<div class="section"> 
+<div class="maintenance-box"> 
   <h2>💻 Hosting Provider</h2>
   <p>
     GitHub Inc.<br>
@@ -1422,14 +1422,14 @@ let html = "";
   </p> 
 </div> 
 
-<div class="section">
+<div class="maintenance-box">
   <h2>🔒 Intellectual Property</h2> 
   <p>
     All content on this website (texts, images, videos, logos, icons, etc.) is the exclusive property of Studio PF, unless otherwise stated. Any reproduction or use without prior written permission is prohibited.
   </p> 
 </div> 
 
-<div class="section">
+<div class="maintenance-box">
   <h2>📊 Personal Data</h2>
   <p>
     The data collected is used solely for customer relationship purposes. In accordance with GDPR, you may request access to, modification, or deletion of your data by email at:
@@ -1437,7 +1437,7 @@ let html = "";
   </p>
 </div>
 
-<div class="section"> 
+<div class="maintenance-box"> 
   <h2>🌐 Cookies</h2>
   <p>
     This website may use cookies to improve navigation and statistical analysis. You can disable cookies in your browser settings.
@@ -1455,7 +1455,7 @@ let html = "";
           <h1>✨ Aviso Legal ✨</h1>
 <p><strong>Sitio web:</strong> studiopf.fr<br> <strong>Fecha de actualización:</strong> 19 de enero de 2026</p>
 
-<div class="section">
+<div class="maintenance-box">
   <h2>📌 Editor</h2> 
   <p>
     <strong>Studio PF: Pintura de Miniaturas</strong><br>
@@ -1468,7 +1468,7 @@ let html = "";
   </p>
 </div>
 
-<div class="section"> 
+<div class="maintenance-box"> 
   <h2>💻 Proveedor de alojamiento</h2>
   <p>
     GitHub Inc.<br>
@@ -1482,14 +1482,14 @@ let html = "";
   </p> 
 </div> 
 
-<div class="section">
+<div class="maintenance-box">
   <h2>🔒 Propiedad intelectual</h2> 
   <p>
     Todos los contenidos del sitio (textos, imágenes, vídeos, logotipos, iconos, etc.) son propiedad exclusiva de Studio PF, salvo indicación contraria. Queda prohibida cualquier reproducción o uso sin autorización previa por escrito.
   </p> 
 </div> 
 
-<div class="section">
+<div class="maintenance-box">
   <h2>📊 Datos personales</h2>
   <p>
     Los datos recopilados se utilizan únicamente con fines de relación con el cliente. De acuerdo con el RGPD, puede solicitar el acceso, la modificación o la eliminación de sus datos enviando un correo electrónico a:
@@ -1497,7 +1497,7 @@ let html = "";
   </p>
 </div>
 
-<div class="section"> 
+<div class="maintenance-box"> 
   <h2>🌐 Cookies</h2>
   <p>
     El sitio puede utilizar cookies para mejorar la navegación y el análisis estadístico. Puede desactivar las cookies en la configuración de su navegador.
@@ -1513,7 +1513,7 @@ let html = "";
 else { // français (par défaut)
       html = `
           <h1>✨ Mentions Légales ✨</h1>
-<p><strong>Site :</strong> studiopf.fr<br> <strong>Date de mise à jour :</strong> 19 janvier 2026</p> <div class="section">
+<p><strong>Site :</strong> studiopf.fr<br> <strong>Date de mise à jour :</strong> 19 janvier 2026</p> <div class="maintenance-box">
   <h2>📌 Éditeur</h2> 
   <p> <strong>Studio PF : Peinture Figurine</strong><br>
     Pierre-François Frasse<br>
@@ -1522,20 +1522,20 @@ else { // français (par défaut)
     Adresse : 17 route de lare, 42510 Saint Georges de Baroille, France<br>
     Téléphone : 07 75 860 837<br>
     E-mail : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> </p> </div>
-  <div class="section"> 
+  <div class="maintenance-box"> 
     <h2>💻 Hébergeur</h2>
     <p> GitHub Inc.<br> 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA<br>
       Site : <a href="https://pages.github.com" target="_blank">https://pages.github.com</a> </p>
     <p> Domaine enregistré chez : Gandi SAS<br> 63-65 boulevard Massena, 75013 Paris, France<br>
       Site : <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a> </p> 
   </div> 
-   <div class="section">
+   <div class="maintenance-box">
         <h2>🔒 Propriété intellectuelle</h2> 
         <p> Tous les contenus du site (textes, images, vidéos, logos, icônes, etc.) sont la propriété exclusive de Studio PF, sauf mention contraire. Toute reproduction ou utilisation sans autorisation écrite est interdite. </p> 
    </div> 
-   <div class="section"> <h2>📊 Données personnelles</h2> <p> Les données collectées sont utilisées uniquement à des fins de relation client. Conformément au RGPD, vous pouvez demander l'accès, la modification ou la suppression de vos données par e-mail à : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> </p>
+   <div class="maintenance-box"> <h2>📊 Données personnelles</h2> <p> Les données collectées sont utilisées uniquement à des fins de relation client. Conformément au RGPD, vous pouvez demander l'accès, la modification ou la suppression de vos données par e-mail à : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> </p>
    </div>
-  <div class="section"> 
+  <div class="maintenance-box"> 
      <h2>🌐 Cookies</h2>
     <p> Le site peut utiliser des cookies pour améliorer la navigation et l’analyse sttistique. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur. </p> 
   </div>
@@ -1560,37 +1560,37 @@ function changelangueconditions() {
             <p><strong>Website:</strong> studiopf.fr<br>
             <strong>Last updated:</strong> March 2026</p>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>1. Scope of application</h2>
                 <p>These general terms and conditions apply to all painting commissions, training courses, and related services offered by Studio PF (Pierre-François Frasse, micro-entrepreneur, SIRET 832 040 380 00020).</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>2. Ordering process</h2>
                 <p>Any order is confirmed by written agreement (email or message) and payment of a deposit (usually 50%). The order is firm and final once the miniatures are received by the painter.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>3. Prices – Payment</h2>
                 <p>Prices are in euros (€), quoted individually or via the simulator. Payment is made by PayPal, bank transfer or cash (hand delivery only). Full payment is required before shipping unless otherwise agreed.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>4. Delivery – Shipping</h2>
                 <p>Shipping is done via Colissimo with tracking and insurance. Shipping costs are the responsibility of the client. Studio PF is not liable for loss or damage after handover to the carrier.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>5. Right of withdrawal</h2>
                 <p>No right of withdrawal applies to custom-made products (painted miniatures) as per article L.221-28 of the French Consumer Code.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>6. Intellectual property – Photography</h2>
                 <p>Studio PF retains the right to photograph and publish the finished work on its website, social networks and portfolio unless the client explicitly objects in writing before starting the project.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>7. Liability</h2>
                 <p>Studio PF commits to the best possible execution of the work. In case of dispute, French law applies and the competent court is that of Saint-Étienne.</p>
             </div>
@@ -1604,37 +1604,37 @@ function changelangueconditions() {
             <p><strong>Sitio web:</strong> studiopf.fr<br>
             <strong>Última actualización:</strong> Marzo 2026</p>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>1. Ámbito de aplicación</h2>
                 <p>Estas condiciones generales se aplican a todos los encargos de pintura, cursos de formación y servicios relacionados ofrecidos por Studio PF (Pierre-François Frasse, microempresario, SIRET 832 040 380 00020).</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>2. Proceso de pedido</h2>
                 <p>Cualquier pedido se confirma por acuerdo escrito (correo o mensaje) y pago de un depósito (generalmente 50 %). El pedido es firme una vez recibidas las miniaturas.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>3. Precios – Pago</h2>
                 <p>Los precios están en euros (€), presupuestados individualmente o mediante el simulador. El pago se realiza por PayPal, transferencia bancaria o en efectivo (entrega en mano). El pago total es exigible antes del envío.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>4. Entrega – Envío</h2>
                 <p>El envío se realiza mediante Colissimo con seguimiento y seguro. Los gastos de envío corren a cargo del cliente. Studio PF no se responsabiliza de pérdidas o daños tras la entrega al transportista.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>5. Derecho de desistimiento</h2>
                 <p>No se aplica derecho de desistimiento a productos personalizados (miniaturas pintadas) según el artículo L.221-28 del Código del Consumo francés.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>6. Propiedad intelectual – Fotografías</h2>
                 <p>Studio PF se reserva el derecho de fotografiar y publicar el trabajo terminado en su web, redes sociales y portafolio, salvo oposición expresa por escrito del cliente antes del inicio del proyecto.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>7. Responsabilidad</h2>
                 <p>Studio PF se compromete a realizar el trabajo de la mejor manera posible. En caso de litigio, se aplica la ley francesa y el tribunal competente es el de Saint-Étienne.</p>
             </div>
@@ -1648,37 +1648,37 @@ function changelangueconditions() {
             <p><strong>Site :</strong> studiopf.fr<br>
             <strong>Dernière mise à jour :</strong> Mars 2026</p>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>1. Champ d'application</h2>
                 <p>Ces conditions générales de vente s'appliquent à l'ensemble des prestations de peinture, formations et services associés proposés par Studio PF (Pierre-François Frasse, micro-entrepreneur, SIRET 832 040 380 00020).</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>2. Processus de commande</h2>
                 <p>Toute commande est confirmée par accord écrit (email ou message) et versement d'un acompte (généralement 50 %). La commande devient ferme et définitive dès réception des figurines par le peintre.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>3. Tarifs – Paiement</h2>
                 <p>Les prix sont exprimés en euros (€), établis sur devis individuel ou via le simulateur. Le règlement s'effectue par PayPal, virement bancaire ou espèces (remise en main propre). Le solde est exigible avant expédition sauf accord contraire.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>4. Livraison – Expédition</h2>
                 <p>L'expédition est réalisée via Colissimo avec suivi et assurance. Les frais de port sont à la charge du client. Studio PF décline toute responsabilité en cas de perte ou avarie après remise au transporteur.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>5. Droit de rétractation</h2>
                 <p>Aucun droit de rétractation ne s'applique aux produits sur mesure (figurines peintes) conformément à l'article L.221-28 du Code de la consommation.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>6. Propriété intellectuelle – Droit à l'image des œuvres</h2>
                 <p>Studio PF se réserve le droit de photographier et publier les réalisations terminées sur son site, ses réseaux sociaux et son portfolio, sauf opposition expresse et écrite du client avant le début du projet.</p>
             </div>
 
-            <div class="section">
+            <div class="maintenance-box">
                 <h2>7. Responsabilité – Litiges</h2>
                 <p>Studio PF s'engage à réaliser les prestations avec le plus grand soin. En cas de litige, la loi française est applicable et les tribunaux compétents sont ceux de Saint-Étienne.</p>
             </div>
@@ -1701,6 +1701,7 @@ function changelanguehoraires() {
 
     if (currentLanguage === "english") {
         html = `
+         <div class="maintenance-box">
            <h2>🕓 Studio Opening Hours</h2>
 <ul>
     <li>Monday: 🕘 09:00 - 18:00 🕖</li>
@@ -1711,7 +1712,8 @@ function changelanguehoraires() {
     <li>Saturday: 🚫 Closed 🚫</li>
     <li>Sunday: 🚫 Closed 🚫</li>
 </ul>
-
+</div>
+   <div class="maintenance-box">
 <h2>🕓 Twitch Live Schedule</h2>
 <ul>
     <li>Monday: 🕘 13:00 - 16:00 🕖</li>
@@ -1723,7 +1725,8 @@ function changelanguehoraires() {
     <li>Sunday: 🚫 OFF 🚫</li>
 </ul>
 
-<hr>
+</div>
+   <div class="maintenance-box">
 
 <h2>🕓 School Holidays: Studio Closed</h2>
 <h3>📅 The studio will be closed for holidays during the following school holiday periods:</h3>
@@ -1749,10 +1752,13 @@ function changelanguehoraires() {
     <li><strong>Winter Holidays 2028 ⛄ :</strong> <br> 📅 From Saturday, February 5, 2028 to Monday, February 21, 2028 🏔️</li>
     <li><strong>Spring Holidays 2028 🌷 :</strong> <br> 📅 From Saturday, April 1, 2028 to Monday, April 17, 2028 🌸</li>
 </ul>
+</div>
         `;
     } 
     else if (currentLanguage === "spanish") {
         html = `
+      
+   <div class="maintenance-box">
          <h2>🕓 Horario de apertura del estudio</h2>
 <ul>
     <li>Lunes: 🕘 09:00 - 18:00 🕖</li>
@@ -1763,7 +1769,8 @@ function changelanguehoraires() {
     <li>Sábado: 🚫 Cerrado 🚫</li>
     <li>Domingo: 🚫 Cerrado 🚫</li>
 </ul>
-
+</div>
+   <div class="maintenance-box">
 <h2>🕓 Horario de directos en Twitch</h2>
 <ul>
     <li>Lunes: 🕘 13:00 - 16:00 🕖</li>
@@ -1775,7 +1782,8 @@ function changelanguehoraires() {
     <li>Domingo: 🚫 OFF 🚫</li>
 </ul>
 
-<hr>
+</div>
+   <div class="maintenance-box">
 
 <h2>🕓 Vacaciones escolares: Estudio cerrado</h2>
 <h3>📅 El estudio estará cerrado por vacaciones durante los siguientes periodos de vacaciones escolares:</h3>
@@ -1801,10 +1809,13 @@ function changelanguehoraires() {
     <li><strong>Vacaciones de invierno 2028 ⛄ :</strong> <br> 📅 Desde el sábado 5 de febrero de 2028 hasta el lunes 21 de febrero de 2028 🏔️</li>
     <li><strong>Vacaciones de primavera 2028 🌷 :</strong> <br> 📅 Desde el sábado 1 de abril de 2028 hasta el lunes 17 de abril de 2028 🌸</li>
 </ul>
+</div>
         `;
     } 
     else { // français
         html = `
+    
+   <div class="maintenance-box">
                <h2>🕓 Horaires d'ouverture du Studio</h2>
     <ul>
         <li>Lundi : 🕘 09:00 - 18:00 🕖</li>
@@ -1815,6 +1826,8 @@ function changelanguehoraires() {
         <li>Samedi : 🚫 Fermé 🚫</li>
         <li>Dimanche : 🚫 Fermé 🚫</li>
     </ul>
+    </div>
+   <div class="maintenance-box">
   <h2>🕓 Horaires des lives Twitch</h2>
     <ul>
         <li>Lundi : 🕘 13:00 - 16:00 🕖</li>
@@ -1825,7 +1838,8 @@ function changelanguehoraires() {
         <li>Samedi : 🚫 OFF 🚫</li>
         <li>Dimanche : 🚫 OFF 🚫</li>
     </ul>
-    <hr>
+ </div>
+   <div class="maintenance-box">
   <h2>🕓 Congès Scolaires : Fermeture du Studio</h2>
     <h3>📅 Le studio sera fermé pour congés pendant les périodes de vacances scolaires suivantes :</h3>
     <h4>📅 2026:</h4>
@@ -1848,6 +1862,7 @@ function changelanguehoraires() {
     <li><strong>Vacances d'hiver 2028 ⛄ :</strong> <br> 📅 Du samedi 5 février 2028 au lundi 21 février 2028 🏔️</li>
     <li><strong>Vacances de printemps 2028 🌷 :</strong> <br> 📅 Du samedi 1 avril 2028 au lundi 17 avril 2028 🌸</li>
 </ul>
+</div>
         `;
     }
 
