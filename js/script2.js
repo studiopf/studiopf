@@ -1105,7 +1105,7 @@ const labelscat = {
 const categories = Object.keys(tariffs);
 
 function renderTarifTable() {
-    const tbody = document.getElementById("tarif-table-body");
+    const tbody = document.getElementById("tarif-table");
     tbody.innerHTML = ""; // reset
 
     Object.keys(tariffs).forEach(key => {
