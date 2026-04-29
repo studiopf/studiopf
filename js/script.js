@@ -165,8 +165,6 @@ changelangueinfo();
     
 }
 
-const categories = Object.keys(tariffs);
-
 
 function changelangueforma() {
     const main = document.getElementById("contenu-principal");
