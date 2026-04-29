@@ -895,7 +895,7 @@ nav ul li a:hover {
         align-items: center;
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-template-columns: repeat(1, minmax(90px, 1fr));
         gap: 8px;
         align-items: center;
         justify-content: center;
@@ -927,11 +927,12 @@ nav ul li a:hover {
         align-items: center;
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-template-columns: repeat(1, minmax(90px, 1fr));
         gap: 8px;
         align-items: center;
         justify-content: center;
     }
+   
 
     .cardpartenaire {
         height: 45px;
