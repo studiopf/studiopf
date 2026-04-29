@@ -168,8 +168,12 @@ function changelangueforma() {
     let html = "";
 
     if (currentLanguage === "english") {
+         currentPage = "index.html";
+ currentLanguage = "english";
         changelangueindex();
     } else if (currentLanguage === "spanish") {
+         currentPage = "index.html";
+ currentLanguage = "spanish";
         changelangueindex();
     } else {
         html = ` <h3>🎨 Formation Peinture sur Figurines</h3>
@@ -423,9 +427,13 @@ function changelangueforma() {
     let html = "";
 
     if (currentLanguage === "english") {
-          html = ``;
+         currentPage = "index.html";
+ currentLanguage = "english";
+        changelangueindex();
     } else if (currentLanguage === "spanish") {
-          html = ``;
+         currentPage = "index.html";
+ currentLanguage = "spanish";
+        changelangueindex();
     } else {
         html = `
                 <h1>Demande de Devis</h1>
@@ -483,16 +491,14 @@ function changelangueforma() {
                     <legend>Ma demande</legend>
                     <div class="cardform">
                         <label for="niveau">Niveaux de Peinture :</label><br>
-                        <p>Niveau 💸 Essentiel :<br> TableTop, Qualité alliant efficacité et budget :<br> 🔍 Parfait pour les figurines de base. (Notre recommendation).<br><br></p>
-                        <p>Niveau ⭐ Approfondi :<br> TableTop+, Qualité supérieur qui va à l'Approfondi :<br> 🔍 Parfait pour valoriser les figurines de jeu. (Notre recommendation).<br><br></p>
-                        <p>Niveau 👑 Prestige :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
+                        <p>Niveau ⭐ Premium :<br> TableTop+, Qualité supérieur qui va à l'Approfondi :<br> 🔍 Parfait pour valoriser les figurines de jeu. (Notre recommendation).<br><br></p>
+                        <p>Niveau 👑 Signature :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
                         <p>Niveau 🎨 Studio :<br> ✨ Limitée et réservée aux passionnés souhaitant le meilleur:<br> 🎨 Pour la collection en vitrine.<br><br></p>
                         <p>Le soclage est inclus.</p>
                         <select id="niveau" class="select" name="niveau" required>
                             <option value="" disabled hidden>Choisissez un niveau</option>
-                            <option value="niveau0" selected>Niveau Essentiel - TableTop basique 3 couleurs, équivalent Silver (niv2)</option>
-                            <option value="niveau1" >Niveau Approfondi - TableTop+, équivalent Gold (niv3)</option>
-                            <option value="niveau2">Niveau Prestige - TableTop++, équivalent Diamond (niv4)</option>
+                            <option value="niveau1" selected>Niveau Premium - TableTop+, équivalent Gold (niv3)</option>
+                            <option value="niveau2">Niveau Signature - TableTop++, équivalent Diamond (niv4)</option>
                             <option value="expo">Niveau Studio - Pièce d'exposition pour vitrine</option>
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
