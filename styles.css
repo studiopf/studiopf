@@ -122,6 +122,7 @@
 .menu {
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 24px;
 }
 
 .menu-mobile {
@@ -129,6 +130,7 @@
     margin-bottom: 25px;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
 }
 
 .container {
@@ -297,7 +299,7 @@ h3 {
 }
 
 p, li, .p-social {
-       font-size: 18px;
+       font-size: 24px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -463,27 +465,6 @@ nav ul li a:hover {
 /* ==========================================================================
    RÉSEAUX SOCIAUX & LANGUES – inchangé
    ========================================================================== */
-/* bandeau défile */
-.info-container {
-    width: 100%;
-    padding: 0px;
-    position: relative;
-}
-
-.info {
-    background: linear-gradient(to bottom, #8B0000, #FF6347);
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
-    width: 100%;
-    position: relative;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px #555;
-    animation: info 2s linear infinite alternate;
-}
 
 @keyframes info {
     from {
@@ -823,9 +804,30 @@ nav ul li a:hover {
         max-width: 600px;
         padding: 0 0px;
     }
+/* bandeau défile */
+.info-container {
+    width: 100%;
+    padding: 0px;
+    position: relative;
+}
+
+.info {
+    background: linear-gradient(to bottom, #8B0000, #FF6347);
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0px;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #555;
+    animation: info 2s linear infinite alternate;
+}
 
    p, li, .p-social {
-   font-size: 18px;
+   font-size: 24px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -836,22 +838,22 @@ nav ul li a:hover {
    
 
     h1 {
-          font-size: 18px;
+          font-size: 24px;
         margin: 0.3rem 0;
         letter-spacing: 0.5px;
     }
 
     h2 {
-          font-size: 18px;
+          font-size: 24px;
         margin: 0.3rem 0;
     }
 
     h3 {
-         font-size: 18px;
+         font-size: 24px;
     }
 
     h4, h5 {
-          font-size: 18px;
+          font-size: 24px;
     }
 
     h1, h2, h3, h4, h5 {
@@ -859,7 +861,7 @@ nav ul li a:hover {
     }
     .table-container {
         text-align: center;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .lightbox {
@@ -891,7 +893,7 @@ nav ul li a:hover {
         position: absolute;
         top: 0px;
         right: 00px;
-          font-size: 18px;
+          font-size: 24px;
         color: white;
         cursor: pointer;
     }
@@ -912,7 +914,7 @@ nav ul li a:hover {
 
     nav ul li a {
         padding: 0px 0px;
-      font-size: 18px;
+      font-size: 24px;
     }
 
     .partenaires-container,
@@ -968,7 +970,7 @@ nav ul li a:hover {
     .social-icon {
         width: 32px;
         height: 32px;
-           font-size: 18px;
+           font-size: 24px;
     }
 
     .language-selector img {
@@ -1014,14 +1016,14 @@ nav ul li a:hover {
         bottom: 60px;
         right: 12px;
         padding: 10px;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     #scrollTotal {
         bottom: 110px;
         right: 12px;
         padding: 14px;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .carousel-container {
@@ -1074,7 +1076,7 @@ nav ul li a:hover {
 
    .button {
         padding: 14px 24px;           /* un peu moins large */
-          font-size: 18px;
+          font-size: 24px;
         min-height: 52px;             /* zone de clic confortable */
     }
 
@@ -1091,7 +1093,7 @@ nav ul li a:hover {
         max-width: 70%;
     }
 h1 {
-      font-size: 18px;
+      font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
