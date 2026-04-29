@@ -324,13 +324,26 @@ Personalized support for every project.
         </tr>
     </thead>
     <tbody id="tarif-table-body"></tbody>
-</table>
-       </div>
-          <div class="banniere">
-         
-            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-           
-        </div> 
+        </table>
+    </div>
+
+    <!-- Tableau dynamique -->
+    <div class="maintenance-box">
+        <table id="tarif-table" class="tableborder1">
+            <thead>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Premium</th>
+                    <th>Fantasia</th>
+                </tr>
+            </thead>
+            <tbody id="tarif-table-body"></tbody>
+        </table>
+    </div>
+
+    <div class="banniere">
+        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
+    </div>
 `;
     } else if (currentLanguage === "spanish") {
         html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
@@ -445,13 +458,26 @@ Acompañamiento personalizado para cada proyecto.
         </tr>
     </thead>
     <tbody id="tarif-table-body"></tbody>
-</table>
-       </div>
-          <div class="banniere">
-         
-            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-           
-        </div> 
+        </table>
+    </div>
+
+    <!-- Tableau dynamique -->
+    <div class="maintenance-box">
+        <table id="tarif-table" class="tableborder1">
+            <thead>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Premium</th>
+                    <th>Fantasia</th>
+                </tr>
+            </thead>
+            <tbody id="tarif-table-body"></tbody>
+        </table>
+    </div>
+
+    <div class="banniere">
+        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
+    </div>
 
 `;
     } else {
@@ -554,26 +580,28 @@ Un accompagnement personnalisé pour chaque projet.
     <td>Scénique / vitrine</td>
 </tr>
 </tbody>
-</table>
-   </div>
-     <div class="maintenance-box">
-  <table id="tarif-table" class="tableborder1">
-    <thead>
-        <tr>
-            <th>Catégorie</th>
-            <th>Premium (heures / tarif)</th>
-            <th>Fantasia (heures / tarif)</th>
-        </tr>
-    </thead>
-    <tbody id="tarif-table-body"></tbody>
-</table>
-       </div>
-          <div class="banniere">
-         
-            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-           
-        </div> 
-       
+
+
+        </table>
+    </div>
+
+    <!-- Tableau dynamique -->
+    <div class="maintenance-box">
+        <table id="tarif-table" class="tableborder1">
+            <thead>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Premium</th>
+                    <th>Fantasia</th>
+                </tr>
+            </thead>
+            <tbody id="tarif-table-body"></tbody>
+        </table>
+    </div>
+
+    <div class="banniere">
+        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
+    </div>
          `;
     }
 
