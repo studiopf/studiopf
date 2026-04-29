@@ -312,21 +312,14 @@ Personalized support for every project.
     <td>Scenic / display</td>
 </tr>
 </tbody>
-</table>
-   </div>
-     <div class="maintenance-box">
-  <table id="tarif-table" class="tableborder1">
-    <thead>
-        <tr>
-            <th>Catégorie</th>
-            <th>Premium (heures / tarif)</th>
-            <th>Fantasia (heures / tarif)</th>
-        </tr>
-    </thead>
-    <tbody id="tarif-table-body"></tbody>
         </table>
     </div>
+        <div class="banniere">
+        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
+    </div>
 
+</div>
+    <h3> Tarif 2026-2027</h3>
     <!-- Tableau dynamique -->
     <div class="maintenance-box">
         <table id="tarif-table" class="tableborder1">
@@ -341,9 +334,6 @@ Personalized support for every project.
         </table>
     </div>
 
-    <div class="banniere">
-        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
-    </div>
 `;
     } else if (currentLanguage === "spanish") {
         html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
@@ -446,21 +436,14 @@ Acompañamiento personalizado para cada proyecto.
     <td>Escénica / de vitrina</td>
 </tr>
 </tbody>
-</table>
-   </div>
-     <div class="maintenance-box">
-  <table id="tarif-table" class="tableborder1">
-    <thead>
-        <tr>
-            <th>Catégorie</th>
-            <th>Premium (heures / tarif)</th>
-            <th>Fantasia (heures / tarif)</th>
-        </tr>
-    </thead>
-    <tbody id="tarif-table-body"></tbody>
         </table>
     </div>
+        <div class="banniere">
+        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
+    </div>
 
+</div>
+    <h3> Tarif 2026-2027</h3>
     <!-- Tableau dynamique -->
     <div class="maintenance-box">
         <table id="tarif-table" class="tableborder1">
@@ -475,9 +458,6 @@ Acompañamiento personalizado para cada proyecto.
         </table>
     </div>
 
-    <div class="banniere">
-        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
-    </div>
 
 `;
     } else {
@@ -581,10 +561,14 @@ Un accompagnement personnalisé pour chaque projet.
 </tr>
 </tbody>
 
-
         </table>
     </div>
+        <div class="banniere">
+        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
+    </div>
 
+</div>
+    <h3> Tarif 2026-2027</h3>
     <!-- Tableau dynamique -->
     <div class="maintenance-box">
         <table id="tarif-table" class="tableborder1">
@@ -599,9 +583,6 @@ Un accompagnement personnalisé pour chaque projet.
         </table>
     </div>
 
-    <div class="banniere">
-        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
-    </div>
          `;
     }
 
