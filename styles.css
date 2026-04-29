@@ -464,7 +464,7 @@ nav ul li a:hover {
 /* bandeau défile */
 .info-container {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     position: relative;
 }
 
@@ -524,9 +524,9 @@ nav ul li a:hover {
 .language-selector {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0px;
     padding: 0rem 0 0rem;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 0;
 }
 
