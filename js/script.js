@@ -117,12 +117,9 @@ function applyLanguageAndInit() {
     updateDebugDisplay();
 changelangueinfo();
     changelanguemenu();
-      changelanguepeinture();
    
 
     changelanguefoot();
-     changelanguesimu();
-     changelangueforma();
     changelanguelogo();
     
     changelanguepartenaires();
@@ -159,7 +156,7 @@ changelangueinfo();
     if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
         changelanguehoraires();
     }
-     changelangueindex();
+    
 }
 
 function changelangueforma() {
