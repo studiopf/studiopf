@@ -1066,49 +1066,35 @@ const niveauLabelsmini = {
     niveau2: "Fantasia",
     expo:    "Pièce d'exposition"
 };
-const = tarifheure = 20;
+const tarifheure = 20;
+
 const tariffs = {
-   petiteinfanterie: { niveau1: 1,  niveau2: 2  },
-    infanterie:            { niveau1: 2,  niveau2: 3  },
-    infanterieelite:       { niveau1: 3, niveau2: 4  },
-    personnage:            {   niveau1: 5,  niveau2: 8  },
-   personnageelite:      {   niveau1: 6,  niveau2: 9  },
-    personnagemonstrueux:  {  niveau1: 8, niveau2: 12 },
-    personnagesurmonstre:  {  niveau1: 12, niveau2: 18 },
-    personnagesurgrandmonstre: {  niveau1: 16, niveau2: 24 },
-    cavalerie:             {  niveau1: 3,  niveau2: 4  },
-    cavalerielourde:       {   niveau1: 4,  niveau2: 5  },
-    petitvehiculemonstre:  {   niveau1: 4,  niveau2: 6 },
-    vehiculemonstremoyen:  {   niveau1: 6, niveau2: 9 },
-    grosvehiculemonstre:   { niveau1: 8, niveau2: 16 },
-    enormevehiculemonstre: {  niveau1: 12, niveau2: 18 },
-    titanvehiculemonstre:  { niveau1: 16, niveau2: 34 }
+    petiteinfanterie: { niveau1: 1, niveau2: 2 },
+    infanterie: { niveau1: 2, niveau2: 3 },
+    infanterieelite: { niveau1: 3, niveau2: 4 },
+    personnage: { niveau1: 5, niveau2: 8 },
+    personnageelite: { niveau1: 6, niveau2: 9 },
+    personnagemonstrueux: { niveau1: 8, niveau2: 12 },
+    personnagesurmonstre: { niveau1: 12, niveau2: 18 },
+    personnagesurgrandmonstre: { niveau1: 16, niveau2: 24 },
+    cavalerie: { niveau1: 3, niveau2: 4 },
+    cavalerielourde: { niveau1: 4, niveau2: 5 },
+    petitvehiculemonstre: { niveau1: 4, niveau2: 6 },
+    vehiculemonstremoyen: { niveau1: 6, niveau2: 9 },
+    grosvehiculemonstre: { niveau1: 8, niveau2: 16 },
+    enormevehiculemonstre: { niveau1: 12, niveau2: 18 },
+    titanvehiculemonstre: { niveau1: 16, niveau2: 34 }
 };
 
-const labelscat = {
-    petiteinfanterie: "Infanterie 20-25mm",
-    infanterie: "Infanterie 28-32mm",
-    infanterieelite: "Infanterie élite 40-50mm",
-    personnage: "Personnage à pied 25-32mm",
-    personnageelite: "Personnage élite 40-50mm",
-    personnagemonstrueux: "Personnage monstrueux 60-100mm",
-    personnagesurmonstre: "Personnage sur monstre 120mm",
-    personnagesurgrandmonstre: "Personnage sur grand monstre",
-    cavalerie: "Cavalerie 60-75mm",
-    cavalerielourde: "Cavalerie lourde 90-105mm",
-    petitvehiculemonstre: "Petit véhicule / monstre",
-    vehiculemonstremoyen: "Véhicule / monstre moyen",
-    grosvehiculemonstre: "Gros véhicule / monstre",
-    enormevehiculemonstre: "Énorme véhicule / monstre",
-    titanvehiculemonstre: "Titanesque"
-};
 const categories = Object.keys(tariffs);
 
 function renderTarifTable() {
-    const tbody = document.getElementById("tarif-table");
-    tbody.innerHTML = ""; // reset
+    const tbody = document.getElementById("tarif-table-body");
+    if (!tbody) return;
 
-    Object.keys(tariffs).forEach(key => {
+    tbody.innerHTML = "";
+
+    categories.forEach(key => {
         const t = tariffs[key];
 
         const fantasiaHeures = t.niveau1;
@@ -1134,138 +1120,43 @@ function calculateTotals() {
     if (!niveauSelect) return;
 
     const niveau = niveauSelect.value || "niveau1";
-    const afficheniveau   = document.getElementById("afficheniveau");
-    const comparativeTable = document.getElementById("comparative-table");
-    const niveausup       = document.getElementById("niveau-sup");
-    const oktotal         = document.getElementById("oktotal");
-
-    if (!afficheniveau || !comparativeTable || !oktotal) return;
-
-    afficheniveau.textContent = niveauLabels[niveau] || "";
-
-    if (niveau === "expo") {
-        categories.forEach(cat => {
-            const div = document.getElementById(cat);
-            if (div) div.style.display = "none";
-        });
-        ["aimant", "montage"].forEach(id => {
-            const el = document.getElementById(id);
-            if (el) el.style.display = "none";
-        });
-        comparativeTable.innerHTML = "";
-        oktotal.textContent = "Sur devis 💸";
-        if (niveausup) niveausup.innerHTML = "";
-        return;
-    }
-
-    // Réaffichage normal
-    categories.forEach(cat => {
-        const div = document.getElementById(cat);
-        if (div) div.style.display = "";
-    });
-    ["aimant-input", "montage-input", "total"].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.style.display = "";
-    });
 
     let totalGeneral = 0;
 
     categories.forEach(cat => {
-        const input     = document.getElementById(`${cat}-input`);
-        const prixEl    = document.getElementById(`prix${cat}`);
-        const totalEl   = document.getElementById(`total${cat}`);
+        const input   = document.getElementById(`${cat}-input`);
+        const prixEl  = document.getElementById(`prix${cat}`);
+        const totalEl = document.getElementById(`total${cat}`);
 
         if (!input || !prixEl || !totalEl) return;
 
         const qty = Number(input.value) || 0;
-        const unitPrice = tariffs[cat]?.[niveau]*tarifheure ?? 0;
+
+        // ✅ correction priorité opérateurs
+        const unitPrice = (tariffs[cat]?.[niveau] ?? 0) * tarifheure;
         const catTotal = qty * unitPrice;
 
         prixEl.textContent  = unitPrice.toFixed(2);
         totalEl.textContent = catTotal.toFixed(2);
+
         totalGeneral += catTotal;
     });
 
-    oktotal.innerHTML = `
-        <strong>Total estimé niveau ${niveauLabelsmini[niveau] || "?"} :</strong><br>
-        ${totalGeneral.toFixed(2)} €<br>
-        <small>Tarif approximatif, hors frais de port et PayPal.</small>
-    `;
-
-    // ── Comparaison ───────────────────────────────────────
-    comparativeTable.innerHTML = "";
-    if (niveausup) niveausup.innerHTML = "";
-
+    // ── Comparaison ──
     const prevMap = { niveau0: "niveau1", niveau1: "niveau2", niveau2: null };
     const prevLevel = prevMap[niveau];
 
-    if (!prevLevel) return;
-
     let totalPrev = 0;
-    categories.forEach(cat => {
-        const qty = Number(document.getElementById(`${cat}-input`)?.value) || 0;
-        totalPrev += qty * (tariffs[cat]?.[prevLevel])*tarifheure ?? 0);
-    });
 
-    const nNum  = niveau.replace("niveau", "");
-    const pNum  = prevLevel.replace("niveau", "");
+    if (prevLevel) {
+        categories.forEach(cat => {
+            const qty = Number(document.getElementById(`${cat}-input`)?.value) || 0;
 
-    if (niveau === "niveau2") {
-        comparativeTable.innerHTML = `
-            <table id="tablecompar" style="margin: 1rem auto; border-collapse: collapse; width: 80%; max-width: 600px;">
-                <thead>
-                    <tr style="background:#f2f2f2;">
-                        <th style="border:1px solid #ddd; padding:8px;">${niveauLabelsmini[prevLevel]}</th>
-                        <th style="border:1px solid #ddd; padding:8px;">${niveauLabelsmini[niveau]}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border:1px solid #ddd; padding:12px; text-align:center;">
-                            <strong>${totalPrev.toFixed(2)} €</strong><br>
-                            <img src="img/exempleniveau${pNum}.jpg" class="imgcomparative-table" alt="Exemple ${niveauLabelsmini[prevLevel]}" loading="lazy">
-                        </td>
-                        <td style="border:1px solid #ddd; padding:12px; text-align:center;">
-                            <strong>${totalGeneral.toFixed(2)} €</strong><br>
-                            <img src="img/exempleniveau${nNum}.jpg" class="imgcomparative-table" alt="Exemple ${niveauLabelsmini[niveau]}" loading="lazy">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        `;
-    } else {
-        if (niveausup) {
-            niveausup.innerHTML = `
-                <div style="text-align:center; margin:1rem 0;">
-                    <button class="button" onclick="document.getElementById('niveau').value='niveau${parseInt(nNum)+1}'; calculateTotals();">
-                        Passer au niveau supérieur ?
-                    </button>
-                </div>
-            `;
-        }
+            // ✅ correction parenthèses + ??
+            const prevPrice = (tariffs[cat]?.[prevLevel] ?? 0) * tarifheure;
 
-        comparativeTable.innerHTML = `
-            <table id="tablecompar" style="margin: 1rem auto; border-collapse: collapse; width: 80%; max-width: 600px;">
-                <thead>
-                    <tr style="background:#f2f2f2;">
-                        <th style="border:1px solid #ddd; padding:8px;">${niveauLabelsmini[niveau]}</th>
-                        <th style="border:1px solid #ddd; padding:8px;">${niveauLabelsmini[prevLevel]}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border:1px solid #ddd; padding:12px; text-align:center;">
-                            <strong>${totalGeneral.toFixed(2)} €</strong><br>
-                            <img src="img/exempleniveau${nNum}.jpg" class="imgcomparative-table" alt="Exemple ${niveauLabelsmini[niveau]}" loading="lazy">
-                        </td>
-                        <td style="border:1px solid #ddd; padding:12px; text-align:center;">
-                            <strong>${totalPrev.toFixed(2)} €</strong><br>
-                            <img src="img/exempleniveau${pNum}.jpg" class="imgcomparative-table" alt="Exemple ${niveauLabelsmini[prevLevel]}" loading="lazy">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        `;
+            totalPrev += qty * prevPrice;
+        });
     }
 }
 
@@ -1349,29 +1240,35 @@ function initializeFormCalculations() {
 // ────────────────────────────────────────────────
 
 function initializeFormationForm() {
- 
+
     const form = document.getElementById("formationForm");
     if (!form) return;
 
-    // On enlève les anciens listeners jQuery si présents
+    // Supprime anciens listeners jQuery si présents
     if (typeof $ !== "undefined") {
         $(form).off("submit");
     }
 
-    form.addEventListener("submit", e => {
+    // ⚠️ évite d'ajouter plusieurs listeners si la fonction est rappelée
+    form.removeEventListener("submit", handleSubmit);
+    form.addEventListener("submit", handleSubmit);
+
+    function handleSubmit(e) {
         e.preventDefault();
 
+        const getValue = id => document.getElementById(id)?.value.trim() || "";
+
         const data = {
-            nom:      document.getElementById("nom")?.value      || "",
-            prenom:   document.getElementById("prenom")?.value   || "",
-            email:    document.getElementById("email")?.value    || "",
-            telephone:document.getElementById("telephone")?.value|| "",
-            adresse:  document.getElementById("adresse")?.value  || "",
-            cp:       document.getElementById("cp")?.value       || "",
-            ville:    document.getElementById("ville")?.value    || "",
-            pays:     document.getElementById("pays")?.value     || "",
-            cours:    document.getElementById("cours")?.value    || "",
-            message:  document.getElementById("message")?.value  || "Aucun message"
+            nom: getValue("nom"),
+            prenom: getValue("prenom"),
+            email: getValue("email"),
+            telephone: getValue("telephone"),
+            adresse: getValue("adresse"),
+            cp: getValue("cp"),
+            ville: getValue("ville"),
+            pays: getValue("pays"),
+            cours: getValue("cours"),
+            message: getValue("message") || "Aucun message"
         };
 
         const subject = `Demande de cours de peinture - ${data.prenom} ${data.nom}`;
@@ -1380,12 +1277,12 @@ function initializeFormationForm() {
         body += `${data.nom}\n${data.prenom}\n${data.adresse}\n${data.cp} ${data.ville}\n${data.pays}\n${data.email}\n${data.telephone}\n\n`;
         body += `Message :\n${data.message}\n\nCordialement,\n${data.prenom} ${data.nom}`;
 
-        const url = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = url;
-    });
-   
-}
+        const mailtoUrl = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+        // ✅ plus propre que location.href
+        window.open(mailtoUrl, "_self");
+    }
+}
 // ────────────────────────────────────────────────
 // Galerie — chargement images + filtres
 // ────────────────────────────────────────────────
