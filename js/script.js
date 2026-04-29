@@ -118,7 +118,7 @@ function applyLanguageAndInit() {
 changelangueinfo();
     changelanguemenu();
       changelanguepeinture();
-    changelangueindex();
+   
 
     changelanguefoot();
      changelanguesimu();
@@ -159,11 +159,12 @@ changelangueinfo();
     if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
         changelanguehoraires();
     }
+     changelangueindex();
 }
 
 function changelangueforma() {
-    const forma = document.getElementById("contenu-principal");
-    if (!forma) return;
+    const main = document.getElementById("contenu-principal");
+    if (!main) return;
 
     let html = "";
 
@@ -377,7 +378,7 @@ function changelangueforma() {
     </div>`;
     }
 
-    forma.innerHTML = html;
+    main.innerHTML = html;
 }
 
     function envoyerMailForma(form) {
@@ -421,8 +422,8 @@ function changelangueforma() {
     });
 
     function changelanguesimu() {
-    const simu = document.getElementById("contenu-principal");
-    if (!simu) return;
+    const main = document.getElementById("contenu-principal");
+    if (!main) return;
 
     let html = "";
 
@@ -663,7 +664,7 @@ function changelangueforma() {
         `;
     }
 
-    simu.innerHTML = html;
+    main.innerHTML = html;
 }
 
     
