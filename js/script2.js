@@ -1004,14 +1004,14 @@ function initializeCardToggle() {
 const niveauLabels = {
     niveau0: "Niveau Essentiel - TableTop basique 3 couleurs, texture simple : 🚀 Idéal pour les petits budgets, Minimum efficace sans détails.",
     niveau1: "Niveau Premium - TableTop+, Qualité supérieur qui va à l'Approfondi : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommendation.",
-    niveau2: "Niveau Fantastique - TableTop++, Qualité supérieur plus Prestige : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
+    niveau2: "Niveau Fantasia - TableTop++, Qualité supérieur plus Prestige : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
     expo:   "Niveau Studio : ✨ Limitée et réservée aux passionnés souhaitant le meilleur. Pour la collection en vitrine."
 };
 
 const niveauLabelsmini = {
     niveau0: "Essentiel",
     niveau1: "Premium",
-    niveau2: "Fantastique",
+    niveau2: "Fantasia",
     expo:    "Pièce d'exposition"
 };
 
