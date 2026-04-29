@@ -14,7 +14,7 @@
     padding: 12px 24px;
     margin: 12px auto;
     font-family: 'Segoe UI', system-ui, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #ffda79;                    /* jaune clair / doré clair */
     text-align: center;
@@ -54,7 +54,7 @@
 /* Variante plus petite (optionnelle) */
 .button.small {
     padding: 8px 18px;
-      font-size: 20px;
+      font-size: 18px;
 }
 
 /* Variante pleine largeur (utile pour mobile) */
@@ -154,7 +154,7 @@
 }
 
 .maintenance-box p {
-      font-size: 20px;
+      font-size: 14px;
     line-height: 1.55;
     margin: 0em 0;
 }
@@ -207,7 +207,7 @@ table {
 
 .table-container {
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .tableborder1 {
@@ -282,24 +282,24 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-     font-size: 24px;
+     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
 }
 
 h2 {
-      font-size: 22px;
+      font-size: 16px;
     margin: 0rem 0 0rem;
 }
 
 h3 {
-     font-size: 22px;
+     font-size: 14px;
     color: #d4a76c;
 }
 
 p, li, .p-social {
-       font-size: 24px;
+       font-size: 12px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -322,6 +322,7 @@ a:hover,
 .highlight {
     color: #ffda79;
 }
+
 
 /* ==========================================================================
    PARTENAIRES – version renforcée anti-débordement
@@ -810,7 +811,11 @@ nav ul li a:hover {
     padding: 0px;
     position: relative;
 }
-
+.maintenance-box p {
+      font-size: 12px;
+    line-height: 1.55;
+    margin: 0em 0;
+}
 .info {
     background: linear-gradient(to bottom, #8B0000, #FF6347);
     margin-top: 0;
@@ -838,22 +843,22 @@ nav ul li a:hover {
    
 
     h1 {
-          font-size: 24px;
+          font-size: 16px;
         margin: 0.3rem 0;
         letter-spacing: 0.5px;
     }
 
     h2 {
-          font-size: 24px;
+          font-size: 14px;
         margin: 0.3rem 0;
     }
 
     h3 {
-         font-size: 24px;
+         font-size: 14px;
     }
 
     h4, h5 {
-          font-size: 24px;
+          font-size: 12px;
     }
 
     h1, h2, h3, h4, h5 {
@@ -861,7 +866,7 @@ nav ul li a:hover {
     }
     .table-container {
         text-align: center;
-        font-size: 24px;
+        font-size: 14px;
     }
 
     .lightbox {
@@ -1055,7 +1060,7 @@ nav ul li a:hover {
     margin-bottom: 25px;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 14px;
 }
    .logo {
         width: 150px;          /* ← agrandi (au lieu de 150px) */
@@ -1100,7 +1105,7 @@ nav ul li a:hover {
         max-width: 70%;
     }
 h1 {
-      font-size: 24px;
+      font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
@@ -1126,7 +1131,7 @@ h1 {
     margin-bottom: 25px;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 }
 
