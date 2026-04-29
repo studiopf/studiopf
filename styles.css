@@ -14,7 +14,7 @@
     padding: 12px 24px;
     margin: 12px auto;
     font-family: 'Segoe UI', system-ui, sans-serif;
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: 12px;
     font-weight: 600;
     color: #ffda79;                    /* jaune clair / doré clair */
     text-align: center;
@@ -54,7 +54,7 @@
 /* Variante plus petite (optionnelle) */
 .button.small {
     padding: 8px 18px;
-    font-size: clamp(0.9rem, 2vw, 0.95rem);
+      font-size: 12px;
 }
 
 /* Variante pleine largeur (utile pour mobile) */
@@ -94,7 +94,7 @@
     border: 0px;
     width: 100%;
     position: relative;
-    font-size: 16px;
+      font-size: 18px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -152,7 +152,7 @@
 }
 
 .maintenance-box p {
-    font-size: 0.75rem;
+      font-size: 12px;
     line-height: 1.55;
     margin: 0em 0;
 }
@@ -280,24 +280,24 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: clamp(2.4rem, 3.5vw, 3.1rem);
+     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
 }
 
 h2 {
-    font-size: clamp(1.8rem, 2vw, 2.3rem);
+      font-size: 14px;
     margin: 0rem 0 0rem;
 }
 
 h3 {
-    font-size: clamp(1.4rem, 2vw, 1.7rem);
+     font-size: 14px;
     color: #d4a76c;
 }
 
 p, li, .p-social {
-    font-size: clamp(1.05rem, 2vw, 1.25rem);
+       font-size: 12px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -411,7 +411,7 @@ a:hover,
 .footer .p-social,
 .p-social {
     color: #b89e7a;
-    font-size: 0.98rem;
+      font-size: 12px;
     line-height: 1.7;
     opacity: 0.92;
     text-align: center;
@@ -449,7 +449,7 @@ nav ul li a {
     padding: 0px 0px;
     border-radius: 6px;
     font-weight: 700;
-    font-size: clamp(0.95rem, 1.4vw, 1.02rem);
+     font-size: 12px;
     background: rgba(30, 20, 12, 0.55);
     white-space: nowrap;
     transition: all 0.24s ease;
@@ -509,7 +509,7 @@ nav ul li a:hover {
 .social-icon {
     width: 44px;
     height: 44px;
-    font-size: 1.5rem;
+      font-size: 8px;
     border-radius: 50%;
     background: rgba(180,140,60,0.12);
     color: #d4a76c;
@@ -642,7 +642,7 @@ nav ul li a:hover {
     position: absolute;
     top: 20px;
     right: 30px;
-    font-size: 2rem;
+      font-size: 8px;
     color: white;
     cursor: pointer;
 }
@@ -825,7 +825,7 @@ nav ul li a:hover {
     }
 
    p, li, .p-social {
- font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+   font-size: 8px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -836,22 +836,22 @@ nav ul li a:hover {
    
 
     h1 {
-        font-size: clamp(1.8rem, 3vw, 2.2rem);
+          font-size: 16px;
         margin: 0.3rem 0;
         letter-spacing: 0.5px;
     }
 
     h2 {
-        font-size: clamp(1.4rem, 2vw, 1.8rem);
+          font-size: 14px;
         margin: 0.3rem 0;
     }
 
     h3 {
-        font-size: clamp(1.2rem, 2vw, 1.5rem);
+         font-size: 14px;
     }
 
     h4, h5 {
-        font-size: 1rem;
+          font-size: 12px;
     }
 
     h1, h2, h3, h4, h5 {
@@ -891,7 +891,7 @@ nav ul li a:hover {
         position: absolute;
         top: 0px;
         right: 00px;
-        font-size: 2rem;
+          font-size: 8px;
         color: white;
         cursor: pointer;
     }
@@ -912,7 +912,7 @@ nav ul li a:hover {
 
     nav ul li a {
         padding: 0px 0px;
-        font-size: 0.9rem;
+      font-size: 8px;
     }
 
     .partenaires-container,
@@ -968,7 +968,7 @@ nav ul li a:hover {
     .social-icon {
         width: 32px;
         height: 32px;
-        font-size: 1.1rem;
+           font-size: 8px;
     }
 
     .language-selector img {
@@ -1074,7 +1074,7 @@ nav ul li a:hover {
 
    .button {
         padding: 14px 24px;           /* un peu moins large */
-        font-size: clamp(1.05rem, 2.8vw, 1.18rem);
+          font-size: 8px;
         min-height: 52px;             /* zone de clic confortable */
     }
 
@@ -1091,7 +1091,7 @@ nav ul li a:hover {
         max-width: 70%;
     }
 h1 {
-    font-size: clamp(2rem, 2vw, 3rem);
+      font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
