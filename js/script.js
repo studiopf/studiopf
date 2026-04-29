@@ -55,9 +55,7 @@ function setLanguage(lang) {
 
     changelangueinfo();
 
-    if (currentPage.includes("formation") && currentLanguage !== "french") {
-        currentPage = "index.html";
-    }
+
 
     loadPage(currentPage);
 }
@@ -125,7 +123,7 @@ function applyLanguageAndInit() {
 changelangueinfo();
     changelanguemenu();
       changelanguepeinture();
-    changelangueindex();
+
     changelanguefoot();
     changelanguelogo();
     
@@ -136,6 +134,11 @@ changelangueinfo();
     initializeCarousel();
     initScrollBehaviors();
 
+        if (currentPage.includes("formation") && currentLanguage !== "french") {
+        currentPage = "index.html";
+            changelangueindex();
+    }
+    
     if (currentPage.includes("galerie")) {
         initGalerieWithLang();
         initializeGalerie();
