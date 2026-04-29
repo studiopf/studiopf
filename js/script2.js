@@ -216,13 +216,8 @@ function changelanguepeinture() {
 
     if (currentLanguage === "english") {
         html = `<h1>High-End Miniature Painting 🎨</h1>
-<p>
-Each miniature is treated as a unique piece.<br>
-A premium service with no compromise on quality.
-</p>
-<p><strong>⏱️ Minimum 2h per miniature (infantry) • 5 to 8h for characters</strong></p>
 
-<div class="card" role="region" aria-expanded="true" tabindex="0">
+<div class="maintenance-box">
     <h2>🎨 Premium Offers</h2>
 
     <ul>
@@ -245,7 +240,7 @@ A premium service with no compromise on quality.
 
    
 </div>
-
+<div class="maintenance-box">
 <h3>Preparation (included) 🛠️</h3>
 <ul>
     <li>Full cleaning of parts</li>
@@ -254,7 +249,8 @@ A premium service with no compromise on quality.
     <li>Preparation adapted to the level of finish</li>
 </ul>
 <p><em>Each miniature is prepared for optimal results.</em></p>
-
+</div>
+<div class="maintenance-box">
 <h3>Painting 🎨</h3>
 <ul>
     <li><strong>⭐ Premium:</strong> clean blends, strong contrasts, essential details, consistent finish</li>
@@ -262,13 +258,15 @@ A premium service with no compromise on quality.
 </ul>
 
 <p><strong>🎯 Goal: a realistic, readable and impactful result both from a distance and up close.</strong></p>
-
+</div>
+<div class="maintenance-box">
 <h3>Basing 🌿</h3>
 <ul>
     <li><strong>Premium:</strong> detailed base consistent with the army</li>
     <li><strong>Signature:</strong> scenic base with 3D elements and visual storytelling</li>
 </ul>
-
+</div>
+<div class="maintenance-box">
 <h2>Premium Service 🤝</h2>
 
 <p>
@@ -314,18 +312,16 @@ Personalized support for every project.
     <td>Scenic / display</td>
 </tr>
 </tbody>
+</div>
+
 </table>
 
 `;
     } else if (currentLanguage === "spanish") {
         html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
-<p>
-Cada miniatura se trata como una pieza única.<br>
-Un servicio premium, sin compromisos en la calidad.
-</p>
-<p><strong>⏱️ Mínimo 2h por miniatura (infantería) • 5 a 8h para personajes</strong></p>
 
-<div class="card" role="region" aria-expanded="true" tabindex="0">
+<div class="maintenance-box">
+
     <h2>🎨 Ofertas Premium</h2>
 
     <ul>
@@ -347,8 +343,9 @@ Un servicio premium, sin compromisos en la calidad.
     <p><strong>⚠️ Producción voluntariamente limitada para garantizar la calidad.</strong></p>
 
    
-</div>
 
+</div>
+<div class="maintenance-box">
 <h3>Preparación (incluida) 🛠️</h3>
 <ul>
     <li>Limpieza completa de las piezas</li>
@@ -357,7 +354,8 @@ Un servicio premium, sin compromisos en la calidad.
     <li>Preparación adaptada al nivel de acabado</li>
 </ul>
 <p><em>Cada miniatura se prepara para un resultado óptimo.</em></p>
-
+</div>
+<div class="maintenance-box">
 <h3>Pintura 🎨</h3>
 <ul>
     <li><strong>⭐ Premium:</strong> degradados limpios, contrastes marcados, detalles esenciales, acabado homogéneo</li>
@@ -365,13 +363,15 @@ Un servicio premium, sin compromisos en la calidad.
 </ul>
 
 <p><strong>🎯 Objetivo: un resultado realista, legible e impactante tanto a distancia como de cerca.</strong></p>
-
+</div>
+<div class="maintenance-box">
 <h3>Peana 🌿</h3>
 <ul>
     <li><strong>Premium:</strong> peana trabajada y coherente con el ejército</li>
     <li><strong>Signature:</strong> peana escénica con elementos 3D y narrativa visual</li>
 </ul>
-
+</div>
+<div class="maintenance-box">
 <h2>Servicio Premium 🤝</h2>
 
 <p>
@@ -417,17 +417,14 @@ Acompañamiento personalizado para cada proyecto.
     <td>Escénica / de vitrina</td>
 </tr>
 </tbody>
+</div>
 </table>
 
 `;
     } else {
         html = `<h1>Peinture de Figurines Haut de Gamme 🎨</h1>
-<p>
-Chaque figurine est traitée comme une pièce unique.<br>
-Un service premium, sans compromis sur la qualité.
-</p>
-<p><strong>⏱️ Minimum 2h par figurine (infanterie) • 5 à 8h pour les personnages</strong></p>
-       <div class="card" role="region" aria-expanded="true" tabindex="0">
+
+<div class="maintenance-box">
     <h2>🎨 Offres Premium</h2>
 
     <ul>
@@ -449,7 +446,9 @@ Un service premium, sans compromis sur la qualité.
     <p><strong>⚠️ Production volontairement limitée pour garantir la qualité.</strong></p>
 
   
+
 </div>
+<div class="maintenance-box">
        <h3>Préparation (incluse) 🛠️</h3>
 <ul>
     <li>Nettoyage complet des pièces</li>
@@ -458,6 +457,8 @@ Un service premium, sans compromis sur la qualité.
     <li>Préparation adaptée au niveau de finition</li>
 </ul>
 <p><em>Chaque figurine est préparée pour un rendu optimal.</em></p>
+</div>
+<div class="maintenance-box">
        <h3>Peinture 🎨</h3>
 <ul>
     <li><strong>⭐ Premium :</strong> dégradés propres, contrastes marqués, détails essentiels, rendu homogène</li>
@@ -465,12 +466,16 @@ Un service premium, sans compromis sur la qualité.
 </ul>
 
 <p><strong>🎯 Objectif : un rendu réaliste, lisible et impactant à distance comme de près.</strong></p>
-       <h3>Soclage 🌿</h3>
+     </div>
+<div class="maintenance-box">
+<h3>Soclage 🌿</h3>
 <ul>
     <li><strong>Premium :</strong> socle travaillé et cohérent avec l’armée</li>
     <li><strong>Signature :</strong> socle scénique avec éléments 3D et narration visuelle</li>
 </ul>
-       <h2>Service Premium 🤝</h2>
+    </div>
+<div class="maintenance-box">
+<h2>Service Premium 🤝</h2>
 
 <p>
 Un accompagnement personnalisé pour chaque projet.
@@ -514,6 +519,8 @@ Un accompagnement personnalisé pour chaque projet.
     <td>Scénique / vitrine</td>
 </tr>
 </tbody>
+</div>
+
 </table>
        
          `;
@@ -1556,90 +1563,296 @@ function changelangueconditions() {
 
     if (currentLanguage === "english") {
         html = `
-            <h1>✨ General Terms and Conditions of Sale ✨</h1>
-            <p><strong>Website:</strong> studiopf.fr<br>
-            <strong>Last updated:</strong> March 2026</p>
+           <h1>✨ Terms and Conditions of Sale ✨</h1>
+<p><strong>Website:</strong> studiopf.fr<br>
+<strong>Last updated:</strong> March 2026</p>
 
-            <div class="maintenance-box">
-                <h2>1. Scope of application</h2>
-                <p>These general terms and conditions apply to all painting commissions, training courses, and related services offered by Studio PF (Pierre-François Frasse, micro-entrepreneur, SIRET 832 040 380 00020).</p>
-            </div>
+<div class="maintenance-box">
+    <h2>1. Scope of Application</h2>
+    <p>These terms and conditions apply to all painting services, training sessions, and related services offered by Studio PF (Pierre-François Frasse, sole trader, SIRET 832 040 380 00020).</p>
+    <ul>
+        <li>🆓 VAT not applicable: Article 293 B of the French General Tax Code.</li>
+        <li>📜 VAT exemption: Article 283-2 of the French General Tax Code.</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>2. Ordering process</h2>
-                <p>Any order is confirmed by written agreement (email or message) and payment of a deposit (usually 50%). The order is firm and final once the deposit are received by the painter.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>2. Order Process</h2>
+    <p>Any order is confirmed by written agreement (email or message) and payment of a deposit (generally 50%). The order becomes final and binding upon receipt of the deposit.</p>
+    <ul>
+        <li>📅 Quotes are valid for 7 business days.</li>
+        <li>✍️ The quote serves as a contract and includes working time, research, and supplies (excluding miniatures).</li>
+        <li>⏳ Estimated timeframe: depends on volume, level, and start date.</li>
+        <li>📸 A <strong>first preview</strong> is sent at <strong>80%</strong> completion.</li>
+        <li>📸 <strong>Final photos</strong> are sent at <strong>100%</strong>, <strong>before and after touch-ups</strong>.</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>3. Prices – Payment</h2>
-                <p>Prices are in euros (€), quoted individually or via the simulator. Payment is made by PayPal, bank transfer or cash (hand delivery only). Full payment is required before shipping unless otherwise agreed.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>3. Pricing – Payment</h2>
+    <p>Prices are expressed in euros (€), based on individual quotes or the simulator. Payment can be made via PayPal, bank transfer, or cash (in person). The balance must be paid before shipping unless otherwise agreed.</p>
+    <ul>
+        <li>Payment in up to 4 installments available via PayPal.</li>
+        <li>🏦 Payment methods: bank transfer, card, or PayPal (⚠️ 4% fee for PayPal).</li>
+        <li>Staged payment (for card and bank transfers):
+            <ul>
+                <li>💳 Minimum 25% to reserve a slot.</li>
+                <li>✅ The remaining balance must be paid before work begins (due to previous unpaid balances at the end of commissions).</li>
+            </ul>
+        </li>
+        <li>🎁 4% discount for non-PayPal payments.</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>4. Delivery – Shipping</h2>
-                <p>Shipping is done via Colissimo with tracking and insurance. Shipping costs are the responsibility of the client. Studio PF is not liable for loss or damage after handover to the carrier.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>4. Delivery – Shipping</h2>
+    <p>Shipping is handled via Colissimo with tracking and insurance. Shipping costs are the responsibility of the client. Studio PF declines all responsibility for loss or damage after handover to the carrier.</p>
 
-            <div class="maintenance-box">
-                <h2>5. Right of withdrawal</h2>
-                <p>No right of withdrawal applies to custom-made products (painted miniatures) as per article L.221-28 of the French Consumer Code.</p>
-            </div>
+    <ul>
+        <li>🚚 Shipping via Colissimo with signature required from €150 value (insurance up to €5000).</li>
+        <li>📌 Mondial Relay available but with very limited insurance in case of damage or loss/theft (max €500).</li>
+        <li>🎁 Free shipping on orders over €3000.</li>
+        <li>By default, Colissimo with signature and insurance is recommended, although uninsured shipping and/or Mondial Relay remain possible.</li>
+    </ul>
 
-            <div class="maintenance-box">
-                <h2>6. Intellectual property – Photography</h2>
-                <p>Studio PF retains the right to photograph and publish the finished work on its website, social networks and portfolio unless the client explicitly objects in writing before starting the project.</p>
-            </div>
+    <ul>
+        <li>📦 Colissimo with signature for shipments valued between €150 and €5000 (assembly + painting + miniature value).</li>
+        <li>📌 Mondial Relay available but with very limited insurance (max €500).</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>7. Liability</h2>
-                <p>Studio PF commits to the best possible execution of the work. In case of dispute, French law applies and the competent court is that of Saint-Étienne.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>5. Right of Withdrawal</h2>
+    <p>No right of withdrawal applies to custom-made products (painted miniatures) in accordance with Article L.221-28 of the French Consumer Code.</p>
+    <ul>
+        <li>🚫 Non-refundable in case of cancellation.</li>
+        <li>✅ Deposit payment = quote validation.</li>
+        <li>🔁 Deposits are <strong>non-transferable</strong> to another project or time slot.</li>
+        <li>❌ No <strong>rescheduling or slot exchange</strong> possible. Any cancellation results in loss of the deposit.</li>
+        <li>⏳ 30% surcharge for urgent orders (&lt; 1 month).</li>
+        <li>⏳ If miniatures are not sent within more than 1 month from the project start date, the project will be automatically canceled.<br>
+        In this case, the deposit will be retained.</li>
+    </ul>
+</div>
 
-            <p><em>Last updated: March 2026 – Studio PF – All rights reserved.</em></p>
+<div class="maintenance-box">
+    <h2>6. Intellectual Property – Image Rights</h2>
+    <p>Studio PF reserves the right to photograph and publish completed works on its website, social media, and portfolio.</p>
+</div>
+
+<div class="maintenance-box">
+    <h2>7. Liability – Disputes</h2>
+    <p>Studio PF undertakes to carry out services with the utmost care. In the event of a dispute, French law applies and the competent courts are those of Saint-Étienne.</p>
+
+    <h2 class="section-title">🏅 Quality Commitment</h2>
+    <ul>
+        <li>🏗️ Careful preparation of each miniature.</li>
+        <li>🎨 High-quality paints and materials.</li>
+        <li>🖌️ Advanced techniques for optimal results.</li>
+        <li>🎯 Adaptation to client needs.</li>
+    </ul>
+</div>
+
+<div class="maintenance-box">
+    <h2 class="section-title">8. Return Policy</h2>
+
+    <ul>
+        <li>🏗️ Validation before shipping</li>
+        <li>Final photos serve as the official reference for approval.</li>
+        <li>Please review them carefully and feel free to request touch-ups or changes at this stage.</li>
+    </ul>
+
+    <ul>
+        <li>🖌️ Touch-up process</li>
+        <li>Each revision will be followed by new photos serving as final validation.</li>
+        <li>Once approved (after touch-ups if needed), the order will be shipped.</li>
+        <li>➡️ No modifications will be possible after approval.</li>
+    </ul>
+
+    <ul>
+        <li>🎯 Returns and touch-ups after delivery</li>
+        <li>You have 48 to 72 hours after delivery to report a defect not visible in the photos.</li>
+        <li>An intervention may be offered based on a quote, depending on availability.</li>
+        <li>If the request is made more than 15 days after delivery, a quote will be systematically required.</li>
+    </ul>
+
+    <ul>
+        <li>🖌️ Improvements and changes outside defects</li>
+        <li>Final photos serve as the official validation reference.</li>
+        <li>Any request for modification or improvement not related to a defect after validation will require an additional quote.</li>
+    </ul>
+</div>
+
+<div class="maintenance-box">
+    <h2 class="section-title">9. Production Timeframes</h2>
+    <ul>
+        <li>🔧 <strong>Small projects – Premium level (warband, combat patrol, spearhead)</strong>: 2 business months</li>
+        <li>🔧 <strong>Small projects – Signature level (warband, combat patrol, spearhead)</strong>: 4 business months</li>
+        <li>⚙️ <strong>Medium to complex projects – Premium & Signature (700–1000 pts)</strong>: 4 to 6 business months</li>
+        <li>🏗️ <strong>Large projects – Premium & Signature (1500–2000 pts)</strong>: 6 months to 1 year (business time)</li>
+        <li>📦 Timeframes start upon <strong>full receipt of materials</strong> and deposit payment.</li>
+        <li>📅 Closure periods and public holidays are <strong>not included</strong> (business time only).</li>
+    </ul>
+</div>
+
+<div class="maintenance-box">
+    <h2 class="section-title">10. Training</h2>
+    <ul>
+        <li>Miniatures not provided. For full-day sessions, a contribution for paint supplies may be requested.</li>
+        <li>📍 On-site only (for individual lessons).</li>
+        <li>📍 Event services: travel time and on-site time (such as meals) are included in the billed hours.</li>
+        <li>📍 Workshops available upon quote. Location and conditions may vary and will be specified for each event.</li>
+        <li>📞 Initial contact by phone.</li>
+        <li>🔄 Paid hours are flexible but non-refundable.</li>
+    </ul>
+</div>
         `;
     } 
     else if (currentLanguage === "spanish") {
         html = `
-            <h1>✨ Condiciones Generales de Venta ✨</h1>
-            <p><strong>Sitio web:</strong> studiopf.fr<br>
-            <strong>Última actualización:</strong> Marzo 2026</p>
+          <h1>✨ Condiciones Generales de Venta ✨</h1>
+<p><strong>Sitio web:</strong> studiopf.fr<br>
+<strong>Última actualización:</strong> Marzo 2026</p>
 
-            <div class="maintenance-box">
-                <h2>1. Ámbito de aplicación</h2>
-                <p>Estas condiciones generales se aplican a todos los encargos de pintura, cursos de formación y servicios relacionados ofrecidos por Studio PF (Pierre-François Frasse, microempresario, SIRET 832 040 380 00020).</p>
-            </div>
+<div class="maintenance-box">
+    <h2>1. Ámbito de aplicación</h2>
+    <p>Estas condiciones generales de venta se aplican a todos los servicios de pintura, formaciones y servicios asociados ofrecidos por Studio PF (Pierre-François Frasse, autónomo, SIRET 832 040 380 00020).</p>
+    <ul>
+        <li>🆓 IVA no aplicable: artículo 293 B del Código General de Impuestos.</li>
+        <li>📜 Exención de IVA: artículo 283-2 del Código General de Impuestos.</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>2. Proceso de pedido</h2>
-                <p>Cualquier pedido se confirma por acuerdo escrito (correo o mensaje) y pago de un depósito (generalmente 50 %). El pedido es firme una vez recibidas el depósito.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>2. Proceso de pedido</h2>
+    <p>Cualquier pedido se confirma mediante acuerdo por escrito (correo electrónico o mensaje) y el pago de un anticipo (generalmente del 50%). El pedido se vuelve firme y definitivo tras la recepción del anticipo.</p>
+    <ul>
+        <li>📅 Presupuesto válido durante 7 días laborables.</li>
+        <li>✍️ El presupuesto tiene valor contractual e incluye el tiempo de trabajo, investigación y materiales (excepto las miniaturas).</li>
+        <li>⏳ Plazo estimado: depende del volumen, el nivel y la fecha de inicio.</li>
+        <li>📸 Se envía un <strong>primer avance</strong> al <strong>80%</strong> del trabajo.</li>
+        <li>📸 Se envían <strong>fotos finales</strong> al <strong>100%</strong>, <strong>antes y después de los retoques</strong>.</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>3. Precios – Pago</h2>
-                <p>Los precios están en euros (€), presupuestados individualmente o mediante el simulador. El pago se realiza por PayPal, transferencia bancaria o en efectivo (entrega en mano). El pago total es exigible antes del envío.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>3. Tarifas – Pago</h2>
+    <p>Los precios se expresan en euros (€), establecidos mediante presupuesto individual o a través del simulador. El pago se realiza por PayPal, transferencia bancaria o en efectivo (entrega en mano). El saldo debe abonarse antes del envío salvo acuerdo contrario.</p>
+    <ul>
+        <li>Pago en hasta 4 plazos sin intereses mediante PayPal.</li>
+        <li>🏦 Métodos de pago: transferencia, tarjeta o PayPal (⚠️ comisión del 4% para PayPal).</li>
+        <li>Pago fraccionado (para tarjeta y transferencias):
+            <ul>
+                <li>💳 Mínimo 25% para reservar un turno.</li>
+                <li>✅ El resto debe abonarse antes de iniciar el trabajo (debido a proyectos anteriores sin saldo finalizado).</li>
+            </ul>
+        </li>
+        <li>🎁 Descuento del 4% para pagos fuera de PayPal.</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>4. Entrega – Envío</h2>
-                <p>El envío se realiza mediante Colissimo con seguimiento y seguro. Los gastos de envío corren a cargo del cliente. Studio PF no se responsabiliza de pérdidas o daños tras la entrega al transportista.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>4. Entrega – Envío</h2>
+    <p>El envío se realiza mediante Colissimo con seguimiento y seguro. Los gastos de envío corren a cargo del cliente. Studio PF no se responsabiliza de pérdidas o daños una vez entregado el paquete al transportista.</p>
 
-            <div class="maintenance-box">
-                <h2>5. Derecho de desistimiento</h2>
-                <p>No se aplica derecho de desistimiento a productos personalizados (miniaturas pintadas) según el artículo L.221-28 del Código del Consumo francés.</p>
-            </div>
+    <ul>
+        <li>🚚 Envío mediante Colissimo con firma obligatoria a partir de 150€ de valor (seguro hasta 5000€).</li>
+        <li>📌 Mondial Relay disponible pero con seguro muy limitado en caso de problemas como rotura o pérdida/robo (máx. 500€).</li>
+        <li>🎁 Envío gratuito a partir de 3000 € de pedido.</li>
+        <li>Por defecto, se recomienda Colissimo con firma y seguro, aunque es posible enviar sin asegurar o mediante Mondial Relay.</li>
+    </ul>
 
-            <div class="maintenance-box">
-                <h2>6. Propiedad intelectual – Fotografías</h2>
-                <p>Studio PF se reserva el derecho de fotografiar y publicar el trabajo terminado en su web, redes sociales y portafolio, salvo oposición expresa por escrito del cliente antes del inicio del proyecto.</p>
-            </div>
+    <ul>
+        <li>📦 Colissimo con firma para envíos entre 150 € y 5000 € de valor (montaje + pintura + valor de las miniaturas).</li>
+        <li>📌 Mondial Relay disponible pero con seguro limitado (máx. 500€).</li>
+    </ul>
+</div>
 
-            <div class="maintenance-box">
-                <h2>7. Responsabilidad</h2>
-                <p>Studio PF se compromete a realizar el trabajo de la mejor manera posible. En caso de litigio, se aplica la ley francesa y el tribunal competente es el de Saint-Étienne.</p>
-            </div>
+<div class="maintenance-box">
+    <h2>5. Derecho de desistimiento</h2>
+    <p>No se aplica derecho de desistimiento a productos personalizados (miniaturas pintadas), conforme al artículo L.221-28 del Código de Consumo.</p>
+    <ul>
+        <li>🚫 No reembolsable en caso de cancelación.</li>
+        <li>✅ El pago del anticipo valida el presupuesto.</li>
+        <li>🔁 Los anticipos <strong>no son transferibles</strong> a otro proyecto o turno.</li>
+        <li>❌ No es posible <strong>reprogramar ni cambiar turno</strong>. Cualquier cancelación implica la pérdida del anticipo.</li>
+        <li>⏳ Recargo del 30% para pedidos urgentes (&lt; 1 mes).</li>
+        <li>⏳ Si las miniaturas no se envían en un plazo superior a 1 mes desde la fecha de inicio del proyecto, este se cancelará automáticamente.<br>
+        En este caso, el anticipo será retenido.</li>
+    </ul>
+</div>
 
-            <p><em>Última actualización: Marzo 2026 – Studio PF – Todos los derechos reservados.</em></p>
+<div class="maintenance-box">
+    <h2>6. Propiedad intelectual – Derechos de imagen</h2>
+    <p>Studio PF se reserva el derecho de fotografiar y publicar las obras terminadas en su sitio web, redes sociales y portfolio.</p>
+</div>
+
+<div class="maintenance-box">
+    <h2>7. Responsabilidad – Litigios</h2>
+    <p>Studio PF se compromete a realizar los servicios con el máximo cuidado. En caso de litigio, se aplicará la ley francesa y los tribunales competentes serán los de Saint-Étienne.</p>
+
+    <h2 class="section-title">🏅 Compromiso de calidad</h2>
+    <ul>
+        <li>🏗️ Preparación minuciosa de cada miniatura.</li>
+        <li>🎨 Pinturas y materiales de alta calidad.</li>
+        <li>🖌️ Técnicas avanzadas para un resultado óptimo.</li>
+        <li>🎯 Adaptación a las necesidades del cliente.</li>
+    </ul>
+</div>
+
+<div class="maintenance-box">
+    <h2 class="section-title">8. Política de devoluciones</h2>
+
+    <ul>
+        <li>🏗️ Validación antes del envío</li>
+        <li>Las fotos finales sirven como referencia oficial para la validación.</li>
+        <li>Por favor, revísalas cuidadosamente y no dudes en solicitar retoques o modificaciones en esta fase.</li>
+    </ul>
+
+    <ul>
+        <li>🖌️ Proceso de retoques</li>
+        <li>Cada retoque irá acompañado de nuevas fotos que servirán como validación final.</li>
+        <li>Una vez validado el pedido (tras retoques si es necesario), será enviado.</li>
+        <li>➡️ No se podrán realizar modificaciones después de la validación.</li>
+    </ul>
+
+    <ul>
+        <li>🎯 Devoluciones y retoques tras la recepción</li>
+        <li>Dispones de 48 a 72 horas tras la recepción para señalar un defecto no visible en las fotos.</li>
+        <li>Se podrá proponer una intervención mediante presupuesto, según disponibilidad.</li>
+        <li>Si la solicitud se realiza más de 15 días después de la recepción, será necesario un presupuesto de forma sistemática.</li>
+    </ul>
+
+    <ul>
+        <li>🖌️ Mejoras y modificaciones fuera de defectos</li>
+        <li>Las fotos finales sirven como referencia oficial de validación.</li>
+        <li>Cualquier solicitud de modificación o mejora no relacionada con un defecto tras la validación requerirá un presupuesto adicional.</li>
+    </ul>
+</div>
+
+<div class="maintenance-box">
+    <h2 class="section-title">9. Plazos de realización</h2>
+    <ul>
+        <li>🔧 <strong>Proyectos pequeños – Nivel Premium (banda, combat patrol, spearhead)</strong>: 2 meses laborables</li>
+        <li>🔧 <strong>Proyectos pequeños – Nivel Signature (banda, combat patrol, spearhead)</strong>: 4 meses laborables</li>
+        <li>⚙️ <strong>Proyectos medios a complejos – Nivel Premium y Signature (700–1000 pts)</strong>: 4 a 6 meses laborables</li>
+        <li>🏗️ <strong>Proyectos grandes – Nivel Premium y Signature (1500–2000 pts)</strong>: de 6 meses a 1 año laborable</li>
+        <li>📦 Los plazos comienzan tras la <strong>recepción completa del material</strong> y el pago del anticipo.</li>
+        <li>📅 Los períodos de cierre y festivos <strong>no se incluyen</strong> (tiempo laborable).</li>
+    </ul>
+</div>
+
+<div class="maintenance-box">
+    <h2 class="section-title">10. Formación</h2>
+    <ul>
+        <li>Miniaturas no incluidas. En caso de jornada completa, puede solicitarse una contribución para materiales de pintura.</li>
+        <li>📍 Solo en el lugar (para clases individuales).</li>
+        <li>📍 Servicios para eventos: el tiempo de desplazamiento y el tiempo en el lugar (como comidas) se contabilizan en las horas de servicio.</li>
+        <li>📍 Talleres bajo presupuesto. El lugar y las condiciones pueden variar y se especificarán en cada anuncio.</li>
+        <li>📞 Primer contacto por teléfono.</li>
+        <li>🔄 Horas pagadas flexibles pero no reembolsables.</li>
+    </ul>
+</div>
         `;
     } 
     else { // français (par défaut)
