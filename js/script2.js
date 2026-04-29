@@ -314,6 +314,18 @@ Personalized support for every project.
 </tbody>
 </table>
    </div>
+     <div class="maintenance-box">
+  <table id="tarif-table" class="tableborder1">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Premium (heures / tarif)</th>
+            <th>Fantasia (heures / tarif)</th>
+        </tr>
+    </thead>
+    <tbody id="tarif-table-body"></tbody>
+</table>
+       </div>
           <div class="banniere">
          
             <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
@@ -423,6 +435,18 @@ Acompañamiento personalizado para cada proyecto.
 </tbody>
 </table>
    </div>
+     <div class="maintenance-box">
+  <table id="tarif-table" class="tableborder1">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Premium (heures / tarif)</th>
+            <th>Fantasia (heures / tarif)</th>
+        </tr>
+    </thead>
+    <tbody id="tarif-table-body"></tbody>
+</table>
+       </div>
           <div class="banniere">
          
             <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
@@ -532,6 +556,18 @@ Un accompagnement personnalisé pour chaque projet.
 </tbody>
 </table>
    </div>
+     <div class="maintenance-box">
+  <table id="tarif-table" class="tableborder1">
+    <thead>
+        <tr>
+            <th>Catégorie</th>
+            <th>Premium (heures / tarif)</th>
+            <th>Fantasia (heures / tarif)</th>
+        </tr>
+    </thead>
+    <tbody id="tarif-table-body"></tbody>
+</table>
+       </div>
           <div class="banniere">
          
             <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
