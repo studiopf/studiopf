@@ -316,7 +316,7 @@ Personalized support for every project.
 </div>
    
 <div class="banniere">
-    <a href="simulateur_devis.html" class="button">Request a quote 💬</a>
+    <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </div>
 
 <div class="maintenance-box">
@@ -530,7 +530,7 @@ Acompañamiento personalizado para cada proyecto.
         </table>
     </div>
 <div class="banniere">
-    <a href="simulateur_devis.html" class="button">Solicitar presupuesto 💬</a>
+      <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
 </div>
 
 <div class="maintenance-box">
@@ -745,7 +745,7 @@ Un accompagnement personnalisé pour chaque projet.
         </table>
   </div>
     <div class="banniere">
-        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
+          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </div>
 
     <div class="maintenance-box">
