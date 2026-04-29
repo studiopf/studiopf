@@ -1020,35 +1020,32 @@ function initializeCardToggle() {
 // ────────────────────────────────────────────────
 
 const niveauLabels = {
-    niveau0: "Niveau Essentiel - TableTop basique 3 couleurs, texture simple : 🚀 Idéal pour les petits budgets, Minimum efficace sans détails.",
     niveau1: "Niveau Premium - TableTop+, Qualité supérieur qui va à l'Approfondi : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommendation.",
     niveau2: "Niveau Fantasia - TableTop++, Qualité supérieur plus Prestige : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
     expo:   "Niveau Studio : ✨ Limitée et réservée aux passionnés souhaitant le meilleur. Pour la collection en vitrine."
 };
 
 const niveauLabelsmini = {
-    niveau0: "Essentiel",
     niveau1: "Premium",
     niveau2: "Fantasia",
     expo:    "Pièce d'exposition"
 };
-
+const = tarifheure = 20;
 const tariffs = {
-    petiteinfanterie:      { niveau0: 10,  niveau1: 15,  niveau2: 20  },
-    infanterie:            { niveau0: 15,  niveau1: 30,  niveau2: 40  },
-    infanterieelite:       { niveau0: 20,  niveau1: 35,  niveau2: 50  },
-    personnage:            { niveau0: 40,  niveau1: 70,  niveau2: 90  },
-    personnageelite:       { niveau0: 50,  niveau1: 90,  niveau2: 120 },
-    personnagemonstrueux:  { niveau0: 100, niveau1: 190, niveau2: 240 },
-    personnagesurmonstre:  { niveau0: 120, niveau1: 240, niveau2: 300 },
-    personnagesurgrandmonstre: { niveau0: 180, niveau1: 360, niveau2: 450 },
-    cavalerie:             { niveau0: 30,  niveau1: 40,  niveau2: 50  },
-    cavalerielourde:       { niveau0: 25,  niveau1: 50,  niveau2: 70  },
-    petitvehiculemonstre:  { niveau0: 40,  niveau1: 80,  niveau2: 100 },
-    vehiculemonstremoyen:  { niveau0: 60,  niveau1: 120, niveau2: 150 },
-    grosvehiculemonstre:   { niveau0: 100, niveau1: 190, niveau2: 240 },
-    enormevehiculemonstre: { niveau0: 140, niveau1: 270, niveau2: 340 },
-    titanvehiculemonstre:  { niveau0: 240, niveau1: 480, niveau2: 600 }
+ 
+    infanterie:            { niveau1: 2,  niveau2: 3  },
+    infanterieelite:       { niveau1: 3, niveau2: 4  },
+    personnage:            {   niveau1: 5,  niveau2: 8  },
+    personnagemonstrueux:  {  niveau1: 8, niveau2: 12 },
+    personnagesurmonstre:  {  niveau1: 12, niveau2: 18 },
+    personnagesurgrandmonstre: {  niveau1: 16, niveau2: 24 },
+    cavalerie:             {  niveau1: 3,  niveau2: 4  },
+    cavalerielourde:       {   niveau1: 4,  niveau2: 5  },
+    petitvehiculemonstre:  {   niveau1: 4,  niveau2: 6 },
+    vehiculemonstremoyen:  {   niveau1: 6, niveau2: 9 },
+    grosvehiculemonstre:   { niveau1: 8, niveau2: 16 },
+    enormevehiculemonstre: {  niveau1: 12, niveau2: 18 },
+    titanvehiculemonstre:  { niveau1: 16, niveau2: 34 }
 };
 
 const categories = Object.keys(tariffs);
@@ -1102,7 +1099,7 @@ function calculateTotals() {
         if (!input || !prixEl || !totalEl) return;
 
         const qty = Number(input.value) || 0;
-        const unitPrice = tariffs[cat]?.[niveau] ?? 0;
+        const unitPrice = tariffs[cat]?.[niveau]*tarifheure ?? 0;
         const catTotal = qty * unitPrice;
 
         prixEl.textContent  = unitPrice.toFixed(2);
@@ -1128,7 +1125,7 @@ function calculateTotals() {
     let totalPrev = 0;
     categories.forEach(cat => {
         const qty = Number(document.getElementById(`${cat}-input`)?.value) || 0;
-        totalPrev += qty * (tariffs[cat]?.[prevLevel] ?? 0);
+        totalPrev += qty * (tariffs[cat]?.[prevLevel]*tarifheure ?? 0);
     });
 
     const nNum  = niveau.replace("niveau", "");
