@@ -438,7 +438,7 @@ ${prenom} ${nom}`;
     let html = "";
 
     if (currentLanguage === "english") {
-        <h1>Quote Request</h1>
+             html = `<h1>Quote Request</h1>
 
 <div class="form-container">
 
@@ -692,9 +692,9 @@ ${prenom} ${nom}`;
 
 </form>
 
-</div>
+</div>        `;
     } else if (currentLanguage === "spanish") {
-         <h1>Solicitud de Presupuesto</h1>
+              html = `<h1>Solicitud de Presupuesto</h1>
 
 <div class="form-container">
 
@@ -948,7 +948,7 @@ ${prenom} ${nom}`;
 
 </form>
 
-</div>
+</div>        `;
     } else {
         html = `
                        <h1>Demande de Devis</h1>
