@@ -1257,7 +1257,7 @@ function initializeFormCalculations() {
 // ────────────────────────────────────────────────
 
 function initializeFormationForm() {
-   if (currentLanguage !== "french") {
+   if (currentLanguage == "french") {
       
     const form = document.getElementById("formationForm");
     if (!form) return;
@@ -1294,7 +1294,9 @@ function initializeFormationForm() {
     });
    }
   else
-   { 
+   {
+      currentPage = "index.html";
+         changelangueindex();
     }
 }
 
