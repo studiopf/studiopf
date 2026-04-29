@@ -5,8 +5,23 @@
 // ────────────────────────────────────────────────
 
 
+function changelangueformation() {
+  const main = document.getElementById("contenu-principal");
+   
 
+    let html = "";
 
+    if (currentLanguage === "english") {
+      changelangueindex();
+    } else if (currentLanguage === "spanish") {
+      changelangueindex();
+    } else {
+       loadPage('formation.html');
+    }
+
+    main.innerHTML = html;
+}
+   
    function changelangueindex() {
     const main = document.getElementById("contenu-principal");
    
