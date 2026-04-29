@@ -381,7 +381,7 @@ function changelangueforma() {
           <label for="message">Votre message</label>
           <textarea id="message" name="message" placeholder="Votre message" rows="4"></textarea>
         </div>
-        <div class="banniere">
+        <div class="center">
           <button type="submit" class="button">Envoyer la demande par mail</button>
         </div>
       </form>
@@ -686,7 +686,7 @@ ${prenom} ${nom}`;
 
     </fieldset>
 
-    <div class="banniere">
+    <div class="center">
         <button type="submit" class="button">Send request by email</button>
     </div>
 
@@ -942,7 +942,7 @@ ${prenom} ${nom}`;
 
     </fieldset>
 
-    <div class="banniere">
+    <div class="center">
         <button type="submit" class="button">Enviar solicitud por correo</button>
     </div>
 
@@ -1171,7 +1171,7 @@ ${prenom} ${nom}`;
 
                       
                 </fieldset>
-            <div class="banniere">
+            <div class="center">
               <button type="submit" class="button">Envoyer la demande par mail</button>
                    </div>   
             </form>
