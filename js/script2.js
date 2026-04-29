@@ -1651,39 +1651,147 @@ function changelangueconditions() {
             <div class="maintenance-box">
                 <h2>1. Champ d'application</h2>
                 <p>Ces conditions générales de vente s'appliquent à l'ensemble des prestations de peinture, formations et services associés proposés par Studio PF (Pierre-François Frasse, micro-entrepreneur, SIRET 832 040 380 00020).</p>
-            </div>
+             <ul>
+            <li>🆓 TVA non applicable : article 293 B du Code général des impôts.</li>
+            <li>📜 Exonération de TVA : article 283-2 du Code général des impôts.</li>
+        </ul>
+        </div>
 
             <div class="maintenance-box">
                 <h2>2. Processus de commande</h2>
                 <p>Toute commande est confirmée par accord écrit (email ou message) et versement d'un acompte (généralement 50 %). La commande devient ferme et définitive dès réception des acomptes/arrhes.</p>
+            <ul>
+            <li>📅 Devis valable 7 jours ouvré.</li>
+            <li>✍️ Fait foi de contrat et inclut le temps de travail, recherche et fournitures (hors figurines).</li>
+            <li>⏳ Délai provisoire : dépend du volume, du niveau et la date de démarrage.</li>
+
+                <li>📸 Un <strong>premier aperçu</strong> est envoyé à <strong>80 %</strong> d’avancement.</li>
+    <li>📸 Des <strong>photos finales</strong> sont envoyées à <strong>100 %</strong>, <strong>avant et après retouches</strong>.</li>
+        </ul>
             </div>
 
             <div class="maintenance-box">
                 <h2>3. Tarifs – Paiement</h2>
                 <p>Les prix sont exprimés en euros (€), établis sur devis individuel ou via le simulateur. Le règlement s'effectue par PayPal, virement bancaire ou espèces (remise en main propre). Le solde est exigible avant expédition sauf accord contraire.</p>
+           <ul>
+            <li>Paiement possible en x4 sans frais via PayPal.</li>
+            <li>🏦 Moyens de paiement : virement, CB ou PayPal (⚠️ frais de 4 % pour PayPal).</li>
+            <li>Paiement en plusieurs étapes (pour les paiements CB et virements) :
+                <ul>
+                    <li>💳 25 % minimum pour réserver un créneau.</li>
+                    <li>✅ Le restant doit être réglé pour démarrer la commabde (suite à trop de projets restant sans soldes en fin de commissions).</li>
+                </ul>
+            </li>
+            <li>🎁 Réduction de 4 % pour les paiements hors PayPal.</li>
+        </ul>
             </div>
 
             <div class="maintenance-box">
                 <h2>4. Livraison – Expédition</h2>
                 <p>L'expédition est réalisée via Colissimo avec suivi et assurance. Les frais de port sont à la charge du client. Studio PF décline toute responsabilité en cas de perte ou avarie après remise au transporteur.</p>
-            </div>
+            
+            <ul>
+           
+            <li>🚚 Expédition via Colissimo avec signature à partir de 150€ de valeur (et assurance allant jusqu'à 5000€ de valeur).</li>
+              <li>📌 Mondial Relay possible mais assurance très limité en cas de problèmes comme casse ou perte/vol (max 500€).</li>
+            <li>🎁 Frais de port offerts à partir de 3000 € de commande.</li>
+           <li>Par défaut, je conseille le service Colissimo avec signature et option d'assurance même s'il est possible de ne pas garantir l'envoi et/ou d'expédier via Mondial Relay.</li>
+        </ul>
+         <ul>
+            <li>📦 Colissimo avec signature pour les envois de plus de 150 à 5000 € de valeur (valeur presation montage + peinture + valeur des figurines).</li>
+            <li>📌 Mondial Relay possible mais assurance très limité en cas de problèmes comme casse ou perte/vol (max 500€).</li>
+           
+        </ul>
+        </div>
 
             <div class="maintenance-box">
                 <h2>5. Droit de rétractation</h2>
                 <p>Aucun droit de rétractation ne s'applique aux produits sur mesure (figurines peintes) conformément à l'article L.221-28 du Code de la consommation.</p>
+            <ul>
+            <li>🚫 Non remboursables en cas de désistement.</li>
+            <li>✅ Paiement des arrhes = validation du devis.</li>
+             <li>🔁 Les arrhes <strong>ne sont pas transférables</strong> à un autre projet ou créneau.</li>
+                <li>❌ Aucun <strong>report ou échange de créneau</strong> possible. Toute annulation entraîne la perte des arrhes.</li>
+            <li>⏳ Frais de 30 % pour toutes commandes en urgence (&lt; 1 mois).</li>
+            <li>⏳ Si les figurines ne sont pas envoyées dans un délai de plus de 1 mois à compter de la date de démarrage du projet, la projet sera automatiquement annulée.<br>
+               Dans ce cas, les arrhes versées seront conservées.</li>
+        </ul>
+
+        <ul>
+ 
+   
+
+  </ul>
             </div>
 
             <div class="maintenance-box">
                 <h2>6. Propriété intellectuelle – Droit à l'image des œuvres</h2>
-                <p>Studio PF se réserve le droit de photographier et publier les réalisations terminées sur son site, ses réseaux sociaux et son portfolio, sauf opposition expresse et écrite du client avant le début du projet.</p>
+                <p>Studio PF se réserve le droit de photographier et publier les réalisations terminées sur son site, ses réseaux sociaux et son portfolio.</p>
             </div>
 
             <div class="maintenance-box">
                 <h2>7. Responsabilité – Litiges</h2>
                 <p>Studio PF s'engage à réaliser les prestations avec le plus grand soin. En cas de litige, la loi française est applicable et les tribunaux compétents sont ceux de Saint-Étienne.</p>
+                  <h2 class="section-title">🏅 Engagement Qualité</h2>
+        <ul>
+            <li>🏗️ Préparation minutieuse de chaque figurine.</li>
+            <li>🎨 Peintures et matériaux de qualité.</li>
+            <li>🖌️ Techniques avancées pour un rendu optimal.</li>
+            <li>🎯 Adaptation aux besoins du client.</li>
+        </ul>
             </div>
+ <div class="maintenance-box">
+<h2 class="section-title">8. Politique de retour</h2>
 
-            <p><em>Dernière mise à jour : Mars 2026 – Studio PF – Tous droits réservés.</em></p>
+        <ul>
+            <li>🏗️ Validation avant envoi</li>
+            <li>Les photos finales de la commande servent de référence officielle pour validation.</li>
+              <li>Prenez bien le temps de les examiner attentivement et n’hésitez pas à demander des retouches ou modifications à ce stade.</li>
+        </ul>
+                <ul>
+            <li>🖌️ Processus de retouche</li>
+            <li>Chaque retouche donnera lieu à de nouvelles photos qui feront office de validation définitive.</li>
+              <li>Une fois la commande validée (après retouches si besoin), elle sera expédiée.</li>
+                   <li>➡️ Aucune modification ne sera possible après validation.</li>
+        </ul>
+                  <ul>
+            <li>🎯 Retour et retouches après réception</li>
+            <li>Vous disposez de 48 à 72 heures maximum après réception pour signaler un défaut non visible sur les photos.</li>
+              <li>Une intervention sur devis pourra toutefois être proposée, selon les disponibilités.</li>
+                   <li>Si la demande intervient plus de 15 jours après réception, un devis systématique sera nécessaire.</li>
+        </ul>
+                <ul>
+            <li>🖌️ Améliorations et modifications hors défauts</li>
+            <li>Les photos finales de la commande servent de référence officielle pour validation.</li>
+              <li>Toute demande de modification ou d’amélioration non liée à un défaut après validation fera l’objet d’un devis complémentaire.</li>
+        </ul>
+
+</div>
+<div class="maintenance-box">
+  <h2 class="section-title">9. Délais de Réalisation</h2>
+  <ul>
+      <li>🔧 <strong>Petits projets – Niveau Premium (bande, combat patrol, spearhead) </strong> : 2 mois ouvrés</li>
+    <li>🔧 <strong>Petits projets – Niveau Signature (bande, combat patrol, spearhead)</strong> : 4 mois ouvrés</li>
+    <li>⚙️ <strong>Projets moyens à complexes – Niveau Premium et Signature  (700-1000pts)</strong> : 4 à 6 mois ouvrés</li>
+    <li>🏗️ <strong>Très gros projets – Niveau Premium et Signature (1500-2000pts)</strong> : 6 mois à 1 an ouvrés</li>
+    <li>📦 Les délais sont calculés à partir de la <strong>réception complète du matériel</strong> et du paiement des arrhes.</li>
+    <li>📅 Les mois de fermeture et jours fériés <strong>ne sont pas comptabilisés</strong> dans les délais (délais ouvrés).</li>
+  </ul>
+    </div>
+
+             <div class="maintenance-box">
+             <h2 class="section-title">10. Formation</h2>
+        <ul>
+            <li>Figurines non fourni. Dans le cas de journée complète, une participation aux fournitures peinture peux être demandé.</li>
+            <li>📍 Uniquement sur place (pour les cours individuels).</li>
+           <li>📍 Prestation évenements : les temps de trajet et temps sur place (comme repas) sera compté dans le volume d'heures de prestation.</li>
+            <li>📍 Stage sur devis. Le lieu peux varié et les conditions indiqué à l'annonce d'un nouveau stage.</li>
+            <li>📞 Premier contact par téléphone.</li>
+            <li>🔄 Heures réglées modulables mais non remboursables.</li>
+        </ul>
+ </div>
+
+           
         `;
     }
 
