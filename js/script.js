@@ -389,46 +389,44 @@ function changelangueforma() {
     main.innerHTML = html;
 }
 
-    function envoyerMailForma(form) {
-      const nom = encodeURIComponent(document.getElementById("nom").value);
-      const prenom = encodeURIComponent(document.getElementById("prenom").value);
-      const email = encodeURIComponent(document.getElementById("email").value);
-      const telephone = encodeURIComponent(document.getElementById("telephone").value);
-      const cours = encodeURIComponent(document.getElementById("cours").value);
-      const message = encodeURIComponent(document.getElementById("message").value || "Aucun message");
-      const adresse = encodeURIComponent(document.getElementById("adresse").value);
-      const cp = encodeURIComponent(document.getElementById("cp").value);
-      const ville = encodeURIComponent(document.getElementById("ville").value);
-      const pays = encodeURIComponent(document.getElementById("pays").value);
-      const subject = encodeURIComponent(`Demande de cours de peinture - ${nom} ${prenom}`);
-      const body = encodeURIComponent(
-        `Bonjour,\n\nVoici ma demande de cours de peinture (${cours}) :\n` +
-        `${nom}\n${prenom}\n${adresse}\n${cp}\n` +
-        `${ville}\n${pays}\n${email}\n${telephone}\n\n` +
-        `${message}\n\nCordialement,\n${prenom} ${nom}`
-      );
-      const mailtoLink = `mailto:studiopeinturefigurine@gmail.com?subject=${subject}&body=${body}`;
-      window.location.href = mailtoLink;
-    }
+   function envoyerMailForma(form) {
+  const nom = document.getElementById("nom").value;
+  const prenom = document.getElementById("prenom").value;
+  const email = document.getElementById("email").value;
+  const telephone = document.getElementById("telephone").value;
+  const cours = document.getElementById("cours").value;
+  const message = document.getElementById("message").value || "Aucun message";
+  const adresse = document.getElementById("adresse").value;
+  const cp = document.getElementById("cp").value;
+  const ville = document.getElementById("ville").value;
+  const pays = document.getElementById("pays").value;
 
-    // Sélection de toutes les cartes
-    const cards = document.querySelectorAll('.card[role="region"]');
+  const subject = `Demande de cours de peinture - ${nom} ${prenom}`;
 
-    cards.forEach(card => {
-      // Gestion du clic
-      card.addEventListener('click', () => {
-        toggleCard(card);
-      });
+  const body =
+`Bonjour,
 
-      // Gestion du clavier (touche Entrée ou Espace)
-      card.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          toggleCard(card);
-        }
-      });
-    });
+Voici ma demande de cours de peinture (${cours}) :
 
+${nom}
+${prenom}
+${adresse}
+${cp}
+${ville}
+${pays}
+${email}
+${telephone}
+
+${message}
+
+Cordialement,
+${prenom} ${nom}`;
+
+  const mailtoLink =
+    `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailtoLink;
+}
     function changelanguesimu() {
     const main = document.getElementById("contenu-principal");
     if (!main) return;
