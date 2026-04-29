@@ -313,31 +313,103 @@ Personalized support for every project.
 </tr>
 </tbody>
         </table>
-    </div>
-        <div class="banniere">
-        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
-    </div>
+</div>
+   
+<div class="banniere">
+    <a href="simulateur_devis.html" class="button">Request a quote 💬</a>
+</div>
 
-  <!-- Tableau dynamique -->
 <div class="maintenance-box">
-    <h3>Tarif 2026-2027</h3>
+    <h3>Pricing 2026-2027</h3>
 
-    <table id="tarif-table" class="tableborder1">
+    <table class="tableborder1">
         <thead>
             <tr>
-                <th>Catégorie</th>
+                <th>Category</th>
                 <th>Premium</th>
                 <th>Fantasia</th>
             </tr>
         </thead>
 
-        <tbody id="tarif-table-body"></tbody>
+        <tbody>
+            <tr>
+                <td>Infantry 20-25mm</td>
+                <td>2h / 40€</td>
+                <td>1h / 20€</td>
+            </tr>
+            <tr>
+                <td>Infantry 28-32mm</td>
+                <td>3h / 60€</td>
+                <td>2h / 40€</td>
+            </tr>
+            <tr>
+                <td>Elite Infantry 40-50mm</td>
+                <td>4h / 80€</td>
+                <td>3h / 60€</td>
+            </tr>
+            <tr>
+                <td>Character on foot 25-32mm</td>
+                <td>8h / 160€</td>
+                <td>5h / 100€</td>
+            </tr>
+            <tr>
+                <td>Elite Character 40-50mm</td>
+                <td>9h / 180€</td>
+                <td>6h / 120€</td>
+            </tr>
+            <tr>
+                <td>Monstrous Character 60-100mm</td>
+                <td>12h / 240€</td>
+                <td>8h / 160€</td>
+            </tr>
+            <tr>
+                <td>Character on Monster 120mm</td>
+                <td>18h / 360€</td>
+                <td>12h / 240€</td>
+            </tr>
+            <tr>
+                <td>Character on Large Monster</td>
+                <td>24h / 480€</td>
+                <td>16h / 320€</td>
+            </tr>
+            <tr>
+                <td>Cavalry 60-75mm</td>
+                <td>4h / 80€</td>
+                <td>3h / 60€</td>
+            </tr>
+            <tr>
+                <td>Heavy Cavalry 90-105mm</td>
+                <td>5h / 100€</td>
+                <td>4h / 80€</td>
+            </tr>
+            <tr>
+                <td>Small Vehicle / Monster</td>
+                <td>6h / 120€</td>
+                <td>4h / 80€</td>
+            </tr>
+            <tr>
+                <td>Medium Vehicle / Monster</td>
+                <td>9h / 180€</td>
+                <td>6h / 120€</td>
+            </tr>
+            <tr>
+                <td>Large Vehicle / Monster</td>
+                <td>16h / 320€</td>
+                <td>8h / 160€</td>
+            </tr>
+            <tr>
+                <td>Huge Vehicle / Monster</td>
+                <td>18h / 360€</td>
+                <td>12h / 240€</td>
+            </tr>
+            <tr>
+                <td>Titanic</td>
+                <td>34h / 680€</td>
+                <td>16h / 320€</td>
+            </tr>
+        </tbody>
     </table>
 </div>
-    
-</div>
-   
-
 `;
     } else if (currentLanguage === "spanish") {
         html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
@@ -442,29 +514,101 @@ Acompañamiento personalizado para cada proyecto.
 </tbody>
         </table>
     </div>
-        <div class="banniere">
-        <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
-    </div>
+<div class="banniere">
+    <a href="simulateur_devis.html" class="button">Solicitar presupuesto 💬</a>
+</div>
 
-  <!-- Tableau dynamique -->
 <div class="maintenance-box">
-    <h3>Tarif 2026-2027</h3>
+    <h3>Tarifas 2026-2027</h3>
 
-    <table id="tarif-table" class="tableborder1">
+    <table class="tableborder1">
         <thead>
             <tr>
-                <th>Catégorie</th>
+                <th>Categoría</th>
                 <th>Premium</th>
                 <th>Fantasia</th>
             </tr>
         </thead>
 
-        <tbody id="tarif-table-body"></tbody>
+        <tbody>
+            <tr>
+                <td>Infantería 20-25mm</td>
+                <td>2h / 40€</td>
+                <td>1h / 20€</td>
+            </tr>
+            <tr>
+                <td>Infantería 28-32mm</td>
+                <td>3h / 60€</td>
+                <td>2h / 40€</td>
+            </tr>
+            <tr>
+                <td>Infantería élite 40-50mm</td>
+                <td>4h / 80€</td>
+                <td>3h / 60€</td>
+            </tr>
+            <tr>
+                <td>Personaje a pie 25-32mm</td>
+                <td>8h / 160€</td>
+                <td>5h / 100€</td>
+            </tr>
+            <tr>
+                <td>Personaje élite 40-50mm</td>
+                <td>9h / 180€</td>
+                <td>6h / 120€</td>
+            </tr>
+            <tr>
+                <td>Personaje monstruoso 60-100mm</td>
+                <td>12h / 240€</td>
+                <td>8h / 160€</td>
+            </tr>
+            <tr>
+                <td>Personaje sobre monstruo 120mm</td>
+                <td>18h / 360€</td>
+                <td>12h / 240€</td>
+            </tr>
+            <tr>
+                <td>Personaje sobre gran monstruo</td>
+                <td>24h / 480€</td>
+                <td>16h / 320€</td>
+            </tr>
+            <tr>
+                <td>Caballería 60-75mm</td>
+                <td>4h / 80€</td>
+                <td>3h / 60€</td>
+            </tr>
+            <tr>
+                <td>Caballería pesada 90-105mm</td>
+                <td>5h / 100€</td>
+                <td>4h / 80€</td>
+            </tr>
+            <tr>
+                <td>Vehículo / monstruo pequeño</td>
+                <td>6h / 120€</td>
+                <td>4h / 80€</td>
+            </tr>
+            <tr>
+                <td>Vehículo / monstruo medio</td>
+                <td>9h / 180€</td>
+                <td>6h / 120€</td>
+            </tr>
+            <tr>
+                <td>Vehículo / monstruo grande</td>
+                <td>16h / 320€</td>
+                <td>8h / 160€</td>
+            </tr>
+            <tr>
+                <td>Vehículo / monstruo enorme</td>
+                <td>18h / 360€</td>
+                <td>12h / 240€</td>
+            </tr>
+            <tr>
+                <td>Titánico</td>
+                <td>34h / 680€</td>
+                <td>16h / 320€</td>
+            </tr>
+        </tbody>
     </table>
 </div>
-    
-</div>
-
 
 `;
     } else {
@@ -569,16 +713,15 @@ Un accompagnement personnalisé pour chaque projet.
 </tbody>
 
         </table>
-    </div>
-        <div class="banniere">
+  </div>
+    <div class="banniere">
         <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
     </div>
 
-  <!-- Tableau dynamique -->
-<div class="maintenance-box">
+    <div class="maintenance-box">
     <h3>Tarif 2026-2027</h3>
 
-    <table id="tarif-table" class="tableborder1">
+    <table class="tableborder1">
         <thead>
             <tr>
                 <th>Catégorie</th>
@@ -587,12 +730,85 @@ Un accompagnement personnalisé pour chaque projet.
             </tr>
         </thead>
 
-        <tbody id="tarif-table-body"></tbody>
+        <tbody>
+            <tr>
+                <td>Infanterie 20-25mm</td>
+                <td>2h / 40€</td>
+                <td>1h / 20€</td>
+            </tr>
+            <tr>
+                <td>Infanterie 28-32mm</td>
+                <td>3h / 60€</td>
+                <td>2h / 40€</td>
+            </tr>
+            <tr>
+                <td>Infanterie élite 40-50mm</td>
+                <td>4h / 80€</td>
+                <td>3h / 60€</td>
+            </tr>
+            <tr>
+                <td>Personnage à pied 25-32mm</td>
+                <td>8h / 160€</td>
+                <td>5h / 100€</td>
+            </tr>
+            <tr>
+                <td>Personnage élite 40-50mm</td>
+                <td>9h / 180€</td>
+                <td>6h / 120€</td>
+            </tr>
+            <tr>
+                <td>Personnage monstrueux 60-100mm</td>
+                <td>12h / 240€</td>
+                <td>8h / 160€</td>
+            </tr>
+            <tr>
+                <td>Personnage sur monstre 120mm</td>
+                <td>18h / 360€</td>
+                <td>12h / 240€</td>
+            </tr>
+            <tr>
+                <td>Personnage sur grand monstre</td>
+                <td>24h / 480€</td>
+                <td>16h / 320€</td>
+            </tr>
+            <tr>
+                <td>Cavalerie 60-75mm</td>
+                <td>4h / 80€</td>
+                <td>3h / 60€</td>
+            </tr>
+            <tr>
+                <td>Cavalerie lourde 90-105mm</td>
+                <td>5h / 100€</td>
+                <td>4h / 80€</td>
+            </tr>
+            <tr>
+                <td>Petit véhicule / monstre</td>
+                <td>6h / 120€</td>
+                <td>4h / 80€</td>
+            </tr>
+            <tr>
+                <td>Véhicule / monstre moyen</td>
+                <td>9h / 180€</td>
+                <td>6h / 120€</td>
+            </tr>
+            <tr>
+                <td>Gros véhicule / monstre</td>
+                <td>16h / 320€</td>
+                <td>8h / 160€</td>
+            </tr>
+            <tr>
+                <td>Énorme véhicule / monstre</td>
+                <td>18h / 360€</td>
+                <td>12h / 240€</td>
+            </tr>
+            <tr>
+                <td>Titanesque</td>
+                <td>34h / 680€</td>
+                <td>16h / 320€</td>
+            </tr>
+        </tbody>
     </table>
 </div>
-    
-</div>
-
    
          `;
     }
