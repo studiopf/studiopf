@@ -53,7 +53,10 @@ function setLanguage(lang) {
 
     if (!currentPage) currentPage = "index.html";
 
-
+   if (currentPage == "formation.html" && currentLanguage !== "french")
+   {
+       currentPage = "index.html";
+   }
     loadPage(currentPage);
 }
 
