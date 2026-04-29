@@ -142,11 +142,11 @@ changelangueinfo();
         initializeGalerie();
     }
 
-    if (currentPage.includes("simulateur_devis"))&& typeof initializeFormCalculations === "function" {
+    if (currentPage.includes("simulateur_devis")) && typeof initializeFormCalculations === "function") {
         initializeFormCalculations();
     }
 
-    if (currentPage.includes("formation")) && typeof initializeFormationForm === "function"{
+    if (currentPage.includes("formation")) && typeof initializeFormationForm === "function"){
         initializeFormationForm();
     }
 
