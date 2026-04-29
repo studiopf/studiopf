@@ -452,7 +452,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6px 16px;
+    gap: 6px 14px;
     margin: 0rem 0;
 }
 
@@ -461,7 +461,7 @@ nav ul li a {
     padding: 0px 0px;
     border-radius: 6px;
     font-weight: 700;
-     font-size: 12px;
+     font-size: 22px;
     background: rgba(30, 20, 12, 0.55);
     white-space: nowrap;
     transition: all 0.24s ease;
@@ -937,7 +937,7 @@ nav ul li a:hover {
 
     nav ul li a {
         padding: 0px 0px;
-      font-size: 18px;
+      font-size: 14px;
     }
 
     artenaires-container,
