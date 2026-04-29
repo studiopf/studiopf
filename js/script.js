@@ -139,11 +139,11 @@ changelangueinfo();
         initializeGalerie();
     }
 
-    if (currentPage.includes("simulateur_devis")) && typeof initializeFormCalculations === "function") {
+    if (currentPage.includes("simulateur_devis")) {
         initializeFormCalculations();
     }
 
-    if (currentPage.includes("formation")) && typeof initializeFormationForm === "function"){
+    if (currentPage.includes("formation")){
         initializeFormationForm();
     }
 
