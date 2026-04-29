@@ -336,25 +336,6 @@ Personalized support for every project.
 </div>
     
 </div>
-<script>
-const labelscat = {
-    petiteinfanterie: "Infanterie 20-25mm",
-    infanterie: "Infanterie 28-32mm",
-    infanterieelite: "Infanterie élite 40-50mm",
-    personnage: "Personnage à pied 25-32mm",
-    personnageelite: "Personnage élite 40-50mm",
-    personnagemonstrueux: "Personnage monstrueux 60-100mm",
-    personnagesurmonstre: "Personnage sur monstre 120mm",
-    personnagesurgrandmonstre: "Personnage sur grand monstre",
-    cavalerie: "Cavalerie 60-75mm",
-    cavalerielourde: "Cavalerie lourde 90-105mm",
-    petitvehiculemonstre: "Petit véhicule / monstre",
-    vehiculemonstremoyen: "Véhicule / monstre moyen",
-    grosvehiculemonstre: "Gros véhicule / monstre",
-    enormevehiculemonstre: "Énorme véhicule / monstre",
-    titanvehiculemonstre: "Titanesque"
-};
-</script>
    
 
 `;
@@ -484,26 +465,6 @@ Acompañamiento personalizado para cada proyecto.
     
 </div>
 
-<script>
-const labelscat = {
-    petiteinfanterie: "Infanterie 20-25mm",
-    infanterie: "Infanterie 28-32mm",
-    infanterieelite: "Infanterie élite 40-50mm",
-    personnage: "Personnage à pied 25-32mm",
-    personnageelite: "Personnage élite 40-50mm",
-    personnagemonstrueux: "Personnage monstrueux 60-100mm",
-    personnagesurmonstre: "Personnage sur monstre 120mm",
-    personnagesurgrandmonstre: "Personnage sur grand monstre",
-    cavalerie: "Cavalerie 60-75mm",
-    cavalerielourde: "Cavalerie lourde 90-105mm",
-    petitvehiculemonstre: "Petit véhicule / monstre",
-    vehiculemonstremoyen: "Véhicule / monstre moyen",
-    grosvehiculemonstre: "Gros véhicule / monstre",
-    enormevehiculemonstre: "Énorme véhicule / monstre",
-    titanvehiculemonstre: "Titanesque"
-};
-</script>
-   
 
 `;
     } else {
@@ -631,25 +592,7 @@ Un accompagnement personnalisé pour chaque projet.
 </div>
     
 </div>
-<script>
-const labelscat = {
-    petiteinfanterie: "Infanterie 20-25mm",
-    infanterie: "Infanterie 28-32mm",
-    infanterieelite: "Infanterie élite 40-50mm",
-    personnage: "Personnage à pied 25-32mm",
-    personnageelite: "Personnage élite 40-50mm",
-    personnagemonstrueux: "Personnage monstrueux 60-100mm",
-    personnagesurmonstre: "Personnage sur monstre 120mm",
-    personnagesurgrandmonstre: "Personnage sur grand monstre",
-    cavalerie: "Cavalerie 60-75mm",
-    cavalerielourde: "Cavalerie lourde 90-105mm",
-    petitvehiculemonstre: "Petit véhicule / monstre",
-    vehiculemonstremoyen: "Véhicule / monstre moyen",
-    grosvehiculemonstre: "Gros véhicule / monstre",
-    enormevehiculemonstre: "Énorme véhicule / monstre",
-    titanvehiculemonstre: "Titanesque"
-};
-</script>
+
    
          `;
     }
