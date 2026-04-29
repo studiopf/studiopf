@@ -280,7 +280,8 @@ Personalized support for every project.
 </ul>
 
 <p><strong>⏳ Lead time: 4 to 8 months depending on project and volume</strong></p>
-
+       </div>
+            <div class="maintenance-box">
 <table class="tableborder1">
 <thead>
 <tr>
@@ -312,8 +313,12 @@ Personalized support for every project.
 </tr>
 </tbody>
 </table>
-</div>
-
+   </div>
+          <div class="banniere">
+         
+            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+           
+        </div> 
 `;
     } else if (currentLanguage === "spanish") {
         html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
@@ -384,7 +389,8 @@ Acompañamiento personalizado para cada proyecto.
 </ul>
 
 <p><strong>⏳ Plazos: 4 a 8 meses según el proyecto y el volumen</strong></p>
-
+       </div>
+            <div class="maintenance-box">
 <table class="tableborder1">
 <thead>
 <tr>
@@ -416,7 +422,12 @@ Acompañamiento personalizado para cada proyecto.
 </tr>
 </tbody>
 </table>
-</div>
+   </div>
+          <div class="banniere">
+         
+            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+           
+        </div> 
 
 `;
     } else {
@@ -487,6 +498,8 @@ Un accompagnement personnalisé pour chaque projet.
 </ul>
 
 <p><strong>⏳ Délais : 4 à 8 mois selon projet et volume</strong></p>
+       </div>
+            <div class="maintenance-box">
        <table class="tableborder1">
 <thead>
 <tr>
@@ -518,7 +531,12 @@ Un accompagnement personnalisé pour chaque projet.
 </tr>
 </tbody>
 </table>
-</div>
+   </div>
+          <div class="banniere">
+         
+            <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+           
+        </div> 
        
          `;
     }
