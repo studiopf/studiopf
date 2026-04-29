@@ -5,22 +5,6 @@
 // ────────────────────────────────────────────────
 
 
-function changelangueformation() {
-  const main = document.getElementById("contenu-principal");
-   
-
-    let html = "";
-
-    if (currentLanguage === "english") {
-      changelangueindex();
-    } else if (currentLanguage === "spanish") {
-      changelangueindex();
-    } else {
-       loadPage('formation.html');
-    }
-
-    main.innerHTML = html;
-}
    
    function changelangueindex() {
     const main = document.getElementById("contenu-principal");
@@ -1273,6 +1257,8 @@ function initializeFormCalculations() {
 // ────────────────────────────────────────────────
 
 function initializeFormationForm() {
+   if (currentLanguage !== "french") {
+      
     const form = document.getElementById("formationForm");
     if (!form) return;
 
@@ -1306,6 +1292,11 @@ function initializeFormationForm() {
         const url = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = url;
     });
+   }
+  else
+   {  currentPage = "index.html";
+            changelangueindex();
+    }
 }
 
 // ────────────────────────────────────────────────
