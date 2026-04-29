@@ -1049,7 +1049,49 @@ const tariffs = {
     titanvehiculemonstre:  { niveau1: 16, niveau2: 34 }
 };
 
+const labelscat = {
+    petiteinfanterie: "Infanterie 20-25mm",
+    infanterie: "Infanterie 28-32mm",
+    infanterieelite: "Infanterie élite 40-50mm",
+    personnage: "Personnage à pied 25-32mm",
+    personnageelite: "Personnage élite 40-50mm",
+    personnagemonstrueux: "Personnage monstrueux 60-100mm",
+    personnagesurmonstre: "Personnage sur monstre 120mm",
+    personnagesurgrandmonstre: "Personnage sur grand monstre",
+    cavalerie: "Cavalerie 60-75mm",
+    cavalerielourde: "Cavalerie lourde 90-105mm",
+    petitvehiculemonstre: "Petit véhicule / monstre",
+    vehiculemonstremoyen: "Véhicule / monstre moyen",
+    grosvehiculemonstre: "Gros véhicule / monstre",
+    enormevehiculemonstre: "Énorme véhicule / monstre",
+    titanvehiculemonstre: "Titanesque"
+};
 const categories = Object.keys(tariffs);
+
+function renderTarifTable() {
+    const tbody = document.getElementById("tarif-table-body");
+    tbody.innerHTML = ""; // reset
+
+    Object.keys(tariffs).forEach(key => {
+        const t = tariffs[key];
+
+        const fantasiaHeures = t.niveau1;
+        const premiumHeures = t.niveau2;
+
+        const fantasiaPrix = fantasiaHeures * tarifheure;
+        const premiumPrix = premiumHeures * tarifheure;
+
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+            <td>${labelscat[key]}</td>
+            <td>${premiumHeures}h / ${premiumPrix}€</td>
+            <td>${fantasiaHeures}h / ${fantasiaPrix}€</td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+}
 
 function calculateTotals() {
     const niveauSelect = document.getElementById("niveau");
