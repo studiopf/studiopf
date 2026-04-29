@@ -1567,7 +1567,7 @@ function changelangueconditions() {
 
             <div class="maintenance-box">
                 <h2>2. Ordering process</h2>
-                <p>Any order is confirmed by written agreement (email or message) and payment of a deposit (usually 50%). The order is firm and final once the miniatures are received by the painter.</p>
+                <p>Any order is confirmed by written agreement (email or message) and payment of a deposit (usually 50%). The order is firm and final once the deposit are received by the painter.</p>
             </div>
 
             <div class="maintenance-box">
@@ -1611,7 +1611,7 @@ function changelangueconditions() {
 
             <div class="maintenance-box">
                 <h2>2. Proceso de pedido</h2>
-                <p>Cualquier pedido se confirma por acuerdo escrito (correo o mensaje) y pago de un depósito (generalmente 50 %). El pedido es firme una vez recibidas las miniaturas.</p>
+                <p>Cualquier pedido se confirma por acuerdo escrito (correo o mensaje) y pago de un depósito (generalmente 50 %). El pedido es firme una vez recibidas el depósito.</p>
             </div>
 
             <div class="maintenance-box">
@@ -1655,7 +1655,7 @@ function changelangueconditions() {
 
             <div class="maintenance-box">
                 <h2>2. Processus de commande</h2>
-                <p>Toute commande est confirmée par accord écrit (email ou message) et versement d'un acompte (généralement 50 %). La commande devient ferme et définitive dès réception des figurines par le peintre.</p>
+                <p>Toute commande est confirmée par accord écrit (email ou message) et versement d'un acompte (généralement 50 %). La commande devient ferme et définitive dès réception des acomptes/arrhes.</p>
             </div>
 
             <div class="maintenance-box">
