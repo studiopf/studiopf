@@ -1032,10 +1032,11 @@ const niveauLabelsmini = {
 };
 const = tarifheure = 20;
 const tariffs = {
- 
+   petiteinfanterie: { niveau1: 1,  niveau2: 2  },
     infanterie:            { niveau1: 2,  niveau2: 3  },
     infanterieelite:       { niveau1: 3, niveau2: 4  },
     personnage:            {   niveau1: 5,  niveau2: 8  },
+   personnageelite:      {   niveau1: 6,  niveau2: 9  },
     personnagemonstrueux:  {  niveau1: 8, niveau2: 12 },
     personnagesurmonstre:  {  niveau1: 12, niveau2: 18 },
     personnagesurgrandmonstre: {  niveau1: 16, niveau2: 24 },
