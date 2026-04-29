@@ -43,7 +43,7 @@
         <a href="mailto:studiopeinturefigurine@gmail.com">→ Contact Studio PF for your projects ←</a>
 
         <p>
-            <a href="simulateur_devis.html" class="button" onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 Request a quote ➜
             </a>
         </p>
@@ -109,7 +109,7 @@
         <a href="mailto:studiopeinturefigurine@gmail.com">→ Contacta con Studio PF para tus proyectos ←</a>
 
         <p>
-            <a href="simulateur_devis.html" class="button" onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 Solicitar un presupuesto ➜
             </a>
         </p>
@@ -173,7 +173,7 @@
 <p>Les réservations sont d’ores et déjà ouvertes : vous pouvez me contacter pour vos projets de peinture figurine et planifier vos futures commandes.</p>
 
  <a href="mailto:studiopeinturefigurine@gmail.com">→ Contactez le Studio PF pour vos projets ←</a>
-                   <p><a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis ➜</a> </p>
+                   <p><a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis ➜</a> </p>
                 
                         </div>
     </div>
@@ -311,9 +311,8 @@ Personalized support for every project.
     <td>Scenic / display</td>
 </tr>
 </tbody>
-</div>
-
 </table>
+</div>
 
 `;
     } else if (currentLanguage === "spanish") {
@@ -416,8 +415,8 @@ Acompañamiento personalizado para cada proyecto.
     <td>Escénica / de vitrina</td>
 </tr>
 </tbody>
-</div>
 </table>
+</div>
 
 `;
     } else {
@@ -518,9 +517,8 @@ Un accompagnement personnalisé pour chaque projet.
     <td>Scénique / vitrine</td>
 </tr>
 </tbody>
-</div>
-
 </table>
+</div>
        
          `;
     }
