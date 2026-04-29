@@ -783,6 +783,7 @@ nav ul li a:hover {
     border: 1px solid #6b4e2f;
     border-radius: 12px;
     backdrop-filter: blur(4px);
+   margin-top: 5px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.65);
     padding: 0rem;
     transition: all 0.28s ease;
