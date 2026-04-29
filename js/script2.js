@@ -318,21 +318,25 @@ Personalized support for every project.
         <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
     </div>
 
+  <!-- Tableau dynamique -->
+<div class="maintenance-box">
+    <h3>Tarif 2026-2027</h3>
+
+    <table id="tarif-table" class="tableborder1">
+        <thead>
+            <tr>
+                <th>Catégorie</th>
+                <th>Premium</th>
+                <th>Fantasia</th>
+            </tr>
+        </thead>
+
+        <tbody id="tarif-table-body"></tbody>
+    </table>
 </div>
-    <h3> Tarif 2026-2027</h3>
-    <!-- Tableau dynamique -->
-    <div class="maintenance-box">
-        <table id="tarif-table" class="tableborder1">
-            <thead>
-                <tr>
-                    <th>Catégorie</th>
-                    <th>Premium</th>
-                    <th>Fantasia</th>
-                </tr>
-            </thead>
-            <tbody id="tarif-table-body"></tbody>
-        </table>
-    </div>
+    
+</div>
+   
 
 `;
     } else if (currentLanguage === "spanish") {
@@ -442,21 +446,24 @@ Acompañamiento personalizado para cada proyecto.
         <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
     </div>
 
+  <!-- Tableau dynamique -->
+<div class="maintenance-box">
+    <h3>Tarif 2026-2027</h3>
+
+    <table id="tarif-table" class="tableborder1">
+        <thead>
+            <tr>
+                <th>Catégorie</th>
+                <th>Premium</th>
+                <th>Fantasia</th>
+            </tr>
+        </thead>
+
+        <tbody id="tarif-table-body"></tbody>
+    </table>
 </div>
-    <h3> Tarif 2026-2027</h3>
-    <!-- Tableau dynamique -->
-    <div class="maintenance-box">
-        <table id="tarif-table" class="tableborder1">
-            <thead>
-                <tr>
-                    <th>Catégorie</th>
-                    <th>Premium</th>
-                    <th>Fantasia</th>
-                </tr>
-            </thead>
-            <tbody id="tarif-table-body"></tbody>
-        </table>
-    </div>
+    
+</div>
 
 
 `;
@@ -567,22 +574,24 @@ Un accompagnement personnalisé pour chaque projet.
         <a href="simulateur_devis.html" class="button">Demander un devis 💬</a>
     </div>
 
-</div>
-    <h3> Tarif 2026-2027</h3>
-    <!-- Tableau dynamique -->
-    <div class="maintenance-box">
-        <table id="tarif-table" class="tableborder1">
-            <thead>
-                <tr>
-                    <th>Catégorie</th>
-                    <th>Premium</th>
-                    <th>Fantasia</th>
-                </tr>
-            </thead>
-            <tbody id="tarif-table-body"></tbody>
-        </table>
-    </div>
+  <!-- Tableau dynamique -->
+<div class="maintenance-box">
+    <h3>Tarif 2026-2027</h3>
 
+    <table id="tarif-table" class="tableborder1">
+        <thead>
+            <tr>
+                <th>Catégorie</th>
+                <th>Premium</th>
+                <th>Fantasia</th>
+            </tr>
+        </thead>
+
+        <tbody id="tarif-table-body"></tbody>
+    </table>
+</div>
+    
+</div>
          `;
     }
 
