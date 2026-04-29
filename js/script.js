@@ -155,7 +155,7 @@ changelangueinfo();
     }
     if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
-        renderTarifTable();
+      
     }
            if (currentPage.includes("index") && typeof changelangueindex === "function") {
         changelangueindex();
