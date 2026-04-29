@@ -220,10 +220,10 @@ function changelanguepeinture() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `<h1>High-End Miniature Painting 🎨</h1>
+        html = `
 
 <div class="maintenance-box">
-    <h2>🎨 Premium Offers</h2>
+ <h1>High-End Miniature Painting 🎨</h1>
 
     <ul>
         <li>
@@ -433,11 +433,10 @@ Personalized support for every project.
 </div>
 `;
     } else if (currentLanguage === "spanish") {
-        html = `<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
+        html = `
 
 <div class="maintenance-box">
-
-    <h2>🎨 Ofertas Premium</h2>
+<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
 
     <ul>
         <li>
@@ -648,10 +647,10 @@ Acompañamiento personalizado para cada proyecto.
 
 `;
     } else {
-        html = `<h1>Peinture de Figurines Haut de Gamme 🎨</h1>
+        html = `
 
 <div class="maintenance-box">
-    <h2>🎨 Offres Premium</h2>
+<h1>Peinture de Figurines Haut de Gamme 🎨</h1>
 
     <ul>
         <li>
