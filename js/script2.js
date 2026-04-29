@@ -1255,8 +1255,7 @@ function initializeFormCalculations() {
 // ────────────────────────────────────────────────
 
 function initializeFormationForm() {
-   if (currentLanguage == "french") {
-      
+ 
     const form = document.getElementById("formationForm");
     if (!form) return;
 
@@ -1290,12 +1289,7 @@ function initializeFormationForm() {
         const url = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = url;
     });
-   }
-  else
-   {
-      currentPage = "index.html";
-         changelangueindex();
-    }
+   
 }
 
 // ────────────────────────────────────────────────
