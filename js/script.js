@@ -229,9 +229,7 @@ function changelangueforma() {
       </div>
 
     <p>Horaires à titre d'exemple.</p>
-          <div>
-        <a href="pdf/pdflivret-initiation-peinturefigurine.pdf" download="pdflivret-initiation-peinturefigurine.pdf" class="button">Téléchargez votre livret d’initiation</a>
-      </div>
+
     
    </div>
        <div class="maintenance-box">
