@@ -57,7 +57,7 @@
                     <p>At <strong>Studio PF</strong>, each project becomes a unique collectible piece.</p>
                 </div>
             </div>
-            <div class="card" role="region" aria-expanded="true" tabindex="0">
+              <div class="maintenance-box">
   <h2>👋 Who’s behind the brush?</h2>
   <p>I’m <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
   A passionate painter and founder of Studio PF.<br><br>
@@ -123,7 +123,7 @@
                     <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
                 </div>
             </div>
-            <div class="card" role="region" aria-expanded="true" tabindex="0">
+               <div class="maintenance-box">
   <h2>👋 ¿Quién está detrás de los pinceles?</h2>
   <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
   Pintor apasionado y fundador de Studio PF.<br><br>
