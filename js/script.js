@@ -148,10 +148,6 @@ changelangueinfo();
 
     if (currentPage.includes("formation")) {
         initializeFormationForm();
-                if (currentLanguage !== "french") {
-        currentPage = "index.html";
-            changelangueformation();
-    }
     }
 
     if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
