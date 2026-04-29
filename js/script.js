@@ -143,7 +143,6 @@ changelangueinfo();
         changelanguesimu();
             initializeFormCalculations();
             calculateTotals();
-            
     }
 
     if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
@@ -156,7 +155,6 @@ changelangueinfo();
     if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
   
-      
     }
            if (currentPage.includes("index") && typeof changelangueindex === "function") {
         changelangueindex();
