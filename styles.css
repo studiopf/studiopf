@@ -261,7 +261,7 @@ body {
     flex-direction: column;
     font-family: 'Segoe UI', system-ui, sans-serif;
     background: linear-gradient(135deg, #0f0a05 0%, #251a10 100%);
-    color: #e8d9c0;
+    color: black;
     min-height: 100vh;
     background-image: radial-gradient(circle at 15% 85%, rgba(180,140,60,0.04) 0%, transparent 50%), radial-gradient(circle at 85% 20%, rgba(180,140,60,0.03) 0%, transparent 60%);
     padding: 0px 0px 0px;
@@ -308,6 +308,15 @@ li, .p-social {
     color: #e8d9c0;
 }
 p {
+       font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+   margin-top: 8px;
+    margin: 0rem auto;
+    max-width: 92%;
+    color: black;
+}
+div p {
        font-size: 18px;
     line-height: 1.6;
     text-align: center;
