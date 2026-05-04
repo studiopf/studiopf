@@ -955,7 +955,8 @@ function changelanguepartenaires() {
 
    if (currentLanguage === "english") {
     html = `
-       <h3>Our Partners</h3>
+      <div class="maintenance-box">
+       <h3>Our Partners</h3></div>
 
 <div class="partenaires-container">
     
@@ -1012,7 +1013,8 @@ function changelanguepartenaires() {
 } 
 else if (currentLanguage === "spanish") {
     html = `
-      <h3>Nuestros Socios</h3>
+      <div class="maintenance-box">
+      <h3>Nuestros Socios</h3></div>
 
 <div class="partenaires-container">
     
