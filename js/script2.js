@@ -976,7 +976,7 @@ function changelanguefoot() {
         <ul class="menu2">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
-            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours 🕖</a></li>
     
         </ul>
                 </nav>
@@ -985,7 +985,7 @@ function changelanguefoot() {
 <button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
 
 
-  <div class="footer">
+
  <div class="maintenance-box">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
@@ -996,7 +996,6 @@ function changelanguefoot() {
 </div>
 
 
-</div>
  <p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
 
 
@@ -1012,7 +1011,7 @@ else if (currentLanguage === "spanish") {
         <ul class="menu2">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
-            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
+            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura 🕖</a></li>
  
         </ul>
                 </nav>
@@ -1020,7 +1019,7 @@ else if (currentLanguage === "spanish") {
                 <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
- <div class="footer">
+
  <div class="maintenance-box">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
@@ -1028,7 +1027,7 @@ else if (currentLanguage === "spanish") {
 
   <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
   <p>Teléfono 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-</div>
+
  
 </div>
  <p>Sitio web de presentación creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
@@ -1044,7 +1043,7 @@ else if (currentLanguage === "spanish") {
             <ul class="menu2">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
-        <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
+        <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
                 
 </ul>  
         </nav>
@@ -1052,14 +1051,14 @@ else if (currentLanguage === "spanish") {
        
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
-              <div class="footer">
+             
                <div class="maintenance-box">
      <p><strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
         <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
         <p>Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-         </div>  
+     
 
   </div>
        <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
