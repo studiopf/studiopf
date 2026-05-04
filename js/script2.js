@@ -877,13 +877,14 @@ function changelanguefoot() {
 <button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
 
 <div class="footer">
+  <div class="center">
  <div class="maintenance-box">
   <strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
 
   <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Phone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-</div>
+</div></div>
   <p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
 </div>
 
@@ -905,13 +906,14 @@ else if (currentLanguage === "spanish") {
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
 <div class="footer">
+  <div class="center">
  <div class="maintenance-box">
   <strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
 
   <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Teléfono 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-</div>
+</div></div>
   <p>Sitio web de presentación creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
 </div>
 
@@ -936,12 +938,13 @@ else if (currentLanguage === "spanish") {
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
               <div class="footer">
+                <div class="center">
                <div class="maintenance-box">
       <strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
         <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-         </div>  
+         </div>  </div>
    <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
   </div>
      
