@@ -43,11 +43,7 @@
     </div>
 </div>
 
-<div class="center">
-    <div class="maintenance-box">
-        <h2>🧩 My Services :</h2>
-    </div>
-</div>
+
 
 <div class="center">
     <div class="maintenance-box">
@@ -133,11 +129,6 @@
     </div>
 </div>
 
-<div class="center">
-    <div class="maintenance-box">
-        <h2>🧩 Mis Servicios :</h2>
-    </div>
-</div>
 
 <div class="center">
     <div class="maintenance-box">
@@ -224,12 +215,6 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
                    </div>
 
       
-         
-      <div class="center">
-            <div class="maintenance-box">
-        <h2>🧩 Mes Services :</h2>
-  </div>
-</div>
 
       
       <div class="center">
@@ -1006,7 +991,7 @@ function changelanguefoot() {
 
   <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Phone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
 </div>
-  <p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
+
 </div>
 
 
@@ -1035,7 +1020,7 @@ else if (currentLanguage === "spanish") {
 
   <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Teléfono 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
 </div>
-  <p>Sitio web de presentación creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
+
 </div>
 
 
@@ -1065,7 +1050,7 @@ else if (currentLanguage === "spanish") {
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
         <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
          </div>  
-   <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
+ 
   </div>
      
         <!-- Bouton de retour en haut -->
@@ -1083,8 +1068,7 @@ function changelanguepartenaires() {
 
    if (currentLanguage === "english") {
     html = `
-      <div class="maintenance-box">
-       <h3>Our Partners</h3></div>
+   
 
 <div class="partenaires-container">
     
@@ -1141,8 +1125,7 @@ function changelanguepartenaires() {
 } 
 else if (currentLanguage === "spanish") {
     html = `
-      <div class="maintenance-box">
-      <h3>Nuestros Socios</h3></div>
+    
 
 <div class="partenaires-container">
     
@@ -1197,7 +1180,7 @@ else if (currentLanguage === "spanish") {
 </div>
     `;
     } else {
-        html = `      <h3>Nos Partenaires</h3>
+        html = `     
    
         <div class="partenaires-container">
             
