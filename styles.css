@@ -460,13 +460,7 @@ nav {
     margin: 0 auto;
 }
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px 14px;
-    margin: 0rem 0;
-}
+
 
 nav ul li a {
     color: #f4c876;
