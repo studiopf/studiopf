@@ -971,7 +971,7 @@ function changelanguefoot() {
    if (currentLanguage === "english") {
     html = `
   
-       <div>
+      
      <nav class="menu-mobile2">
         <ul class="menu2">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
@@ -980,12 +980,12 @@ function changelanguefoot() {
     
         </ul>
                 </nav>
-                  </div>
+                  
                 <button id="scrollToTopBtn" title="Back to top ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
 
 
-  <div class="center">
+  <div class="footer">
  <div class="maintenance-box">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
@@ -1006,7 +1006,7 @@ function changelanguefoot() {
 else if (currentLanguage === "spanish") {
     html = `
    
-       <div>
+    
      <nav class="menu-mobile2">
    
         <ul class="menu2">
@@ -1016,11 +1016,11 @@ else if (currentLanguage === "spanish") {
  
         </ul>
                 </nav>
-                 </div>
+                 
                 <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
- <div class="center">
+ <div class="foot">
  <div class="maintenance-box">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
@@ -1039,7 +1039,7 @@ else if (currentLanguage === "spanish") {
     } else {
         html = ` 
        
-          <div>
+       
  <nav class="menu-mobile2">
             <ul class="menu2">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
@@ -1048,12 +1048,11 @@ else if (currentLanguage === "spanish") {
                 
 </ul>  
         </nav>
-  </div>
-   
+  
        
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
-              <div class="center">
+              <div class="foot">
                <div class="maintenance-box">
      <p><strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
