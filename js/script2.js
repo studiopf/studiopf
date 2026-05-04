@@ -973,7 +973,7 @@ function changelanguefoot() {
     <div class="partenaires-container">
        <div>
      <nav class="menu-mobile2">
-        <ul class="menu">
+        <ul class="menu2">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
             <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours & Closures 🕖</a></li>
@@ -1009,7 +1009,7 @@ else if (currentLanguage === "spanish") {
        <div>
      <nav class="menu-mobile2">
    
-        <ul class="menu">
+        <ul class="menu2">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
             <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura y Cierres 🕖</a></li>
@@ -1041,7 +1041,7 @@ else if (currentLanguage === "spanish") {
           <div class="partenaires-container">
           <div>
  <nav class="menu-mobile2">
-            <ul class="menu">
+            <ul class="menu2">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
         <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture et Fermetures 🕖</a></li>
