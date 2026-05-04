@@ -45,7 +45,7 @@
 
 <div class="center">
     <div class="maintenance-box">
-        <h2>🧩 My Services</h2>
+        <h2>🧩 My Services :</h2>
     </div>
 </div>
 
@@ -74,7 +74,7 @@
 
 <div class="center">
     <div class="maintenance-box">
-        <h2>🪄 Why choose Studio PF?</h2>
+        <h2>🪄 Why choose Studio PF ?</h2>
         <ul>
             <li>🎨 <strong>Custom painting</strong>: each project is tailored to your universe and budget.</li>
             <li>🔧 <strong>Careful preparation</strong>: assembly, cleaning, priming — everything is mastered.</li>
@@ -135,7 +135,7 @@
 
 <div class="center">
     <div class="maintenance-box">
-        <h2>🧩 Mis Servicios</h2>
+        <h2>🧩 Mis Servicios :</h2>
     </div>
 </div>
 
@@ -164,7 +164,7 @@
 
 <div class="center">
     <div class="maintenance-box">
-        <h2>🪄 ¿Por qué elegir Studio PF?</h2>
+        <h2>🪄 ¿Por qué elegir Studio PF ?</h2>
         <ul>
             <li>🎨 <strong>Pintura a medida</strong>: cada proyecto se adapta a tu universo y presupuesto.</li>
             <li>🔧 <strong>Preparación cuidadosa</strong>: montaje, limpieza, imprimación, todo está controlado.</li>
@@ -227,7 +227,7 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
          
       <div class="center">
             <div class="maintenance-box">
-        <h2>🧩 Mes Services</h2>
+        <h2>🧩 Mes Services :</h2>
   </div>
 </div>
 
@@ -259,8 +259,8 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
 
 <div class="center">
             <div class="maintenance-box">
- <h2>🪄 Pourquoi choisir Studio PF?</h2>
-  <ul>
+ <h2>🪄 Pourquoi choisir Studio PF ?</h2>
+  <ul> 
     <li>🎨 <strong>Peinture sur mesure</strong> : chaque projet est adapté à votre univers et votre budget.</li>
     <li>🔧 <strong>Préparation soignée</strong> : montage, nettoyage, sous-couche, tout est maîtrisé.</li>
     <li>🧪 <strong>Socles immersifs & bits 3D</strong> : pour un rendu unique et réaliste.</li>
@@ -985,6 +985,7 @@ function changelanguefoot() {
 
    if (currentLanguage === "english") {
     html = `
+     <div class="center">
      <nav class="menu-mobile">
         <ul class="menu">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
@@ -996,15 +997,15 @@ function changelanguefoot() {
                 <button id="scrollToTopBtn" title="Back to top ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
 
-<div class="footer">
-  <div class="center">
+
+ 
  <div class="maintenance-box">
   <strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
 
   <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Phone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-</div></div>
+</div>
   <p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
 </div>
 
@@ -1014,6 +1015,7 @@ function changelanguefoot() {
 } 
 else if (currentLanguage === "spanish") {
     html = `
+     <div class="center">
      <nav class="menu-mobile">
         <ul class="menu">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
@@ -1025,15 +1027,14 @@ else if (currentLanguage === "spanish") {
                 <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
-<div class="footer">
-  <div class="center">
+
  <div class="maintenance-box">
   <strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
 
   <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Teléfono 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-</div></div>
+</div>
   <p>Sitio web de presentación creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
 </div>
 
@@ -1042,7 +1043,7 @@ else if (currentLanguage === "spanish") {
     `;
     } else {
         html = ` 
-             <div id="foot-contenu">
+          <div class="center">
         
  <nav class="menu-mobile">
             <ul class="menu">
@@ -1057,14 +1058,13 @@ else if (currentLanguage === "spanish") {
        
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
-              <div class="footer">
-                <div class="center">
+             
                <div class="maintenance-box">
       <strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
         <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-         </div>  </div>
+         </div>  
    <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
   </div>
      
