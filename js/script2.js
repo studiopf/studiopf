@@ -14,143 +14,200 @@
 
     if (currentLanguage === "english") {
         html = `
-      
-            <div class="center">
+      <div class="center">
     <div class="maintenance-box">
-        <p>Studio PF is currently temporarily closed in order to reorganize and improve the quality of its miniature painting services.</p>
 
-        <p>Following an unexpected interruption that caused significant delays, I have chosen to restart on stronger foundations, with a new approach focused on quality rather than quantity.</p>
+        <h2>🎨 Turn your miniatures into true works of art</h2>
+        <p>High-end painting for enthusiasts, collectors, and demanding players.</p>
+        <p>Your miniatures deserve more than just a simple brushstroke!</p>
+        
+        <p>At <strong>Studio PF</strong>, every project becomes a unique collector’s piece.</p>
 
-        <p>From now on, Studio PF is dedicated exclusively to high-end work: each miniature receives extended attention (minimum 2 hours for basic infantry, and 5 to 8 hours for characters and skirmish miniatures).</p>
-
-        <p class="highlight">→ Reopening in January 2027 ←</p>
-
-        <p>Bookings are already open: feel free to contact me for your miniature painting projects and to plan your future orders.</p>
-
-        <a href="mailto:studiopeinturefigurine@gmail.com">→ Contact Studio PF for your projects ←</a>
-
-        <p>
-            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-                Request a quote ➜
-            </a>
-        </p>
     </div>
 </div>
-            <div class="center">
-                <div class="maintenance-box">
-                    <h2>🎨 Transform your miniatures into true works of art</h2>
-                    <p>High-end painting for enthusiasts, collectors and demanding players.</p>
-                    <p>Your miniatures deserve better than a simple brush stroke!</p>
-                    <p>At <strong>Studio PF</strong>, each project becomes a unique collectible piece.</p>
-                </div>
-            </div>
-            <div class="center">
-                <div class="maintenance-box">
-  <h2>👋 Who’s behind the brush?</h2>
-  <p>I’m <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
-  A passionate painter and founder of Studio PF.<br><br>
 
-  I’ve been involved in miniature painting since 2020 — it all started a bit by chance.<br>
-  Covid turned this hobby into a true artistic journey.<br>
+<div class="center">
+    <div class="maintenance-box">
+        <h2>👋 Who’s behind the brushes?</h2>
+        <p>I’m <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
+        passionate painter and founder of Studio PF.<br><br>
+        In the miniature world since 2020, this hobby started somewhat by chance.<br>
+        Covid turned this passion into a true artistic journey.<br>
+        Today, I work with acrylics, pigments, and oils, with a style that brings miniatures to life.<br><br>
 
-  Today, I work with acrylics, pigments, and oils, developing a style that brings miniatures to life.<br><br>
+        My goal: make your miniatures come alive as if they were real.</p>
 
-  My goal: to make your miniatures feel alive, as if they were coming to life.</p>
+        <blockquote>“Every miniature tells a story. My role is to make it shine.” ✨</blockquote>
 
-  <blockquote>“Every miniature tells a story. My role is to make it shine.” ✨</blockquote>
-
-  <p>
-    <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">
-      Learn more about my journey ➜
-    </a>
-  </p>
+        <p><a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">Learn more about my journey ➜</a></p>
+    </div>
 </div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h2>🧩 My Services</h2>
+    </div>
 </div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h3>⚔️ Advanced TableTop</h3>
+        <p>👉 For demanding players who want a stunning result without sacrificing playability.</p>
+        <ul>
+            <li>Levels: TableTop + and TableTop ++ (Gold & Diamond equivalents)</li>
+            <li>Precise and contrasted painting</li>
+            <li>Detailed basing</li>
+            <li>Customization options</li>
+        </ul>
+        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); scrollToTop(); return false;">Discover the painting service ➜</a></p>
+    </div>
+</div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h3>🧠 Training & Painting Coaching</h3>
+        <p>👉 Learn professional techniques: lighting, basing, blending, finishing touches.  
+        Personalized sessions, online or in workshop.</p>
+        <p><a href="formation.html" class="button" onclick="loadPage('formation.html'); scrollToTop(); return false;">Discover training ➜</a></p>
+    </div>
+</div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h2>🪄 Why choose Studio PF?</h2>
+        <ul>
+            <li>🎨 <strong>Custom painting</strong>: each project is tailored to your universe and budget.</li>
+            <li>🔧 <strong>Careful preparation</strong>: assembly, cleaning, priming — everything is mastered.</li>
+            <li>🧪 <strong>Immersive bases & 3D bits</strong>: for a unique and realistic result.</li>
+            <li>💬 <strong>Transparent client follow-up</strong>: progress photos, direct contact, personalized advice.</li>
+            <li>🚚 <strong>Secure shipping</strong> via Colissimo or hand delivery.</li>
+        </ul>
+        <p>You receive a ready-to-display piece, durable and fully tailored to you.</p>
+    </div>
+</div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h2>⚙️ How does it work?</h2>
+        <ol>
+            <li>Contact me / request a quote.</li>
+            <li>Send or drop off your miniatures.</li>
+            <li>I handle assembly and painting.</li>
+            <li>I deliver once the photos are approved.</li>
+        </ol>
+        <p>Simple, transparent, and 100% passion.</p>
+
+        <p><a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote ➜</a></p>
+    </div>
+</div>
+         
         `;
     } else if (currentLanguage === "spanish") {
         html = `
-      
-         <div class="center">
+      <div class="center">
     <div class="maintenance-box">
-        <p>Studio PF se encuentra actualmente cerrado temporalmente con el fin de reorganizarse y mejorar la calidad de sus servicios de pintura de miniaturas.</p>
 
-        <p>Tras una interrupción imprevista que generó retrasos importantes, he decidido retomar la actividad sobre bases más sólidas, con un nuevo enfoque centrado en la calidad en lugar de la cantidad.</p>
+        <h2>🎨 Transforma tus miniaturas en verdaderas obras de arte</h2>
+        <p>Pintura de alta gama para aficionados, coleccionistas y jugadores exigentes.</p>
+        <p>¡Tus miniaturas merecen más que una simple pincelada!</p>
+        
+        <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
 
-        <p>A partir de ahora, Studio PF se dedica exclusivamente a trabajos de alto nivel: cada miniatura recibe un tiempo de trabajo más dedicado (mínimo 2 horas para infantería básica, y de 5 a 8 horas para personajes y miniaturas de escaramuzas).</p>
-
-        <p class="highlight">→ Reapertura prevista en enero de 2027 ←</p>
-
-        <p>Las reservas ya están abiertas: puedes contactarme para tus proyectos de pintura de miniaturas y planificar tus futuros pedidos.</p>
-
-        <a href="mailto:studiopeinturefigurine@gmail.com">→ Contacta con Studio PF para tus proyectos ←</a>
-
-        <p>
-            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-                Solicitar un presupuesto ➜
-            </a>
-        </p>
     </div>
 </div>
-            <div class="center">
-                <div class="maintenance-box">
-                    <h2>🎨 Transforma tus miniaturas en verdaderas obras de arte</h2>
-                    <p>Pintura de alta gama para entusiastas, coleccionistas y jugadores exigentes.</p>
-                    <p>¡Tus miniaturas merecen más que un simple pincelada!</p>
-                    <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
-                </div>
-            </div>
-             <div class="center">
-               <div class="maintenance-box">
-  <h2>👋 ¿Quién está detrás de los pinceles?</h2>
-  <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
-  Pintor apasionado y fundador de Studio PF.<br><br>
 
-  Formo parte del mundo de las miniaturas desde 2020 — todo comenzó un poco por casualidad.<br>
-  El Covid transformó este hobby en una verdadera búsqueda artística.<br>
+<div class="center">
+    <div class="maintenance-box">
+        <h2>👋 ¿Quién está detrás de los pinceles?</h2>
+        <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
+        pintor apasionado y fundador de Studio PF.<br><br>
+        En el mundo de las miniaturas desde 2020, este hobby comenzó un poco por casualidad.<br>
+        El Covid transformó esta pasión en una verdadera búsqueda artística.<br>
+        Hoy trabajo con acrílicos, pigmentos y óleos, con un estilo que hace vibrar las miniaturas.<br><br>
 
-  Hoy trabajo con acrílicos, pigmentos y óleos, desarrollando un estilo que da vida a las miniaturas.<br><br>
+        Mi objetivo: hacer que tus miniaturas cobren vida.</p>
 
-  Mi objetivo: hacer que tus miniaturas cobren vida.</p>
+        <blockquote>“Cada miniatura cuenta una historia. Mi papel es hacerla brillar.” ✨</blockquote>
 
-  <blockquote>“Cada miniatura cuenta una historia. Mi papel es hacerla brillar.” ✨</blockquote>
-
-  <p>
-    <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">
-      Saber más sobre mi trayectoria ➜
-    </a>
-  </p>
+        <p><a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">Descubrir mi trayectoria ➜</a></p>
+    </div>
 </div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h2>🧩 Mis Servicios</h2>
+    </div>
 </div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h3>⚔️ TableTop Avanzado</h3>
+        <p>👉 Para jugadores exigentes que quieren un resultado espectacular sin sacrificar la jugabilidad.</p>
+        <ul>
+            <li>Niveles: TableTop + y TableTop ++ (equivalentes a Oro y Diamante)</li>
+            <li>Pintura precisa y contrastada</li>
+            <li>Peanas trabajadas</li>
+            <li>Opciones de personalización</li>
+        </ul>
+        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); scrollToTop(); return false;">Descubrir el servicio de pintura ➜</a></p>
+    </div>
+</div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h3>🧠 Formación & Coaching de pintura</h3>
+        <p>👉 Aprende técnicas profesionales: iluminación, peanas, degradados, acabados.  
+        Sesiones personalizadas, online o en taller.</p>
+        <p><a href="formation.html" class="button" onclick="loadPage('formation.html'); scrollToTop(); return false;">Descubrir las formaciones ➜</a></p>
+    </div>
+</div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h2>🪄 ¿Por qué elegir Studio PF?</h2>
+        <ul>
+            <li>🎨 <strong>Pintura a medida</strong>: cada proyecto se adapta a tu universo y presupuesto.</li>
+            <li>🔧 <strong>Preparación cuidadosa</strong>: montaje, limpieza, imprimación, todo está controlado.</li>
+            <li>🧪 <strong>Peanas inmersivas y bits 3D</strong>: para un resultado único y realista.</li>
+            <li>💬 <strong>Seguimiento transparente</strong>: fotos del progreso, contacto directo, asesoramiento personalizado.</li>
+            <li>🚚 <strong>Envío seguro</strong> por Colissimo o entrega en mano.</li>
+        </ul>
+        <p>Recibes una pieza lista para exhibir, duradera y totalmente a tu medida.</p>
+    </div>
+</div>
+
+<div class="center">
+    <div class="maintenance-box">
+        <h2>⚙️ ¿Cómo funciona?</h2>
+        <ol>
+            <li>Contáctame / solicita un presupuesto.</li>
+            <li>Envía o entrega tus miniaturas.</li>
+            <li>Realizo el montaje y la pintura.</li>
+            <li>Entrega tras validación de las fotos.</li>
+        </ol>
+        <p>Simple, transparente y 100% pasión.</p>
+
+        <p><a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto ➜</a></p>
+    </div>
+</div>
+       
         `;
     } else {
         html = `
         
-    <div class="center">
+  <div class="center">
             <div class="maintenance-box">
-        <p>Le Studio PF est actuellement temporairement fermé afin de repenser son organisation et d'améliorer la qualité des prestations en peinture sur figurine.</p>
 
-<p>Suite à une interruption imprévue ayant entraîné du retard, j’ai fait le choix de repartir sur des bases plus solides, avec une nouvelle approche centrée sur la qualité plutôt que la quantité.</p>
+                <h2>🎨 Transformez vos figurines en véritables œuvres d’art</h2>
+  <p>Peinture haut de gamme pour passionnés, collectionneurs et joueurs exigeants.</p>
+  <p>Vos figurines méritent mieux qu’un simple coup de pinceau !</p>
+      
+  <p>Chez <strong>Studio PF</strong>, chaque projet devient une pièce unique de collection.</p>
 
-<p>Désormais, le Studio PF se consacre exclusivement à des réalisations de niveau supérieur : chaque figurine bénéficie d’un temps de travail approfondi (minimum 2h pour l’infanterie, et 5 à 8h pour les personnages et figurines d’escarmouche).</p>
-
-<p class="highlight">→ Réouverture prévue en janvier 2027 ←</p>
-
-<p>Les réservations sont d’ores et déjà ouvertes : vous pouvez me contacter pour vos projets de peinture figurine et planifier vos futures commandes.</p>
-
- <a href="mailto:studiopeinturefigurine@gmail.com">→ Contactez le Studio PF pour vos projets ←</a>
-                   <p><a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis ➜</a> </p>
-                
-                        </div>
+        </div>
     </div>
-            <div class="center">
-                <div class="maintenance-box">
-                    <h2>🎨 Transformez vos figurines en véritables œuvres d’art</h2>
-                    <p>Peinture haut de gamme pour passionnés, collectionneurs et joueurs exigeants.</p>
-                    <p>Vos figurines méritent mieux qu’un simple coup de pinceau !</p>
-                    <p>Chez <strong>Studio PF</strong>, chaque projet devient une pièce unique de collection.</p>
-                </div>
-            </div>
-            <div class="center">
+
+                     <div class="center">
                 <div class="maintenance-box">
   <h2>👋 Qui se cache derrière les pinceaux ?</h2>
   <p>Je suis  <strong>Pierre-François, alias PF, <span id="pf-age">39</span> ans. </strong><br>
@@ -164,7 +221,70 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
   <blockquote>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</blockquote>
   <p>  <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">En savoir plus sur mon parcours ➜</a></p>
 </div>
+                   </div>
+
+      
+         
+      <div class="center">
+            <div class="maintenance-box">
+        <h2>🧩 Mes Services</h2>
+  </div>
 </div>
+
+      
+      <div class="center">
+            <div class="maintenance-box">
+    <h3>⚔️ TableTop Supérieur</h3>
+    <p>👉 Pour les joueurs exigeants qui veulent un rendu magnifique sans sacrifier la jouabilité.</p>
+    <ul>
+      <li>Niveaux : TableTop + et TableTop ++ (équivalents Gold & Diamant)</li>
+      <li>Peinture précise et contrastée</li>
+      <li>Soclage travaillé</li>
+      <li>Options de personnalisation</li>
+    </ul>
+    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); scrollToTop(); return false;">Découvrir le service peinture ➜</a></p>
+  </div>
+</div>
+
+      
+      <div class="center">
+            <div class="maintenance-box">
+    <h3>🧠 Formations & Coaching peinture</h3>
+    <p>👉 Apprenez les techniques pros : gestion des lumières, soclage, dégradés, finitions.  
+    Séances personnalisées, en ligne ou en atelier.</p>
+    <p><a href="formation.html" class="button"  onclick="loadPage('formation.html'); scrollToTop(); return false;">Découvrir les formations ➜</a></p>
+  </div>
+</div>
+
+
+<div class="center">
+            <div class="maintenance-box">
+ <h2>🪄 Pourquoi choisir Studio PF?</h2>
+  <ul>
+    <li>🎨 <strong>Peinture sur mesure</strong> : chaque projet est adapté à votre univers et votre budget.</li>
+    <li>🔧 <strong>Préparation soignée</strong> : montage, nettoyage, sous-couche, tout est maîtrisé.</li>
+    <li>🧪 <strong>Socles immersifs & bits 3D</strong> : pour un rendu unique et réaliste.</li>
+    <li>💬 <strong>Suivi client transparent</strong> : photos d’avancement, contact direct, conseils personnalisés.</li>
+    <li>🚚 <strong>Expédition sécurisée</strong> via Colissimo ou remise en main propre.</li>
+  </ul>
+  <p>Vous recevez une pièce prête à exposer, durable et totalement à votre image.</p>
+      </div>
+</div>      
+
+         <div class="center">
+            <div class="maintenance-box">
+  <h2>⚙️ Comment ça marche ?</h2>
+  <ol>
+    <li>Contactez-moi / demandez un devis.</li>
+    <li>Envoyez ou déposez vos figurines.</li>
+    <li>Je réalise le montage et peinture.</li>
+    <li>Je vous livre les figurines une fois les photos validées.</li>
+  </ol>
+  <p>Simple, transparent, et 100% passion.</p>
+     
+    <p><a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis ➜</a> </p>
+        </div>
+    </div>
         `;
     }
 
@@ -2445,7 +2565,7 @@ function changelanguelogo() {
          <div class="cardlogo">
          <div class="maintenance-box">
             <h1>Dare the artistic adventure!</h1>
-            <p>Reopening:</p>
+            <p>Availability:</p>
             <p class="highlight">→ early January 2027 ←</p>
             </div></div>
 
@@ -2464,7 +2584,7 @@ function changelanguelogo() {
          <div class="cardlogo">
          <div class="maintenance-box">
           <h1>¡Atrévete a la aventura artística!</h1>
-            <p>Reapertura:</p>
+            <p>Disponibilidad:</p>
             <p class="highlight">→ principios de Enero de 2027 ←</p>
             </div></div>
 
@@ -2483,7 +2603,7 @@ function changelanguelogo() {
          <div class="cardlogo">
          <div class="maintenance-box">
             <h1>Osez l'aventure artistique !</h1>
-     <p>Réouverture :</p>
+     <p>Disponibilité :</p>
           <p class="highlight">→ début Janvier 2027 ←</p>
             </div></div>
 
