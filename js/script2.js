@@ -2435,10 +2435,11 @@ function changelanguelogo() {
          </a>    
 </div>
          <div class="cardlogo">
+         <div class="maintenance-box">
             <h1>Dare the artistic adventure!</h1>
             <p>Reopening:</p>
             <p class="highlight">→ early January 2027 ←</p>
-            </div>
+            </div></div>
 
         `;
     } 
@@ -2453,10 +2454,11 @@ function changelanguelogo() {
          </a>    
 </div>
          <div class="cardlogo">
+         <div class="maintenance-box">
           <h1>¡Atrévete a la aventura artística!</h1>
             <p>Reapertura:</p>
             <p class="highlight">→ principios de Enero de 2027 ←</p>
-            </div>
+            </div></div>
 
         `;
     } 
@@ -2471,10 +2473,11 @@ function changelanguelogo() {
          </a>    
 </div>
          <div class="cardlogo">
+         <div class="maintenance-box">
             <h1>Osez l'aventure artistique !</h1>
      <p>Réouverture :</p>
           <p class="highlight">→ début Janvier 2027 ←</p>
-            </div>
+            </div></div>
 
         `;
     }
