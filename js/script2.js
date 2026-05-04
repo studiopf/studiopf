@@ -970,7 +970,7 @@ function changelanguefoot() {
 
    if (currentLanguage === "english") {
     html = `
-     <div class="center">
+    <div class="partenaires-container">
        <div>
      <nav class="menu-mobile">
         <ul class="menu">
@@ -980,7 +980,7 @@ function changelanguefoot() {
     
         </ul>
                 </nav>
-                  <div>
+                  </div>
                 <button id="scrollToTopBtn" title="Back to top ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
 
@@ -993,6 +993,7 @@ function changelanguefoot() {
 
   <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Phone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
 </div>
+
  <p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
 </div>
 
@@ -1002,7 +1003,7 @@ function changelanguefoot() {
 } 
 else if (currentLanguage === "spanish") {
     html = `
-     <div class="center">
+    <div class="partenaires-container">
        <div>
      <nav class="menu-mobile">
    
@@ -1033,7 +1034,7 @@ else if (currentLanguage === "spanish") {
     `;
     } else {
         html = ` 
-          <div class="center">
+          <div class="partenaires-container">
           <div>
  <nav class="menu-mobile">
             <ul class="menu">
@@ -1043,7 +1044,7 @@ else if (currentLanguage === "spanish") {
                 
 </ul>  
         </nav>
-  <div>
+  </div>
    
        
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
