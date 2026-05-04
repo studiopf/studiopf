@@ -124,6 +124,11 @@
     margin-bottom: 5px;
     font-size: 18px;
 }
+.menu2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
 
 .menu-mobile {
     margin-top: 20px;
@@ -1084,6 +1089,12 @@ nav ul li a:hover {
     margin-bottom: 5px;
     font-size: 24px;
 }
+   .menu2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
 
    .menu-mobile {
     margin-top: 24px;
@@ -1179,6 +1190,11 @@ h1 {
         width: 18px;
     }
    .menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+      .menu2 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 14px;
