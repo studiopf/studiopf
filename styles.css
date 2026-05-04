@@ -339,6 +339,7 @@ a:hover,
    ========================================================================== */
 .partenaires-container,
 .card-container2 {
+   margin-top: 5px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 12px;
@@ -494,7 +495,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 10px;
     padding: 0rem 0 0rem;
-    margin-top: 0;
+ 
     margin-bottom: 0;
 }
 
