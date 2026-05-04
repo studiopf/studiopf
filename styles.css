@@ -1103,28 +1103,26 @@ nav ul li a:hover {
     justify-content: center;
     font-size: 24px;
 }
-   .menu-mobile2 .menu2 {
-    display: block;
+.menu-mobile2 .menu2 {
+    display: flex !important;
+    flex-direction: column !important;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
-   .menu-mobile2 {
-    margin-top: 20px;
-    margin-bottom: 25px;
+.menu-mobile2 .menu2 li {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-    font-size: 18px;
-}
-   .menu-mobile2 .menu2 li {
+.menu-mobile2 .menu2 li a {
     display: block;
     width: 100%;
-    margin-bottom: 10px; /* espace entre les lignes */
+    text-align: center;
 }
-   .menu-mobile2 .menu2 li a {
-    display: block;
-    width: 100%;
-    text-align: center; /* optionnel */
-}
+ 
    .logo {
         width: 150px;          /* ← agrandi (au lieu de 150px) */
         max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
