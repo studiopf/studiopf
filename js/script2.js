@@ -993,7 +993,7 @@ function changelanguefoot() {
 
   <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Phone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
 </div>
-
+ <p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
 </div>
 
 
@@ -1025,7 +1025,7 @@ else if (currentLanguage === "spanish") {
 
   <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Teléfono 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
 </div>
-
+  <p>Sitio web de presentación creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
 </div>
 
 
@@ -1055,7 +1055,7 @@ else if (currentLanguage === "spanish") {
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
         <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> - Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
          </div>  
- 
+  <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
   </div>
      
         <!-- Bouton de retour en haut -->
