@@ -986,7 +986,7 @@ function changelanguefoot() {
 
 
 
- <div class="maintenance-box">
+ <div class="footer">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
@@ -1020,7 +1020,7 @@ else if (currentLanguage === "spanish") {
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
 
- <div class="maintenance-box">
+ <div class="footer">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
@@ -1052,7 +1052,7 @@ else if (currentLanguage === "spanish") {
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
              
-               <div class="maintenance-box">
+               <div class="footer">
      <p><strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
