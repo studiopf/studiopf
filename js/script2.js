@@ -201,11 +201,11 @@ function changelanguepeinture() {
             <em>⏱️ 5 to 8h per miniature</em>
         </li>
     </ul>
-
-    <p><strong>⚠️ Intentionally limited production to guarantee quality.</strong></p>
-
-   
+  
 </div>
+        <div class="banniere">
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    </div>
 <div class="maintenance-box">
 <h3>Preparation (included) 🛠️</h3>
 <ul>
@@ -415,11 +415,11 @@ Personalized support for every project.
         </li>
     </ul>
 
-    <p><strong>⚠️ Producción voluntariamente limitada para garantizar la calidad.</strong></p>
-
-   
 
 </div>
+        <div class="banniere">
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
+    </div>
 <div class="maintenance-box">
 <h3>Preparación (incluida) 🛠️</h3>
 <ul>
@@ -629,11 +629,13 @@ Acompañamiento personalizado para cada proyecto.
         </li>
     </ul>
 
-    <p><strong>⚠️ Production volontairement limitée pour garantir la qualité.</strong></p>
-
   
 
 </div>
+        <div class="banniere">
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+    </div>
+    
 <div class="maintenance-box">
        <h3>Préparation (incluse) 🛠️</h3>
 <ul>
