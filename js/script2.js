@@ -59,7 +59,7 @@
             <li>Detailed basing</li>
             <li>Customization options</li>
         </ul>
-        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); scrollToTop(); return false;">Discover the painting service ➜</a></p>
+        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Discover the painting service ➜</a></p>
     </div>
 </div>
 
@@ -149,7 +149,7 @@
             <li>Peanas trabajadas</li>
             <li>Opciones de personalización</li>
         </ul>
-        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); scrollToTop(); return false;">Descubrir el servicio de pintura ➜</a></p>
+        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Descubrir el servicio de pintura ➜</a></p>
     </div>
 </div>
 
@@ -242,7 +242,7 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
       <li>Soclage travaillé</li>
       <li>Options de personnalisation</li>
     </ul>
-    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); changelanguepeinturecommission(); scrollToTop(); return false;">Découvrir le service peinture ➜</a></p>
+    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Découvrir le service peinture ➜</a></p>
   </div>
 </div>
 
