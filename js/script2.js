@@ -1020,7 +1020,7 @@ else if (currentLanguage === "spanish") {
                 <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
- <div class="foot">
+ <div class="footer">
  <div class="maintenance-box">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
@@ -1052,7 +1052,7 @@ else if (currentLanguage === "spanish") {
        
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
-              <div class="foot">
+              <div class="footer">
                <div class="maintenance-box">
      <p><strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
