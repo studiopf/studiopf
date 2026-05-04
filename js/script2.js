@@ -1009,7 +1009,7 @@ function changelanguepartenaires() {
             </a>
         </div>
         <div class="ppartenaire">
-            <p>3D printed scenery for immersive gaming sessions.<br><br><strong></strong></p>
+          <p>Modular 3D-printed scenery for immersive gameplay.<br>-10% on all printed models<br>with the promo code:<br><strong>STUDIOPF10</strong></p>
         </div>
     </div>
 
@@ -1067,7 +1067,7 @@ else if (currentLanguage === "spanish") {
             </a>
         </div>
         <div class="ppartenaire">
-            <p>Escenografía impresa en 3D para partidas inmersivas.<br><br><strong></strong></p>
+          <p>Escenografía modular impresa en 3D para partidas inmersivas.<br>-10% en todos los modelos impresos<br>con el código promocional:<br><strong>STUDIOPF10</strong></p>
         </div>
     </div>
 
@@ -1125,7 +1125,7 @@ else if (currentLanguage === "spanish") {
           <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo">        </a>
           </div>
               <div class="ppartenaire">
-             <p>Des décors en impression 3D pour des parties immersives.<br><br> <strong></strong></p>
+             <p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><strong>STUDIOPF10</strong></p>
              </div>
         </div>
  `;
