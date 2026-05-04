@@ -971,6 +971,7 @@ function changelanguefoot() {
    if (currentLanguage === "english") {
     html = `
      <div class="center">
+       <div>
      <nav class="menu-mobile">
         <ul class="menu">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
@@ -979,6 +980,7 @@ function changelanguefoot() {
     
         </ul>
                 </nav>
+                  <div>
                 <button id="scrollToTopBtn" title="Back to top ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
 
@@ -1001,7 +1003,9 @@ function changelanguefoot() {
 else if (currentLanguage === "spanish") {
     html = `
      <div class="center">
+       <div>
      <nav class="menu-mobile">
+   
         <ul class="menu">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
@@ -1009,6 +1013,7 @@ else if (currentLanguage === "spanish") {
  
         </ul>
                 </nav>
+                 </div>
                 <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
@@ -1029,7 +1034,7 @@ else if (currentLanguage === "spanish") {
     } else {
         html = ` 
           <div class="center">
-        
+          <div>
  <nav class="menu-mobile">
             <ul class="menu">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
@@ -1038,7 +1043,7 @@ else if (currentLanguage === "spanish") {
                 
 </ul>  
         </nav>
-
+  <div>
    
        
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
