@@ -970,7 +970,7 @@ function changelanguefoot() {
 
    if (currentLanguage === "english") {
     html = `
-    <div class="partenaires-container">
+  
        <div>
      <nav class="menu-mobile2">
         <ul class="menu2">
@@ -985,7 +985,7 @@ function changelanguefoot() {
 <button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
 
 
- 
+  <div class="center">
  <div class="maintenance-box">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
@@ -1005,7 +1005,7 @@ function changelanguefoot() {
 } 
 else if (currentLanguage === "spanish") {
     html = `
-    <div class="partenaires-container">
+   
        <div>
      <nav class="menu-mobile2">
    
@@ -1020,7 +1020,7 @@ else if (currentLanguage === "spanish") {
                 <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
-
+ <div class="center">
  <div class="maintenance-box">
   <p><strong>STUDIO PF</strong><br>
   Frasse Pierre-François<br>
@@ -1038,7 +1038,7 @@ else if (currentLanguage === "spanish") {
     `;
     } else {
         html = ` 
-          <div class="partenaires-container">
+       
           <div>
  <nav class="menu-mobile2">
             <ul class="menu2">
@@ -1053,7 +1053,7 @@ else if (currentLanguage === "spanish") {
        
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
-             
+              <div class="center">
                <div class="maintenance-box">
      <p><strong>STUDIO PF</strong><br>
       Frasse Pierre-François<br>
