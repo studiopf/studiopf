@@ -184,7 +184,6 @@ function changelangueforma() {
         html = `     <div class="maintenance-box">
         <h3>🎨 Formation Peinture sur Figurines</h3>
     <p>Rejoignez <strong>Studio Peinture Figurine</strong> en cours personnalisés, pour débutant ou avancé !</p>
-    <p>Premier pas ? Découvrez les premières <a href="premierpas.html" onclick="loadPage('premierpas.html'); return false;">informations théoriques en peinture sur figurine. 🎨</a></p>
     <p>Venez découvrir le pinceau et l’aérographe, et créez des œuvres uniques.</p>
     </div>
 
