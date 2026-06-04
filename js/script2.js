@@ -22,7 +22,7 @@
         <p>Your miniatures deserve more than just a simple brushstroke!</p>
         
         <p>At <strong>Studio PF</strong>, every project becomes a unique collector’s piece.</p>
-
+    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Discover Our Painting Service ➜</a></p>
     </div>
 </div>
 
@@ -55,7 +55,7 @@
             <li>Detailed basing</li>
             <li>Customization options</li>
         </ul>
-        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Discover the painting service ➜</a></p>
+        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Discover our painting service ➜</a></p>
     </div>
 </div>
 
@@ -108,7 +108,7 @@
         <p>¡Tus miniaturas merecen más que una simple pincelada!</p>
         
         <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
-
+    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Descubre nuestro servicio de pintura ➜</a></p>
     </div>
 </div>
 
@@ -140,7 +140,7 @@
             <li>Peanas trabajadas</li>
             <li>Opciones de personalización</li>
         </ul>
-        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Descubrir el servicio de pintura ➜</a></p>
+        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Descubre nuestro servicio de pintura ➜</a></p>
     </div>
 </div>
 
@@ -194,7 +194,7 @@
   <p>Vos figurines méritent mieux qu’un simple coup de pinceau !</p>
       
   <p>Chez <strong>Studio PF</strong>, chaque projet devient une pièce unique de collection.</p>
-
+    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Découvrir le service peinture ➜</a></p>
         </div>
     </div>
 
