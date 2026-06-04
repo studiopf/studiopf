@@ -505,7 +505,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0px;
     padding: 0rem 0 0rem;
  
     margin-bottom: 0;
