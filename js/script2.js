@@ -50,7 +50,7 @@
         <h3>⚔️ Advanced TableTop</h3>
         <p>👉 For demanding players who want a stunning result without sacrificing playability.</p>
         <ul>
-            <li>Levels: TableTop + and TableTop ++ (Gold & Diamond equivalents)</li>
+            <li>Levels: Gold & Diamond</li>
             <li>Precise and contrasted painting</li>
             <li>Detailed basing</li>
             <li>Customization options</li>
@@ -135,7 +135,7 @@
         <h3>⚔️ TableTop Avanzado</h3>
         <p>👉 Para jugadores exigentes que quieren un resultado espectacular sin sacrificar la jugabilidad.</p>
         <ul>
-            <li>Niveles: TableTop + y TableTop ++ (equivalentes a Oro y Diamante)</li>
+            <li>Niveles: Gold y Diamante</li>
             <li>Pintura precisa y contrastada</li>
             <li>Peanas trabajadas</li>
             <li>Opciones de personalización</li>
@@ -222,7 +222,7 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
     <h3>⚔️ TableTop Supérieur</h3>
     <p>👉 Pour les joueurs exigeants qui veulent un rendu magnifique sans sacrifier la jouabilité.</p>
     <ul>
-      <li>Niveaux : TableTop + et TableTop ++ (équivalents Gold & Diamant)</li>
+     <li>Niveaux : Gold(niv 3) & Diamant(niv 4)</li>
       <li>Peinture précise et contrastée</li>
       <li>Soclage travaillé</li>
       <li>Options de personnalisation</li>
@@ -1427,8 +1427,8 @@ function initializeCardToggle() {
 // ────────────────────────────────────────────────
 
 const niveauLabels = {
-    niveau1: "Niveau Premium - TableTop+, Qualité supérieur qui va à l'Approfondi : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommendation.",
-    niveau2: "Niveau Fantasia - TableTop++, Qualité supérieur plus Prestige : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
+    niveau1: "Niveau Gold - Niv3, Qualité supérieur : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommendation.",
+    niveau2: "Niveau Diamand - Niv4, Qualité supérieur ultime : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
     expo:   "Niveau Studio : ✨ Limitée et réservée aux passionnés souhaitant le meilleur. Pour la collection en vitrine."
 };
 
