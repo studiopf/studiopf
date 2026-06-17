@@ -293,14 +293,14 @@ function changelanguepeinture() {
 
     <ul>
         <li>
-            <strong>⭐ Premium:</strong><br>
+            <strong>⭐ Gold:</strong><br>
             Clean, high-contrast and immersive finish.<br>
             Ideal for high-end armies and display pieces.<br>
             <em>⏱️ Around 2h+ per miniature</em>
         </li>
 
         <li>
-            <strong>👑 Fantasia:</strong><br>
+            <strong>👑 Diamand:</strong><br>
             Advanced display-level quality, refined details, complex effects.<br>
             Designed for characters, heroes and centerpiece models.<br>
             <em>⏱️ 5 to 8h per miniature</em>
@@ -324,8 +324,8 @@ function changelanguepeinture() {
 <div class="maintenance-box">
 <h3>Painting 🎨</h3>
 <ul>
-    <li><strong>⭐ Premium:</strong> clean blends, strong contrasts, essential details, consistent finish</li>
-    <li><strong>👑 Fantasia:</strong> advanced blending, textures, OSL, NMM, freehand, highly detailed work</li>
+    <li><strong>⭐ Gold:</strong> clean blends, strong contrasts, essential details, consistent finish</li>
+    <li><strong>👑 Diamand:</strong> advanced blending, textures, OSL, NMM, freehand, highly detailed work</li>
 </ul>
 
 <p><strong>🎯 Goal: a realistic, readable and impactful result both from a distance and up close.</strong></p>
@@ -333,12 +333,12 @@ function changelanguepeinture() {
 <div class="maintenance-box">
 <h3>Basing 🌿</h3>
 <ul>
-    <li><strong>Premium:</strong> detailed base consistent with the army</li>
-    <li><strong>Fantasia:</strong> scenic base with 3D elements and visual storytelling</li>
+    <li><strong>Gold:</strong> detailed base consistent with the army</li>
+    <li><strong>Diamand:</strong> scenic base with 3D elements and visual storytelling</li>
 </ul>
 </div>
 <div class="maintenance-box">
-<h2>Premium Service 🤝</h2>
+<h2>Gold Service 🤝</h2>
 
 <p>
 Personalized support for every project.
@@ -358,8 +358,8 @@ Personalized support for every project.
 <thead>
 <tr>
     <th>🎨 Features</th>
-    <th>⭐ Premium</th>
-    <th>👑 Fantasia</th>
+    <th>⭐ Gold</th>
+    <th>👑 Diamand</th>
 </tr>
 </thead>
 <tbody>
@@ -398,8 +398,8 @@ Personalized support for every project.
         <thead>
             <tr>
                 <th>Category</th>
-                <th>Premium</th>
-                <th>Fantasia</th>
+                <th>Gold</th>
+                <th>Diamand</th>
             </tr>
         </thead>
 
@@ -506,14 +506,14 @@ Personalized support for every project.
 
     <ul>
         <li>
-            <strong>⭐ Premium:</strong><br>
+            <strong>⭐ Gold:</strong><br>
             Acabado limpio, contrastado e inmersivo.<br>
             Ideal para ejércitos de alta gama y piezas de exposición.<br>
             <em>⏱️ Aproximadamente 2h+ por miniatura</em>
         </li>
 
         <li>
-            <strong>👑 Fantasia:</strong><br>
+            <strong>👑 Diamand:</strong><br>
             Nivel avanzado de vitrina, detalles muy elaborados, efectos complejos.<br>
             Diseñado para personajes, héroes y piezas principales.<br>
             <em>⏱️ 5 a 8h por miniatura</em>
@@ -538,8 +538,8 @@ Personalized support for every project.
 <div class="maintenance-box">
 <h3>Pintura 🎨</h3>
 <ul>
-    <li><strong>⭐ Premium:</strong> degradados limpios, contrastes marcados, detalles esenciales, acabado homogéneo</li>
-    <li><strong>👑 Fantasia:</strong> degradados avanzados, texturas, OSL, NMM, freehand, detalles muy elaborados</li>
+    <li><strong>⭐ Gold:</strong> degradados limpios, contrastes marcados, detalles esenciales, acabado homogéneo</li>
+    <li><strong>👑 Diamand:</strong> degradados avanzados, texturas, OSL, NMM, freehand, detalles muy elaborados</li>
 </ul>
 
 <p><strong>🎯 Objetivo: un resultado realista, legible e impactante tanto a distancia como de cerca.</strong></p>
@@ -547,12 +547,12 @@ Personalized support for every project.
 <div class="maintenance-box">
 <h3>Peana 🌿</h3>
 <ul>
-    <li><strong>Premium:</strong> peana trabajada y coherente con el ejército</li>
-    <li><strong>Fantasia:</strong> peana escénica con elementos 3D y narrativa visual</li>
+    <li><strong>Gold:</strong> peana trabajada y coherente con el ejército</li>
+    <li><strong>Diamand:</strong> peana escénica con elementos 3D y narrativa visual</li>
 </ul>
 </div>
 <div class="maintenance-box">
-<h2>Servicio Premium 🤝</h2>
+<h2>Servicio Gold 🤝</h2>
 
 <p>
 Acompañamiento personalizado para cada proyecto.
@@ -572,8 +572,8 @@ Acompañamiento personalizado para cada proyecto.
 <thead>
 <tr>
     <th>🎨 Características</th>
-    <th>⭐ Premium</th>
-    <th>👑 Fantasia</th>
+    <th>⭐ Gold</th>
+    <th>👑 Diamand</th>
 </tr>
 </thead>
 <tbody>
@@ -611,8 +611,8 @@ Acompañamiento personalizado para cada proyecto.
         <thead>
             <tr>
                 <th>Categoría</th>
-                <th>Premium</th>
-                <th>Fantasia</th>
+                <th>Gold</th>
+                <th>Diamand</th>
             </tr>
         </thead>
 
@@ -720,14 +720,14 @@ Acompañamiento personalizado para cada proyecto.
 
     <ul>
         <li>
-            <strong>⭐ Premium :</strong><br>
+            <strong>⭐ Gold :</strong><br>
             Finition nette, contrastée et immersive.<br>
             Idéal pour armées haut de gamme et vitrines.<br>
             <em>⏱️ Environ 2h+ par figurine</em>
         </li>
 
         <li>
-            <strong>👑 Fantasia :</strong><br>
+            <strong>👑 Diamand :</strong><br>
             Niveau vitrine avancé, détails poussés, effets complexes.<br>
             Pensé pour personnages, héros et pièces fortes.<br>
             <em>⏱️ 5 à 8h par figurine</em>
@@ -754,8 +754,8 @@ Acompañamiento personalizado para cada proyecto.
 <div class="maintenance-box">
        <h3>Peinture 🎨</h3>
 <ul>
-    <li><strong>⭐ Premium :</strong> dégradés propres, contrastes marqués, détails essentiels, rendu homogène</li>
-    <li><strong>👑 Fantasia :</strong> dégradés avancés, textures, OSL, NMM, freehand, détails poussés</li>
+    <li><strong>⭐ Gold :</strong> dégradés propres, contrastes marqués, détails essentiels, rendu homogène</li>
+    <li><strong>👑 Diamand :</strong> dégradés avancés, textures, OSL, NMM, freehand, détails poussés</li>
 </ul>
 
 <p><strong>🎯 Objectif : un rendu réaliste, lisible et impactant à distance comme de près.</strong></p>
@@ -763,12 +763,12 @@ Acompañamiento personalizado para cada proyecto.
 <div class="maintenance-box">
 <h3>Soclage 🌿</h3>
 <ul>
-    <li><strong>Premium :</strong> socle travaillé et cohérent avec l’armée</li>
-    <li><strong>Fantasia :</strong> socle scénique avec éléments 3D et narration visuelle</li>
+    <li><strong>Gold :</strong> socle travaillé et cohérent avec l’armée</li>
+    <li><strong>Diamand :</strong> socle scénique avec éléments 3D et narration visuelle</li>
 </ul>
     </div>
 <div class="maintenance-box">
-<h2>Service Premium 🤝</h2>
+<h2>Service Gold 🤝</h2>
 
 <p>
 Un accompagnement personnalisé pour chaque projet.
@@ -788,8 +788,8 @@ Un accompagnement personnalisé pour chaque projet.
 <thead>
 <tr>
     <th>🎨 Caractéristiques</th>
-    <th>⭐ Premium</th>
-    <th>👑 Fantasia</th>
+    <th>⭐ Gold</th>
+    <th>👑 Diamand</th>
 </tr>
 </thead>
 <tbody>
@@ -828,8 +828,8 @@ Un accompagnement personnalisé pour chaque projet.
         <thead>
             <tr>
                 <th>Catégorie</th>
-                <th>Premium</th>
-                <th>Fantasia</th>
+                <th>Gold</th>
+                <th>Diamand</th>
             </tr>
         </thead>
 
@@ -1433,8 +1433,8 @@ const niveauLabels = {
 };
 
 const niveauLabelsmini = {
-    niveau1: "Premium",
-    niveau2: "Fantasia",
+    niveau1: "Gold",
+    niveau2: "Diamand",
     expo:    "Pièce d'exposition"
 };
 const tarifheure = 20;
@@ -1953,14 +1953,14 @@ function changelangueconditions() {
     <p>Shipping is handled via Colissimo with tracking and insurance. Shipping costs are the responsibility of the client. Studio PF declines all responsibility for loss or damage after handover to the carrier.</p>
 
     <ul>
-        <li>🚚 Shipping via Colissimo with Fantasia required from €150 value (insurance up to €5000).</li>
+        <li>🚚 Shipping via Colissimo with Diamand required from €150 value (insurance up to €5000).</li>
         <li>📌 Mondial Relay available but with very limited insurance in case of damage or loss/theft (max €500).</li>
         <li>🎁 Free shipping on orders over €3000.</li>
-        <li>By default, Colissimo with Fantasia and insurance is recommended, although uninsured shipping and/or Mondial Relay remain possible.</li>
+        <li>By default, Colissimo with Diamand and insurance is recommended, although uninsured shipping and/or Mondial Relay remain possible.</li>
     </ul>
 
     <ul>
-        <li>📦 Colissimo with Fantasia for shipments valued between €150 and €5000 (assembly + painting + miniature value).</li>
+        <li>📦 Colissimo with Diamand for shipments valued between €150 and €5000 (assembly + painting + miniature value).</li>
         <li>📌 Mondial Relay available but with very limited insurance (max €500).</li>
     </ul>
 </div>
@@ -2030,10 +2030,10 @@ function changelangueconditions() {
 <div class="maintenance-box">
     <h2 class="section-title">9. Production Timeframes</h2>
     <ul>
-        <li>🔧 <strong>Small projects – Premium level (warband, combat patrol, spearhead)</strong>: 2 business months</li>
-        <li>🔧 <strong>Small projects – Fantasia level (warband, combat patrol, spearhead)</strong>: 4 business months</li>
-        <li>⚙️ <strong>Medium to complex projects – Premium & Fantasia (700–1000 pts)</strong>: 4 to 6 business months</li>
-        <li>🏗️ <strong>Large projects – Premium & Fantasia (1500–2000 pts)</strong>: 6 months to 1 year (business time)</li>
+        <li>🔧 <strong>Small projects – Gold level (warband, combat patrol, spearhead)</strong>: 2 business months</li>
+        <li>🔧 <strong>Small projects – Diamand level (warband, combat patrol, spearhead)</strong>: 4 business months</li>
+        <li>⚙️ <strong>Medium to complex projects – Gold & Diamand (700–1000 pts)</strong>: 4 to 6 business months</li>
+        <li>🏗️ <strong>Large projects – Gold & Diamand (1500–2000 pts)</strong>: 6 months to 1 year (business time)</li>
         <li>📦 Timeframes start upon <strong>full receipt of materials</strong> and deposit payment.</li>
         <li>📅 Closure periods and public holidays are <strong>not included</strong> (business time only).</li>
     </ul>
@@ -2177,10 +2177,10 @@ function changelangueconditions() {
 <div class="maintenance-box">
     <h2 class="section-title">9. Plazos de realización</h2>
     <ul>
-        <li>🔧 <strong>Proyectos pequeños – Nivel Premium (banda, combat patrol, spearhead)</strong>: 2 meses laborables</li>
-        <li>🔧 <strong>Proyectos pequeños – Nivel Fantasia (banda, combat patrol, spearhead)</strong>: 4 meses laborables</li>
-        <li>⚙️ <strong>Proyectos medios a complejos – Nivel Premium y Fantasia (700–1000 pts)</strong>: 4 a 6 meses laborables</li>
-        <li>🏗️ <strong>Proyectos grandes – Nivel Premium y Fantasia (1500–2000 pts)</strong>: de 6 meses a 1 año laborable</li>
+        <li>🔧 <strong>Proyectos pequeños – Nivel Gold (banda, combat patrol, spearhead)</strong>: 2 meses laborables</li>
+        <li>🔧 <strong>Proyectos pequeños – Nivel Diamand (banda, combat patrol, spearhead)</strong>: 4 meses laborables</li>
+        <li>⚙️ <strong>Proyectos medios a complejos – Nivel Gold y Diamand (700–1000 pts)</strong>: 4 a 6 meses laborables</li>
+        <li>🏗️ <strong>Proyectos grandes – Nivel Gold y Diamand (1500–2000 pts)</strong>: de 6 meses a 1 año laborable</li>
         <li>📦 Los plazos comienzan tras la <strong>recepción completa del material</strong> y el pago del anticipo.</li>
         <li>📅 Los períodos de cierre y festivos <strong>no se incluyen</strong> (tiempo laborable).</li>
     </ul>
@@ -2249,13 +2249,13 @@ function changelangueconditions() {
             
             <ul>
            
-            <li>🚚 Expédition via Colissimo avec Fantasia à partir de 150€ de valeur (et assurance allant jusqu'à 5000€ de valeur).</li>
+            <li>🚚 Expédition via Colissimo avec Diamand à partir de 150€ de valeur (et assurance allant jusqu'à 5000€ de valeur).</li>
               <li>📌 Mondial Relay possible mais assurance très limité en cas de problèmes comme casse ou perte/vol (max 500€).</li>
             <li>🎁 Frais de port offerts à partir de 3000 € de commande.</li>
-           <li>Par défaut, je conseille le service Colissimo avec Fantasia et option d'assurance même s'il est possible de ne pas garantir l'envoi et/ou d'expédier via Mondial Relay.</li>
+           <li>Par défaut, je conseille le service Colissimo avec Diamand et option d'assurance même s'il est possible de ne pas garantir l'envoi et/ou d'expédier via Mondial Relay.</li>
         </ul>
          <ul>
-            <li>📦 Colissimo avec Fantasia pour les envois de plus de 150 à 5000 € de valeur (valeur presation montage + peinture + valeur des figurines).</li>
+            <li>📦 Colissimo avec Diamand pour les envois de plus de 150 à 5000 € de valeur (valeur presation montage + peinture + valeur des figurines).</li>
             <li>📌 Mondial Relay possible mais assurance très limité en cas de problèmes comme casse ou perte/vol (max 500€).</li>
            
         </ul>
@@ -2327,10 +2327,10 @@ function changelangueconditions() {
 <div class="maintenance-box">
   <h2 class="section-title">9. Délais de Réalisation</h2>
   <ul>
-      <li>🔧 <strong>Petits projets – Niveau Premium (bande, combat patrol, spearhead) </strong> : 2 mois ouvrés</li>
-    <li>🔧 <strong>Petits projets – Niveau Fantasia (bande, combat patrol, spearhead)</strong> : 4 mois ouvrés</li>
-    <li>⚙️ <strong>Projets moyens à complexes – Niveau Premium et Fantasia  (700-1000pts)</strong> : 4 à 6 mois ouvrés</li>
-    <li>🏗️ <strong>Très gros projets – Niveau Premium et Fantasia (1500-2000pts)</strong> : 6 mois à 1 an ouvrés</li>
+      <li>🔧 <strong>Petits projets – Niveau Gold (bande, combat patrol, spearhead) </strong> : 2 mois ouvrés</li>
+    <li>🔧 <strong>Petits projets – Niveau Diamand (bande, combat patrol, spearhead)</strong> : 4 mois ouvrés</li>
+    <li>⚙️ <strong>Projets moyens à complexes – Niveau Gold et Diamand  (700-1000pts)</strong> : 4 à 6 mois ouvrés</li>
+    <li>🏗️ <strong>Très gros projets – Niveau Gold et Diamand (1500-2000pts)</strong> : 6 mois à 1 an ouvrés</li>
     <li>📦 Les délais sont calculés à partir de la <strong>réception complète du matériel</strong> et du paiement des arrhes.</li>
     <li>📅 Les mois de fermeture et jours fériés <strong>ne sont pas comptabilisés</strong> dans les délais (délais ouvrés).</li>
   </ul>
