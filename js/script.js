@@ -664,7 +664,8 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="total" class="cardform">
-            <h3 class="total"><span id="oktotal">0.00</span></h3>
+            <h3 class="total">TOTAL :</h3>
+<h3><span id="oktotal">0.00</span></h3>
 
         </div>
 
@@ -919,7 +920,8 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="total" class="cardform">
-            <h3 class="total"><span id="oktotal">0.00</span></h3>
+          <h3 class="total">TOTAL :</h3>
+<h3><span id="oktotal">0.00</span></h3>
 
         </div>
 
@@ -1154,8 +1156,8 @@ ${prenom} ${nom}`;
                     </div>
 
                     <div id="total" class="cardform">
-                        <h3 class="total"><span id="oktotal">0.00</span></h3>
-
+                      <h3 class="total">TOTAL :</h3>
+<h3><span id="oktotal">0.00</span></h3>
 </div>
                            <div id="message" class="cardform">
                             <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span class="required">*</span></label>
