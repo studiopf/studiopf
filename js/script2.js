@@ -17,11 +17,25 @@
       <div class="center">
     <div class="maintenance-box">
 
-        <h2>🎨 Turn your miniatures into true works of art</h2>
-        <p>High-end painting for enthusiasts, collectors, and demanding players.</p>
-        <p>Your miniatures deserve more than just a simple brushstroke!</p>
-        
-        <p>At <strong>Studio PF</strong>, every project becomes a unique collector’s piece.</p>
+       <h1>Professional Miniature Painter – Studio PF</h1>
+
+<h2>🎨 Warhammer, Display and Collectible Miniature Painting</h2>
+
+<p>
+Specializing in <strong>high-end miniature painting</strong>, Studio PF helps hobbyists, collectors, and gamers bring their miniatures to life with professional-quality finishes.
+</p>
+
+<p>
+Whether you are looking for a <strong>professional miniature painter</strong> for a Warhammer 40,000 army, an Age of Sigmar collection, a display piece, or a unique commission, every project receives meticulous attention and personalized craftsmanship.
+</p>
+
+<p>
+Your miniatures deserve more than a simple coat of paint. Using advanced painting techniques, smooth blends, realistic lighting, weathering effects, and immersive basing, each model is designed to stand out both on the tabletop and in a display cabinet.
+</p>
+
+<p>
+At <strong>Studio PF</strong>, every <strong>miniature painting commission</strong> is created with passion and dedication, transforming your miniatures into true works of art.
+</p>
     <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Discover Our Painting Service ➜</a></p>
     </div>
 </div>
@@ -103,11 +117,25 @@
       <div class="center">
     <div class="maintenance-box">
 
-        <h2>🎨 Transforma tus miniaturas en verdaderas obras de arte</h2>
-        <p>Pintura de alta gama para aficionados, coleccionistas y jugadores exigentes.</p>
-        <p>¡Tus miniaturas merecen más que una simple pincelada!</p>
-        
-        <p>En <strong>Studio PF</strong>, cada proyecto se convierte en una pieza única de colección.</p>
+       <h1>Pintor Profesional de Miniaturas – Studio PF</h1>
+
+<h2>🎨 Pintura de Miniaturas Warhammer, Colección y Exposición</h2>
+
+<p>
+Especializado en la <strong>pintura de miniaturas de alta calidad</strong>, Studio PF ayuda a aficionados, coleccionistas y jugadores a dar vida a sus miniaturas con acabados profesionales.
+</p>
+
+<p>
+Tanto si busca un <strong>pintor profesional de miniaturas</strong> para un ejército de Warhammer 40.000, Age of Sigmar, una pieza de exposición o una miniatura única, cada proyecto recibe una atención meticulosa y un trabajo totalmente personalizado.
+</p>
+
+<p>
+Sus miniaturas merecen mucho más que una simple capa de pintura. Gracias a técnicas avanzadas de iluminación, degradados, efectos de desgaste y escenografía, cada modelo está diseñado para destacar tanto en la mesa de juego como en una vitrina de colección.
+</p>
+
+<p>
+En <strong>Studio PF</strong>, cada <strong>encargo de pintura de miniaturas</strong> se realiza con pasión y dedicación para transformar sus miniaturas en auténticas obras de arte.
+</p>
     <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Descubre nuestro servicio de pintura ➜</a></p>
     </div>
 </div>
@@ -189,11 +217,25 @@
   <div class="center">
             <div class="maintenance-box">
 
-                <h2>🎨 Transformez vos figurines en véritables œuvres d’art</h2>
-  <p>Peinture haut de gamme pour passionnés, collectionneurs et joueurs exigeants.</p>
-  <p>Vos figurines méritent mieux qu’un simple coup de pinceau !</p>
-      
-  <p>Chez <strong>Studio PF</strong>, chaque projet devient une pièce unique de collection.</p>
+              <h1>Peintre sur Figurine Professionnel – Studio PF</h1>
+
+<h2>🎨 Peinture sur Figurines Warhammer, Collection et Exposition</h2>
+
+<p>
+Spécialisé dans la <strong>peinture sur figurines haut de gamme</strong>, Studio PF accompagne les passionnés, collectionneurs et joueurs souhaitant donner vie à leurs armées et pièces de collection.
+</p>
+
+<p>
+Que vous recherchiez un <strong>peintre sur figurine professionnel</strong> pour une armée Warhammer 40K, Age of Sigmar, une figurine d'exposition ou une pièce unique, chaque projet bénéficie d'un travail minutieux et personnalisé.
+</p>
+
+<p>
+Vos figurines méritent bien plus qu'une simple mise en couleur. Grâce à des techniques avancées de peinture, d'éclaircissements, de contrastes et de soclage, chaque modèle est conçu pour attirer le regard sur une table de jeu comme dans une vitrine de collection.
+</p>
+
+<p>
+Chez <strong>Studio PF</strong>, chaque <strong>commission de peinture sur figurine</strong> est réalisée avec passion afin de transformer vos figurines en véritables œuvres d'art uniques.
+</p>
     <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Découvrir le service peinture ➜</a></p>
         </div>
     </div>
