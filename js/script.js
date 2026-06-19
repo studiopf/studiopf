@@ -507,7 +507,7 @@ ${prenom} ${nom}`;
             TableTop+, superior quality with a detailed finish:<br>
             🔍 Perfect for enhancing gaming miniatures. (Our recommendation).<br><br></p>
 
-            <p>Level 👑 Diamand:<br>
+            <p>Level 👑 Diamant:<br>
             TableTop++, higher quality with prestige finish:<br>
             🎨 Each piece becomes a work of art. For centerpiece models.<br><br></p>
 
@@ -520,7 +520,7 @@ ${prenom} ${nom}`;
             <select id="niveau" class="select" name="niveau" required>
                 <option value="" disabled hidden>Select a level</option>
                 <option value="niveau1" selected>Gold Level - TableTop+, Gold equivalent (lvl3)</option>
-                <option value="niveau2">Diamand Level - TableTop++, Diamond equivalent (lvl4)</option>
+                <option value="niveau2">Diamant Level - TableTop++, Diamond equivalent (lvl4)</option>
                 <option value="expo">Studio Level - Display piece for showcase</option>
             </select>
 
@@ -1007,13 +1007,13 @@ ${prenom} ${nom}`;
                     <div class="cardform">
                         <label for="niveau">Niveaux de Peinture :</label><br>
                         <p>Niveau ⭐ Gold :<br> TableTop+, Qualité supérieur qui va à l'Approfondi :<br> 🔍 Parfait pour valoriser les figurines de jeu. (Notre recommendation).<br><br></p>
-                        <p>Niveau 👑 Diamand :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
+                        <p>Niveau 👑 Diamant :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
                         <p>Niveau 🎨 Studio :<br> ✨ Limitée et réservée aux passionnés souhaitant le meilleur:<br> 🎨 Pour la collection en vitrine.<br><br></p>
                         <p>Le soclage est inclus.</p>
                         <select id="niveau" class="select" name="niveau" required>
                             <option value="" disabled hidden>Choisissez un niveau</option>
                             <option value="niveau1" selected>Niveau Gold - TableTop+, équivalent Gold (niv3)</option>
-                            <option value="niveau2">Niveau Diamand - TableTop++, équivalent Diamond (niv4)</option>
+                            <option value="niveau2">Niveau Diamant - TableTop++, équivalent Diamond (niv4)</option>
                             <option value="expo">Niveau Studio - Pièce d'exposition pour vitrine</option>
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
