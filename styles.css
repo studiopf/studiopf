@@ -683,7 +683,7 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
-.carousel-container {
+.carroussel-container {
     margin-top: 0;
     margin-bottom: 0;
     border: 0px;
@@ -694,7 +694,7 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-.carousel {
+.carroussel {
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
@@ -703,7 +703,7 @@ nav ul li a:hover {
     transform: translateZ(0);
 }
 
-.carousel img {
+.carroussel img {
     width: 100%; /* Rendu responsive */
     height: auto; /* Changé pour auto pour responsive */
     object-fit: contain;
@@ -1069,7 +1069,7 @@ nav ul li a:hover {
         font-size: 18px;
     }
 
-    .carousel-container {
+    .carroussel-container {
         margin-top: 0;
         margin-bottom: 0;
         max-width: 300px;
@@ -1077,7 +1077,7 @@ nav ul li a:hover {
         overflow: hidden;
     }
 
-    .carousel {
+    .carroussel {
         margin-top: 0;
         margin-bottom: 0;
         display: flex;
@@ -1086,7 +1086,7 @@ nav ul li a:hover {
         transform: translateZ(0);
     }
 
-    .carousel img {
+    .carroussel img {
         width: 100%; /* Responsive sur mobile */
         height: auto;
         object-fit: contain;
