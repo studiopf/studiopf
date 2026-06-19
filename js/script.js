@@ -65,7 +65,6 @@ function setLanguage(lang) {
     currentLanguage = lang;
 
     highlightLanguage(lang);
-  updateMeta(lang);
     updateDebugDisplay();
 
 
