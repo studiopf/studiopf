@@ -523,7 +523,9 @@ nav ul li a:hover {
     background: rgba(180,140,60,0.12);
     color: #d4a76c;
     transition: all 0.28s ease;
+    margin: 0 8px; /* 0 haut/bas, 8px gauche/droite */
 }
+
 
 .social-icon:hover {
     transform: scale(1.22);
