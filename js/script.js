@@ -9,23 +9,21 @@ const pfAge = currentYear - 1987;
 
 
 function updateMeta(lang) {
-  
-    const pageTitle = document.getElementById("page-title");
-    if (!pageTitle) return;
+    let title;
 
-    let html = "";
-
-    if (lang === "english") {
-        html = `Studio PF | Professional Miniature Painter | Warhammer and Collectible Miniature Commissions`;
-    } else if (lang === "spanish") {
-        html = `Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección`;
-    } else {
-        html = `Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection`;
+    switch (lang) {
+        case "english":
+            title = "Studio PF | Professional Miniature Painter | Warhammer and Collectible Miniature Commissions";
+            break;
+        case "spanish":
+            title = "Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección";
+            break;
+        default:
+            title = "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection";
     }
 
-    pageTitle.innerHTML = html;
+    document.title = title;
 }
-
 // =============================
 // UTILITAIRES
 // =============================
