@@ -7,7 +7,35 @@ let currentLanguage = "french";
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
 
+<script>
+const metas = {
+    fr: {
+        title: "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection",
+        description: "Peintre sur figurine professionnel. Commission de peinture Warhammer, Age of Sigmar, 40K, figurines de collection et concours. Devis gratuit partout en France, Belgique et international.",
+        keywords: "PF, peintre figurine professionnel, Warhammer peinture, figurines Pop Culture, TableTop peinture, figurines d'exposition, cours PF"
+    },
+    en: {
+        title: "Studio PF | Professional Miniature Painter | Warhammer and Collectible Miniature Commissions",
+        description: "Professional miniature painting service. Warhammer, Age of Sigmar, 40K, collectible miniatures and competition pieces. Free quotes worldwide.",
+        keywords: "PF, professional miniature painter, Warhammer painting, collectible miniatures, tabletop painting, display miniatures, painting lessons"
+    },
+    de: {
+        title: "Studio PF | Professioneller Miniaturenmaler | Warhammer- und Sammlerfiguren-Aufträge",
+        description: "Professioneller Bemalservice für Miniaturen. Warhammer, Age of Sigmar, 40K, Sammlerfiguren und Wettbewerbsmodelle. Kostenloses Angebot weltweit.",
+        keywords: "PF, Miniaturenmaler, Warhammer Bemalung, Sammlerfiguren, Tabletop Bemalung, Vitrinenmodelle"
+    }
+};
 
+function updateMeta(lang) {
+    document.title = metas[lang].title;
+
+    document.querySelector('meta[name="description"]')
+        .setAttribute("content", metas[lang].description);
+
+    document.querySelector('meta[name="keywords"]')
+        .setAttribute("content", metas[lang].keywords);
+}
+</script>
 // =============================
 // UTILITAIRES
 // =============================
