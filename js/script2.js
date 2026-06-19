@@ -1383,20 +1383,20 @@ function initScrollBehaviors() {
 }
 
 // ────────────────────────────────────────────────
-// Carrousel simple (si présent)
+// carroussel simple (si présent)
 // ────────────────────────────────────────────────
 
-function initializeCarousel() {
-    const carousel = document.getElementById("carousel");
-    if (!carousel) return;
+function initializecarroussel() {
+    const carroussel = document.getElementById("carroussel");
+    if (!carroussel) return;
 
-    const images = carousel.querySelectorAll("img");
+    const images = carroussel.querySelectorAll("img");
     if (images.length < 2) return;
 
     let idx = 0;
     setInterval(() => {
         idx = (idx + 1) % images.length;
-        carousel.style.transform = `translateX(-${idx * 100}%)`;
+        carroussel.style.transform = `translateX(-${idx * 100}%)`;
     }, 4000);
 }
 
