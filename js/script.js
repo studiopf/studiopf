@@ -10,7 +10,7 @@ const pfAge = currentYear - 1987;
 
 function updateMeta(lang) {
   
-    const page-title = document.getElementById("page-title"");
+    const page-title = document.getElementById("page-title");
     if (!main) return;
 
     let html = "";
