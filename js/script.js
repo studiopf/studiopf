@@ -126,7 +126,7 @@ changelangueinfo();
     updateAgeDisplay();
 
     initializeCardToggle();
-    initializeCarousel();
+    initializecarroussel();
     initScrollBehaviors();
 
 
