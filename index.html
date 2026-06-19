@@ -132,17 +132,17 @@
     </header>
 
 
-    <div class="carousel-container">
-        <div class="carousel" id="carousel">
-            <img src="https://studiopf.fr/carroussel/carrousel1.jpg" alt="Studio PF"  loading="eager">
-            <img src="https://studiopf.fr/carroussel/carrousel2.jpg" alt="Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/carroussel/carrousel3.jpg" alt="Studio PF"  loading="eager">
-                        <img src="https://studiopf.fr/carroussel/carrousel4.jpg" alt="Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/carroussel/carrousel5.jpg" alt="Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/carroussel/carrousel6.jpg" alt="Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/carroussel/carrousel7.jpg" alt="Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/carroussel/carrousel8.jpg" alt="Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/carroussel/carrousel9.jpg" alt="Studio PF" loading="eager">
+    <div class="carroussel-container">
+        <div class="carroussel" id="carroussel">
+            <img src="https://studiopf.fr/carroussel/carroussel1.jpg" alt="Studio PF"  loading="eager">
+            <img src="https://studiopf.fr/carroussel/carroussel2.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carroussel3.jpg" alt="Studio PF"  loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carroussel4.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carroussel5.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carroussel6.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carroussel7.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carroussel8.jpg" alt="Studio PF" loading="eager">
+                        <img src="https://studiopf.fr/carroussel/carroussel9.jpg" alt="Studio PF" loading="eager">
         </div>
 
     </div>
@@ -242,8 +242,8 @@ Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasa
 document.addEventListener("DOMContentLoaded", function(){
 
 let currentSlide = 0;
-const carousel = document.getElementById("carousel");
-const slides = document.querySelectorAll("#carousel img");
+const carroussel = document.getElementById("carroussel");
+const slides = document.querySelectorAll("#carroussel img");
 const totalSlides = slides.length;
 
 function moveSlide(direction){
@@ -258,7 +258,7 @@ function moveSlide(direction){
         currentSlide = totalSlides - 1;
     }
 
-    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+    carroussel.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
 setInterval(function(){
