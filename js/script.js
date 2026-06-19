@@ -19,10 +19,10 @@ const metas = {
         description: "Professional miniature painting service. Warhammer, Age of Sigmar, 40K, collectible miniatures and competition pieces. Free quotes worldwide.",
         keywords: "PF, professional miniature painter, Warhammer painting, collectible miniatures, tabletop painting, display miniatures, painting lessons"
     },
-    de: {
-        title: "Studio PF | Professioneller Miniaturenmaler | Warhammer- und Sammlerfiguren-Aufträge",
-        description: "Professioneller Bemalservice für Miniaturen. Warhammer, Age of Sigmar, 40K, Sammlerfiguren und Wettbewerbsmodelle. Kostenloses Angebot weltweit.",
-        keywords: "PF, Miniaturenmaler, Warhammer Bemalung, Sammlerfiguren, Tabletop Bemalung, Vitrinenmodelle"
+    es: {
+        title: "Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección",
+        description: "Servicio profesional de pintura de miniaturas. Warhammer, Age of Sigmar, 40K, figuras de colección y piezas para concursos. Presupuesto gratuito en todo el mundo.",
+        keywords: "PF, pintor profesional de miniaturas, pintura Warhammer, figuras de colección, pintura de miniaturas, miniaturas de exposición, cursos de pintura"
     }
 };
 
