@@ -7,32 +7,24 @@ let currentLanguage = "french";
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
 
-const metas = {
-    fr: {
-        title: "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection",
-        description: "Peintre sur figurine professionnel. Commission de peinture Warhammer, Age of Sigmar, 40K, figurines de collection et concours. Devis gratuit partout en France, Belgique et international.",
-        keywords: "PF, peintre figurine professionnel, Warhammer peinture, figurines Pop Culture, TableTop peinture, figurines d'exposition, cours PF"
-    },
-    en: {
-        title: "Studio PF | Professional Miniature Painter | Warhammer and Collectible Miniature Commissions",
-        description: "Professional miniature painting service. Warhammer, Age of Sigmar, 40K, collectible miniatures and competition pieces. Free quotes worldwide.",
-        keywords: "PF, professional miniature painter, Warhammer painting, collectible miniatures, tabletop painting, display miniatures, painting lessons"
-    },
-    es: {
-        title: "Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección",
-        description: "Servicio profesional de pintura de miniaturas. Warhammer, Age of Sigmar, 40K, figuras de colección y piezas para concursos. Presupuesto gratuito en todo el mundo.",
-        keywords: "PF, pintor profesional de miniaturas, pintura Warhammer, figuras de colección, pintura de miniaturas, miniaturas de exposición, cursos de pintura"
-    }
-};
 
 function updateMeta(lang) {
-    document.title = metas[lang].title;
+  
+    const page-title = document.getElementById("page-title"");
+    if (!main) return;
 
-    document.querySelector('meta[name="description"]')
-        .setAttribute("content", metas[lang].description);
+    let html = "";
 
-    document.querySelector('meta[name="keywords"]')
-        .setAttribute("content", metas[lang].keywords);
+    if (currentLanguage === "english") {
+        
+    html = `Studio PF | Professional Miniature Painter | Warhammer and Collectible Miniature Commissions`;
+     
+    } else if (currentLanguage === "spanish") {
+            html = `Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección`;
+    } else {
+            html = `Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection`;
+    }
+      page-title.innerHTML = html;
 }
 
 // =============================
