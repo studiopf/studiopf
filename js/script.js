@@ -7,7 +7,6 @@ let currentLanguage = "french";
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
 
-<script>
 const metas = {
     fr: {
         title: "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection",
@@ -35,7 +34,7 @@ function updateMeta(lang) {
     document.querySelector('meta[name="keywords"]')
         .setAttribute("content", metas[lang].keywords);
 }
-</script>
+
 // =============================
 // UTILITAIRES
 // =============================
