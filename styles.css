@@ -15,8 +15,8 @@ textarea {
    ========================================================================== */
 .button {
     display: inline-block;
-    padding: 12px 24px;
-    margin: 12px auto;
+    padding: 10px 24px;
+    margin: 10px auto;
     font-family: 'Segoe UI', system-ui, sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -43,7 +43,7 @@ textarea {
     border-color: #ffda79;             /* jaune plus lumineux au survol */
     transform: translateY(-3px) scale(1.04);
     box-shadow: 
-        0 12px 28px rgba(244, 200, 118, 0.35),
+        0 10px 28px rgba(244, 200, 118, 0.35),
         0 0 0 3px rgba(244, 200, 118, 0.18);
     outline: none;
 }
@@ -52,13 +52,13 @@ textarea {
 .button:active {
     transform: translateY(-1px) scale(0.98);
     box-shadow: 
-        0 4px 12px rgba(244, 200, 118, 0.25);
+        0 4px 10px rgba(244, 200, 118, 0.25);
 }
 
 /* Variante plus petite (optionnelle) */
 .button.small {
     padding: 8px 18px;
-      font-size: 14px;
+      font-size: 12px;
 }
 
 /* Variante pleine largeur (utile pour mobile) */
@@ -145,7 +145,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6px 14px;
+    gap: 6px 12px;
     margin: 0rem 0;
 }
 
@@ -169,7 +169,7 @@ textarea {
     padding: 5px;
     background: rgba(30, 20, 12, 0.75);
     border: 1px solid #6b4e2f;
-    border-radius: 12px;
+    border-radius: 10px;
     max-width: 580px;
     backdrop-filter: blur(4px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.65);
@@ -183,19 +183,19 @@ textarea {
 
 .logo {
     position: relative;
-    width: 250px; /* Augmenté pour PC */
+    width: 200px; /* Augmenté pour PC */
     height: auto;
     margin-bottom: 0px;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .logo-a {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 0px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ table {
 
 .table-container {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .tableborder1 {
@@ -321,17 +321,17 @@ h3 {
 }
 
 li, .p-social {
-       font-size: 14px;
+       font-size: 10px;
     line-height: 1.6;
     text-align: center;
-   margin-top: 8px;
+   margin-top: 4px;
     margin: 0rem auto;
     max-width: 92%;
     color: #e8d9c0;
 }
 
 p {
-       font-size: 18px;
+       font-size: 10px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -361,10 +361,10 @@ a:hover,
    ========================================================================== */
 .partenaires-container,
 .card-container2 {
-   margin-top: 5px;
+   margin-top: 2px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
     margin: 0rem auto;
     max-width: 1100px;
@@ -383,7 +383,7 @@ a:hover,
 .card-container3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
     margin: 0rem auto;
     max-width: 1100px;
@@ -447,7 +447,7 @@ a:hover,
 .footer .p-social,
 .p-social {
     color: black;
-      font-size: 14px;
+      font-size: 12px;
     line-height: 1.7;
     opacity: 0.92;
     text-align: center;
@@ -530,7 +530,7 @@ nav ul li a:hover {
     transform: scale(1.22);
     background: rgba(244,200,118,0.32);
     color: #ffda79;
-    box-shadow: 0 0 14px rgba(255,218,121,0.35);
+    box-shadow: 0 0 12px rgba(255,218,121,0.35);
 }
 
 .language-selector {
@@ -615,7 +615,7 @@ nav ul li a:hover {
     margin-bottom: 0;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -792,7 +792,7 @@ nav ul li a:hover {
 .card, .card2, .card3, .cardform, .logopart {
     background: rgba(30, 20, 12, 0.75);
     border: 1px solid #6b4e2f;
-    border-radius: 12px;
+    border-radius: 10px;
     backdrop-filter: blur(4px);
    margin-top: 5px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.65);
@@ -840,7 +840,7 @@ nav ul li a:hover {
     position: relative;
 }
 .maintenance-box p {
-      font-size: 14px;
+      font-size: 12px;
     line-height: 1.55;
     margin: 0em 0;
 }
@@ -851,7 +851,7 @@ nav ul li a:hover {
     border: 0px;
     width: 100%;
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -869,7 +869,7 @@ nav ul li a:hover {
     color: #e8d9c0;
 }
    p {
-       font-size: 12px;
+       font-size: 10px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
@@ -880,22 +880,22 @@ nav ul li a:hover {
    
 
     h1 {
-          font-size: 18px;
+          font-size: 12px;
         margin: 0.3rem 0;
         letter-spacing: 0.5px;
     }
 
     h2 {
-          font-size: 14px;
+          font-size: 12px;
         margin: 0.3rem 0;
     }
 
     h3 {
-         font-size: 14px;
+         font-size: 12px;
     }
 
     h4, h5 {
-          font-size: 12px;
+          font-size: 10px;
     }
 
     h1, h2, h3, h4, h5 {
@@ -903,7 +903,7 @@ nav ul li a:hover {
     }
     .table-container {
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .lightbox {
@@ -956,7 +956,7 @@ nav ul li a:hover {
 
     nav ul li a {
         padding: 0px 0px;
-      font-size: 14px;
+      font-size: 12px;
     }
 
     artenaires-container,
@@ -989,7 +989,7 @@ nav ul li a:hover {
         margin-right: auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        padding: 15px 12px;        /* un peu moins de padding interne pour compenser */
+        padding: 15px 10px;        /* un peu moins de padding interne pour compenser */
     }
 
     .card-container3 {
@@ -1056,15 +1056,15 @@ nav ul li a:hover {
 
     #scrollToTopBtn {
         bottom: 60px;
-        right: 12px;
+        right: 10px;
         padding: 10px;
         font-size: 18px;
     }
 
     #scrollTotal {
         bottom: 110px;
-        right: 12px;
-        padding: 14px;
+        right: 10px;
+        padding: 12px;
         font-size: 18px;
     }
 
@@ -1092,20 +1092,20 @@ nav ul li a:hover {
         flex: 0 0 100%;
     }
 .menu {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 24px;
 }
    .menu2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 24px;
 }
 
 
    .menu-mobile {
-    margin-top: 24px;
-    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     align-items: center;
     justify-content: center;
     font-size: 24px;
@@ -1155,8 +1155,8 @@ nav ul li a:hover {
     }
 
    .button {
-        padding: 14px 24px;           /* un peu moins large */
-          font-size: 12px;
+        padding: 12px 24px;           /* un peu moins large */
+          font-size: 10px;
         min-height: 42px;             /* zone de clic confortable */
     }
 
@@ -1185,7 +1185,7 @@ h1 {
     .cardform,
     .logopart {
         max-width: 94%;            /* encore un peu plus d'air */
-        padding: 12px 10px;
+        padding: 10px 10px;
     }
     .cardpartenaire {
         height: 42px;
@@ -1197,12 +1197,12 @@ h1 {
    .menu {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 12px;
 }
       .menu2 {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
    .menu-mobile {
@@ -1210,13 +1210,13 @@ h1 {
     margin-bottom: 25px;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
 }
       .menu-mobile2 {
     margin-top: 20px;
     margin-bottom: 25px;
  
-    font-size: 14px;
+    font-size: 12px;
 }
 }
 
