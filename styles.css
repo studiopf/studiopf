@@ -170,7 +170,7 @@ textarea {
     background: rgba(30, 20, 12, 0.75);
     border: 1px solid #6b4e2f;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 1000px;
     backdrop-filter: blur(4px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.65);
 }
