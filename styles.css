@@ -324,7 +324,7 @@ li, .p-social {
        font-size: 10px;
     line-height: 1.6;
     text-align: center;
-   margin-top: 4px;
+   margin-top: 0px;
     margin: 0rem auto;
     max-width: 92%;
     color: #e8d9c0;
@@ -504,8 +504,8 @@ nav ul li a:hover {
 }
 
 .social, .social-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
