@@ -1,6 +1,6 @@
 /* ==========================================================================
    RESET & BASE – inchangé
-   ========================================================================== */
+   ===================================================== font-size===================== */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ textarea {
     padding: 10px 24px;
     margin: 10px auto;
     font-family: 'Segoe UI', system-ui, sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
     color: #ffda79;                    /* jaune clair / doré clair */
     text-align: center;
@@ -58,7 +58,7 @@ textarea {
 /* Variante plus petite (optionnelle) */
 .button.small {
     padding: 8px 18px;
-      font-size: 12px;
+      font-size: 10px;
 }
 
 /* Variante pleine largeur (utile pour mobile) */
@@ -98,7 +98,7 @@ textarea {
     border: 0px;
     width: 100%;
     position: relative;
-      font-size: 18px;
+      font-size: 14px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -126,12 +126,12 @@ textarea {
 .menu {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .menu2 {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .menu-mobile {
@@ -139,7 +139,7 @@ textarea {
     margin-bottom: 25px;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 14px;
 }
  nav ul {
     display: flex;
@@ -153,7 +153,7 @@ textarea {
     margin-top: 20px;
     margin-bottom: 25px;
   
-    font-size: 18px;
+    font-size: 14px;
 }
 .container {
     text-align: center;
@@ -176,7 +176,7 @@ textarea {
 }
 
 .maintenance-box p {
-      font-size: 16px;
+      font-size: 10px;
     line-height: 1.55;
     margin: 0em 0;
 }
@@ -229,7 +229,7 @@ table {
 
 .table-container {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .tableborder1 {
@@ -304,19 +304,19 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-     font-size: 18px;
+     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
 }
 
 h2 {
-      font-size: 18px;
+      font-size: 12px;
     margin: 0rem 0 0rem;
 }
 
 h3 {
-     font-size: 18px;
+     font-size: 12px;
     color: #d4a76c;
 }
 
@@ -479,7 +479,7 @@ nav ul li a {
     padding: 0px 0px;
     border-radius: 6px;
     font-weight: 700;
-     font-size: 18px;
+     font-size: 14px;
     background: rgba(30, 20, 12, 0.55);
     white-space: nowrap;
     transition: all 0.24s ease;
@@ -840,7 +840,7 @@ nav ul li a:hover {
     position: relative;
 }
 .maintenance-box p {
-      font-size: 12px;
+      font-size: 8px;
     line-height: 1.55;
     margin: 0em 0;
 }
@@ -851,7 +851,7 @@ nav ul li a:hover {
     border: 0px;
     width: 100%;
     position: relative;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -860,7 +860,7 @@ nav ul li a:hover {
 }
 
    li, -social {
-   font-size: 18px;
+   font-size: 14px;
     line-height: 1.6;
     text-align: center;
    margin-top: 8px;
