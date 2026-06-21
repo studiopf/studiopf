@@ -150,8 +150,8 @@ textarea {
 }
 
 .menu-mobile2 {
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   
     font-size: 14px;
 }
@@ -1200,26 +1200,26 @@ h1 {
         width: 18px;
     }
    .menu {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 12px;
 }
       .menu2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 12px;
 }
 
    .menu-mobile {
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     align-items: center;
     justify-content: center;
     font-size: 12px;
 }
       .menu-mobile2 {
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
  
     font-size: 12px;
 }
