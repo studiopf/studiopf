@@ -17,9 +17,9 @@
       <div class="center">
     <div class="maintenance-box">
 
-       <h1>Studio PF</br>Professional Miniature Painter</h1>
+       <h1>Studio PF<br>Professional Miniature Painter</h1>
 
-<h2>🎨 Warhammer, Display</br>and Collectible Miniature Painting</h2>
+<h2>🎨 Warhammer, Display<br>and Collectible Miniature Painting</h2>
 
 <p>
 Specializing in <strong>high-end miniature painting</strong>, Studio PF helps hobbyists, collectors, and gamers bring their miniatures to life with professional-quality finishes.
@@ -117,9 +117,9 @@ At <strong>Studio PF</strong>, every <strong>miniature painting commission</stro
       <div class="center">
     <div class="maintenance-box">
 
-       <h1>Studio PF</br>Pintor Profesional de Miniaturas</h1>
+       <h1>Studio PF<br>Pintor Profesional de Miniaturas</h1>
 
-<h2>🎨 Pintura de Miniaturas Warhammer</br>Colección y Exposición</h2>
+<h2>🎨 Pintura de Miniaturas Warhammer<br>Colección y Exposición</h2>
 
 <p>
 Especializado en la <strong>pintura de miniaturas de alta calidad</strong>, Studio PF ayuda a aficionados, coleccionistas y jugadores a dar vida a sus miniaturas con acabados profesionales.
@@ -216,9 +216,9 @@ En <strong>Studio PF</strong>, cada <strong>encargo de pintura de miniaturas</st
         
   <div class="center">
             <div class="maintenance-box">
- <h1> Studio PF</br>Peintre sur Figurine Professionnel</h1>
+ <h1> Studio PF<br>Peintre sur Figurine Professionnel</h1>
 
-<h2>🎨 Peinture sur Figurines Warhammer</br>Collection et Exposition</h2>
+<h2>🎨 Peinture sur Figurines Warhammer<br>Collection et Exposition</h2>
 <p>
 Spécialisé dans la <strong>peinture sur figurines haut de gamme</strong>, Studio PF accompagne les passionnés, collectionneurs et joueurs souhaitant donner vie à leurs armées et pièces de collection.
 </p>
