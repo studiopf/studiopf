@@ -792,7 +792,7 @@ Acompañamiento personalizado para cada proyecto.
 <p><em>Chaque figurine est préparée pour un rendu optimal.</em></p>
 </div>
 <div class="maintenance-box">
-       <h3>Peinture 🎨</h3>
+       <h3>Peinture TableTop+ 🎨</h3>
 <ul>
     <li><strong>⭐ Gold :</strong> dégradés propres, contrastes marqués, détails essentiels, rendu homogène</li>
     <li><strong>👑 Diamant :</strong> dégradés avancés, textures, OSL, NMM, freehand, détails poussés</li>
@@ -983,17 +983,17 @@ function changelanguemenu() {
 
     if (currentLanguage === "english") {
         html = `<ul class="menu">
-            <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Paint 🎨</a></li>
+            <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Paint TableTop+ 🎨</a></li>
             <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Gallery 🖼️</a></li>
         </ul>`;
     } else if (currentLanguage === "spanish") {
         html = `<ul class="menu">
-                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Pintura 🎨</a></li>
+                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Pintura TableTop+🎨</a></li>
             <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galería 🖼️</a></li>
         </ul>`;
     } else {
         html = `<ul class="menu">
-             <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture 🎨</a></li>
+             <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop+ 🎨</a></li>
             <li><a href="formation.html" onclick="loadPage('formation.html');return false;">Formation 📚</a></li>
             <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galerie 🖼️</a></li>
         </ul>`;
