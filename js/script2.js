@@ -1469,13 +1469,11 @@ function initializeCardToggle() {
 const niveauLabels = {
     niveau1: "Niveau Gold - Niv3, Qualité supérieur : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommendation.",
     niveau2: "Niveau Diamant - Niv4, Qualité supérieur ultime : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
-    expo:   "Niveau Studio : ✨ Limitée et réservée aux passionnés souhaitant le meilleur. Pour la collection en vitrine."
 };
 
 const niveauLabelsmini = {
     niveau1: "Gold",
     niveau2: "Diamant",
-    expo:    "Pièce d'exposition"
 };
 const tarifheure = 20;
 
@@ -1602,14 +1600,11 @@ function initializeFormCalculations() {
 
         body += `${data.nom}\n${data.prenom}\n${data.adresse}\n${data.cp} ${data.ville}\n${data.pays}\n${data.email}\n${data.telephone}\n\n`;
 
-        if (data.niveau === "expo") {
-            body += `Pièce d'exposition - Sur devis uniquement\n\n`;
-        } else {
+        
             body += categories.map(cat => `- ${cat} : ${quantities[cat]}`).join("\n") + "\n\n";
             body += `- Montage : ${data.montage}\n- Aimant : ${data.aimant}\n\n`;
             body += `Total estimé : ${total.toFixed(2)} €\n\n`;
-        }
-
+        
         body += `Message :\n${data.message}\n\nCordialement.`;
 
         const url = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
