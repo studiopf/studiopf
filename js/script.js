@@ -505,12 +505,12 @@ ${prenom} ${nom}`;
 
             <div class="form-group">
                 <label for="nom">Last Name<span class="required">*</span></label>
-                <input type="text" id="nom" name="nom" placeholder="Surname" required>
+                <input type="text" id="nom" name="nom" placeholder="Nombre" required>
             </div>
 
             <div class="form-group">
                 <label for="prenom">First Name<span class="required">*</span></label>
-                <input type="text" id="prenom" name="prenom" placeholder="Name" required>
+                <input type="text" id="prenom" name="prenom" placeholder="Apellido" required>
             </div>
 
             <div class="form-group">
@@ -520,22 +520,22 @@ ${prenom} ${nom}`;
 
             <div class="form-group">
                 <label for="telephone">Phone<span class="required">*</span></label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Phone" required>
+                <input type="tel" id="telephone" name="telephone" placeholder="Teléfono" required>
             </div>
 
             <div class="form-group">
                 <label for="adresse">Address<span class="required">*</span></label>
-                <input type="text" id="adresse" name="adresse" placeholder="Address" required>
+                <input type="text" id="adresse" name="adresse" placeholder="Dirección" required>
             </div>
 
             <div class="form-group">
                 <label for="cp">Postal Code<span class="required">*</span></label>
-                <input type="text" id="cp" name="cp" placeholder="Postal Code" required>
+                <input type="text" id="cp" name="cp" placeholder="Código postal" required>
             </div>
 
             <div class="form-group">
                 <label for="ville">City<span class="required">*</span></label>
-                <input type="text" id="ville" name="ville" placeholder="City" required>
+                <input type="text" id="ville" name="ville" placeholder="Cuidad" required>
             </div>
 
             <div class="form-group">
@@ -1012,11 +1012,11 @@ ${prenom} ${nom}`;
                 <legend>Coordonnées</legend>
                 <div class="form-group">
                     <label for="nom">Nom<span class="required">*</span></label>
-                    <input type="text" id="nom" name="nom" placeholder="Surname" required>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
                 </div>
                 <div class="form-group">
                     <label for="prenom">Prénom<span class="required">*</span></label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Name" required>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email<span class="required">*</span></label>
@@ -1024,19 +1024,19 @@ ${prenom} ${nom}`;
                 </div>
                 <div class="form-group">
                     <label for="telephone">Téléphone<span class="required">*</span></label>
-                    <input type="tel" id="telephone" name="telephone" placeholder="Phone" required>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
                 </div>
                 <div class="form-group">
                     <label for="adresse">Adresse<span class="required">*</span></label>
-                    <input type="text" id="adresse" name="adresse" placeholder="Address" required>
+                    <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
                 </div>
                 <div class="form-group">
                     <label for="cp">Code Postal<span class="required">*</span></label>
-                    <input type="text" id="cp" name="cp" placeholder="Postal Code" required>
+                    <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
                 </div>
                 <div class="form-group">
                     <label for="ville">Ville<span class="required">*</span></label>
-                    <input type="text" id="ville" name="ville" placeholder="City" required>
+                    <input type="text" id="ville" name="ville" placeholder="Ville" required>
                 </div>
                 <div class="form-group">
                     <label for="pays">Pays <span class="required">*</span></label>
