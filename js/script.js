@@ -39,7 +39,7 @@ function updateMeta(lang) {
             title = "Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección";
             break;
         default:
-            title = "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection | Cours de peinture sur figurines";
+            title = "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection | Cours de  sur figurines";
     }
 
     document.title = title;
@@ -190,7 +190,7 @@ changelangueinfo();
     if (currentPage.includes("mentionslegales") && typeof changelanguementionslegales === "function") {
         changelanguementionslegales();
     }
-    if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
+    if (currentPage.includes("commission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
   
     }
@@ -481,7 +481,7 @@ ${prenom} ${nom}`;
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
     <div class="center">
         <fieldset>
-            <legend>Contact Details TableTop commission</legend>
+            <legend>Contact Details TableTop+ commission</legend>
 
             <div class="form-group">
                 <label for="nom">Last Name<span class="required">*</span></label>
@@ -1039,7 +1039,7 @@ ${prenom} ${nom}`;
                 <fieldset>
                     <legend>Ma demande</legend>
                     <div class="cardform">
-                        <label for="niveau">Niveaux de Peinture :</label><br>
+                        <label for="niveau">Niveaux de  :</label><br>
                         <p>Niveau ⭐ Gold :<br> TableTop+, Qualité supérieur qui va à l'Approfondi :<br> 🔍 Parfait pour valoriser les figurines de jeu. (Notre recommendation).<br><br></p>
                         <p>Niveau 👑 Diamant :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
                       
