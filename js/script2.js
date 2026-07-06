@@ -1475,7 +1475,7 @@ const niveauLabelsmini = {
     niveau1: "Gold",
     niveau2: "Diamant",
 };
-const tarifheure = 25;
+const tarifheure = 20;
 
 const tariffs = {
     petiteinfanterie: { niveau1: 1, niveau2: 2 },
