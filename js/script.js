@@ -79,7 +79,7 @@ function loadPage(page) {
 
     if (!page) {
         console.warn("page undefined → fallback index");
-
+        page = currentPage;
     }
 
     currentPage = page;
