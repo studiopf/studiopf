@@ -1,7 +1,7 @@
 // =============================
 // VARIABLES GLOBALES
 // =============================
-let currentPage = "index.html";
+let currentPage;
 let currentLanguage = "french";
 
 const currentYear = new Date().getFullYear();
