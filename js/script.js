@@ -248,7 +248,10 @@ function changelangueforma() {
       </ul>
       <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
     </div>
-
+     <div>
+         <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
+    </div>
+    
        <div class="maintenance-box">
       <h3>🖍️ Forfaits de Cours</h3>
       <div class="card">
@@ -280,7 +283,10 @@ function changelangueforma() {
       </div>
 
     <p>Horaires à titre d'exemple.</p>
-
+     <div>
+         <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
+    </div>
+    
     
    </div>
        <div class="maintenance-box">
