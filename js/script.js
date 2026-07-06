@@ -550,7 +550,6 @@ ${prenom} ${nom}`;
             🎨 Each piece becomes a work of art. For centerpiece models.<br><br></p>
 
             
-
             <p>Basing is included.</p>
 
             <select id="niveau" class="select" name="niveau" required>
@@ -728,7 +727,7 @@ ${prenom} ${nom}`;
 
 </div>        `;
     } else if (currentLanguage === "spanish") {
-              html = `<h1>Solicitud de Presupuesto</h1>
+              html = `<h1>Solicitud de Presupuesto TableTop+</h1>
 
 <div class="form-container">
 
@@ -983,7 +982,7 @@ ${prenom} ${nom}`;
 </div>        `;
     } else {
         html = `
-                       <h1>Demande de Devis commission TableTop</h1>
+                       <h1>Demande de Devis commission TableTop+</h1>
        
            <div class="form-container">
             
