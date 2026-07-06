@@ -19,6 +19,10 @@ function getPageInfo() {
     };
 }
 
+function hideCurrentPage() {
+    const url = window.location.origin + "/";
+    window.history.replaceState({}, "", url);
+}
 
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
@@ -96,6 +100,7 @@ function loadPage(page) {
     if (!page) {
         console.warn("page undefined → fallback index");
         page = currentPage;
+        hideCurrentPage();
     }
 
     currentPage = page;
@@ -161,6 +166,7 @@ changelangueinfo();
     initializecarroussel();
     initScrollBehaviors();
 
+    hideCurrentPage();
 
     
     if (currentPage.includes("galerie")) {
