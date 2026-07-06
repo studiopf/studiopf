@@ -539,7 +539,7 @@ nav ul li a:hover {
       background-image: url('img/ico/patreon.png');
 }
 
-.social-icon youtube{
+.social-icon.youtube{
       background-image: url('img/ico/youtube.png');
 }
 .social-icon twitch{
