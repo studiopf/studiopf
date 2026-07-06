@@ -1532,7 +1532,14 @@ function calculateTotals() {
     }
 
   
+   // ── Comparaison ──
+    const prevMap = {
+        niveau1: null,
+        niveau2: "niveau1",
+        expo: "niveau2"
+    };
 
+    const prevLevel = prevMap[niveau];
     let totalPrev = 0;
 
     if (prevLevel) {
