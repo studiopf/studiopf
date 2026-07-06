@@ -540,6 +540,9 @@ nav ul li a:hover {
 .social-icon twitch{
       background-image: url('img/ico/twitch.png');
 }
+.social-icon tiktok{
+      background-image: url('img/ico/tiktok.png');
+}
 
 .social-icon discord{
       background-image: url('img/ico/discord.png');
