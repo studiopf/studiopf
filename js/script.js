@@ -1,8 +1,24 @@
 // =============================
 // VARIABLES GLOBALES
 // =============================
-let currentPage= "index.html";
+const info = getPageInfo();
+let currentPage = info.currentPage;
 let currentLanguage = "french";
+
+function getPageInfo() {
+    const path = window.location.pathname.substring(1);
+
+    const currentPage = path.substring(path.lastIndexOf("/") + 1);
+    const pageName = currentPage.substring(0, currentPage.lastIndexOf("."));
+    const folder = path.substring(0, path.lastIndexOf("/"));
+
+    return {
+        folder,
+        pageName,
+        currentPage
+    };
+}
+
 
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
