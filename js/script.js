@@ -665,7 +665,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="vehiculemonstremoyen" class="cardform">
-            <label for="vehiculemonstremoyen-input">Number of <strong>Medium Vehicles/Monsters 80-100mm base</strong>:</label>
+            <label for="vehiculemonstremoyen-input">Number of <strong>Medium Vehicles/Monsters 90-100mm base</strong>:</label>
             <p>Example: Rhino, Dreadnought, Drone...</p>
             <p>Unit price: <span id="prixvehiculemonstremoyen">0.00</span> €</p>
             <p>Subtotal: <span id="totalvehiculemonstremoyen">0.00</span> €</p>
@@ -673,7 +673,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="grosvehiculemonstre" class="cardform">
-            <label for="grosvehiculemonstre-input">Number of <strong>Large Vehicles/Monsters 100mm+ base</strong>:</label>
+            <label for="grosvehiculemonstre-input">Number of <strong>Large Vehicles/Monsters 100-130mm base</strong>:</label>
             <p>Example: Predator, Plague Burst Crawler, Daemon Prince, Armingers, Mancrusher...</p>
             <p>Unit price: <span id="prixgrosvehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totalgrosvehiculemonstre">0.00</span> €</p>
@@ -681,7 +681,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="enormevehiculemonstre" class="cardform">
-            <label for="enormevehiculemonstre-input">Number of <strong>Huge Vehicles/Monsters 130-160mm+ base</strong>:</label>
+            <label for="enormevehiculemonstre-input">Number of <strong>Huge Vehicles/Monsters 130-160mm-170mm base</strong>:</label>
             <p>Example: Land Raider, Defiler, Aerodyne...</p>
             <p>Unit price: <span id="prixenormevehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totalenormevehiculemonstre">0.00</span> €</p>
@@ -927,7 +927,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="grosvehiculemonstre" class="cardform">
-            <label for="grosvehiculemonstre-input">Número de <strong>grandes vehículos/monstruos base 100-130mm</strong>:</label>
+            <label for="grosvehiculemonstre-input">Número de <strong>grandes vehículos/monstruos base  90-100mm ou supérieur</strong>:</label>
             <p>Ejemplo: Predator, Plague Burst, Príncipe Demonio, Armingers, Mancrusher...</p>
             <p>Precio unitario: <span id="prixgrosvehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totalgrosvehiculemonstre">0.00</span> €</p>
@@ -935,7 +935,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="enormevehiculemonstre" class="cardform">
-            <label for="enormevehiculemonstre-input">Número de <strong>enormes vehículos/monstruos base 130-160-170mm</strong>:</label>
+            <label for="enormevehiculemonstre-input">Número de <strong>enormes vehículos/monstruos base 100-130mm ou supérieur</strong>:</label>
             <p>Ejemplo: Land Raider, Defiler, Aerodyne...</p>
             <p>Precio unitario: <span id="prixenormevehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totalenormevehiculemonstre">0.00</span> €</p>
@@ -943,7 +943,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="titanvehiculemonstre" class="cardform">
-            <label for="titanvehiculemonstre-input">Número de <strong>vehículos/monstruos titánicos base 170mm</strong>:</label>
+            <label for="titanvehiculemonstre-input">Número de <strong>vehículos/monstruos titánicos base  socle 130-160mm-170mm</strong>:</label>
             <p>Ejemplo: Spartan, Caballero Imperial, Mega Gargant...</p>
             <p>Precio unitario: <span id="prixtitanvehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totaltitanvehiculemonstre">0.00</span> €</p>
@@ -1154,7 +1154,7 @@ ${prenom} ${nom}`;
                         <input type="number" id="petitvehiculemonstre-input" name="petitvehiculemonstre" min="0">
                     </div>
 
-                    <div id="vehiculemonstremoyen" class="cardform">
+  <div id="vehiculemonstremoyen" class="cardform">
                         <label for="vehiculemonstremoyen-input">Nombre de <strong>Véhicules/Monstres Moyen socle 80-100mm</strong> :</label>
                         <p>Exemple : Rhino, Dreadnought, Drone...</p>
                         <p>Prix unitaire : <span id="prixvehiculemonstremoyen">0.00</span> €</p>
