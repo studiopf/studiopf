@@ -481,7 +481,7 @@ ${prenom} ${nom}`;
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
     <div class="center">
         <fieldset>
-            <legend>Contact Details</legend>
+            <legend>Contact Details TableTop commission</legend>
 
             <div class="form-group">
                 <label for="nom">Last Name<span class="required">*</span></label>
@@ -549,9 +549,7 @@ ${prenom} ${nom}`;
             TableTop++, higher quality with prestige finish:<br>
             🎨 Each piece becomes a work of art. For centerpiece models.<br><br></p>
 
-            <p>Level 🎨 Studio:<br>
-            ✨ Limited and reserved for enthusiasts seeking the best:<br>
-            🎨 For display collection pieces.<br><br></p>
+            
 
             <p>Basing is included.</p>
 
@@ -559,7 +557,7 @@ ${prenom} ${nom}`;
                 <option value="" disabled hidden>Select a level</option>
                 <option value="niveau1" selected>Gold Level - TableTop+, Gold equivalent (lvl3)</option>
                 <option value="niveau2">Diamant Level - TableTop++, Diamond equivalent (lvl4)</option>
-                <option value="expo">Studio Level - Display piece for showcase</option>
+
             </select>
 
             <p><strong>Selected level:</strong> <span id="afficheniveau"></span></p><br>
@@ -737,7 +735,7 @@ ${prenom} ${nom}`;
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
     <div class="center">
         <fieldset>
-            <legend>Datos de contacto</legend>
+            <legend>Datos de contacto TableTop</legend>
 
             <div class="form-group">
                 <label for="nom">Apellido<span class="required">*</span></label>
@@ -805,9 +803,7 @@ ${prenom} ${nom}`;
             TableTop++, calidad superior con acabado prestigioso:<br>
             🎨 Cada pieza se convierte en una obra de arte. Para piezas principales.<br><br></p>
 
-            <p>Nivel 🎨 Estudio:<br>
-            ✨ Limitado y reservado para entusiastas que buscan lo mejor:<br>
-            🎨 Para piezas de colección en vitrina.<br><br></p>
+           
 
             <p>El peana está incluido.</p>
 
@@ -815,7 +811,7 @@ ${prenom} ${nom}`;
                 <option value="" disabled hidden>Seleccione un nivel</option>
                 <option value="niveau1" selected>Nivel Gold - TableTop+, equivalente Gold (niv3)</option>
                 <option value="niveau2">Nivel Fantasía - TableTop++, equivalente Diamond (niv4)</option>
-                <option value="expo">Nivel Estudio - Pieza de exposición para vitrina</option>
+             
             </select>
 
             <p><strong>Nivel seleccionado:</strong> <span id="afficheniveau"></span></p><br>
@@ -987,7 +983,7 @@ ${prenom} ${nom}`;
 </div>        `;
     } else {
         html = `
-                       <h1>Demande de Devis</h1>
+                       <h1>Demande de Devis commission TableTop</h1>
        
            <div class="form-container">
             
@@ -1046,13 +1042,13 @@ ${prenom} ${nom}`;
                         <label for="niveau">Niveaux de Peinture :</label><br>
                         <p>Niveau ⭐ Gold :<br> TableTop+, Qualité supérieur qui va à l'Approfondi :<br> 🔍 Parfait pour valoriser les figurines de jeu. (Notre recommendation).<br><br></p>
                         <p>Niveau 👑 Diamant :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
-                        <p>Niveau 🎨 Studio :<br> ✨ Limitée et réservée aux passionnés souhaitant le meilleur:<br> 🎨 Pour la collection en vitrine.<br><br></p>
+                      
                         <p>Le soclage est inclus.</p>
                         <select id="niveau" class="select" name="niveau" required>
                             <option value="" disabled hidden>Choisissez un niveau</option>
                             <option value="niveau1" selected>Niveau Gold - TableTop+, équivalent Gold (niv3)</option>
                             <option value="niveau2">Niveau Diamant - TableTop++, équivalent Diamond (niv4)</option>
-                            <option value="expo">Niveau Studio - Pièce d'exposition pour vitrine</option>
+                           
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
                     </div>
