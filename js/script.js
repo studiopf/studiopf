@@ -673,7 +673,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="grosvehiculemonstre" class="cardform">
-            <label for="grosvehiculemonstre-input">Number of <strong>Large Vehicles/Monsters 90-100mm+ base</strong>:</label>
+            <label for="grosvehiculemonstre-input">Number of <strong>Large Vehicles/Monsters 100mm+ base</strong>:</label>
             <p>Example: Predator, Plague Burst Crawler, Daemon Prince, Armingers, Mancrusher...</p>
             <p>Unit price: <span id="prixgrosvehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totalgrosvehiculemonstre">0.00</span> €</p>
@@ -927,7 +927,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="grosvehiculemonstre" class="cardform">
-            <label for="grosvehiculemonstre-input">Número de <strong>grandes vehículos/monstruos base 90-100mm o superior</strong>:</label>
+            <label for="grosvehiculemonstre-input">Número de <strong>grandes vehículos/monstruos base 100-130mm</strong>:</label>
             <p>Ejemplo: Predator, Plague Burst, Príncipe Demonio, Armingers, Mancrusher...</p>
             <p>Precio unitario: <span id="prixgrosvehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totalgrosvehiculemonstre">0.00</span> €</p>
@@ -935,7 +935,7 @@ ${prenom} ${nom}`;
         </div>
 
         <div id="enormevehiculemonstre" class="cardform">
-            <label for="enormevehiculemonstre-input">Número de <strong>enormes vehículos/monstruos base 130-160mm o superior</strong>:</label>
+            <label for="enormevehiculemonstre-input">Número de <strong>enormes vehículos/monstruos base 130-160-170mm</strong>:</label>
             <p>Ejemplo: Land Raider, Defiler, Aerodyne...</p>
             <p>Precio unitario: <span id="prixenormevehiculemonstre">0.00</span> €</p>
             <p>Subtotal: <span id="totalenormevehiculemonstre">0.00</span> €</p>
@@ -1170,22 +1170,21 @@ ${prenom} ${nom}`;
                         <input type="number" id="grosvehiculemonstre-input" name="grosvehiculemonstre" min="0">
                     </div>
 
-                    <div id="enormevehiculemonstre" class="cardform">
-                        <label for="enormevehiculemonstre-input">Nombre de <strong>Énormes Véhicules/Monstres socle 130-160mm ou supérieur</strong> :</label>
-                        <p>Exemple : Land Raider, Defiler, Aerodyne...</p>
+                                      <div id="enormevehiculemonstre" class="cardform">
+                        <label for="enormevehiculemonstre-input">Nombre de <strong>Énormes Véhicules/Monstres socle 100-130 ou supérieur</strong> :</label>
+                        <p>Exemple : Land Raider, Defiler, Aerodyne, Morathi, Mortarion, Kragnos...</p>
                         <p>Prix unitaire : <span id="prixenormevehiculemonstre">0.00</span> €</p>
                         <p>Sous Total : <span id="totalenormevehiculemonstre">0.00</span> €</p>
                         <input type="number" id="enormevehiculemonstre-input" name="enormevehiculemonstre" min="0">
                     </div>
 
                     <div id="titanvehiculemonstre" class="cardform">
-                        <label for="titanvehiculemonstre-input">Nombre de <strong>Véhicules/Monstres Titanesques socle 170mm</strong> :</label>
-                        <p>Exemple : Spartan, Imperial Knight, Mega Gargant...</p>
+                        <label for="titanvehiculemonstre-input">Nombre de <strong>Véhicules/Monstres Titanesques socle 130-160mm-170mm</strong> :</label>
+                        <p>Exemple : Spartan, Allareille, Imperial Knight, Cogfort, Fulgrim, Mega Gargant...</p>
                         <p>Prix unitaire : <span id="prixtitanvehiculemonstre">0.00</span> €</p>
                         <p>Sous Total : <span id="totaltitanvehiculemonstre">0.00</span> €</p>
                         <input type="number" id="titanvehiculemonstre-input" name="titanvehiculemonstre" min="0">
                     </div>
-
                     <div id="montage" class="cardform">
                         <label for="montage-input"><strong>Montage</strong> à prévoir ?</label>
                         <select id="montage-input" name="montage">
