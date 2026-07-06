@@ -826,6 +826,10 @@ nav ul li a:hover {
    MEDIA QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+   .social-bloc-vide
+{
+  padding: 3px;
+}
     .center {
         justify-content: center;
         align-items: center;
