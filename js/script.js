@@ -19,7 +19,7 @@ function updateMeta(lang) {
             title = "Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección";
             break;
         default:
-            title = "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection";
+            title = "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection | Cours de peinture sur figurines";
     }
 
     document.title = title;
