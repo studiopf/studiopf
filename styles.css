@@ -527,8 +527,13 @@ nav ul li a:hover {
 .social-icon instagram{
       background-image: url('img/ico/instagram.png');
 }
-.social-icon tiktok{
-      background-image: url('img/ico/tiktok.png');
+.social-icon.tiktok {
+    width: 50px;
+    height: 50px;
+    background-color: #B8860B; /* jaune foncé */
+
+    -webkit-mask: url("img/ico/tiktok.png") center/70% no-repeat;
+    mask: url("img/ico/tiktok.png") center/70% no-repeat;
 }
 .social-icon patreon{
       background-image: url('img/ico/patreon.png');
