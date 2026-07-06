@@ -424,11 +424,11 @@ function changelangueforma() {
           <label for="cours">Cours</label>
           <select id="cours" name="cours" required>
             <option value="" disabled selected>Sélectionnez une option</option>
-            <option value="COURS PEINTURE 1h - 40€">Cours 1h - 40€</option>
-            <option value="COURS PEINTURE 3h - 120€">Cours 3h - 120€</option>
+            <option value="COURS PEINTURE 1h - 50€">Cours 1h - 50€</option>
+            <option value="COURS PEINTURE 3h - 150€">Cours 3h - 150€</option>
             <option value="COURS PEINTURE 5h - 200€">Cours 5h - 200€</option>
-            <option value="Stage individuel 5h - 220€">Stage individuel 5h - 220€</option>
-            <option value="Stage individuel 8h - 340€">Stage individuel 8h - 340€</option>
+            <option value="Stage individuel 5h - 200€">Stage individuel 5h - 200€</option>
+            <option value="Stage individuel 8h - 350€">Stage individuel 8h - 350€</option>
             <option value="Stage collectif - sur devis">Stage collectif - sur devis</option>
             <option value="Prestation événementielle - sur devis">Prestation événementielle - sur devis</option>
           </select>
