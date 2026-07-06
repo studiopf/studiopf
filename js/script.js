@@ -27,22 +27,36 @@ function hideCurrentPage() {
 const currentYear = new Date().getFullYear();
 const pfAge = currentYear - 1987;
 
-
 function updateMeta(lang) {
     let title;
+    let description;
+    let keywords;
+    const author = "FRASSE Pierre-François - Studio PF";
 
     switch (lang) {
         case "english":
-            title = "Studio PF | Professional Miniature Painter | Warhammer and Collectible Miniature Commissions";
+            title = "Studio PF | Professional Miniature Painter & Warhammer Commissions";
+            description = "Studio PF offers professional miniature painting services: Warhammer, Warhammer 40K, Age of Sigmar, collectible miniatures and competition pieces. Free quote available.";
+            keywords = "professional miniature painter, miniature painting service, Warhammer painting commission, Warhammer 40K painting, Age of Sigmar painting, collectible miniatures, display miniatures, competition miniature painting, Studio PF";
             break;
+
         case "spanish":
-            title = "Studio PF | Pintor Profesional de Miniaturas | Encargos de Warhammer y Figuras de Colección";
+            title = "Studio PF | Pintor Profesional de Miniaturas y Encargos Warhammer";
+            description = "Studio PF ofrece servicios profesionales de pintura de miniaturas: Warhammer, Warhammer 40K, Age of Sigmar, figuras de colección y piezas de competición. Presupuesto gratuito.";
+            keywords = "pintor profesional de miniaturas, pintura de miniaturas, encargos Warhammer, pintura Warhammer 40K, Age of Sigmar, figuras de colección, miniaturas de exposición, pintura de competición, Studio PF";
             break;
+
         default:
-            title = "Studio PF | Peintre sur Figurine Professionnel | Commission Warhammer et Figurines de Collection | Cours de  sur figurines";
+            title = "Studio PF | Peintre Figurine Professionnel & Commission Warhammer";
+            description = "Studio PF réalise vos commissions de peinture figurine haut de gamme : Warhammer, 40K, Age of Sigmar, figurines de collection et pièces de concours. Devis gratuit.";
+            keywords = "peintre figurine professionnel, commission peinture figurine, peinture figurine haut de gamme, peinture Warhammer, Warhammer 40K peinture, Age of Sigmar peinture, figurines de collection, figurines d'exposition, peinture concours figurine, Studio PF";
     }
 
     document.title = title;
+
+    document.querySelector('meta[name="description"]').setAttribute("content", description);
+    document.querySelector('meta[name="author"]').setAttribute("content", author);
+    document.querySelector('meta[name="keywords"]').setAttribute("content", keywords);
 }
 // =============================
 // UTILITAIRES
