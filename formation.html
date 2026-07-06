@@ -31,7 +31,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Studio PF : Peinture Figurine - Tabletop supérieur et cours de peinture">
 <meta name="twitter:description" content="Studio PF, spécialiste de la peinture sur figurines. Prestations Gold et Diamant, peinture Warhammer, Age of Sigmar, cours au pinceau et à l'aérographe.">
-<meta name="twitter:image" content="https://studiopf.fr/img/preview.png">
+<meta name="twitter:image" content="https://studiopf.fr/img/preview.jpg">
 <meta name="twitter:site" content="@studioPFfr">
 
 
@@ -39,9 +39,6 @@
 <link rel="preconnect" href="https://code.jquery.com" crossorigin>
 <!-- Font Awesome (chargement asynchrone optimisé) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-
 
 
 
@@ -53,17 +50,27 @@
 
 
 <!-- CSS principal -->
+<link
+rel="preload"
+href="/styles.css"
+as="style"
+onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
 <link rel="stylesheet" href="/styles.css">
+</noscript>
 
 
 <!-- Favicon -->
-<link rel="icon" href="/img/favicon.png">
-
+<link
+rel="icon"
+href="/img/favicon.png"
+type="image/png">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Studio PF | Peinture professionnelle sur figurines">
 <meta property="og:description" content="Commission Warhammer, figurines de collection et peinture haut niveau.">
-<meta property="og:image" content="https://studiopf.fr/img/preview.png">
+<meta property="og:image" content="https://studiopf.fr/img/preview.jpg">
 <meta property="og:url" content="https://studiopf.fr/">
 <meta property="og:type" content="website">
 
@@ -72,7 +79,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Studio PF | Peinture figurine professionnelle">
 <meta name="twitter:description" content="Commission Warhammer et figurines de collection.">
-<meta name="twitter:image" content="https://studiopf.fr/img/preview.png">
+<meta name="twitter:image" content="https://studiopf.fr/img/preview.jpg">
 
 
 <!-- Scripts -->
@@ -85,7 +92,7 @@
  "@context":"https://schema.org",
  "@type":"LocalBusiness",
  "name":"Studio PF",
- "image":"https://studiopf.fr/img/preview.png",
+ "image":"https://studiopf.fr/img/preview.jpg",
  "@id":"https://studiopf.fr/",
  "url":"https://studiopf.fr/",
  "telephone":"+33775860837",
@@ -105,16 +112,17 @@
 
 </head>
 <body>
- 
+
+
     <header>
      
         <div class="language-selector">
            <button  onclick="setLanguage(id);  updateMeta(id); return false;" id="french">
-        <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="Français"></button>
+        <img src="img/Flag_of_France.png" alt="Français"></button>
              <button onclick="setLanguage(id); updateMeta(id); return false;" id="english">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg" alt="English"></button>
+        <img src="img/img/Flag_of_the_United_Kingdom_(3-5).png" alt="English"></button>
                <button  onclick="setLanguage(id); updateMeta(id); return false;" id="spanish">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Español"></button>
+        <img src="img/Flag_of_Spain.png" alt="Español"></button>
 
     </div>
         
@@ -126,7 +134,7 @@
         <div class="cardlogoimg">
     <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
-        <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
+        <img src="/img/logo.png" alt="Studio PF Logo" class="logo" fetchpriority=high>
 
          </a>    
 </div>  
@@ -141,7 +149,9 @@
            <div class="social-align"> <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon patreon" aria-label="patreon"><i class="fab fa-patreon"></i></a> </div>
         </div> 
                  </div>
+            
            <div class="social-bloc-vide">  </div>
+            
        <div class="social-bloc">
 
         <div class="social-container">
@@ -150,13 +160,21 @@
            <div class="social-align"> <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon twitch" aria-label="Twitch"><i class="fab fa-twitch"></i></a> </div>
          </div>
                      </div>
+            
              <div class="social-bloc-vide">  </div>
+       <div class="social-bloc">
+              <div class="social-container">
+           <div class="social-align"> <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon youtube" aria-label="youtube"><i class="fab fa-youtube"></i></a> </div>
+           <div class="social-align"> <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon tiktok" aria-label="tiktok"><i class="fab fa-tiktok"></i></a> </div>
+        </div> 
+               </div>
+            
+              <div class="social-bloc-vide">  </div>
        <div class="social-bloc">
 
          <div class="social-container">   
            <div class="social-align"> <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon discord" aria-label="Discord"><i class="fab fa-discord"></i></a> </div>
             <div class="social-align"><a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a> </div>
-       <div class="social-align"><a href="mailto:studiopeinturefigurine@gmail.com" class="social-icon email" aria-label="Email"><i class="fas fa-envelope"></i></a></div>
          </div>
             </div>
         </div>
@@ -164,29 +182,30 @@
         
         <nav id="menu-contenu" class="menu-mobile">
             <ul class="menu">
-                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture 🎨</a></li>
+                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop+ 🎨</a></li>
                    <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
                    <li><a href="simulateur_devis.html" onclick="loadPage('simulateur_devis.html'); return false;">Demande de devis 💰</a></li>
                 <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
             </ul>
         </nav>
+   
 
-    <div class="carroussel-container">
+  <div class="carroussel-container">
         <div class="carroussel" id="carroussel">
-            <img src="https://studiopf.fr/img/carroussel/carroussel1.png" alt="Figurine Warhammer AoS peinte par Studio PF"  loading="eager">
-            <img src="https://studiopf.fr/img/carroussel/carroussel2.png" alt="Figurine Warhammer 40K peinte par Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/img/carroussel/carroussel3.png" alt="Figurine Warhammer Age of Sigmar peinte par Studio PF"  loading="eager">
-                        <img src="https://studiopf.fr/img/carroussel/carroussel4.png"  alt="Figurine de jeux vidéo de collection peinte par Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/img/carroussel/carroussel5.png"  alt="Figurine de RPG de collection peinte par Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/img/carroussel/carroussel6.png"  alt="Figurine de manga de collection peinte par Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/img/carroussel/carroussel7.png" alt="Figurine Warhammer ToW peinte par Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/img/carroussel/carroussel8.png" alt="Figurine de collection peinte par Studio PF" loading="eager">
-                        <img src="https://studiopf.fr/img/carroussel/carroussel9.png" alt="Figurine Warhammer The Old World peinte par Studio PF" loading="eager">
+            <img src="https://studiopf.fr/img/carroussel/carroussel1.png" alt="Figurine Warhammer AoS peinte par Studio PF" loading="eager" fetchpriority="high">
+            <img src="https://studiopf.fr/img/carroussel/carroussel2.png" alt="Figurine Warhammer 40K peinte par Studio PF" loading="lazy" decoding="async">
+                        <img src="https://studiopf.fr/img/carroussel/carroussel3.png" alt="Figurine Warhammer Age of Sigmar peinte par Studio PF"  loading="lazy" decoding="async">
+                        <img src="https://studiopf.fr/img/carroussel/carroussel4.png"  alt="Figurine de jeux vidéo de collection peinte par Studio PF" loading="lazy" decoding="async">
+                        <img src="https://studiopf.fr/img/carroussel/carroussel5.png"  alt="Figurine de RPG de collection peinte par Studio PF" loading="lazy" decoding="async">
+                        <img src="https://studiopf.fr/img/carroussel/carroussel6.png"  alt="Figurine de manga de collection peinte par Studio PF" loading="lazy" decoding="async">
+                        <img src="https://studiopf.fr/img/carroussel/carroussel7.png" alt="Figurine Warhammer ToW peinte par Studio PF" loading="lazy" decoding="async">
+                        <img src="https://studiopf.fr/img/carroussel/carroussel8.png" alt="Figurine de collection peinte par Studio PF" loading="lazy" decoding="async">
+                        <img src="https://studiopf.fr/img/carroussel/carroussel9.png" alt="Figurine Warhammer The Old World peinte par Studio PF" loading="lazy" decoding="async">
         </div>
 
     </div>
 
-</header>
+       </header>
 <main id="contenu-principal">
    <div class="maintenance-box">
         <h1>🎨 Formation Peinture sur Figurines</h1>
