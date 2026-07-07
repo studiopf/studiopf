@@ -505,12 +505,12 @@ ${prenom} ${nom}`;
 
             <div class="form-group">
                 <label for="nom">Last Name<span class="required">*</span></label>
-                <input type="text" id="nom" name="nom" placeholder="Nombre" required>
+                <input type="text" id="nom" name="nom" placeholder="Surname" required>
             </div>
 
             <div class="form-group">
                 <label for="prenom">First Name<span class="required">*</span></label>
-                <input type="text" id="prenom" name="prenom" placeholder="Apellido" required>
+                <input type="text" id="prenom" name="prenom" placeholder="Name" required>
             </div>
 
             <div class="form-group">
@@ -520,22 +520,22 @@ ${prenom} ${nom}`;
 
             <div class="form-group">
                 <label for="telephone">Phone<span class="required">*</span></label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Teléfono" required>
+                <input type="tel" id="telephone" name="telephone" placeholder="Phone" required>
             </div>
 
             <div class="form-group">
                 <label for="adresse">Address<span class="required">*</span></label>
-                <input type="text" id="adresse" name="adresse" placeholder="Dirección" required>
+                <input type="text" id="adresse" name="adresse" placeholder="Adress" required>
             </div>
 
             <div class="form-group">
                 <label for="cp">Postal Code<span class="required">*</span></label>
-                <input type="text" id="cp" name="cp" placeholder="Código postal" required>
+                <input type="text" id="cp" name="cp" placeholder="Postal Code" required>
             </div>
 
             <div class="form-group">
                 <label for="ville">City<span class="required">*</span></label>
-                <input type="text" id="ville" name="ville" placeholder="Cuidad" required>
+                <input type="text" id="ville" name="ville" placeholder="City" required>
             </div>
 
             <div class="form-group">
