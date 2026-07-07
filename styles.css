@@ -693,7 +693,7 @@ nav ul li a:hover {
     margin-top: 0;
     margin-bottom: 0;
     border: 0px;
-    width: 80%;
+    width: 100%;
     position: relative;
     max-width: 600px; /* Augmenté pour plus grand sur PC */
     margin: 0 auto;
@@ -710,7 +710,7 @@ nav ul li a:hover {
 }
 
 .carroussel img {
-    width: 80%; /* Rendu responsive */
+    width: 100%; /* Rendu responsive */
     height: auto; /* Changé pour auto pour responsive */
     object-fit: contain;
     flex: 0 0 80%;
