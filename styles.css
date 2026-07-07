@@ -11,8 +11,7 @@ textarea {
     height: 100px;
 }
 img {
-  aspect-ratio: 4 / 3;
-  height: auto;
+  height: 80%;
 }
 /* ==========================================================================
    BOUTON PRINCIPAL – style cohérent avec les cartes
@@ -694,9 +693,9 @@ nav ul li a:hover {
     margin-top: 0;
     margin-bottom: 0;
     border: 0px;
-    width: 100%;
+    width: 80%;
     position: relative;
-    max-width: 800px; /* Augmenté pour plus grand sur PC */
+    max-width: 600px; /* Augmenté pour plus grand sur PC */
     margin: 0 auto;
     overflow: hidden;
 }
@@ -711,10 +710,10 @@ nav ul li a:hover {
 }
 
 .carroussel img {
-    width: 100%; /* Rendu responsive */
+    width: 80%; /* Rendu responsive */
     height: auto; /* Changé pour auto pour responsive */
     object-fit: contain;
-    flex: 0 0 100%;
+    flex: 0 0 80%;
 }
 
 .tous {
@@ -1088,7 +1087,7 @@ nav ul li a:hover {
     .carroussel-container {
         margin-top: 0;
         margin-bottom: 0;
-        max-width: 300px;
+        max-width: 250px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -1103,7 +1102,7 @@ nav ul li a:hover {
     }
 
     .carroussel img {
-        width: 100%; /* Responsive sur mobile */
+        width: 80%; /* Responsive sur mobile */
         height: auto;
         object-fit: contain;
         flex: 0 0 100%;
