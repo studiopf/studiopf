@@ -713,7 +713,7 @@ nav ul li a:hover {
     width: 100%; /* Rendu responsive */
     height: auto; /* Changé pour auto pour responsive */
     object-fit: contain;
-    flex: 0 0 80%;
+    flex: 0 0 100%;
 }
 
 .tous {
@@ -1102,7 +1102,7 @@ nav ul li a:hover {
     }
 
     .carroussel img {
-        width: 80%; /* Responsive sur mobile */
+        width: 100%; /* Responsive sur mobile */
         height: auto;
         object-fit: contain;
         flex: 0 0 100%;
