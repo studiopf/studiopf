@@ -603,7 +603,7 @@ nav ul li a:hover {
     margin-bottom: 0;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
     transition: transform 0.3s;
 }
