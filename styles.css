@@ -589,7 +589,7 @@ nav ul li a:hover {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(0px, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 0px;
     max-width: 900px;
     margin: auto;
@@ -1021,7 +1021,7 @@ nav ul li a:hover {
     }
 
     .gallery {
-        grid-template-columns: repeat(0px, minmax(100px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         gap: 0px;
         max-width: 300px;
         margin-top: 0;
