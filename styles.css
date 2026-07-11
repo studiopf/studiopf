@@ -936,7 +936,7 @@ nav ul li a:hover {
 }
 
 .lightbox.active {
-    display: grid;
+    display: flex;
 }
 
 .lightbox img {
