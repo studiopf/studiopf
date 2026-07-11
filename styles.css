@@ -936,7 +936,7 @@ nav ul li a:hover {
 }
 
 .lightbox.active {
-    display: flex;
+    display: grid;
 }
 
 .lightbox img {
@@ -949,7 +949,7 @@ nav ul li a:hover {
     content: '✕';
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 20px;
       font-size: 20px;
     color: white;
     cursor: pointer;
