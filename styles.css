@@ -589,7 +589,7 @@ nav ul li a:hover {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 0px;
     max-width: 900px;
     margin: auto;
@@ -617,8 +617,8 @@ nav ul li a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     background: rgba(0,0,0,0.9);
     justify-content: center;
     align-items: center;
@@ -910,8 +910,8 @@ nav ul li a:hover {
         position: fixed;
         top: 0;
         left: 0;
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         grid-template-columns: repeat(3, 1fr);
         background: rgba(0,0,0,0.9);
         z-index: 0;
@@ -1021,7 +1021,7 @@ nav ul li a:hover {
     }
 
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         gap: 0px;
         max-width: 300px;
         margin-top: 0;
