@@ -935,6 +935,7 @@ nav ul li a:hover {
         background: rgba(0,0,0,0.9);
         z-index: 0;
     }
+   
 
     .lightbox.active {
         display: flex;
@@ -947,13 +948,13 @@ nav ul li a:hover {
     }
 
     .lightbox::after {
-        content: '✕';
-        position: absolute;
-        top: 0px;
-        right: 00px;
-          font-size: 18px;
-        color: white;
-        cursor: pointer;
+    content: '✕';
+    position: absolute;
+    top: 20px;
+    right: 30px;
+      font-size: 20px;
+    color: white;
+    cursor: pointer;
     }
 
     body {
