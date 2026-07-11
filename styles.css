@@ -585,26 +585,6 @@ nav ul li a:hover {
 /* Le reste (cartes, gallery, lightbox, boutons scroll, media queries) reste IDENTIQUE */
 
 /* Galerie */
-.gallery2 {
-    display: flex;
-    gap: 0px;
-    justify-items: center;
-    margin-top: 0px;
-    width: 100%;
-    max-width: 800px;
-}
-
-.gallery2 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.gallery2 img:hover {
-    transform: scale(2.05);
-}
 
 .gallery {
     display: grid;
