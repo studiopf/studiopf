@@ -2237,8 +2237,8 @@ function changelanguemenu() {
         html = `        <nav id="menu-contenu" class="menu-mobile">
             <ul class="menu">
                 <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture Armées TableTop 🎨</a></li>
-                 <li><a href="peinturecollection" onclick="loadPage('peinturecollection.html'); return false;">🏆 Peinture Collection & Concours</a></li>
-            
+                 <li><a href="peinturecollection" onclick="loadPage('peinturecollection.html'); return false;">Peinture Collection & Concours 🏆</a></li>
+            </ul>  <ul class="menu">
                    <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
                 <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
             </ul>
