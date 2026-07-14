@@ -204,13 +204,13 @@ changelangueinfo();
     if (currentPage.includes("mentionslegales") && typeof changelanguementionslegales === "function") {
         changelanguementionslegales();
     }
-    if (currentPage.includes("commission") && typeof changelanguepeinture === "function") {
+    if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
        genererTableTarifs();
     
     }
-        if (currentPage.includes("collection") && typeof changelanguecolletion === "function") {
-        changelanguecolletion();
+        if (currentPage.includes("peinturecollection") && typeof changelanguecollection === "function") {
+        changelanguecollection();
             
     
     }
@@ -3917,7 +3917,7 @@ function calculateTotals() {
     const niveau = niveauSelect.value || "niveau1";
 
     let totalGeneral = 0;
-    mettreAJourTarifLangue();
+  
 
     categories.forEach(cat => {
         const input   = document.getElementById(`${cat}-input`);
