@@ -3776,6 +3776,7 @@ const categoryLabels = {
     en: "Category",
     es: "Categoría"
 };
+    const categories = Object.keys(tariffs);
 
 function genererTableTarifs() {
 
@@ -3783,8 +3784,14 @@ function genererTableTarifs() {
 
     tbody.innerHTML = "";
 
+
     let langue = currentLanguage === "english" ? "en" :
                  currentLanguage === "spanish" ? "es" : "fr";
+
+
+    tarifheure = currentLanguage === "english" 
+        ? tarifheureus 
+        : tarifheureeu;
 
 
     Object.keys(tariffs).forEach(categorie => {
@@ -3793,15 +3800,22 @@ function genererTableTarifs() {
 
         ligne.innerHTML = `
             <td>${categories[categorie][langue]}</td>
-            <td>${formatPrix(tariffs[categorie].niveau1)}</td>
-            <td>${formatPrix(tariffs[categorie].niveau2)}</td>
+            
+            <td>
+                ${tariffs[categorie].niveau1}h / 
+                ${tariffs[categorie].niveau1 * tarifheure}€
+            </td>
+
+            <td>
+                ${tariffs[categorie].niveau2}h / 
+                ${tariffs[categorie].niveau2 * tarifheure}€
+            </td>
         `;
 
         tbody.appendChild(ligne);
     });
 }
 
-const categories = Object.keys(tariffs);
 
 
 
