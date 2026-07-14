@@ -5028,7 +5028,7 @@ function scrollTotal(offset=100) {
               if (currentPage.includes("simulateur_devis")) {
    document.getElementById('scrollTotal').style.display = 'block';}
      document.getElementById('scrollTotal').style.display = 'none';
-  const totalElement = document.querySelector("h3.total");
+  const totalElement = document.querySelector("oktotak");
   if (totalElement) {
     const elementTop = totalElement.getBoundingClientRect().top + window.pageYOffset;
     window.scrollTo({
