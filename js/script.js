@@ -1326,7 +1326,7 @@ At <strong>Studio PF</strong>, every <strong>miniature painting commission</stro
 Discover the painting service ➜
 </a>
 </p>
-</div>
+</div></div>
 
 
 <div class="center">
@@ -1490,7 +1490,7 @@ Descubrir el servicio de pintura ➜
 </a>
 </p>
 
-</div>
+</div></div>
 
 
 <div class="center">
@@ -1690,7 +1690,7 @@ Chez <strong>Studio PF</strong>, chaque <strong>commission de peinture sur figur
 Découvrir le service peinture ➜
 </a>
 </p>
-</div>
+</div></div>
 
 
 <div class="center">
