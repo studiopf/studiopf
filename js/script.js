@@ -1850,467 +1850,351 @@ function changelanguecollection() {
 
     if (currentLanguage === "english") {
         html = `<div class="maintenance-box">
-
-    <h1>Unique pieces for collection, display and competitions 🏆</h1>
-
+        <h1>Unique Pieces for Collection, Exhibition and Competitions 🏆</h1>
+ 
     <p>
-    Studio PF creates <strong>high-end miniature painting</strong> services for collectors, enthusiasts and art lovers who want to transform their models into true display pieces.
+    Studio PF creates <strong>high-end figurine paintings</strong> for collectors, enthusiasts and lovers of beautiful pieces who want to transform their models into true exhibition pieces.
     </p>
-
     <p>
-    Each project receives a fully customized approach, adapted to the sculpture, the miniature universe and the desired objective: collection, showcase or painting competition.
+    Each project benefits from a fully personalized approach, tailored to the sculpture, the figurine's universe and the desired goal: collection, display case or competition.
     </p>
-
     <p>
-    This service is intended for models requiring a superior level of finish, with detailed artistic work that can represent <strong>several dozen hours of work</strong> depending on the complexity of the piece.
+    This service is intended for models requiring a superior level of finish, with in-depth artistic work that can represent <strong>several dozen hours of work</strong> depending on the complexity of the piece.
     </p>
 <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Studio%20PF%20Collector%20Painting%20Project" class="button">
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
 Present my project 💬
 </a>
 </p>
-</div>
-
+  </div>
+    <div class="maintenance-box">
+        <h2>⚔️ Gaming Figurines</h2>
+        <p>
+        Warhammer 40K, Age of Sigmar, Warhammer The Old World,
+        Dungeons & Dragons, The Lord of the Rings, Star Wars Legion,
+        StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
+        as well as many other fantasy and science-fiction universes.
+        </p>
+    </div>
+    <div class="maintenance-box">
+        <h2>🗿 Busts and Collectible Pieces</h2>
+        <p>
+        Busts, miniature statues, resin figurines and pieces intended for exhibition or painting competitions.
+        </p>
+        <p>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
+Present my project 💬
+</a>
+    </div>
+    <div class="maintenance-box">
+        <h2>🖨️ 3D Printed Figurines</h2>
+        <p>
+        Models can come from independent artisans, 3D creators or platforms like Etsy, MyMiniFactory or other specialized printers.
+        </p>
+        <p>
+        The client provides the figurine or purchases it directly from the creator or printer of their choice.
+        </p>
+        <h3>Important Information</h3>
+        <p>
+        <strong>Studio PF does not perform 3D printing of the models for this service.</strong><br>
+        The service concerns exclusively the preparation and artistic painting of the piece.
+        </p>
+        <p>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
+Present my project 💬
+</a>
+    </div>
 <div class="maintenance-box">
-    <h2>⚔️ Gaming miniatures</h2>
-    <p>
-    Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-    Dungeons & Dragons, The Lord of the Rings, Star Wars Legion,
-    StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-    as well as many other fantasy and science-fiction universes.
-    </p>
-</div>
-
-
-<div class="maintenance-box">
-    <h2>🗿 Busts and collector pieces</h2>
-    <p>
-    Busts, miniature statues, resin miniatures and pieces intended for display or painting competitions.
-    </p>
-</div>
-
-
-<div class="maintenance-box">
-    <h2>🖨️ 3D printed miniatures</h2>
-    <p>
-    Models can come from independent artists, 3D creators or platforms such as Etsy, MyMiniFactory or other specialized printing services.
-    </p>
-
-    <p>
-    The customer provides the miniature or purchases it directly from the creator or printer of their choice.
-    </p>
-
-    <h3>Important information</h3>
-    <p>
-    <strong>Studio PF does not provide 3D printing services for this offer.</strong><br>
-    The service exclusively covers the preparation and artistic painting of the miniature.
-    </p>
-</div>
-        <div class="maintenance-box">
-
 <h2>Artistic Preparation 🛠️</h2>
-
 <ul>
-
 <li>
-Careful cleaning and preparation of the model
+Thorough cleaning and preparation of the model
 </li>
-
 <li>
-Assembly and adjustment of the different parts
+Assembly and adjustments of the various parts
 </li>
-
 <li>
 Correction of any preparation defects
 </li>
-
 <li>
-Suitable primer application according to the artistic project
+Primer suited to the artistic project
 </li>
-
 </ul>
-
 </div>
-
-
 <div class="maintenance-box">
-
-<h2>Collector Painting 🎨</h2>
-
+<h2>Collection Painting 🎨</h2>
 <ul>
-
 <li>
-<strong>✨ Volume work:</strong><br>
-Smooth gradients, soft transitions, precise highlights and advanced color variations to reveal the full richness of the sculpture.
+<strong>✨ Volume Work :</strong><br>
+Fine gradients, smooth transitions, precise highlighting and deep color nuances to reveal all the richness of the sculpture.
 </li>
-
 <li>
-<strong>🎭 Artistic research:</strong><br>
-Work on contrasts, color harmony, focal points and overall atmosphere to create a visually powerful piece.
+<strong>🎭 Artistic Research :</strong><br>
+Work on contrasts, color harmonies, focal points and overall atmosphere to create a visually powerful piece.
 </li>
-
 <li>
-<strong>🧪 Texture work:</strong><br>
+<strong>🧪 Texture Play :</strong><br>
 Creation of realistic or stylized painted textures: leather, metal, skin, fabrics, wood, stone, worn surfaces and complex materials.
 </li>
-
 <li>
-<strong>💡 Advanced techniques:</strong><br>
-Glazes, oils, pigments, lighting effects, weathering, fine details and techniques adapted to collector and competition pieces.
+<strong>💡 Advanced Techniques :</strong><br>
+Glazes, oils, pigments, lighting effects, weathering, fine details and techniques adapted to collection and competition pieces.
 </li>
-
 </ul>
-
 </div>
-
-
 <div class="maintenance-box">
-
-<h2>Base & Presentation 🌿</h2>
-
+<h2>Basing & Staging 🌿</h2>
 <ul>
-
 <li>
-<strong>🌱 Custom base:</strong><br>
-Creation of an atmosphere consistent with the story, character and universe of the miniature.
+<strong>🌱 Custom Base :</strong><br>
+Creation of a coherent atmosphere with the story, the character and the universe of the figurine.
 </li>
-
 <li>
-<strong>🏆 Exhibition presentation:</strong><br>
+<strong>🏆 Exhibition Presentation :</strong><br>
 Work on the base and overall composition to enhance the visual impact of the piece.
 </li>
-
 </ul>
-
 </div>
-
-
 <div class="maintenance-box">
-
 <h2>A Unique Piece ✨</h2>
-
 <table class="tableborder1">
-
 <thead>
 <tr>
-<th>🎨 Features</th>
+<th>🎨 Characteristics</th>
 <th>Collection</th>
 </tr>
 </thead>
-
 <tbody>
-
 <tr>
-<td>Purpose</td>
-<td>Collection, exhibition, display or competition</td>
+<td>Destination</td>
+<td>Collection, exhibition, display case or competition</td>
 </tr>
-
 <tr>
-<td>Finish level</td>
-<td>Very high finish with advanced artistic work</td>
+<td>Finish Level</td>
+<td>Very high finish with in-depth artistic work</td>
 </tr>
-
 <tr>
 <td>Painting</td>
-<td>Fine gradients, complex color variations, textures and advanced effects</td>
+<td>Fine gradients, complex nuances, textures and advanced effects</td>
 </tr>
-
 <tr>
-<td>Production time</td>
-<td>Project requiring several dozen hours of work</td>
+<td>Production Time</td>
+<td>Project that can represent several dozen hours of work</td>
 </tr>
-
 <tr>
 <td>Approach</td>
-<td>Each piece is unique and individually studied</td>
+<td>Each piece is unique and studied individually</td>
 </tr>
-
 </tbody>
-
 </table>
-
 </div>
-
-
 <div class="maintenance-box">
-
-<h2>📩 Present your project</h2>
-
+<h2>📩 Present Your Project</h2>
 <p>
-For a collector piece, each project is individually studied in order to offer an approach adapted to your miniature and your expectations.
+For a collectible piece, each project is studied individually in order to offer an approach tailored to your figurine and your expectations.
 </p>
-
 <p>
-To prepare your request, please send:
+To prepare your request, please send me:
 </p>
-
 <ul>
-
 <li>
-Photos or a link to the miniature
+Photos or link to the figurine
 </li>
-
 <li>
 Model dimensions (scale, height, base...)
 </li>
-
 <li>
 Desired universe or theme
 </li>
-
 <li>
 References or inspirations
 </li>
-
 <li>
 Your expectations regarding the finish level
 </li>
-
 </ul>
-
 <p>
 I will reply with a personalized proposal for your project.
 </p>
-
 <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Studio%20PF%20Collector%20Painting%20Project" class="button">
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
 Present my project 💬
 </a>
 </p>
-
 </div>`;
     } else if (currentLanguage === "spanish") {
         html = `<div class="maintenance-box">
-
-    <h1>Piezas únicas para colección, exposición y concursos 🏆</h1>
-
+        <h1>Piezas únicas para colección, exposición y concursos 🏆</h1>
+ 
     <p>
-    Studio PF realiza <strong>pinturas de figuras de alta gama</strong> destinadas a coleccionistas, apasionados y amantes de las piezas únicas que desean transformar sus modelos en auténticas piezas de exposición.
+    Studio PF realiza <strong>pinturas de figurines de alta gama</strong> destinadas a coleccionistas, apasionados y aficionados a las piezas bellas que desean transformar sus modelos en verdaderas piezas de exposición.
     </p>
-
     <p>
-    Cada proyecto recibe un enfoque totalmente personalizado, adaptado a la escultura, al universo de la miniatura y al objetivo buscado: colección, vitrina o concurso de pintura.
+    Cada proyecto se beneficia de un enfoque completamente personalizado, adaptado a la escultura, al universo de la figurine y al objetivo buscado: colección, vitrina o concurso.
     </p>
-
     <p>
-    Este servicio está destinado a modelos que requieren un nivel de acabado superior, con un trabajo artístico detallado que puede representar <strong>varias decenas de horas de realización</strong> según la complejidad de la pieza.
+    Este servicio se dirige a modelos que requieren un nivel de acabado superior, con un trabajo artístico profundo que puede representar <strong>decenas de horas de realización</strong> según la complejidad de la pieza.
     </p>
 <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20pintura%20de%20colección%20Studio%20PF" class="button">
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
 Presentar mi proyecto 💬
 </a>
 </p>
-</div>
-
+  </div>
+    <div class="maintenance-box">
+        <h2>⚔️ Figurines de juegos</h2>
+        <p>
+        Warhammer 40K, Age of Sigmar, Warhammer The Old World,
+        Dungeons & Dragons, El Señor de los Anillos, Star Wars Legion,
+        StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
+        así como muchos otros universos fantásticos y de ciencia ficción.
+        </p>
+    </div>
+    <div class="maintenance-box">
+        <h2>🗿 Bustos y piezas de colección</h2>
+        <p>
+        Bustos, estatuas en miniatura, figurines de resina y piezas destinadas a la exposición o a concursos de pintura.
+        </p>
+        <p>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
+Presentar mi proyecto 💬
+</a>
+    </div>
+    <div class="maintenance-box">
+        <h2>🖨️ Figurines impresas en 3D</h2>
+        <p>
+        Los modelos pueden provenir de artesanos independientes, creadores 3D o plataformas como Etsy, MyMiniFactory u otros impresores especializados.
+        </p>
+        <p>
+        El cliente proporciona la figurine o la compra directamente al creador o al impresor de su elección.
+        </p>
+        <h3>Información importante</h3>
+        <p>
+        <strong>Studio PF no realiza la impresión 3D de los modelos para este servicio.</strong><br>
+        El servicio se refiere exclusivamente a la preparación y pintura artística de la pieza.
+        </p>
+        <p>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
+Presentar mi proyecto 💬
+</a>
+    </div>
 <div class="maintenance-box">
-    <h2>⚔️ Figuras de juego</h2>
-    <p>
-    Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-    Dragones y Mazmorras, El Señor de los Anillos, Star Wars Legion,
-    StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-    así como muchos otros universos fantásticos y de ciencia ficción.
-    </p>
-</div>
-
-
-<div class="maintenance-box">
-    <h2>🗿 Bustos y piezas de colección</h2>
-    <p>
-    Bustos, estatuas en miniatura, figuras de resina y piezas destinadas a exposición o concursos de pintura.
-    </p>
-</div>
-
-
-<div class="maintenance-box">
-    <h2>🖨️ Figuras impresas en 3D</h2>
-    <p>
-    Los modelos pueden proceder de artistas independientes, creadores 3D o plataformas como Etsy, MyMiniFactory u otros servicios especializados de impresión.
-    </p>
-
-    <p>
-    El cliente proporciona la figura o la compra directamente al creador o impresor de su elección.
-    </p>
-
-    <h3>Información importante</h3>
-    <p>
-    <strong>Studio PF no realiza la impresión 3D de los modelos para este servicio.</strong><br>
-    El servicio incluye exclusivamente la preparación y la pintura artística de la pieza.
-    </p>
-
-</div>
-
-<div class="maintenance-box">
-
 <h2>Preparación artística 🛠️</h2>
-
 <ul>
-
 <li>
 Limpieza y preparación minuciosa del modelo
 </li>
-
 <li>
-Montaje y ajuste de las diferentes piezas
+Ensamblaje y ajustes de las diferentes piezas
 </li>
-
 <li>
 Corrección de posibles defectos de preparación
 </li>
-
 <li>
-Aplicación de imprimación adecuada al proyecto artístico
+Imprimación adaptada al proyecto artístico
 </li>
-
 </ul>
-
 </div>
-
-
 <div class="maintenance-box">
-
 <h2>Pintura de colección 🎨</h2>
-
 <ul>
-
 <li>
-<strong>✨ Trabajo de volúmenes:</strong><br>
-Degradados suaves, transiciones delicadas, iluminaciones precisas y variaciones de color avanzadas para revelar toda la riqueza de la escultura.
+<strong>✨ Trabajo de volúmenes :</strong><br>
+Degradados finos, transiciones suaves, iluminaciones precisas y matices de colores profundos para revelar toda la riqueza de la escultura.
 </li>
-
 <li>
-<strong>🎭 Investigación artística:</strong><br>
-Trabajo de contrastes, armonías de color, puntos focales y atmósfera general para crear una pieza visualmente impactante.
+<strong>🎭 Búsqueda artística :</strong><br>
+Trabajo de contrastes, armonías de color, puntos focales y ambiente general para crear una pieza visualmente impactante.
 </li>
-
 <li>
-<strong>🧪 Trabajo de texturas:</strong><br>
+<strong>🧪 Juego de texturas :</strong><br>
 Creación de texturas pintadas realistas o estilizadas: cuero, metal, piel, tejidos, madera, piedra, superficies desgastadas y materiales complejos.
 </li>
-
 <li>
-<strong>💡 Técnicas avanzadas:</strong><br>
-Veladuras, óleos, pigmentos, efectos de luz, weathering, detalles finos y técnicas adaptadas a piezas de colección y concursos.
+<strong>💡 Técnicas avanzadas :</strong><br>
+Glaseados, óleos, pigmentos, efectos de luz, weathering, detalles finos y técnicas adaptadas a piezas de colección y concursos.
 </li>
-
 </ul>
-
 </div>
-
-
 <div class="maintenance-box">
-
-<h2>Base y puesta en escena 🌿</h2>
-
+<h2>Socle y puesta en escena 🌿</h2>
 <ul>
-
 <li>
-<strong>🌱 Base personalizada:</strong><br>
-Creación de una atmósfera coherente con la historia, el personaje y el universo de la miniatura.
+<strong>🌱 Socle personalizado :</strong><br>
+Creación de una ambientación coherente con la historia, el personaje y el universo de la figurine.
 </li>
-
 <li>
-<strong>🏆 Presentación para exposición:</strong><br>
-Trabajo de la base y de la composición general para reforzar el impacto visual de la pieza.
+<strong>🏆 Presentación de exposición :</strong><br>
+Trabajo del socle y de la composición general para reforzar el impacto visual de la pieza.
 </li>
-
 </ul>
-
 </div>
-
-
 <div class="maintenance-box">
-
 <h2>Una pieza única ✨</h2>
-
 <table class="tableborder1">
-
 <thead>
 <tr>
 <th>🎨 Características</th>
 <th>Colección</th>
 </tr>
 </thead>
-
 <tbody>
-
 <tr>
 <td>Destino</td>
 <td>Colección, exposición, vitrina o concurso</td>
 </tr>
-
 <tr>
 <td>Nivel de acabado</td>
-<td>Acabado muy alto con trabajo artístico avanzado</td>
+<td>Muy alto acabado con trabajo artístico profundo</td>
 </tr>
-
 <tr>
 <td>Pintura</td>
 <td>Degradados finos, matices complejos, texturas y efectos avanzados</td>
 </tr>
-
 <tr>
 <td>Tiempo de realización</td>
-<td>Proyecto que puede representar varias decenas de horas de trabajo</td>
+<td>Proyecto que puede representar decenas de horas de trabajo</td>
 </tr>
-
 <tr>
 <td>Enfoque</td>
 <td>Cada pieza es única y estudiada individualmente</td>
 </tr>
-
 </tbody>
-
 </table>
-
 </div>
-
-
 <div class="maintenance-box">
-
-<h2>📩 Presenta tu proyecto</h2>
-
+<h2>📩 Presentar su proyecto</h2>
 <p>
-Para una pieza de colección, cada proyecto se estudia individualmente para ofrecer un enfoque adaptado a tu miniatura y a tus expectativas.
+Para una pieza de colección, cada proyecto se estudia individualmente con el fin de proponer un enfoque adaptado a su figurine y a sus expectativas.
 </p>
-
 <p>
-Para preparar tu solicitud, envía:
+Para preparar su solicitud, envíeme:
 </p>
-
 <ul>
-
 <li>
-Fotos o enlace de la miniatura
+Fotos o enlace hacia la figurine
 </li>
-
 <li>
-Dimensiones del modelo (escala, altura, base...)
+Dimensiones del modelo (escala, altura, socle...)
 </li>
-
 <li>
-Universo o temática deseada
+Universo o tema deseado
 </li>
-
 <li>
 Referencias o inspiraciones
 </li>
-
 <li>
-Tus expectativas sobre el nivel de acabado
+Sus expectativas respecto al nivel de acabado
 </li>
-
 </ul>
-
 <p>
-Te responderé con una propuesta personalizada para tu proyecto.
+Le responderé con una propuesta personalizada para su proyecto.
 </p>
-
 <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20pintura%20de%20colección%20Studio%20PF" class="button">
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
 Presentar mi proyecto 💬
 </a>
 </p>
-
 </div>`;
     } else {
         html = `<div class="maintenance-box">
@@ -2353,6 +2237,10 @@ Présenter mon projet 💬
         <p>
         Bustes, statues miniatures, figurines résine et pièces destinées à l'exposition ou aux concours de peinture.
         </p>
+        <p>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
+Présenter mon projet 💬
+</a>
     </div>
 
 
@@ -2371,6 +2259,10 @@ Présenter mon projet 💬
         <strong>Studio PF ne réalise pas l'impression 3D des modèles pour cette prestation.</strong><br>
         Le service concerne exclusivement la préparation et la peinture artistique de la pièce.
         </p>
+        <p>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
+Présenter mon projet 💬
+</a>
     </div>
 
 
