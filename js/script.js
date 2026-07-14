@@ -457,6 +457,7 @@ function changelangueforma() {
         <div class="center">
           <button type="submit" class="button">Envoyer la demande par mail</button>
         </div>
+        </div>
       </form>
 
     </div>
