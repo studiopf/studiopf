@@ -1,3 +1,14 @@
+// Add near the top (after global variables)
+const virtualPages = [
+    "simulateur_devis",
+    "formation",
+    "peinturecommission",
+    "peinturecollection",
+    "index",
+    "conditions",
+    "mentionslegales",
+    "horaires"
+];
 // =============================
 // VARIABLES GLOBALES
 // =============================
