@@ -2741,21 +2741,21 @@ const tarifheureus = 25;
         
 
 const tariffs = {
-    petiteinfanterie: { niveau1: 1, niveau2: 2 },
-    infanterie: { niveau1: 2, niveau2: 4 },
-    infanterieelite: { niveau1: 3, niveau2: 6 },
-    personnage: { niveau1: 5, niveau2: 10 },
-    personnageelite: { niveau1: 6, niveau2: 12 },
-    personnagemonstrueux: { niveau1: 8, niveau2: 16 },
-    personnagesurmonstre: { niveau1: 12, niveau2: 24 },
-    personnagesurgrandmonstre: { niveau1: 16, niveau2: 32 },
-    cavalerie: { niveau1: 3, niveau2: 6 },
-    cavalerielourde: { niveau1: 4, niveau2: 8 },
-    petitvehiculemonstre: { niveau1: 4, niveau2: 8 },
-    vehiculemonstremoyen: { niveau1: 6, niveau2: 12 },
+    petiteinfanterie: { niveau1: 0.1, niveau2: 1 },
+    infanterie: { niveau1: 1, niveau2: 2 },
+    infanterieelite: { niveau1: 1.5, niveau2: 3 },
+    personnage: { niveau1: 3, niveau2: 10 },
+    personnageelite: { niveau1: 4, niveau2: 12 },
+    personnagemonstrueux: { niveau1: 6, niveau2: 16 },
+    personnagesurmonstre: { niveau1: 8, niveau2: 24 },
+    personnagesurgrandmonstre: { niveau1: 12, niveau2: 32 },
+    cavalerie: { niveau1: 2, niveau2: 6 },
+    cavalerielourde: { niveau1: 3, niveau2: 8 },
+    petitvehiculemonstre: { niveau1: 3, niveau2: 8 },
+    vehiculemonstremoyen: { niveau1: 5, niveau2: 12 },
     grosvehiculemonstre: { niveau1: 8, niveau2: 16 },
     enormevehiculemonstre: { niveau1: 12, niveau2: 24 },
-    titanvehiculemonstre: { niveau1: 16, niveau2: 32 }
+    titanvehiculemonstre: { niveau1: 18, niveau2: 32 }
 };
 
 
