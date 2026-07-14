@@ -2729,6 +2729,16 @@ const niveauLabelsmini = {
     niveau2: "Diamant",
 };
 const tarifheure = 20;
+const tarifheureeu = 20;
+const tarifheureus = 25;
+ if (currentLanguage === "english") {
+     tarifheure = tarifheureus;
+    } 
+    
+    else {
+             tarifheure = tarifheureeu;
+    }
+        
 
 const tariffs = {
     petiteinfanterie: { niveau1: 1, niveau2: 2 },
