@@ -1861,7 +1861,7 @@ Present my project 💬
 </p>
 </div>
 
-<div class="maintenance">
+<div class="maintenance-box">
     <h2>⚔️ Gaming miniatures</h2>
     <p>
     Warhammer 40K, Age of Sigmar, Warhammer The Old World,
@@ -1872,7 +1872,7 @@ Present my project 💬
 </div>
 
 
-<div class="maintenance">
+<div class="maintenance-box">
     <h2>🗿 Busts and collector pieces</h2>
     <p>
     Busts, miniature statues, resin miniatures and pieces intended for display or painting competitions.
@@ -1880,7 +1880,7 @@ Present my project 💬
 </div>
 
 
-<div class="maintenance">
+<div class="maintenance-box">
     <h2>🖨️ 3D printed miniatures</h2>
     <p>
     Models can come from independent artists, 3D creators or platforms such as Etsy, MyMiniFactory or other specialized printing services.
@@ -2092,7 +2092,7 @@ Presentar mi proyecto 💬
 </p>
 </div>
 
-<div class="maintenance">
+<div class="maintenance-box">
     <h2>⚔️ Figuras de juego</h2>
     <p>
     Warhammer 40K, Age of Sigmar, Warhammer The Old World,
@@ -2103,7 +2103,7 @@ Presentar mi proyecto 💬
 </div>
 
 
-<div class="maintenance">
+<div class="maintenance-box">
     <h2>🗿 Bustos y piezas de colección</h2>
     <p>
     Bustos, estatuas en miniatura, figuras de resina y piezas destinadas a exposición o concursos de pintura.
@@ -2111,7 +2111,7 @@ Presentar mi proyecto 💬
 </div>
 
 
-<div class="maintenance">
+<div class="maintenance-box">
     <h2>🖨️ Figuras impresas en 3D</h2>
     <p>
     Los modelos pueden proceder de artistas independientes, creadores 3D o plataformas como Etsy, MyMiniFactory u otros servicios especializados de impresión.
@@ -2327,7 +2327,7 @@ Présenter mon projet 💬
 </a>
 </p>
   </div>
-    <div class="maintenance">
+    <div class="maintenance-box">
         <h2>⚔️ Figurines de jeux</h2>
         <p>
         Warhammer 40K, Age of Sigmar, Warhammer The Old World,
@@ -2338,7 +2338,7 @@ Présenter mon projet 💬
     </div>
 
 
-    <div class="maintenance">
+    <div class="maintenance-box">
         <h2>🗿 Bustes et pièces de collection</h2>
         <p>
         Bustes, statues miniatures, figurines résine et pièces destinées à l'exposition ou aux concours de peinture.
@@ -2346,7 +2346,7 @@ Présenter mon projet 💬
     </div>
 
 
-    <div class="maintenance">
+    <div class="maintenance-box">
         <h2>🖨️ Figurines imprimées en 3D</h2>
         <p>
         Les modèles peuvent provenir d'artisans indépendants, de créateurs 3D ou de plateformes comme Etsy, MyMiniFactory ou d'autres imprimeurs spécialisés.
