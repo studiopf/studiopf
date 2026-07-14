@@ -194,7 +194,7 @@ changelangueinfo();
         if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
         changelanguesimu();
             initializeFormCalculations();
-            calculateTotals();
+
     }
 
     if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
