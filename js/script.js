@@ -515,48 +515,48 @@ ${prenom} ${nom}`;
 
 <div class="center">
 
-<form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
+<form id="contactForm" action="#" class="maintenance-box">
     <div class="center">
-        <fieldset>
+        
             <legend>Contact Details TableTop+ commission</legend>
 
             <div class="center">
-                <label for="nom">Last Name<span class="required">*</span></label>
+                <label for="nom">Last Name<span >*</span></label>
                 <input type="text" id="nom" name="nom" placeholder="Surname" required>
             </div>
 
             <div class="center">
-                <label for="prenom">First Name<span class="required">*</span></label>
+                <label for="prenom">First Name<span >*</span></label>
                 <input type="text" id="prenom" name="prenom" placeholder="Name" required>
             </div>
 
             <div class="center">
-                <label for="email">Email<span class="required">*</span></label>
+                <label for="email">Email<span >*</span></label>
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
 
             <div class="center">
-                <label for="telephone">Phone<span class="required">*</span></label>
+                <label for="telephone">Phone<span >*</span></label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Phone" required>
             </div>
 
             <div class="center">
-                <label for="adresse">Address<span class="required">*</span></label>
+                <label for="adresse">Address<span >*</span></label>
                 <input type="text" id="adresse" name="adresse" placeholder="Adress" required>
             </div>
 
             <div class="center">
-                <label for="cp">Postal Code<span class="required">*</span></label>
+                <label for="cp">Postal Code<span >*</span></label>
                 <input type="text" id="cp" name="cp" placeholder="Postal Code" required>
             </div>
 
             <div class="center">
-                <label for="ville">City<span class="required">*</span></label>
+                <label for="ville">City<span >*</span></label>
                 <input type="text" id="ville" name="ville" placeholder="City" required>
             </div>
 
             <div class="center">
-                <label for="pays">Country <span class="required">*</span></label>
+                <label for="pays">Country <span >*</span></label>
                 <select id="pays" name="pays" required>
                     <option value="" disabled hidden>Select a country</option>
                     <option value="FRANCE">France</option>
@@ -569,10 +569,10 @@ ${prenom} ${nom}`;
                     <option value="Autre">Other (please specify)</option>
                 </select>
             </div>
-        </fieldset>
+        
     </div>
 
-    <fieldset>
+    
         <legend>My Request</legend>
 
         <div class="cardform">
@@ -739,16 +739,16 @@ ${prenom} ${nom}`;
             <label for="message-input">
                 To be as accurate as possible,<br>
                 please describe the list of miniatures to paint, whether assembly is required,<br>
-                and if you already have a theme or color scheme defined: <span class="required">*</span>
+                and if you already have a theme or color scheme defined: <span >*</span>
             </label>
             <div class="center">
                 <textarea id="message-input" name="message" placeholder="Your message" required></textarea>
             </div>
         </div>
 
-        <p><span class="required">*</span> Required fields</p>
+        <p><span >*</span> Required fields</p>
 
-    </fieldset>
+    
 
     <div class="center">
         <button type="submit" class="button">Send request by email</button>
@@ -764,46 +764,46 @@ ${prenom} ${nom}`;
 
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
     <div class="center">
-        <fieldset>
+        
             <legend>Datos de contacto TableTop</legend>
 
             <div class="center">
-                <label for="nom">Apellido<span class="required">*</span></label>
+                <label for="nom">Apellido<span >*</span></label>
                 <input type="text" id="nom" name="nom" placeholder="Apellido" required>
             </div>
 
             <div class="center">
-                <label for="prenom">Nombre<span class="required">*</span></label>
+                <label for="prenom">Nombre<span >*</span></label>
                 <input type="text" id="prenom" name="prenom" placeholder="Nombre" required>
             </div>
 
             <div class="center">
-                <label for="email">Correo electrónico<span class="required">*</span></label>
+                <label for="email">Correo electrónico<span >*</span></label>
                 <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
             </div>
 
             <div class="center">
-                <label for="telephone">Teléfono<span class="required">*</span></label>
+                <label for="telephone">Teléfono<span >*</span></label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Teléfono" required>
             </div>
 
             <div class="center">
-                <label for="adresse">Dirección<span class="required">*</span></label>
+                <label for="adresse">Dirección<span >*</span></label>
                 <input type="text" id="adresse" name="adresse" placeholder="Dirección" required>
             </div>
 
             <div class="center">
-                <label for="cp">Código postal<span class="required">*</span></label>
+                <label for="cp">Código postal<span >*</span></label>
                 <input type="text" id="cp" name="cp" placeholder="Código postal" required>
             </div>
 
             <div class="center">
-                <label for="ville">Ciudad<span class="required">*</span></label>
+                <label for="ville">Ciudad<span >*</span></label>
                 <input type="text" id="ville" name="ville" placeholder="Ciudad" required>
             </div>
 
             <div class="center">
-                <label for="pays">País <span class="required">*</span></label>
+                <label for="pays">País <span >*</span></label>
                 <select id="pays" name="pays" required>
                     <option value="" disabled hidden>Seleccione un país</option>
                     <option value="FRANCE">Francia</option>
@@ -816,10 +816,10 @@ ${prenom} ${nom}`;
                     <option value="Autre">Otro (por favor especifique)</option>
                 </select>
             </div>
-        </fieldset>
+        
     </div>
 
-    <fieldset>
+    
         <legend>Mi solicitud</legend>
 
         <div class="cardform">
@@ -986,16 +986,16 @@ ${prenom} ${nom}`;
             <label for="message-input">
                 Para ser lo más preciso posible,<br>
                 por favor indique la lista de miniaturas a pintar, si es necesario montaje,<br>
-                y si ya tiene un tema o esquema de colores definido: <span class="required">*</span>
+                y si ya tiene un tema o esquema de colores definido: <span >*</span>
             </label>
             <div class="center">
                 <textarea id="message-input" name="message" placeholder="Su mensaje" required></textarea>
             </div>
         </div>
 
-        <p><span class="required">*</span> Campos obligatorios</p>
+        <p><span >*</span> Campos obligatorios</p>
 
-    </fieldset>
+    
 
     <div class="center">
         <button type="submit" class="button">Enviar solicitud por correo</button>
@@ -1012,38 +1012,38 @@ ${prenom} ${nom}`;
             
         <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
               <div class="center">
-                  <fieldset>
+                  
                 <legend>Coordonnées</legend>
                 <div class="center">
-                    <label for="nom">Nom<span class="required">*</span></label>
+                    <label for="nom">Nom<span >*</span></label>
                     <input type="text" id="nom" name="nom" placeholder="Nom" required>
                 </div>
                 <div class="center">
-                    <label for="prenom">Prénom<span class="required">*</span></label>
+                    <label for="prenom">Prénom<span >*</span></label>
                     <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
                 </div>
                 <div class="center">
-                    <label for="email">Email<span class="required">*</span></label>
+                    <label for="email">Email<span >*</span></label>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="center">
-                    <label for="telephone">Téléphone<span class="required">*</span></label>
+                    <label for="telephone">Téléphone<span >*</span></label>
                     <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
                 </div>
                 <div class="center">
-                    <label for="adresse">Adresse<span class="required">*</span></label>
+                    <label for="adresse">Adresse<span >*</span></label>
                     <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
                 </div>
                 <div class="center">
-                    <label for="cp">Code Postal<span class="required">*</span></label>
+                    <label for="cp">Code Postal<span >*</span></label>
                     <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
                 </div>
                 <div class="center">
-                    <label for="ville">Ville<span class="required">*</span></label>
+                    <label for="ville">Ville<span >*</span></label>
                     <input type="text" id="ville" name="ville" placeholder="Ville" required>
                 </div>
                 <div class="center">
-                    <label for="pays">Pays <span class="required">*</span></label>
+                    <label for="pays">Pays <span >*</span></label>
                     <select id="pays" name="pays" required>
                         <option value="" disabled hidden>Choisissez un pays</option>
                         <option value="FRANCE" selected>France</option>
@@ -1056,10 +1056,10 @@ ${prenom} ${nom}`;
                         <option value="Autre">Autre (merci de préciser)</option>
                     </select>
                 </div>
-            </fieldset>
+            
        </div>
 
-                <fieldset>
+                
                     <legend>Ma demande</legend>
                     <div class="cardform">
   <label for="niveau">Niveaux de Peinture :</label><br>
@@ -1226,14 +1226,14 @@ ${prenom} ${nom}`;
 <h3><span id="oktotal">0.00</span></h3>
 </div>
                            <div id="message" class="cardform">
-                            <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span class="required">*</span></label>
+                            <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span >*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
                     </div>
 
-                    <p><span class="required">*</span> Champs obligatoires</p>
+                    <p><span >*</span> Champs obligatoires</p>
 
                       
-                </fieldset>
+                
             <div class="center">
               <button type="submit" class="button">Envoyer la demande par mail</button>
                    </div>   
