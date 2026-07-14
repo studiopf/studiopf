@@ -13,6 +13,17 @@ textarea {
 img {
   height: 80%;
 }
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0px;
+    margin: 0rem auto;
+    max-width: 1200px;
+    padding: 0 0px;
+}
 /* ==========================================================================
    BOUTON PRINCIPAL – style cohérent avec les cartes
    ========================================================================== */
