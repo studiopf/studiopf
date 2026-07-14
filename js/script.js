@@ -4952,23 +4952,3 @@ document.querySelectorAll(".menu-mobile a").forEach(link => {
     });
 
 });
-const themeToggle = document.getElementById("themeToggle");
-
-if(localStorage.getItem("theme") === "light"){
-    document.body.classList.add("light-mode");
-    themeToggle.textContent = "☀️";
-}
-
-themeToggle.addEventListener("click", () => {
-
-    document.body.classList.toggle("light-mode");
-
-    if(document.body.classList.contains("light-mode")){
-        localStorage.setItem("theme","light");
-        themeToggle.textContent = "☀️";
-    }else{
-        localStorage.setItem("theme","dark");
-        themeToggle.textContent = "🌙";
-    }
-
-});
