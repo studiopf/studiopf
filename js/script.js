@@ -2732,21 +2732,23 @@ const tarifheure = 20;
 
 const tariffs = {
     petiteinfanterie: { niveau1: 1, niveau2: 2 },
-    infanterie: { niveau1: 2, niveau2: 3 },
-    infanterieelite: { niveau1: 3, niveau2: 4 },
-    personnage: { niveau1: 3, niveau2: 5 },
-    personnageelite: { niveau1: 5, niveau2: 8 },
-    personnagemonstrueux: { niveau1: 8, niveau2: 12 },
-    personnagesurmonstre: { niveau1: 12, niveau2: 18 },
-    personnagesurgrandmonstre: { niveau1: 16, niveau2: 24 },
-    cavalerie: { niveau1: 3, niveau2: 4 },
-    cavalerielourde: { niveau1: 4, niveau2: 5 },
-    petitvehiculemonstre: { niveau1: 4, niveau2: 6 },
-    vehiculemonstremoyen: { niveau1: 6, niveau2: 9 },
+    infanterie: { niveau1: 2, niveau2: 4 },
+    infanterieelite: { niveau1: 3, niveau2: 6 },
+    personnage: { niveau1: 5, niveau2: 10 },
+    personnageelite: { niveau1: 6, niveau2: 12 },
+    personnagemonstrueux: { niveau1: 8, niveau2: 16 },
+    personnagesurmonstre: { niveau1: 12, niveau2: 24 },
+    personnagesurgrandmonstre: { niveau1: 16, niveau2: 32 },
+    cavalerie: { niveau1: 3, niveau2: 6 },
+    cavalerielourde: { niveau1: 4, niveau2: 8 },
+    petitvehiculemonstre: { niveau1: 4, niveau2: 8 },
+    vehiculemonstremoyen: { niveau1: 6, niveau2: 12 },
     grosvehiculemonstre: { niveau1: 8, niveau2: 16 },
-    enormevehiculemonstre: { niveau1: 12, niveau2: 18 },
-    titanvehiculemonstre: { niveau1: 16, niveau2: 34 }
+    enormevehiculemonstre: { niveau1: 12, niveau2: 24 },
+    titanvehiculemonstre: { niveau1: 16, niveau2: 32 }
 };
+
+
 
 const categories = Object.keys(tariffs);
 
