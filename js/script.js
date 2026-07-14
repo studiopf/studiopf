@@ -1300,59 +1300,138 @@ At <strong>Studio PF</strong>, every <strong>miniature painting commission</stro
 </div>
 
 <div class="center">
-    <div class="maintenance-box">
-        <h2>👋 Who’s behind the brushes?</h2>
-        <p>I’m <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
-        passionate painter and founder of Studio PF.<br><br>
-        In the miniature world since 2020, this hobby started somewhat by chance.<br>
-        Covid turned this passion into a true artistic journey.<br>
-        Today, I work with acrylics, pigments, and oils, with a style that brings miniatures to life.<br><br>
+   <div class="maintenance-box">
+<h1>Studio PF<br>Professional Miniature Painter</h1>
 
-        My goal: make your miniatures come alive as if they were real.</p>
+<h2>🎨 Warhammer Miniature Painting<br>Collection & Display</h2>
 
-        <blockquote>“Every miniature tells a story. My role is to make it shine.” ✨</blockquote>
+<p>
+Specialized in <strong>high-end miniature painting</strong>, Studio PF helps hobbyists, collectors and players bring their armies and display pieces to life.
+</p>
 
-        <p><a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">Learn more about my journey ➜</a></p>
-    </div>
+<p>
+Whether you are looking for a <strong>professional miniature painter</strong> for a Warhammer 40K army, Age of Sigmar, a display miniature or a unique piece, every project receives a careful and personalized approach.
+</p>
+
+<p>
+Your miniatures deserve more than just basic colours. Through advanced painting techniques, highlights, contrasts and basing work, each model is designed to stand out both on the gaming table and in a collector's display case.
+</p>
+
+<p>
+At <strong>Studio PF</strong>, every <strong>miniature painting commission</strong> is created with passion to transform your miniatures into true <strong>unique collector pieces</strong>.
+</p>
+
+<p>
+<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+Discover the painting service ➜
+</a>
+</p>
 </div>
 
 
-
 <div class="center">
-    <div class="maintenance-box">
-        <h3>⚔️ Advanced TableTop</h3>
-        <p>👉 For demanding players who want a stunning result without sacrificing playability.</p>
-        <ul>
-            <li>Levels: Gold & Diamond</li>
-            <li>Precise and contrasted painting</li>
-            <li>Detailed basing</li>
-            <li>Customization options</li>
-        </ul>
-        <p><a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Discover our painting service ➜</a></p>
-    </div>
+<div class="maintenance-box">
+
+<h2>👋 Miniature Painter in France</h2>
+
+<p>
+I am <strong>Pierre-François, also known as PF, <span id="pf-age">39</span> years old.</strong><br>
+Passionate miniature painter and founder of Studio PF.<br><br>
+
+I have been painting miniatures since 2020, a passion that started somewhat by chance.<br>
+Covid transformed this hobby into a true artistic journey.<br>
+
+Today, I work with acrylics, pigments and oils, creating a style that brings miniatures to life.<br><br>
+
+My goal: to make your miniatures feel alive.
+</p>
+
+<blockquote>
+“Every miniature tells a story. My role is to make it shine.” ✨
+</blockquote>
+
+<p>
+<a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="button" target="_blank">
+Learn more about my journey ➜
+</a>
+</p>
+
+</div>
 </div>
 
-<div class="center">
-    <div class="maintenance-box">
-        <h3>🧠 Training & Painting Coaching</h3>
-        <p>👉 Learn professional techniques: lighting, basing, blending, finishing touches.  
-        Personalized sessions, online or in workshop.</p>
-        <p><a href="formation.html" class="button" onclick="loadPage('formation.html'); scrollToTop(); return false;">Discover training ➜</a></p>
-    </div>
-</div>
 
 <div class="center">
-    <div class="maintenance-box">
-        <h2>🪄 Why choose Studio PF ?</h2>
-        <ul>
-            <li>🎨 <strong>Custom painting</strong>: each project is tailored to your universe and budget.</li>
-            <li>🔧 <strong>Careful preparation</strong>: assembly, cleaning, priming — everything is mastered.</li>
-            <li>🧪 <strong>Immersive bases & 3D bits</strong>: for a unique and realistic result.</li>
-            <li>💬 <strong>Transparent client follow-up</strong>: progress photos, direct contact, personalized advice.</li>
-            <li>🚚 <strong>Secure shipping</strong> via Colissimo or hand delivery.</li>
-        </ul>
-        <p>You receive a ready-to-display piece, durable and fully tailored to you.</p>
-    </div>
+<div class="maintenance-box">
+
+<h2>Professional Painting Commission</h2>
+
+<h3>⚔️ High-End TableTop Painting</h3>
+
+<p>
+👉 For demanding players who want a high-quality finish without sacrificing playability.
+</p>
+
+<ul>
+<li>Levels: <strong>⭐ Gold (Level 3) & 👑 Diamant (Level 4)</strong></li>
+<li>Precise, contrasted and personalized painting</li>
+<li>Detailed basing</li>
+<li>Customization options</li>
+</ul>
+
+<p>
+<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+Discover the painting service ➜
+</a>
+</p>
+
+</div>
+</div>
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>Miniature Painting Courses & Training</h2>
+
+<h3>🧠 Painting Training & Coaching</h3>
+
+<p>
+👉 Learn professional techniques: lighting, basing, blending and finishing.<br>
+Personalized sessions, online or in the studio.
+</p>
+
+<p>
+<a href="formation.html" class="button" onclick="loadPage('formation.html'); scrollToTop(); return false;">
+Discover the training courses ➜
+</a>
+</p>
+
+</div>
+</div>
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>🪄 Why choose Studio PF?</h2>
+
+<ul>
+<li>🎨 <strong>Custom painting</strong> : each project is adapted to your universe and your budget.</li>
+
+<li>🔧 <strong>Careful preparation</strong> : cleaning, assembly, priming and complete preparation.</li>
+
+<li>🧪 <strong>Immersive bases & 3D elements</strong> : for a unique and realistic result.</li>
+
+<li>💬 <strong>Transparent customer follow-up</strong> : progress photos, direct contact and personalized advice.</li>
+
+<li>🚚 <strong>Secure shipping</strong> : via Colissimo or hand delivery.</li>
+</ul>
+
+<p>
+You receive a miniature ready to play or display, durable and completely matching your vision.
+</p>
+
+</div>
 </div>
 
 <div class="center">
@@ -1374,48 +1453,140 @@ At <strong>Studio PF</strong>, every <strong>miniature painting commission</stro
     } else if (currentLanguage === "spanish") {
         html = `
       <div class="center">
-    <div class="maintenance-box">
-
-       <h1>Studio PF<br>Pintor Profesional de Miniaturas</h1>
+  <div class="maintenance-box">
+<h1>Studio PF<br>Pintor Profesional de Miniaturas</h1>
 
 <h2>🎨 Pintura de Miniaturas Warhammer<br>Colección y Exposición</h2>
 
 <p>
-Especializado en la <strong>pintura de miniaturas de alta calidad</strong>, Studio PF ayuda a aficionados, coleccionistas y jugadores a dar vida a sus miniaturas con acabados profesionales.
+Especializado en la <strong>pintura de miniaturas de alta gama</strong>, Studio PF acompaña a jugadores, coleccionistas y aficionados que desean dar vida a sus ejércitos y piezas de exposición.
 </p>
 
 <p>
-Tanto si busca un <strong>pintor profesional de miniaturas</strong> para un ejército de Warhammer 40.000, Age of Sigmar, una pieza de exposición o una miniatura única, cada proyecto recibe una atención meticulosa y un trabajo totalmente personalizado.
+Si buscas un <strong>pintor profesional de miniaturas</strong> para un ejército de Warhammer 40K, Age of Sigmar, una miniatura de exposición o una pieza única, cada proyecto recibe un trabajo cuidado y personalizado.
 </p>
 
 <p>
-Sus miniaturas merecen mucho más que una simple capa de pintura. Gracias a técnicas avanzadas de iluminación, degradados, efectos de desgaste y escenografía, cada modelo está diseñado para destacar tanto en la mesa de juego como en una vitrina de colección.
+Tus miniaturas merecen mucho más que una simple aplicación de color. Gracias a técnicas avanzadas de pintura, luces, contrastes y peanas trabajadas, cada modelo está creado para destacar tanto en la mesa de juego como en una vitrina de colección.
 </p>
 
 <p>
-En <strong>Studio PF</strong>, cada <strong>encargo de pintura de miniaturas</strong> se realiza con pasión y dedicación para transformar sus miniaturas en auténticas obras de arte.
+En <strong>Studio PF</strong>, cada <strong>encargo de pintura de miniaturas</strong> se realiza con pasión para transformar tus miniaturas en auténticas <strong>piezas de colección únicas</strong>.
 </p>
-    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Descubre nuestro servicio de pintura ➜</a></p>
-    </div>
+
+<p>
+<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+Descubrir el servicio de pintura ➜
+</a>
+</p>
+
 </div>
+
 
 <div class="center">
-    <div class="maintenance-box">
-        <h2>👋 ¿Quién está detrás de los pinceles?</h2>
-        <p>Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
-        pintor apasionado y fundador de Studio PF.<br><br>
-        En el mundo de las miniaturas desde 2020, este hobby comenzó un poco por casualidad.<br>
-        El Covid transformó esta pasión en una verdadera búsqueda artística.<br>
-        Hoy trabajo con acrílicos, pigmentos y óleos, con un estilo que hace vibrar las miniaturas.<br><br>
+<div class="maintenance-box">
 
-        Mi objetivo: hacer que tus miniaturas cobren vida.</p>
+<h2>👋 Pintor de Miniaturas en Francia</h2>
 
-        <blockquote>“Cada miniatura cuenta una historia. Mi papel es hacerla brillar.” ✨</blockquote>
+<p>
+Soy <strong>Pierre-François, conocido como PF, <span id="pf-age">39</span> años.</strong><br>
+Pintor apasionado y fundador de Studio PF.<br><br>
 
-        <p><a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">Descubrir mi trayectoria ➜</a></p>
-    </div>
+Practico la pintura de miniaturas desde 2020, una pasión que comenzó casi por casualidad.<br>
+El Covid transformó este hobby en una verdadera búsqueda artística.<br>
+
+Hoy trabajo con acrílicos, pigmentos y óleos, creando un estilo que da vida a las miniaturas.<br><br>
+
+Mi objetivo: hacer que tus miniaturas cobren vida.
+</p>
+
+<blockquote>
+“Cada miniatura cuenta una historia. Mi papel es hacerla brillar.” ✨
+</blockquote>
+
+<p>
+<a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-meses-las-peticiones-aumentan" class="button" target="_blank">
+Conoce más sobre mi trayectoria ➜
+</a>
+</p>
+
+</div>
 </div>
 
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>Encargos Profesionales de Pintura</h2>
+
+<h3>⚔️ Pintura TableTop de Alta Gama</h3>
+
+<p>
+👉 Para jugadores exigentes que buscan un acabado de calidad sin renunciar a la jugabilidad.
+</p>
+
+<ul>
+<li>Niveles: <strong>⭐ Gold (nivel 3) & 👑 Diamant (nivel 4)</strong></li>
+<li>Pintura precisa, contrastada y personalizada</li>
+<li>Peanas trabajadas</li>
+<li>Opciones de personalización</li>
+</ul>
+
+<p>
+<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+Descubrir el servicio de pintura ➜
+</a>
+</p>
+
+</div>
+</div>
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>Cursos y Formación de Pintura de Miniaturas</h2>
+
+<h3>🧠 Formación y Coaching de Pintura</h3>
+
+<p>
+👉 Aprende técnicas profesionales: gestión de luces, peanas, degradados y acabados.<br>
+Sesiones personalizadas, online o en el taller.
+</p>
+
+<p>
+<a href="formation.html" class="button" onclick="loadPage('formation.html'); scrollToTop(); return false;">
+Descubrir las formaciones ➜
+</a>
+</p>
+
+</div>
+</div>
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>🪄 ¿Por qué elegir Studio PF?</h2>
+
+<ul>
+<li>🎨 <strong>Pintura personalizada</strong> : cada proyecto se adapta a tu universo y presupuesto.</li>
+
+<li>🔧 <strong>Preparación cuidada</strong> : limpieza, montaje, imprimación y preparación completa.</li>
+
+<li>🧪 <strong>Peanas inmersivas y elementos 3D</strong> : para un resultado único y realista.</li>
+
+<li>💬 <strong>Seguimiento transparente</strong> : fotos del avance, contacto directo y consejos personalizados.</li>
+
+<li>🚚 <strong>Envío seguro</strong> : mediante Colissimo o entrega en mano.</li>
+</ul>
+
+<p>
+Recibes una miniatura lista para jugar o exponer, resistente y totalmente adaptada a tu visión.
+</p>
+
+</div>
+</div>
 
 <div class="center">
     <div class="maintenance-box">
@@ -1474,16 +1645,17 @@ En <strong>Studio PF</strong>, cada <strong>encargo de pintura de miniaturas</st
         html = `
         
   <div class="center">
-            <div class="maintenance-box">
- <h1> Studio PF<br>Peintre sur Figurine Professionnel</h1>
+           <div class="maintenance-box">
+<h1>Studio PF<br>Peintre professionnel sur Figurines</h1>
 
 <h2>🎨 Peinture sur Figurines Warhammer<br>Collection et Exposition</h2>
+
 <p>
 Spécialisé dans la <strong>peinture sur figurines haut de gamme</strong>, Studio PF accompagne les passionnés, collectionneurs et joueurs souhaitant donner vie à leurs armées et pièces de collection.
 </p>
 
 <p>
-Que vous recherchiez un <strong>peintre sur figurine professionnel</strong> pour une armée Warhammer 40K, Age of Sigmar, une figurine d'exposition ou une pièce unique, chaque projet bénéficie d'un travail minutieux et personnalisé.
+Que vous recherchiez un <strong>peintre professionnel sur figurines</strong> pour une armée Warhammer 40K, Age of Sigmar, une figurine d'exposition ou une pièce unique, chaque projet bénéficie d'un travail minutieux et personnalisé.
 </p>
 
 <p>
@@ -1491,70 +1663,121 @@ Vos figurines méritent bien plus qu'une simple mise en couleur. Grâce à des t
 </p>
 
 <p>
-Chez <strong>Studio PF</strong>, chaque <strong>commission de peinture sur figurine</strong> est réalisée avec passion afin de transformer vos figurines en véritables œuvres d'art uniques.
+Chez <strong>Studio PF</strong>, chaque <strong>commission de peinture sur figurine</strong> est réalisée avec passion afin de transformer vos figurines en véritables <strong>pièces de collection uniques</strong>.
 </p>
-    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Découvrir le service peinture ➜</a></p>
-        </div>
-    </div>
 
-                     <div class="center">
-                <div class="maintenance-box">
-  <h2>👋 Qui se cache derrière les pinceaux ?</h2>
-  <p>Je suis  <strong>Pierre-François, alias PF, <span id="pf-age">39</span> ans. </strong><br>
-            peintre passionné et fondateur de Studio PF.  <br><br>
-Dans le milieu de la figurine depuis 2020, le hobby à commencer un peu par hasard.<br>Le Covid à transformé la passion en véritable quête artistique.<br> 
-      Aujourd’hui, je manie acrylique, pigments et huiles, avec un style qui fait vibrer les figurines.<br>
-              
-
-
-  Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.</p>
-  <blockquote>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</blockquote>
-  <p>  <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent?fbclid=IwY2xjawMbHHBleHRuA2FlbQIxMQABHoFDkkpV73nHQUSLHKutNLsp1MnG2TNeNmBnK03a1bg6IpNTrylAa7rVqE8g_aem_5llSLaiTM9lgeOSTPMrLQQ" class="button" target="_blank">En savoir plus sur mon parcours ➜</a></p>
-</div>
-                   </div>
-
-      
-
-      
-      <div class="center">
-            <div class="maintenance-box">
-    <h3>⚔️ TableTop Supérieur</h3>
-    <p>👉 Pour les joueurs exigeants qui veulent un rendu magnifique sans sacrifier la jouabilité.</p>
-    <ul>
-     <li>Niveaux : Gold(niv 3) & Diamant(niv 4)</li>
-      <li>Peinture précise et contrastée</li>
-      <li>Soclage travaillé</li>
-      <li>Options de personnalisation</li>
-    </ul>
-    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Découvrir le service peinture ➜</a></p>
-  </div>
-</div>
-
-      
-      <div class="center">
-            <div class="maintenance-box">
-    <h3>🧠 Formations & Coaching peinture</h3>
-    <p>👉 Apprenez les techniques pros : gestion des lumières, soclage, dégradés, finitions.  
-    Séances personnalisées, en ligne ou en atelier.</p>
-    <p><a href="formation.html" class="button"  onclick="loadPage('formation.html'); scrollToTop(); return false;">Découvrir les formations ➜</a></p>
-  </div>
+<p>
+<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+Découvrir le service peinture ➜
+</a>
+</p>
 </div>
 
 
 <div class="center">
-            <div class="maintenance-box">
- <h2>🪄 Pourquoi choisir Studio PF ?</h2>
-  <ul> 
-    <li>🎨 <strong>Peinture sur mesure</strong> : chaque projet est adapté à votre univers et votre budget.</li>
-    <li>🔧 <strong>Préparation soignée</strong> : montage, nettoyage, sous-couche, tout est maîtrisé.</li>
-    <li>🧪 <strong>Socles immersifs & bits 3D</strong> : pour un rendu unique et réaliste.</li>
-    <li>💬 <strong>Suivi client transparent</strong> : photos d’avancement, contact direct, conseils personnalisés.</li>
-    <li>🚚 <strong>Expédition sécurisée</strong> via Colissimo ou remise en main propre.</li>
-  </ul>
-  <p>Vous recevez une pièce prête à exposer, durable et totalement à votre image.</p>
-      </div>
-</div>      
+<div class="maintenance-box">
 
+<h2>👋 Peintre sur Figurine en France</h2>
+
+<p>
+Je suis <strong>Pierre-François, alias PF, <span id="pf-age">39</span> ans.</strong><br>
+Peintre passionné et fondateur de Studio PF.<br><br>
+
+Je pratique la peinture de figurines depuis 2020, une passion née un peu par hasard.<br>
+Le Covid a transformé ce hobby en véritable quête artistique.<br>
+
+Aujourd’hui, je travaille l'acrylique, les pigments et les huiles avec un style qui donne vie aux figurines.<br><br>
+
+Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
+</p>
+
+<blockquote>
+“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨
+</blockquote>
+
+<p>
+<a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="button" target="_blank">
+En savoir plus sur mon parcours ➜
+</a>
+</p>
+
+</div>
+</div>
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>Commission de Peinture Professionnelle</h2>
+
+<h3>⚔️ Peinture TableTop Haut de Gamme</h3>
+
+<p>
+👉 Pour les joueurs exigeants qui souhaitent un rendu de qualité sans sacrifier la jouabilité.
+</p>
+
+<ul>
+<li>Niveaux : <strong>⭐ Gold (niveau 3) & 👑 Diamant (niveau 4)</strong></li>
+<li>Peinture précise, contrastée et personnalisée</li>
+<li>Soclage travaillé</li>
+<li>Options de personnalisation</li>
+</ul>
+
+<p>
+<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+Découvrir le service peinture ➜
+</a>
+</p>
+
+</div>
+</div>
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>Cours et Formation de Peinture sur Figurine</h2>
+
+<h3>🧠 Formations & Coaching peinture</h3>
+
+<p>
+👉 Apprenez les techniques professionnelles : gestion des lumières, soclage, dégradés et finitions.<br>
+Séances personnalisées, en ligne ou en atelier.
+</p>
+
+<p>
+<a href="formation.html" class="button" onclick="loadPage('formation.html'); scrollToTop(); return false;">
+Découvrir les formations ➜
+</a>
+</p>
+
+</div>
+</div>
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>🪄 Pourquoi choisir Studio PF ?</h2>
+
+<ul>
+<li>🎨 <strong>Peinture sur mesure</strong> : chaque projet est adapté à votre univers et votre budget.</li>
+
+<li>🔧 <strong>Préparation soignée</strong> : nettoyage, montage, sous-couche et préparation complète.</li>
+
+<li>🧪 <strong>Socles immersifs & éléments 3D</strong> : pour un rendu unique et réaliste.</li>
+
+<li>💬 <strong>Suivi client transparent</strong> : photos d’avancement, contact direct et conseils personnalisés.</li>
+
+<li>🚚 <strong>Expédition sécurisée</strong> : via Colissimo ou remise en main propre.</li>
+</ul>
+
+<p>
+Vous recevez une pièce prête à jouer ou à exposer, durable et totalement à votre image.
+</p>
+
+</div>
+</div>
          <div class="center">
             <div class="maintenance-box">
   <h2>⚙️ Comment ça marche ?</h2>
