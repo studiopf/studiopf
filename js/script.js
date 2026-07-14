@@ -1612,11 +1612,11 @@ function changelanguepeinture() {
         <em>Techniques:</em> highlights, light placement, gradients, oil techniques, decals, weathering...<br>
 
         <em>💵 Indicative price:</em><br>
-        <em>⏱️ Around 2h+ per troop miniature on a 25mm base</em><br>
-        €40 for a troop miniature on a 25mm base.<br><br>
+      <em>⏱️ Around 2h+ per troop miniature on a 25mm base</em><br>
+$50 for a troop miniature on a 25mm base.<br><br>
 
-        <em>⏱️ Around 4h+ per troop miniature on a 32mm base</em><br>
-        €80 for a troop miniature on a 32mm base.<br>
+<em>⏱️ Around 4h+ per troop miniature on a 32mm base</em><br>
+$100 for a troop miniature on a 32mm base.<br>
     </li>
 </ul>
   
