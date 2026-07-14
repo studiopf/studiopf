@@ -520,42 +520,42 @@ ${prenom} ${nom}`;
         <fieldset>
             <legend>Contact Details TableTop+ commission</legend>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="nom">Last Name<span class="required">*</span></label>
                 <input type="text" id="nom" name="nom" placeholder="Surname" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="prenom">First Name<span class="required">*</span></label>
                 <input type="text" id="prenom" name="prenom" placeholder="Name" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="email">Email<span class="required">*</span></label>
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="telephone">Phone<span class="required">*</span></label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Phone" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="adresse">Address<span class="required">*</span></label>
                 <input type="text" id="adresse" name="adresse" placeholder="Adress" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="cp">Postal Code<span class="required">*</span></label>
                 <input type="text" id="cp" name="cp" placeholder="Postal Code" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="ville">City<span class="required">*</span></label>
                 <input type="text" id="ville" name="ville" placeholder="City" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="pays">Country <span class="required">*</span></label>
                 <select id="pays" name="pays" required>
                     <option value="" disabled hidden>Select a country</option>
@@ -773,42 +773,42 @@ ${prenom} ${nom}`;
         <fieldset>
             <legend>Datos de contacto TableTop</legend>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="nom">Apellido<span class="required">*</span></label>
                 <input type="text" id="nom" name="nom" placeholder="Apellido" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="prenom">Nombre<span class="required">*</span></label>
                 <input type="text" id="prenom" name="prenom" placeholder="Nombre" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="email">Correo electrónico<span class="required">*</span></label>
                 <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="telephone">Teléfono<span class="required">*</span></label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Teléfono" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="adresse">Dirección<span class="required">*</span></label>
                 <input type="text" id="adresse" name="adresse" placeholder="Dirección" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="cp">Código postal<span class="required">*</span></label>
                 <input type="text" id="cp" name="cp" placeholder="Código postal" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="ville">Ciudad<span class="required">*</span></label>
                 <input type="text" id="ville" name="ville" placeholder="Ciudad" required>
             </div>
 
-            <div class="form-group">
+            <div class="center">
                 <label for="pays">País <span class="required">*</span></label>
                 <select id="pays" name="pays" required>
                     <option value="" disabled hidden>Seleccione un país</option>
@@ -1027,35 +1027,35 @@ ${prenom} ${nom}`;
               <div class="center">
                   <fieldset>
                 <legend>Coordonnées</legend>
-                <div class="form-group">
+                <div class="center">
                     <label for="nom">Nom<span class="required">*</span></label>
                     <input type="text" id="nom" name="nom" placeholder="Nom" required>
                 </div>
-                <div class="form-group">
+                <div class="center">
                     <label for="prenom">Prénom<span class="required">*</span></label>
                     <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
                 </div>
-                <div class="form-group">
+                <div class="center">
                     <label for="email">Email<span class="required">*</span></label>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
-                <div class="form-group">
+                <div class="center">
                     <label for="telephone">Téléphone<span class="required">*</span></label>
                     <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
                 </div>
-                <div class="form-group">
+                <div class="center">
                     <label for="adresse">Adresse<span class="required">*</span></label>
                     <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
                 </div>
-                <div class="form-group">
+                <div class="center">
                     <label for="cp">Code Postal<span class="required">*</span></label>
                     <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
                 </div>
-                <div class="form-group">
+                <div class="center">
                     <label for="ville">Ville<span class="required">*</span></label>
                     <input type="text" id="ville" name="ville" placeholder="Ville" required>
                 </div>
-                <div class="form-group">
+                <div class="center">
                     <label for="pays">Pays <span class="required">*</span></label>
                     <select id="pays" name="pays" required>
                         <option value="" disabled hidden>Choisissez un pays</option>
