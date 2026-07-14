@@ -2562,7 +2562,7 @@ function changelanguepeinture() {
 
 <div class="maintenance-box">
 
-    <div>
+
         <h2>⭐ Gold — Premium TableTop Finish</h2>
 
         <p>
@@ -2593,13 +2593,16 @@ function changelanguepeinture() {
             <strong>Troop miniature on 28-32mm base:</strong><br>
             Around 1h+ → <strong>$20</strong>
         </p>
+        <div class="banner">
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+</div>
     </div>
 
 
-    <hr>
+ 
 
 
-    <div>
+<div class="maintenance-box">
         <h2>👑 Diamond — Superior TableTop Finish</h2>
 
         <p>
@@ -2632,9 +2635,12 @@ function changelanguepeinture() {
             <strong>Troop miniature on 28-32mm base:</strong><br>
             Around 2h+ → <strong>$40</strong>
         </p>
+        <div class="banner">
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+</div>
     </div>
 
-</div>
+
 <div class="maintenance-box">
 <h2>Preparation 🛠️</h2>
 <ul>
@@ -2744,8 +2750,7 @@ function changelanguepeinture() {
 
 <div class="maintenance-box">
 
-    <div>
-        <h2>⭐ Gold — Acabado TableTop Premium</h2>
+           <h2>⭐ Gold — Acabado TableTop Premium</h2>
 
         <p>
             <strong>Ideal para:</strong> Ejércitos Warhammer, unidades
@@ -2776,13 +2781,15 @@ function changelanguepeinture() {
             <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
             Aproximadamente 1h+ → <strong>20€</strong>
         </p>
+        <div class="banniere">
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+</div>
     </div>
 
 
-    <hr>
 
 
-    <div>
+<div class="maintenance-box">
         <h2>👑 Diamante — Acabado TableTop Superior</h2>
 
         <p>
@@ -2815,9 +2822,12 @@ function changelanguepeinture() {
             <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
             Aproximadamente 2h+ → <strong>40€</strong>
         </p>
+        <div class="banniere">
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+</div>
     </div>
 
-</div>
+
 <div class="maintenance-box">
 <h3>Preparación (incluida) 🛠️</h3>
 <ul>
@@ -2939,7 +2949,7 @@ function changelanguepeinture() {
 
 <div class="maintenance-box">
 
-    <div>
+  
         <h2>⭐ Gold — Finition TableTop Premium</h2>
 
         <p>
@@ -2970,15 +2980,14 @@ function changelanguepeinture() {
             <strong>Figurine de troupe socle 28-32mm :</strong><br>
             Environ 1h+ → <strong>20€</strong>
         </p>
-    </div>
-
+   
 
   <div>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </div>
+    </div></div>
 
 
-    <div>
+   <div class="maintenance-box">
         <h2>👑 Diamant — Finition TableTop Supérieure</h2>
 
         <p>
@@ -3011,12 +3020,11 @@ function changelanguepeinture() {
             <strong>Figurine de troupe socle 28-32mm :</strong><br>
             Environ 2h+ → <strong>40€</strong>
         </p>
-    </div>
+  
 
-</div>
             <div>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </div>
+    </div>  </div>
     
 <div class="maintenance-box">
       <h2>Préparation 🛠️</h2>
