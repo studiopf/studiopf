@@ -1590,21 +1590,35 @@ function changelanguepeinture() {
 <div class="maintenance-box">
  <h1>High-End Miniature Painting 🎨</h1>
 
-    <ul>
-        <li>
-            <strong>⭐ Gold:</strong><br>
-            Clean, high-contrast and immersive finish.<br>
-            Ideal for high-end armies and display pieces.<br>
-            <em>⏱️ Around 2h+ per miniature</em>
-        </li>
+  <ul>
+    <li>
+        <strong>⭐ Gold:</strong><br>
+        Ideal for Warhammer armies<br>
+        Clean, simple and efficient finish<br>
+        <em>Techniques:</em> base colors, simple shading, clean finishing.<br>
 
-        <li>
-            <strong>👑 Diamant:</strong><br>
-            Advanced display-level quality, refined details, complex effects.<br>
-            Designed for characters, heroes and centerpiece models.<br>
-            <em>⏱️ 5 to 8h per miniature</em>
-        </li>
-    </ul>
+        <em>💵 Indicative price:</em><br>
+        <em>⏱️ Around 1h+ per troop miniature on a 25mm base</em><br>
+        €20 for a troop miniature on a 25mm base.<br><br>
+
+        <em>⏱️ Around 2h+ per troop miniature on a 32mm base</em><br>
+        €40 for a troop miniature on a 32mm base.<br>
+    </li>
+
+    <li>
+        <strong>👑 Diamond:</strong><br>
+        Ideal for characters, heroes, vehicles, monsters...<br>
+        Refined details, strong contrast, focal points<br>
+        <em>Techniques:</em> highlights, light placement, gradients, oil techniques, decals, weathering...<br>
+
+        <em>💵 Indicative price:</em><br>
+        <em>⏱️ Around 2h+ per troop miniature on a 25mm base</em><br>
+        €40 for a troop miniature on a 25mm base.<br><br>
+
+        <em>⏱️ Around 4h+ per troop miniature on a 32mm base</em><br>
+        €80 for a troop miniature on a 32mm base.<br>
+    </li>
+</ul>
   
 </div>
         <div class="banniere">
@@ -1694,106 +1708,32 @@ Personalized support for every project.
     <h3>Pricing 2026-2027</h3>
 
     <table class="tableborder1">
-        <thead>
-            <tr>
-                <th>Category</th>
-                <th>Gold</th>
-                <th>Diamant</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Infantry 20-25mm</td>
-                 <td>1h / 20€</td>
-                <td>2h / 40€</td>
-               
-            </tr>
-            <tr>
-                <td>Infantry 28-32mm</td>
-                  <td>2h / 40€</td>
-                <td>3h / 60€</td>
-              
-            </tr>
-            <tr>
-                <td>Elite Infantry 40-50mm</td>
-                   <td>3h / 60€</td>
-                <td>4h / 80€</td>
-             
-            </tr>
-            <tr>
-                <td>Character on foot 25-32mm</td>
-                   <td>5h / 100€</td>
-                <td>8h / 160€</td>
-             
-            </tr>
-            <tr>
-                <td>Elite Character 40-50mm</td>
-                  <td>6h / 120€</td>
-                <td>9h / 180€</td>
-              
-            </tr>
-            <tr>
-                <td>Monstrous Character 60-100mm</td>
-                 <td>8h / 160€</td>
-                <td>12h / 240€</td>
-               
-            </tr>
-            <tr>
-                <td>Character on Monster 120mm</td>
-                 <td>12h / 240€</td>
-                <td>18h / 360€</td>
-               
-            </tr>
-            <tr>
-                <td>Character on Large Monster</td>
-                 <td>16h / 320€</td>
-                <td>24h / 480€</td>
-               
-            </tr>
-            <tr>
-                <td>Cavalry 60-75mm</td>
-                <td>3h / 60€</td>
-                <td>4h / 80€</td>
-                
-            </tr>
-            <tr>
-                <td>Heavy Cavalry 90-105mm</td>
-                <td>4h / 80€</td>
-                <td>5h / 100€</td>
-                
-            </tr>
-            <tr>
-                <td>Small Vehicle / Monster</td>
-                <td>4h / 80€</td>
-                <td>6h / 120€</td>
-                
-            </tr>
-            <tr>
-                <td>Medium Vehicle / Monster</td>
-                 <td>6h / 120€</td>
-                <td>9h / 180€</td>
-               
-            </tr>
-            <tr>
-                <td>Large Vehicle / Monster</td>
-                  <td>8h / 160€</td>
-                <td>16h / 320€</td>
-              
-            </tr>
-            <tr>
-                <td>Huge Vehicle / Monster</td>
-                 <td>12h / 240€</td>
-                <td>18h / 360€</td>
-               
-            </tr>
-            <tr>
-                <td>Titanic</td>
-                  <td>16h / 320€</td>
-                <td>34h / 680€</td>
-              
-            </tr>
-        </tbody>
+      <thead>
+<tr>
+    <th>Category</th>
+    <th>Gold</th>
+    <th>Diamond</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Infantry 20mm</td><td>30min / $15</td><td>1h / $25</td></tr>
+<tr><td>Infantry 25mm</td><td>1h / $25</td><td>2h / $50</td></tr>
+<tr><td>Infantry 28mm</td><td>1h30 / $40</td><td>3h / $75</td></tr>
+<tr><td>Infantry 32mm</td><td>2h / $50</td><td>4h / $100</td></tr>
+<tr><td>Elite Infantry 40-50mm</td><td>3h / $75</td><td>6h / $150</td></tr>
+<tr><td>Foot Character 25-32mm</td><td>5h / $125</td><td>10h / $250</td></tr>
+<tr><td>Elite Character 40-50mm</td><td>6h / $150</td><td>12h / $300</td></tr>
+<tr><td>Monstrous Character 60-100mm</td><td>8h / $200</td><td>16h / $400</td></tr>
+<tr><td>Character Mounted on 120mm Monster</td><td>12h / $300</td><td>24h / $600</td></tr>
+<tr><td>Character Mounted on Large Monster</td><td>16h / $400</td><td>32h / $800</td></tr>
+<tr><td>Cavalry 60-75mm</td><td>3h / $75</td><td>6h / $150</td></tr>
+<tr><td>Heavy Cavalry 90-105mm</td><td>4h / $100</td><td>8h / $200</td></tr>
+<tr><td>Small Vehicle / Monster</td><td>4h / $100</td><td>8h / $200</td></tr>
+<tr><td>Medium Vehicle / Monster</td><td>6h / $150</td><td>12h / $300</td></tr>
+<tr><td>Large Vehicle / Monster</td><td>8h / $200</td><td>16h / $400</td></tr>
+<tr><td>Huge Vehicle / Monster</td><td>12h / $300</td><td>24h / $600</td></tr>
+<tr><td>Titanic</td><td>16h / $400</td><td>32h / $800</td></tr>
+</tbody>
     </table>
 </div>
 `;
@@ -1837,17 +1777,33 @@ Personalized support for every project.
 <div class="maintenance-box">
 <h3>Pintura 🎨</h3>
 <ul>
-    <li><strong>⭐ Gold:</strong> degradados limpios, contrastes marcados, detalles esenciales, acabado homogéneo</li>
-    <li><strong>👑 Diamant:</strong> degradados avanzados, texturas, OSL, NMM, freehand, detalles muy elaborados</li>
-</ul>
+    <li>
+        <strong>⭐ Oro:</strong><br>
+        Ideal para ejércitos de Warhammer<br>
+        Acabado limpio, sencillo y eficaz<br>
+        <em>Técnicas:</em> colores base, sombras simples, acabado limpio.<br>
 
-<p><strong>🎯 Objetivo: un resultado realista, legible e impactante tanto a distancia como de cerca.</strong></p>
-</div>
-<div class="maintenance-box">
-<h3>Peana 🌿</h3>
-<ul>
-    <li><strong>Gold:</strong> peana trabajada y coherente con el ejército</li>
-    <li><strong>Diamant:</strong> peana escénica con elementos 3D y narrativa visual</li>
+        <em>💵 Precio orientativo:</em><br>
+        <em>⏱️ Aproximadamente 1h+ por miniatura de tropa con peana de 25mm</em><br>
+        20€ por una miniatura de tropa con peana de 25mm.<br><br>
+
+        <em>⏱️ Aproximadamente 2h+ por miniatura de tropa con peana de 32mm</em><br>
+        40€ por una miniatura de tropa con peana de 32mm.<br>
+    </li>
+
+    <li>
+        <strong>👑 Diamante:</strong><br>
+        Ideal para personajes, héroes, vehículos, monstruos...<br>
+        Detalles cuidados, pintura con contraste, puntos focales<br>
+        <em>Técnicas:</em> iluminaciones, colocación de luces, degradados, técnicas con óleo, calcas, efectos de desgaste...<br>
+
+        <em>💵 Precio orientativo:</em><br>
+        <em>⏱️ Aproximadamente 2h+ por miniatura de tropa con peana de 25mm</em><br>
+        40€ por una miniatura de tropa con peana de 25mm.<br><br>
+
+        <em>⏱️ Aproximadamente 4h+ por miniatura de tropa con peana de 32mm</em><br>
+        80€ por una miniatura de tropa con peana de 32mm.<br>
+    </li>
 </ul>
 </div>
 <div class="maintenance-box">
@@ -1907,106 +1863,32 @@ Acompañamiento personalizado para cada proyecto.
     <h3>Tarifas 2026-2027</h3>
 
     <table class="tableborder1">
-        <thead>
-            <tr>
-                <th>Categoría</th>
-                <th>Gold</th>
-                <th>Diamant</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Infantería 20-25mm</td>  
-                <td>1h / 20€</td>
-                <td>2h / 40€</td>
-              
-            </tr>
-            <tr>
-                <td>Infantería 28-32mm</td>
-                 <td>2h / 40€</td>
-                <td>3h / 60€</td>
-               
-            </tr>
-            <tr>
-                <td>Infantería élite 40-50mm</td>
-                  <td>3h / 60€</td>
-                <td>4h / 80€</td>
-              
-            </tr>
-            <tr>
-                <td>Personaje a pie 25-32mm</td>
-                  <td>5h / 100€</td>
-                <td>8h / 160€</td>
-              
-            </tr>
-            <tr>
-                <td>Personaje élite 40-50mm</td>
-                  <td>6h / 120€</td>
-                <td>9h / 180€</td>
-              
-            </tr>
-            <tr>
-                <td>Personaje monstruoso 60-100mm</td>
-                  <td>8h / 160€</td>
-                <td>12h / 240€</td>
-              
-            </tr>
-            <tr>
-                <td>Personaje sobre monstruo 120mm</td>
-                 <td>12h / 240€</td>
-                <td>18h / 360€</td>
-               
-            </tr>
-            <tr>
-                <td>Personaje sobre gran monstruo</td>
-                  <td>16h / 320€</td>
-                <td>24h / 480€</td>
-              
-            </tr>
-            <tr>
-                <td>Caballería 60-75mm</td>
-                  <td>3h / 60€</td>
-                <td>4h / 80€</td>
-              
-            </tr>
-            <tr>
-                <td>Caballería pesada 90-105mm</td>
-                 <td>4h / 80€</td>
-                <td>5h / 100€</td>
-               
-            </tr>
-            <tr>
-                <td>Vehículo / monstruo pequeño</td>
-                 <td>4h / 80€</td>
-                <td>6h / 120€</td>
-               
-            </tr>
-            <tr>
-                <td>Vehículo / monstruo medio</td>
-                 <td>6h / 120€</td>
-                <td>9h / 180€</td>
-               
-            </tr>
-            <tr>
-                <td>Vehículo / monstruo grande</td>
-                   <td>8h / 160€</td>
-                <td>16h / 320€</td>
-             
-            </tr>
-            <tr>
-                <td>Vehículo / monstruo enorme</td>
-                  <td>12h / 240€</td>
-                <td>18h / 360€</td>
-              
-            </tr>
-            <tr>
-                <td>Titánico</td>
-                  <td>16h / 320€</td>
-                <td>34h / 680€</td>
-              
-            </tr>
-        </tbody>
+     <thead>
+<tr>
+    <th>Categoría</th>
+    <th>Oro</th>
+    <th>Diamante</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Infantería 20mm</td><td>30min / 10€</td><td>1h / 20€</td></tr>
+<tr><td>Infantería 25mm</td><td>1h / 20€</td><td>2h / 40€</td></tr>
+<tr><td>Infantería 28mm</td><td>1h30 / 30€</td><td>3h / 60€</td></tr>
+<tr><td>Infantería 32mm</td><td>2h / 40€</td><td>4h / 80€</td></tr>
+<tr><td>Infantería de élite 40-50mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
+<tr><td>Personaje a pie 25-32mm</td><td>5h / 100€</td><td>10h / 200€</td></tr>
+<tr><td>Personaje de élite 40-50mm</td><td>6h / 120€</td><td>12h / 240€</td></tr>
+<tr><td>Personaje monstruoso 60-100mm</td><td>8h / 160€</td><td>16h / 320€</td></tr>
+<tr><td>Personaje sobre monstruo 120mm</td><td>12h / 240€</td><td>24h / 480€</td></tr>
+<tr><td>Personaje sobre gran monstruo</td><td>16h / 320€</td><td>32h / 640€</td></tr>
+<tr><td>Caballería 60-75mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
+<tr><td>Caballería pesada 90-105mm</td><td>4h / 80€</td><td>8h / 160€</td></tr>
+<tr><td>Vehículo pequeño / monstruo</td><td>4h / 80€</td><td>8h / 160€</td></tr>
+<tr><td>Vehículo mediano / monstruo</td><td>6h / 120€</td><td>12h / 240€</td></tr>
+<tr><td>Vehículo grande / monstruo</td><td>8h / 160€</td><td>16h / 320€</td></tr>
+<tr><td>Vehículo enorme / monstruo</td><td>12h / 240€</td><td>24h / 480€</td></tr>
+<tr><td>Titánico</td><td>16h / 320€</td><td>32h / 640€</td></tr>
+</tbody>
     </table>
 </div>
 
@@ -2017,21 +1899,36 @@ Acompañamiento personalizado para cada proyecto.
 <div class="maintenance-box">
 <h1>Peinture de Figurines Haut de Gamme 🎨</h1>
 
-    <ul>
-        <li>
-            <strong>⭐ Gold :</strong><br>
-            Finition nette, contrastée et immersive.<br>
-            Idéal pour armées haut de gamme et vitrines.<br>
-            <em>⏱️ Environ 2h+ par figurine</em>
-        </li>
+ 
+        <ul>
+            <li>
+                <strong>⭐ Gold :</strong><br>
+             Idéal pour les armées Warhammer<br>
+                Finition nette, simple et efficace<br>
+             <em>Techniques :</em>em> couleurs de base, ombrage simples, finition propre.<br>
+               
+     
+             <em>💵 Prix indicatif :</em><br>
+              <em>⏱️ Environ 1h+ par figurine de troupe socle de 25mm</em><br>
+             20€ pour une figurine de troupe socle de 25mm.<br><br>
+                           <em>⏱️ Environ 2h+ par figurine de troupe socle de 32mm</em><br>
+             40€ pour une figurine de troupe socle de 32mm.<br>
 
-        <li>
-            <strong>👑 Diamant :</strong><br>
-            Niveau vitrine avancé, détails poussés, effets complexes.<br>
-            Pensé pour personnages, héros et pièces fortes.<br>
-            <em>⏱️ 5 à 8h par figurine</em>
-        </li>
-    </ul>
+            </li>
+            <li>
+                <strong>👑 Diamant :</strong><br>
+             Idéal pour les personnges, héros, véhicules, monstres...<br>
+               Détails soignés, peinture contrasté, point de focal<br>
+             <em>Techniques :</em> éclairssiements, poses de lumière, dégradés, huile, décalcos, weathering...<br>
+            
+              <em>💵 Prix indicatif :</em><br>
+                <em>⏱️ Environ 2h+ parfigurine de troupe socle de 25mm</em><br>
+               40€ pour une figurine de troupe socle de 25mm.<br><br>
+              <em>⏱️ Environ 4h+ par figurine de troupe socle de 32mm</em><br>
+             80€ pour une figurine de troupe socle de 32mm.<br>
+
+            </li>
+        </ul>
 
   
 
@@ -2124,107 +2021,27 @@ Un accompagnement personnalisé pour chaque projet.
     <h3>Tarif 2026-2027</h3>
 
     <table class="tableborder1">
-        <thead>
-            <tr>
-                <th>Catégorie</th>
-                <th>Gold</th>
-                <th>Diamant</th>
-            </tr>
-        </thead>
+        <thead><tr><th>Catégorie</th><th>Gold</th><th>Diamant</th></tr></thead>
+<tbody>
+<tr><td>Infanterie 20mm</td><td>30min / 10€</td><td>1h / 20€</td></tr>
+<tr><td>Infanterie 25mm</td><td>1h / 20€</td><td>2h / 40€</td></tr>
+<tr><td>Infanterie 28mm</td><td>1h30 / 30€</td><td>3h / 60€</td></tr>
+<tr><td>Infanterie 32mm</td><td>2h / 40€</td><td>4h / 80€</td></tr>
+<tr><td>Infanterie élite 40-50mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
+<tr><td>Personnage à pied 25-32mm</td><td>5h / 100€</td><td>10h / 200€</td></tr>
+<tr><td>Personnage élite 40-50mm</td><td>6h / 120€</td><td>12h / 240€</td></tr>
+<tr><td>Personnage monstrueux 60-100mm</td><td>8h / 160€</td><td>16h / 320€</td></tr>
+<tr><td>Personnage sur monstre 120mm</td><td>12h / 240€</td><td>24h / 480€</td></tr>
+<tr><td>Personnage sur grand monstre</td><td>16h / 320€</td><td>32h / 640€</td></tr>
+<tr><td>Cavalerie 60-75mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
+<tr><td>Cavalerie lourde 90-105mm</td><td>4h / 80€</td><td>8h / 160€</td></tr>
+<tr><td>Petit véhicule / monstre</td><td>4h / 80€</td><td>8h / 160€</td></tr>
+<tr><td>Véhicule / monstre moyen</td><td>6h / 120€</td><td>12h / 240€</td></tr>
+<tr><td>Gros véhicule / monstre</td><td>8h / 160€</td><td>16h / 320€</td></tr>
+<tr><td>Énorme véhicule / monstre</td><td>12h / 240€</td><td>24h / 480€</td></tr>
+<tr><td>Titanesque</td><td>16h / 320€</td><td>32h / 640€</td></tr>
+</tbody>
 
-        <tbody>
-            <tr>
-                <td>Infanterie 20-25mm</td>
-                  <td>1h / 20€</td>
-                <td>2h / 40€</td>
-              
-            </tr>
-            <tr>
-                <td>Infanterie 28-32mm</td>
-                   <td>2h / 40€</td>
-                <td>3h / 60€</td>
-             
-            </tr>
-            <tr>
-                <td>Infanterie élite 40-50mm</td>
-                  <td>3h / 60€</td>
-                <td>4h / 80€</td>
-              
-            </tr>
-            <tr>
-                <td>Personnage à pied 25-32mm</td>
-                <td>5h / 100€</td>
-                <td>8h / 160€</td>
-                
-            </tr>
-            <tr>
-                <td>Personnage élite 40-50mm</td>
-                <td>6h / 120€</td>
-                <td>9h / 180€</td>
-                
-            </tr>
-            <tr>
-                <td>Personnage monstrueux 60-100mm</td>
-                   <td>8h / 160€</td>
-                <td>12h / 240€</td>
-             
-            </tr>
-            <tr>
-                <td>Personnage sur monstre 120mm</td>
-                  <td>12h / 240€</td>
-                <td>18h / 360€</td>
-              
-            </tr>
-            <tr>
-                <td>Personnage sur grand monstre</td>
-                  <td>16h / 320€</td>
-                <td>24h / 480€</td>
-              
-            </tr>
-            <tr>
-                <td>Cavalerie 60-75mm</td>
-                 <td>3h / 60€</td>
-                <td>4h / 80€</td>
-               
-            </tr>
-            <tr>
-                <td>Cavalerie lourde 90-105mm</td>
-                  <td>4h / 80€</td>
-                <td>5h / 100€</td>
-              
-            </tr>
-            <tr>
-                <td>Petit véhicule / monstre</td>
-                  <td>4h / 80€</td>
-                <td>6h / 120€</td>
-              
-            </tr>
-            <tr>
-                <td>Véhicule / monstre moyen</td>
-                 <td>6h / 120€</td>
-                <td>9h / 180€</td>
-               
-            </tr>
-            <tr>
-                <td>Gros véhicule / monstre</td>
-                 <td>8h / 160€</td>
-                <td>16h / 320€</td>
-               
-            </tr>
-            <tr>
-                <td>Énorme véhicule / monstre</td>
-                  <td>12h / 240€</td>
-                <td>18h / 360€</td>
-              
-            </tr>
-            <tr>
-            
-                <td>Titanesque</td>
-                 <td>16h / 320€</td>
-                <td>34h / 680€</td>
-               
-            </tr>
-        </tbody>
     </table>
 </div>
    
