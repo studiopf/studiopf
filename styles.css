@@ -56,6 +56,8 @@ img {
 /* Hover + focus */
 .button:hover,
 .button:focus {
+     filter:brightness(1.08);
+   
     color: #ffffff;
     background: rgba(50, 35, 20, 0.85);
     border-color: #ffda79;             /* jaune plus lumineux au survol */
@@ -283,12 +285,11 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', system-ui, sans-serif;
- background: linear-gradient(135deg, #0f0a05 0%, #251a10 100%);
-   color: #d8cfc2;
     min-height: 100vh;
-    background-image: radial-gradient(circle at 15% 85%, rgba(180,140,60,0.04) 0%, transparent 50%), radial-gradient(circle at 85% 20%, rgba(180,140,60,0.03) 0%, transparent 60%);
     padding: 0px 0px 0px;
     line-height: 1.55;
+    background:var(--bg);
+    color:var(--text);
 }
 
 ul, ol {
@@ -299,11 +300,15 @@ ul, ol {
    TYPOGRAPHIE – inchangé
    ========================================================================== */
 h1, h2, h3, h4, h5 {
-    color: #f4c876;
+    color:var(--title);
     text-shadow: 0 4px 9px rgba(0,0,0,0.8);
     text-align: center;
 }
+strong{
 
+    color:var(--title);
+
+}
 h1 {
      font-size: 18px;
     font-weight: 600;
@@ -337,7 +342,7 @@ p {
    margin-top: 8px;
     margin: 0rem auto;
     max-width: 92%;
-    color: #e8d9c0;
+    color:var(--button-text);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -347,7 +352,7 @@ p {
    LIENS & HIGHLIGHT – inchangé
    ========================================================================== */
 a {
-    color: #d4b68c;
+  color:var(--button-text);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.25s ease;
@@ -935,15 +940,7 @@ nav ul li a:hover {
         cursor: pointer;
     }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 0px 0px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-  
+    
 
     nav ul {
         gap: 4px 8px;
@@ -1314,15 +1311,17 @@ body{
 }
 
 .maintenance-box{
-    background:rgba(22,15,10,.82);
+    background:var(--box-bg);
+    border:1px solid var(--box-border);
     border:1px solid #6b4e2f;
     box-shadow:0 12px 30px rgba(0,0,0,.75);
 }
 
 .button{
-    color:#ffda79;
-    background:rgba(22,15,10,.82);
-    border:2px solid #f4c876;
+     background:var(--button-bg);
+    color:var(--button-text);
+    border:2px solid var(--button-border);
+   
 }
 
 /* ===================================================
@@ -1350,4 +1349,44 @@ body.light-mode .theme-toggle{
     background:#ffffff;
     color:#444;
     border-color:#999;
+}
+
+/*==========================
+    MODE SOMBRE (défaut)
+==========================*/
+
+:root{
+
+    --bg: linear-gradient(135deg,#0b0805 0%,#1a120b 100%);
+    --text:#d8cfc2;
+
+    --box-bg:rgba(22,15,10,.82);
+    --box-border:#6b4e2f;
+
+    --button-bg:#2a1c12;
+    --button-text:#ffd86a;
+    --button-border:#d6a64b;
+
+    --title:#ffe39b;
+
+}
+
+/*==========================
+        MODE CLAIR
+==========================*/
+
+body.light-mode{
+
+    --bg: linear-gradient(135deg,#f8f4ec 0%,#ece3d3 100%);
+    --text:#2b241d;
+
+    --box-bg:rgba(255,255,255,.90);
+    --box-border:#ceb58b;
+
+    --button-bg:#f7e8c8;
+    --button-text:#6f4600;
+    --button-border:#b88629;
+
+    --title:#8b5b00;
+
 }
