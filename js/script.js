@@ -3700,7 +3700,7 @@ const tariffs = {
 
 };
 
-
+const categories = Object.keys(tariffs);
 
 // =======================
 // NOMS DES CATEGORIES
