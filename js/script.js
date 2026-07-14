@@ -384,7 +384,7 @@ function changelangueforma() {
 
       <div class="maintenance-box">
    <h3>📅 Réservez divtenant et devenez expert !</h3>
-    <div class="center">
+    <div>
    
       
       <form onsubmit="event.preventDefault(); envoyerMailForma(this);" id="formationForm">
@@ -443,7 +443,7 @@ function changelangueforma() {
           <label for="message">Votre message</label>
           <textarea id="message" name="message" placeholder="Votre message" rows="4"></textarea>
         </div>
-        <div class="center">
+        <div>
           <button type="submit" class="button">Envoyer la demande par mail</button>
         </div>
       </form>
@@ -505,7 +505,7 @@ ${prenom} ${nom}`;
 <div class="form-container">
 
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-    <div class="center">
+    <div>
         <fieldset>
             <legend>Contact Details TableTop+ commission</legend>
 
@@ -745,7 +745,7 @@ ${prenom} ${nom}`;
 
     </fieldset>
 
-    <div class="center">
+    <div>
         <button type="submit" class="button">Send request by email</button>
     </div>
 
@@ -758,7 +758,7 @@ ${prenom} ${nom}`;
 <div class="form-container">
 
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-    <div class="center">
+    <div>
         <fieldset>
             <legend>Datos de contacto TableTop</legend>
 
@@ -999,7 +999,7 @@ ${prenom} ${nom}`;
 
     </fieldset>
 
-    <div class="center">
+    <div>
         <button type="submit" class="button">Enviar solicitud por correo</button>
     </div>
 
@@ -1013,7 +1013,7 @@ ${prenom} ${nom}`;
            <div class="form-container">
             
         <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-              <div class="center">
+              <div>
                   <fieldset>
                 <legend>Coordonnées</legend>
                 <div class="form-group">
@@ -1226,7 +1226,7 @@ ${prenom} ${nom}`;
 
                       
                 </fieldset>
-            <div class="center">
+            <div>
               <button type="submit" class="button">Envoyer la demande par mail</button>
                    </div>   
             </form>
@@ -1279,7 +1279,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentLanguage === "english") {
         html = `
-      <div class="center">
+      <div>
     <div class="maintenance-box">
 
        <h1>Studio PF<br>Professional Miniature Painter</h1>
@@ -1305,7 +1305,7 @@ At <strong>Studio PF</strong>, every <strong>miniature painting commission</stro
     </div>
 </div>
 
-<div class="center">
+<div>
    <div class="maintenance-box">
 <h1>Studio PF<br>Professional Miniature Painter</h1>
 
@@ -1335,7 +1335,7 @@ Discover the painting service ➜
 </div></div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>👋 Miniature Painter in France</h2>
@@ -1366,7 +1366,7 @@ Learn more about my journey ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>Professional Painting Commission</h2>
@@ -1394,7 +1394,7 @@ Discover the painting service ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>Miniature Painting Courses & Training</h2>
@@ -1416,7 +1416,7 @@ Discover the training courses ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>🪄 Why choose Studio PF?</h2>
@@ -1440,7 +1440,7 @@ You receive a miniature ready to play or display, durable and completely matchin
 </div>
 </div>
 
-<div class="center">
+<div>
     <div class="maintenance-box">
 
         <h2>⚙️ How does it work?</h2>
@@ -1468,7 +1468,7 @@ You receive a miniature ready to play or display, durable and completely matchin
         `;
     } else if (currentLanguage === "spanish") {
         html = `
-      <div class="center">
+      <div>
   <div class="maintenance-box">
 <h1>Studio PF<br>Pintor Profesional de Miniaturas</h1>
 
@@ -1499,7 +1499,7 @@ Descubrir el servicio de pintura ➜
 </div></div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>👋 Pintor de Miniaturas en Francia</h2>
@@ -1530,7 +1530,7 @@ Conoce más sobre mi trayectoria ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>Encargos Profesionales de Pintura</h2>
@@ -1558,7 +1558,7 @@ Descubrir el servicio de pintura ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>Cursos y Formación de Pintura de Miniaturas</h2>
@@ -1580,7 +1580,7 @@ Descubrir las formaciones ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>🪄 ¿Por qué elegir Studio PF?</h2>
@@ -1604,7 +1604,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
 </div>
 </div>
 
-<div class="center">
+<div>
     <div class="maintenance-box">
         <h3>⚔️ TableTop Avanzado</h3>
         <p>👉 Para jugadores exigentes que quieren un resultado espectacular sin sacrificar la jugabilidad.</p>
@@ -1618,7 +1618,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     </div>
 </div>
 
-<div class="center">
+<div>
     <div class="maintenance-box">
         <h3>🧠 Formación & Coaching de pintura</h3>
         <p>👉 Aprende técnicas profesionales: iluminación, peanas, degradados, acabados.  
@@ -1627,7 +1627,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     </div>
 </div>
 
-<div class="center">
+<div>
     <div class="maintenance-box">
         <h2>🪄 ¿Por qué elegir Studio PF ?</h2>
         <ul>
@@ -1641,7 +1641,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     </div>
 </div>
 
-<div class="center">
+<div>
     <div class="maintenance-box">
 
         <h2>⚙️ ¿Cómo funciona?</h2>
@@ -1669,7 +1669,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     } else {
         html = `
         
-  <div class="center">
+  <div>
            <div class="maintenance-box">
 <h1>Studio PF<br>Peintre professionnel sur Figurines</h1>
 
@@ -1699,7 +1699,7 @@ Découvrir le service peinture ➜
 </div></div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>👋 Peintre sur Figurine en France</h2>
@@ -1730,7 +1730,7 @@ En savoir plus sur mon parcours ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>Commission de Peinture Professionnelle</h2>
@@ -1758,7 +1758,7 @@ Découvrir le service peinture ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>Cours et Formation de Peinture sur Figurine</h2>
@@ -1780,7 +1780,7 @@ Découvrir les formations ➜
 </div>
 
 
-<div class="center">
+<div>
 <div class="maintenance-box">
 
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
@@ -1803,7 +1803,7 @@ Vous recevez une pièce prête à jouer ou à exposer, durable et totalement à 
 
 </div>
 </div>
-        <div class="center">
+        <div>
     <div class="maintenance-box">
 
         <h2>⚙️ Comment ça marche ?</h2>
