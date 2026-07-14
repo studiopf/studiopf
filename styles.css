@@ -345,7 +345,6 @@ li, .p-social {
 p {
        font-size: 14px;
     line-height: 1.6;
-    
    margin-top: 8px;
     margin: 0rem auto;
     max-width: 92%;
@@ -353,7 +352,6 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: grid;
 }
 
 /* ==========================================================================
@@ -878,7 +876,7 @@ nav ul li a:hover {
        font-size: 11px;
     line-height: 1.6;
     text-align: center;
-   margin-top: 8px;
+   margin-top: 4px;
     margin: 0rem auto;
     max-width: 92%;
     color: #e8d9c0;
@@ -997,7 +995,7 @@ nav ul li a:hover {
         margin-right: auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        padding: 15px 10px;        /* un peu moins de padding interne pour compenser */
+        padding: 10px 10px;        /* un peu moins de padding interne pour compenser */
     }
 
     .card-container3 {
