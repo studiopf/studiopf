@@ -2326,7 +2326,6 @@ Présenter mon projet 💬
         </p>
     </div>
 
-</div>
 
 <div class="maintenance-box">
 
