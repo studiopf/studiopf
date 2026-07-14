@@ -3134,6 +3134,36 @@ function changelanguepeinture() {
 
 
 </div>
+
+<p>TEST</p>
+<table class="tableborder1">
+<thead>
+
+<tr>
+   <th data-i18n="categoryLabels">Catégorie</th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table><p>TEST</p>
+<table class="tableborder1">
+<thead>
+
+<tr>
+   <th data-i18n="categoryLabels">Catégorie</th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table>
    
          `;
     }
