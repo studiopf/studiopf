@@ -206,6 +206,7 @@ changelangueinfo();
     }
     if (currentPage.includes("commission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
+        genererTableTarifs();
     
     }
         if (currentPage.includes("collection") && typeof changelanguecolletion === "function") {
