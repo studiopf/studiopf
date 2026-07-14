@@ -376,9 +376,9 @@ a:hover,
         align-items: center;
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
    margin-top: 2px;
-    display: grid;
+
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     justify-content: center;
@@ -995,7 +995,7 @@ nav ul li a:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         max-width: 92%;            /* ← au lieu de 100% → laisse ~4% de chaque côté */
         margin-left: auto;
