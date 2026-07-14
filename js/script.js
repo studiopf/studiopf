@@ -3706,7 +3706,7 @@ const tariffs = {
 // NOMS DES CATEGORIES
 // =======================
 
-const categories = {
+const categoriesLabel = {
 
     petiteinfanterie: {
         fr: "Infanterie 20-25mm",
@@ -3831,7 +3831,7 @@ function genererTableTarifs() {
     Object.keys(tariffs).forEach(categorie => {
 
 
-        if (!categories[categorie]) {
+        if (!categoriesLabel[categorie]) {
             console.warn("Catégorie manquante :", categorie);
             return;
         }
@@ -3843,7 +3843,7 @@ function genererTableTarifs() {
         ligne.innerHTML = `
 
             <td>
-                ${categories[categorie][langue]}
+                ${categoriesLabel[categorie][langue]}
             </td>
 
             <td>
