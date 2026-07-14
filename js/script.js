@@ -2982,67 +2982,63 @@ function changelanguemenu() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `<nav id="menu-contenu" class="menu-mobile">
+        html = `<!-- Mobile menu button -->
+<button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+<!-- Side menu -->
+<nav id="menu-contenu" class="menu-mobile">
     <ul class="menu">
-
-        <li>
-            <a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
-                🎨 TableTop Armies Painting
-            </a>
-        </li>
-
-        <li>
-            <a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
-                🏆 Collection & Competition Painting
-            </a>
-        </li>
-
-
-
-        <li>
-            <a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
-                🖼️ Gallery
-            </a>
-        </li>
-
+        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">TableTop Painting 🎨</a></li>
+        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Competitions 🏆</a></li>
+        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Training 📚</a></li>
+        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Gallery 🖼️</a></li>
     </ul>
-</nav>`;
+</nav>
+<!-- Dark overlay when menu is open -->
+<div id="menu-overlay"></div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<nav id="menu-contenu" class="menu-mobile">
+        html = `<!-- Bouton menu mobile -->
+<button id="menu-toggle" class="menu-toggle" aria-label="Abrir el menú">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+<!-- Menu latéral -->
+<nav id="menu-contenu" class="menu-mobile">
     <ul class="menu">
-
-        <li>
-            <a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
-                🎨 Pintura de Ejércitos TableTop
-            </a>
-        </li>
-
-        <li>
-            <a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
-                🏆 Pintura de Colección y Concursos
-            </a>
-        </li>
-
-    
-
-        <li>
-            <a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
-                🖼️ Galería
-            </a>
-        </li>
-
+        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Pintura TableTop 🎨</a></li>
+        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Colección & Concursos 🏆</a></li>
+        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formación 📚</a></li>
+        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galería 🖼️</a></li>
     </ul>
-</nav>`;
+</nav>
+<!-- Fond sombre quand menu ouvert -->
+<div id="menu-overlay"></div>`;
     } else {
-        html = `        <nav id="menu-contenu" class="menu-mobile">
-            <ul class="menu">
-                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture Armées TableTop 🎨</a></li>
-                 <li><a href="peinturecollection" onclick="loadPage('peinturecollection.html'); return false;">Peinture Collection & Concours 🏆</a></li>
-            </ul>  <ul class="menu">
-                   <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
-                <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
-            </ul>
-        </nav>`;
+        html = `   <!-- Bouton menu mobile -->
+<button id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<!-- Menu latéral -->
+<nav id="menu-contenu" class="menu-mobile">
+
+    <ul class="menu">
+        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop 🎨</a></li>
+        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Concours 🏆</a></li>
+        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
+        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
+    </ul>
+
+</nav>
+
+<!-- Fond sombre quand menu ouvert -->
+<div id="menu-overlay"></div>`;
     }
 
     menu.innerHTML = html;
