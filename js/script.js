@@ -1839,43 +1839,83 @@ function changelanguepeinture() {
     if (currentLanguage === "english") {
         html = `
 
+<h1>🎨 High-End Miniature Painting</h1>
+
 <div class="maintenance-box">
- <h1>High-End Miniature Painting 🎨</h1>
 
- <ul>
-    <li>
-        <strong>⭐ Gold :</strong><br>
-        Ideal for Warhammer armies<br>
-        Clean, simple and effective finish<br>
-        <em>Techniques:</em> base colors, simple shading, clean finishing.<br>
+    <div>
+        <h2>⭐ Gold — Premium TableTop Finish</h2>
 
-        <em>💵 Indicative price: €10 to €20 per miniature</em><br>
-        <em>⏱️ Less than 1 hour per troop miniature on a 20-25mm base</em><br>
-        €10 for a troop miniature on a 20-25mm base.<br><br>
+        <p>
+            <strong>Ideal for:</strong> Warhammer armies, units and large quantities of miniatures.
+        </p>
 
-        <em>⏱️ Around 1h+ per troop miniature on a 28-32mm base</em><br>
-        €20 for a troop miniature on a 28-32mm base.<br><br>
-    </li>
+        <p>
+            A clean, efficient and consistent finish to create an army
+            with an excellent tabletop appearance while keeping an accessible price.
+        </p>
 
-    <li>
-        <strong>👑 Diamond :</strong><br>
-        Ideal for characters, heroes, vehicles, monsters...<br>
-        Carefully painted details, strong contrasts, focal points<br>
-        <em>Techniques:</em> highlights, light effects, blending, oil washes, decals, weathering...<br>
+        <p>
+            <strong>🎨 Techniques used:</strong><br>
+            Base colors, simple shading, basic highlights,
+            essential details and a clean finish.
+        </p>
 
-        <em>💵 Indicative price: €20 to €40 per miniature</em><br>
-        <em>⏱️ Around 1 hour per troop miniature on a 20-25mm base</em><br>
-        €20 for a troop miniature on a 20-25mm base.<br><br>
+        <p>
+            <strong>💵 Indicative price: $15 to $25 per miniature</strong>
+        </p>
 
-        <em>⏱️ Around 2h+ per troop miniature on a 28-32mm base</em><br>
-        €40 for a troop miniature on a 28-32mm base.<br>
-    </li>
-</ul>
-  
-</div>
-        <div class="banniere">
-         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+        <p>
+            ⏱️ <strong>Indicative painting time:</strong><br><br>
+
+            <strong>Troop miniature on 20-25mm base:</strong><br>
+            Less than 1 hour → <strong>$10</strong><br><br>
+
+            <strong>Troop miniature on 28-32mm base:</strong><br>
+            Around 1h+ → <strong>$20</strong>
+        </p>
     </div>
+
+
+    <hr>
+
+
+    <div>
+        <h2>👑 Diamond — Superior TableTop Finish</h2>
+
+        <p>
+            <strong>Ideal for:</strong> Characters, heroes, monsters,
+            vehicles and important miniatures in your collection.
+        </p>
+
+        <p>
+            A more advanced painting level with stronger contrasts,
+            enhanced depth and additional attention to details.
+        </p>
+
+        <p>
+            <strong>🎨 Techniques used:</strong><br>
+            Advanced highlights, light placement,
+            gradients, oil effects, decals,
+            weathering and additional effects.
+        </p>
+
+        <p>
+            <strong>💵 Indicative price: $25 to $50 per miniature</strong>
+        </p>
+
+        <p>
+            ⏱️ <strong>Indicative painting time:</strong><br><br>
+
+            <strong>Troop miniature on 20-25mm base:</strong><br>
+            Around 1 hour → <strong>$20</strong><br><br>
+
+            <strong>Troop miniature on 28-32mm base:</strong><br>
+            Around 2h+ → <strong>$40</strong>
+        </p>
+    </div>
+
+</div>
 <div class="maintenance-box">
 <h2>Preparation 🛠️</h2>
 <ul>
@@ -1980,43 +2020,84 @@ function changelanguepeinture() {
     } else if (currentLanguage === "spanish") {
         html = `
 
+<h1>🎨 Pintura de Miniaturas de Alta Gama</h1>
+
 <div class="maintenance-box">
-<h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
-<ul>
-    <li>
-        <strong>⭐ Gold :</strong><br>
-        Ideal para ejércitos de Warhammer<br>
-        Acabado limpio, sencillo y eficaz<br>
-        <em>Técnicas:</em> colores base, sombreados simples, acabado limpio.<br>
 
-        <em>💵 Precio orientativo: de 10€ a 20€ por miniatura</em><br>
-        <em>⏱️ Menos de 1 hora por miniatura de tropa con peana de 20-25mm</em><br>
-        10€ por una miniatura de tropa con peana de 20-25mm.<br><br>
+    <div>
+        <h2>⭐ Gold — Acabado TableTop Premium</h2>
 
-        <em>⏱️ Aproximadamente 1h+ por miniatura de tropa con peana de 28-32mm</em><br>
-        20€ por una miniatura de tropa con peana de 28-32mm.<br><br>
-    </li>
+        <p>
+            <strong>Ideal para:</strong> Ejércitos Warhammer, unidades
+            y grandes cantidades de miniaturas.
+        </p>
 
-    <li>
-        <strong>👑 Diamante :</strong><br>
-        Ideal para personajes, héroes, vehículos, monstruos...<br>
-        Detalles cuidados, pintura con contraste y puntos focales<br>
-        <em>Técnicas:</em> iluminaciones, efectos de luz, degradados, óleos, calcomanías, desgaste...<br>
+        <p>
+            Un acabado limpio, eficiente y uniforme para conseguir un ejército
+            con una excelente presencia en mesa manteniendo un precio accesible.
+        </p>
 
-        <em>💵 Precio orientativo: de 20€ a 40€ por miniatura</em><br>
-        <em>⏱️ Aproximadamente 1 hora por miniatura de tropa con peana de 20-25mm</em><br>
-        20€ por una miniatura de tropa con peana de 20-25mm.<br><br>
+        <p>
+            <strong>🎨 Técnicas utilizadas:</strong><br>
+            Colores base, sombras simples, iluminaciones básicas,
+            detalles esenciales y acabado limpio.
+        </p>
 
-        <em>⏱️ Aproximadamente 2h+ por miniatura de tropa con peana de 28-32mm</em><br>
-        40€ por una miniatura de tropa con peana de 28-32mm.<br>
-    </li>
-</ul>
+        <p>
+            <strong>💵 Precio orientativo: 10€ a 20€ por miniatura</strong>
+        </p>
 
+        <p>
+            ⏱️ <strong>Tiempo de pintura orientativo:</strong><br><br>
+
+            <strong>Miniatura de tropa con peana de 20-25mm:</strong><br>
+            Menos de 1 hora → <strong>10€</strong><br><br>
+
+            <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
+            Aproximadamente 1h+ → <strong>20€</strong>
+        </p>
+    </div>
+
+
+    <hr>
+
+
+    <div>
+        <h2>👑 Diamante — Acabado TableTop Superior</h2>
+
+        <p>
+            <strong>Ideal para:</strong> Personajes, héroes, monstruos,
+            vehículos y miniaturas importantes de tu colección.
+        </p>
+
+        <p>
+            Un nivel de pintura más avanzado con mayor contraste,
+            profundidad y un trabajo más detallado.
+        </p>
+
+        <p>
+            <strong>🎨 Técnicas utilizadas:</strong><br>
+            Iluminaciones avanzadas, trabajo de luces,
+            degradados, efectos con óleo, calcomanías,
+            weathering y efectos adicionales.
+        </p>
+
+        <p>
+            <strong>💵 Precio orientativo: 20€ a 40€ por miniatura</strong>
+        </p>
+
+        <p>
+            ⏱️ <strong>Tiempo de pintura orientativo:</strong><br><br>
+
+            <strong>Miniatura de tropa con peana de 20-25mm:</strong><br>
+            Aproximadamente 1 hora → <strong>20€</strong><br><br>
+
+            <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
+            Aproximadamente 2h+ → <strong>40€</strong>
+        </p>
+    </div>
 
 </div>
-        <div class="banniere">
-         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
-    </div>
 <div class="maintenance-box">
 <h3>Preparación (incluida) 🛠️</h3>
 <ul>
@@ -2131,45 +2212,86 @@ function changelanguepeinture() {
     } else {
         html = `
 
+  <h1>🎨 Peinture de Figurines Haut de Gamme</h1>
+
 <div class="maintenance-box">
-<h1>Peinture de Figurines Haut de Gamme 🎨</h1>
 
- 
-         <ul>
-            <li>
-                <strong>⭐ Gold :</strong><br>
-             Idéal pour les armées Warhammer<br>
-                Finition nette, simple et efficace<br>
-             <em>Techniques :</em>em> couleurs de base, ombrage simples, finition propre.<br>
-               
-     
-             <em>💵 Prix indicatif : de 10€ à 20€ par figurine</em><br>
-              <em>⏱️ Moins d'une heure par figurine de troupe socle de 20-25mm</em><br>
-             10€ pour une figurine de troupe socle de 20-25mm.<br><br>
-                           <em>⏱️ Environ 1h+ par figurine de troupe socle de 28-32mm</em><br>
-             20€ pour une figurine de troupe socle de 28-32mm.<br><br>
+    <div>
+        <h2>⭐ Gold — Finition TableTop Premium</h2>
 
-            </li>
-            <li>
-                <strong>👑 Diamant :</strong><br>
-             Idéal pour les personnges, héros, véhicules, monstres...<br>
-               Détails soignés, peinture contrasté, point de focal<br>
-             <em>Techniques :</em> éclairssiements, poses de lumière, dégradés, huile, décalcos, weathering...<br>
-            
-            <em>💵 Prix indicatif : de 20€ à 40€ par figurine</em><br>
-              <em>⏱️ Environ une heure par figurine de troupe socle de 20-25mm</em><br>
-             20€ pour une figurine de troupe socle de 20-25mm.<br><br>
-                           <em>⏱️ Environ 2h+ par figurine de troupe socle de 28-32mm</em><br>
-             40€ pour une figurine de troupe socle de 28-32mm.<br>
+        <p>
+            <strong>Idéal pour :</strong> Armées Warhammer, unités et grandes quantités de figurines.
+        </p>
+
+        <p>
+            Une finition propre, efficace et homogène pour obtenir une armée
+            avec un excellent rendu sur table tout en gardant un tarif accessible.
+        </p>
+
+        <p>
+            <strong>🎨 Techniques utilisées :</strong><br>
+            Couleurs de base, ombrages simples, éclaircissements simples,
+            détails essentiels et finition nette.
+        </p>
+
+        <p>
+            <strong>💵 Prix indicatif : 10€ à 20€ par figurine</strong>
+        </p>
+
+        <p>
+            ⏱️ <strong>Temps de peinture indicatif :</strong><br><br>
+
+            <strong>Figurine de troupe socle 20-25mm :</strong><br>
+            Moins d'une heure → <strong>10€</strong><br><br>
+
+            <strong>Figurine de troupe socle 28-32mm :</strong><br>
+            Environ 1h+ → <strong>20€</strong>
+        </p>
+    </div>
 
 
-            </li>
-        </ul>
+  <div>
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+    </div>
 
-  
+
+    <div>
+        <h2>👑 Diamant — Finition TableTop Supérieure</h2>
+
+        <p>
+            <strong>Idéal pour :</strong> Personnages, héros, monstres,
+            véhicules et figurines importantes de votre collection.
+        </p>
+
+        <p>
+            Une peinture plus poussée avec davantage de contraste,
+            de profondeur et un travail renforcé sur les détails.
+        </p>
+
+        <p>
+            <strong>🎨 Techniques utilisées :</strong><br>
+            Éclaircissements avancés, travail des lumières,
+            dégradés, effets à l'huile, décalcomanies,
+            weathering et effets supplémentaires.
+        </p>
+
+        <p>
+            <strong>💵 Prix indicatif : 20€ à 40€ par figurine</strong>
+        </p>
+
+        <p>
+            ⏱️ <strong>Temps de peinture indicatif :</strong><br><br>
+
+            <strong>Figurine de troupe socle 20-25mm :</strong><br>
+            Environ 1 heure → <strong>20€</strong><br><br>
+
+            <strong>Figurine de troupe socle 28-32mm :</strong><br>
+            Environ 2h+ → <strong>40€</strong>
+        </p>
+    </div>
 
 </div>
-        <div class="banniere">
+            <div>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </div>
     
