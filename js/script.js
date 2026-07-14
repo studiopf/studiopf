@@ -589,120 +589,120 @@ ${prenom} ${nom}`;
         <div id="petiteinfanterie" class="cardform">
             <label for="petiteinfanterie-input">Number of <strong>20-25mm base Infantry</strong>:</label>
             <p>Example: Skinks, Dwarf Battle, Skeletons, Goblins, Plaguebearers...</p>
-            <p>Unit price: <span id="prixpetiteinfanterie">0.00</span> €</p>
-            <p>Subtotal: <span id="totalpetiteinfanterie">0.00</span> €</p>
+            <p>Unit price: <span id="prixpetiteinfanterie">0.00</span> $</p>
+            <p>Subtotal: <span id="totalpetiteinfanterie">0.00</span> $</p>
             <input type="number" id="petiteinfanterie-input" name="petiteinfanterie" min="0">
         </div>
 
         <div id="infanterie" class="cardform">
             <label for="infanterie-input">Number of <strong>28-32mm base Infantry</strong>:</label>
             <p>Example: Space Marines, Stormcast, Votann, Sisters of Battle, Eldar...</p>
-            <p>Unit price: <span id="prixinfanterie">0.00</span> €</p>
-            <p>Subtotal: <span id="totalinfanterie">0.00</span> €</p>
+            <p>Unit price: <span id="prixinfanterie">0.00</span> $</p>
+            <p>Subtotal: <span id="totalinfanterie">0.00</span> $</p>
             <input type="number" id="infanterie-input" name="infanterie" min="0">
         </div>
 
         <div id="infanterieelite" class="cardform">
             <label for="infanterieelite-input">Number of <strong>Elite Infantry 40-50mm base</strong>:</label>
             <p>Example: Terminators, Custodes, Kroxigors, Tyranid Warriors...</p>
-            <p>Unit price: <span id="prixinfanterieelite">0.00</span> €</p>
-            <p>Subtotal: <span id="totalinfanterieelite">0.00</span> €</p>
+            <p>Unit price: <span id="prixinfanterieelite">0.00</span> $</p>
+            <p>Subtotal: <span id="totalinfanterieelite">0.00</span> $</p>
             <input type="number" id="infanterieelite-input" name="infanterieelite" min="0">
         </div>
 
         <div id="personnage" class="cardform">
             <label for="personnage-input">Number of <strong>Foot Characters 25-32mm base</strong>:</label>
             <p>Example: Space Marine Captain/Sergeant, Sorcerer...</p>
-            <p>Unit price: <span id="prixpersonnage">0.00</span> €</p>
-            <p>Subtotal: <span id="totalpersonnage">0.00</span> €</p>
+            <p>Unit price: <span id="prixpersonnage">0.00</span> $</p>
+            <p>Subtotal: <span id="totalpersonnage">0.00</span> $</p>
             <input type="number" id="personnage-input" name="personnage" min="0">
         </div>
 
         <div id="personnageelite" class="cardform">
             <label for="personnageelite-input">Number of <strong>Elite Foot Characters 40-50mm base</strong>:</label>
             <p>Example: Space Marine Captain/Sergeant in Phobos armor, Terminator Sorcerer</p>
-            <p>Unit price: <span id="prixpersonnageelite">0.00</span> €</p>
-            <p>Subtotal: <span id="totalpersonnageelite">0.00</span> €</p>
+            <p>Unit price: <span id="prixpersonnageelite">0.00</span> $</p>
+            <p>Subtotal: <span id="totalpersonnageelite">0.00</span> $</p>
             <input type="number" id="personnageelite-input" name="personnageelite" min="0">
         </div>
 
         <div id="personnagemonstrueux" class="cardform">
             <label for="personnagemonstrueux-input">Number of <strong>Monstrous Characters 60-100mm base</strong>:</label>
             <p>Example: Primarchs, Treelord, Tyranid Prime...</p>
-            <p>Unit price: <span id="prixpersonnagemonstrueux">0.00</span> €</p>
-            <p>Subtotal: <span id="totalpersonnagemonstrueux">0.00</span> €</p>
+            <p>Unit price: <span id="prixpersonnagemonstrueux">0.00</span> $</p>
+            <p>Subtotal: <span id="totalpersonnagemonstrueux">0.00</span> $</p>
             <input type="number" id="personnagemonstrueux-input" name="personnagemonstrueux" min="0">
         </div>
 
         <div id="personnagesurmonstre" class="cardform">
             <label for="personnagesurmonstre-input">Number of <strong>Characters on Monsters 120mm oval base</strong>:</label>
             <p>Example: MetaRodeur, Idoneth Turtle, Saurus on Carnasaur...</p>
-            <p>Unit price: <span id="prixpersonnagesurmonstre">0.00</span> €</p>
-            <p>Subtotal: <span id="totalpersonnagesurmonstre">0.00</span> €</p>
+            <p>Unit price: <span id="prixpersonnagesurmonstre">0.00</span> $</p>
+            <p>Subtotal: <span id="totalpersonnagesurmonstre">0.00</span> $</p>
             <input type="number" id="personnagesurmonstre-input" name="personnagesurmonstre" min="0">
         </div>
 
         <div id="personnagesurgrandmonstre" class="cardform">
             <label for="personnagesurgrandmonstre-input">Number of <strong>Characters on Large Monsters 130-160mm+ base</strong>:</label>
             <p>Example: Allareille, Stormcast Dragon, Crocodile Dragon...</p>
-            <p>Unit price: <span id="prixpersonnagesurgrandmonstre">0.00</span> €</p>
-            <p>Subtotal: <span id="totalpersonnagesurgrandmonstre">0.00</span> €</p>
+            <p>Unit price: <span id="prixpersonnagesurgrandmonstre">0.00</span> $</p>
+            <p>Subtotal: <span id="totalpersonnagesurgrandmonstre">0.00</span> $</p>
             <input type="number" id="personnagesurgrandmonstre-input" name="personnagesurgrandmonstre" min="0">
         </div>
 
         <div id="cavalerie" class="cardform">
             <label for="cavalerie-input">Number of <strong>Cavalry oval base 60-75mm</strong>:</label>
             <p>Example: Eldar Bikes, Idoneth Eels, Skeleton Cavalry...</p>
-            <p>Unit price: <span id="prixcavalerie">0.00</span> €</p>
-            <p>Subtotal: <span id="totalcavalerie">0.00</span> €</p>
+            <p>Unit price: <span id="prixcavalerie">0.00</span> $</p>
+            <p>Subtotal: <span id="totalcavalerie">0.00</span> $</p>
             <input type="number" id="cavalerie-input" name="cavalerie" min="0">
         </div>
 
         <div id="cavalerielourde" class="cardform">
             <label for="cavalerielourde-input">Number of <strong>Heavy Cavalry oval base 90-105mm</strong>:</label>
             <p>Example: Custodes Bikes, Saurus on Aggradon, Idoneth Shark...</p>
-            <p>Unit price: <span id="prixcavalerielourde">0.00</span> €</p>
-            <p>Subtotal: <span id="totalcavalerielourde">0.00</span> €</p>
+            <p>Unit price: <span id="prixcavalerielourde">0.00</span> $</p>
+            <p>Subtotal: <span id="totalcavalerielourde">0.00</span> $</p>
             <input type="number" id="cavalerielourde-input" name="cavalerielourde" min="0">
         </div>
 
         <div id="petitvehiculemonstre" class="cardform">
             <label for="petitvehiculemonstre-input">Number of <strong>Small Vehicles/Monsters 75-90mm oval base</strong>:</label>
             <p>Example: Sentinel, Nurgle Beast, Drone...</p>
-            <p>Unit price: <span id="prixpetitvehiculemonstre">0.00</span> €</p>
-            <p>Subtotal: <span id="totalpetitvehiculemonstre">0.00</span> €</p>
+            <p>Unit price: <span id="prixpetitvehiculemonstre">0.00</span> $</p>
+            <p>Subtotal: <span id="totalpetitvehiculemonstre">0.00</span> $</p>
             <input type="number" id="petitvehiculemonstre-input" name="petitvehiculemonstre" min="0">
         </div>
 
         <div id="vehiculemonstremoyen" class="cardform">
             <label for="vehiculemonstremoyen-input">Number of <strong>Medium Vehicles/Monsters 90-100mm base</strong>:</label>
             <p>Example: Rhino, Dreadnought, Drone...</p>
-            <p>Unit price: <span id="prixvehiculemonstremoyen">0.00</span> €</p>
-            <p>Subtotal: <span id="totalvehiculemonstremoyen">0.00</span> €</p>
+            <p>Unit price: <span id="prixvehiculemonstremoyen">0.00</span> $</p>
+            <p>Subtotal: <span id="totalvehiculemonstremoyen">0.00</span> $</p>
             <input type="number" id="vehiculemonstremoyen-input" name="vehiculemonstremoyen" min="0">
         </div>
 
         <div id="grosvehiculemonstre" class="cardform">
             <label for="grosvehiculemonstre-input">Number of <strong>Large Vehicles/Monsters 100-130mm base</strong>:</label>
             <p>Example: Predator, Plague Burst Crawler, Daemon Prince, Armingers, Mancrusher...</p>
-            <p>Unit price: <span id="prixgrosvehiculemonstre">0.00</span> €</p>
-            <p>Subtotal: <span id="totalgrosvehiculemonstre">0.00</span> €</p>
+            <p>Unit price: <span id="prixgrosvehiculemonstre">0.00</span> $</p>
+            <p>Subtotal: <span id="totalgrosvehiculemonstre">0.00</span> $</p>
             <input type="number" id="grosvehiculemonstre-input" name="grosvehiculemonstre" min="0">
         </div>
 
         <div id="enormevehiculemonstre" class="cardform">
             <label for="enormevehiculemonstre-input">Number of <strong>Huge Vehicles/Monsters 130-160mm-170mm base</strong>:</label>
             <p>Example: Land Raider, Defiler, Aerodyne...</p>
-            <p>Unit price: <span id="prixenormevehiculemonstre">0.00</span> €</p>
-            <p>Subtotal: <span id="totalenormevehiculemonstre">0.00</span> €</p>
+            <p>Unit price: <span id="prixenormevehiculemonstre">0.00</span> $</p>
+            <p>Subtotal: <span id="totalenormevehiculemonstre">0.00</span> $</p>
             <input type="number" id="enormevehiculemonstre-input" name="enormevehiculemonstre" min="0">
         </div>
 
         <div id="titanvehiculemonstre" class="cardform">
             <label for="titanvehiculemonstre-input">Number of <strong>Titanic Vehicles/Monsters 170mm base</strong>:</label>
             <p>Example: Spartan, Imperial Knight, Mega Gargant...</p>
-            <p>Unit price: <span id="prixtitanvehiculemonstre">0.00</span> €</p>
-            <p>Subtotal: <span id="totaltitanvehiculemonstre">0.00</span> €</p>
+            <p>Unit price: <span id="prixtitanvehiculemonstre">0.00</span> $</p>
+            <p>Subtotal: <span id="totaltitanvehiculemonstre">0.00</span> $</p>
             <input type="number" id="titanvehiculemonstre-input" name="titanvehiculemonstre" min="0">
         </div>
 
@@ -3648,15 +3648,21 @@ const niveauLabelsmini = {
     niveau1: "Gold",
     niveau2: "Diamant",
 };
-const tarifheure = 20;
+
+let symboleDevise = "€";
+    
 const tarifheureeu = 20;
 const tarifheureus = 25;
+    let tarifheure = tarifheureeu;
+    
  if (currentLanguage === "english") {
      tarifheure = tarifheureus;
+     symboleDevise = "$";
     } 
     
     else {
              tarifheure = tarifheureeu;
+        symboleDevise = "€";
     }
         
 
@@ -3848,9 +3854,10 @@ function calculateTotals() {
     // 🔥 affichage du total global
     const totalEl = document.getElementById("oktotal");
     if (totalEl) {
-        totalEl.textContent = `${totalGeneral.toFixed(2)} €`;
+     totalEl.textContent = `${totalGeneral.toFixed(2)} ${symboleDevise}`;
     }
 
+    
   
    // ── Comparaison ──
     const prevMap = {
@@ -4289,7 +4296,7 @@ function changelangueconditions() {
 
 <div class="maintenance-box">
     <h2>3. Pricing – Payment</h2>
-    <p>Prices are expressed in euros (€), based on individual quotes or the simulator. Payment can be made via PayPal, bank transfer, or cash (in person). The balance must be paid before shipping unless otherwise agreed.</p>
+    <p>Prices are expressed in dollars US ($), based on individual quotes or the simulator. Payment can be made via PayPal, bank transfer, or cash (in person). The balance must be paid before shipping unless otherwise agreed.</p>
     <ul>
         <li>Payment in up to 4 installments available via PayPal.</li>
         <li>🏦 Payment methods: bank transfer, card, or PayPal (⚠️ 4% fee for PayPal).</li>
@@ -4309,8 +4316,9 @@ function changelangueconditions() {
 
     <ul>
         <li>🚚 Shipping via Colissimo with Diamant required from €150 value (insurance up to €5000).</li>
-        <li>📌 Mondial Relay available but with very limited insurance in case of damage or loss/theft (max €500).</li>
-        <li>🎁 Free shipping on orders over €3000.</li>
+        <li>📌 Mondial Relay available but with very limited insurance in case of damage or loss/theft (max €500). FOR EU. </li>
+        <li> Shipping UPS ou FedEx for US.</li>
+        <li>🎁 Free shipping on orders over $3000.</li>
         <li>By default, Colissimo with Diamant and insurance is recommended, although uninsured shipping and/or Mondial Relay remain possible.</li>
     </ul>
 
