@@ -576,25 +576,19 @@ ${prenom} ${nom}`;
         <legend>My Request</legend>
 
         <div class="cardform">
-            <label for="niveau">Painting Levels:</label><br>
+           <p>
+    Level ⭐ Gold :<br>
+    Premium TableTop+ finish.<br>
+    🔍 Ideal for armies, collections and gaming miniatures requiring a clean, detailed and effective result.<br>
+    <em>Our recommended choice for most projects.</em><br><br>
+</p>
 
-            <p>Level ⭐ Gold:<br>
-            TableTop+, superior quality with a detailed finish:<br>
-            🔍 Perfect for enhancing gaming miniatures. (Our recommendation).<br><br></p>
-
-            <p>Level 👑 Diamant:<br>
-            TableTop++, higher quality with prestige finish:<br>
-            🎨 Each piece becomes a work of art. For centerpiece models.<br><br></p>
-
-            
-            <p>Basing is included.</p>
-
-            <select id="niveau" class="select" name="niveau" required>
-                <option value="" disabled hidden>Select a level</option>
-                <option value="niveau1" selected>Gold Level - TableTop+, Gold equivalent (lvl3)</option>
-                <option value="niveau2">Diamant Level - TableTop++, Diamond equivalent (lvl4)</option>
-
-            </select>
+<p>
+    Level 👑 Diamond :<br>
+    High-end TableTop++ finish, close to display quality.<br>
+    🎨 Each miniature becomes a unique piece with more details, contrast and artistic work.<br>
+    <em>Designed for centerpiece miniatures, iconic characters and collector pieces.</em><br><br>
+</p>
 
             <p><strong>Selected level:</strong> <span id="afficheniveau"></span></p><br>
         </div>
@@ -829,26 +823,19 @@ ${prenom} ${nom}`;
         <legend>Mi solicitud</legend>
 
         <div class="cardform">
-            <label for="niveau">Niveles de pintura:</label><br>
+           <p>
+    Nivel ⭐ Gold :<br>
+    Acabado premium TableTop+ de alta calidad.<br>
+    🔍 Ideal para ejércitos, colecciones y miniaturas de juego que buscan un resultado limpio, detallado y eficaz.<br>
+    <em>Nuestra recomendación para la mayoría de los proyectos.</em><br><br>
+</p>
 
-            <p>Nivel ⭐ Gold:<br>
-            TableTop+, calidad superior con acabado detallado:<br>
-            🔍 Perfecto para mejorar miniaturas de juego. (Nuestra recomendación).<br><br></p>
-
-            <p>Nivel 👑 Fantasía:<br>
-            TableTop++, calidad superior con acabado prestigioso:<br>
-            🎨 Cada pieza se convierte en una obra de arte. Para piezas principales.<br><br></p>
-
-           
-
-            <p>El peana está incluido.</p>
-
-            <select id="niveau" class="select" name="niveau" required>
-                <option value="" disabled hidden>Seleccione un nivel</option>
-                <option value="niveau1" selected>Nivel Gold - TableTop+, equivalente Gold (niv3)</option>
-                <option value="niveau2">Nivel Fantasía - TableTop++, equivalente Diamond (niv4)</option>
-             
-            </select>
+<p>
+    Nivel 👑 Diamante :<br>
+    Acabado de alta gama TableTop++, cercano a una pieza de exposición.<br>
+    🎨 Cada miniatura se convierte en una pieza única con más detalles, contrastes y trabajo artístico.<br>
+    <em>Destinado a miniaturas principales, personajes emblemáticos y piezas de colección.</em><br><br>
+</p>
 
             <p><strong>Nivel seleccionado:</strong> <span id="afficheniveau"></span></p><br>
         </div>
@@ -1075,16 +1062,26 @@ ${prenom} ${nom}`;
                 <fieldset>
                     <legend>Ma demande</legend>
                     <div class="cardform">
-                        <label for="niveau">Niveaux de  :</label><br>
-                        <p>Niveau ⭐ Gold :<br> TableTop+, Qualité supérieur qui va à l'Approfondi :<br> 🔍 Parfait pour valoriser les figurines de jeu. (Notre recommendation).<br><br></p>
-                        <p>Niveau 👑 Diamant :<br> TableTop++, Qualité supérieur plus Prestige :<br> 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.<br><br></p>
-                      
+  <label for="niveau">Niveaux de Peinture :</label><br>
+                      <p>
+    Niveau ⭐ Gold :<br>
+    Finition TableTop+ de qualité supérieure.<br>
+    🔍 Idéal pour les armées, les collections et les figurines de jeu nécessitant un rendu propre, détaillé et efficace.<br>
+    <em>Notre recommandation pour la majorité des projets.</em><br><br>
+</p>
+
+<p>
+    Niveau 👑 Diamant :<br>
+    Finition TableTop++ haut de gamme, proche de la pièce d’exposition.<br>
+    🎨 Chaque figurine devient une pièce unique avec davantage de détails, de contrastes et de travail artistique.<br>
+    <em>Destiné aux figurines principales, personnages emblématiques et pièces de collection.</em><br><br>
+</p>
                         <p>Le soclage est inclus.</p>
                         <select id="niveau" class="select" name="niveau" required>
                             <option value="" disabled hidden>Choisissez un niveau</option>
-                            <option value="niveau1" selected>Niveau Gold - TableTop+, équivalent Gold (niv3)</option>
-                            <option value="niveau2">Niveau Diamant - TableTop++, équivalent Diamond (niv4)</option>
-                           
+                            <option value="niveau1" selected>Gold - TableTop+ niv3</option>
+                            <option value="niveau2">Diamant - TableTop++ niv4</option>
+            
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
                     </div>
