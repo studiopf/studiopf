@@ -670,7 +670,7 @@ ${prenom} ${nom}`;
                     <div id="total" class="cardform">
                         <h2 class="total">TOTAL :</h2>
 <h3><span id="oktotal">0.00</span></h3>
-</div>
+</div></div>
         </fieldset>
           <fieldset class="maintenance-box">
              <legend>Contact Information</legend>
@@ -891,7 +891,7 @@ ${prenom} ${nom}`;
                     <div id="total" class="cardform">
                         <h2 class="total">TOTAL :</h2>
 <h3><span id="oktotal">0.00</span></h3>
-</div>
+</div></div>
         </fieldset>
           <fieldset class="maintenance-box">
              <legend>Datos de contacto</legend>
@@ -1133,7 +1133,7 @@ ${prenom} ${nom}`;
                         <h2 class="total">TOTAL :</h2>
 <h3><span id="oktotal">0.00</span></h3>
 
-</div>
+</div></div>
         </fieldset>
           <fieldset class="maintenance-box">
              <legend>Coordonnées</legend>
