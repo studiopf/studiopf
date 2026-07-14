@@ -3015,77 +3015,6 @@ function changelanguepeinture() {
     <p>
           <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
-
-    <div class="maintenance-box">
-    <h3>Tarif 2026-2027</h3>
-
-  <table class="tableborder1">
-<thead>
-<tr>
-    <th>Catégorie</th>
-    <th>Gold</th>
-    <th>Diamant</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr><td>Infanterie 20-25mm</td><td>30min / 10€</td><td>1h / 20€</td></tr>
-<tr><td>Infanterie 28-32mm</td><td>1h / 20€</td><td>2h / 40€</td></tr>
-<tr><td>Infanterie élite 40-50mm</td><td>1h30 / 30€</td><td>3h / 60€</td></tr>
-
-<tr><td>Personnage à pied 25-32mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-<tr><td>Personnage élite 40-50mm</td><td>4h / 80€</td><td>8h / 160€</td></tr>
-<tr><td>Personnage monstrueux 60-100mm</td><td>6h / 120€</td><td>12h / 240€</td></tr>
-<tr><td>Personnage sur monstre 120mm</td><td>8h / 160€</td><td>16h / 320€</td></tr>
-<tr><td>Personnage sur grand monstre</td><td>12h / 240€</td><td>24h / 480€</td></tr>
-
-<tr><td>Cavalerie 60-75mm</td><td>2h / 40€</td><td>4h / 80€</td></tr>
-<tr><td>Cavalerie lourde 90-105mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-
-<tr><td>Petit véhicule / monstre</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-<tr><td>Véhicule / monstre moyen</td><td>5h / 100€</td><td>10h / 200€</td></tr>
-<tr><td>Gros véhicule / monstre</td><td>8h / 160€</td><td>16h / 320€</td></tr>
-<tr><td>Énorme véhicule / monstre</td><td>12h / 240€</td><td>24h / 480€</td></tr>
-
-<tr><td>Titanesque</td><td>18h / 360€</td><td>36h / 720€</td></tr>
-
-</tbody>
-</table>
-
-
-</div>
-
-<p>TEST</p>
-<table class="tableborder1">
-<thead>
-
-<tr>
-   <th data-i18n="categoryLabels">Catégorie</th>
-    <th>Gold</th>
-    <th>Diamant</th>
-</tr>
-</thead>
-
-<tbody id="tarifTableBody">
-
-</tbody>
-</table><p>TEST</p>
-<table class="tableborder1">
-<thead>
-
-<tr>
-   <th data-i18n="categoryLabels">Catégorie</th>
-    <th>Gold</th>
-    <th>Diamant</th>
-</tr>
-</thead>
-
-<tbody id="tarifTableBody">
-
-</tbody>
-</table>
-   
          `;
     }
 
@@ -3654,11 +3583,20 @@ let tarifheure = tarifheureeu;
 let symboleDevise = "€";
 
 
+const TarifLangLabels = {
+    english: "Rates 2026-2027",
+     french: "Tarif 2026-2027",
+    spanish: "Tarifas 2026-2027",
+};
+
+
+
 function mettreAJourTarifLangue() {
 
     if (currentLanguage === "english") {
         tarifheure = tarifheureus;
         symboleDevise = "$";
+        
     } else {
         tarifheure = tarifheureeu;
         symboleDevise = "€";
