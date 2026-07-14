@@ -188,7 +188,30 @@ type="image/png">
                 <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
             </ul>
         </nav>
-   
+   <!-- Bouton menu mobile -->
+<button id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<!-- Menu latéral -->
+<nav id="menu-contenu" class="menu-mobile">
+
+    <ul class="menu">
+        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop 🎨</a></li>
+        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Concours 🏆</a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
+        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
+    </ul>
+
+</nav>
+
+<!-- Fond sombre quand menu ouvert -->
+<div id="menu-overlay"></div>
 
   <div class="carroussel-container">
         <div class="carroussel" id="carroussel">
@@ -219,7 +242,7 @@ Studio PF réalise la <strong>peinture professionnelle sur figurines</strong> po
 </p>
 
 <p>
-🛡️ <strong>Peinture de figurines de jeu TableTop</strong> : 2 niveaux de peinture TabkeTop : <strong>Gold</strong> et <strong>Diamant</strong>.<br>
+🛡️ <strong>Peinture de figurines de jeu TableTop</strong> : 2 niveaux de peinture TableTop : <strong>Gold</strong> et <strong>Diamant</strong>.<br>
 Que ce soit une armée de wargames ou des figurines de jeu de plateau, offrez un rendu soigné et des finitions de qualité à vos figurines.
 </p>
 <p>
@@ -232,7 +255,7 @@ Que ce soit une armée de wargames ou des figurines de jeu de plateau, offrez un
 Que ce soit une figurine résine de pop culture (mabga, jeux vidéos, film...), un buste ou un diorama, venez me parlez de votre projet.
 </p>
 <p>
-<a href="peintureccollection.html" class="button" onclick="loadPage('peintureccollection.html.html'); scrollToTop(); return false;">
+<a href="peintureccollection.html" class="button" onclick="loadPage('peintureccollection.html'); scrollToTop(); return false;">
 🏆 Découvrir le service peinture pour collectionneur ➜
 </a>
 </p>
@@ -240,8 +263,8 @@ Que ce soit une figurine résine de pop culture (mabga, jeux vidéos, film...), 
 Chaque projet est peint avec précision pour transformer vos figurines en modèles remarquables, adaptés au jeu comme à la collection.
 </p>
 <p>
-<a href="galerie.html" class="button" onclick="loadPage('galerie.html.html'); scrollToTop(); return false;">
-Découvrir ma galerie photo ➜
+<a href="galerie.html" class="button" onclick="loadPage('galerie.html'); scrollToTop(); return false;">
+🖼️ Découvrir ma galerie photo ➜
 </a>
 </p>
 </div>
