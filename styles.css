@@ -1274,3 +1274,80 @@ h1 {
     }
 
 }
+/* ===== Transition ===== */
+
+body,
+.maintenance-box,
+.button{
+    transition: background .35s ease,color .35s ease,border-color .35s ease,box-shadow .35s ease;
+}
+
+/* ===== Bouton ===== */
+
+.theme-toggle{
+    position:fixed;
+    top:15px;
+    right:15px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid #f4c876;
+    background:#1e140c;
+    color:#f4c876;
+    font-size:22px;
+    cursor:pointer;
+    z-index:9999;
+    transition:.3s;
+}
+
+.theme-toggle:hover{
+    transform:scale(1.08);
+}
+
+/* ===================================================
+   MODE SOMBRE (par défaut)
+=================================================== */
+
+body{
+    background:linear-gradient(135deg,#0b0805 0%,#1a120b 100%);
+    color:#d8cfc2;
+}
+
+.maintenance-box{
+    background:rgba(22,15,10,.82);
+    border:1px solid #6b4e2f;
+    box-shadow:0 12px 30px rgba(0,0,0,.75);
+}
+
+.button{
+    color:#ffda79;
+    background:rgba(22,15,10,.82);
+    border:2px solid #f4c876;
+}
+
+/* ===================================================
+   MODE CLAIR
+=================================================== */
+
+body.light-mode{
+    background:linear-gradient(135deg,#f4efe8 0%,#e6ddcf 100%);
+    color:#2d241d;
+}
+
+body.light-mode .maintenance-box{
+    background:rgba(255,255,255,.88);
+    border:1px solid #c8b69b;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+body.light-mode .button{
+    background:#fff;
+    color:#7a4f00;
+    border:2px solid #c89b3c;
+}
+
+body.light-mode .theme-toggle{
+    background:#ffffff;
+    color:#444;
+    border-color:#999;
+}
