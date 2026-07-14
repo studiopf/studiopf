@@ -996,7 +996,7 @@ nav ul li a:hover {
         align-items: center;
         text-align: center;
         display: flex;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        
         max-width: 92%;            /* ← au lieu de 100% → laisse ~4% de chaque côté */
         margin-left: auto;
         margin-right: auto;
