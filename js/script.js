@@ -206,12 +206,12 @@ changelangueinfo();
     }
     if (currentPage.includes("commission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
-       
+       genererTableTarifs();
     
     }
         if (currentPage.includes("collection") && typeof changelanguecolletion === "function") {
         changelanguecolletion();
-            genererTableTarifs
+            
     
     }
            if (currentPage.includes("index") && typeof changelangueindex === "function") {
@@ -2594,9 +2594,9 @@ function changelanguepeinture() {
             <strong>Troop miniature on 28-32mm base:</strong><br>
             Around 1h+ → <strong>$20</strong>
         </p>
-        <div class="banner">
+        <p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-</div>
+</p>
     </div>
 
 
@@ -2636,9 +2636,9 @@ function changelanguepeinture() {
             <strong>Troop miniature on 28-32mm base:</strong><br>
             Around 2h+ → <strong>$40</strong>
         </p>
-        <div class="banner">
+        <p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-</div>
+</p>
     </div>
 
 
@@ -2985,7 +2985,8 @@ function changelanguepeinture() {
 
   <p>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </p></div>
+    </p>
+    </div>
 
 
    <div class="maintenance-box">
@@ -3023,7 +3024,7 @@ function changelanguepeinture() {
         </p>
   
 
-            <dipv>
+            <p>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>  </div>
     
