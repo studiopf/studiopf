@@ -2984,7 +2984,7 @@ function changelanguepeinture() {
    
 
   <p>
-         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
     </div>
 
@@ -3025,7 +3025,7 @@ function changelanguepeinture() {
   
 
             <p>
-         <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>  </div>
     
 <div class="maintenance-box">
@@ -3088,7 +3088,7 @@ function changelanguepeinture() {
     </table>
 </div>
     <p>
-          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
 
     <div class="maintenance-box">
