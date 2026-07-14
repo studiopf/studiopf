@@ -2700,9 +2700,9 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-<div class="banner">
+<p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-</div>
+</p>
 
 <div class="maintenance-box">
     <h3>Rates 2026-2027</h3>
@@ -2781,9 +2781,9 @@ function changelanguepeinture() {
             <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
             Aproximadamente 1h+ → <strong>20€</strong>
         </p>
-        <div class="banniere">
+        <p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
-</div>
+</p>
     </div>
 
 
@@ -2822,9 +2822,9 @@ function changelanguepeinture() {
             <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
             Aproximadamente 2h+ → <strong>40€</strong>
         </p>
-        <div class="banniere">
+        <p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
-</div>
+</p>
     </div>
 
 
@@ -2897,9 +2897,9 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-<div class="banniere">
+<p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
-</div>
+</p>
 
 <div class="maintenance-box">
     <h3>Tarifas 2026-2027</h3>
@@ -2982,9 +2982,9 @@ function changelanguepeinture() {
         </p>
    
 
-  <div>
+  <p>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </div></div>
+    </p></div>
 
 
    <div class="maintenance-box">
@@ -3022,9 +3022,9 @@ function changelanguepeinture() {
         </p>
   
 
-            <div>
+            <dipv>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </div>  </div>
+    </p>  </div>
     
 <div class="maintenance-box">
       <h2>Préparation 🛠️</h2>
@@ -3085,9 +3085,9 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-    <div class="banniere">
+    <p>
           <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </div>
+    </p>
 
     <div class="maintenance-box">
     <h3>Tarif 2026-2027</h3>
