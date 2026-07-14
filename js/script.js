@@ -1457,7 +1457,7 @@ You receive a miniature ready to play or display, durable and completely matchin
         </p>
 
         <p>
-            <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 Request a quote ➜
             </a>
         </p>
@@ -1658,7 +1658,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
         </p>
 
         <p>
-            <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 Solicitar presupuesto ➜
             </a>
         </p>
@@ -1820,7 +1820,7 @@ Vous recevez une pièce prête à jouer ou à exposer, durable et totalement à 
         </p>
 
         <p>
-            <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 Demander un devis ➜
             </a>
         </p>
@@ -2595,7 +2595,7 @@ function changelanguepeinture() {
             Around 1h+ → <strong>$20</strong>
         </p>
         <p>
-    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </p>
     </div>
 
@@ -2637,7 +2637,7 @@ function changelanguepeinture() {
             Around 2h+ → <strong>$40</strong>
         </p>
         <p>
-    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </p>
     </div>
 
@@ -2702,7 +2702,7 @@ function changelanguepeinture() {
     </table>
 </div>
 <p>
-    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </p>
 <div class="maintenance-box">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
@@ -2761,7 +2761,7 @@ function changelanguepeinture() {
             Aproximadamente 1h+ → <strong>20€</strong>
         </p>
         <p>
-    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
 </p>
     </div>
 
@@ -2802,7 +2802,7 @@ function changelanguepeinture() {
             Aproximadamente 2h+ → <strong>40€</strong>
         </p>
         <p>
-    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
 </p>
     </div>
 
@@ -2877,7 +2877,7 @@ function changelanguepeinture() {
     </table>
 </div>
 <p>
-    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
 </p>
 <div class="maintenance-box">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
@@ -2897,7 +2897,7 @@ function changelanguepeinture() {
 </table>
   </div>
  <p>
-    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
 </p>
 `;
     } else {
@@ -2941,7 +2941,7 @@ function changelanguepeinture() {
    
 
   <p>
-         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
     </div>
 
@@ -2982,7 +2982,7 @@ function changelanguepeinture() {
   
 
             <p>
-         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+         <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>  </div>
     
 <div class="maintenance-box">
@@ -3047,7 +3047,7 @@ function changelanguepeinture() {
 </div>
 
     <p>
-          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
     <div class="maintenance-box">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
@@ -3067,7 +3067,7 @@ function changelanguepeinture() {
 </table>
   </div>
  <p>
-          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
          `;
     }
