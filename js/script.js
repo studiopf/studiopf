@@ -191,7 +191,6 @@ changelangueinfo();
     initializeCardToggle();
     initializecarroussel();
     initScrollBehaviors();
-initThemeToggle();
     hideCurrentPage();
 
     
