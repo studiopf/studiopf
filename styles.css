@@ -1279,26 +1279,30 @@ body,
     transition: background .35s ease,color .35s ease,border-color .35s ease,box-shadow .35s ease;
 }
 
-/* ===== Bouton ===== */
-
-.theme-toggle{
-    position:fixed;
-    top:15px;
-    right:15px;
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    border:2px solid #f4c876;
-    background:#1e140c;
-    color:#f4c876;
-    font-size:22px;
-    cursor:pointer;
-    z-index:9999;
-    transition:.3s;
+.theme-toggle {
+    position: fixed;
+    top: 12px;
+    right: 60px; /* espace pour laisser le bouton menu à droite */
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #6b4e2f;
+    background: rgba(30,20,12,0.75);
+    color: #f4c876;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0.75;
+    backdrop-filter: blur(4px);
+    transition: all .25s ease;
 }
 
-.theme-toggle:hover{
-    transform:scale(1.08);
+.theme-toggle:hover {
+    opacity: 1;
+    transform: scale(1.08);
 }
 
 /* ===================================================
@@ -1333,6 +1337,7 @@ body.light-mode{
     color:#2d241d;
 }
 
+
 body.light-mode .maintenance-box{
     background:rgba(255,255,255,.88);
     border:1px solid #c8b69b;
@@ -1345,12 +1350,13 @@ body.light-mode .button{
     border:2px solid #c89b3c;
 }
 
-body.light-mode .theme-toggle{
-    background:#ffffff;
-    color:#444;
-    border-color:#999;
-}
 
+
+body.light-mode .theme-toggle {
+    background: rgba(255,255,255,0.8);
+    color: #8b5b00;
+    border-color: #c8b69b;
+}
 /*==========================
     MODE SOMBRE (défaut)
 ==========================*/
