@@ -195,7 +195,6 @@ changelangueinfo();
         if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
         changelanguesimu();
             initializeFormCalculations();
-             
             calculateTotals();
     }
 
@@ -2898,6 +2897,9 @@ function changelanguepeinture() {
 </tbody>
 </table>
   </div>
+ <p>
+    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+</p>
 `;
     } else {
         html = `
@@ -3065,6 +3067,9 @@ function changelanguepeinture() {
 </tbody>
 </table>
   </div>
+ <p>
+          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+    </p>
          `;
     }
 
@@ -3860,7 +3865,7 @@ function calculateTotals() {
     const niveau = niveauSelect.value || "niveau1";
 
     let totalGeneral = 0;
-  mettreAJourTarifLangue();
+
 
     categories.forEach(cat => {
         const input   = document.getElementById(`${cat}-input`);
@@ -3966,7 +3971,7 @@ function initializeFormCalculations() {
         
             body += categories.map(cat => `- ${cat} : ${quantities[cat]}`).join("\n") + "\n\n";
             body += `- Montage : ${data.montage}\n- Aimant : ${data.aimant}\n\n`;
-            body += `Total estimé : ${total.toFixed(2)} €\n\n`;
+            body += `Total estimé : ${total.toFixed(2)} ${symboleDevise}\n\n`;
         
         body += `Message :\n${data.message}\n\nCordialement.`;
 
