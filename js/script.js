@@ -2706,7 +2706,23 @@ function changelanguepeinture() {
 <p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </p>
+<div class="maintenance-box">
+    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
+<table class="tableborder1">
+<thead>
 
+<tr>
+   <th></th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table>
+  </div>
 `;
     } else if (currentLanguage === "spanish") {
         html = `
@@ -2865,6 +2881,23 @@ function changelanguepeinture() {
 <p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
 </p>
+<div class="maintenance-box">
+    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
+<table class="tableborder1">
+<thead>
+
+<tr>
+   <th></th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table>
+  </div>
 `;
     } else {
         html = `
@@ -3015,6 +3048,23 @@ function changelanguepeinture() {
     <p>
           <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
+    <div class="maintenance-box">
+    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
+<table class="tableborder1">
+<thead>
+
+<tr>
+   <th></th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table>
+  </div>
          `;
     }
 
