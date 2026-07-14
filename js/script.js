@@ -191,7 +191,7 @@ changelangueinfo();
     initializeCardToggle();
     initializecarroussel();
     initScrollBehaviors();
-
+initThemeToggle();
     hideCurrentPage();
 
     
@@ -4952,3 +4952,39 @@ document.querySelectorAll(".menu-mobile a").forEach(link => {
     });
 
 });
+
+function initThemeToggle() {
+
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (!themeToggle) return;
+
+    // Charger le thème enregistré
+    if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+
+
+    // Éviter de créer plusieurs événements
+    themeToggle.onclick = function () {
+
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("light-mode")) {
+
+            localStorage.setItem("theme", "light");
+            themeToggle.textContent = "☀️";
+
+        } else {
+
+            localStorage.setItem("theme", "dark");
+            themeToggle.textContent = "🌙";
+
+        }
+
+    };
+
+}
