@@ -1831,61 +1831,72 @@ Vous recevez une pièce prête à jouer ou à exposer, durable et totalement à 
 
     main.innerHTML = html;
 }
+
 function changelanguecollection() {
       const main = document.getElementById("contenu-principal");
    
 
-    let html = `<div class="maintenance-box">
+     let html = "";
 
-<h1>Collection Miniature Painting 🎨</h1>
+    if (currentLanguage === "english") {
+        html = `<div class="maintenance-box">
 
-<h2>Unique pieces for collection, display and competitions 🏆</h2>
+    <h1>Unique pieces for collection, display and competitions 🏆</h1>
 
+    <p>
+    Studio PF creates <strong>high-end miniature painting</strong> services for collectors, enthusiasts and art lovers who want to transform their models into true display pieces.
+    </p>
+
+    <p>
+    Each project receives a fully customized approach, adapted to the sculpture, the miniature universe and the desired objective: collection, showcase or painting competition.
+    </p>
+
+    <p>
+    This service is intended for models requiring a superior level of finish, with detailed artistic work that can represent <strong>several dozen hours of work</strong> depending on the complexity of the piece.
+    </p>
 <p>
-Studio PF creates <strong>high-end miniature paintings</strong> for collectors, enthusiasts and lovers of exceptional pieces who want to transform their models into true display artworks.
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Studio%20PF%20Collector%20Painting%20Project" class="button">
+Present my project 💬
+</a>
 </p>
+</div>
 
-<p>
-Each project receives a fully personalized approach, adapted to the sculpture, the miniature universe and the desired objective: collection, display or competition.
-</p>
-
-<p>
-This service is dedicated to models requiring a superior level of finish, with an advanced artistic process that can represent <strong>several dozen hours of work</strong> depending on the complexity of the piece.
-</p>
-
-<ul>
-
-<li>
-<strong>⚔️ Gaming miniatures:</strong><br>
-Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-Dungeons & Dragons, The Lord of the Rings, Star Wars Legion,
-StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-as well as many other fantasy and science-fiction universes.
-</li>
-
-<li>
-<strong>🗿 Busts and collector pieces:</strong><br>
-Busts, miniature statues, resin miniatures and pieces intended for display or painting competitions.
-</li>
-
-<li>
-<strong>🖨️ 3D printed miniatures:</strong><br>
-Models can come from independent artists, 3D creators or platforms such as Etsy, MyMiniFactory or other specialized printers.
-<br><br>
-The client provides the miniature or purchases it directly from the creator or printer of their choice.
-</li>
-
-</ul>
-
-<p>
-<strong>Studio PF does not provide 3D printing for this service.</strong><br>
-The service exclusively covers the artistic preparation and painting of the piece.
-</p>
-
+<div class="maintenance">
+    <h2>⚔️ Gaming miniatures</h2>
+    <p>
+    Warhammer 40K, Age of Sigmar, Warhammer The Old World,
+    Dungeons & Dragons, The Lord of the Rings, Star Wars Legion,
+    StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
+    as well as many other fantasy and science-fiction universes.
+    </p>
 </div>
 
 
-<div class="maintenance-box">
+<div class="maintenance">
+    <h2>🗿 Busts and collector pieces</h2>
+    <p>
+    Busts, miniature statues, resin miniatures and pieces intended for display or painting competitions.
+    </p>
+</div>
+
+
+<div class="maintenance">
+    <h2>🖨️ 3D printed miniatures</h2>
+    <p>
+    Models can come from independent artists, 3D creators or platforms such as Etsy, MyMiniFactory or other specialized printing services.
+    </p>
+
+    <p>
+    The customer provides the miniature or purchases it directly from the creator or printer of their choice.
+    </p>
+
+    <h3>Important information</h3>
+    <p>
+    <strong>Studio PF does not provide 3D printing services for this offer.</strong><br>
+    The service exclusively covers the preparation and artistic painting of the miniature.
+    </p>
+</div>
+        <div class="maintenance-box">
 
 <h2>Artistic Preparation 🛠️</h2>
 
@@ -2058,59 +2069,65 @@ Present my project 💬
 </p>
 
 </div>`;
-
-    if (currentLanguage === "english") {
-        html = ``;
     } else if (currentLanguage === "spanish") {
         html = `<div class="maintenance-box">
 
-<h1>Pintura de Miniaturas de Colección 🎨</h1>
+    <h1>Piezas únicas para colección, exposición y concursos 🏆</h1>
 
-<h2>Piezas únicas para colección, exposición y concursos 🏆</h2>
+    <p>
+    Studio PF realiza <strong>pinturas de figuras de alta gama</strong> destinadas a coleccionistas, apasionados y amantes de las piezas únicas que desean transformar sus modelos en auténticas piezas de exposición.
+    </p>
 
+    <p>
+    Cada proyecto recibe un enfoque totalmente personalizado, adaptado a la escultura, al universo de la miniatura y al objetivo buscado: colección, vitrina o concurso de pintura.
+    </p>
+
+    <p>
+    Este servicio está destinado a modelos que requieren un nivel de acabado superior, con un trabajo artístico detallado que puede representar <strong>varias decenas de horas de realización</strong> según la complejidad de la pieza.
+    </p>
 <p>
-Studio PF realiza <strong>pinturas de miniaturas de alta gama</strong> destinadas a coleccionistas, apasionados y amantes de piezas excepcionales que desean transformar sus modelos en verdaderas obras de exposición.
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20pintura%20de%20colección%20Studio%20PF" class="button">
+Presentar mi proyecto 💬
+</a>
 </p>
-
-<p>
-Cada proyecto recibe un enfoque totalmente personalizado, adaptado a la escultura, al universo de la miniatura y al objetivo buscado: colección, vitrina o concurso.
-</p>
-
-<p>
-Este servicio está destinado a modelos que requieren un nivel superior de acabado, con un trabajo artístico avanzado que puede representar <strong>varias decenas de horas de realización</strong> según la complejidad de la pieza.
-</p>
-
-<ul>
-
-<li>
-<strong>⚔️ Miniaturas de juegos:</strong><br>
-Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-Dragones y Mazmorras, El Señor de los Anillos, Star Wars Legion,
-StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-así como muchos otros universos de fantasía y ciencia ficción.
-</li>
-
-<li>
-<strong>🗿 Bustos y piezas de colección:</strong><br>
-Bustos, estatuas en miniatura, miniaturas de resina y piezas destinadas a exposición o concursos de pintura.
-</li>
-
-<li>
-<strong>🖨️ Miniaturas impresas en 3D:</strong><br>
-Los modelos pueden proceder de artistas independientes, creadores 3D o plataformas como Etsy, MyMiniFactory u otros impresores especializados.
-<br><br>
-El cliente proporciona la miniatura o la compra directamente al creador o impresor que prefiera.
-</li>
-
-</ul>
-
-<p>
-<strong>Studio PF no realiza la impresión 3D de los modelos para este servicio.</strong><br>
-El servicio incluye exclusivamente la preparación y pintura artística de la pieza.
-</p>
-
 </div>
 
+<div class="maintenance">
+    <h2>⚔️ Figuras de juego</h2>
+    <p>
+    Warhammer 40K, Age of Sigmar, Warhammer The Old World,
+    Dragones y Mazmorras, El Señor de los Anillos, Star Wars Legion,
+    StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
+    así como muchos otros universos fantásticos y de ciencia ficción.
+    </p>
+</div>
+
+
+<div class="maintenance">
+    <h2>🗿 Bustos y piezas de colección</h2>
+    <p>
+    Bustos, estatuas en miniatura, figuras de resina y piezas destinadas a exposición o concursos de pintura.
+    </p>
+</div>
+
+
+<div class="maintenance">
+    <h2>🖨️ Figuras impresas en 3D</h2>
+    <p>
+    Los modelos pueden proceder de artistas independientes, creadores 3D o plataformas como Etsy, MyMiniFactory u otros servicios especializados de impresión.
+    </p>
+
+    <p>
+    El cliente proporciona la figura o la compra directamente al creador o impresor de su elección.
+    </p>
+
+    <h3>Información importante</h3>
+    <p>
+    <strong>Studio PF no realiza la impresión 3D de los modelos para este servicio.</strong><br>
+    El servicio incluye exclusivamente la preparación y la pintura artística de la pieza.
+    </p>
+
+</div>
 
 <div class="maintenance-box">
 
@@ -2288,53 +2305,65 @@ Presentar mi proyecto 💬
     } else {
         html = `<div class="maintenance-box">
 
-<h1>Peinture de Figurines de Collection 🎨</h1>
 
-<h2>Pièces uniques pour collection, exposition et concours 🏆</h2>
+        <h1>Pièces uniques pour collection, exposition et concours 🏆</h1>
+  
 
+
+    <p>
+    Studio PF réalise des <strong>peintures de figurines haut de gamme</strong> destinées aux collectionneurs, passionnés et amateurs de belles pièces souhaitant transformer leurs modèles en véritables pièces d'exposition.
+    </p>
+
+    <p>
+    Chaque projet bénéficie d'une approche entièrement personnalisée, adaptée à la sculpture, à l'univers de la figurine et à l'objectif recherché : collection, vitrine ou concours.
+    </p>
+
+    <p>
+    Cette prestation s'adresse aux modèles nécessitant un niveau de finition supérieur, avec un travail artistique approfondi pouvant représenter <strong>plusieurs dizaines d'heures de réalisation</strong> selon la complexité de la pièce.
+    </p>
 <p>
-Studio PF réalise des <strong>peintures de figurines haut de gamme</strong> destinées aux collectionneurs, passionnés et amateurs de belles pièces souhaitant transformer leurs modèles en véritables pièces d'exposition.
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
+Présenter mon projet 💬
+</a>
 </p>
+  </div>
+    <div class="maintenance">
+        <h2>⚔️ Figurines de jeux</h2>
+        <p>
+        Warhammer 40K, Age of Sigmar, Warhammer The Old World,
+        Donjons & Dragons, Le Seigneur des Anneaux, Star Wars Legion,
+        StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
+        ainsi que de nombreux autres univers fantastiques et science-fiction.
+        </p>
+    </div>
 
-<p>
-Chaque projet bénéficie d'une approche entièrement personnalisée, adaptée à la sculpture, à l'univers de la figurine et à l'objectif recherché : collection, vitrine ou concours.
-</p>
 
-<p>
-Cette prestation s'adresse aux modèles nécessitant un niveau de finition supérieur, avec un travail artistique approfondi pouvant représenter <strong>plusieurs dizaines d'heures de réalisation</strong> selon la complexité de la pièce.
-</p>
+    <div class="maintenance">
+        <h2>🗿 Bustes et pièces de collection</h2>
+        <p>
+        Bustes, statues miniatures, figurines résine et pièces destinées à l'exposition ou aux concours de peinture.
+        </p>
+    </div>
 
-<ul>
 
-<li>
-<strong>⚔️ Figurines de jeux :</strong><br>
-Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-Donjons & Dragons, Le Seigneur des Anneaux, Star Wars Legion,
-StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-ainsi que de nombreux autres univers fantastiques et science-fiction.
-</li>
+    <div class="maintenance">
+        <h2>🖨️ Figurines imprimées en 3D</h2>
+        <p>
+        Les modèles peuvent provenir d'artisans indépendants, de créateurs 3D ou de plateformes comme Etsy, MyMiniFactory ou d'autres imprimeurs spécialisés.
+        </p>
 
-<li>
-<strong>🗿 Bustes et pièces de collection :</strong><br>
-Busts, statues miniatures, figurines résine et pièces destinées à l'exposition ou aux concours de peinture.
-</li>
+        <p>
+        Le client fournit la figurine ou l'achète directement auprès du créateur ou de l'imprimeur de son choix.
+        </p>
 
-<li>
-<strong>🖨️ Figurines imprimées en 3D :</strong><br>
-Les modèles peuvent provenir d'artisans indépendants, de créateurs 3D ou de plateformes comme Etsy, MyMiniFactory ou d'autres imprimeurs spécialisés.
-<br><br>
-Le client fournit la figurine ou l'achète directement auprès du créateur ou de l'imprimeur de son choix.
-</li>
-
-</ul>
-
-<p>
-<strong>Studio PF ne réalise pas l'impression 3D des modèles pour cette prestation.</strong><br>
-Le service concerne exclusivement la préparation et la peinture artistique de la pièce.
-</p>
+        <h3>Informations importantes</h3>
+        <p>
+        <strong>Studio PF ne réalise pas l'impression 3D des modèles pour cette prestation.</strong><br>
+        Le service concerne exclusivement la préparation et la peinture artistique de la pièce.
+        </p>
+    </div>
 
 </div>
-
 
 <div class="maintenance-box">
 
@@ -2513,8 +2542,10 @@ Présenter mon projet 💬
 </p>
 
 </div>`;
-    }
+     }
 
+    main.innerHTML = html;
+}
 // ────────────────────────────────────────────────
 // Menus multilingues
 // ────────────────────────────────────────────────
