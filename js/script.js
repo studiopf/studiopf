@@ -1854,7 +1854,7 @@ function changelanguepeinture() {
         €10 for a troop miniature on a 20-25mm base.<br><br>
 
         <em>⏱️ Around 1h+ per troop miniature on a 28-32mm base</em><br>
-        €20 for a troop miniature on a 28-32mm base.<br>
+        €20 for a troop miniature on a 28-32mm base.<br><br>
     </li>
 
     <li>
@@ -1994,7 +1994,7 @@ function changelanguepeinture() {
         10€ por una miniatura de tropa con peana de 20-25mm.<br><br>
 
         <em>⏱️ Aproximadamente 1h+ por miniatura de tropa con peana de 28-32mm</em><br>
-        20€ por una miniatura de tropa con peana de 28-32mm.<br>
+        20€ por una miniatura de tropa con peana de 28-32mm.<br><br>
     </li>
 
     <li>
@@ -2147,7 +2147,7 @@ function changelanguepeinture() {
               <em>⏱️ Moins d'une heure par figurine de troupe socle de 20-25mm</em><br>
              10€ pour une figurine de troupe socle de 20-25mm.<br><br>
                            <em>⏱️ Environ 1h+ par figurine de troupe socle de 28-32mm</em><br>
-             20€ pour une figurine de troupe socle de 28-32mm.<br>
+             20€ pour une figurine de troupe socle de 28-32mm.<br><br>
 
             </li>
             <li>
