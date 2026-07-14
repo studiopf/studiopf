@@ -3236,7 +3236,7 @@ function changelanguefoot() {
 
  <div class="footer">
   <p><strong>STUDIO PF</strong><br>
-  Frasse Pierre-François<br>
+  FRASSE Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
 
   <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
@@ -3270,7 +3270,7 @@ else if (currentLanguage === "spanish") {
 
  <div class="footer">
   <p><strong>STUDIO PF</strong><br>
-  Frasse Pierre-François<br>
+  FRASSE Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
 
   <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
@@ -3302,7 +3302,7 @@ else if (currentLanguage === "spanish") {
              
                <div class="footer">
      <p><strong>STUDIO PF</strong><br>
-      Frasse Pierre-François<br>
+      FRASSE Pierre-François<br>
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
         <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
         <p>Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
@@ -4198,7 +4198,7 @@ let html = "";
   <h2>📌 Publisher</h2> 
   <p>
     <strong>Studio PF: Miniature Painting</strong><br>
-    Pierre-François Frasse<br>
+    Pierre-François FRASSE<br>
     <!-- Status: Sole proprietorship<br>
     SIRET: 832 040 380 00020<br>-->
     Address: 17 route de lare, 42510 Saint Georges de Baroille, France<br>
@@ -4258,7 +4258,7 @@ let html = "";
   <h2>📌 Editor</h2> 
   <p>
     <strong>Studio PF: Pintura de Miniaturas</strong><br>
-    Pierre-François Frasse<br>
+    Pierre-François FRASSE<br>
     <!-- Estado: Autónomo<br>
     SIRET: 832 040 380 00020<br>-->
     Dirección: 17 route de lare, 42510 Saint Georges de Baroille, Francia<br>
@@ -4315,7 +4315,7 @@ else { // français (par défaut)
 <p><strong>Site :</strong> studiopf.fr<br> <strong>Date de mise à jour :</strong> 19 janvier 2026</p> <div class="maintenance-box">
   <h2>📌 Éditeur</h2> 
   <p> <strong>Studio PF : Peinture Figurine</strong><br>
-    Pierre-François Frasse<br>
+    Pierre-François FRASSE<br>
     <!-- Statut : Micro-entreprise<br>
    SIRET : 832 040 380 00020<br>-->
     Adresse : 17 route de lare, 42510 Saint Georges de Baroille, France<br>
@@ -4361,7 +4361,7 @@ function changelangueconditions() {
 
 <div class="maintenance-box">
     <h2>1. Scope of Application</h2>
-    <p>These terms and conditions apply to all painting services, training sessions, and related services offered by Studio PF (Pierre-François Frasse, sole trader, SIRET 832 040 380 00020).</p>
+    <p>These terms and conditions apply to all painting services, training sessions, and related services offered by Studio PF (Pierre-François FRASSE, sole trader, SIRET 832 040 380 00020).</p>
     <ul>
         <li>🆓 VAT not applicable: Article 293 B of the French General Tax Code.</li>
         <li>📜 VAT exemption: Article 283-2 of the French General Tax Code.</li>
@@ -4509,7 +4509,7 @@ function changelangueconditions() {
 
 <div class="maintenance-box">
     <h2>1. Ámbito de aplicación</h2>
-    <p>Estas condiciones generales de venta se aplican a todos los servicios de pintura, formaciones y servicios asociados ofrecidos por Studio PF (Pierre-François Frasse, autónomo, SIRET 832 040 380 00020).</p>
+    <p>Estas condiciones generales de venta se aplican a todos los servicios de pintura, formaciones y servicios asociados ofrecidos por Studio PF (Pierre-François FRASSE, autónomo, SIRET 832 040 380 00020).</p>
     <ul>
         <li>🆓 IVA no aplicable: artículo 293 B del Código General de Impuestos.</li>
         <li>📜 Exención de IVA: artículo 283-2 del Código General de Impuestos.</li>
@@ -4656,7 +4656,7 @@ function changelangueconditions() {
 
             <div class="maintenance-box">
                 <h2>1. Champ d'application</h2>
-                <p>Ces conditions générales de vente s'appliquent à l'ensemble des prestations de peinture, formations et services associés proposés par Studio PF (Pierre-François Frasse, micro-entrepreneur, SIRET 832 040 380 00020).</p>
+                <p>Ces conditions générales de vente s'appliquent à l'ensemble des prestations de peinture, formations et services associés proposés par Studio PF (Pierre-François FRASSE, micro-entrepreneur, SIRET 832 040 380 00020).</p>
              <ul>
             <li>🆓 TVA non applicable : article 293 B du Code général des impôts.</li>
             <li>📜 Exonération de TVA : article 283-2 du Code général des impôts.</li>
