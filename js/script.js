@@ -1842,33 +1842,33 @@ function changelanguepeinture() {
 <div class="maintenance-box">
  <h1>High-End Miniature Painting 🎨</h1>
 
-  <ul>
+ <ul>
     <li>
-        <strong>⭐ Gold:</strong><br>
+        <strong>⭐ Gold :</strong><br>
         Ideal for Warhammer armies<br>
-        Clean, simple and efficient finish<br>
+        Clean, simple and effective finish<br>
         <em>Techniques:</em> base colors, simple shading, clean finishing.<br>
 
-        <em>💵 Indicative price:</em><br>
-        <em>⏱️ Around 1h+ per troop miniature on a 25mm base</em><br>
-        €20 for a troop miniature on a 25mm base.<br><br>
+        <em>💵 Indicative price: €10 to €20 per miniature</em><br>
+        <em>⏱️ Less than 1 hour per troop miniature on a 20-25mm base</em><br>
+        €10 for a troop miniature on a 20-25mm base.<br><br>
 
-        <em>⏱️ Around 2h+ per troop miniature on a 32mm base</em><br>
-        €40 for a troop miniature on a 32mm base.<br>
+        <em>⏱️ Around 1h+ per troop miniature on a 28-32mm base</em><br>
+        €20 for a troop miniature on a 28-32mm base.<br>
     </li>
 
     <li>
-        <strong>👑 Diamond:</strong><br>
+        <strong>👑 Diamond :</strong><br>
         Ideal for characters, heroes, vehicles, monsters...<br>
-        Refined details, strong contrast, focal points<br>
-        <em>Techniques:</em> highlights, light placement, gradients, oil techniques, decals, weathering...<br>
+        Carefully painted details, strong contrasts, focal points<br>
+        <em>Techniques:</em> highlights, light effects, blending, oil washes, decals, weathering...<br>
 
-        <em>💵 Indicative price:</em><br>
-      <em>⏱️ Around 2h+ per troop miniature on a 25mm base</em><br>
-$50 for a troop miniature on a 25mm base.<br><br>
+        <em>💵 Indicative price: €20 to €40 per miniature</em><br>
+        <em>⏱️ Around 1 hour per troop miniature on a 20-25mm base</em><br>
+        €20 for a troop miniature on a 20-25mm base.<br><br>
 
-<em>⏱️ Around 4h+ per troop miniature on a 32mm base</em><br>
-$100 for a troop miniature on a 32mm base.<br>
+        <em>⏱️ Around 2h+ per troop miniature on a 28-32mm base</em><br>
+        €40 for a troop miniature on a 28-32mm base.<br>
     </li>
 </ul>
   
@@ -1941,22 +1941,35 @@ $100 for a troop miniature on a 32mm base.<br>
 
 <div class="maintenance-box">
 <h1>Pintura de Miniaturas de Alta Gama 🎨</h1>
+<ul>
+    <li>
+        <strong>⭐ Gold :</strong><br>
+        Ideal para ejércitos de Warhammer<br>
+        Acabado limpio, sencillo y eficaz<br>
+        <em>Técnicas:</em> colores base, sombreados simples, acabado limpio.<br>
 
-    <ul>
-        <li>
-            <strong>⭐ Gold:</strong><br>
-            Acabado limpio, contrastado e inmersivo.<br>
-            Ideal para ejércitos de alta gama y piezas de exposición.<br>
-            <em>⏱️ Aproximadamente 2h+ por miniatura</em>
-        </li>
+        <em>💵 Precio orientativo: de 10€ a 20€ por miniatura</em><br>
+        <em>⏱️ Menos de 1 hora por miniatura de tropa con peana de 20-25mm</em><br>
+        10€ por una miniatura de tropa con peana de 20-25mm.<br><br>
 
-        <li>
-            <strong>👑 Diamant:</strong><br>
-            Nivel avanzado de vitrina, detalles muy elaborados, efectos complejos.<br>
-            Diseñado para personajes, héroes y piezas principales.<br>
-            <em>⏱️ 5 a 8h por miniatura</em>
-        </li>
-    </ul>
+        <em>⏱️ Aproximadamente 1h+ por miniatura de tropa con peana de 28-32mm</em><br>
+        20€ por una miniatura de tropa con peana de 28-32mm.<br>
+    </li>
+
+    <li>
+        <strong>👑 Diamante :</strong><br>
+        Ideal para personajes, héroes, vehículos, monstruos...<br>
+        Detalles cuidados, pintura con contraste y puntos focales<br>
+        <em>Técnicas:</em> iluminaciones, efectos de luz, degradados, óleos, calcomanías, desgaste...<br>
+
+        <em>💵 Precio orientativo: de 20€ a 40€ por miniatura</em><br>
+        <em>⏱️ Aproximadamente 1 hora por miniatura de tropa con peana de 20-25mm</em><br>
+        20€ por una miniatura de tropa con peana de 20-25mm.<br><br>
+
+        <em>⏱️ Aproximadamente 2h+ por miniatura de tropa con peana de 28-32mm</em><br>
+        40€ por una miniatura de tropa con peana de 28-32mm.<br>
+    </li>
+</ul>
 
 
 </div>
@@ -2041,7 +2054,7 @@ $100 for a troop miniature on a 32mm base.<br>
 <h1>Peinture de Figurines Haut de Gamme 🎨</h1>
 
  
-        <ul>
+         <ul>
             <li>
                 <strong>⭐ Gold :</strong><br>
              Idéal pour les armées Warhammer<br>
@@ -2049,11 +2062,11 @@ $100 for a troop miniature on a 32mm base.<br>
              <em>Techniques :</em>em> couleurs de base, ombrage simples, finition propre.<br>
                
      
-             <em>💵 Prix indicatif :</em><br>
-              <em>⏱️ Environ 1h+ par figurine de troupe socle de 25mm</em><br>
-             20€ pour une figurine de troupe socle de 25mm.<br><br>
-                           <em>⏱️ Environ 2h+ par figurine de troupe socle de 32mm</em><br>
-             40€ pour une figurine de troupe socle de 32mm.<br>
+             <em>💵 Prix indicatif : de 10€ à 20€ par figurine</em><br>
+              <em>⏱️ Moins d'une heure par figurine de troupe socle de 20-25mm</em><br>
+             10€ pour une figurine de troupe socle de 20-25mm.<br><br>
+                           <em>⏱️ Environ 1h+ par figurine de troupe socle de 28-32mm</em><br>
+             20€ pour une figurine de troupe socle de 28-32mm.<br>
 
             </li>
             <li>
@@ -2062,11 +2075,12 @@ $100 for a troop miniature on a 32mm base.<br>
                Détails soignés, peinture contrasté, point de focal<br>
              <em>Techniques :</em> éclairssiements, poses de lumière, dégradés, huile, décalcos, weathering...<br>
             
-              <em>💵 Prix indicatif :</em><br>
-                <em>⏱️ Environ 2h+ parfigurine de troupe socle de 25mm</em><br>
-               40€ pour une figurine de troupe socle de 25mm.<br><br>
-              <em>⏱️ Environ 4h+ par figurine de troupe socle de 32mm</em><br>
-             80€ pour une figurine de troupe socle de 32mm.<br>
+            <em>💵 Prix indicatif : de 20€ à 40€ par figurine</em><br>
+              <em>⏱️ Environ une heure par figurine de troupe socle de 20-25mm</em><br>
+             20€ pour une figurine de troupe socle de 20-25mm.<br><br>
+                           <em>⏱️ Environ 2h+ par figurine de troupe socle de 28-32mm</em><br>
+             40€ pour une figurine de troupe socle de 28-32mm.<br>
+
 
             </li>
         </ul>
