@@ -179,7 +179,8 @@ img {
 }
 
 .maintenance-box {
-    
+    align-items: center;
+    text-align: center;
     margin-top: 15px;
     margin-bottom: 0;
     border: 0px;
@@ -372,13 +373,8 @@ a:hover,
    ========================================================================== */
 .partenaires-container,
 .card-container2 {
-    justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: grid;
-
    margin-top: 2px;
-
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     justify-content: center;
@@ -992,10 +988,6 @@ nav ul li a:hover {
     .card3,
     .cardform,
     .logopart {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      
         max-width: 92%;            /* ← au lieu de 100% → laisse ~4% de chaque côté */
         margin-left: auto;
         margin-right: auto;
