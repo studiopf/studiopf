@@ -1242,31 +1242,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentLanguage === "english") {
         html = `
-      <div class="center">
+    ```html
+<div class="center">
     <div class="maintenance-box">
 
-       <h1>Studio PF<br>Professional Miniature Painter</h1>
+<h1>Studio PF<br>Professional Miniature Painter</h1>
 
-<h2>🎨 Warhammer, Display<br>and Collectible Miniature Painting</h2>
+<h2>🎨 Miniature Painting<br>TableTop Armies & Display Pieces</h2>
 
 <p>
-Specializing in <strong>high-end miniature painting</strong>, Studio PF helps hobbyists, collectors, and gamers bring their miniatures to life with professional-quality finishes.
+Studio PF provides <strong>professional miniature painting services</strong> for gamers, hobbyists, and collectors.
 </p>
 
 <p>
-Whether you are looking for a <strong>professional miniature painter</strong> for a Warhammer 40,000 army, an Age of Sigmar collection, a display piece, or a unique commission, every project receives meticulous attention and personalized craftsmanship.
+🛡️ <strong>TableTop Miniature Painting</strong>: Two TableTop quality levels: <strong>Gold</strong> and <strong>Diamond</strong>.<br>
+Whether you need a wargaming army or board game miniatures painted, enjoy a clean, high-quality finish ready for the tabletop.
 </p>
 
 <p>
-Your miniatures deserve more than a simple coat of paint. Using advanced painting techniques, smooth blends, realistic lighting, weathering effects, and immersive basing, each model is designed to stand out both on the tabletop and in a display cabinet.
+<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+⭐ Discover our TableTop miniature painting service ➜
+</a>
 </p>
 
 <p>
-At <strong>Studio PF</strong>, every <strong>miniature painting commission</strong> is created with passion and dedication, transforming your miniatures into true works of art.
+🏆 <strong>Display & Competition Pieces</strong>: Unique miniatures painted using advanced techniques for display cases, exhibitions, and painting competitions.<br>
+Whether it's a pop culture resin statue (manga, video games, movies...), a bust, or a diorama, I'd love to hear about your project.
 </p>
-    <p> <a href="peinturecommission.html" class="button"  onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">Discover Our Painting Service ➜</a></p>
+
+<p>
+<a href="peinturecollection.html" class="button" onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
+🏆 Discover our collector painting service ➜
+</a>
+</p>
+
+<p>
+Every project is completed with precision to showcase your miniatures, whether they are intended for gaming, collecting, or display.
+</p>
+
+<p>
+<a href="galerie.html" class="button" onclick="loadPage('galerie.html'); scrollToTop(); return false;">
+🖼️ View my photo gallery ➜
+</a>
+</p>
+
     </div>
 </div>
+```
+
 
 <div class="center">
    <div class="maintenance-box">
@@ -1432,35 +1455,50 @@ You receive a miniature ready to play or display, durable and completely matchin
     } else if (currentLanguage === "spanish") {
         html = `
       <div class="center">
-  <div class="maintenance-box">
-<h1>Studio PF<br>Pintor Profesional de Miniaturas</h1>
+    <div class="maintenance-box">
 
-<h2>🎨 Pintura de Miniaturas Warhammer<br>Colección y Exposición</h2>
+        <h1>Studio PF<br>Pintor Profesional de Miniaturas</h1>
 
-<p>
-Especializado en la <strong>pintura de miniaturas de alta gama</strong>, Studio PF acompaña a jugadores, coleccionistas y aficionados que desean dar vida a sus ejércitos y piezas de exposición.
-</p>
+        <h2>🎨 Pintura de Miniaturas<br>Ejércitos TableTop y Piezas de Colección</h2>
 
-<p>
-Si buscas un <strong>pintor profesional de miniaturas</strong> para un ejército de Warhammer 40K, Age of Sigmar, una miniatura de exposición o una pieza única, cada proyecto recibe un trabajo cuidado y personalizado.
-</p>
+        <p>
+            Studio PF realiza <strong>pintura profesional de miniaturas</strong> para jugadores, aficionados y coleccionistas.
+        </p>
 
-<p>
-Tus miniaturas merecen mucho más que una simple aplicación de color. Gracias a técnicas avanzadas de pintura, luces, contrastes y peanas trabajadas, cada modelo está creado para destacar tanto en la mesa de juego como en una vitrina de colección.
-</p>
+        <p>
+            🛡️ <strong>Pintura de miniaturas para juegos TableTop</strong> : 2 niveles de pintura TableTop: <strong>Gold</strong> y <strong>Diamante</strong>.<br>
+            Ya sea para un ejército de wargame o miniaturas de juegos de mesa, disfrute de un acabado cuidado y de una pintura de alta calidad.
+        </p>
 
-<p>
-En <strong>Studio PF</strong>, cada <strong>encargo de pintura de miniaturas</strong> se realiza con pasión para transformar tus miniaturas en auténticas <strong>piezas de colección únicas</strong>.
-</p>
+        <p>
+            <a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+                ⭐ Descubrir el servicio de pintura para miniaturas de juego ➜
+            </a>
+        </p>
 
-<p>
-<a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
-Descubrir el servicio de pintura ➜
-</a>
-</p>
+        <p>
+            🏆 <strong>Piezas de Colección y Concurso</strong> : miniaturas únicas realizadas con técnicas avanzadas para exposición, vitrinas y competiciones.<br>
+            Ya sea una figura de resina de cultura pop (manga, videojuegos, cine...), un busto o un diorama. Hábleme de su proyecto.
+        </p>
 
-</div></div>
+        <p>
+            <a href="peinturecollection.html" class="button" onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
+                🏆 Descubrir el servicio de pintura para coleccionistas ➜
+            </a>
+        </p>
 
+        <p>
+            Cada proyecto se realiza con precisión para realzar sus miniaturas, ya sea para jugar, coleccionar o exhibir.
+        </p>
+
+        <p>
+            <a href="galerie.html" class="button" onclick="loadPage('galerie.html'); scrollToTop(); return false;">
+                🖼️ Descubrir mi galería de fotos ➜
+            </a>
+        </p>
+
+    </div>
+</div>
 
 <div class="center">
 <div class="maintenance-box">
@@ -1632,35 +1670,43 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     } else {
         html = `
         
-  <div class="center">
-           <div class="maintenance-box">
+     <div class="center">
+      <div class="maintenance-box">
 <h1>Studio PF<br>Peintre professionnel sur Figurines</h1>
 
-<h2>🎨 Peinture sur Figurines Warhammer<br>Collection et Exposition</h2>
+<h2>🎨 Peinture de Figurines<br>Armées TableTop & Pièces de Collection</h2>
 
 <p>
-Spécialisé dans la <strong>peinture sur figurines haut de gamme</strong>, Studio PF accompagne les passionnés, collectionneurs et joueurs souhaitant donner vie à leurs armées et pièces de collection.
+Studio PF réalise la <strong>peinture professionnelle sur figurines</strong> pour joueurs, passionnés et collectionneurs.
 </p>
 
 <p>
-Que vous recherchiez un <strong>peintre professionnel sur figurines</strong> pour une armée Warhammer 40K, Age of Sigmar, une figurine d'exposition ou une pièce unique, chaque projet bénéficie d'un travail minutieux et personnalisé.
-</p>
-
-<p>
-Vos figurines méritent bien plus qu'une simple mise en couleur. Grâce à des techniques avancées de peinture, d'éclaircissements, de contrastes et de soclage, chaque modèle est conçu pour attirer le regard sur une table de jeu comme dans une vitrine de collection.
-</p>
-
-<p>
-Chez <strong>Studio PF</strong>, chaque <strong>commission de peinture sur figurine</strong> est réalisée avec passion afin de transformer vos figurines en véritables <strong>pièces de collection uniques</strong>.
-</p>
-
+🛡️ <strong>Peinture de figurines de jeu TableTop</strong> : 2 niveaux de peinture TableTop : <strong>Gold</strong> et <strong>Diamant</strong>.<br>
+Que ce soit pour une armée de wargame ou des figurines de jeu de plateau, profitez d'un rendu soigné et de finitions de qualité.</p>
 <p>
 <a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
-Découvrir le service peinture ➜
+⭐ Découvrir le service peinture de figurines de jeu  ➜
 </a>
 </p>
-</div></div>
-
+<p>
+🏆 <strong>Pièces de Collection & Concours</strong> : des figurines uniques réalisées avec des techniques avancées pour l'exposition, les vitrines et les compétitions.<br>
+Que ce soit une figurine en résine de pop culture (manga, jeux vidéos, film...), un buste ou un diorama. Parlez-moi de votre projet..
+</p>
+<p>
+<a href="peintureccollection.html" class="button" onclick="loadPage('peintureccollection.html'); scrollToTop(); return false;">
+🏆 Découvrir le service peinture pour collectionneur ➜
+</a>
+</p>
+<p>
+Chaque projet est réalisé avec précision afin de mettre en valeur vos figurines, qu'elles soient destinées au jeu, à la collection ou à l'exposition.
+</p>
+<p>
+<a href="galerie.html" class="button" onclick="loadPage('galerie.html'); scrollToTop(); return false;">
+🖼️ Découvrir ma galerie photo ➜
+</a>
+</p>
+</div>
+        </div>
 
 <div class="center">
 <div class="maintenance-box">
