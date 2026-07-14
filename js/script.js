@@ -3771,11 +3771,11 @@ const categories = {
     }
 };
 
-const category: {
+const categoryLabels = {
     fr: "Catégorie",
     en: "Category",
     es: "Categoría"
-}
+};
 
 function genererTableTarifs() {
 
