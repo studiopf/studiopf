@@ -204,11 +204,11 @@ changelangueinfo();
     if (currentPage.includes("mentionslegales") && typeof changelanguementionslegales === "function") {
         changelanguementionslegales();
     }
-    if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
+    if (currentPage.includes("commission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
     
     }
-        if (currentPage.includes("peinturecollection") && typeof changelanguecolletion === "function") {
+        if (currentPage.includes("collection") && typeof changelanguecolletion === "function") {
         changelanguecolletion();
     
     }
@@ -2518,7 +2518,7 @@ Présenter mon projet 💬
 // Menus multilingues
 // ────────────────────────────────────────────────
 function changelanguepeinture() {
-    genererTableTarifs();
+    
       const main = document.getElementById("contenu-principal");
    
 
