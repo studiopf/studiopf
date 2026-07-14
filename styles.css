@@ -168,6 +168,8 @@ img {
 }
 
 .maintenance-box {
+    align-items: center;
+    text-align: center;
     margin-top: 15px;
     margin-bottom: 0;
     border: 0px;
@@ -181,6 +183,8 @@ img {
     backdrop-filter: blur(4px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.65);
 }
+
+
 
 .maintenance-box p {
       font-size: 14px;
