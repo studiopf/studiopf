@@ -1625,115 +1625,62 @@ $100 for a troop miniature on a 32mm base.<br>
          <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
     </div>
 <div class="maintenance-box">
-<h3>Preparation (included) 🛠️</h3>
+<h2>Preparation 🛠️</h2>
 <ul>
-    <li>Full cleaning of parts</li>
-    <li>Mold line removal</li>
-    <li>Clean and optimized assembly</li>
-    <li>Preparation adapted to the level of finish</li>
+    <li>Cleaning</li>
+    <li>Assembly</li>
+    <li>Optimal preparation before painting</li>
 </ul>
-<p><em>Each miniature is prepared for optimal results.</em></p>
-</div>
-<div class="maintenance-box">
-<h3>Painting 🎨</h3>
-<ul>
-    <li><strong>⭐ Gold:</strong> clean blends, strong contrasts, essential details, consistent finish</li>
-    <li><strong>👑 Diamant:</strong> advanced blending, textures, OSL, NMM, freehand, highly detailed work</li>
-</ul>
-
-<p><strong>🎯 Goal: a realistic, readable and impactful result both from a distance and up close.</strong></p>
-</div>
-<div class="maintenance-box">
-<h3>Basing 🌿</h3>
-<ul>
-    <li><strong>Gold:</strong> detailed base consistent with the army</li>
-    <li><strong>Diamant:</strong> scenic base with 3D elements and visual storytelling</li>
-</ul>
-</div>
-<div class="maintenance-box">
-<h2>Gold Service 🤝</h2>
-
-<p>
-Personalized support for every project.
-</p>
-
-<ul>
-    <li>🎯 Artistic guidance and visual direction</li>
-    <li>🎨 Fully hand-painted</li>
-    <li>⭐ High-end materials and techniques</li>
-    <li>📦 Limited production to ensure top-tier quality</li>
-</ul>
-
-<p><strong>⏳ Lead time: 4 to 8 months depending on project and volume</strong></p>
-       </div>
-            <div class="maintenance-box">
-<table class="tableborder1">
-<thead>
-<tr>
-    <th>🎨 Features</th>
-    <th>⭐ Gold</th>
-    <th>👑 Diamant</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Work time</td>
-    <td>2h+</td>
-    <td>5 to 8h</td>
-</tr>
-<tr>
-    <td>Finish</td>
-    <td>Clean and contrasted</td>
-    <td>Very high level of detail</td>
-</tr>
-<tr>
-    <td>Details</td>
-    <td>Clean and readable</td>
-    <td>Highly refined and realistic</td>
-</tr>
-<tr>
-    <td>Base</td>
-    <td>Detailed</td>
-    <td>Scenic / display</td>
-</tr>
-</tbody>
-        </table>
-</div>
-   
-<div class="banniere">
-    <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </div>
 
 <div class="maintenance-box">
-    <h3>Pricing 2026-2027</h3>
+    <h2>Painting 🎨</h2>
+    <ul>
+        <li><strong>⭐ Gold :</strong> clean and efficient finish</li>
+        <li><strong>👑 Diamond :</strong> refined details, enhanced contrasts and carefully worked focal points</li>
+    </ul>
+</div>
 
+<div class="maintenance-box">
+    <h2>Basings 🌿</h2>
+    <ul>
+        <li><strong>⭐ Gold :</strong> detailed and harmonious base</li>
+        <li><strong>👑 Diamond :</strong> scenic base with immersive atmosphere</li>
+    </ul>
+</div>
+
+<!-- Comparison table -->
+<div class="maintenance-box">
     <table class="tableborder1">
-      <thead>
-<tr>
-    <th>Category</th>
-    <th>Gold</th>
-    <th>Diamond</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Infantry 20mm</td><td>30min / $15</td><td>1h / $25</td></tr>
-<tr><td>Infantry 25mm</td><td>1h / $25</td><td>2h / $50</td></tr>
-<tr><td>Infantry 28mm</td><td>1h30 / $40</td><td>3h / $75</td></tr>
-<tr><td>Infantry 32mm</td><td>2h / $50</td><td>4h / $100</td></tr>
-<tr><td>Elite Infantry 40-50mm</td><td>3h / $75</td><td>6h / $150</td></tr>
-<tr><td>Foot Character 25-32mm</td><td>5h / $125</td><td>10h / $250</td></tr>
-<tr><td>Elite Character 40-50mm</td><td>6h / $150</td><td>12h / $300</td></tr>
-<tr><td>Monstrous Character 60-100mm</td><td>8h / $200</td><td>16h / $400</td></tr>
-<tr><td>Character Mounted on 120mm Monster</td><td>12h / $300</td><td>24h / $600</td></tr>
-<tr><td>Character Mounted on Large Monster</td><td>16h / $400</td><td>32h / $800</td></tr>
-<tr><td>Cavalry 60-75mm</td><td>3h / $75</td><td>6h / $150</td></tr>
-<tr><td>Heavy Cavalry 90-105mm</td><td>4h / $100</td><td>8h / $200</td></tr>
-<tr><td>Small Vehicle / Monster</td><td>4h / $100</td><td>8h / $200</td></tr>
-<tr><td>Medium Vehicle / Monster</td><td>6h / $150</td><td>12h / $300</td></tr>
-<tr><td>Large Vehicle / Monster</td><td>8h / $200</td><td>16h / $400</td></tr>
-<tr><td>Huge Vehicle / Monster</td><td>12h / $300</td><td>24h / $600</td></tr>
-<tr><td>Titanic</td><td>16h / $400</td><td>32h / $800</td></tr>
-</tbody>
+        <thead>
+            <tr>
+                <th>🎨 Features</th>
+                <th>⭐ Gold</th>
+                <th>👑 Diamond</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Painting time</td>
+                <td>1h+ to 2h+</td>
+                <td>2h+ to 4h+</td>
+            </tr>
+            <tr>
+                <td>Finish</td>
+                <td>Clean, simple and effective</td>
+                <td>Highly detailed, with strong contrasts and focal points</td>
+            </tr>
+            <tr>
+                <td>Techniques</td>
+                <td>Base colours, simple shading, clean finishing</td>
+                <td>Highlights, light effects, blending, oil techniques, decals, weathering</td>
+            </tr>
+            <tr>
+                <td>Base</td>
+                <td>Detailed and coherent</td>
+                <td>Scenic and immersive</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 `;
@@ -1775,120 +1722,62 @@ Personalized support for every project.
 <p><em>Cada miniatura se prepara para un resultado óptimo.</em></p>
 </div>
 <div class="maintenance-box">
-<h3>Pintura 🎨</h3>
+<h2>Preparación 🛠️</h2>
 <ul>
-    <li>
-        <strong>⭐ Oro:</strong><br>
-        Ideal para ejércitos de Warhammer<br>
-        Acabado limpio, sencillo y eficaz<br>
-        <em>Técnicas:</em> colores base, sombras simples, acabado limpio.<br>
-
-        <em>💵 Precio orientativo:</em><br>
-        <em>⏱️ Aproximadamente 1h+ por miniatura de tropa con peana de 25mm</em><br>
-        20€ por una miniatura de tropa con peana de 25mm.<br><br>
-
-        <em>⏱️ Aproximadamente 2h+ por miniatura de tropa con peana de 32mm</em><br>
-        40€ por una miniatura de tropa con peana de 32mm.<br>
-    </li>
-
-    <li>
-        <strong>👑 Diamante:</strong><br>
-        Ideal para personajes, héroes, vehículos, monstruos...<br>
-        Detalles cuidados, pintura con contraste, puntos focales<br>
-        <em>Técnicas:</em> iluminaciones, colocación de luces, degradados, técnicas con óleo, calcas, efectos de desgaste...<br>
-
-        <em>💵 Precio orientativo:</em><br>
-        <em>⏱️ Aproximadamente 2h+ por miniatura de tropa con peana de 25mm</em><br>
-        40€ por una miniatura de tropa con peana de 25mm.<br><br>
-
-        <em>⏱️ Aproximadamente 4h+ por miniatura de tropa con peana de 32mm</em><br>
-        80€ por una miniatura de tropa con peana de 32mm.<br>
-    </li>
+    <li>Limpieza</li>
+    <li>Montaje</li>
+    <li>Preparación óptima antes de pintar</li>
 </ul>
-</div>
-<div class="maintenance-box">
-<h2>Servicio Gold 🤝</h2>
-
-<p>
-Acompañamiento personalizado para cada proyecto.
-</p>
-
-<ul>
-    <li>🎯 Asesoramiento artístico y dirección visual</li>
-    <li>🎨 Pintura completamente realizada a mano</li>
-    <li>⭐ Materiales y técnicas de alta gama</li>
-    <li>📦 Producción limitada para garantizar un alto nivel de calidad</li>
-</ul>
-
-<p><strong>⏳ Plazos: 4 a 8 meses según el proyecto y el volumen</strong></p>
-       </div>
-            <div class="maintenance-box">
-<table class="tableborder1">
-<thead>
-<tr>
-    <th>🎨 Características</th>
-    <th>⭐ Gold</th>
-    <th>👑 Diamant</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Tiempo de trabajo</td>
-    <td>2h+</td>
-    <td>5 a 8h</td>
-</tr>
-<tr>
-    <td>Acabado</td>
-    <td>Limpio y contrastado</td>
-    <td>Muy alto nivel de detalle</td>
-</tr>
-<tr>
-    <td>Detalles</td>
-    <td>Limpios y legibles</td>
-    <td>Muy elaborados y realistas</td>
-</tr>
-<tr>
-    <td>Peana</td>
-    <td>Trabajada</td>
-    <td>Escénica / de vitrina</td>
-</tr>
-</tbody>
-        </table>
-    </div>
-<div class="banniere">
-      <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
 </div>
 
 <div class="maintenance-box">
-    <h3>Tarifas 2026-2027</h3>
+    <h2>Pintura 🎨</h2>
+    <ul>
+        <li><strong>⭐ Gold :</strong> acabado limpio y eficaz</li>
+        <li><strong>👑 Diamante :</strong> detalles cuidados, contrastes reforzados y puntos focales trabajados</li>
+    </ul>
+</div>
 
+<div class="maintenance-box">
+    <h2>Peanas 🌿</h2>
+    <ul>
+        <li><strong>⭐ Gold :</strong> peana trabajada y armoniosa</li>
+        <li><strong>👑 Diamante :</strong> peana escénica con una ambientación inmersiva</li>
+    </ul>
+</div>
+
+<!-- Tabla comparativa -->
+<div class="maintenance-box">
     <table class="tableborder1">
-     <thead>
-<tr>
-    <th>Categoría</th>
-    <th>Oro</th>
-    <th>Diamante</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Infantería 20mm</td><td>30min / 10€</td><td>1h / 20€</td></tr>
-<tr><td>Infantería 25mm</td><td>1h / 20€</td><td>2h / 40€</td></tr>
-<tr><td>Infantería 28mm</td><td>1h30 / 30€</td><td>3h / 60€</td></tr>
-<tr><td>Infantería 32mm</td><td>2h / 40€</td><td>4h / 80€</td></tr>
-<tr><td>Infantería de élite 40-50mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-<tr><td>Personaje a pie 25-32mm</td><td>5h / 100€</td><td>10h / 200€</td></tr>
-<tr><td>Personaje de élite 40-50mm</td><td>6h / 120€</td><td>12h / 240€</td></tr>
-<tr><td>Personaje monstruoso 60-100mm</td><td>8h / 160€</td><td>16h / 320€</td></tr>
-<tr><td>Personaje sobre monstruo 120mm</td><td>12h / 240€</td><td>24h / 480€</td></tr>
-<tr><td>Personaje sobre gran monstruo</td><td>16h / 320€</td><td>32h / 640€</td></tr>
-<tr><td>Caballería 60-75mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-<tr><td>Caballería pesada 90-105mm</td><td>4h / 80€</td><td>8h / 160€</td></tr>
-<tr><td>Vehículo pequeño / monstruo</td><td>4h / 80€</td><td>8h / 160€</td></tr>
-<tr><td>Vehículo mediano / monstruo</td><td>6h / 120€</td><td>12h / 240€</td></tr>
-<tr><td>Vehículo grande / monstruo</td><td>8h / 160€</td><td>16h / 320€</td></tr>
-<tr><td>Vehículo enorme / monstruo</td><td>12h / 240€</td><td>24h / 480€</td></tr>
-<tr><td>Titánico</td><td>16h / 320€</td><td>32h / 640€</td></tr>
-</tbody>
+        <thead>
+            <tr>
+                <th>🎨 Características</th>
+                <th>⭐ Gold</th>
+                <th>👑 Diamante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiempo de pintura</td>
+                <td>1h+ a 2h+</td>
+                <td>2h+ a 4h+</td>
+            </tr>
+            <tr>
+                <td>Acabado</td>
+                <td>Limpio, simple y eficaz</td>
+                <td>Muy detallado, con contrastes marcados y puntos focales</td>
+            </tr>
+            <tr>
+                <td>Técnicas</td>
+                <td>Colores base, sombras simples, acabado limpio</td>
+                <td>Luces, efectos de iluminación, degradados, técnicas con óleo, calcas, weathering</td>
+            </tr>
+            <tr>
+                <td>Peana</td>
+                <td>Trabajada y coherente</td>
+                <td>Escénica e inmersiva</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 
@@ -1938,81 +1827,64 @@ Acompañamiento personalizado para cada proyecto.
     </div>
     
 <div class="maintenance-box">
-       <h3>Préparation (incluse) 🛠️</h3>
+      <h2>Préparation 🛠️</h2>
 <ul>
-    <li>Nettoyage complet des pièces</li>
-    <li>Suppression des lignes de moulage</li>
-    <li>Assemblage propre et optimisé</li>
-    <li>Préparation adaptée au niveau de finition</li>
+    <li>Nettoyage</li>
+    <li>Assemblage</li>
+    <li>Préparation optimale avant peinture</li>
 </ul>
-<p><em>Chaque figurine est préparée pour un rendu optimal.</em></p>
 </div>
+
 <div class="maintenance-box">
-       <h3>Peinture TableTop+ 🎨</h3>
-<ul>
-    <li><strong>⭐ Gold :</strong> dégradés propres, contrastes marqués, détails essentiels, rendu homogène</li>
-    <li><strong>👑 Diamant :</strong> dégradés avancés, textures, OSL, NMM, freehand, détails poussés</li>
-</ul>
+    <h2>Peinture 🎨</h2>
+    <ul>
+        <li><strong>⭐ Gold :</strong> rendu propre et efficace</li>
+        <li><strong>👑 Diamant :</strong> détails soignés, contrastes renforcés et points focaux travaillés</li>
+    </ul>
+</div>
 
-<p><strong>🎯 Objectif : un rendu réaliste, lisible et impactant à distance comme de près.</strong></p>
-     </div>
 <div class="maintenance-box">
-<h3>Soclage 🌿</h3>
-<ul>
-    <li><strong>Gold :</strong> socle travaillé et cohérent avec l’armée</li>
-    <li><strong>Diamant :</strong> socle scénique avec éléments 3D et narration visuelle</li>
-</ul>
-    </div>
+    <h2>Soclage 🌿</h2>
+    <ul>
+        <li><strong>⭐ Gold :</strong> socle travaillé et harmonieux</li>
+        <li><strong>👑 Diamant :</strong> socle scénique avec mise en ambiance</li>
+    </ul>
+</div>
+
+<!-- Tableau comparaison -->
 <div class="maintenance-box">
-<h2>Service Gold 🤝</h2>
-
-<p>
-Un accompagnement personnalisé pour chaque projet.
-</p>
-
-<ul>
-    <li>🎯 Conseils artistiques et direction visuelle</li>
-    <li>🎨 Peinture entièrement réalisée à la main</li>
-    <li>⭐ Matériaux et techniques haut de gamme</li>
-    <li>📦 Production limitée pour garantir un haut niveau de qualité</li>
-</ul>
-
-<p><strong>⏳ Délais : 4 à 8 mois selon projet et volume</strong></p>
-       </div>
-            <div class="maintenance-box">
-       <table class="tableborder1">
-<thead>
-<tr>
-    <th>🎨 Caractéristiques</th>
-    <th>⭐ Gold</th>
-    <th>👑 Diamant</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Temps de travail</td>
-    <td>2h+</td>
-    <td>5 à 8h</td>
-</tr>
-<tr>
-    <td>Finition</td>
-    <td>Nette et contrastée</td>
-    <td>Très haut niveau de détail</td>
-</tr>
-<tr>
-    <td>Détails</td>
-    <td>Propres et lisibles</td>
-    <td>Très poussés et réalistes</td>
-</tr>
-<tr>
-    <td>Socle</td>
-    <td>Travaillé</td>
-    <td>Scénique / vitrine</td>
-</tr>
-</tbody>
-
-        </table>
-  </div>
+    <table class="tableborder1">
+        <thead>
+            <tr>
+                <th>🎨 Caractéristiques</th>
+                <th>⭐ Gold</th>
+                <th>👑 Diamant</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Temps peinture</td>
+                <td>1h+ à 2h+</td>
+                <td>2h+ à 4h+</td>
+            </tr>
+            <tr>
+                <td>Finition</td>
+                <td>Nette, simple et efficace</td>
+                <td>Très détaillée, contrastée avec points focaux</td>
+            </tr>
+            <tr>
+                <td>Techniques</td>
+                <td>Couleurs de base, ombrages simples, finition propre</td>
+                <td>Éclaircissements, lumières, dégradés, huile, décalcos, weathering</td>
+            </tr>
+            <tr>
+                <td>Socle</td>
+                <td>Travaillé et cohérent</td>
+                <td>Scénique et immersif</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
     <div class="banniere">
           <a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </div>
