@@ -166,6 +166,7 @@ function loadPage(page) {
 function applyLanguageAndInit() {
 
     updateDebugDisplay();
+    mettreAJourTarifLangue();
 changelangueinfo();
     changelanguemenu();
    
@@ -194,7 +195,8 @@ changelangueinfo();
         if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
         changelanguesimu();
             initializeFormCalculations();
-
+             
+            calculateTotals();
     }
 
     if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
@@ -3917,7 +3919,7 @@ function calculateTotals() {
     const niveau = niveauSelect.value || "niveau1";
 
     let totalGeneral = 0;
-  
+  mettreAJourTarifLangue();
 
     categories.forEach(cat => {
         const input   = document.getElementById(`${cat}-input`);
