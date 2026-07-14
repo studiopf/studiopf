@@ -214,7 +214,7 @@ type="image/png">
                   
         
          
-       <div class="maintenance-box">
+       <fieldset class="maintenance-box">
                 
                     <legend>Simulation de devis</legend>
                     <div class="cardform">
@@ -241,7 +241,7 @@ type="image/png">
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
                     </div>
-       </div>
+       
          
        <div class="maintenance-box">
                     <div id="petiteinfanterie" class="cardform">
@@ -385,7 +385,8 @@ type="image/png">
 <h3><span id="oktotal">0.00</span></h3>
 
 </div>
-          <div class="maintenance-box">
+        </fieldset>
+          <fieldset class="maintenance-box">
              <legend>Coordonnées</legend>
                 <div class="center">
                     <label for="nom">Nom<span>*</span></label>
@@ -429,18 +430,17 @@ type="image/png">
                         <option value="Autre">Autre (merci de préciser)</option>
                     </select>
     </div>
-       </div>
+       </fieldset>
          <div class="maintenance-box">
                            <div id="message" class="cardform">
                             <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span>*</span></label>
-                            <div><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
+                            <div class="center"><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
                    
 
                     <p><span>*</span> Champs obligatoires</p>
                              <div class="center">
               <button type="submit" class="button">Envoyer la demande par mail</button>
-                   </div>   
- </div>
+                   </div>   </div>   
                       
                
            
