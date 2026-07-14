@@ -4920,38 +4920,7 @@ function scrollTotal(offset=100) {
   }
 }
 
-const menuToggle = document.getElementById("menu-toggle");
-const menuMobile = document.getElementById("menu-contenu");
-const menuOverlay = document.getElementById("menu-overlay");
 
-
-menuToggle.addEventListener("click", () => {
-
-    menuMobile.classList.toggle("active");
-    menuOverlay.classList.toggle("active");
-
-});
-
-
-menuOverlay.addEventListener("click", () => {
-
-    menuMobile.classList.remove("active");
-    menuOverlay.classList.remove("active");
-
-});
-
-
-// Fermer le menu après clic sur un lien
-document.querySelectorAll(".menu-mobile a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        menuMobile.classList.remove("active");
-        menuOverlay.classList.remove("active");
-
-    });
-
-});
 
 function initThemeToggle() {
 
