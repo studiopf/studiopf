@@ -252,16 +252,16 @@ table {
 }
 
 td {
-    padding: 4px;
+    padding: 2px;
     text-align: left;
     border: 1px solid #444;
-    width: 50px;
+    width: 40px;
     background-color: #2b2b2b; /* fond principal sombre */
     color: #e0e0e0; /* texte doux */
 }
 
 th {
-    padding: 4px;
+    padding: 2px;
     text-align: left;
     background-color: #1e1e1e; /* plus sombre que les cellules */
     color: #ffffff;
@@ -900,7 +900,7 @@ nav ul li a:hover {
     }
     .table-container {
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .lightbox {
