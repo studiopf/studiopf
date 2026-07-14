@@ -206,7 +206,7 @@ changelangueinfo();
     }
     if (currentPage.includes("commission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
-        genererTableTarifs();
+       
     
     }
         if (currentPage.includes("collection") && typeof changelanguecolletion === "function") {
@@ -3824,43 +3824,7 @@ const categoryLabels = {
 };
     const categories = Object.keys(tariffs);
 
-function genererTableTarifs() {
 
-    const tbody = document.getElementById("tarifTableBody");
-
-    tbody.innerHTML = "";
-
-
-    let langue = currentLanguage === "english" ? "en" :
-                 currentLanguage === "spanish" ? "es" : "fr";
-
-
-    tarifheure = currentLanguage === "english" 
-        ? tarifheureus 
-        : tarifheureeu;
-
-
-    Object.keys(tariffs).forEach(categorie => {
-
-        let ligne = document.createElement("tr");
-
-        ligne.innerHTML = `
-            <td>${categories[categorie][langue]}</td>
-            
-            <td>
-                ${tariffs[categorie].niveau1}h / 
-                ${tariffs[categorie].niveau1 * tarifheure}€
-            </td>
-
-            <td>
-                ${tariffs[categorie].niveau2}h / 
-                ${tariffs[categorie].niveau2 * tarifheure}€
-            </td>
-        `;
-
-        tbody.appendChild(ligne);
-    });
-}
 
 
 
