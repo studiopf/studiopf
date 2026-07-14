@@ -1436,16 +1436,26 @@ You receive a miniature ready to play or display, durable and completely matchin
 
 <div class="center">
     <div class="maintenance-box">
-        <h2>⚙️ How does it work?</h2>
-        <ol>
-            <li>Contact me / request a quote.</li>
-            <li>Send or drop off your miniatures.</li>
-            <li>I handle assembly and painting.</li>
-            <li>I deliver once the photos are approved.</li>
-        </ol>
-        <p>Simple, transparent, and 100% passion.</p>
 
-        <p><a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote ➜</a></p>
+        <h2>⚙️ How does it work?</h2>
+
+        <ol>
+            <li>Contact me and request your personalized quote.</li>
+            <li>Send me your miniatures or share your project.</li>
+            <li>I take care of the preparation, assembly, painting and finishing.</li>
+            <li>You approve the final photos before shipping or hand delivery.</li>
+        </ol>
+
+        <p>
+            Simple, transparent, and 100% passion.
+        </p>
+
+        <p>
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                Request a quote ➜
+            </a>
+        </p>
+
     </div>
 </div>
          
@@ -1627,19 +1637,28 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
 
 <div class="center">
     <div class="maintenance-box">
-        <h2>⚙️ ¿Cómo funciona?</h2>
-        <ol>
-            <li>Contáctame / solicita un presupuesto.</li>
-            <li>Envía o entrega tus miniaturas.</li>
-            <li>Realizo el montaje y la pintura.</li>
-            <li>Entrega tras validación de las fotos.</li>
-        </ol>
-        <p>Simple, transparente y 100% pasión.</p>
 
-        <p><a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto ➜</a></p>
+        <h2>⚙️ ¿Cómo funciona?</h2>
+
+        <ol>
+            <li>Contáctame y solicita tu presupuesto personalizado.</li>
+            <li>Envíame tus miniaturas o comparte tu proyecto.</li>
+            <li>Me encargo de la preparación, montaje, pintura y acabados.</li>
+            <li>Validas las fotos finales antes del envío o la entrega en mano.</li>
+        </ol>
+
+        <p>
+            Simple, transparente y 100% pasión.
+        </p>
+
+        <p>
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                Solicitar presupuesto ➜
+            </a>
+        </p>
+
     </div>
-</div>
-       
+</div>       
         `;
     } else {
         html = `
@@ -1778,20 +1797,30 @@ Vous recevez une pièce prête à jouer ou à exposer, durable et totalement à 
 
 </div>
 </div>
-         <div class="center">
-            <div class="maintenance-box">
-  <h2>⚙️ Comment ça marche ?</h2>
-  <ol>
-    <li>Contactez-moi / demandez un devis.</li>
-    <li>Envoyez ou déposez vos figurines.</li>
-    <li>Je réalise le montage et peinture.</li>
-    <li>Je vous livre les figurines une fois les photos validées.</li>
-  </ol>
-  <p>Simple, transparent, et 100% passion.</p>
-     
-    <p><a href="simulateur_devis.html" class="button"  onclick="loadPage(' simulateur_devis.html'); scrollToTop(); return false;">Demander un devis ➜</a> </p>
-        </div>
+        <div class="center">
+    <div class="maintenance-box">
+
+        <h2>⚙️ Comment ça marche ?</h2>
+
+        <ol>
+            <li>Contactez-moi et demandez votre devis personnalisé.</li>
+            <li>Confiez-moi vos figurines ou votre projet.</li>
+            <li>Je réalise la préparation, le montage, la peinture et les finitions.</li>
+            <li>Vous validez les photos finales avant l'expédition ou la remise en main propre.</li>
+        </ol>
+
+        <p>
+            Simple, transparent, et 100% passion.
+        </p>
+
+        <p>
+            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                Demander un devis ➜
+            </a>
+        </p>
+
     </div>
+</div>
         `;
     }
 
