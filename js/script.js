@@ -2182,21 +2182,67 @@ function changelanguemenu() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `<ul class="menu">
-            <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Paint TableTop+ 🎨</a></li>
-            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Gallery 🖼️</a></li>
-        </ul>`;
+        html = `<nav id="menu-contenu" class="menu-mobile">
+    <ul class="menu">
+
+        <li>
+            <a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
+                🎨 TableTop Armies Painting
+            </a>
+        </li>
+
+        <li>
+            <a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
+                🏆 Collection & Competition Painting
+            </a>
+        </li>
+
+
+
+        <li>
+            <a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
+                🖼️ Gallery
+            </a>
+        </li>
+
+    </ul>
+</nav>`;
     } else if (currentLanguage === "spanish") {
-        html = `<ul class="menu">
-                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Pintura TableTop+🎨</a></li>
-            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galería 🖼️</a></li>
-        </ul>`;
+        html = `<nav id="menu-contenu" class="menu-mobile">
+    <ul class="menu">
+
+        <li>
+            <a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
+                🎨 Pintura de Ejércitos TableTop
+            </a>
+        </li>
+
+        <li>
+            <a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
+                🏆 Pintura de Colección y Concursos
+            </a>
+        </li>
+
+    
+
+        <li>
+            <a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
+                🖼️ Galería
+            </a>
+        </li>
+
+    </ul>
+</nav>`;
     } else {
-        html = `<ul class="menu">
-             <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop+ 🎨</a></li>
-            <li><a href="formation.html" onclick="loadPage('formation.html');return false;">Formation 📚</a></li>
-            <li><a href="galerie.html" onclick="loadPage('galerie.html');return false;">Galerie 🖼️</a></li>
-        </ul>`;
+        html = `        <nav id="menu-contenu" class="menu-mobile">
+            <ul class="menu">
+                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture Armées TableTop 🎨</a></li>
+                 <li><a href="peinturecollection" onclick="loadPage('peinturecollection.html'); return false;">🏆 Peinture Collection & Concours</a></li>
+            
+                   <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
+                <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
+            </ul>
+        </nav>`;
     }
 
     menu.innerHTML = html;
