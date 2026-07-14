@@ -265,7 +265,7 @@ function changelangueforma() {
       </ul>
       <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
     </div>
-     <div>
+     <div class="center">
          <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
     </div>
     
@@ -300,7 +300,7 @@ function changelangueforma() {
       </div>
 
     <p>Horaires à titre d'exemple.</p>
-     <div>
+     <div class="center">
          <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
     </div>
     
@@ -395,39 +395,39 @@ function changelangueforma() {
 
       <div class="maintenance-box">
    <h3>📅 Réservez divtenant et devenez expert !</h3>
-    <div>
+    <div class="center">
    
       
       <form onsubmit="event.preventDefault(); envoyerMailForma(this);" id="formationForm">
-        <div>
+        <div class="center">
           <label for="nom">Nom</label>
           <input type="text" id="nom" name="nom" placeholder="Nom" required>
         </div>
-        <div>
+        <div class="center">
           <label for="prenom">Prénom</label>
           <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
         </div>
-        <div>
+        <div class="center">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Email" required>
         </div>
-        <div>
+        <div class="center">
           <label for="telephone">Téléphone</label>
           <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
         </div>
-        <div>
+        <div class="center">
           <label for="adresse">Adresse</label>
           <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
         </div>
-        <div>
+        <div class="center">
           <label for="cp">Code Postal</label>
           <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
         </div>
-        <div>
+        <div class="center">
           <label for="ville">Ville</label>
           <input type="text" id="ville" name="ville" placeholder="Ville" required>
         </div>
-        <div>
+        <div class="center">
           <label for="pays">Pays</label>
           <select id="pays" name="pays" required>
             <option value="" disabled selected>Choisissez un pays</option>
@@ -437,7 +437,7 @@ function changelangueforma() {
             <option value="Autre">Autre (merci de préciser)</option>
           </select>
         </div>
-        <div>
+        <div class="center">
           <label for="cours">Cours</label>
           <select id="cours" name="cours" required>
             <option value="" disabled selected>Sélectionnez une option</option>
@@ -450,11 +450,11 @@ function changelangueforma() {
             <option value="Prestation événementielle - sur devis">Prestation événementielle - sur devis</option>
           </select>
         </div>
-        <div>
+        <div class="center">
           <label for="message">Votre message</label>
           <textarea id="message" name="message" placeholder="Votre message" rows="4"></textarea>
         </div>
-        <div>
+        <div class="center">
           <button type="submit" class="button">Envoyer la demande par mail</button>
         </div>
       </form>
@@ -513,10 +513,10 @@ ${prenom} ${nom}`;
     if (currentLanguage === "english") {
              html = `<h1>Quote Request</h1>
 
-<div class="form-container">
+<div class="center">
 
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-    <div>
+    <div class="center">
         <fieldset>
             <legend>Contact Details TableTop+ commission</legend>
 
@@ -747,7 +747,7 @@ ${prenom} ${nom}`;
                 please describe the list of miniatures to paint, whether assembly is required,<br>
                 and if you already have a theme or color scheme defined: <span class="required">*</span>
             </label>
-            <div>
+            <div class="center">
                 <textarea id="message-input" name="message" placeholder="Your message" required></textarea>
             </div>
         </div>
@@ -756,7 +756,7 @@ ${prenom} ${nom}`;
 
     </fieldset>
 
-    <div>
+    <div class="center">
         <button type="submit" class="button">Send request by email</button>
     </div>
 
@@ -766,10 +766,10 @@ ${prenom} ${nom}`;
     } else if (currentLanguage === "spanish") {
               html = `<h1>Solicitud de Presupuesto TableTop+</h1>
 
-<div class="form-container">
+<div class="center">
 
 <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-    <div>
+    <div class="center">
         <fieldset>
             <legend>Datos de contacto TableTop</legend>
 
@@ -1001,7 +1001,7 @@ ${prenom} ${nom}`;
                 por favor indique la lista de miniaturas a pintar, si es necesario montaje,<br>
                 y si ya tiene un tema o esquema de colores definido: <span class="required">*</span>
             </label>
-            <div>
+            <div class="center">
                 <textarea id="message-input" name="message" placeholder="Su mensaje" required></textarea>
             </div>
         </div>
@@ -1010,7 +1010,7 @@ ${prenom} ${nom}`;
 
     </fieldset>
 
-    <div>
+    <div class="center">
         <button type="submit" class="button">Enviar solicitud por correo</button>
     </div>
 
@@ -1021,10 +1021,10 @@ ${prenom} ${nom}`;
         html = `
                        <h1>Demande de Devis commission TableTop+</h1>
        
-           <div class="form-container">
+           <div class="center">
             
         <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-              <div>
+              <div class="center">
                   <fieldset>
                 <legend>Coordonnées</legend>
                 <div class="form-group">
@@ -1230,14 +1230,14 @@ ${prenom} ${nom}`;
 </div>
                            <div id="message" class="cardform">
                             <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span class="required">*</span></label>
-                            <div><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
+                            <div class="center"><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
                     </div>
 
                     <p><span class="required">*</span> Champs obligatoires</p>
 
                       
                 </fieldset>
-            <div>
+            <div class="center">
               <button type="submit" class="button">Envoyer la demande par mail</button>
                    </div>   
             </form>
@@ -1290,7 +1290,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentLanguage === "english") {
         html = `
-      <div>
+      <div class="center">
     <div class="maintenance-box">
 
        <h1>Studio PF<br>Professional Miniature Painter</h1>
@@ -1316,7 +1316,7 @@ At <strong>Studio PF</strong>, every <strong>miniature painting commission</stro
     </div>
 </div>
 
-<div>
+<div class="center">
    <div class="maintenance-box">
 <h1>Studio PF<br>Professional Miniature Painter</h1>
 
@@ -1346,7 +1346,7 @@ Discover the painting service ➜
 </div></div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>👋 Miniature Painter in France</h2>
@@ -1377,7 +1377,7 @@ Learn more about my journey ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>Professional Painting Commission</h2>
@@ -1405,7 +1405,7 @@ Discover the painting service ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>Miniature Painting Courses & Training</h2>
@@ -1427,7 +1427,7 @@ Discover the training courses ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>🪄 Why choose Studio PF?</h2>
@@ -1451,7 +1451,7 @@ You receive a miniature ready to play or display, durable and completely matchin
 </div>
 </div>
 
-<div>
+<div class="center">
     <div class="maintenance-box">
 
         <h2>⚙️ How does it work?</h2>
@@ -1479,7 +1479,7 @@ You receive a miniature ready to play or display, durable and completely matchin
         `;
     } else if (currentLanguage === "spanish") {
         html = `
-      <div>
+      <div class="center">
   <div class="maintenance-box">
 <h1>Studio PF<br>Pintor Profesional de Miniaturas</h1>
 
@@ -1510,7 +1510,7 @@ Descubrir el servicio de pintura ➜
 </div></div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>👋 Pintor de Miniaturas en Francia</h2>
@@ -1541,7 +1541,7 @@ Conoce más sobre mi trayectoria ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>Encargos Profesionales de Pintura</h2>
@@ -1569,7 +1569,7 @@ Descubrir el servicio de pintura ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>Cursos y Formación de Pintura de Miniaturas</h2>
@@ -1591,7 +1591,7 @@ Descubrir las formaciones ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>🪄 ¿Por qué elegir Studio PF?</h2>
@@ -1615,7 +1615,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
 </div>
 </div>
 
-<div>
+<div class="center">
     <div class="maintenance-box">
         <h3>⚔️ TableTop Avanzado</h3>
         <p>👉 Para jugadores exigentes que quieren un resultado espectacular sin sacrificar la jugabilidad.</p>
@@ -1629,7 +1629,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     </div>
 </div>
 
-<div>
+<div class="center">
     <div class="maintenance-box">
         <h3>🧠 Formación & Coaching de pintura</h3>
         <p>👉 Aprende técnicas profesionales: iluminación, peanas, degradados, acabados.  
@@ -1638,7 +1638,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     </div>
 </div>
 
-<div>
+<div class="center">
     <div class="maintenance-box">
         <h2>🪄 ¿Por qué elegir Studio PF ?</h2>
         <ul>
@@ -1652,7 +1652,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     </div>
 </div>
 
-<div>
+<div class="center">
     <div class="maintenance-box">
 
         <h2>⚙️ ¿Cómo funciona?</h2>
@@ -1680,7 +1680,7 @@ Recibes una miniatura lista para jugar o exponer, resistente y totalmente adapta
     } else {
         html = `
         
-  <div>
+  <div class="center">
            <div class="maintenance-box">
 <h1>Studio PF<br>Peintre professionnel sur Figurines</h1>
 
@@ -1710,7 +1710,7 @@ Découvrir le service peinture ➜
 </div></div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>👋 Peintre sur Figurine en France</h2>
@@ -1741,7 +1741,7 @@ En savoir plus sur mon parcours ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>Commission de Peinture Professionnelle</h2>
@@ -1769,7 +1769,7 @@ Découvrir le service peinture ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>Cours et Formation de Peinture sur Figurine</h2>
@@ -1791,7 +1791,7 @@ Découvrir les formations ➜
 </div>
 
 
-<div>
+<div class="center">
 <div class="maintenance-box">
 
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
@@ -1814,7 +1814,7 @@ Vous recevez une pièce prête à jouer ou à exposer, durable et totalement à 
 
 </div>
 </div>
-        <div>
+        <div class="center">
     <div class="maintenance-box">
 
         <h2>⚙️ Comment ça marche ?</h2>
