@@ -2674,7 +2674,7 @@ function changelanguepeinture() {
     <table class="tableborder1">
         <thead>
             <tr>
-                <th>🎨 Features</th>
+                <th></th>
                 <th>⭐ Gold</th>
                 <th>👑 Diamond</th>
             </tr>
@@ -2687,13 +2687,13 @@ function changelanguepeinture() {
             </tr>
             <tr>
                 <td>Finish</td>
-                <td>Clean, simple and effective</td>
-                <td>Highly detailed, with strong contrasts and focal points</td>
+                <td>Clean,<br>simple and effective</td>
+                <td>Highly detailed,<br>with strong contrast and focal points</td>
             </tr>
             <tr>
                 <td>Techniques</td>
-                <td>Base colours, simple shading, clean finishing</td>
-                <td>Highlights, light effects, blending, oil techniques, decals, weathering</td>
+                <td>Base colours,<br>simple shading,<br>clean finish</td>
+                <td>Highlights,<br>lighting effects,<br>blending,<br>oil techniques,<br>decals,<br>NMM,<br>weathering</td>
             </tr>
             <tr>
                 <td>Base</td>
@@ -2871,7 +2871,7 @@ function changelanguepeinture() {
     <table class="tableborder1">
         <thead>
             <tr>
-                <th>🎨 Características</th>
+                <th></th>
                 <th>⭐ Gold</th>
                 <th>👑 Diamante</th>
             </tr>
@@ -2884,13 +2884,13 @@ function changelanguepeinture() {
             </tr>
             <tr>
                 <td>Acabado</td>
-                <td>Limpio, simple y eficaz</td>
-                <td>Muy detallado, con contrastes marcados y puntos focales</td>
+                <td>Limpio,<br>simple y eficaz</td>
+                <td>Muy detallado,<br>con contraste y puntos focales</td>
             </tr>
             <tr>
                 <td>Técnicas</td>
-                <td>Colores base, sombras simples, acabado limpio</td>
-                <td>Luces, efectos de iluminación, degradados, técnicas con óleo, calcas, weathering</td>
+                <td>Colores base,<br>sombras simples,<br>acabado limpio</td>
+                <td>Iluminaciones,<br>luces,<br>degradados,<br>óleo,<br>calcas,<br>MNM,<br>weathering</td>
             </tr>
             <tr>
                 <td>Peana</td>
@@ -3055,12 +3055,13 @@ function changelanguepeinture() {
     </ul>
 </div>
 
+
 <!-- Tableau comparaison -->
 <div class="maintenance-box">
     <table class="tableborder1">
         <thead>
             <tr>
-                <th>🎨 Caractéristiques</th>
+                <th></th>
                 <th>⭐ Gold</th>
                 <th>👑 Diamant</th>
             </tr>
@@ -3073,13 +3074,13 @@ function changelanguepeinture() {
             </tr>
             <tr>
                 <td>Finition</td>
-                <td>Nette, simple et efficace</td>
-                <td>Très détaillée, contrastée avec points focaux</td>
+                <td>Nette,<br>simple et efficace</td>
+                <td>Très détaillée,<br>contrastée avec points focaux</td>
             </tr>
             <tr>
                 <td>Techniques</td>
-                <td>Couleurs de base, ombrages simples, finition propre</td>
-                <td>Éclaircissements, lumières, dégradés, huile, décalcos, weathering</td>
+                <td>Couleurs de base,<br>ombrages simples,<br>finition propre</td>
+                <td>Éclaircissements,<br>lumières,<br>dégradés,<br>huile,<br>décalcos,<br>MNM,<br>weathering</td>
             </tr>
             <tr>
                 <td>Socle</td>
@@ -3089,6 +3090,7 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
+
     <p>
           <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </p>
