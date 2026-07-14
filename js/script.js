@@ -211,6 +211,7 @@ changelangueinfo();
     }
         if (currentPage.includes("collection") && typeof changelanguecolletion === "function") {
         changelanguecolletion();
+            genererTableTarifs
     
     }
            if (currentPage.includes("index") && typeof changelangueindex === "function") {
@@ -3680,7 +3681,7 @@ function initializeCardToggle() {
 // ────────────────────────────────────────────────
 
 const niveauLabels = {
-    niveau1: "Niveau Gold - Niv3, Qualité supérieur : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommendation.",
+    niveau1: "Niveau Gold - Niv3, Qualité supérieur : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommandation.",
     niveau2: "Niveau Diamant - Niv4, Qualité supérieur ultime : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
 };
 
@@ -3689,40 +3690,62 @@ const niveauLabelsmini = {
     niveau2: "Diamant",
 };
 
-let symboleDevise = "€";
-    
+
 const tarifheureeu = 20;
 const tarifheureus = 25;
-    let tarifheure = tarifheureeu;
-    
- if (currentLanguage === "english") {
-     tarifheure = tarifheureus;
-     symboleDevise = "$";
-    } 
-    
-    else {
-             tarifheure = tarifheureeu;
+
+let tarifheure = tarifheureeu;
+let symboleDevise = "€";
+
+
+function mettreAJourTarifLangue() {
+
+    if (currentLanguage === "english") {
+        tarifheure = tarifheureus;
+        symboleDevise = "$";
+    } else {
+        tarifheure = tarifheureeu;
         symboleDevise = "€";
     }
-        
+
+}
+
+
+
+// =======================
+// TARIFS
+// =======================
 
 const tariffs = {
-    petiteinfanterie: { niveau1: 0.1, niveau2: 1 },
+
+    petiteinfanterie: { niveau1: 0.5, niveau2: 1 },
     infanterie: { niveau1: 1, niveau2: 2 },
     infanterieelite: { niveau1: 1.5, niveau2: 3 },
+
     personnage: { niveau1: 3, niveau2: 10 },
     personnageelite: { niveau1: 4, niveau2: 12 },
     personnagemonstrueux: { niveau1: 6, niveau2: 16 },
+
     personnagesurmonstre: { niveau1: 8, niveau2: 24 },
     personnagesurgrandmonstre: { niveau1: 12, niveau2: 32 },
+
     cavalerie: { niveau1: 2, niveau2: 6 },
     cavalerielourde: { niveau1: 3, niveau2: 8 },
+
     petitvehiculemonstre: { niveau1: 3, niveau2: 8 },
     vehiculemonstremoyen: { niveau1: 5, niveau2: 12 },
     grosvehiculemonstre: { niveau1: 8, niveau2: 16 },
     enormevehiculemonstre: { niveau1: 12, niveau2: 24 },
+
     titanvehiculemonstre: { niveau1: 18, niveau2: 32 }
+
 };
+
+
+
+// =======================
+// NOMS DES CATEGORIES
+// =======================
 
 const categories = {
 
@@ -3815,16 +3838,73 @@ const categories = {
         en: "Titanic",
         es: "Titánico"
     }
+
 };
 
-const categoryLabels = {
-    fr: "Catégorie",
-    en: "Category",
-    es: "Categoría"
-};
-    const categories = Object.keys(tariffs);
 
 
+// =======================
+// GENERATION TABLE TARIFS
+// =======================
+
+function genererTableTarifs() {
+
+
+    const tbody = document.getElementById("tarifTableBody");
+
+    if (!tbody) {
+        console.error("Table tarifTableBody introuvable");
+        return;
+    }
+
+
+    mettreAJourTarifLangue();
+
+
+    tbody.innerHTML = "";
+
+
+    let langue = currentLanguage === "english" ? "en" :
+                 currentLanguage === "spanish" ? "es" : "fr";
+
+
+
+    Object.keys(tariffs).forEach(categorie => {
+
+
+        if (!categories[categorie]) {
+            console.warn("Catégorie manquante :", categorie);
+            return;
+        }
+
+
+        let ligne = document.createElement("tr");
+
+
+        ligne.innerHTML = `
+
+            <td>
+                ${categories[categorie][langue]}
+            </td>
+
+            <td>
+                ${tariffs[categorie].niveau1}h /
+                ${(tariffs[categorie].niveau1 * tarifheure).toFixed(0)}${symboleDevise}
+            </td>
+
+            <td>
+                ${tariffs[categorie].niveau2}h /
+                ${(tariffs[categorie].niveau2 * tarifheure).toFixed(0)}${symboleDevise}
+            </td>
+
+        `;
+
+
+        tbody.appendChild(ligne);
+
+    });
+
+}
 
 
 
@@ -3836,6 +3916,7 @@ function calculateTotals() {
     const niveau = niveauSelect.value || "niveau1";
 
     let totalGeneral = 0;
+    mettreAJourTarifLangue();
 
     categories.forEach(cat => {
         const input   = document.getElementById(`${cat}-input`);
