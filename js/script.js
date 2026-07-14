@@ -2707,44 +2707,6 @@ function changelanguepeinture() {
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </p>
 
-<div class="maintenance-box">
-    <h3>Rates 2026-2027</h3>
-
-<table class="tableborder1">
-<thead>
-<tr>
-    <th>Category</th>
-    <th>Gold</th>
-    <th>Diamond</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr><td>Infantry 20-25mm</td><td>30min / $12.50</td><td>1h / $25</td></tr>
-<tr><td>Infantry 28-32mm</td><td>1h / $25</td><td>2h / $50</td></tr>
-<tr><td>Elite Infantry 40-50mm</td><td>1h30 / $37.50</td><td>3h / $75</td></tr>
-
-<tr><td>Foot Character 25-32mm</td><td>3h / $75</td><td>6h / $150</td></tr>
-<tr><td>Elite Character 40-50mm</td><td>4h / $100</td><td>8h / $200</td></tr>
-<tr><td>Monstrous Character 60-100mm</td><td>6h / $150</td><td>12h / $300</td></tr>
-<tr><td>Character Mounted on Monster 120mm</td><td>8h / $200</td><td>16h / $400</td></tr>
-<tr><td>Character on Large Monster</td><td>12h / $300</td><td>24h / $600</td></tr>
-
-<tr><td>Cavalry 60-75mm</td><td>2h / $50</td><td>4h / $100</td></tr>
-<tr><td>Heavy Cavalry 90-105mm</td><td>3h / $75</td><td>6h / $150</td></tr>
-
-<tr><td>Small Vehicle / Monster</td><td>3h / $75</td><td>6h / $150</td></tr>
-<tr><td>Medium Vehicle / Monster</td><td>5h / $125</td><td>10h / $250</td></tr>
-<tr><td>Large Vehicle / Monster</td><td>8h / $200</td><td>16h / $400</td></tr>
-<tr><td>Huge Vehicle / Monster</td><td>12h / $300</td><td>24h / $600</td></tr>
-
-<tr><td>Titanic</td><td>18h / $450</td><td>36h / $900</td></tr>
-
-</tbody>
-</table>
-
-</div>
 `;
     } else if (currentLanguage === "spanish") {
         html = `
@@ -2903,47 +2865,6 @@ function changelanguepeinture() {
 <p>
     <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
 </p>
-
-<div class="maintenance-box">
-    <h3>Tarifas 2026-2027</h3>
-
-<table class="tableborder1">
-<thead>
-<tr>
-    <th>Categoría</th>
-    <th>Gold</th>
-    <th>Diamante</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr><td>Infantería 20-25mm</td><td>30min / 10€</td><td>1h / 20€</td></tr>
-<tr><td>Infantería 28-32mm</td><td>1h / 20€</td><td>2h / 40€</td></tr>
-<tr><td>Infantería de élite 40-50mm</td><td>1h30 / 30€</td><td>3h / 60€</td></tr>
-
-<tr><td>Personaje a pie 25-32mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-<tr><td>Personaje de élite 40-50mm</td><td>4h / 80€</td><td>8h / 160€</td></tr>
-<tr><td>Personaje monstruoso 60-100mm</td><td>6h / 120€</td><td>12h / 240€</td></tr>
-<tr><td>Personaje sobre monstruo 120mm</td><td>8h / 160€</td><td>16h / 320€</td></tr>
-<tr><td>Personaje sobre gran monstruo</td><td>12h / 240€</td><td>24h / 480€</td></tr>
-
-<tr><td>Caballería 60-75mm</td><td>2h / 40€</td><td>4h / 80€</td></tr>
-<tr><td>Caballería pesada 90-105mm</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-
-<tr><td>Vehículo pequeño / monstruo</td><td>3h / 60€</td><td>6h / 120€</td></tr>
-<tr><td>Vehículo / monstruo mediano</td><td>5h / 100€</td><td>10h / 200€</td></tr>
-<tr><td>Vehículo grande / monstruo</td><td>8h / 160€</td><td>16h / 320€</td></tr>
-<tr><td>Vehículo enorme / monstruo</td><td>12h / 240€</td><td>24h / 480€</td></tr>
-
-<tr><td>Titánico</td><td>18h / 360€</td><td>36h / 720€</td></tr>
-
-</tbody>
-</table>
-
-
-
-</div>
 `;
     } else {
         html = `
