@@ -549,13 +549,13 @@ ${prenom} ${nom}`;
                 <label for="pays">Country <span class="required">*</span></label>
                 <select id="pays" name="pays" required>
                     <option value="" disabled hidden>Select a country</option>
-                    <option value="FRANCE" selected>France</option>
+                    <option value="FRANCE">France</option>
                     <option value="BELGIQUE">Belgium</option>
                     <option value="LUXEMBOURG">Luxembourg</option>
                     <option value="SPAIN">Spain</option>
                     <option value="GERMANY">Germany</option>
                     <option value="ENGLAND">England</option>
-                    <option value="USA">USA</option>
+                    <option value="USA" selected>USA</option>
                     <option value="Autre">Other (please specify)</option>
                 </select>
             </div>
@@ -802,10 +802,10 @@ ${prenom} ${nom}`;
                 <label for="pays">País <span class="required">*</span></label>
                 <select id="pays" name="pays" required>
                     <option value="" disabled hidden>Seleccione un país</option>
-                    <option value="FRANCE" selected>Francia</option>
+                    <option value="FRANCE">Francia</option>
                     <option value="BELGIQUE">Bélgica</option>
                     <option value="LUXEMBOURG">Luxemburgo</option>
-                    <option value="SPAIN">España</option>
+                    <option value="SPAIN" selected>España</option>
                     <option value="GERMANY">Alemania</option>
                     <option value="ENGLAND">Inglaterra</option>
                     <option value="USA">EE.UU.</option>
