@@ -1006,63 +1006,20 @@ ${prenom} ${nom}`;
 </div>        `;
     } else {
         html = `
-                       <h1>Demande de Devis commission TableTop+</h1>
-       
-           <div class="center">
-            
-        <form id="contactForm" action="#" class="bg-white p-6 rounded-lg shadow-md">
-              <div class="center">
-                  
-                <legend>Coordonnées</legend>
-                <div class="center">
-                    <label for="nom">Nom<span >*</span></label>
-                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
-                </div>
-                <div class="center">
-                    <label for="prenom">Prénom<span >*</span></label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
-                </div>
-                <div class="center">
-                    <label for="email">Email<span >*</span></label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="center">
-                    <label for="telephone">Téléphone<span >*</span></label>
-                    <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
-                </div>
-                <div class="center">
-                    <label for="adresse">Adresse<span >*</span></label>
-                    <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
-                </div>
-                <div class="center">
-                    <label for="cp">Code Postal<span >*</span></label>
-                    <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
-                </div>
-                <div class="center">
-                    <label for="ville">Ville<span >*</span></label>
-                    <input type="text" id="ville" name="ville" placeholder="Ville" required>
-                </div>
-                <div class="center">
-                    <label for="pays">Pays <span >*</span></label>
-                    <select id="pays" name="pays" required>
-                        <option value="" disabled hidden>Choisissez un pays</option>
-                        <option value="FRANCE" selected>France</option>
-                        <option value="BELGIQUE">Belgique</option>
-                        <option value="LUXEMBOURG">Luxembourg</option>
-                        <option value="SPAIN">SPAIN</option>
-                        <option value="GERMANY">Germany</option>
-                        <option value="ENGLAND">England</option>
-                        <option value="USA">USA</option>
-                        <option value="Autre">Autre (merci de préciser)</option>
-                    </select>
-                </div>
-            
-       </div>
+                          <h1>Demande de Devis commission TableTop+</h1>
 
+
+            
+        <form id="contactForm" action="#" class="maintenance-box">
+              
+                  
+        
+         
+       <fieldset class="maintenance-box">
                 
-                    <legend>Ma demande</legend>
+                    <legend>Simulation de devis</legend>
                     <div class="cardform">
-  <label for="niveau">Niveaux de Peinture :</label><br>
+                        <label for="niveau">Niveaux de Peinture :</label><br>
                       <p>
     Niveau ⭐ Gold :<br>
     Finition TableTop+ de qualité supérieure.<br>
@@ -1085,7 +1042,9 @@ ${prenom} ${nom}`;
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
                     </div>
-
+       
+         
+       <div class="maintenance-box">
                     <div id="petiteinfanterie" class="cardform">
                         <label for="petiteinfanterie-input">Nombre de <strong>Infanteries socle 20-25mm</strong> :</label>
                         <p>Exemple : Skinks, Nains Battle, Squelettes, Gobelins, Veroleux...</p>
@@ -1144,7 +1103,7 @@ ${prenom} ${nom}`;
 
                     <div id="personnagesurgrandmonstre" class="cardform">
                         <label for="personnagesurgrandmonstre-input">Nombre de <strong>Personnages sur Grand Monstres socle 130-160mm ou supérieur</strong> :</label>
-                        <p>Exemple : Allareille, Dragon Stormcast, Dragon Crocodile...</p>
+                        <p>Exemple : Fulgrim, Allareille, Dragon Stormcast, Dragon Crocodile...</p>
                         <p>Prix unitaire : <span id="prixpersonnagesurgrandmonstre">0.00</span> €</p>
                         <p>Sous Total : <span id="totalpersonnagesurgrandmonstre">0.00</span> €</p>
                         <input type="number" id="personnagesurgrandmonstre-input" name="personnagesurgrandmonstre" min="0">
@@ -1160,22 +1119,22 @@ ${prenom} ${nom}`;
 
                     <div id="cavalerielourde" class="cardform">
                         <label for="cavalerielourde-input">Nombre de <strong>Cavaleries lourdes socle ovale 90-105mm</strong> :</label>
-                        <p>Exemple : Motos Custodes, Saurus sur Aggradon, Requin Idoneth...</p>
+                        <p>Exemple : Motos Custodes, Saurus sur Aggradon, Allopex Idoneth...</p>
                         <p>Prix unitaire : <span id="prixcavalerielourde">0.00</span> €</p>
                         <p>Sous Total : <span id="totalcavalerielourde">0.00</span> €</p>
                         <input type="number" id="cavalerielourde-input" name="cavalerielourde" min="0">
                     </div>
 
                     <div id="petitvehiculemonstre" class="cardform">
-                        <label for="petitvehiculemonstre-input">Nombre de <strong>Petit Véhicules/Monstres socle ovale 75-90mm</strong> :</label>
+                        <label for="petitvehiculemonstre-input">Nombre de <strong>Petit Véhicules/Monstres socle ovale 75-90mm ou supérieur</strong> :</label>
                         <p>Exemple : Sentinel, Bête de Nurgle, Drone...</p>
                         <p>Prix unitaire : <span id="prixpetitvehiculemonstre">0.00</span> €</p>
                         <p>Sous Total : <span id="totalpetitvehiculemonstre">0.00</span> €</p>
                         <input type="number" id="petitvehiculemonstre-input" name="petitvehiculemonstre" min="0">
                     </div>
 
-  <div id="vehiculemonstremoyen" class="cardform">
-                        <label for="vehiculemonstremoyen-input">Nombre de <strong>Véhicules/Monstres Moyen socle 80-100mm</strong> :</label>
+                    <div id="vehiculemonstremoyen" class="cardform">
+                        <label for="vehiculemonstremoyen-input">Nombre de <strong>Véhicules/Monstres Moyen socle 80-100mm ou supérieur</strong> :</label>
                         <p>Exemple : Rhino, Dreadnought, Drone...</p>
                         <p>Prix unitaire : <span id="prixvehiculemonstremoyen">0.00</span> €</p>
                         <p>Sous Total : <span id="totalvehiculemonstremoyen">0.00</span> €</p>
@@ -1190,21 +1149,22 @@ ${prenom} ${nom}`;
                         <input type="number" id="grosvehiculemonstre-input" name="grosvehiculemonstre" min="0">
                     </div>
 
-                                      <div id="enormevehiculemonstre" class="cardform">
+                    <div id="enormevehiculemonstre" class="cardform">
                         <label for="enormevehiculemonstre-input">Nombre de <strong>Énormes Véhicules/Monstres socle 100-130 ou supérieur</strong> :</label>
-                        <p>Exemple : Land Raider, Defiler, Aerodyne, Morathi, Mortarion, Kragnos...</p>
+                        <p>Exemple : Land Raider, Defiler, Aerodyne, Kragnos...</p>
                         <p>Prix unitaire : <span id="prixenormevehiculemonstre">0.00</span> €</p>
                         <p>Sous Total : <span id="totalenormevehiculemonstre">0.00</span> €</p>
                         <input type="number" id="enormevehiculemonstre-input" name="enormevehiculemonstre" min="0">
                     </div>
 
                     <div id="titanvehiculemonstre" class="cardform">
-                        <label for="titanvehiculemonstre-input">Nombre de <strong>Véhicules/Monstres Titanesques socle 130-160mm-170mm</strong> :</label>
-                        <p>Exemple : Spartan, Allareille, Imperial Knight, Cogfort, Fulgrim, Mega Gargant...</p>
+                        <label for="titanvehiculemonstre-input">Nombre de <strong>Véhicules/Monstres Titanesques socle 130-160mm ou supérieur</strong> :</label>
+                        <p>Exemple : Spartan, Imperial Knight, Cogfort, Mega Gargant...</p>
                         <p>Prix unitaire : <span id="prixtitanvehiculemonstre">0.00</span> €</p>
                         <p>Sous Total : <span id="totaltitanvehiculemonstre">0.00</span> €</p>
                         <input type="number" id="titanvehiculemonstre-input" name="titanvehiculemonstre" min="0">
                     </div>
+
                     <div id="montage" class="cardform">
                         <label for="montage-input"><strong>Montage</strong> à prévoir ?</label>
                         <select id="montage-input" name="montage">
@@ -1222,24 +1182,70 @@ ${prenom} ${nom}`;
                     </div>
 
                     <div id="total" class="cardform">
-                      <h3 class="total">TOTAL :</h3>
+                        <h2 class="total">TOTAL :</h2>
 <h3><span id="oktotal">0.00</span></h3>
+
 </div>
+        </fieldset>
+          <fieldset class="maintenance-box">
+             <legend>Coordonnées</legend>
+                <div class="center">
+                    <label for="nom">Nom<span>*</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+                <div class="center">
+                    <label for="prenom">Prénom<span>*</span></label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                </div>
+                <div class="center">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="center">
+                    <label for="telephone">Téléphone<span>*</span></label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+                </div>
+                <div class="center">
+                    <label for="adresse">Adresse<span>*</span></label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
+                </div>
+                <div class="center">
+                    <label for="cp">Code Postal<span>*</span></label>
+                    <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
+                </div>
+                <div class="center">
+                    <label for="ville">Ville<span>*</span></label>
+                    <input type="text" id="ville" name="ville" placeholder="Ville" required>
+                </div>
+                <div class="center">
+                    <label for="pays">Pays <span>*</span></label>
+                    <select id="pays" name="pays" required>
+                        <option value="" disabled hidden>Choisissez un pays</option>
+                        <option value="FRANCE" selected>France</option>
+                        <option value="BELGIQUE">Belgique</option>
+                        <option value="LUXEMBOURG">Luxembourg</option>
+                        <option value="SPAIN">SPAIN</option>
+                        <option value="GERMANY">Germany</option>
+                        <option value="ENGLAND">England</option>
+                        <option value="USA">USA</option>
+                        <option value="Autre">Autre (merci de préciser)</option>
+                    </select>
+    </div>
+       </fieldset>
+         <div class="maintenance-box">
                            <div id="message" class="cardform">
-                            <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span >*</span></label>
+                            <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span>*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
-                    </div>
+                   
 
-                    <p><span >*</span> Champs obligatoires</p>
-
-                      
-                
-            <div class="center">
+                    <p><span>*</span> Champs obligatoires</p>
+                             <div class="center">
               <button type="submit" class="button">Envoyer la demande par mail</button>
-                   </div>   
+                   </div>   </div>   
+                      
+               
+           
             </form>
-
-          </div>
         `;
     }
 
