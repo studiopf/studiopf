@@ -3099,7 +3099,16 @@ function changelanguepeinture() {
     <p>
         Studio PF offers two painting levels: <strong>Gold</strong> and <strong>Diamond</strong>, designed to suit your needs, your budget, and the importance of each miniature.
     </p>
+<!-- Illustrations -->
+<div class="exemples-photos">
+    <img src="img/armee1.jpg" alt="Example of a painted army">
+    <img src="img/armee2.jpg" alt="Example of a painted tabletop army">
+    <img src="img/armee3.jpg" alt="Example of a painted wargaming army">
+</div>
 
+<p style="text-align:center;">
+    <em>📸 Examples of painted armies and tabletop miniatures by Studio PF.</em>
+</p>
 </div>
 
 <div class="maintenance-box">
@@ -3344,6 +3353,17 @@ function changelanguepeinture() {
         Studio PF ofrece dos niveles de pintura: <strong>Gold</strong> y <strong>Diamante</strong>, para adaptarse a tus necesidades, a tu presupuesto y a la importancia de cada miniatura.
     </p>
 
+<!-- Ilustraciones -->
+<div class="exemples-photos">
+    <img src="img/armee1.jpg" alt="Ejemplo de ejército pintado">
+    <img src="img/armee2.jpg" alt="Ejemplo de ejército TableTop pintado">
+    <img src="img/armee3.jpg" alt="Ejemplo de ejército para juegos de miniaturas pintado">
+</div>
+
+<p style="text-align:center;">
+    <em>📸 Ejemplos de ejércitos y miniaturas de juego pintados por Studio PF.</em>
+</p>
+
 </div>
 
 <div class="maintenance-box">
@@ -3584,7 +3604,16 @@ function changelanguepeinture() {
         Studio PF propose deux niveaux de peintre : <strong> Gold</strong> et <strong> Diamant</strong>, afin de s'adapter à vos besoins, votre budget et à l'importance de chaque figurine.
     </p>
 
+<!-- Illustrations -->
+<div class="exemples-photos">
+    <img src="img/armee1.jpg" alt="Exemple d'armée peinte">
+    <img src="img/armee2.jpg" alt="Exemple d'armée TableTop peinte">
+    <img src="img/armee3.jpg" alt="Exemple d'armée Warhammer peinte">
+</div>
 
+<p style="text-align:center;">
+    <em>📸 Exemples d'armées peintes réalisées par Studio PF.</em>
+</p>
 </div>
 
 <div class="maintenance-box">
