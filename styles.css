@@ -1159,7 +1159,7 @@ body,
     position: fixed;
 
     top:5px;
-    left:5px;
+    left:30px;
 
     width:24px;
     height:24px;
@@ -1286,20 +1286,20 @@ body.light-mode{
 /* BOUTON MENU HAMBURGER */
 /* ============================= */
 .pf-menu-button {
-    position: fixed !important;
+ 
     top: 5px !important;
-    right: 5px !important;
+    right: 20px !important;
     left: auto !important;           /* ← Force à ne pas être à gauche */
 
     width: 45px !important;
     height: 45px !important;
     padding: 0 !important;
-    display: flex !important;
+    
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-
-    background: rgba(14, 14, 12, 0.95) !important;   /* plus opaque */
+ background: rgba(20, 20, 18, 0.98) !important;
+   
     border: 1px solid #f4c876 !important;
     border-radius: 8px !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important; /* petit effet de profondeur */
@@ -1322,60 +1322,8 @@ body.light-mode{
 .pf-menu-button:hover {
     transform: scale(1.05);
     border-color: #d99b32;
-    background: rgba(20, 20, 18, 0.98) !important;
+    background: rgba(14, 14, 12, 0.95) !important;   /* plus opaque */
 }
-
-
-/* ============================= */
-/* BOUTON THEME */
-/* ============================= */
-
-.theme-toggle {
-
-    position:fixed;
-
-    top:5px;
-    left:20px;
-
-    width:40px;
-    height:40px;
-
-    padding:0;
-
-    border-radius:50%;
-
-    border:1px solid #6b4e2f;
-
-    background:rgba(14,14,12,0.75);
-
-    color:#f4c876;
-
-    font-size:18px;
-
-    line-height:40px;
-
-    cursor:pointer;
-
-    z-index:9999;
-
-    opacity:.85;
-
-    backdrop-filter:blur(4px);
-
-    transition:.25s;
-
-}
-
-
-.theme-toggle:hover {
-
-    opacity:1;
-
-    transform:scale(1.08);
-
-}
-
-
 
 /* ============================= */
 /* MENU MOBILE */
@@ -1500,11 +1448,11 @@ body.light-mode{
 
 .pf-social-container .social-icon {
 
-    width:45px;
+    width:40px;
 
-    height:45px;
+    height:40px;
 
-    display:flex;
+    display:grid;
 
     align-items:center;
 
@@ -1514,7 +1462,7 @@ body.light-mode{
 
     border-radius:50%;
 
-    box-shadow:0 2px 6px rgba(0,0,0,.35);
+    box-shadow:0 2px 4px rgba(0,0,0,.35);
 
 }
 
