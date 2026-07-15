@@ -1516,3 +1516,51 @@ button.pf-menu-button {
     margin-bottom: 0px;
     font-size: 18px;
 }
+/* ============================= */
+/* VERSION MOBILE */
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* Bouton hamburger */
+    .pf-menu-button {
+        width: 38px !important;
+        height: 38px !important;
+        top: 10px !important;
+        right: 10px !important;
+        border-radius: 9px !important;
+    }
+
+    .pf-menu-button span {
+        width: 20px !important;
+        height: 2.5px !important;
+        margin: 2.5px 0 !important;
+    }
+
+    /* Boutons du menu */
+    .pf-nav-list {
+        padding: 25px 15px 15px;
+        gap: 8px;
+    }
+
+    .pf-nav-list a {
+        padding: 12px 16px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    /* Réseaux sociaux */
+    .pf-mobile-social {
+        margin-top: 20px;
+        padding: 0 15px 25px;
+    }
+
+    .pf-social-container {
+        gap: 12px;
+    }
+
+    .pf-social-container .social-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+}
