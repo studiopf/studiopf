@@ -3228,8 +3228,11 @@ function changelanguepeinture() {
     </p>
 
 </div>
-  
+
+
     <div class="maintenance-box">
+    <div class="card-container3">
+        <div class="card">
        <h2>Preparation 🛠️</h2>
 <ul>
     <li>Cleaning</li>
@@ -3238,7 +3241,7 @@ function changelanguepeinture() {
 </ul>
 </div>
 
-<div class="maintenance-box">
+       <div class="card">
     <h2>Painting 🎨</h2>
     <ul>
         <li><strong>⭐ Gold :</strong> clean and efficient result</li>
@@ -3246,12 +3249,14 @@ function changelanguepeinture() {
     </ul>
 </div>
 
-<div class="maintenance-box">
+       <div class="card">
     <h2>Basing 🌿</h2>
     <ul>
         <li><strong>⭐ Gold :</strong> worked and harmonious base</li>
         <li><strong>👑 Diamond :</strong> scenic base with atmosphere</li>
     </ul>
+</div>
+</div>
 </div>
 
 <!-- Comparison Table -->
@@ -3288,7 +3293,23 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   
+   <div class="maintenance-box">
+    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
+<table class="tableborder1">
+<thead>
+
+<tr>
+   <th></th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table>
+  </div>
         <div>
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
     </div>
@@ -3440,6 +3461,8 @@ function changelanguepeinture() {
 
 </div>
     <div class="maintenance-box">
+    <div class="card-container3">
+        <div class="card">
        <h2>Preparación 🛠️</h2>
 <ul>
     <li>Limpieza</li>
@@ -3448,7 +3471,7 @@ function changelanguepeinture() {
 </ul>
 </div>
 
-<div class="maintenance-box">
+ <div class="card">
     <h2>Pintura 🎨</h2>
     <ul>
         <li><strong>⭐ Gold :</strong> acabado limpio y eficiente</li>
@@ -3456,12 +3479,14 @@ function changelanguepeinture() {
     </ul>
 </div>
 
-<div class="maintenance-box">
+ <div class="card">
     <h2>Ensocado 🌿</h2>
     <ul>
         <li><strong>⭐ Gold :</strong> base trabajada y armoniosa</li>
         <li><strong>👑 Diamante :</strong> base escénica con ambientación</li>
     </ul>
+</div>
+</div>
 </div>
 
 <!-- Tableau comparaison -->
@@ -3498,7 +3523,23 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   
+   <div class="maintenance-box">
+    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
+<table class="tableborder1">
+<thead>
+
+<tr>
+   <th></th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table>
+  </div>
         <div>
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
     </div>
@@ -3619,7 +3660,10 @@ function changelanguepeinture() {
         <img src="img/conversion3.jpg"
              alt="Exemple de conversion avec des pièces imprimées en 3D">
 
+
     <div class="maintenance-box">
+<div class="card-container3">
+ <div class="card">
        <h2>Préparation 🛠️</h2>
 <ul>
     <li>Nettoyage</li>
@@ -3628,7 +3672,8 @@ function changelanguepeinture() {
 </ul>
 </div>
 
-<div class="maintenance-box">
+
+        <div class="card">
     <h2>Peinture 🎨</h2>
     <ul>
         <li><strong>⭐ Gold :</strong> rendu propre et efficace</li>
@@ -3636,12 +3681,14 @@ function changelanguepeinture() {
     </ul>
 </div>
 
-<div class="maintenance-box">
+ <div class="card">
     <h2>Soclage 🌿</h2>
     <ul>
         <li><strong>⭐ Gold :</strong> socle travaillé et harmonieux</li>
         <li><strong>👑 Diamant :</strong> socle scénique avec mise en ambiance</li>
     </ul>
+</div>
+</div>
 </div>
 
 <!-- Tableau comparaison -->
@@ -3679,7 +3726,24 @@ function changelanguepeinture() {
     </table>
 </div>
 
-    
+
+    <div class="maintenance-box">
+    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
+<table class="tableborder1">
+<thead>
+
+<tr>
+   <th></th>
+    <th>Gold</th>
+    <th>Diamant</th>
+</tr>
+</thead>
+
+<tbody id="tarifTableBody">
+
+</tbody>
+</table>
+  </div>
         <div>
          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </div>
