@@ -4763,8 +4763,23 @@ const pfButton = document.getElementById("pf-menu-button");
 const pfNav = document.getElementById("pf-mobile-nav");
 
 
+// Ouvrir / fermer avec le bouton hamburger
 pfButton.addEventListener("click", function(){
 
     pfNav.classList.toggle("active");
+
+});
+
+
+// Fermer le menu quand on clique sur un lien
+const pfLinks = document.querySelectorAll("#pf-mobile-nav a");
+
+pfLinks.forEach(link => {
+
+    link.addEventListener("click", function(){
+
+        pfNav.classList.remove("active");
+
+    });
 
 });
