@@ -1282,366 +1282,135 @@ body.light-mode{
     --title:#8b5b00;
 }
 }
-/* ============================= */
+/* ================================= */
+/* FORCAGE MENU MOBILE STUDIO PF */
+/* ================================= */
+
+
 /* BOUTON HAMBURGER */
-/* ============================= */
 
-.pf-menu-button {
+button.pf-menu-button {
 
-    position: fixed !important;
+    position:fixed !important;
 
-    top: 10px !important;
-    right: 10px !important;
-    left: auto !important;
+    top:10px !important;
 
-    width:46px;
-    height:46px;
+    right:10px !important;
 
-    padding:0;
+    left:auto !important;
 
-    display:flex;
+    width:46px !important;
 
-    flex-direction:column;
+    height:46px !important;
 
-    justify-content:center;
+    display:flex !important;
 
-    align-items:center;
+    flex-direction:column !important;
+
+    justify-content:center !important;
+
+    align-items:center !important;
 
 
     background:#0e0e0c !important;
 
-    border:1px solid #f4c876;
+    border:1px solid #f4c876 !important;
 
-    border-radius:10px;
+    border-radius:10px !important;
 
-    cursor:pointer;
+    padding:0 !important;
 
-    z-index:99999;
+    margin:0 !important;
 
-    box-shadow:0 4px 12px rgba(0,0,0,.5);
+
+    z-index:99999 !important;
+
+}
+
+
+button.pf-menu-button span {
+
+    display:block !important;
+
+    width:30px !important;
+
+    height:4px !important;
+
+    margin:3px 0 !important;
+
+    background:#f4c876 !important;
+
+    border-radius:5px !important;
 
 }
 
 
 
-.pf-menu-button span {
-
-    width:30px;
-
-    height:4px;
-
-    margin:3px 0;
-
-    background:#f4c876;
-
-    border-radius:5px;
-
-}
-
-
-
-/* Animation hover */
-
-.pf-menu-button:hover {
-
-    transform:scale(1.08);
-
-    border-color:#d99b32;
-
-}
-
-
-
-/* ============================= */
-/* BOUTON THEME */
-/* ============================= */
-
-
-.theme-toggle {
-
-    position:fixed;
-
-    top:10px;
-
-    left:10px;
-
-
-    width:40px;
-
-    height:40px;
-
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-
-    border-radius:50%;
-
-
-    border:1px solid #6b4e2f;
-
-
-    background:#0e0e0c;
-
-
-    color:#f4c876;
-
-
-    font-size:18px;
-
-
-    cursor:pointer;
-
-
-    z-index:99999;
-
-
-    box-shadow:0 4px 12px rgba(0,0,0,.5);
-
-
-    transition:.25s;
-
-}
-
-
-.theme-toggle:hover {
-
-    transform:scale(1.08);
-
-}
-
-
-
-/* ============================= */
-/* MENU MOBILE */
-/* ============================= */
-
-
-.pf-mobile-nav {
-
-    position:fixed;
-
-
-    top:0;
-
-    right:-100%;
-
-
-    width:85%;
-
-    max-width:350px;
-
-
-    height:100vh;
-
-
-    background:#111;
-
-
-    padding:80px 25px 30px;
-
-
-    box-sizing:border-box;
-
-
-    transition:.4s ease;
-
-
-    z-index:5000;
-
-
-    overflow-y:auto;
-
-
-    box-shadow:-8px 0 25px rgba(0,0,0,.6);
-
-}
-
-
-
-.pf-mobile-nav.active {
-
-    right:0;
-
-}
-
-
-
-/* ============================= */
-/* LIENS MENU */
-/* ============================= */
-
-
-.pf-nav-list {
-
-    list-style:none;
-
-    padding:0;
-
-    margin:0;
-
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-
-
-.pf-nav-list li {
-
-    width:100%;
-
-}
-
-
-
-.pf-nav-list a {
-
-
-    display:block;
-
-
-    width:100%;
-
-
-    padding:12px 10px;
-
-
-    color:#fff;
-
-
-    text-decoration:none;
-
-
-    font-size:20px;
-
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-
-}
-
-
-
-.pf-nav-list a:hover {
-
-    color:#f4c876;
-
-}
-
-
-
-/* ============================= */
-/* RESEAUX SOCIAUX */
-/* ============================= */
-
-
-.pf-mobile-social {
-
-    margin-top:40px;
-
-}
-
+/* ================================= */
+/* RESEAUX */
+/* ================================= */
 
 
 .pf-social-container {
 
+    display:grid !important;
 
-    display:grid;
+    grid-template-columns:repeat(2, 45px) !important;
 
+    justify-content:center !important;
 
-    grid-template-columns:repeat(2,45px);
+    align-items:center !important;
 
+    gap:20px !important;
 
-    justify-content:center;
-
-
-    gap:20px;
-
-
-}
-
-
-
-/* Boutons réseaux */
-
-
-.pf-social-container .social-icon {
-
-
-    width:45px;
-
-    height:45px;
-
-
-    display:flex;
-
-
-    align-items:center;
-
-    justify-content:center;
-
-
-    border-radius:50%;
-
-
-    background:#1b130b;
-
-
-    border:1px solid #6b4e2f;
-
-
-    color:#f4c876;
-
-
-    font-size:22px;
-
-
-    box-shadow:0 3px 8px rgba(0,0,0,.45);
-
-
-    transition:.25s;
-
+    width:100% !important;
 
 }
 
 
 
-.pf-social-container .social-icon:hover {
+.pf-social-container a.social-icon {
+
+    width:45px !important;
+
+    height:45px !important;
+
+    display:flex !important;
+
+    justify-content:center !important;
+
+    align-items:center !important;
 
 
-    transform:scale(1.1);
+    margin:0 !important;
+
+    padding:0 !important;
 
 
-    border-color:#f4c876;
+    border-radius:50% !important;
 
+
+    background:#1b130b !important;
+
+    border:1px solid #6b4e2f !important;
+
+
+    font-size:22px !important;
+
+
+    box-sizing:border-box !important;
 
 }
 
 
+/* tablette */
 
-/* ============================= */
-/* TABLETTE */
-/* ============================= */
-
-
-@media (min-width:768px){
-
+@media(min-width:768px){
 
     .pf-social-container {
 
-        grid-template-columns:repeat(4,45px);
+        grid-template-columns:repeat(4,45px) !important;
 
     }
 
 }
-
-
-
