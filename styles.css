@@ -1281,10 +1281,10 @@ body,
 
 .theme-toggle {
     position: fixed;
-    top: 12px;
+    top: 2px;
     right: 60px;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     padding: 0;
     border-radius: 50%;
     border: 1px solid #6b4e2f;
