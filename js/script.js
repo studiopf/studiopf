@@ -1937,503 +1937,521 @@ function changelanguecollection() {
      let html = "";
 
     if (currentLanguage === "english") {
-        html = `<div class="maintenance-box">
-        <h1>Unique Pieces for Collection, Exhibition and Competitions 🏆</h1>
- 
+        html = `<div class="maintenance-box ajust">
+    <h1>🏆 Unique Pieces for Collection, Exhibition & Competitions</h1>
     <p>
-    Studio PF creates <strong>high-end figurine paintings</strong> for collectors, enthusiasts and lovers of beautiful pieces who want to transform their models into true exhibition pieces.
+        Studio PF creates <strong>high-end figurines</strong> for collectors, enthusiasts and competitors who want to transform their models into true exhibition pieces.
     </p>
     <p>
-    Each project benefits from a fully personalized approach, tailored to the sculpture, the figurine's universe and the desired goal: collection, display case or competition.
+        Each project is fully customized according to the sculpture, its universe and its purpose: enriching a collection, being displayed in a showcase or participating in a painting competition.
     </p>
     <p>
-    This service is intended for models requiring a superior level of finish, with in-depth artistic work that can represent <strong>several dozen hours of work</strong> depending on the complexity of the piece.
+        These creations benefit from in-depth artistic work that can represent <strong>dozens or even hundreds of hours of painting</strong>, using advanced techniques, meticulous attention to every detail, and a constant pursuit of the best possible result.
     </p>
-<p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
-Present my project 💬
-</a>
-</p>
-  </div>
-    <div class="maintenance-box">
-        <h2>⚔️ Gaming Figurines</h2>
-        <p>
-        Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-        Dungeons & Dragons, The Lord of the Rings, Star Wars Legion,
-        StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-        as well as many other fantasy and science-fiction universes.
-        </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/collection1.jpg" alt="Painted collectible figurine">
+        <img src="img/collection2.jpg" alt="Painted exhibition piece">
+        <img src="img/collection3.jpg" alt="Painted competition figurine">
     </div>
-    <div class="maintenance-box">
-        <h2>🗿 Busts and Collectible Pieces</h2>
-        <p>
-        Busts, miniature statues, resin figurines and pieces intended for exhibition or painting competitions.
-        </p>
-        <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
-Present my project 💬
-</a>
+    <p style="text-align:center;">
+        <em>📸 Examples of collection, exhibition and competition pieces created by Studio PF.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
+            Present my project 💬
+        </a>
+    </p>
+</div>
+
+<div class="maintenance-box ajust">
+    <h2>🏞️ Dioramas & Exhibition Scenes</h2>
+    <p>
+        Studio PF creates <strong>custom dioramas</strong> that stage one or more figurines in a setting entirely designed to tell a story.
+    </p>
+    <p>
+        Battlefields, ancient ruins, dungeons, snowy landscapes, forests, futuristic cities or post-apocalyptic environments: each project is designed to create a truly living and immersive scene.
+    </p>
+    <p>
+        Intended for collectors, exhibition or competitions, the dioramas combine painting, composition, scenery, textures, vegetation, special effects and staging to transform a simple figurine into a unique work of art.
+    </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/diorama1.jpg" alt="Figurine diorama">
+        <img src="img/diorama2.jpg" alt="Exhibition scene on diorama">
+        <img src="img/diorama3.jpg" alt="Diorama painted by Studio PF">
     </div>
-    <div class="maintenance-box">
-        <h2>🖨️ 3D Printed Figurines</h2>
-        <p>
-        Models can come from independent artisans, 3D creators or platforms like Etsy, MyMiniFactory or other specialized printers.
-        </p>
-        <p>
-        The client provides the figurine or purchases it directly from the creator or printer of their choice.
-        </p>
-        <h3>Important Information</h3>
-        <p>
-        <strong>Studio PF does not perform 3D printing of the models for this service.</strong><br>
-        The service concerns exclusively the preparation and artistic painting of the piece.
-        </p>
-        <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
-Present my project 💬
-</a>
+    <p style="text-align:center;">
+        <em>📸 Examples of dioramas and exhibition scenes created by Studio PF.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Diorama%20Project%20Studio%20PF" class="button">
+            Present my project 💬
+        </a>
+    </p>
+</div>
+
+<div class="maintenance-box ajust">
+    <h2>🗿 Busts & Collectible Pieces</h2>
+    <p>
+        Studio PF paints <strong>busts, miniature statues and collectible pieces</strong> intended to be displayed in a showcase or to enrich a personal collection.
+    </p>
+    <p>
+        Each project is approached in a fully personalized way to highlight the sculpture, volumes, textures and character expression. Skin tones, metals, leather, fabrics, weathering or ambient effects: every detail is worked on to bring the piece to life.
+    </p>
+    <p>
+        These creations are aimed at both collectors and enthusiasts who want a unique piece, whether it is a historical, fantasy, science-fiction bust or an original creation.
+    </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/buste1.jpg" alt="Painted historical bust">
+        <img src="img/buste2.jpg" alt="Painted fantasy bust">
+        <img src="img/buste3.jpg" alt="Painted collectible bust">
     </div>
-<div class="maintenance-box">
-<h2>Artistic Preparation 🛠️</h2>
-<ul>
-<li>
-Thorough cleaning and preparation of the model
-</li>
-<li>
-Assembly and adjustments of the various parts
-</li>
-<li>
-Correction of any preparation defects
-</li>
-<li>
-Primer suited to the artistic project
-</li>
-</ul>
+    <p style="text-align:center;">
+        <em>📸 Examples of busts and collectible pieces created by Studio PF.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
+            Present my project 💬
+        </a>
+    </p>
 </div>
-<div class="maintenance-box">
-<h2>Collection Painting 🎨</h2>
-<ul>
-<li>
-<strong>✨ Volume Work :</strong><br>
-Fine gradients, smooth transitions, precise highlighting and deep color nuances to reveal all the richness of the sculpture.
-</li>
-<li>
-<strong>🎭 Artistic Research :</strong><br>
-Work on contrasts, color harmonies, focal points and overall atmosphere to create a visually powerful piece.
-</li>
-<li>
-<strong>🧪 Texture Play :</strong><br>
-Creation of realistic or stylized painted textures: leather, metal, skin, fabrics, wood, stone, worn surfaces and complex materials.
-</li>
-<li>
-<strong>💡 Advanced Techniques :</strong><br>
-Glazes, oils, pigments, lighting effects, weathering, fine details and techniques adapted to collection and competition pieces.
-</li>
-</ul>
+
+<div class="maintenance-box ajust">
+    <h2>🎬 Manga, Movies, Series & Video Games</h2>
+    <p>
+        Do you own a figurine inspired by your favorite universe?  
+        Studio PF paints pieces from <strong>mangas, movies, series, video games and pop culture licenses</strong>, whether iconic characters or original creations.
+    </p>
+    <p>
+        Dragon Ball, One Piece, Naruto, Demon Slayer, Star Wars, Marvel, DC Comics, The Lord of the Rings, The Witcher, Elden Ring, Zelda, WarCraft... All licenses are welcome.
+    </p>
+    <p>
+        Most of these models come from independent 3D creators or are available on specialized platforms such as Etsy, MyMiniFactory or other stores dedicated to collectors.
+    </p>
+    <h3>Important information</h3>
+    <p>
+        <strong>Studio PF does not supply the figurines and does not perform 3D printing as part of this service.</strong><br>
+        The client provides the piece or acquires it directly from the creator or seller of their choice. Studio PF’s work then consists of preparing, painting and enhancing the figurine with a high-end finish.
+    </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Painted manga figurine">
+        <img src="img/pop2.jpg" alt="Painted series figurine">
+        <img src="img/pop3.jpg" alt="Painted video game figurine">
+    </div>
+    <p style="text-align:center;">
+        <em>📸 Some examples of pop culture inspired creations.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
+            Present my project 💬
+        </a>
+    </p>
 </div>
-<div class="maintenance-box">
-<h2>Basing & Staging 🌿</h2>
-<ul>
-<li>
-<strong>🌱 Custom Base :</strong><br>
-Creation of a coherent atmosphere with the story, the character and the universe of the figurine.
-</li>
-<li>
-<strong>🏆 Exhibition Presentation :</strong><br>
-Work on the base and overall composition to enhance the visual impact of the piece.
-</li>
-</ul>
+
+<div class="maintenance-box ajust">
+    <h2>🎨 An Artistic Approach to Painting</h2>
+    <p>
+        <strong>✨ Volume work:</strong><br>
+        Each piece is painted with subtle gradients, natural transitions and precise highlighting to reveal all the richness of the sculpture and enhance its readability from every angle.
+    </p>
+    <p>
+        <strong>🎭 Artistic direction:</strong><br>
+        Colors, contrasts and lighting effects are considered as a whole to create a harmonious composition. The goal is to guide the viewer’s eye and give the figurine a true visual identity.
+    </p>
+    <p>
+        <strong>🧪 Materials & textures:</strong><br>
+        Metal, leather, fabrics, skin, wood, stone, rust or fantasy materials: each texture is worked individually to reinforce the realism or the desired style of the piece.
+    </p>
+    <p>
+        <strong>💡 Advanced techniques:</strong><br>
+        Depending on the project’s needs, Studio PF uses glazes, oil paints, pigments, lighting effects (OSL), weathering, blends, very fine details and many professional techniques to achieve a result worthy of an exhibition or competition piece.
+    </p>
 </div>
+
 <div class="maintenance-box">
-<h2>A Unique Piece ✨</h2>
-<table class="tableborder1">
-<thead>
-<tr>
-<th>🎨 Characteristics</th>
-<th>Collection</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Destination</td>
-<td>Collection, exhibition, display case or competition</td>
-</tr>
-<tr>
-<td>Finish Level</td>
-<td>Very high finish with in-depth artistic work</td>
-</tr>
-<tr>
-<td>Painting</td>
-<td>Fine gradients, complex nuances, textures and advanced effects</td>
-</tr>
-<tr>
-<td>Production Time</td>
-<td>Project that can represent several dozen hours of work</td>
-</tr>
-<tr>
-<td>Approach</td>
-<td>Each piece is unique and studied individually</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="maintenance-box">
-<h2>📩 Present Your Project</h2>
-<p>
-For a collectible piece, each project is studied individually in order to offer an approach tailored to your figurine and your expectations.
-</p>
-<p>
-To prepare your request, please send me:
-</p>
-<ul>
-<li>
-Photos or link to the figurine
-</li>
-<li>
-Model dimensions (scale, height, base...)
-</li>
-<li>
-Desired universe or theme
-</li>
-<li>
-References or inspirations
-</li>
-<li>
-Your expectations regarding the finish level
-</li>
-</ul>
-<p>
-I will reply with a personalized proposal for your project.
-</p>
-<p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
-Present my project 💬
-</a>
-</p>
+    <h2>A Unique Piece ✨</h2>
+    <table class="tableborder1">
+    <thead>
+    <tr>
+    <th>🎨 Characteristics</th>
+    <th>Collection</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Purpose</td>
+    <td>Collection<br>exhibition<br>showcase or competition</td>
+    </tr>
+    <tr>
+    <td>Finish level</td>
+    <td>Very high finish with in-depth artistic work</td>
+    </tr>
+    <tr>
+    <td>Painting</td>
+    <td>Fine gradients<br>complex shades<br>textures<br>advanced effects</td>
+    </tr>
+    <tr>
+    <td>Production time</td>
+    <td>Project that can represent dozens of hours of work</td>
+    </tr>
+    <tr>
+    <td>Approach</td>
+    <td>Each piece is unique<br>studied individually</td>
+    </tr>
+    </tbody>
+    </table>
 </div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<div class="maintenance-box">
-        <h1>Piezas únicas para colección, exposición y concursos 🏆</h1>
- 
+        html = `<div class="maintenance-box ajust">
+    <h1>🏆 Piezas únicas para Colección, Exposición y Concursos</h1>
     <p>
-    Studio PF realiza <strong>pinturas de figurines de alta gama</strong> destinadas a coleccionistas, apasionados y aficionados a las piezas bellas que desean transformar sus modelos en verdaderas piezas de exposición.
+        Studio PF realiza <strong>figurillas de alta gama</strong> destinadas a coleccionistas, apasionados y competidores que desean transformar sus modelos en verdaderas obras de exposición.
     </p>
     <p>
-    Cada proyecto se beneficia de un enfoque completamente personalizado, adaptado a la escultura, al universo de la figurine y al objetivo buscado: colección, vitrina o concurso.
+        Cada proyecto se personaliza completamente según la escultura, su universo y su objetivo: enriquecer una colección, ser expuesta en vitrina o participar en un concurso de pintura.
     </p>
     <p>
-    Este servicio se dirige a modelos que requieren un nivel de acabado superior, con un trabajo artístico profundo que puede representar <strong>decenas de horas de realización</strong> según la complejidad de la pieza.
+        Estas realizaciones cuentan con un trabajo artístico profundo que puede representar <strong>decenas, incluso cientos de horas de pintura</strong>, con técnicas avanzadas, atención a los mínimos detalles y una búsqueda constante del mejor resultado posible.
     </p>
-<p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
-Presentar mi proyecto 💬
-</a>
-</p>
-  </div>
-    <div class="maintenance-box">
-        <h2>⚔️ Figurines de juegos</h2>
-        <p>
-        Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-        Dungeons & Dragons, El Señor de los Anillos, Star Wars Legion,
-        StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-        así como muchos otros universos fantásticos y de ciencia ficción.
-        </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/collection1.jpg" alt="Figurilla de colección pintada">
+        <img src="img/collection2.jpg" alt="Pieza de exposición pintada">
+        <img src="img/collection3.jpg" alt="Figurilla de concurso pintada">
     </div>
-    <div class="maintenance-box">
-        <h2>🗿 Bustos y piezas de colección</h2>
-        <p>
-        Bustos, estatuas en miniatura, figurines de resina y piezas destinadas a la exposición o a concursos de pintura.
-        </p>
-        <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
-Presentar mi proyecto 💬
-</a>
+    <p style="text-align:center;">
+        <em>📸 Ejemplos de piezas de colección, exposición y concurso realizadas por Studio PF.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
+            Presentar mi proyecto 💬
+        </a>
+    </p>
+</div>
+
+<div class="maintenance-box ajust">
+    <h2>🏞️ Dioramas y Escenas de Exposición</h2>
+    <p>
+        Studio PF realiza <strong>dioramas a medida</strong> que escenifican una o varias figurillas en un decorado completamente diseñado para contar una historia.
+    </p>
+    <p>
+        Campos de batalla, ruinas antiguas, mazmorras, paisajes nevados, bosques, ciudades futuristas o entornos post-apocalípticos: cada proyecto está concebido para crear una escena viva e inmersiva.
+    </p>
+    <p>
+        Destinados a coleccionistas, exposición o concursos, los dioramas combinan pintura, composición, decorados, texturas, vegetación, efectos especiales y puesta en escena para transformar una simple figurilla en una obra única.
+    </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/diorama1.jpg" alt="Diorama de figurillas">
+        <img src="img/diorama2.jpg" alt="Escena de exposición en diorama">
+        <img src="img/diorama3.jpg" alt="Diorama pintado por Studio PF">
     </div>
-    <div class="maintenance-box">
-        <h2>🖨️ Figurines impresas en 3D</h2>
-        <p>
-        Los modelos pueden provenir de artesanos independientes, creadores 3D o plataformas como Etsy, MyMiniFactory u otros impresores especializados.
-        </p>
-        <p>
-        El cliente proporciona la figurine o la compra directamente al creador o al impresor de su elección.
-        </p>
-        <h3>Información importante</h3>
-        <p>
-        <strong>Studio PF no realiza la impresión 3D de los modelos para este servicio.</strong><br>
-        El servicio se refiere exclusivamente a la preparación y pintura artística de la pieza.
-        </p>
-        <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
-Presentar mi proyecto 💬
-</a>
+    <p style="text-align:center;">
+        <em>📸 Ejemplos de dioramas y escenas de exposición realizados por Studio PF.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20diorama%20Studio%20PF" class="button">
+            Presentar mi proyecto 💬
+        </a>
+    </p>
+</div>
+
+<div class="maintenance-box ajust">
+    <h2>🗿 Bustos y Piezas de Colección</h2>
+    <p>
+        Studio PF realiza la pintura de <strong>bustos, estatuas en miniatura y piezas de colección</strong> destinadas a ser expuestas en vitrina o enriquecer una colección personal.
+    </p>
+    <p>
+        Cada proyecto se aborda de forma completamente personalizada para realzar la escultura, los volúmenes, las texturas y la expresión del personaje. Encarnado, metales, cuero, telas, envejecimiento o efectos de ambiente: cada detalle se trabaja para dar vida a la pieza.
+    </p>
+    <p>
+        Estas realizaciones se dirigen tanto a coleccionistas como a apasionados que desean disponer de una pieza única, ya sea un busto histórico, de fantasía, ciencia ficción o una creación original.
+    </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/buste1.jpg" alt="Busto histórico pintado">
+        <img src="img/buste2.jpg" alt="Busto de fantasía pintado">
+        <img src="img/buste3.jpg" alt="Busto de colección pintado">
     </div>
-<div class="maintenance-box">
-<h2>Preparación artística 🛠️</h2>
-<ul>
-<li>
-Limpieza y preparación minuciosa del modelo
-</li>
-<li>
-Ensamblaje y ajustes de las diferentes piezas
-</li>
-<li>
-Corrección de posibles defectos de preparación
-</li>
-<li>
-Imprimación adaptada al proyecto artístico
-</li>
-</ul>
+    <p style="text-align:center;">
+        <em>📸 Ejemplos de bustos y piezas de colección realizados por Studio PF.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
+            Presentar mi proyecto 💬
+        </a>
+    </p>
 </div>
-<div class="maintenance-box">
-<h2>Pintura de colección 🎨</h2>
-<ul>
-<li>
-<strong>✨ Trabajo de volúmenes :</strong><br>
-Degradados finos, transiciones suaves, iluminaciones precisas y matices de colores profundos para revelar toda la riqueza de la escultura.
-</li>
-<li>
-<strong>🎭 Búsqueda artística :</strong><br>
-Trabajo de contrastes, armonías de color, puntos focales y ambiente general para crear una pieza visualmente impactante.
-</li>
-<li>
-<strong>🧪 Juego de texturas :</strong><br>
-Creación de texturas pintadas realistas o estilizadas: cuero, metal, piel, tejidos, madera, piedra, superficies desgastadas y materiales complejos.
-</li>
-<li>
-<strong>💡 Técnicas avanzadas :</strong><br>
-Glaseados, óleos, pigmentos, efectos de luz, weathering, detalles finos y técnicas adaptadas a piezas de colección y concursos.
-</li>
-</ul>
+
+<div class="maintenance-box ajust">
+    <h2>🎬 Manga, Películas, Series y Videojuegos</h2>
+    <p>
+        ¿Posees una figurilla inspirada en tu universo favorito?  
+        Studio PF realiza la pintura de piezas provenientes de <strong>mangas, películas, series, videojuegos y licencias de pop culture</strong>, ya sean personajes icónicos o creaciones originales.
+    </p>
+    <p>
+        Dragon Ball, One Piece, Naruto, Demon Slayer, Star Wars, Marvel, DC Comics, El Señor de los Anillos, The Witcher, Elden Ring, Zelda, WarCraft... Todas las licencias son bienvenidas.
+    </p>
+    <p>
+        La mayoría de estos modelos provienen de creadores 3D independientes o están disponibles en plataformas especializadas como Etsy, MyMiniFactory u otras tiendas dedicadas a coleccionistas.
+    </p>
+    <h3>Información importante</h3>
+    <p>
+        <strong>Studio PF no suministra las figurillas ni realiza su impresión 3D en el marco de este servicio.</strong><br>
+        El cliente proporciona la pieza o la adquiere directamente del creador o vendedor de su elección. El trabajo de Studio PF consiste luego en preparar, pintar y realzar la figurilla con un acabado de alta gama.
+    </p>
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Figurilla manga pintada">
+        <img src="img/pop2.jpg" alt="Figurilla de serie pintada">
+        <img src="img/pop3.jpg" alt="Figurilla de videojuego pintada">
+    </div>
+    <p style="text-align:center;">
+        <em>📸 Algunos ejemplos de realizaciones inspiradas en la pop culture.</em>
+    </p>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
+            Presentar mi proyecto 💬
+        </a>
+    </p>
 </div>
-<div class="maintenance-box">
-<h2>Socle y puesta en escena 🌿</h2>
-<ul>
-<li>
-<strong>🌱 Socle personalizado :</strong><br>
-Creación de una ambientación coherente con la historia, el personaje y el universo de la figurine.
-</li>
-<li>
-<strong>🏆 Presentación de exposición :</strong><br>
-Trabajo del socle y de la composición general para reforzar el impacto visual de la pieza.
-</li>
-</ul>
+
+<div class="maintenance-box ajust">
+    <h2>🎨 Un enfoque artístico de la pintura</h2>
+    <p>
+        <strong>✨ Trabajo de volúmenes:</strong><br>
+        Cada pieza se pinta buscando degradados sutiles, transiciones naturales y aclarados precisos para revelar toda la riqueza de la escultura y acentuar su legibilidad desde todos los ángulos.
+    </p>
+    <p>
+        <strong>🎭 Dirección artística:</strong><br>
+        Los colores, contrastes y efectos de luz se piensan en su conjunto para crear una composición armoniosa. El objetivo es guiar la mirada y dar a la figurilla una verdadera identidad visual.
+    </p>
+    <p>
+        <strong>🧪 Materias y texturas:</strong><br>
+        Metal, cuero, telas, piel, madera, piedra, óxido o materiales fantásticos: cada textura se trabaja individualmente para reforzar el realismo o el estilo buscado en la pieza.
+    </p>
+    <p>
+        <strong>💡 Técnicas avanzadas:</strong><br>
+        Según las necesidades del proyecto, Studio PF utiliza veladuras, pinturas al óleo, pigmentos, efectos de luz (OSL), weathering, fundidos, detalles muy finos y numerosas técnicas profesionales para obtener un resultado digno de una pieza de exposición o concurso.
+    </p>
 </div>
+
 <div class="maintenance-box">
-<h2>Una pieza única ✨</h2>
-<table class="tableborder1">
-<thead>
-<tr>
-<th>🎨 Características</th>
-<th>Colección</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Destino</td>
-<td>Colección, exposición, vitrina o concurso</td>
-</tr>
-<tr>
-<td>Nivel de acabado</td>
-<td>Muy alto acabado con trabajo artístico profundo</td>
-</tr>
-<tr>
-<td>Pintura</td>
-<td>Degradados finos, matices complejos, texturas y efectos avanzados</td>
-</tr>
-<tr>
-<td>Tiempo de realización</td>
-<td>Proyecto que puede representar decenas de horas de trabajo</td>
-</tr>
-<tr>
-<td>Enfoque</td>
-<td>Cada pieza es única y estudiada individualmente</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="maintenance-box">
-<h2>📩 Presentar su proyecto</h2>
-<p>
-Para una pieza de colección, cada proyecto se estudia individualmente con el fin de proponer un enfoque adaptado a su figurine y a sus expectativas.
-</p>
-<p>
-Para preparar su solicitud, envíeme:
-</p>
-<ul>
-<li>
-Fotos o enlace hacia la figurine
-</li>
-<li>
-Dimensiones del modelo (escala, altura, socle...)
-</li>
-<li>
-Universo o tema deseado
-</li>
-<li>
-Referencias o inspiraciones
-</li>
-<li>
-Sus expectativas respecto al nivel de acabado
-</li>
-</ul>
-<p>
-Le responderé con una propuesta personalizada para su proyecto.
-</p>
-<p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
-Presentar mi proyecto 💬
-</a>
-</p>
+    <h2>Una pieza única ✨</h2>
+    <table class="tableborder1">
+    <thead>
+    <tr>
+    <th>🎨 Características</th>
+    <th>Colección</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Destino</td>
+    <td>Colección<br>exposición<br>vitrina o concurso</td>
+    </tr>
+    <tr>
+    <td>Nivel de acabado</td>
+    <td>Muy alto acabado con trabajo artístico profundo</td>
+    </tr>
+    <tr>
+    <td>Pintura</td>
+    <td>Degradados finos<br>matices complejos<br>texturas<br>efectos avanzados</td>
+    </tr>
+    <tr>
+    <td>Tiempo de realización</td>
+    <td>Proyecto que puede representar decenas de horas de trabajo</td>
+    </tr>
+    <tr>
+    <td>Enfoque</td>
+    <td>Cada pieza es única<br>estudiada individualmente</td>
+    </tr>
+    </tbody>
+    </table>
 </div>`;
     } else {
-        html = `<div class="maintenance-box">
+        html = `<div class="maintenance-box ajust">
 
-
-        <h1>Pièces uniques pour collection, exposition et concours 🏆</h1>
-  
-
+    <h1>🏆 Pièces uniques pour Collection, Exposition & Concours</h1>
 
     <p>
-    Studio PF réalise des <strong>peintures de figurines haut de gamme</strong> destinées aux collectionneurs, passionnés et amateurs de belles pièces souhaitant transformer leurs modèles en véritables pièces d'exposition.
+        Studio PF réalise des <strong>figurines haut de gamme</strong> destinées aux collectionneurs, passionnés et compétiteurs souhaitant transformer leurs modèles en véritables œuvres d'exposition.
     </p>
 
     <p>
-    Chaque projet bénéficie d'une approche entièrement personnalisée, adaptée à la sculpture, à l'univers de la figurine et à l'objectif recherché : collection, vitrine ou concours.
+        Chaque projet est entièrement personnalisé en fonction de la sculpture, de son univers et de son objectif : enrichir une collection, être exposé en vitrine ou participer à un concours de peinture.
     </p>
 
     <p>
-    Cette prestation s'adresse aux modèles nécessitant un niveau de finition supérieur, avec un travail artistique approfondi pouvant représenter <strong>plusieurs dizaines d'heures de réalisation</strong> selon la complexité de la pièce.
+        Ces réalisations bénéficient d'un travail artistique approfondi pouvant représenter <strong>plusieurs dizaines, voire plusieurs centaines d'heures de peinture</strong>, avec des techniques avancées, une attention portée aux moindres détails et une recherche permanente du meilleur rendu possible.
     </p>
-<p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
-Présenter mon projet 💬
-</a>
-</p>
-  </div>
-    <div class="maintenance-box">
-        <h2>⚔️ Figurines de jeux</h2>
-        <p>
-        Warhammer 40K, Age of Sigmar, Warhammer The Old World,
-        Donjons & Dragons, Le Seigneur des Anneaux, Star Wars Legion,
-        StarCraft, Marvel Crisis Protocol, Infinity, Conquest,
-        ainsi que de nombreux autres univers fantastiques et science-fiction.
-        </p>
+
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/collection1.jpg" alt="Figurine de collection peinte">
+        <img src="img/collection2.jpg" alt="Pièce d'exposition peinte">
+        <img src="img/collection3.jpg" alt="Figurine de concours peinte">
     </div>
 
+    <p style="text-align:center;">
+        <em>📸 Exemples de pièces de collection, d'exposition et de concours réalisées par Studio PF.</em>
+    </p>
 
-    <div class="maintenance-box">
-        <h2>🗿 Bustes et pièces de collection</h2>
-        <p>
-        Bustes, statues miniatures, figurines résine et pièces destinées à l'exposition ou aux concours de peinture.
-        </p>
-        <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
-Présenter mon projet 💬
-</a>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
+            Présenter mon projet 💬
+        </a>
+    </p>
+
+</div>
+  <div class="maintenance-box ajust">
+
+    <h2>🏞️ Dioramas & Scènes d'exposition</h2>
+
+    <p>
+        Studio PF réalise des <strong>dioramas sur mesure</strong> mettant en scène une ou plusieurs figurines dans un décor entièrement pensé pour raconter une histoire.
+    </p>
+
+    <p>
+        Champs de bataille, ruines antiques, donjons, paysages enneigés, forêts, cités futuristes ou environnements post-apocalyptiques : chaque projet est conçu pour créer une véritable scène vivante et immersive.
+    </p>
+
+    <p>
+        Destinés aux collectionneurs, à l'exposition ou aux concours, les dioramas associent peinture, composition, décors, textures, végétation, effets spéciaux et mise en scène afin de transformer une simple figurine en une œuvre unique.
+    </p>
+
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/diorama1.jpg" alt="Diorama de figurines">
+        <img src="img/diorama2.jpg" alt="Scène d'exposition sur diorama">
+        <img src="img/diorama3.jpg" alt="Diorama peint par Studio PF">
     </div>
 
+    <p style="text-align:center;">
+        <em>📸 Exemples de dioramas et scènes d'exposition réalisés par Studio PF.</em>
+    </p>
 
-    <div class="maintenance-box">
-        <h2>🖨️ Figurines imprimées en 3D</h2>
-        <p>
-        Les modèles peuvent provenir d'artisans indépendants, de créateurs 3D ou de plateformes comme Etsy, MyMiniFactory ou d'autres imprimeurs spécialisés.
-        </p>
-
-        <p>
-        Le client fournit la figurine ou l'achète directement auprès du créateur ou de l'imprimeur de son choix.
-        </p>
-
-        <h3>Informations importantes</h3>
-        <p>
-        <strong>Studio PF ne réalise pas l'impression 3D des modèles pour cette prestation.</strong><br>
-        Le service concerne exclusivement la préparation et la peinture artistique de la pièce.
-        </p>
-        <p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
-Présenter mon projet 💬
-</a>
-    </div>
-
-
-<div class="maintenance-box">
-
-<h2>Préparation artistique 🛠️</h2>
-
-<ul>
-
-<li>
-Nettoyage et préparation minutieuse du modèle
-</li>
-
-<li>
-Assemblage et ajustements des différentes pièces
-</li>
-
-<li>
-Correction des éventuels défauts de préparation
-</li>
-
-<li>
-Sous-couche adaptée au projet artistique
-</li>
-
-</ul>
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20de%20diorama%20Studio%20PF" class="button">
+            Présenter mon projet 💬
+        </a>
+    </p>
 
 </div>
 
 
-<div class="maintenance-box">
+    <div class="maintenance-box ajust">
 
-<h2>Peinture de collection 🎨</h2>
+    <h2>🗿 Bustes & Pièces de Collection</h2>
 
-<ul>
+    <p>
+        Studio PF réalise la peinture de <strong>bustes, statues miniatures et pièces de collection</strong> destinés à être exposés en vitrine ou à enrichir une collection personnelle.
+    </p>
 
-<li>
-<strong>✨ Travail des volumes :</strong><br>
-Dégradés fins, transitions douces, éclaircissements précis et nuances de couleurs approfondies afin de révéler toute la richesse de la sculpture.
-</li>
+    <p>
+        Chaque projet fait l'objet d'une approche entièrement personnalisée afin de mettre en valeur la sculpture, les volumes, les textures et l'expression du personnage. Carnation, métaux, cuir, tissus, vieillissement ou effets d'ambiance : chaque détail est travaillé pour donner vie à la pièce.
+    </p>
+
+    <p>
+        Ces réalisations s'adressent aussi bien aux collectionneurs qu'aux passionnés souhaitant disposer d'une pièce unique, qu'il s'agisse d'un buste historique, fantasy, science-fiction ou d'une création originale.
+    </p>
+
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/buste1.jpg" alt="Buste historique peint">
+        <img src="img/buste2.jpg" alt="Buste fantasy peint">
+        <img src="img/buste3.jpg" alt="Buste de collection peint">
+    </div>
+
+    <p style="text-align:center;">
+        <em>📸 Exemples de bustes et pièces de collection réalisés par Studio PF.</em>
+    </p>
+
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
+            Présenter mon projet 💬
+        </a>
+    </p>
+
+</div>
 
 
-<li>
-<strong>🎭 Recherche artistique :</strong><br>
-Travail des contrastes, harmonies colorées, points focaux et ambiance générale pour créer une pièce forte visuellement.
-</li>
+    <div class="maintenance-box ajust">
+
+    <h2>🎬 Manga, Films, Séries & Jeux vidéo</h2>
+
+    <p>
+        Vous possédez une figurine inspirée de votre univers préféré ?
+        Studio PF réalise la peinture de pièces issues de <strong>mangas, films, séries, jeux vidéo et licences de pop culture</strong>, qu'il s'agisse de personnages iconiques ou de créations originales.
+    </p>
+
+    <p>
+        Dragon Ball, One Piece, Naruto, Demon Slayer, Star Wars, Marvel, DC Comics, Le Seigneur des Anneaux, The Witcher, Elden Ring, Zelda, WarCraft... Toutes les licences sont les bienvenues.
+    </p>
+
+    <p>
+        La plupart de ces modèles proviennent de créateurs 3D indépendants ou sont disponibles auprès de plateformes spécialisées telles que Etsy, MyMiniFactory ou d'autres boutiques dédiées aux collectionneurs.
+    </p>
+
+    <h3>Informations importantes</h3>
+
+    <p>
+        <strong>Studio PF ne fournit pas les figurines et ne réalise pas leur impression 3D dans le cadre de cette prestation.</strong><br>
+        Le client fournit la pièce ou l'acquiert directement auprès du créateur ou du vendeur de son choix. Le travail de Studio PF consiste ensuite à préparer, peindre et mettre en valeur la figurine avec une finition haut de gamme.
+    </p>
+
+    <!-- Illustrations -->
+    <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Figurine manga peinte">
+        <img src="img/pop2.jpg" alt="Figurine de série peinte">
+        <img src="img/pop3.jpg" alt="Figurine de jeu vidéo peinte">
+    </div>
+
+    <p style="text-align:center;">
+        <em>📸 Quelques exemples de réalisations inspirées de la pop culture.</em>
+    </p>
+
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
+            Présenter mon projet 💬
+        </a>
+    </p>
+
+</div>
+
+      
 
 
-<li>
-<strong>🧪 Jeux de textures :</strong><br>
-Création de textures peintes réalistes ou stylisées : cuir, métal, peau, tissus, bois, pierre, surfaces usées et matières complexes.
-</li>
+<div class="maintenance-box ajust">
 
+    <h2>🎨 Une approche artistique de la peinture</h2>
 
-<li>
-<strong>💡 Techniques avancées :</strong><br>
-Glacis, huiles, pigments, effets de lumière, weathering, détails fins et techniques adaptées aux pièces de collection et de concours.
-</li>
+    <p>
+        <strong>✨ Travail des volumes :</strong><br>
+        Chaque pièce est peinte en recherchant des dégradés subtils, des transitions naturelles et des éclaircissements précis afin de révéler toute la richesse de la sculpture et d'accentuer sa lisibilité sous tous les angles.
+    </p>
 
-</ul>
+    <p>
+        <strong>🎭 Direction artistique :</strong><br>
+        Les couleurs, les contrastes et les effets de lumière sont pensés dans leur ensemble pour créer une composition harmonieuse. L'objectif est de guider le regard et de donner à la figurine une véritable identité visuelle.
+    </p>
+
+    <p>
+        <strong>🧪 Matières & textures :</strong><br>
+        Métal, cuir, tissus, peau, bois, pierre, rouille ou matériaux fantastiques : chaque texture est travaillée individuellement afin de renforcer le réalisme ou le style recherché par la pièce.
+    </p>
+
+    <p>
+        <strong>💡 Techniques avancées :</strong><br>
+        Selon les besoins du projet, Studio PF utilise des glacis, peintures à l'huile, pigments, effets de lumière (OSL), weathering, fondus, détails très fins et de nombreuses techniques professionnelles pour obtenir un résultat digne d'une pièce d'exposition ou de concours.
+    </p>
 
 </div>
 
 
-<div class="maintenance-box">
-
-<h2>Soclage & mise en scène 🌿</h2>
-
-<ul>
-
-<li>
-<strong>🌱 Socle personnalisé :</strong><br>
-Création d'une ambiance cohérente avec l'histoire, le personnage et l'univers de la figurine.
-</li>
-
-<li>
-<strong>🏆 Présentation exposition :</strong><br>
-Travail du socle et de la composition générale afin de renforcer l'impact visuel de la pièce.
-</li>
-
-</ul>
-
-</div>
 
 
 <div class="maintenance-box">
@@ -2453,7 +2471,7 @@ Travail du socle et de la composition générale afin de renforcer l'impact visu
 
 <tr>
 <td>Destination</td>
-<td>Collection, exposition, vitrine ou concours</td>
+<td>Collection<br>exposition<br>vitrine ou concours</td>
 </tr>
 
 <tr>
@@ -2463,7 +2481,7 @@ Travail du socle et de la composition générale afin de renforcer l'impact visu
 
 <tr>
 <td>Peinture</td>
-<td>Dégradés fins, nuances complexes, textures et effets avancés</td>
+<td>Dégradés fins<br> nuances complexes<br>textures<br>effets avancés</td>
 </tr>
 
 <tr>
@@ -2473,62 +2491,12 @@ Travail du socle et de la composition générale afin de renforcer l'impact visu
 
 <tr>
 <td>Approche</td>
-<td>Chaque pièce est unique et étudiée individuellement</td>
+<td>Chaque pièce est unique<br>étudiée individuellement</td>
 </tr>
 
 </tbody>
 
 </table>
-
-</div>
-
-
-<div class="maintenance-box">
-
-<h2>📩 Présenter votre projet</h2>
-
-<p>
-Pour une pièce de collection, chaque projet est étudié individuellement afin de proposer une approche adaptée à votre figurine et à vos attentes.
-</p>
-
-<p>
-Afin de préparer votre demande, envoyez-moi :
-</p>
-
-<ul>
-
-<li>
-Photos ou lien vers la figurine
-</li>
-
-<li>
-Dimensions du modèle (échelle, hauteur, socle...)
-</li>
-
-<li>
-Univers ou thème souhaité
-</li>
-
-<li>
-Références ou inspirations
-</li>
-
-<li>
-Vos attentes concernant le niveau de finition
-</li>
-
-</ul>
-
-<p>
-Je vous répondrai avec une proposition personnalisée pour votre projet.
-</p>
-
-
-<p>
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
-Présenter mon projet 💬
-</a>
-</p>
 
 </div>`;
      }
