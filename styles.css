@@ -1228,19 +1228,19 @@ nav ul li a:hover {
     }
 
     .cardlogo {
-        padding: 0 15px;
+        padding: 0 0px;
         margin-top: -10px;         /* rapproche un peu le texte du logo */
     }
 
    .button {
-        padding: 12px 24px;           /* un peu moins large */
+        padding: 12px 12px;           /* un peu moins large */
           font-size: 10px;
         min-height: 42px;             /* zone de clic confortable */
     }
 
     .button.full-width {
         width: 96%;
-        padding: 16px 20px;
+        padding: 10px 10px;
     }
 }
 
@@ -1296,7 +1296,7 @@ body,
     width:30px;
     height:30px;
 
-    padding:0;
+
 
     border-radius:50%;
 
@@ -1353,7 +1353,7 @@ body{
 .button{
 
     display:inline-block;
-    padding:12px 28px;
+    padding:10px 10px;
     margin:10px auto;
 
     font-family:'Segoe UI',system-ui,sans-serif;
@@ -1442,7 +1442,7 @@ body.light-mode .maintenance-box{
 body.light-mode .button{
 
     display:inline-block;
-    padding:12px 28px;
+    padding:10px 10px;
     margin:10px auto;
 
     font-family:'Segoe UI',system-ui,sans-serif;
@@ -1647,7 +1647,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-nav-list {
     list-style: none;
-    padding: 35px 20px 20px;
+ 
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -1660,7 +1660,7 @@ button.pf-menu-button {
 
 .pf-nav-list a {
     display: block;
-    padding: 16px 22px;
+   
     color: #f5f5f5;
     text-decoration: none;
     font-size: 19px;
@@ -1682,7 +1682,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-mobile-social {
     margin-top: 30px;
-    padding: 0 20px 40px;
+    
 }
 
 .pf-social-container {
