@@ -4759,30 +4759,12 @@ function initThemeToggle() {
     };
 
 }
-function initMenuMobile() {
-
-    const bouton = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu-contenu");
-    const fond = document.getElementById("menu-overlay");
+const pfButton = document.getElementById("pf-menu-button");
+const pfNav = document.getElementById("pf-mobile-nav");
 
 
-    console.log(bouton, menu, fond);
+pfButton.addEventListener("click", function(){
 
-
-    bouton.addEventListener("click", function() {
-
-        console.log("OUVERTURE MENU");
-
-        menu.classList.toggle("active");
-        fond.classList.toggle("active");
-
-    });
-
-}
-
-
-document.addEventListener("DOMContentLoaded", function() {
-
-    initMenuMobile();
+    pfNav.classList.toggle("active");
 
 });
