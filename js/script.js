@@ -4762,24 +4762,25 @@ function initThemeToggle() {
 const pfButton = document.getElementById("pf-menu-button");
 const pfNav = document.getElementById("pf-mobile-nav");
 
-
-// Ouvrir / fermer avec le bouton hamburger
-pfButton.addEventListener("click", function(){
-
+// Ouvrir / fermer le menu
+pfButton.addEventListener("click", function() {
+    pfButton.classList.toggle("active");   // ← Important pour l'animation
     pfNav.classList.toggle("active");
-
 });
-
 
 // Fermer le menu quand on clique sur un lien
 const pfLinks = document.querySelectorAll("#pf-mobile-nav a");
-
 pfLinks.forEach(link => {
-
-    link.addEventListener("click", function(){
-
+    link.addEventListener("click", function() {
+        pfButton.classList.remove("active");  // ← Aussi ici
         pfNav.classList.remove("active");
-
     });
+});
 
+// Optionnel : fermer le menu en cliquant en dehors
+document.addEventListener("click", function(e) {
+    if (!pfNav.contains(e.target) && !pfButton.contains(e.target)) {
+        pfButton.classList.remove("active");
+        pfNav.classList.remove("active");
+    }
 });
