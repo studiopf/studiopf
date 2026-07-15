@@ -159,6 +159,9 @@ function loadPage(page) {
             mainContainer.innerHTML = newContent.innerHTML;
 
             window.scrollTo(0, 0);
+            document.getElementById("contenu").innerHTML = data;
+
+initMenuMobile();
 
             applyLanguageAndInit();
 
@@ -4730,13 +4733,13 @@ function initMenuMobile() {
     const menuOverlay = document.getElementById("menu-overlay");
 
 
-    // Vérification si les éléments existent
+    // Vérifie que le menu existe sur la page
     if (!menuToggle || !menuMobile || !menuOverlay) {
         return;
     }
 
 
-    // Ouvrir / fermer le menu
+    // Ouverture / fermeture du menu avec l'icône ☰
     menuToggle.onclick = function () {
 
         menuMobile.classList.toggle("active");
@@ -4745,7 +4748,7 @@ function initMenuMobile() {
     };
 
 
-    // Fermer en cliquant sur l'overlay
+    // Fermeture en cliquant sur le fond sombre
     menuOverlay.onclick = function () {
 
         menuMobile.classList.remove("active");
@@ -4754,8 +4757,10 @@ function initMenuMobile() {
     };
 
 
-    // Fermer après clic sur un lien
-    document.querySelectorAll(".menu-mobile a").forEach(link => {
+    // Fermeture après clic sur un lien du menu
+    const menuLinks = menuMobile.querySelectorAll("a");
+
+    menuLinks.forEach(link => {
 
         link.onclick = function () {
 
