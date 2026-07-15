@@ -4717,20 +4717,49 @@ const select = document.getElementById('niveau');
 
 }
             
-function scrollTotal(offset=100) {
-              if (currentPage.includes("simulateur_devis")) {
-   document.getElementById('scrollTotal').style.display = 'block';}
-     document.getElementById('scrollTotal').style.display = 'none';
-  const totalElement = document.querySelector("h2.total");
-  if (totalElement) {
-    const elementTop = totalElement.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({
-      top: elementTop - offset,
-      behavior: "smooth"
-    });
-  }
-}
+// ==============================
+// Bouton "Voir Total"
+// ==============================
 
+// Masquer le bouton lorsqu'on clique sur un lien ou un bouton
+document.addEventListener("click", function (event) {
+
+    if (event.target.closest("a, button")) {
+
+        const scrollBtn = document.getElementById("scrollTotal");
+
+        if (scrollBtn) {
+            scrollBtn.style.display = "none";
+        }
+    }
+
+});
+
+function scrollTotal(offset = 100) {
+
+    // On masque le bouton
+    const scrollBtn = document.getElementById("scrollTotal");
+
+    if (scrollBtn) {
+        scrollBtn.style.display = "none";
+    }
+
+    // On cherche le titre "Total"
+    const totalElement = document.querySelector("h2.total");
+
+    if (totalElement) {
+
+        const elementTop =
+            totalElement.getBoundingClientRect().top + window.pageYOffset;
+
+        window.scrollTo({
+            top: elementTop - offset,
+            behavior: "smooth"
+        });
+
+    }
+
+}
 function initThemeToggle() {
 
     const themeToggle = document.getElementById("themeToggle");
