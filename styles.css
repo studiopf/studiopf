@@ -478,26 +478,17 @@ a:hover,
     padding: 20px 15px;
 }
 
-.footer,
-.footer p,
-.footer a,
-.footer .p-social,
-.p-social {
-    color: #1f1f1f;
-    font-size: 12px;
-    line-height: 1.7;
-    text-align: center;
-    margin: 0;
-}
+/* Bloc adresse */
+.footer-adresse {
+    background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
 
-.footer a {
-    color: #8B5E2E;
-    text-decoration: none;
-    transition: color .2s ease;
-}
-
-.footer a:hover {
-    color: #C98A1B;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.8),
+        0 3px 8px rgba(0,0,0,0.12);
 }
 /* ==========================================================================
    MENU – inchangé
