@@ -260,14 +260,14 @@ function changelangueforma() {
            html = ` 
             <div class="maintenance-box">
         <h1>🎨 Formation Peinture sur Figurines</h1>
-       <div class="center">
+       
     <p>Rejoignez <strong>Studio Peinture Figurine</strong> en cours personnalisés, pour débutant ou avancé !</p>
     <p>Venez découvrir le pinceau et l’aérographe, et créez des œuvres uniques.</p>
-    </div></div>
+    </div>
 
     <div class="maintenance-box">
       <h2>💡 Pourquoi Nous Choisir ?</h2>
-        <div class="center">
+        
       <ul>
         <li>🖌️ Cours adaptés à tous les niveaux</li>
         <li>🎯 Suivi personnalisé sur vos projets</li>
@@ -275,7 +275,7 @@ function changelangueforma() {
       </ul>
       <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
     </div>
-   </div>
+   
      <div>
          <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
     </div>
