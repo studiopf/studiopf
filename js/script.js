@@ -252,218 +252,264 @@ function changelangueforma() {
  currentLanguage = "spanish";
         changelangueindex();
     } else {
-        html = `     <div class="maintenance-box">
-        <h3>🎨 Formation Peinture sur Figurines</h3>
-    <p>Rejoignez <strong>Studio Peinture Figurine</strong> en cours personnalisés, pour débutant ou avancé !</p>
-    <p>Venez découvrir le pinceau et l’aérographe, et créez des œuvres uniques.</p>
-    </div>
+        html = `       <div class="center">
 
     <div class="maintenance-box">
-      <h3>💡 Pourquoi Nous Choisir ?</h3>
-      <ul>
-        <li>🖌️ Cours adaptés à tous les niveaux</li>
-        <li>🎯 Suivi personnalisé sur vos projets</li>
-        <li>🌟 Techniques avancées : freehand, OSL, NMM, weathering</li>
-      </ul>
-      <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
-    </div>
-     <div class="center">
-         <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
-    </div>
-    
-       <div class="maintenance-box">
-      <h3>🖍️ Forfaits de Cours</h3>
-      <div class="card">
-        <h3>🌱 Cours individuel Débutant ou Confirmé</h3>
-        <p>Au premier contact : 1ère heure offerte pour se présenter et découvrir la peinture !</p>
-        <p>Une pochette d’initiation sera remise.</p>
-      </div>
 
-        
-      <div class="card-container3">
-        <div class="card">
-          <h3>🕐 Cours 1h</h3>
-          <p>50€/h</p>
-          <p>Pour un suivi de projet régulier</p>
-          <p>Possibilité de placer l’heure en fin de journée, dans l’idéal début de matinée ou début après-midi.</p>
-        </div>
-        <div class="card">
-          <h3>⏳ Cours 3h</h3>
-          <p>150€</p>
-          <p>La solution conseillée pour démarrer la peinture ou un projet.</p>
-          <p>9h-12h, 14h-17h ou 16h-19h.</p>
-        </div>
-        <div class="card">
-          <h3>🔥 Cours 5h</h3>
-          <p>200€</p>
-          <p>Grosse session pour avancer ou démarrer sur un gros projet.</p>
-          <p>14h-19h</p>
-        </div>
-      </div>
+        <h1>🎨 Peinture professionnelle sur figurines</h1>
 
-    <p>Horaires à titre d'exemple.</p>
-     <div class="center">
-         <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
+        <p>
+            Bienvenue chez <strong>Studio PF</strong>, atelier spécialisé dans la
+            <strong>peinture professionnelle sur figurines</strong>.
+        </p>
+
+        <p>
+            Que vous soyez joueur, collectionneur ou peintre souhaitant progresser,
+            je vous accompagne avec des prestations adaptées à votre projet.
+        </p>
+
+        <p>
+            Découvrez mes trois services peinture :
+        </p>
+
+         <nav class="menu-mobile">
+            <ul class="menu">
+    <li>
+        <a href="peinturecommission.html"
+           onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">⚔️ Figurines d'Armées de jeu
+        </a>
+    </li>
+
+    <li>
+        <a href="peinturecollection.html" 
+           onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">🏆 Pièces de collection & concours
+        </a>
+    </li>
+
+    <li>
+        <a href="formation.html" 
+           onclick="loadPage('formation.html'); scrollToTop(); return false;">📚 Cours de peinture sur figurines
+        </a>
+    </li>
+</ul>
+         </nav>
+
     </div>
-    
-    
    </div>
-       <div class="maintenance-box">
-      <h3>📆 Stage en groupe</h3>
-<p>Plusieurs thèmes possibles : lumières, théorie des couleurs, buste, choix d’un thème d’armée...</p>
-    <div class="card-container2">
-        <div class="card">
-          <h3>📆 Stage 5h</h3>
-          <p>200€</p>
-           <p>9h-12h / 14h-16h</p>
-           <p>Repas inclus.</p>
-           <p>Une pochette et la figurune sera remise.</p>
-          
-        </div>
-        <div class="card">
-          <h3>📆 Stage 8h</h3>
-           <p>350€</p>
-            <p>9h-12h / 14h-19h</p>
-           <p>Repas inclus.</p>
-            <p>Une pochette et la figurune sera remise.</p>
-        </div>
-      </div>
-         <p>Horaires à titre d'exemple.</p>
-     
-   </div>
-       <div class="maintenance-box">
-        <h3>📆 Prestation événementielle</h3>
-        <p>Initiation au modélisme, premiers pas pour Warhammer (montage, peinture et jeu)...</p>
-        <p>Sur devis</p>
- <div class="card-container2">
-        <div class="card">
-          <h3>📆 1 journée</h3>
-            <p>(moyenne de 8h)</p>
-          <p>700€</p>
-           <p>9h-12h / 14h-19h</p>
-           <p>Comprend le trajet.</p>
-           <p>Fourniture peinture fourni.</p>
-         <p>Hors figurines.</p>
-         
-        </div>
-        <div class="card">
-           <h3>📆 2 journées</h3>
-          <p>(moyenne de 8h)</p>
-           <p>1900€</p>
-            <p>9h-12h / 14h-19h</p>
-             <p>Comprend le trajet.</p>
-           <p>Fourniture peinture fourni.</p>
-           <p>Hors figurines.</p>
-        </div>
-      </div>
 
-   <p>Horaires à titre d'exemple.</p>
-   </div>
-       <div class="maintenance-box">
-      <h3>🖌️🔫 Choisissez vos armes :</h3>
+
+    <div class="maintenance-box">
+
+      <h2>⚔️ Figurines d'Armées de jeu</h2>
+
+<p>
+    Vous souhaitez une armée agréable à jouer et visuellement homogène ?
+</p>
+
+<p>
+    Je réalise des peintures <strong>TableTop</strong> destinées aux jeux de figurines avec deux niveaux de finition :
+    <strong>Gold</strong> et <strong>Diamant</strong>.
+</p>
+
+<p>
+    Que vous jouiez à
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Le Seigneur des Anneaux™ Strategy Battle Game</strong></a>,
+    à des jeux de plateau, d'escarmouche ou avec des figurines imprimées en 3D, chaque armée est peinte avec soin afin d'obtenir un excellent rendu sur la table de jeu.
+</p>
+
+
+<p>
+    <a href="peinturecommission.html"
+       class="button"
+       onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+        ⚔️ Découvrir la peinture d'armées TableTop+
+    </a>
+</p>
+
+    </div>
+
+
+
+    <div class="maintenance-box">
+
+        <h2>🏆 Pièces de collection & concours</h2>
+
+        <p>
+            Vous recherchez une figurine  <strong>unique</strong> destinée à une vitrine,
+            une exposition ou un concours ?
+        </p>
+
+        <p>
+            Je réalise des pièces haut de gamme avec un travail  <strong>approfondi</strong>
+            des lumières, des textures, des contrastes et des finitions.
+        </p>
+
+        <p>
+            Bustes, résines, figurines de pop culture, mangas,
+            jeux vidéo, cinéma, fantasy ou science-fiction :
+            chaque projet est traité comme une véritable œuvre miniature.
+        </p>
+
+        <p>
+            <a href="peinturecollection.html"
+               class="button"
+               onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
+                🏆 Découvrir les pièces de collection
+            </a>
+        </p>
+
+    </div>
+
+
+
+    <div class="maintenance-box">
+
+        <h2>📚 Cours de peinture sur figurines</h2>
+
+        <p>
+            Vous souhaitez  <strong>apprendre</strong> ou  <strong>perfectionner</strong> votre technique ?
+        </p>
+
+        <p>
+            Je propose des  <strong>cours</strong> personnalisés adaptés à votre niveau,
+            en atelier ou à distance.
+        </p>
+
+        <p>
+             <strong>Aérographe</strong>, dégradés, éclaircissements,
+            gestion des lumières, soclage, textures,
+            huiles ou pigments :<br>Je partage toutes les techniques
+            que j'utilise quotidiennement dans mon activité professionnelle.
+        </p>
+
+        <p>
+            <a href="formation.html"
+               class="button"
+               onclick="loadPage('formation.html'); scrollToTop(); return false;">
+                📚 Découvrir les forfaits cours
+            </a>
+        </p>
+
+    </div>
+
+
+
+    <div class="maintenance-box">
+
+        <h2>🖼️ Découvrez mes réalisations</h2>
+
+        <p>
+            Des armées TableTop+ aux pièces de concours,
+            explorez plusieurs centaines de figurines réalisées
+            pour des joueurs et des collectionneurs.
+        </p>
+
+        <p>
+            <a href="galerie.html"
+               class="button"
+               onclick="loadPage('galerie.html'); scrollToTop(); return false;">
+                🖼️ Voir la galerie
+            </a>
+        </p>
+
+    </div>
+
+
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>👋 Peintre sur Figurine en France</h2>
+
+<p>
+Je suis <strong>Pierre-François, alias PF, <span id="pf-age">39</span> ans.</strong><br>
+Peintre passionné et fondateur de Studio PF.<br><br>
+
+Je pratique la peinture de figurines depuis 2020, une passion née un peu par hasard.<br>
+Le Covid a transformé ce hobby en véritable quête artistique.<br>
+
+Aujourd’hui, je travaille l'acrylique, les pigments et les huiles avec un style qui donne vie aux figurines.<br><br>
+
+Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
+</p>
+
+<p><strong>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</strong>
+
   
-      <div class="card-container3">
-        <div class="card">
-          <h3>🖌️ Pinceau</h3>
-          <p>Techniques pour débutants et avancés</p>
-        </div>
-        <div class="card">
-          <h3>🔫 Aérographe</h3>
-          <p>Techniques précises pour débutants et avancés</p>
-        </div>
-        <div class="card">
-          <h3>🖌️🔫 Les deux</h3>
-          <p>Techniques précises pour débutants et avancés</p>
-        </div>
-      </div>
+            <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
+               ✨ En savoir plus sur mon parcours ➜
+            </a>
+        </p>
   
+
 </div>
-    <div class="maintenance-box">
-  
-      <h3>🚀🎨 Lancez-vous !</h3>
-      
-    <div class="card-container2">
-        <div class="card">
-          <h3>🎨 Matériel Fourni</h3>
-          <p>Pinceaux, aérographe, peintures : tout est inclus pour une expérience optimale !</p>
-        </div>
-        <div class="card">
-          <h3>🚀 Prêt à Briller ?</h3>
-          <p>Prendre des cours est l’occasion de débuter un projet !</p>
-          <p>Apprenez à transformer vos figurines en œuvres d’art 🖼️.</p>
-        </div>
-      </div>
-     </div>
+</div>
 
-      <div class="maintenance-box">
-   <h3>📅 Réservez divtenant et devenez expert !</h3>
-    <div class="center">
-   
-      
-      <form onsubmit="event.preventDefault(); envoyerMailForma(this);" id="formationForm">
-        <div class="center">
-          <label for="nom">Nom</label>
-          <input type="text" id="nom" name="nom" placeholder="Nom" required>
-        </div>
-        <div class="center">
-          <label for="prenom">Prénom</label>
-          <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
-        </div>
-        <div class="center">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-        </div>
-        <div class="center">
-          <label for="telephone">Téléphone</label>
-          <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
-        </div>
-        <div class="center">
-          <label for="adresse">Adresse</label>
-          <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
-        </div>
-        <div class="center">
-          <label for="cp">Code Postal</label>
-          <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
-        </div>
-        <div class="center">
-          <label for="ville">Ville</label>
-          <input type="text" id="ville" name="ville" placeholder="Ville" required>
-        </div>
-        <div class="center">
-          <label for="pays">Pays</label>
-          <select id="pays" name="pays" required>
-            <option value="" disabled selected>Choisissez un pays</option>
-            <option value="FRANCE">France</option>
-            <option value="BELGIQUE">Belgique</option>
-            <option value="LUXEMBOURG">Luxembourg</option>
-            <option value="Autre">Autre (merci de préciser)</option>
-          </select>
-        </div>
-        <div class="center">
-          <label for="cours">Cours</label>
-          <select id="cours" name="cours" required>
-            <option value="" disabled selected>Sélectionnez une option</option>
-            <option value="COURS PEINTURE 1h - 50€">Cours 1h - 50€</option>
-            <option value="COURS PEINTURE 3h - 150€">Cours 3h - 150€</option>
-            <option value="COURS PEINTURE 5h - 200€">Cours 5h - 200€</option>
-            <option value="Stage individuel 5h - 200€">Stage individuel 5h - 200€</option>
-            <option value="Stage individuel 8h - 350€">Stage individuel 8h - 350€</option>
-            <option value="Stage collectif - sur devis">Stage collectif - sur devis</option>
-            <option value="Prestation événementielle - sur devis">Prestation événementielle - sur devis</option>
-          </select>
-        </div>
-        <div class="center">
-          <label for="message">Votre message</label>
-          <textarea id="message" name="message" placeholder="Votre message" rows="4"></textarea>
-        </div>
-        <div class="center">
-          <button type="submit" class="button">Envoyer la demande par mail</button>
-        </div>
-        </div>
-      </form>
+
+
+
+
+<div class="center">
+<div class="maintenance-box">
+
+<h2>🪄 Pourquoi choisir Studio PF ?</h2>
+
+<ul>
+<li>🎨 <strong>Un projet 100 % personnalisé</strong> : chaque figurine est peinte selon vos envies, votre univers, votre budget et le niveau de finition souhaité.</li>
+
+<li>🔧 <strong>Une préparation professionnelle</strong> : ébarbage, montage, sous-couche, corrections et préparation minutieuse pour garantir un résultat durable.</li>
+
+<li>🧪 <strong>Des socles immersifs et des effets avancés</strong> : textures, pigments, végétation, accessoires 3D et nombreuses techniques de peinture pour donner vie à votre armée ou à votre pièce de collection.</li>
+
+<li>📸 <strong>Un suivi transparent</strong> : vous êtes informé à chaque étape importante et validez les photos finales avant toute expédition.</li>
+
+<li>📦 <strong>Un service clé en main</strong> : vos figurines peuvent être commandées chez mes partenaires, livrées directement au Studio PF, peintes puis expédiées chez vous, prêtes à jouer ou à exposer.</li>
+
+<li>🛡️ <strong>Un emballage soigné et une expédition sécurisée</strong> : chaque commande est protégée avec le plus grand soin pour arriver en parfait état.</li>
+</ul>
+
+<p>
+De la première prise de contact jusqu'à la livraison, je mets tout en œuvre pour que votre projet soit une expérience simple, transparente et à la hauteur de vos attentes.
+</p>
+
+</div>
+</div>
+
+     <div class="center">
+    <div class="maintenance-box">
+
+        <h2>⚙️ Comment ça marche ?</h2>
+
+        <ol>
+            <li>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</li>
+
+            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
+
+            <li>🎨 Je prends en charge l'ensemble du projet : préparation, montage, peinture, soclage et finitions selon le niveau de qualité choisi.</li>
+
+            <li>📸 Une fois la peinture terminée, je vous envoie des photos haute définition pour validation avant l'expédition ou une remise en main propre.</li>
+
+            <li>📦 Après votre validation, votre commande est soigneusement emballée et expédiée en toute sécurité.</li>
+        </ol>
+
+        <p>
+            Cette organisation vous permet de gagner du temps : vos figurines peuvent être commandées, livrées, peintes puis réexpédiées, sans aucune manipulation de votre part.
+        </p>
+
+        <p>
+            <a href="simulateur_devis.html"
+               class="button"
+               onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                💬 Demander un devis ➜
+            </a>
+        </p>
 
     </div>
-    </div>`;
+</div>`;
     }
 
     main.innerHTML = html;
@@ -1248,11 +1294,11 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="maintenance-box">
         <h1>🎨 Professional Miniature Painting</h1>
         <p>
-            Welcome to <strong>Studio PF</strong>, a workshop specialized in
+            Welcome to <strong>Studio PF</strong>, a workshop specialized in 
             <strong>professional miniature painting</strong>.
         </p>
         <p>
-            Whether you are a player, collector, or a painter looking to improve,
+            Whether you are a gamer, collector, or a painter looking to improve,
             I will support you with services tailored to your project.
         </p>
         <p>
@@ -1279,42 +1325,45 @@ document.addEventListener("DOMContentLoaded", () => {
          </nav>
     </div>
    </div>
+
     <div class="maintenance-box">
-        <h2>⚔️ Gaming Army Miniatures</h2>
-        <p>
-            Do you want a visually cohesive and enjoyable army to play with?
-        </p>
-        <p>
-            I create <strong>TableTop</strong> quality paintings for miniature wargames with two levels of finish:
-            <strong>Gold</strong> and <strong>Diamond</strong>.
-        </p>
-        <p>
-            Warhammer Age of Sigmar, Warhammer 40,000, The Old World,
-            board games, skirmish games or 3D prints:
-            each army is painted with care to achieve an excellent look on the gaming table.
-        </p>
-        <p>
-            <a href="peinturecommission.html"
-               class="button"
-               onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
-                ⚔️ Discover TableTop+ Army Painting
-            </a>
-        </p>
+      <h2>⚔️ Gaming Army Miniatures</h2>
+<p>
+    Do you want an army that is enjoyable to play and visually cohesive?
+</p>
+<p>
+    I create <strong>TableTop</strong> quality paintings for miniature wargames with two levels of finish: 
+    <strong>Gold</strong> and <strong>Diamond</strong>.
+</p>
+<p>
+    Whether you play 
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>The Lord of the Rings™ Strategy Battle Game</strong></a>,
+    board games, skirmish games, or 3D-printed miniatures, each army is painted with care to achieve an excellent look on the gaming table.
+</p>
+<p>
+    <a href="peinturecommission.html"
+       class="button"
+       onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+        ⚔️ Discover TableTop+ Army Painting
+    </a>
+</p>
     </div>
+
     <div class="maintenance-box">
         <h2>🏆 Collection & Competition Pieces</h2>
         <p>
             Are you looking for a <strong>unique</strong> miniature for a display cabinet,
-            exhibition or competition?
+            exhibition, or competition?
         </p>
         <p>
-            I create high-end pieces with in-depth work on
-            lighting, textures, contrasts and finishes.
+            I create high-end pieces with in-depth work on lighting, textures, contrasts, and finishes.
         </p>
         <p>
-            Busts, resins, pop culture miniatures, manga,
-            video games, cinema, fantasy or science-fiction:
-            each project is treated like a true miniature artwork.
+            Busts, resins, pop culture figures, manga, video games,
+            cinema, fantasy, or science-fiction: each project is treated like a true miniature artwork.
         </p>
         <p>
             <a href="peinturecollection.html"
@@ -1324,35 +1373,36 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
         </p>
     </div>
+
     <div class="maintenance-box">
         <h2>📚 Miniature Painting Courses</h2>
         <p>
             Do you want to <strong>learn</strong> or <strong>improve</strong> your technique?
         </p>
         <p>
-            I offer <strong>personalized courses</strong> adapted to your level,
-            in-person or online.
+            I offer personalized <strong>courses</strong> adapted to your level,
+            either in-person at the workshop or remotely.
         </p>
         <p>
-             <strong>Airbrush</strong>, gradients, highlighting,
+             <strong>Airbrushing</strong>, blending, highlighting,
             light management, basing, textures,
-            oils or pigments: I share all the techniques
+            oils or pigments:<br>I share all the techniques
             I use daily in my professional work.
         </p>
         <p>
             <a href="formation.html"
                class="button"
                onclick="loadPage('formation.html'); scrollToTop(); return false;">
-                📚 Discover the Courses
+                📚 Discover Course Packages
             </a>
         </p>
     </div>
+
     <div class="maintenance-box">
         <h2>🖼️ Discover My Work</h2>
         <p>
             From TableTop+ armies to competition pieces,
-            explore hundreds of miniatures painted
-            for players and collectors.
+            explore several hundred miniatures painted for players and collectors.
         </p>
         <p>
             <a href="galerie.html"
@@ -1362,15 +1412,16 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
         </p>
     </div>
+
 <div class="center">
 <div class="maintenance-box">
 <h2>👋 Miniature Painter in France</h2>
 <p>
-I am <strong>Pierre-François, alias PF, <span id="pf-age">39</span> years old.</strong><br>
+I am <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
 Passionate painter and founder of Studio PF.<br><br>
-I have been painting miniatures since 2020, a passion that started somewhat by chance.<br>
+I have been painting miniatures since 2020 — a passion that started somewhat by chance.<br>
 Covid turned this hobby into a true artistic journey.<br>
-Today I work with acrylics, pigments and oils in a style that brings miniatures to life.<br><br>
+Today, I work with acrylics, pigments, and oils in a style that brings miniatures to life.<br><br>
 My goal: make your miniatures come alive.
 </p>
 <p><strong>“Every miniature tells a story. My role is to make it shine.” ✨</strong>
@@ -1382,36 +1433,42 @@ My goal: make your miniatures come alive.
  
 </div>
 </div>
+
 <div class="center">
 <div class="maintenance-box">
-<h2>🪄 Why choose Studio PF?</h2>
+<h2>🪄 Why Choose Studio PF?</h2>
 <ul>
-<li>🎨 <strong>Custom painting</strong>: each project is tailored to your universe and budget.</li>
-<li>🔧 <strong>Careful preparation</strong>: cleaning, assembly, priming and full preparation.</li>
-<li>🧪 <strong>Immersive bases & 3D elements</strong>: for a unique and realistic result.</li>
-<li>💬 <strong>Transparent client follow-up</strong>: progress photos, direct contact and personalized advice.</li>
-<li>🚚 <strong>Secure shipping</strong>: via Colissimo or hand delivery.</li>
+<li>🎨 <strong>100% Personalized Projects</strong>: each miniature is painted according to your wishes, your universe, your budget, and the desired level of finish.</li>
+<li>🔧 <strong>Professional Preparation</strong>: cleaning, assembly, priming, corrections, and meticulous preparation to ensure a long-lasting result.</li>
+<li>🧪 <strong>Immersive Bases & Advanced Effects</strong>: textures, pigments, vegetation, 3D accessories, and numerous painting techniques to bring your army or display piece to life.</li>
+<li>📸 <strong>Transparent Follow-up</strong>: you are kept informed at every key stage and validate the final photos before shipping.</li>
+<li>📦 <strong>Turnkey Service</strong>: your miniatures can be ordered from my partners, shipped directly to Studio PF, painted, and then sent to you — ready to play or display.</li>
+<li>🛡️ <strong>Careful Packaging & Secure Shipping</strong>: every order is protected with the utmost care to arrive in perfect condition.</li>
 </ul>
 <p>
-You receive a piece ready to play or display, durable and completely true to your vision.
+From first contact to delivery, I do everything possible to make your project a simple, transparent experience that meets your expectations.
 </p>
 </div>
 </div>
-      <div class="center">
+
+     <div class="center">
     <div class="maintenance-box">
-        <h2>⚙️ How does it work?</h2>
+        <h2>⚙️ How It Works</h2>
         <ol>
-            <li>Contact me and request your personalized quote.</li>
-            <li>Send me your miniatures or your project.</li>
-            <li>I handle preparation, assembly, painting and finishing.</li>
-            <li>You approve the final photos before shipping or hand delivery.</li>
+            <li>💬 Contact me to discuss your project and get a personalized quote.</li>
+            <li>🎲 Already own your miniatures? Send them directly to <strong>Studio PF</strong>. Don’t have your army yet? Order it from my partners <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) or <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (new and second-hand miniatures) and have it delivered straight to the workshop.</li>
+            <li>🎨 I take care of the entire project: preparation, assembly, painting, basing, and finishes according to the chosen quality level.</li>
+            <li>📸 Once the painting is complete, I send you high-definition photos for approval before shipping or in-person pickup.</li>
+            <li>📦 After your approval, your order is carefully packaged and shipped securely.</li>
         </ol>
         <p>
-            Simple, transparent, and 100% passion.
+            This process saves you time: your miniatures can be ordered, delivered, painted, and shipped back to you without any handling on your part.
         </p>
         <p>
-            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-              💬 Request a quote ➜
+            <a href="simulateur_devis.html"
+               class="button"
+               onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                💬 Request a Quote ➜
             </a>
         </p>
     </div>
@@ -1423,7 +1480,7 @@ You receive a piece ready to play or display, durable and completely true to you
     <div class="maintenance-box">
         <h1>🎨 Pintura profesional de figuritas</h1>
         <p>
-            Bienvenido a <strong>Studio PF</strong>, taller especializado en
+            Bienvenido a <strong>Studio PF</strong>, taller especializado en 
             <strong>pintura profesional de figuritas</strong>.
         </p>
         <p>
@@ -1454,28 +1511,33 @@ You receive a piece ready to play or display, durable and completely true to you
          </nav>
     </div>
    </div>
+
     <div class="maintenance-box">
-        <h2>⚔️ Figuritas de Ejércitos de juego</h2>
-        <p>
-            ¿Quieres un ejército agradable de jugar y visualmente homogéneo?
-        </p>
-        <p>
-            Realizo pinturas <strong>TableTop</strong> destinadas a juegos de figuritas con dos niveles de acabado:
-            <strong>Gold</strong> y <strong>Diamante</strong>.
-        </p>
-        <p>
-            Warhammer Age of Sigmar, Warhammer 40,000, The Old World,
-            juegos de mesa, juegos de escaramuza o impresiones 3D:
-            cada ejército es pintado con esmero para obtener un excelente resultado en la mesa de juego.
-        </p>
-        <p>
-            <a href="peinturecommission.html"
-               class="button"
-               onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
-                ⚔️ Descubrir la pintura de ejércitos TableTop+
-            </a>
-        </p>
+      <h2>⚔️ Figuritas de Ejércitos de juego</h2>
+<p>
+    ¿Quieres un ejército agradable de jugar y visualmente homogéneo?
+</p>
+<p>
+    Realizo pinturas <strong>TableTop</strong> destinadas a juegos de figuritas con dos niveles de acabado:
+    <strong>Oro</strong> y <strong>Diamante</strong>.
+</p>
+<p>
+    Ya juegues a
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>El Señor de los Anillos™ Strategy Battle Game</strong></a>,
+    a juegos de mesa, escaramuzas o con figuritas impresas en 3D, cada ejército es pintado con cuidado para obtener un excelente resultado en la mesa de juego.
+</p>
+<p>
+    <a href="peinturecommission.html"
+       class="button"
+       onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+        ⚔️ Descubrir la pintura de ejércitos TableTop+
+    </a>
+</p>
     </div>
+
     <div class="maintenance-box">
         <h2>🏆 Piezas de colección y concursos</h2>
         <p>
@@ -1499,6 +1561,7 @@ You receive a piece ready to play or display, durable and completely true to you
             </a>
         </p>
     </div>
+
     <div class="maintenance-box">
         <h2>📚 Cursos de pintura de figuritas</h2>
         <p>
@@ -1511,17 +1574,18 @@ You receive a piece ready to play or display, durable and completely true to you
         <p>
              <strong>Aerógrafo</strong>, degradados, iluminaciones,
             gestión de luces, bases, texturas,
-            óleos o pigmentos: comparto todas las técnicas
+            óleos o pigmentos:<br>Comparto todas las técnicas
             que utilizo diariamente en mi actividad profesional.
         </p>
         <p>
             <a href="formation.html"
                class="button"
                onclick="loadPage('formation.html'); scrollToTop(); return false;">
-                📚 Descubrir los cursos
+                📚 Descubrir los paquetes de cursos
             </a>
         </p>
     </div>
+
     <div class="maintenance-box">
         <h2>🖼️ Descubre mis realizaciones</h2>
         <p>
@@ -1537,18 +1601,19 @@ You receive a piece ready to play or display, durable and completely true to you
             </a>
         </p>
     </div>
+
 <div class="center">
 <div class="maintenance-box">
 <h2>👋 Pintor de Figuritas en Francia</h2>
 <p>
 Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
 Pintor apasionado y fundador de Studio PF.<br><br>
-Practico la pintura de figuritas desde 2020, una pasión que nació un poco por casualidad.<br>
+Practico la pintura de figuritas desde 2020, una pasión que surgió un poco por casualidad.<br>
 El Covid transformó este hobby en una verdadera búsqueda artística.<br>
 Hoy trabajo el acrílico, los pigmentos y los óleos con un estilo que da vida a las figuritas.<br><br>
 Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
 </p>
-<p><strong>“Cada figurita cuenta una historia. Mi rol es hacerla brillar.” ✨</strong>
+<p><strong>“Cada figurita cuenta una historia. Mi papel es hacerla brillar.” ✨</strong>
  
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
                ✨ Saber más sobre mi trayectoria ➜
@@ -1557,36 +1622,42 @@ Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
  
 </div>
 </div>
+
 <div class="center">
 <div class="maintenance-box">
 <h2>🪄 ¿Por qué elegir Studio PF?</h2>
 <ul>
-<li>🎨 <strong>Pintura a medida</strong>: cada proyecto se adapta a tu universo y presupuesto.</li>
-<li>🔧 <strong>Preparación cuidadosa</strong>: limpieza, montaje, imprimación y preparación completa.</li>
-<li>🧪 <strong>Bases inmersivas y elementos 3D</strong>: para un acabado único y realista.</li>
-<li>💬 <strong>Seguimiento transparente</strong>: fotos de progreso, contacto directo y consejos personalizados.</li>
-<li>🚚 <strong>Envío seguro</strong>: vía Colissimo o entrega en mano.</li>
+<li>🎨 <strong>Un proyecto 100 % personalizado</strong>: cada figurita se pinta según tus deseos, tu universo, tu presupuesto y el nivel de acabado deseado.</li>
+<li>🔧 <strong>Una preparación profesional</strong>: desbarbado, montaje, imprimación, correcciones y preparación minuciosa para garantizar un resultado duradero.</li>
+<li>🧪 <strong>Bases inmersivas y efectos avanzados</strong>: texturas, pigmentos, vegetación, accesorios 3D y numerosas técnicas de pintura para dar vida a tu ejército o a tu pieza de colección.</li>
+<li>📸 <strong>Un seguimiento transparente</strong>: se te informa en cada etapa importante y validas las fotos finales antes del envío.</li>
+<li>📦 <strong>Un servicio llave en mano</strong>: tus figuritas pueden pedirse a mis socios, entregarse directamente al Studio PF, pintarse y luego enviarse a tu casa, listas para jugar o exponer.</li>
+<li>🛡️ <strong>Un embalaje cuidado y un envío seguro</strong>: cada pedido está protegido con el mayor cuidado para llegar en perfecto estado.</li>
 </ul>
 <p>
-Recibirás una pieza lista para jugar o exponer, duradera y totalmente a tu imagen.
+Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu proyecto sea una experiencia sencilla, transparente y a la altura de tus expectativas.
 </p>
 </div>
 </div>
-      <div class="center">
+
+     <div class="center">
     <div class="maintenance-box">
         <h2>⚙️ ¿Cómo funciona?</h2>
         <ol>
-            <li>Contáctame y solicita tu presupuesto personalizado.</li>
-            <li>Confíame tus figuritas o tu proyecto.</li>
-            <li>Realizo la preparación, el montaje, la pintura y los acabados.</li>
-            <li>Validas las fotos finales antes del envío o la entrega en mano.</li>
+            <li>💬 Contáctame para hablar de tu proyecto y obtener un presupuesto personalizado.</li>
+            <li>🎲 ¿Ya tienes tus figuritas? Envíalas directamente al <strong>Studio PF</strong>. ¿Aún no tienes tu ejército? Pídelo a mis socios <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) o <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figuritas nuevas y de segunda mano) y haz que lo entreguen directamente al taller.</li>
+            <li>🎨 Me encargo de todo el proyecto: preparación, montaje, pintura, bases y acabados según el nivel de calidad elegido.</li>
+            <li>📸 Una vez terminada la pintura, te envío fotos en alta definición para validación antes del envío o entrega en mano.</li>
+            <li>📦 Tras tu validación, tu pedido se embala cuidadosamente y se envía con total seguridad.</li>
         </ol>
         <p>
-            Simple, transparente y 100% pasión.
+            Esta organización te permite ahorrar tiempo: tus figuritas pueden pedirse, entregarse, pintarse y reexpedirse, sin ninguna manipulación por tu parte.
         </p>
         <p>
-            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-              💬 Solicitar un presupuesto ➜
+            <a href="simulateur_devis.html"
+               class="button"
+               onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                💬 Solicitar un presupuesto ➜
             </a>
         </p>
     </div>
@@ -1595,7 +1666,7 @@ Recibirás una pieza lista para jugar o exponer, duradera y totalmente a tu imag
     } else {
         html = `
         
-    <div class="center">
+         <div class="center">
 
     <div class="maintenance-box">
 
@@ -1643,30 +1714,34 @@ Recibirás una pieza lista para jugar o exponer, duradera y totalmente a tu imag
 
     <div class="maintenance-box">
 
-        <h2>⚔️ Figurines d'Armées de jeu</h2>
+      <h2>⚔️ Figurines d'Armées de jeu</h2>
 
-        <p>
-            Vous souhaitez une armée agréable à jouer et visuellement homogène ?
-        </p>
+<p>
+    Vous souhaitez une armée agréable à jouer et visuellement homogène ?
+</p>
 
-        <p>
-            Je réalise des peintures  <strong>TableTop</strong> destinées aux jeux de figurines avec deux niveaux de finition :
-            <strong>Gold</strong> et <strong>Diamant</strong>.
-        </p>
+<p>
+    Je réalise des peintures <strong>TableTop</strong> destinées aux jeux de figurines avec deux niveaux de finition :
+    <strong>Gold</strong> et <strong>Diamant</strong>.
+</p>
 
-        <p>
-            Warhammer Age of Sigmar, Warhammer 40,000, The Old World,
-            jeux de plateau, jeux d'escarmouche ou impressions 3D :
-            chaque armée est peinte avec soin afin d'obtenir un excellent rendu sur la table de jeu.
-        </p>
+<p>
+    Que vous jouiez à
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Le Seigneur des Anneaux™ Strategy Battle Game</strong></a>,
+    à des jeux de plateau, d'escarmouche ou avec des figurines imprimées en 3D, chaque armée est peinte avec soin afin d'obtenir un excellent rendu sur la table de jeu.
+</p>
 
-        <p>
-            <a href="peinturecommission.html"
-               class="button"
-               onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
-                ⚔️ Découvrir la peinture d'armées TableTop+
-            </a>
-        </p>
+
+<p>
+    <a href="peinturecommission.html"
+       class="button"
+       onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
+        ⚔️ Découvrir la peinture d'armées TableTop+
+    </a>
+</p>
 
     </div>
 
@@ -1720,7 +1795,7 @@ Recibirás una pieza lista para jugar o exponer, duradera y totalmente a tu imag
         <p>
              <strong>Aérographe</strong>, dégradés, éclaircissements,
             gestion des lumières, soclage, textures,
-            huiles ou pigments : je partage toutes les techniques
+            huiles ou pigments :<br>Je partage toutes les techniques
             que j'utilise quotidiennement dans mon activité professionnelle.
         </p>
 
@@ -1728,7 +1803,7 @@ Recibirás una pieza lista para jugar o exponer, duradera y totalmente a tu imag
             <a href="formation.html"
                class="button"
                onclick="loadPage('formation.html'); scrollToTop(); return false;">
-                📚 Découvrir les cours
+                📚 Découvrir les forfaits cours
             </a>
         </p>
 
@@ -1798,43 +1873,52 @@ Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
 
 <ul>
-<li>🎨 <strong>Peinture sur mesure</strong> : chaque projet est adapté à votre univers et votre budget.</li>
+<li>🎨 <strong>Un projet 100 % personnalisé</strong> : chaque figurine est peinte selon vos envies, votre univers, votre budget et le niveau de finition souhaité.</li>
 
-<li>🔧 <strong>Préparation soignée</strong> : nettoyage, montage, sous-couche et préparation complète.</li>
+<li>🔧 <strong>Une préparation professionnelle</strong> : ébarbage, montage, sous-couche, corrections et préparation minutieuse pour garantir un résultat durable.</li>
 
-<li>🧪 <strong>Socles immersifs & éléments 3D</strong> : pour un rendu unique et réaliste.</li>
+<li>🧪 <strong>Des socles immersifs et des effets avancés</strong> : textures, pigments, végétation, accessoires 3D et nombreuses techniques de peinture pour donner vie à votre armée ou à votre pièce de collection.</li>
 
-<li>💬 <strong>Suivi client transparent</strong> : photos d’avancement, contact direct et conseils personnalisés.</li>
+<li>📸 <strong>Un suivi transparent</strong> : vous êtes informé à chaque étape importante et validez les photos finales avant toute expédition.</li>
 
-<li>🚚 <strong>Expédition sécurisée</strong> : via Colissimo ou remise en main propre.</li>
+<li>📦 <strong>Un service clé en main</strong> : vos figurines peuvent être commandées chez mes partenaires, livrées directement au Studio PF, peintes puis expédiées chez vous, prêtes à jouer ou à exposer.</li>
+
+<li>🛡️ <strong>Un emballage soigné et une expédition sécurisée</strong> : chaque commande est protégée avec le plus grand soin pour arriver en parfait état.</li>
 </ul>
 
 <p>
-Vous recevez une pièce prête à jouer ou à exposer, durable et totalement à votre image.
+De la première prise de contact jusqu'à la livraison, je mets tout en œuvre pour que votre projet soit une expérience simple, transparente et à la hauteur de vos attentes.
 </p>
 
 </div>
 </div>
 
-      <div class="center">
+     <div class="center">
     <div class="maintenance-box">
 
         <h2>⚙️ Comment ça marche ?</h2>
 
         <ol>
-            <li>Contactez-moi et demandez votre devis personnalisé.</li>
-            <li>Confiez-moi vos figurines ou votre projet.</li>
-            <li>Je réalise la préparation, le montage, la peinture et les finitions.</li>
-            <li>Vous validez les photos finales avant l'expédition ou la remise en main propre.</li>
+            <li>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</li>
+
+            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
+
+            <li>🎨 Je prends en charge l'ensemble du projet : préparation, montage, peinture, soclage et finitions selon le niveau de qualité choisi.</li>
+
+            <li>📸 Une fois la peinture terminée, je vous envoie des photos haute définition pour validation avant l'expédition ou une remise en main propre.</li>
+
+            <li>📦 Après votre validation, votre commande est soigneusement emballée et expédiée en toute sécurité.</li>
         </ol>
 
         <p>
-            Simple, transparent, et 100% passion.
+            Cette organisation vous permet de gagner du temps : vos figurines peuvent être commandées, livrées, peintes puis réexpédiées, sans aucune manipulation de votre part.
         </p>
 
         <p>
-            <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-              💬  Demander un devis ➜
+            <a href="simulateur_devis.html"
+               class="button"
+               onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                💬 Demander un devis ➜
             </a>
         </p>
 
