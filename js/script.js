@@ -2900,8 +2900,9 @@ function changelanguefoot() {
 </nav>
 
 <div class="footer-adresse">
-    <strong>STUDIO PF</strong><br>
-    Frasse Pierre-François<br>
+    <p><strong>STUDIO PF</strong><br>
+            Frasse Pierre-François<br>
+            17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
     17 Route de Lare, 42510 Saint-Georges-de-Baroille, France<br><br>
 
     <p>
@@ -2931,9 +2932,9 @@ else if (currentLanguage === "spanish") {
 </nav>
 
 <div class="footer-adresse">
-    <strong>STUDIO PF</strong><br>
-    Frasse Pierre-François<br>
-    17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
+   <p><strong>STUDIO PF</strong><br>
+            Frasse Pierre-François<br>
+            17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
 
     <p>
         Contacto 📧 :
@@ -2962,9 +2963,9 @@ else if (currentLanguage === "spanish") {
            
 
         <div class="footer-adresse">
-            <strong>STUDIO PF</strong><br>
+            <p><strong>STUDIO PF</strong><br>
             Frasse Pierre-François<br>
-            17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
+            17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
 
             <p>
                 Contact 📧 :
