@@ -180,27 +180,80 @@ type="image/png">
         
     
         
-   <!-- Bouton menu mobile -->
-<button id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+ <nav id="menu-contenu" class="menu-mobile">
 
-<!-- Menu latéral -->
-<nav id="menu-contenu" class="menu-mobile">
+    <ul class="menu-mobile-list">
 
-    <ul class="menu">
-        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop 🎨</a></li>
-        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Concours 🏆</a></li>
-        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
-        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
+        <li>
+            <a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
+                Peinture TableTop 🎨
+            </a>
+        </li>
+
+        <li>
+            <a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
+                Collection & Concours 🏆
+            </a>
+        </li>
+
+        <li>
+            <a href="formation.html" onclick="loadPage('formation.html'); return false;">
+                Formation 📚
+            </a>
+        </li>
+
+        <li>
+            <a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
+                Galerie 🖼️
+            </a>
+        </li>
+
     </ul>
 
-</nav>
 
-<!-- Fond sombre quand menu ouvert -->
-<div id="menu-overlay"></div>
+    <!-- Réseaux sociaux -->
+    <div class="menu-social">
+
+        <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" aria-label="Patreon">
+            <i class="fab fa-patreon"></i>
+        </a>
+
+        <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+            <i class="fab fa-twitch"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+        <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <i class="fab fa-discord"></i>
+        </a>
+
+        <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:studiopeinturefgurine@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+    </div>
+
+
+</nav>
 
   <div class="carroussel-container">
         <div class="carroussel" id="carroussel">
