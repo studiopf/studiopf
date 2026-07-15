@@ -1284,6 +1284,13 @@ body.light-mode{
 /* Bouton hamburger */
 
 .pf-menu-button {
+   appearance:none;
+    -webkit-appearance:none;
+
+    background:transparent;
+    border:0;
+    outline:none;
+    padding:0;
 
     position:fixed;
 
@@ -1293,16 +1300,18 @@ body.light-mode{
     width:45px;
     height:40px;
 
-    background:none;
-    border:none;
-
-    cursor:pointer;
-
     z-index:3000;
 
 }
 
+/* Supprime le point blanc au clic/focus */
+.pf-menu-button:focus,
+.pf-menu-button:active {
 
+    outline:none;
+    background:transparent;
+
+}
 .pf-menu-button span {
 
     display:block;
