@@ -1498,7 +1498,7 @@ Recibirás una pieza lista para jugar o exponer, duradera y totalmente a tu imag
         
      <div class="center">
       <div class="maintenance-box">
-<h1>🎨 Peinture sur Figurines : Armées TableTop & Pièces de Collection<</h1>
+<h1>🎨 Peinture sur Figurines : Armées TableTop & Pièces de Collection</h1>
 
 
 <p>
