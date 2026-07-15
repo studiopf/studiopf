@@ -1538,7 +1538,7 @@ body.light-mode{
 /* ============================= */
 .pf-menu-button {
     position: fixed !important;
-     transform: translateY(50px);
+     transform: translateY(10px);
     right: 15px !important;
     left: auto !important;
 
