@@ -10,6 +10,46 @@ textarea {
     width: 100%;
     height: 100px;
 }
+.ajust {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.9;
+    font-size: 1.08rem;
+    word-spacing: 0.05em;
+}
+
+.ajust p {
+    margin: 0 0 1.6em;
+}
+
+.ajust p:last-child {
+    margin-bottom: 0;
+}
+
+.ajust h2,
+.ajust h3 {
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+}
+
+.ajust ul {
+    margin: 1.5em 0;
+    padding-left: 1.8em;
+}
+
+.ajust li {
+    margin-bottom: 0.8em;
+}
+
+.ajust blockquote {
+    margin: 2em auto;
+    padding: 1em 1.5em;
+    border-left: 4px solid #c8a96a;
+    font-style: italic;
+    line-height: 1.8;
+    text-align: left;
+}
 img {
   height: 80%;
 }
