@@ -1388,7 +1388,7 @@ Ya sea para un ejército de wargame o figurines de juegos de mesa, disfruta de u
 Ya sea una figurine de resina de cultura pop (manga, videojuegos, cine...), un busto o un diorama. Háblame de tu proyecto.
 </p>
 <p>
-<a href="peintureccollection.html" class="button" onclick="loadPage('peintureccollection.html'); scrollToTop(); return false;">
+<a href="peinturecollection.html" class="button" onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
 🏆 Descubrir el servicio de pintura para coleccionistas ➜
 </a>
 </p>
