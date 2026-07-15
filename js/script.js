@@ -3174,7 +3174,7 @@ function changelanguefoot() {
     html = `
   
       
-  <nav class="menu-mobile">
+  <nav class="menu-mobilefoot">
     <ul class="menu">
         <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Terms & Conditions 📜</a></li>
         <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
@@ -3206,7 +3206,7 @@ else if (currentLanguage === "spanish") {
     html = `
    
     
-    <nav class="menu-mobile">
+    <nav class="menu-mobilefoot">
     <ul class="menu">
         <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones generales de venta 📜</a></li>
         <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Aviso legal 💼</a></li>
@@ -3236,7 +3236,7 @@ else if (currentLanguage === "spanish") {
         html = ` 
        
        
-<nav class="menu-mobile">
+<nav class="menu-mobilefoot">
             <ul class="menu">
                 <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
                 <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
