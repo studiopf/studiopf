@@ -1332,7 +1332,7 @@ body.light-mode{
 
 .pf-mobile-nav {
 
-    position:grid;
+    position:flex;
 
     top:0;
     right:-100%;
