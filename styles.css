@@ -1282,6 +1282,10 @@ body.light-mode{
     --title:#8b5b00;
 }
 }
+.header {
+    display:flex;
+    justify-content:flex-start;
+}
 /* ============================= */
 /* BOUTON MENU HAMBURGER */
 /* ============================= */
@@ -1323,7 +1327,15 @@ body.light-mode{
     background: rgba(30, 30, 27, 0.98) !important;
     border-color: #d99b32;
 }
-
+/* Force le bouton hamburger à droite */
+button.pf-menu-button {
+    position: fixed !important;
+    top: 12px !important;
+    right: 15px !important;
+    left: unset !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
 /* Animation hamburger quand ouvert */
 .pf-menu-button.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
