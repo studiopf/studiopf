@@ -1292,54 +1292,47 @@ body.light-mode{
 
 .pf-menu-button {
 
-    position:fixed;
+    position: fixed !important;
 
-    top:20px;
-    right:20px;
+    top: 20px !important;
+    right: 20px !important;
+    left: auto !important;
 
-    width:45px;
-    height:45px;
+    width:45px !important;
+    height:45px !important;
 
-    padding:0;
+    padding:0 !important;
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    align-items:center !important;
 
-    background:rgba(14,14,12,0.85);
+    background:rgba(14,14,12,0.85) !important;
 
-    border:1px solid #6b4e2f;
+    border:1px solid #6b4e2f !important;
 
-    border-radius:8px;
+    border-radius:8px !important;
 
     cursor:pointer;
 
-    z-index:3000;
-
-    backdrop-filter:blur(4px);
-
-    transition:.25s ease;
+    z-index:99999 !important;
 
 }
 
 
-/* Les 3 traits */
-
 .pf-menu-button span {
 
-    display:block;
+    display:block !important;
 
-    width:30px;
-    height:4px;
+    width:30px !important;
+    height:4px !important;
 
-    margin:3px 0;
+    margin:3px 0 !important;
 
-    background:#f4c876;
+    background:#f4c876 !important;
 
     border-radius:5px;
-
-    transition:.3s ease;
 
 }
 
