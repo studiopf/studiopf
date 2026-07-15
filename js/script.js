@@ -4767,42 +4767,26 @@ function initMenuMobile() {
 
 
     if (!menuToggle || !menuMobile || !overlay) {
-        console.warn("Menu mobile introuvable");
+        console.log("Erreur : éléments du menu introuvables");
         return;
     }
 
 
-    menuToggle.addEventListener("click", () => {
+    menuToggle.onclick = function() {
+
+        console.log("clic hamburger");
 
         menuMobile.classList.toggle("active");
         overlay.classList.toggle("active");
 
-    });
+    };
 
 
-    overlay.addEventListener("click", () => {
+    overlay.onclick = function() {
 
         menuMobile.classList.remove("active");
         overlay.classList.remove("active");
 
-    });
-
-
-    document.querySelectorAll(".menu-mobile-list a")
-    .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            menuMobile.classList.remove("active");
-            overlay.classList.remove("active");
-
-        });
-
-    });
+    };
 
 }
-document.addEventListener("DOMContentLoaded", () => {
-
-    initMenuMobile();
-
-});
