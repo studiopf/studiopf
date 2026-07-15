@@ -1158,11 +1158,11 @@ body,
 
     position: fixed;
 
-    top:5px;
+    top:3px;
     left:30px;
 
-    width:24px;
-    height:24px;
+    width:30px;
+    height:30px;
 
     padding:0;
 
@@ -1193,7 +1193,7 @@ body,
 
     opacity:1;
 
-    transform:scale(0.5);
+    transform:scale(1.8);
 
 }
 /* ===================================================
@@ -1298,7 +1298,7 @@ body.light-mode{
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
- background: rgba(20, 20, 18, 0.98) !important;
+  background: rgba(14, 14, 12, 0.95) !important;   /* plus opaque */
    
     border: 1px solid #f4c876 !important;
     border-radius: 8px !important;
@@ -1322,7 +1322,8 @@ body.light-mode{
 .pf-menu-button:hover {
     transform: scale(1.05);
     border-color: #d99b32;
-    background: rgba(14, 14, 12, 0.95) !important;   /* plus opaque */
+   background: rgba(20, 20, 18, 0.98) !important;
+   
 }
 
 /* ============================= */
