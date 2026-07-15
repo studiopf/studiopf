@@ -493,17 +493,33 @@ a:hover,
 .footer h2,
 .footer h3,
 .footer strong {
-    color: #1f1f1f;
+    color: ##DED9D9;
 }
 
 .footer p,
 .footer li,
 .footer span,
 .footer a {
-    color: #3a3a3a;
+    color: #CCCACA;
 }
 
 .footer a:hover {
+    color: #F7B845; /* rappel du doré Studio PF */
+}
+.footer-adresse h2,
+.footer-adresse h3,
+.footer-adresse strong {
+    color: #1f1f1f;
+}
+
+.footer-adresse p,
+.footer-adresse li,
+.footer-adresse span,
+.footer-adresse a {
+    color: #3a3a3a;
+}
+
+.footer-adresse a:hover {
     color: #8c5a00; /* rappel du doré Studio PF */
 }
 /* ==========================================================================
