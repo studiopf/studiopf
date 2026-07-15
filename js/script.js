@@ -2814,7 +2814,7 @@ function changelanguepeinture() {
 }
 
 function changelanguemenu() {
-    const menu = document.getElementById("menu-contenu");
+    const menu = document.getElementById("pf-mobile-nav");
     if (!menu) return;
 
     let html = "";
