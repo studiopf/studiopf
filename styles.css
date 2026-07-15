@@ -1265,218 +1265,67 @@ body.light-mode{
     --title:#8b5b00;
 }
 
-/* ==========================
-   BOUTON HAMBURGER
-========================== */
-
-.menu-toggle {
-
-    display:none;
+}
+.menu-mobile {
 
     position:fixed;
 
-    top:20px;
-    right:20px;
+    top:0;
+    right:0;
 
-    width:45px;
-    height:40px;
+    width:280px;
+    height:100vh;
 
-    background:transparent;
-    border:none;
+    background:#251a10;
 
-    cursor:pointer;
-
-    z-index:10001;
-}
-
-
-.menu-toggle span {
-
-    display:block;
-
-    width:30px;
-    height:4px;
-
-    background:#d8a323;
-
-    margin:6px auto;
-
-    border-radius:3px;
-
-}
-
-
-
-/* ==========================
-   MENU MOBILE
-========================== */
-
-.menu-mobile {
+    transform:translateX(100%);
 
     transition:transform 0.3s ease;
 
-}
-
-
-
-/* ==========================
-   OVERLAY
-========================== */
-
-#menu-overlay {
-
-    display:none;
+    z-index:10000;
 
 }
 
 
+.menu-mobile.active {
 
-/* ==========================
-   VERSION MOBILE
-========================== */
+    transform:translateX(0);
 
+}
+.menu-mobile .menu-mobile-list {
 
-@media(max-width:768px){
+    display:block !important;
 
+    list-style:none !important;
 
-    /* bouton visible */
+    padding:0 25px !important;
 
-    .menu-toggle {
+    margin:0 !important;
 
-        display:block;
+}
 
-    }
 
+.menu-mobile .menu-mobile-list li {
 
+    display:block !important;
 
-    /* panneau */
+    margin:25px 0 !important;
 
-    .menu-mobile {
+}
 
 
-        position:fixed;
+.menu-mobile .menu-mobile-list a {
 
+    display:block !important;
 
-        top:0;
-        right:0;
+    color:#f4c876 !important;
 
+    font-size:18px !important;
 
-        width:280px;
+    text-decoration:none !important;
 
-        height:100vh;
+    visibility:visible !important;
 
-
-        background:linear-gradient(
-            135deg,
-            #0f0a05,
-            #251a10
-        );
-
-
-        padding-top:80px;
-
-
-        transform:translateX(100%);
-
-
-        z-index:10000;
-
-
-        box-shadow:-5px 0 20px rgba(0,0,0,0.5);
-
-
-    }
-
-
-
-    /* ouverture */
-
-    .menu-mobile.active {
-
-        transform:translateX(0);
-
-    }
-
-
-
-    /* liste */
-
-    .menu-mobile-list {
-
-
-        display:block;
-
-
-        list-style:none;
-
-
-        padding:0 25px;
-
-
-        margin:0;
-
-
-    }
-
-
-
-    /* lignes */
-
-    .menu-mobile-list li {
-
-
-        display:block;
-
-
-        margin:25px 0;
-
-
-    }
-
-
-
-    /* liens */
-
-    .menu-mobile-list a {
-
-
-        display:block;
-
-
-        color:#f4c876;
-
-
-        text-decoration:none;
-
-
-        font-size:18px;
-
-
-    }
-
-
-
-    /* fond derrière */
-
-    #menu-overlay.active {
-
-
-        display:block;
-
-
-        position:fixed;
-
-
-        inset:0;
-
-
-        background:rgba(0,0,0,0.6);
-
-
-        z-index:9999;
-
-
-    }
-
+    opacity:1 !important;
 
 }
