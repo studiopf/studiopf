@@ -1282,7 +1282,7 @@ body,
 .theme-toggle {
     position: fixed;
     top: 12px;
-    left: 60px; /* placé à gauche du bouton menu */
+    right: 60px; /* placé à gauche du bouton menu hamburger */
     width: 32px;
     height: 32px;
     padding: 0;
