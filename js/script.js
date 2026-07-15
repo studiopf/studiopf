@@ -1,3 +1,4 @@
+
 // Add near the top (after global variables)
 const virtualPages = [
     "simulateur_devis",
@@ -186,8 +187,12 @@ changelangueinfo();
     changelanguelogo();
     
     changelanguepartenaires();
+    initThemeToggle();
     updateAgeDisplay();
+document.getElementById("contenu").innerHTML = data;
 
+initMenuMobile();
+    
     initializeCardToggle();
     initializecarroussel();
     initScrollBehaviors();
@@ -4741,4 +4746,83 @@ function scrollTotal(offset=100) {
       behavior: "smooth"
     });
   }
+}
+function initMenuMobile() {
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuMobile = document.getElementById("menu-contenu");
+    const menuOverlay = document.getElementById("menu-overlay");
+
+
+    // Vérification si les éléments existent
+    if (!menuToggle || !menuMobile || !menuOverlay) {
+        return;
+    }
+
+
+    // Ouvrir / fermer le menu
+    menuToggle.onclick = function () {
+
+        menuMobile.classList.toggle("active");
+        menuOverlay.classList.toggle("active");
+
+    };
+
+
+    // Fermer en cliquant sur l'overlay
+    menuOverlay.onclick = function () {
+
+        menuMobile.classList.remove("active");
+        menuOverlay.classList.remove("active");
+
+    };
+
+
+    // Fermer après clic sur un lien
+    document.querySelectorAll(".menu-mobile a").forEach(link => {
+
+        link.onclick = function () {
+
+            menuMobile.classList.remove("active");
+            menuOverlay.classList.remove("active");
+
+        };
+
+    });
+
+}
+function initThemeToggle() {
+
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (!themeToggle) return;
+
+    // Charger le thème enregistré
+    if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+
+
+    // Éviter de créer plusieurs événements
+    themeToggle.onclick = function () {
+
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("light-mode")) {
+
+            localStorage.setItem("theme", "light");
+            themeToggle.textContent = "☀️";
+
+        } else {
+
+            localStorage.setItem("theme", "dark");
+            themeToggle.textContent = "🌙";
+
+        }
+
+    };
+
 }
