@@ -3651,14 +3651,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
- <img src="img/conversion1.jpg"
-             alt="Exemple de figurine convertie avec des rabiots">
-
-        <img src="img/conversion2.jpg"
-             alt="Exemple de figurine créée avec plusieurs modèles">
-
-        <img src="img/conversion3.jpg"
-             alt="Exemple de conversion avec des pièces imprimées en 3D">
+let currentLanguage = "french";
 
 
     <div class="maintenance-box">
