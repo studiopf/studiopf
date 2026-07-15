@@ -209,6 +209,11 @@ changelangueinfo();
         changelanguesimu();
             initializeFormCalculations();
     }
+            if (currentPage.includes("quisuisje") && typeof changelanguequisuisje === "function") {
+  changelanguequisuisje();
+    }
+
+  
 
     if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
         changelangueconditions();
@@ -2503,6 +2508,610 @@ function changelanguecollection() {
 
     main.innerHTML = html;
 }
+
+// ────────────────────────────────────────────────
+// Menus multilingues
+// ────────────────────────────────────────────────
+function changelanguequisuisje() {
+    
+      const main = document.getElementById("contenu-principal");
+   
+
+    let html = "";
+
+    if (currentLanguage === "english") {
+        html = `<div class="maintenance-box ajust">
+     <h1>👋 Who am I?</h1>
+<h2>Pierre-François, aka PF — Professional Figurine Painter & Founder of Studio PF</h2>
+<p>
+    My name is <strong>Pierre-François</strong>, known in the community as <strong>PF</strong>. I am a professional figurine painter and the founder of <strong>Studio PF</strong>, a workshop specializing in high-end painting, collectible pieces, competition projects, and training.
+</p>
+<p>
+    In 2025, I had the pleasure of seeing <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Le Progrès</strong></a> dedicate an article to my journey, recounting the birth of <strong>Studio PF</strong> and the evolution of my career as a professional figurine painter.
+</p>
+<p>
+    I work mainly with acrylics, oils, and pigments to bring expressive, readable, and faithful-to-their-universe figurines to life.
+</p>
+<p>
+    <strong>« Every figurine tells a story. My role is to make it shine. » ✨</strong>
+</p>
+<a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
+    Discover my artistic universe 🖼️
+</a>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- ORIGINES & DÉBUTS -->
+    <!-- ================================================== -->
+    <div class="maintenance-box ajust">
+    <h2>🏰 From imaginary worlds to the first brushes</h2>
+    <p>
+        Passionate since childhood about fantasy, science fiction, Tolkien,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/star-wars/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Star Wars</strong></a>,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/marvel-crisi-protocol-maxireves/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Marvel Crisis Protocol</strong></a>,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/autres-jeux-de-figurines/heroquest/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>HeroQuest</strong></a>,
+        <a href="https://maxireves.fr/shop/?s=donjons+et+dragons" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Dungeons & Dragons</strong></a>
+        and board games, I discovered
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>
+        in high school. My first attempts on Eldar were… catastrophic! Thick layers, garish colors, lack of technique: I quickly gave up, convinced that painting was not for me.
+    </p>
+    <p>
+        The real breakthrough came later at
+        <a href="https://www.facebook.com/replaygames.shop" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Replay Games</strong></a>
+        in Roanne, thanks to an introduction to
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>
+        and the kindness of Valentin. I left with an army of
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/seraphon/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Seraphon</strong></a>,
+        and this time I never stopped.
+    </p>
+    <p>
+        Since then, I have also had the pleasure of painting figurines from many universes, such as
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
+        <a href="https://maxireves.fr/shop/?s=seigneur+des+anneaux" class="surligne" target="_blank" rel="noopener noreferrer"><strong>The Lord of the Rings™ Strategy Battle Game</strong></a>,
+        as well as many other miniature, board, and collectible games.
+    </p>
+    <a href="peinturecollection.html"
+   onclick="loadPage('peinturecollection.html'); return false;"
+   class="button">
+    🏆 What if your universe became a collectible piece?
+</a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- PROGRESSION & CRÉATION DU STUDIO -->
+    <!-- ================================================== -->
+<div class="maintenance-box ajust">
+    <h2>🦎 From passion to profession</h2>
+<p>
+    Over the years, I have had the opportunity to paint many armies and factions. It all started with my
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/seraphon/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Seraphon</strong></a>,
+    then came the
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/grand-alliance-destruction/sons-of-behemat/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Sons of Behemat</strong></a>,
+    the
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/daughters-of-khaine/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Daughters of Khaine</strong></a>,
+    then three
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/idoneth-deepkin/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Idoneth Deepkin</strong></a>
+    armies, with which I participated in numerous tournaments. I then painted
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-de-limperium/adeptus-custodes/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Adeptus Custodes</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-du-chaos/chaos-knights/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Chaos Knights</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-du-chaos/death-guard/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Death Guard</strong></a>,
+    as well as many other armies from
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Age of Sigmar</strong></a>
+    and
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>.
+</p>
+<p>
+    During the Covid period, I had a lot of free time. I then fully 3D printed and painted a complete army of <strong>2,000 points of Nurgle</strong> in just one week. Advancing day after day, without really realizing it, I understood how much I had progressed and everything that could be achieved with motivation and effective organization. It was during this period that the idea of creating a true professional painting studio began to take shape.
+</p>
+<p>
+    It was around that time that my friend <strong>Jérémy</strong> said something to me that I have never forgotten: <em>“You’ll end up making this your job, mate.”</em> At the time, it seemed almost unrealistic. However, the idea started to grow, and the project of creating a real painting studio was gradually born.
+</p>
+<p>
+    A few months later, after a work accident followed by a layoff, and thanks to the support of my wife <strong>Gaëlle</strong>, I decided to turn this idea into reality. This is how <strong>Studio PF</strong> was born, with a simple ambition: to offer a professional painting service capable of bringing every figurine to life, whether intended for gaming, collecting, or competition.
+</p>
+<a href="peinturecommission.html"
+   onclick="loadPage('peinturecommission.html'); return false;"
+   class="button">
+    ⚔️ What if your army became unique?
+</a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- FORMATION & COMMUNAUTÉ -->
+    <!-- ================================================== -->
+  <div class="maintenance-box ajust">
+    <h2>📚 Transmission and community</h2>
+ <p>
+    When I created <strong>Studio PF</strong>, I didn’t just want to paint figurines. I also wanted to pass on everything I wish I had learned when I started. My own difficulties taught me the importance of a clear method: avoiding classic mistakes, understanding the right techniques, mastering the airbrush, and progressing with confidence. Today, it is this experience that I share through my training courses and content.
+</p>
+    <p>
+        To go even further, I chose to train with
+        <a href="https://mohand-art.com/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Mohand Art</strong></a>,
+        a professional painter who has won multiple awards at the <a href="https://thegoldendemoncompendium.com/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Golden Demon</strong></a>. This training allowed me to refine my techniques, structure my working method, and adopt an even more professional approach to figurine painting. Today, I am passionate about passing on this experience through my courses, demonstrations, and educational content.
+    </p>
+    <p>
+        Studio PF is also a community of enthusiasts I regularly connect with during
+        <a href="https://www.twitch.tv/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Twitch live streams</strong></a>,
+        where I paint live, share my projects, answer questions, and interact with viewers. You can also find demonstrations, tutorials, guides, and videos on my
+        <a href="https://www.youtube.com/@studiopf-fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a> channel,
+        as well as exclusive content and more in-depth support on
+        <a href="https://www.patreon.com/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Patreon</strong></a>.
+    </p>
+    <ul>
+        <li>🎥 Interactive live streams on <a href="https://www.twitch.tv/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Twitch</strong></a> and detailed tutorials on <a href="https://www.youtube.com/@studiopf-fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a>.</li>
+        <li>📱 Tips, creations, and behind-the-scenes of the workshop on <a href="https://www.instagram.com/studiopf.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong></a> and <a href="https://www.tiktok.com/@studiopf.fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>TikTok</strong></a>.</li>
+        <li>💬 Community exchanges on <a href="https://discord.com/invite/Jpa4yvfQVN" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Discord</strong></a> and exclusive content, personalized advice, and follow-up on <a href="https://www.patreon.com/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Patreon</strong></a>.</li>
+    </ul>
+    <a href="formation.html" onclick="loadPage('formation.html'); return false;" class="button">
+        Discover the training packages 📚
+    </a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- AUJOURD’HUI & ENGAGEMENTS -->
+    <!-- ================================================== -->
+  <div class="maintenance-box ajust">
+    <h2>🚀 Studio PF today</h2>
+    <p>
+        Alongside my professional painting activity, I am the president of the miniature wargaming association
+        <a href="https://grognards.fr/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Les Grognards</strong>
+        </a>
+        in <strong>Riorges</strong>. We bring together enthusiasts for games, initiations, demonstrations, and events to introduce the hobby and develop the local community in a friendly atmosphere.
+    </p>
+    <p>
+        I also participate in numerous conventions and painting competitions, notably at
+        <a href="https://www.octogones.org/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>OctoGônes</strong>
+        </a>.
+        My next major goal is to present a piece at the prestigious
+        <a href="https://thegoldendemoncompendium.com/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Golden Demon</strong>
+        </a>,
+        one of the most renowned miniature painting competitions in the world.
+    </p>
+    <p>
+        I am also involved in charity events such as
+        <a href="https://sam.collectemuco.org/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Stream Against Muco</strong>
+        </a>,
+        which mobilizes the streaming community every year to raise funds in the fight against cystic fibrosis.
+    </p>
+    <p>
+        Today, I devote most of my time to high-end painting projects, competition pieces, training, and sharing my experience with the community, both online and at shows, conventions, and events.
+    </p>
+    <p>
+        <strong>
+            « If my journey can help even one person dare to pick up their brushes, then it will all have been worth it. » ✨
+        </strong>
+    </p>
+    <a href="galerie.html"
+       onclick="loadPage('galerie.html'); return false;"
+       class="button">
+        Discover Studio PF creations 🎨
+    </a>
+</div>`;
+    } else if (currentLanguage === "spanish") {
+        html = `<div class="maintenance-box ajust">
+     <h1>👋 ¿Quién soy?</h1>
+<h2>Pierre-François, alias PF — Artista pintor de figurillas y fundador de Studio PF</h2>
+<p>
+    Me llamo <strong>Pierre-François</strong>, conocido en el medio como <strong>PF</strong>. Soy artista pintor profesional de figurillas y fundador de <strong>Studio PF</strong>, un taller especializado en pintura de alta gama, piezas de colección, proyectos de concurso y formación.
+</p>
+<p>
+    En 2025, tuve el placer de ver cómo <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Le Progrès</strong></a> dedicaba un artículo a mi trayectoria, relatando el nacimiento de <strong>Studio PF</strong> y la evolución de mi actividad como pintor profesional de figurillas.
+</p>
+<p>
+    Trabajo principalmente con acrílico, óleo y pigmentos para dar vida a figurillas expresivas, legibles y fieles a su universo.
+</p>
+<p>
+    <strong>« Cada figurilla cuenta una historia. Mi rol es hacerla brillar. » ✨</strong>
+</p>
+<a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
+    Descubrir mi universo artístico 🖼️
+</a>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- ORIGINES & DÉBUTS -->
+    <!-- ================================================== -->
+    <div class="maintenance-box ajust">
+    <h2>🏰 De los mundos imaginarios a los primeros pinceles</h2>
+    <p>
+        Apasionado desde la infancia por la fantasía, la ciencia ficción, Tolkien,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/star-wars/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Star Wars</strong></a>,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/marvel-crisi-protocol-maxireves/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Marvel Crisis Protocol</strong></a>,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/autres-jeux-de-figurines/heroquest/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>HeroQuest</strong></a>,
+        <a href="https://maxireves.fr/shop/?s=donjons+et+dragons" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Donjons & Dragons</strong></a>
+        y los juegos de mesa, descubrí
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>
+        en el instituto. Mis primeros intentos con Eldars fueron… ¡catastróficos! Capas gruesas, colores chillones, ausencia de técnica: rápidamente abandoné, convencido de que la pintura no era para mí.
+    </p>
+    <p>
+        El verdadero clic llegó más tarde en
+        <a href="https://www.facebook.com/replaygames.shop" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Replay Games</strong></a>
+        en Roanne, gracias a una iniciación a
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>
+        y a la amabilidad de Valentin. Salí de allí con un ejército de
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/seraphon/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Seraphon</strong></a>,
+        y esta vez no me detuve más.
+    </p>
+    <p>
+        Desde entonces, también he tenido el placer de pintar figurillas de numerosos universos, como
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
+        <a href="https://maxireves.fr/shop/?s=seigneur+des+anneaux" class="surligne" target="_blank" rel="noopener noreferrer"><strong>El Señor de los Anillos™ Strategy Battle Game</strong></a>,
+        así como muchos otros juegos de figurillas, de mesa y de colección.
+    </p>
+    <a href="peinturecollection.html"
+   onclick="loadPage('peinturecollection.html'); return false;"
+   class="button">
+    🏆 ¿Y si tu universo se convirtiera en una pieza de colección?
+</a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- PROGRESSION & CRÉATION DU STUDIO -->
+    <!-- ================================================== -->
+<div class="maintenance-box ajust">
+    <h2>🦎 De la pasión al oficio</h2>
+<p>
+    A lo largo de los años, he tenido la oportunidad de pintar numerosos ejércitos y facciones. Todo comenzó con mis
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/seraphon/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Seraphon</strong></a>,
+    luego llegaron los
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/grand-alliance-destruction/sons-of-behemat/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Sons of Behemat</strong></a>,
+    las
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/daughters-of-khaine/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Daughters of Khaine</strong></a>,
+    luego tres ejércitos
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/idoneth-deepkin/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Idoneth Deepkin</strong></a>,
+    con los que participé en numerosos torneos. Después pinté
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-de-limperium/adeptus-custodes/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Adeptus Custodes</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-du-chaos/chaos-knights/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Chaos Knights</strong></a>,
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-du-chaos/death-guard/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Death Guard</strong></a>,
+    así como muchos otros ejércitos de
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Age of Sigmar</strong></a>
+    y
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>.
+</p>
+<p>
+    Durante el periodo del Covid, disponía de mucho tiempo libre. Entonces imprimí completamente en 3D y pinté un ejército completo de <strong>2.000 puntos de Nurgle</strong> en solo una semana. Avanzando día tras día, sin darme realmente cuenta, comprendí cuánto había progresado y todo lo que se podía lograr con motivación y una organización eficaz. Fue en esa época cuando la idea de crear un verdadero estudio de pintura profesional empezó a tomar forma.
+</p>
+<p>
+    Fue en esa época que mi amigo <strong>Jérémy</strong> me soltó una frase que nunca olvidé: <em>« Terminarás haciendo de esto tu profesión, amigo. »</em> En ese momento me parecía casi irreal. Sin embargo, esa idea comenzó a madurar y el proyecto de crear un verdadero estudio de pintura nació progresivamente.
+</p>
+<p>
+    Algunos meses después, tras un accidente laboral seguido de un despido, y gracias al apoyo de mi esposa <strong>Gaëlle</strong>, decidí convertir esa idea en realidad. Así nació <strong>Studio PF</strong>, con una ambición sencilla: ofrecer un servicio de pintura profesional capaz de dar vida a cada figurilla, ya sea destinada al juego, a la colección o a la competición.
+</p>
+<a href="peinturecommission.html"
+   onclick="loadPage('peinturecommission.html'); return false;"
+   class="button">
+    ⚔️ ¿Y si tu ejército se volviera único?
+</a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- FORMATION & COMMUNAUTÉ -->
+    <!-- ================================================== -->
+  <div class="maintenance-box ajust">
+    <h2>📚 Transmisión y comunidad</h2>
+ <p>
+    Al crear <strong>Studio PF</strong>, no quería solo pintar figurillas. También quería transmitir todo lo que me hubiera gustado aprender cuando empecé. Mis propias dificultades me enseñaron la importancia de un método claro: evitar errores clásicos, comprender los gestos correctos, dominar el aerógrafo y progresar con confianza. Hoy, es esa experiencia la que comparto a través de mis formaciones y contenidos.
+</p>
+    <p>
+        Para ir aún más lejos, elegí formarme con
+        <a href="https://mohand-art.com/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Mohand Art</strong></a>,
+        pintor profesional galardonado varias veces en el <a href="https://thegoldendemoncompendium.com/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Golden Demon</strong></a>. Esta formación me permitió perfeccionar mis técnicas, estructurar mi método de trabajo y adoptar un enfoque aún más profesional de la pintura de figurillas. Hoy, me apasiona transmitir a mi vez esta experiencia a través de mis cursos, demostraciones y contenidos pedagógicos.
+    </p>
+    <p>
+        Studio PF también es una comunidad de apasionados con los que me reencuentro regularmente durante
+        <a href="https://www.twitch.tv/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>lives en Twitch</strong></a>,
+        donde pinto en directo, comparto mis proyectos, respondo preguntas e intercambio con los espectadores. También puedes encontrar demostraciones, tutoriales, guías y vídeos en mi canal de
+        <a href="https://www.youtube.com/@studiopf-fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a>,
+        así como contenidos exclusivos y un acompañamiento más profundo en
+        <a href="https://www.patreon.com/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Patreon</strong></a>.
+    </p>
+    <ul>
+        <li>🎥 Lives interactivos en <a href="https://www.twitch.tv/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Twitch</strong></a> y tutoriales detallados en <a href="https://www.youtube.com/@studiopf-fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a>.</li>
+        <li>📱 Consejos, realizaciones y bastidores del taller en <a href="https://www.instagram.com/studiopf.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong></a> y <a href="https://www.tiktok.com/@studiopf.fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>TikTok</strong></a>.</li>
+        <li>💬 Intercambios con la comunidad en <a href="https://discord.com/invite/Jpa4yvfQVN" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Discord</strong></a> y contenidos exclusivos, consejos personalizados y seguimiento en <a href="https://www.patreon.com/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Patreon</strong></a>.</li>
+    </ul>
+    <a href="formation.html" onclick="loadPage('formation.html'); return false;" class="button">
+        Descubrir los paquetes de formación 📚
+    </a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- AUJOURD’HUI & ENGAGEMENTS -->
+    <!-- ================================================== -->
+  <div class="maintenance-box ajust">
+    <h2>🚀 Studio PF hoy</h2>
+    <p>
+        Paralelamente a mi actividad como pintor profesional, soy presidente de la asociación de juegos de figurillas
+        <a href="https://grognards.fr/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Les Grognards</strong>
+        </a>
+        en <strong>Riorges</strong>. Reunimos a apasionados alrededor de partidas, iniciaciones, demostraciones y eventos para dar a conocer el hobby y desarrollar la comunidad local en un ambiente cordial.
+    </p>
+    <p>
+        También participo en numerosas convenciones y concursos de pintura, especialmente en
+        <a href="https://www.octogones.org/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>OctoGônes</strong>
+        </a>.
+        Mi próximo gran objetivo es presentar una pieza en el prestigioso
+        <a href="https://thegoldendemoncompendium.com/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Golden Demon</strong>
+        </a>,
+        uno de los concursos de pintura de figurillas más reputados del mundo.
+    </p>
+    <p>
+        También me involucro en eventos benéficos como el
+        <a href="https://sam.collectemuco.org/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Stream Against Muco</strong>
+        </a>,
+        que moviliza cada año a la comunidad del streaming para recaudar fondos en la lucha contra la fibrosis quística.
+    </p>
+    <p>
+        Hoy en día, dedico la mayor parte de mi tiempo a proyectos de pintura de alta gama, piezas de concurso, formaciones y al intercambio de mi experiencia con la comunidad, tanto en línea como en salones, convenciones y eventos.
+    </p>
+    <p>
+        <strong>
+            « Si mi trayectoria puede ayudar aunque sea a una sola persona a atreverse a tomar sus pinceles, entonces todo esto habrá valido la pena. » ✨
+        </strong>
+    </p>
+    <a href="galerie.html"
+       onclick="loadPage('galerie.html'); return false;"
+       class="button">
+        Descubrir las creaciones de Studio PF 🎨
+    </a>
+</div>`;
+    } else {
+        html = ` <div class="maintenance-box ajust">
+     <h1>👋 Qui suis-je ?</h1>
+
+<h2>Pierre-François, alias PF — Artiste peintre sur figurines & fondateur de Studio PF</h2>
+
+<p>
+    Je m’appelle <strong>Pierre-François</strong>, connu dans le milieu sous le nom de <strong>PF</strong>. Je suis artiste peintre professionnel sur figurines et fondateur de <strong>Studio PF</strong>, un atelier spécialisé dans la peinture haut de gamme, les pièces de collection, les projets de concours et la formation.
+</p>
+
+<p>
+    En 2025, j'ai eu le plaisir de voir <a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Le Progrès</strong></a> consacrer un article à mon parcours, retraçant la naissance de <strong>Studio PF</strong> et l'évolution de mon activité de peintre professionnel sur figurines.
+</p>
+
+<p>
+    Je travaille principalement à l’acrylique, à l’huile et aux pigments pour donner vie à des figurines expressives, lisibles et fidèles à leur univers.
+</p>
+
+<p>
+    <strong>« Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller. » ✨</strong>
+</p>
+
+<a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
+    Découvrir mon univers artistique 🖼️
+</a>
+    </div>
+
+    <!-- ================================================== -->
+    <!-- ORIGINES & DÉBUTS -->
+    <!-- ================================================== -->
+    <div class="maintenance-box ajust">
+    <h2>🏰 Des mondes imaginaires aux premiers pinceaux</h2>
+
+    <p>
+        Passionné depuis l’enfance par la fantasy, la science-fiction, Tolkien,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/star-wars/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Star Wars</strong></a>,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/marvel-crisi-protocol-maxireves/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Marvel Crisis Protocol</strong></a>,
+        <a href="https://maxireves.fr/selection-jeux/jeux-de-figurines/autres-jeux-de-figurines/heroquest/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>HeroQuest</strong></a>,
+        <a href="https://maxireves.fr/shop/?s=donjons+et+dragons" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Donjons & Dragons</strong></a>
+        et les jeux de plateau, j’ai découvert
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>
+        au lycée. Mes premiers essais sur des Eldars furent… catastrophiques ! Couches épaisses, couleurs criardes, absence de technique : j’ai rapidement abandonné, persuadé que la peinture n’était pas faite pour moi.
+    </p>
+
+    <p>
+        Le véritable déclic est arrivé plus tard chez
+        <a href="https://www.facebook.com/replaygames.shop" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Replay Games</strong></a>
+        à Roanne, grâce à une initiation à
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>
+        et à la bienveillance de Valentin. J’en suis ressorti avec une armée de
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/seraphon/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Séraphons</strong></a>,
+        et cette fois, je ne me suis plus arrêté.
+    </p>
+
+    <p>
+        Depuis, j'ai également eu le plaisir de peindre des figurines issues de nombreux univers, comme
+        <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
+        <a href="https://maxireves.fr/shop/?s=seigneur+des+anneaux" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Le Seigneur des Anneaux™ Strategy Battle Game</strong></a>,
+        ainsi que de nombreux autres jeux de figurines, de plateau et de collection.
+    </p>
+
+    <a href="peinturecollection.html"
+   onclick="loadPage('peinturecollection.html'); return false;"
+   class="button">
+    🏆 Et si votre univers devenait une pièce de collection ?
+</a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- PROGRESSION & CRÉATION DU STUDIO -->
+    <!-- ================================================== -->
+<div class="maintenance-box ajust">
+    <h2>🦎 De la passion au métier</h2>
+
+<p>
+    Au fil des années, j'ai eu l'occasion de peindre de nombreuses armées et factions. Tout a commencé avec mes
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/seraphon/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Séraphons</strong></a>,
+    puis sont venus les
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/grand-alliance-destruction/sons-of-behemat/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Sons of Behemat</strong></a>,
+    les
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/daughters-of-khaine/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Daughters of Khaine</strong></a>,
+    puis trois armées
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/idoneth-deepkin/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Idoneth Deepkin</strong></a>,
+    avec lesquelles j'ai participé à de nombreux tournois. J'ai ensuite peint des
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-de-limperium/adeptus-custodes/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Adeptus Custodes</strong></a>,
+    des
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-du-chaos/chaos-knights/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Chaos Knights</strong></a>,
+    de la
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/armees-du-chaos/death-guard/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Death Guard</strong></a>,
+    ainsi que de nombreuses autres armées de
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Age of Sigmar</strong></a>
+    et
+    <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>.
+</p>
+
+<p>
+    Pendant la période du Covid, je disposais de beaucoup de temps libre. J'ai alors imprimé intégralement en 3D puis peint une armée complète de <strong>2&nbsp;000 points de Nurgle</strong> en seulement une semaine. En avançant jour après jour, sans vraiment m'en rendre compte, j'ai réalisé à quel point j'avais progressé et tout ce qu'il était possible d'accomplir avec de la motivation et une organisation efficace. C'est à cette période que l'idée de créer un véritable studio de peinture professionnel a commencé à faire son chemin.
+</p>
+
+
+
+<p>
+    C'est à cette époque que mon ami <strong>Jérémy</strong> m'a lancé une phrase que je n'ai jamais oubliée : <em>« Tu finiras par en faire ton métier mon pote. »</em> Sur le moment, cela me semblait presque irréaliste. Pourtant, cette idée a commencé à faire son chemin et le projet de créer un véritable studio de peinture est progressivement né.
+</p>
+
+<p>
+    Quelques mois plus tard, après un accident du travail suivi d'un licenciement, et grace au soutien de mon épouse <strong>Gaëlle</strong>, j'ai décidé de transformer cette idée en réalité. C'est ainsi qu'est né <strong>Studio PF</strong>, avec une ambition simple : proposer un service de peinture professionnel capable de donner vie à chaque figurine, qu'elle soit destinée au jeu, à la collection ou à la compétition.
+</p>
+
+<a href="peinturecommission.html"
+   onclick="loadPage('peinturecommission.html'); return false;"
+   class="button">
+    ⚔️ Et si votre armée devenait unique ?
+</a>
+
+</div>
+
+
+
+    <!-- ================================================== -->
+    <!-- FORMATION & COMMUNAUTÉ -->
+    <!-- ================================================== -->
+  <div class="maintenance-box ajust">
+    <h2>📚 Transmission et communauté</h2>
+
+ <p>
+    En créant <strong>Studio PF</strong>, je ne voulais pas seulement peindre des figurines. J'avais aussi envie de transmettre tout ce que j'aurais aimé apprendre lorsque j'ai commencé. Mes propres difficultés m'ont appris l'importance d'une méthode claire : éviter les erreurs classiques, comprendre les bons gestes, maîtriser l'aérographe et progresser avec confiance. Aujourd'hui, c'est cette expérience que je partage à travers mes formations et mes contenus.
+</p>
+
+    <p>
+        Afin d'aller encore plus loin, j'ai choisi de me former auprès de
+        <a href="https://mohand-art.com/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Mohand Art</strong></a>,
+        peintre professionnel plusieurs fois récompensé au  <a href="https://thegoldendemoncompendium.com/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Golden Demon</strong>. Cette formation m'a permis de perfectionner mes techniques, de structurer ma méthode de travail et d'adopter une approche encore plus professionnelle de la peinture sur figurines. Aujourd'hui, j'ai à cœur de transmettre à mon tour cette expérience à travers mes cours, mes démonstrations et mes contenus pédagogiques.
+    </p>
+
+    <p>
+        Studio PF, c'est également une communauté de passionnés que je retrouve régulièrement lors de
+        <a href="https://www.twitch.tv/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>lives sur Twitch</strong></a>,
+        où je peins en direct, partage mes projets, réponds aux questions et échange avec les spectateurs. Vous pouvez également retrouver des démonstrations, tutoriels, guides et vidéos sur ma chaîne
+        <a href="https://www.youtube.com/@studiopf-fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a>,
+        ainsi que des contenus exclusifs et un accompagnement plus approfondi sur
+        <a href="https://www.patreon.com/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Patreon</strong></a>.
+    </p>
+
+    <ul>
+        <li>🎥 Lives interactifs sur <a href="https://www.twitch.tv/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Twitch</strong></a> et tutoriels détaillés sur <a href="https://www.youtube.com/@studiopf-fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong></a>.</li>
+
+        <li>📱 Astuces, réalisations et coulisses de l'atelier sur <a href="https://www.instagram.com/studiopf.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong></a> et <a href="https://www.tiktok.com/@studiopf.fr" class="surligne" target="_blank" rel="noopener noreferrer"><strong>TikTok</strong></a>.</li>
+
+        <li>💬 Échanges avec la communauté sur <a href="https://discord.com/invite/Jpa4yvfQVN" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Discord</strong></a> et contenus exclusifs, conseils personnalisés et suivi sur <a href="https://www.patreon.com/studiopf" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Patreon</strong></a>.</li>
+    </ul>
+
+    <a href="formation.html" onclick="loadPage('formation.html'); return false;" class="button">
+        Découvrir les forfaits de formation 📚
+    </a>
+</div>
+
+    <!-- ================================================== -->
+    <!-- AUJOURD’HUI & ENGAGEMENTS -->
+    <!-- ================================================== -->
+  <div class="maintenance-box ajust">
+    <h2>🚀 Studio PF aujourd’hui</h2>
+
+    <p>
+        En parallèle de mon activité de peintre professionnel, je suis président de l'association de jeux de figurines
+        <a href="https://grognards.fr/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Les Grognards</strong>
+        </a>
+        à <strong>Riorges</strong>. Nous réunissons des passionnés autour de parties, d'initiations, de démonstrations et d'événements afin de faire découvrir le hobby et de développer la communauté locale dans une ambiance conviviale.
+    </p>
+
+    <p>
+        Je participe également à de nombreuses conventions et concours de peinture, notamment lors d'
+        <a href="https://www.octogones.org/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>OctoGônes</strong>
+        </a>.
+        Mon prochain grand objectif est de présenter une pièce au prestigieux
+        <a href="https://thegoldendemoncompendium.com/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Golden Demon</strong>
+        </a>,
+        l'un des concours de peinture sur figurines les plus réputés au monde.
+    </p>
+
+    <p>
+        Je m'investis également dans des événements caritatifs comme le
+        <a href="https://sam.collectemuco.org/"
+           class="surligne"
+           target="_blank"
+           rel="noopener noreferrer">
+            <strong>Stream Against Muco</strong>
+        </a>,
+        qui mobilise chaque année la communauté du streaming afin de récolter des fonds pour la lutte contre la mucoviscidose.
+    </p>
+
+    <p>
+        Aujourd'hui, je consacre l'essentiel de mon temps aux projets de peinture haut de gamme, aux pièces de concours, aux formations et au partage de mon expérience avec la communauté, aussi bien en ligne que lors des salons, conventions et événements.
+    </p>
+
+    <p>
+        <strong>
+            « Si mon parcours peut aider ne serait-ce qu'une personne à oser prendre ses pinceaux, alors tout cela aura valu la peine. » ✨
+        </strong>
+    </p>
+
+    <a href="galerie.html"
+       onclick="loadPage('galerie.html'); return false;"
+       class="button">
+        Découvrir les créations Studio PF 🎨
+    </a>
+</div>
+ `;
+    }
+
+    main.innerHTML = html;
+}
+        
 // ────────────────────────────────────────────────
 // Menus multilingues
 // ────────────────────────────────────────────────
@@ -2515,91 +3124,85 @@ function changelanguepeinture() {
 
     if (currentLanguage === "english") {
         html = `
-<h1>🎨 High-End Miniature Painting</h1>
-
+<h1>🎨 High-End Figurine Painting</h1>
 <div class="maintenance-box">
-
-
         <h2>⭐ Gold — Premium TableTop Finish</h2>
-
         <p>
-            <strong>Ideal for:</strong> Warhammer armies, units and large quantities of miniatures.
-        </p>
-
-        <p>
-            A clean, efficient and consistent finish to create an army
-            with an excellent tabletop appearance while keeping an accessible price.
-        </p>
-
-        <p>
-            <strong>🎨 Techniques used:</strong><br>
-            Base colors, simple shading, basic highlights,
-            essential details and a clean finish.
-        </p>
-
-        <p>
-            <strong>💵 Indicative price: $15 to $25 per miniature</strong>
-        </p>
-
-        <p>
-            ⏱️ <strong>Indicative painting time:</strong><br><br>
-
-            <strong>Troop miniature on 20-25mm base:</strong><br>
-            Less than 1 hour → <strong>$10</strong><br><br>
-
-            <strong>Troop miniature on 28-32mm base:</strong><br>
-            Around 1h+ → <strong>$20</strong>
+            <strong>Ideal for :</strong> Warhammer armies, units and large quantities of figurines.
         </p>
         <p>
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+            A clean, efficient and uniform finish to obtain an army
+            with an excellent tabletop look while keeping an affordable price.
+        </p>
+        <p>
+            <strong>🎨 Techniques used :</strong><br>
+            Base colors, simple shading, simple highlighting,
+            essential details and clean finish.
+        </p>
+        <p>
+            <strong>💵 Indicative price : €10 to €20 per figurine</strong>
+        </p>
+        <p>
+            ⏱️ <strong>Indicative painting time :</strong><br><br>
+            <strong>Troop figurine 20-25mm base :</strong><br>
+            Less than one hour → <strong>€10</strong><br><br>
+            <strong>Troop figurine 28-32mm base :</strong><br>
+            About 1h+ → <strong>€20</strong>
+        </p>
+     <!-- Illustrations -->
+<div class="exemples-photos">
+    <img src="img/gold1.jpg" alt="Example of Gold level painted figurine">
+    <img src="img/gold2.jpg" alt="Example of Gold level painted unit">
+</div>
+<p style="text-align:center;">
+    <em>Examples of Gold level creations.</em>
 </p>
+   <p>
+         <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    </p>
     </div>
 
-
- 
-
-
-<div class="maintenance-box">
+    <div class="maintenance-box">
         <h2>👑 Diamond — Superior TableTop Finish</h2>
-
         <p>
-            <strong>Ideal for:</strong> Characters, heroes, monsters,
-            vehicles and important miniatures in your collection.
+            <strong>Ideal for :</strong> Characters, heroes, monsters,
+            vehicles and important figurines from your collection.
         </p>
-
         <p>
-            A more advanced painting level with stronger contrasts,
-            enhanced depth and additional attention to details.
+            A more advanced painting with greater contrast,
+            depth and enhanced detail work.
         </p>
-
         <p>
-            <strong>🎨 Techniques used:</strong><br>
-            Advanced highlights, light placement,
+            <strong>🎨 Techniques used :</strong><br>
+            Advanced highlighting, light work,
             gradients, oil effects, decals,
             weathering and additional effects.
         </p>
-
         <p>
-            <strong>💵 Indicative price: $25 to $50 per miniature</strong>
-        </p>
-
-        <p>
-            ⏱️ <strong>Indicative painting time:</strong><br><br>
-
-            <strong>Troop miniature on 20-25mm base:</strong><br>
-            Around 1 hour → <strong>$20</strong><br><br>
-
-            <strong>Troop miniature on 28-32mm base:</strong><br>
-            Around 2h+ → <strong>$40</strong>
+            <strong>💵 Indicative price : €20 to €40 per figurine</strong>
         </p>
         <p>
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-</p>
+            ⏱️ <strong>Indicative painting time :</strong><br><br>
+            <strong>Troop figurine 20-25mm base :</strong><br>
+            About 1 hour → <strong>€20</strong><br><br>
+            <strong>Troop figurine 28-32mm base :</strong><br>
+            About 2h+ → <strong>€40</strong>
+        </p>
+      <!-- Exemples -->
+    <div class="exemples-photos">
+        <img src="img/diamant1.jpg" alt="Example of Diamond level painting">
+        <img src="img/diamant2.jpg" alt="Example of Diamond level painted figurine">
+    </div>
+    <p style="text-align:center;">
+        <em>📸 Examples of Diamond level creations.</em>
+    </p>
+   <p>
+         <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    </p>
     </div>
 
-
-<div class="maintenance-box">
-<h2>Preparation 🛠️</h2>
+    <div class="maintenance-box">
+       <h2>Preparation 🛠️</h2>
 <ul>
     <li>Cleaning</li>
     <li>Assembly</li>
@@ -2610,20 +3213,20 @@ function changelanguepeinture() {
 <div class="maintenance-box">
     <h2>Painting 🎨</h2>
     <ul>
-        <li><strong>⭐ Gold :</strong> clean and efficient finish</li>
-        <li><strong>👑 Diamond :</strong> refined details, enhanced contrasts and carefully worked focal points</li>
+        <li><strong>⭐ Gold :</strong> clean and efficient result</li>
+        <li><strong>👑 Diamond :</strong> careful details, enhanced contrasts and worked focal points</li>
     </ul>
 </div>
 
 <div class="maintenance-box">
-    <h2>Basings 🌿</h2>
+    <h2>Basing 🌿</h2>
     <ul>
-        <li><strong>⭐ Gold :</strong> detailed and harmonious base</li>
-        <li><strong>👑 Diamond :</strong> scenic base with immersive atmosphere</li>
+        <li><strong>⭐ Gold :</strong> worked and harmonious base</li>
+        <li><strong>👑 Diamond :</strong> scenic base with atmosphere</li>
     </ul>
 </div>
 
-<!-- Comparison table -->
+<!-- Comparison Table -->
 <div class="maintenance-box">
     <table class="tableborder1">
         <thead>
@@ -2641,143 +3244,111 @@ function changelanguepeinture() {
             </tr>
             <tr>
                 <td>Finish</td>
-                <td>Clean,<br>simple and effective</td>
-                <td>Highly detailed,<br>with strong contrast and focal points</td>
+                <td>Clean,<br>simple and efficient</td>
+                <td>Highly detailed,<br>contrasted with focal points</td>
             </tr>
             <tr>
                 <td>Techniques</td>
-                <td>Base colours,<br>simple shading,<br>clean finish</td>
-                <td>Highlights,<br>lighting effects,<br>blending,<br>oil techniques,<br>decals,<br>NMM,<br>weathering</td>
+                <td>Base colors,<br>simple shading,<br>clean finish</td>
+                <td>Highlighting,<br>lighting,<br>gradients,<br>oil,<br>decals,<br>MNM,<br>weathering</td>
             </tr>
             <tr>
                 <td>Base</td>
-                <td>Detailed and coherent</td>
+                <td>Worked and coherent</td>
                 <td>Scenic and immersive</td>
             </tr>
         </tbody>
     </table>
 </div>
-<p>
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-</p>
-<div class="maintenance-box">
-    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
-<table class="tableborder1">
-<thead>
-
-<tr>
-   <th></th>
-    <th>Gold</th>
-    <th>Diamant</th>
-</tr>
-</thead>
-
-<tbody id="tarifTableBody">
-
-</tbody>
-</table>
-  </div>
+   
+        <div>
+         <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    </div>
 `;
     } else if (currentLanguage === "spanish") {
         html = `
-
-<h1>🎨 Pintura de Miniaturas de Alta Gama</h1>
-
+<h1>🎨 Pintura de Figurillas de Alta Gama</h1>
 <div class="maintenance-box">
-
-           <h2>⭐ Gold — Acabado TableTop Premium</h2>
-
+        <h2>⭐ Gold — Acabado TableTop Premium</h2>
         <p>
-            <strong>Ideal para:</strong> Ejércitos Warhammer, unidades
-            y grandes cantidades de miniaturas.
+            <strong>Ideal para :</strong> Ejércitos Warhammer, unidades y grandes cantidades de figurillas.
         </p>
-
         <p>
-            Un acabado limpio, eficiente y uniforme para conseguir un ejército
-            con una excelente presencia en mesa manteniendo un precio accesible.
+            Un acabado limpio, eficiente y homogéneo para obtener un ejército
+            con un excelente aspecto en mesa manteniendo un precio accesible.
         </p>
-
         <p>
-            <strong>🎨 Técnicas utilizadas:</strong><br>
-            Colores base, sombras simples, iluminaciones básicas,
+            <strong>🎨 Técnicas utilizadas :</strong><br>
+            Colores base, sombreados simples, iluminaciones simples,
             detalles esenciales y acabado limpio.
         </p>
-
         <p>
-            <strong>💵 Precio orientativo: 10€ a 20€ por miniatura</strong>
+            <strong>💵 Precio orientativo : 10€ a 20€ por figurilla</strong>
         </p>
-
         <p>
-            ⏱️ <strong>Tiempo de pintura orientativo:</strong><br><br>
-
-            <strong>Miniatura de tropa con peana de 20-25mm:</strong><br>
-            Menos de 1 hora → <strong>10€</strong><br><br>
-
-            <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
+            ⏱️ <strong>Tiempo de pintura orientativo :</strong><br><br>
+            <strong>Figurilla de tropa base 20-25mm :</strong><br>
+            Menos de una hora → <strong>10€</strong><br><br>
+            <strong>Figurilla de tropa base 28-32mm :</strong><br>
             Aproximadamente 1h+ → <strong>20€</strong>
         </p>
-        <p>
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
+     <!-- Illustrations -->
+<div class="exemples-photos">
+    <img src="img/gold1.jpg" alt="Ejemplo de figurilla pintada nivel Gold">
+    <img src="img/gold2.jpg" alt="Ejemplo de unidad pintada nivel Gold">
+</div>
+<p style="text-align:center;">
+    <em>Ejemplos de realizaciones en nivel Gold.</em>
 </p>
+   <p>
+         <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
+    </p>
     </div>
 
-
-
-
-<div class="maintenance-box">
+    <div class="maintenance-box">
         <h2>👑 Diamante — Acabado TableTop Superior</h2>
-
         <p>
-            <strong>Ideal para:</strong> Personajes, héroes, monstruos,
-            vehículos y miniaturas importantes de tu colección.
+            <strong>Ideal para :</strong> Personajes, héroes, monstruos,
+            vehículos y figurillas importantes de tu colección.
         </p>
-
         <p>
-            Un nivel de pintura más avanzado con mayor contraste,
-            profundidad y un trabajo más detallado.
+            Una pintura más elaborada con mayor contraste,
+            profundidad y un trabajo reforzado en los detalles.
         </p>
-
         <p>
-            <strong>🎨 Técnicas utilizadas:</strong><br>
+            <strong>🎨 Técnicas utilizadas :</strong><br>
             Iluminaciones avanzadas, trabajo de luces,
-            degradados, efectos con óleo, calcomanías,
+            degradados, efectos al óleo, calcas,
             weathering y efectos adicionales.
         </p>
-
         <p>
-            <strong>💵 Precio orientativo: 20€ a 40€ por miniatura</strong>
+            <strong>💵 Precio orientativo : 20€ a 40€ por figurilla</strong>
         </p>
-
         <p>
-            ⏱️ <strong>Tiempo de pintura orientativo:</strong><br><br>
-
-            <strong>Miniatura de tropa con peana de 20-25mm:</strong><br>
+            ⏱️ <strong>Tiempo de pintura orientativo :</strong><br><br>
+            <strong>Figurilla de tropa base 20-25mm :</strong><br>
             Aproximadamente 1 hora → <strong>20€</strong><br><br>
-
-            <strong>Miniatura de tropa con peana de 28-32mm:</strong><br>
+            <strong>Figurilla de tropa base 28-32mm :</strong><br>
             Aproximadamente 2h+ → <strong>40€</strong>
         </p>
-        <p>
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
-</p>
+      <!-- Exemples -->
+    <div class="exemples-photos">
+        <img src="img/diamant1.jpg" alt="Ejemplo de pintura nivel Diamante">
+        <img src="img/diamant2.jpg" alt="Ejemplo de figurilla pintada nivel Diamante">
+    </div>
+    <p style="text-align:center;">
+        <em>📸 Ejemplos de realizaciones en nivel Diamante.</em>
+    </p>
+   <p>
+         <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
+    </p>
     </div>
 
-
-<div class="maintenance-box">
-<h3>Preparación (incluida) 🛠️</h3>
-<ul>
-    <li>Limpieza completa de las piezas</li>
-    <li>Eliminación de líneas de molde</li>
-    <li>Montaje limpio y optimizado</li>
-    <li>Preparación adaptada al nivel de acabado</li>
-</ul>
-<p><em>Cada miniatura se prepara para un resultado óptimo.</em></p>
-</div>
-<div class="maintenance-box">
-<h2>Preparación 🛠️</h2>
+    <div class="maintenance-box">
+       <h2>Preparación 🛠️</h2>
 <ul>
     <li>Limpieza</li>
-    <li>Montaje</li>
+    <li>Ensamblaje</li>
     <li>Preparación óptima antes de pintar</li>
 </ul>
 </div>
@@ -2785,20 +3356,20 @@ function changelanguepeinture() {
 <div class="maintenance-box">
     <h2>Pintura 🎨</h2>
     <ul>
-        <li><strong>⭐ Gold :</strong> acabado limpio y eficaz</li>
+        <li><strong>⭐ Gold :</strong> acabado limpio y eficiente</li>
         <li><strong>👑 Diamante :</strong> detalles cuidados, contrastes reforzados y puntos focales trabajados</li>
     </ul>
 </div>
 
 <div class="maintenance-box">
-    <h2>Peanas 🌿</h2>
+    <h2>Ensocado 🌿</h2>
     <ul>
-        <li><strong>⭐ Gold :</strong> peana trabajada y armoniosa</li>
-        <li><strong>👑 Diamante :</strong> peana escénica con una ambientación inmersiva</li>
+        <li><strong>⭐ Gold :</strong> base trabajada y armoniosa</li>
+        <li><strong>👑 Diamante :</strong> base escénica con ambientación</li>
     </ul>
 </div>
 
-<!-- Tabla comparativa -->
+<!-- Tableau comparaison -->
 <div class="maintenance-box">
     <table class="tableborder1">
         <thead>
@@ -2816,54 +3387,33 @@ function changelanguepeinture() {
             </tr>
             <tr>
                 <td>Acabado</td>
-                <td>Limpio,<br>simple y eficaz</td>
-                <td>Muy detallado,<br>con contraste y puntos focales</td>
+                <td>Limpio,<br>simple y eficiente</td>
+                <td>Muy detallado,<br>contrastado con puntos focales</td>
             </tr>
             <tr>
                 <td>Técnicas</td>
-                <td>Colores base,<br>sombras simples,<br>acabado limpio</td>
+                <td>Colores base,<br>sombreados simples,<br>acabado limpio</td>
                 <td>Iluminaciones,<br>luces,<br>degradados,<br>óleo,<br>calcas,<br>MNM,<br>weathering</td>
             </tr>
             <tr>
-                <td>Peana</td>
+                <td>Base</td>
                 <td>Trabajada y coherente</td>
                 <td>Escénica e inmersiva</td>
             </tr>
         </tbody>
     </table>
 </div>
-<p>
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
-</p>
-<div class="maintenance-box">
-    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
-<table class="tableborder1">
-<thead>
-
-<tr>
-   <th></th>
-    <th>Gold</th>
-    <th>Diamant</th>
-</tr>
-</thead>
-
-<tbody id="tarifTableBody">
-
-</tbody>
-</table>
-  </div>
- <p>
-    <a href="simulateur_devis.html" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar un presupuesto 💬</a>
-</p>
+   
+        <div>
+         <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
+    </div>
 `;
     } else {
-        html = `
-
-  <h1>🎨 Peinture de Figurines Haut de Gamme</h1>
+        html = ` <h1>🎨 Peinture de Figurines Haut de Gamme</h1>
 
 <div class="maintenance-box">
 
-  
+
         <h2>⭐ Gold — Finition TableTop Premium</h2>
 
         <p>
@@ -2894,15 +3444,27 @@ function changelanguepeinture() {
             <strong>Figurine de troupe socle 28-32mm :</strong><br>
             Environ 1h+ → <strong>20€</strong>
         </p>
-   
+     <!-- Illustrations -->
+<div class="exemples-photos">
+    <img src="img/gold1.jpg" alt="Exemple de figurine peinte niveau Gold">
+    <img src="img/gold2.jpg" alt="Exemple d'unité peinte niveau Gold">
+</div>
 
-  <p>
-         <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+<p style="text-align:center;">
+    <em>Exemples de réalisations au niveau Gold.</em>
+</p>
+   <p>
+         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+
     </p>
     </div>
 
 
-   <div class="maintenance-box">
+
+
+
+    <div class="maintenance-box">
+
         <h2>👑 Diamant — Finition TableTop Supérieure</h2>
 
         <p>
@@ -2935,14 +3497,26 @@ function changelanguepeinture() {
             <strong>Figurine de troupe socle 28-32mm :</strong><br>
             Environ 2h+ → <strong>40€</strong>
         </p>
-  
+      <!-- Exemples -->
+    <div class="exemples-photos">
+        <img src="img/diamant1.jpg" alt="Exemple de peinture niveau Diamant">
+        <img src="img/diamant2.jpg" alt="Exemple de figurine peinte niveau Diamant">
+    </div>
 
-            <p>
-         <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </p>  </div>
-    
-<div class="maintenance-box">
-      <h2>Préparation 🛠️</h2>
+    <p style="text-align:center;">
+        <em>📸 Exemples de réalisations au niveau Diamant.</em>
+    </p>
+
+
+   <p>
+         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+    </p>
+    </div>
+
+
+
+    <div class="maintenance-box">
+       <h2>Préparation 🛠️</h2>
 <ul>
     <li>Nettoyage</li>
     <li>Assemblage</li>
@@ -2965,7 +3539,6 @@ function changelanguepeinture() {
         <li><strong>👑 Diamant :</strong> socle scénique avec mise en ambiance</li>
     </ul>
 </div>
-
 
 <!-- Tableau comparaison -->
 <div class="maintenance-box">
@@ -3002,29 +3575,11 @@ function changelanguepeinture() {
     </table>
 </div>
 
-    <p>
-          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </p>
-    <div class="maintenance-box">
-    <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
-<table class="tableborder1">
-<thead>
+    
+        <div>
+         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+    </div>
 
-<tr>
-   <th></th>
-    <th>Gold</th>
-    <th>Diamant</th>
-</tr>
-</thead>
-
-<tbody id="tarifTableBody">
-
-</tbody>
-</table>
-  </div>
- <p>
-          <a href="simulateur_devis.html" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    </p>
          `;
     }
 
