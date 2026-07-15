@@ -257,8 +257,224 @@ function changelangueforma() {
  currentLanguage = "spanish";
         changelangueindex();
     } else {
-         currentPage = "formation.html";
-        loadPage('formation.html');
+           html = ` 
+            <div class="maintenance-box">
+        <h1>🎨 Formation Peinture sur Figurines</h1>
+       <div class="center">
+    <p>Rejoignez <strong>Studio Peinture Figurine</strong> en cours personnalisés, pour débutant ou avancé !</p>
+    <p>Venez découvrir le pinceau et l’aérographe, et créez des œuvres uniques.</p>
+    </div></div>
+
+    <div class="maintenance-box">
+      <h2>💡 Pourquoi Nous Choisir ?</h2>
+        <div class="center">
+      <ul>
+        <li>🖌️ Cours adaptés à tous les niveaux</li>
+        <li>🎯 Suivi personnalisé sur vos projets</li>
+        <li>🌟 Techniques avancées : freehand, OSL, NMM, weathering</li>
+      </ul>
+      <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
+    </div>
+   </div>
+     <div>
+         <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
+    </div>
+    
+       <div class="maintenance-box">
+      <h2>🖍️ Forfaits de Cours</h2>
+      <div class="card">
+        <h3>🌱 Cours individuel Débutant ou Confirmé</h3>
+        <p>Au premier contact : 1ère heure offerte pour se présenter et découvrir la peinture !</p>
+        <p>Une pochette d’initiation sera remise.</p>
+      </div>
+
+        
+      <div class="card-container3">
+        <div class="card">
+          <h3>🕐 Cours 1h</h3>
+          <p>50€/h</p>
+          <p>Pour un suivi de projet régulier</p>
+          <p>Possibilité de placer l’heure en fin de journée, dans l’idéal début de matinée ou début après-midi.</p>
+        </div>
+        <div class="card">
+          <h3>⏳ Cours 3h</h3>
+          <p>150€</p>
+          <p>La solution conseillée pour démarrer la peinture ou un projet.</p>
+          <p>9h-12h, 14h-17h ou 16h-19h.</p>
+        </div>
+        <div class="card">
+          <h3>🔥 Cours 5h</h3>
+          <p>200€</p>
+          <p>Grosse session pour avancer ou démarrer sur un gros projet.</p>
+          <p>14h-19h</p>
+        </div>
+      </div>
+
+    <p>Horaires à titre d'exemple.</p>
+
+             <div>
+         <p> <a href="#formationForm" class="button">S'inscrire 💬</a></p>  
+    </div>
+
+    
+   </div>
+       <div class="maintenance-box">
+      <h2>📆 Stage en groupe</h2>
+<p>Plusieurs thèmes possibles : lumières, théorie des couleurs, buste, choix d’un thème d’armée...</p>
+    <div class="card-container2">
+        <div class="card">
+          <h3>📆 Stage 5h</h3>
+          <p>200€</p>
+           <p>9h-12h / 14h-16h</p>
+           <p>Repas inclus.</p>
+           <p>Une pochette et la figurune sera remise.</p>
+          
+        </div>
+        <div class="card">
+          <h3>📆 Stage 8h</h3>
+           <p>350€</p>
+            <p>9h-12h / 14h-19h</p>
+           <p>Repas inclus.</p>
+            <p>Une pochette et la figurune sera remise.</p>
+        </div>
+      </div>
+         <p>Horaires à titre d'exemple.</p>
+     
+   </div>
+       <div class="maintenance-box">
+        <h2>📆 Prestation événementielle</h2>
+        <p>Initiation au modélisme, premiers pas pour Warhammer (montage, peinture et jeu)...</p>
+        <p>Sur devis</p>
+ <div class="card-container2">
+        <div class="card">
+          <h3>📆 1 journée</h3>
+            <p>(moyenne de 8h)</p>
+          <p>700€</p>
+           <p>9h-12h / 14h-19h</p>
+           <p>Comprend le trajet.</p>
+           <p>Fourniture peinture fourni.</p>
+         <p>Hors figurines.</p>
+         
+        </div>
+        <div class="card">
+           <h3>📆 2 journées</h3>
+          <p>(moyenne de 8h)</p>
+           <p>1900€</p>
+            <p>9h-12h / 14h-19h</p>
+             <p>Comprend le trajet.</p>
+           <p>Fourniture peinture fourni.</p>
+           <p>Hors figurines.</p>
+        </div>
+      </div>
+
+   <p>Horaires à titre d'exemple.</p>
+   </div>
+       <div class="maintenance-box">
+      <h2>🖌️🔫 Choisissez vos armes :</h2>
+  
+      <div class="card-container3">
+        <div class="card">
+          <h3>🖌️ Pinceau</h3>
+          <p>Techniques pour débutants et avancés</p>
+        </div>
+        <div class="card">
+          <h3>🔫 Aérographe</h3>
+          <p>Techniques précises pour débutants et avancés</p>
+        </div>
+        <div class="card">
+          <h3>🖌️🔫 Les deux</h3>
+          <p>Techniques précises pour débutants et avancés</p>
+        </div>
+      </div>
+  
+</div>
+    <div class="maintenance-box">
+  
+      <h2>🚀🎨 Lancez-vous !</h2>
+      
+    <div class="card-container2">
+        <div class="card">
+          <h3>🎨 Matériel Fourni</h3>
+          <p>Pinceaux, aérographe, peintures : tout est inclus pour une expérience optimale !</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Prêt à Briller ?</h3>
+          <p>Prendre des cours est l’occasion de débuter un projet !</p>
+          <p>Apprenez à transformer vos figurines en œuvres d’art 🖼️.</p>
+        </div>
+      </div>
+     </div>
+
+      <div class="maintenance-box">
+   <h2>📅 Réservez dès maintenant et devenez expert !</h2>
+    <div class="center">
+   
+      
+      <form onsubmit="event.preventDefault(); envoyerMailForma(this);" id="formationForm">
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Nom" required>
+        </div>
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div>
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+        </div>
+        <div>
+          <label for="adresse">Adresse</label>
+          <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
+        </div>
+        <div>
+          <label for="cp">Code Postal</label>
+          <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
+        </div>
+        <div>
+          <label for="ville">Ville</label>
+          <input type="text" id="ville" name="ville" placeholder="Ville" required>
+        </div>
+        <div>
+          <label for="pays">Pays</label>
+          <select id="pays" name="pays" required>
+            <option value="" disabled selected>Choisissez un pays</option>
+            <option value="FRANCE">France</option>
+            <option value="BELGIQUE">Belgique</option>
+            <option value="LUXEMBOURG">Luxembourg</option>
+            <option value="Autre">Autre (merci de préciser)</option>
+          </select>
+        </div>
+        <div>
+          <label for="cours">Cours</label>
+          <select id="cours" name="cours" required>
+            <option value="" disabled selected>Sélectionnez une option</option>
+            <option value="COURS PEINTURE 1h - 40€">Cours 1h - 40€</option>
+            <option value="COURS PEINTURE 3h - 120€">Cours 3h - 120€</option>
+            <option value="COURS PEINTURE 5h - 200€">Cours 5h - 200€</option>
+            <option value="Stage individuel 5h - 220€">Stage individuel 5h - 220€</option>
+            <option value="Stage individuel 8h - 340€">Stage individuel 8h - 340€</option>
+            <option value="Stage collectif - sur devis">Stage collectif - sur devis</option>
+            <option value="Prestation événementielle - sur devis">Prestation événementielle - sur devis</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" placeholder="Votre message" rows="4"></textarea>
+        </div>
+        <div class="banniere">
+          <button type="submit" class="button">Envoyer la demande par mail</button>
+        </div>
+      </form>
+
+    </div>
+    </div>
+ 
+           `;
     }
 
     main.innerHTML = html;
