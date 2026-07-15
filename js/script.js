@@ -1262,7 +1262,7 @@ Whether for a wargame army or board game figurines, enjoy a clean and high-quali
 Whether it's a resin figurine from pop culture (manga, video games, movies...), a bust or a diorama. Tell me about your project.
 </p>
 <p>
-<a href="peintureccollection.html" class="button" onclick="loadPage('peintureccollection.html'); scrollToTop(); return false;">
+<a href="peinturecollection.html" class="button" onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
 🏆 Discover the collector painting service ➜
 </a>
 </p>
