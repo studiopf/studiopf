@@ -90,9 +90,6 @@ img {
   height: 80%;
 }
 .center {
-   
-    
-    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 0px;
@@ -258,6 +255,12 @@ img {
 }
 
 .maintenance-box {
+       display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0px;
+    margin: 0rem auto;
+    max-width: 1200px;
+    padding: 0 0px;
     margin-top: 15px;
     margin-bottom: 0;
     width: 100%;
