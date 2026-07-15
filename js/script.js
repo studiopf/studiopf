@@ -273,6 +273,8 @@ function changelangueforma() {
 
     <div class="exemples-photos">
      <img id="lightbox-img" src="img/studio.jpg" alt="Mon Studio et Setup Stream">
+    </div>
+
 <p>
     <em>📸 Mon Studio et Setup Stream.</em>
 </p>
