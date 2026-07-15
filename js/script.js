@@ -204,6 +204,7 @@ changelangueinfo();
     if (currentPage.includes("formation") && typeof changelangueforma === "function") {
         changelangueforma();
         initializeFormationForm();
+        initializeGalerie();
     }
         if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
         changelanguesimu();
@@ -270,12 +271,15 @@ function changelangueforma() {
 </p>
  <div class="exemples-photos">
     
-    <img src="img/studio.jpg" alt="Mon Studio et Setup Stream">
+    <div class="lightbox" id="lightbox">
+     <img id="lightbox-img" src="img/studio.jpg" alt="Mon Studio et Setup Stream">
 </div>
-
 <p style="text-align:center;">
     <em>📸 Mon Studio et Setup Stream.</em>
 </p>
+</div>
+
+
     </div>
 
     <div class="maintenance-box">
