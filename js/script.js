@@ -1295,9 +1295,9 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
     </li>
     <li>
-        <a href="formation.html"
+       <!-- <a href="formation.html"
            onclick="loadPage('formation.html'); scrollToTop(); return false;">📚 Miniature Painting Courses
-        </a>
+        </a> -->
     </li>
 </ul>
          </nav>
@@ -1352,6 +1352,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </p>
     </div>
 
+    <!--
     <div class="maintenance-box">
         <h2>📚 Miniature Painting Courses</h2>
         <p>
@@ -1375,6 +1376,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
         </p>
     </div>
+    -->
 
     <div class="maintenance-box">
         <h2>🖼️ Discover My Work</h2>
@@ -1480,11 +1482,13 @@ From first contact to delivery, I do everything possible to make your project a 
            onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">🏆 Piezas de colección y concursos
         </a>
     </li>
+    <!-- 
     <li>
         <a href="formation.html"
            onclick="loadPage('formation.html'); scrollToTop(); return false;">📚 Cursos de pintura de figuritas
         </a>
     </li>
+     -->
 </ul>
          </nav>
     </div>
@@ -1540,6 +1544,7 @@ From first contact to delivery, I do everything possible to make your project a 
         </p>
     </div>
 
+<!--
     <div class="maintenance-box">
         <h2>📚 Cursos de pintura de figuritas</h2>
         <p>
@@ -1563,7 +1568,7 @@ From first contact to delivery, I do everything possible to make your project a 
             </a>
         </p>
     </div>
-
+-->
     <div class="maintenance-box">
         <h2>🖼️ Descubre mis realizaciones</h2>
         <p>
@@ -2592,6 +2597,8 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- FORMATION & COMMUNAUTÉ -->
     <!-- ================================================== -->
+ 
+  <!--
   <div class="maintenance-box ajust">
     <h2>📚 Transmission and community</h2>
  <p>
@@ -2619,7 +2626,7 @@ function changelanguequisuisje() {
         Discover the training packages 📚
     </a>
 </div>
-
+-->
     <!-- ================================================== -->
     <!-- AUJOURD’HUI & ENGAGEMENTS -->
     <!-- ================================================== -->
@@ -2776,7 +2783,8 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- FORMATION & COMMUNAUTÉ -->
     <!-- ================================================== -->
-  <div class="maintenance-box ajust">
+ <!--
+ <div class="maintenance-box ajust">
     <h2>📚 Transmisión y comunidad</h2>
  <p>
     Al crear <strong>Studio PF</strong>, no quería solo pintar figurillas. También quería transmitir todo lo que me hubiera gustado aprender cuando empecé. Mis propias dificultades me enseñaron la importancia de un método claro: evitar errores clásicos, comprender los gestos correctos, dominar el aerógrafo y progresar con confianza. Hoy, es esa experiencia la que comparto a través de mis formaciones y contenidos.
@@ -2803,7 +2811,7 @@ function changelanguequisuisje() {
         Descubrir los paquetes de formación 📚
     </a>
 </div>
-
+-->
     <!-- ================================================== -->
     <!-- AUJOURD’HUI & ENGAGEMENTS -->
     <!-- ================================================== -->
