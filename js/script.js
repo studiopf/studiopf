@@ -487,7 +487,7 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
         <ol>
             <li>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</li>
 
-            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
+            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
 
             <li>🎨 Je prends en charge l'ensemble du projet : préparation, montage, peinture, soclage et finitions selon le niveau de qualité choisi.</li>
 
@@ -1456,7 +1456,7 @@ From first contact to delivery, I do everything possible to make your project a 
         <h2>⚙️ How It Works</h2>
         <ol>
             <li>💬 Contact me to discuss your project and get a personalized quote.</li>
-            <li>🎲 Already own your miniatures? Send them directly to <strong>Studio PF</strong>. Don’t have your army yet? Order it from my partners <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) or <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (new and second-hand miniatures) and have it delivered straight to the workshop.</li>
+            <li>🎲 Already own your miniatures? Send them directly to <strong>Studio PF</strong>. Don’t have your army yet? Order it from my partners <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> or <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (new and second-hand miniatures) and have it delivered straight to the workshop.</li>
             <li>🎨 I take care of the entire project: preparation, assembly, painting, basing, and finishes according to the chosen quality level.</li>
             <li>📸 Once the painting is complete, I send you high-definition photos for approval before shipping or in-person pickup.</li>
             <li>📦 After your approval, your order is carefully packaged and shipped securely.</li>
@@ -1645,7 +1645,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
         <h2>⚙️ ¿Cómo funciona?</h2>
         <ol>
             <li>💬 Contáctame para hablar de tu proyecto y obtener un presupuesto personalizado.</li>
-            <li>🎲 ¿Ya tienes tus figuritas? Envíalas directamente al <strong>Studio PF</strong>. ¿Aún no tienes tu ejército? Pídelo a mis socios <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) o <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figuritas nuevas y de segunda mano) y haz que lo entreguen directamente al taller.</li>
+            <li>🎲 ¿Ya tienes tus figuritas? Envíalas directamente al <strong>Studio PF</strong>. ¿Aún no tienes tu ejército? Pídelo a mis socios <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> o <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figuritas nuevas y de segunda mano) y haz que lo entreguen directamente al taller.</li>
             <li>🎨 Me encargo de todo el proyecto: preparación, montaje, pintura, bases y acabados según el nivel de calidad elegido.</li>
             <li>📸 Una vez terminada la pintura, te envío fotos en alta definición para validación antes del envío o entrega en mano.</li>
             <li>📦 Tras tu validación, tu pedido se embala cuidadosamente y se envía con total seguridad.</li>
@@ -1901,7 +1901,7 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
         <ol>
             <li>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</li>
 
-            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> (Games Workshop) ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
+            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
 
             <li>🎨 Je prends en charge l'ensemble du projet : préparation, montage, peinture, soclage et finitions selon le niveau de qualité choisi.</li>
 
