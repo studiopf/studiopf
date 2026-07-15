@@ -1250,7 +1250,7 @@ document.addEventListener("DOMContentLoaded", () => {
 Studio PF: <strong>professional figurine painting</strong> for players, enthusiasts and collectors.
 </p>
 <p>
-🛡️ <strong>TableTop Gaming Figurine Painting</strong>: 2 levels of TableTop painting: <strong>Gold</strong> and <strong>Diamond</strong>.<br>
+⚔️ <strong>TableTop Gaming Figurine Painting</strong>: 2 levels of TableTop painting: <strong>Gold</strong> and <strong>Diamond</strong>.<br>
 Whether for a wargame army or board game figurines, enjoy a clean and high-quality finish.</p>
 <p>
 <a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -1326,7 +1326,7 @@ Discover the painting service ➜
 <div class="center">
 <div class="maintenance-box">
 <h2>Figurine Painting Courses & Training</h2>
-<h3>🧠 Painting Workshops & Coaching</h3>
+<h3>📚 Painting Workshops & Coaching</h3>
 <p>
 👉 Learn professional techniques: light management, basing, gradients and finishing.<br>
 Personalized sessions, online or in-person workshop.
@@ -1382,7 +1382,7 @@ You receive a piece ready to play or display, durable and completely true to you
 Studio PF : <strong>pintura profesional de figurines</strong> para jugadores, apasionados y coleccionistas.
 </p>
 <p>
-🛡️ <strong>Pintura de figurines para juegos TableTop</strong> : 2 niveles de pintura TableTop : <strong>Gold</strong> y <strong>Diamant</strong>.<br>
+⚔️ <strong>Pintura de figurines para juegos TableTop</strong> : 2 niveles de pintura TableTop : <strong>Gold</strong> y <strong>Diamant</strong>.<br>
 Ya sea para un ejército de wargame o figurines de juegos de mesa, disfruta de un acabado cuidado y de calidad.</p>
 <p>
 <a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -1458,7 +1458,7 @@ Descubrir el servicio de pintura ➜
 <div class="center">
 <div class="maintenance-box">
 <h2>Cursos y Formación de Pintura de Figurines</h2>
-<h3>🧠 Formaciones & Coaching de pintura</h3>
+<h3>📚 Formaciones & Coaching de pintura</h3>
 <p>
 👉 Aprende técnicas profesionales : gestión de luces, soclado, degradados y acabados.<br>
 Sesiones personalizadas, en línea o en taller.
@@ -1518,7 +1518,7 @@ Studio PF : <strong>peinture professionnelle sur figurines</strong> pour joueurs
 </p>
 
 <p>
-🛡️ <strong>Peinture de figurines de jeu TableTop</strong> : 2 niveaux de peinture TableTop : <strong>Gold</strong> et <strong>Diamant</strong>.<br>
+⚔️ <strong>Peinture de figurines de jeu TableTop</strong> : 2 niveaux de peinture TableTop : <strong>Gold</strong> et <strong>Diamant</strong>.<br>
 Que ce soit pour une armée de wargame ou des figurines de jeu de plateau, profitez d'un rendu soigné et de finitions de qualité.</p>
 <p>
 <a href="peinturecommission.html" class="button" onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -1609,7 +1609,7 @@ Découvrir le service peinture ➜
 
 <h2>Cours et Formation de Peinture sur Figurine</h2>
 
-<h3>🧠 Formations & Coaching peinture</h3>
+<h3>📚 Formations & Coaching peinture</h3>
 
 <p>
 👉 Apprenez les techniques professionnelles : gestion des lumières, soclage, dégradés et finitions.<br>
