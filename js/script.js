@@ -4761,3 +4761,62 @@ function initThemeToggle() {
     };
 
 }
+
+function initMenuMobile() {
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuMobile = document.getElementById("menu-contenu");
+    const overlay = document.getElementById("menu-overlay");
+
+
+    if (!menuToggle || !menuMobile || !overlay) {
+        console.warn("Menu mobile introuvable");
+        return;
+    }
+
+
+    menuToggle.addEventListener("click", () => {
+
+        menuMobile.classList.toggle("active");
+        overlay.classList.toggle("active");
+
+    });
+
+
+    overlay.addEventListener("click", () => {
+
+        menuMobile.classList.remove("active");
+        overlay.classList.remove("active");
+
+    });
+
+
+    document.querySelectorAll(".menu-mobile-list a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            menuMobile.classList.remove("active");
+            overlay.classList.remove("active");
+
+        });
+
+    });
+
+}
+
+    // Fermeture après clic sur un lien du menu
+    const menuLinks = menuMobile.querySelectorAll("a");
+
+    menuLinks.forEach(link => {
+
+        link.onclick = function () {
+
+            menuMobile.classList.remove("active");
+            menuOverlay.classList.remove("active");
+
+        };
+
+    });
+
+}
