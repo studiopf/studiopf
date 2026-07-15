@@ -2879,8 +2879,8 @@ function changelanguefoot() {
     html = `
   
       
-     <nav class="menu-mobile2">
-        <ul class="menu2">
+     <nav class="menu-mobile">
+        <ul class="menu">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
             <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours 🕖</a></li>
@@ -2893,7 +2893,7 @@ function changelanguefoot() {
 
 
 
- <div class="footer">
+ <div class="center">
   <p><strong>STUDIO PF</strong><br>
   FRASSE Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
