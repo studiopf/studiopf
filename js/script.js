@@ -183,7 +183,7 @@ function applyLanguageAndInit() {
 changelangueinfo();
     changelanguemenu();
    
-
+initializeLightboxGlobal();
     changelanguefoot();
     changelanguelogo();
     
