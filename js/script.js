@@ -204,7 +204,6 @@ changelangueinfo();
     if (currentPage.includes("formation") && typeof changelangueforma === "function") {
         changelangueforma();
         initializeFormationForm();
-        initializeGalerie();
     }
         if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
         changelanguesimu();
@@ -270,11 +269,11 @@ function changelangueforma() {
     Découvrez la peinture au pinceau ou l'aérographe et de nombreuses techniques avancées comme les huiles pour donner vie à vos figurines et progresser à votre rythme.
 </p>
  <div class="exemples-photos">
-    
-    <div class="lightbox" id="lightbox">
+
+
+    <div class="exemples-photos">
      <img id="lightbox-img" src="img/studio.jpg" alt="Mon Studio et Setup Stream">
-</div>
-<p style="text-align:center;">
+<p>
     <em>📸 Mon Studio et Setup Stream.</em>
 </p>
 </div>
@@ -1941,7 +1940,7 @@ function changelanguecollection() {
         <img src="img/collection2.jpg" alt="Painted exhibition piece">
         <img src="img/collection3.jpg" alt="Painted competition figurine">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Examples of collection, exhibition and competition pieces created by Studio PF.</em>
     </p>
     <p>
@@ -1968,7 +1967,7 @@ function changelanguecollection() {
         <img src="img/diorama2.jpg" alt="Exhibition scene on diorama">
         <img src="img/diorama3.jpg" alt="Diorama painted by Studio PF">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Examples of dioramas and exhibition scenes created by Studio PF.</em>
     </p>
     <p>
@@ -1995,7 +1994,7 @@ function changelanguecollection() {
         <img src="img/buste2.jpg" alt="Painted fantasy bust">
         <img src="img/buste3.jpg" alt="Painted collectible bust">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Examples of busts and collectible pieces created by Studio PF.</em>
     </p>
     <p>
@@ -2028,7 +2027,7 @@ function changelanguecollection() {
         <img src="img/pop2.jpg" alt="Painted series figurine">
         <img src="img/pop3.jpg" alt="Painted video game figurine">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Some examples of pop culture inspired creations.</em>
     </p>
     <p>
@@ -2109,7 +2108,7 @@ function changelanguecollection() {
         <img src="img/collection2.jpg" alt="Pieza de exposición pintada">
         <img src="img/collection3.jpg" alt="Figurilla de concurso pintada">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Ejemplos de piezas de colección, exposición y concurso realizadas por Studio PF.</em>
     </p>
     <p>
@@ -2136,7 +2135,7 @@ function changelanguecollection() {
         <img src="img/diorama2.jpg" alt="Escena de exposición en diorama">
         <img src="img/diorama3.jpg" alt="Diorama pintado por Studio PF">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Ejemplos de dioramas y escenas de exposición realizados por Studio PF.</em>
     </p>
     <p>
@@ -2163,7 +2162,7 @@ function changelanguecollection() {
         <img src="img/buste2.jpg" alt="Busto de fantasía pintado">
         <img src="img/buste3.jpg" alt="Busto de colección pintado">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Ejemplos de bustos y piezas de colección realizados por Studio PF.</em>
     </p>
     <p>
@@ -2196,7 +2195,7 @@ function changelanguecollection() {
         <img src="img/pop2.jpg" alt="Figurilla de serie pintada">
         <img src="img/pop3.jpg" alt="Figurilla de videojuego pintada">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Algunos ejemplos de realizaciones inspiradas en la pop culture.</em>
     </p>
     <p>
@@ -2283,7 +2282,7 @@ function changelanguecollection() {
         <img src="img/collection3.jpg" alt="Figurine de concours peinte">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Exemples de pièces de collection, d'exposition et de concours réalisées par Studio PF.</em>
     </p>
 
@@ -2317,7 +2316,7 @@ function changelanguecollection() {
         <img src="img/diorama3.jpg" alt="Diorama peint par Studio PF">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Exemples de dioramas et scènes d'exposition réalisés par Studio PF.</em>
     </p>
 
@@ -2353,7 +2352,7 @@ function changelanguecollection() {
         <img src="img/buste3.jpg" alt="Buste de collection peint">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Exemples de bustes et pièces de collection réalisés par Studio PF.</em>
     </p>
 
@@ -2397,7 +2396,7 @@ function changelanguecollection() {
         <img src="img/pop3.jpg" alt="Figurine de jeu vidéo peinte">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Quelques exemples de réalisations inspirées de la pop culture.</em>
     </p>
 
@@ -3126,7 +3125,7 @@ function changelanguepeinture() {
     <img src="img/armee3.jpg" alt="Example of a painted wargaming army">
 </div>
 
-<p style="text-align:center;">
+<p>
     <em>📸 Examples of painted armies and tabletop miniatures by Studio PF.</em>
 </p>
 </div>
@@ -3161,7 +3160,7 @@ function changelanguepeinture() {
     <img src="img/gold2.jpg" alt="Example of Gold level painted unit">
      <img src="img/gold3.jpg" alt="Example of Gold level painted unit">
 </div>
-<p style="text-align:center;">
+<p>
     <em>Examples of Gold level creations.</em>
 </p>
    <p>
@@ -3201,7 +3200,7 @@ function changelanguepeinture() {
         <img src="img/diamant2.jpg" alt="Example of Diamond level painted figurine">
          <img src="img/diamant3.jpg" alt="Example of Diamond level painted figurine">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Examples of Diamond level creations.</em>
     </p>
    <p>
@@ -3262,7 +3261,7 @@ function changelanguepeinture() {
              alt="Example of a conversion using 3D-printed parts">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Examples of conversions, kitbashes, and custom miniature creations.</em>
     </p>
 
@@ -3380,7 +3379,7 @@ function changelanguepeinture() {
     <img src="img/armee3.jpg" alt="Ejemplo de ejército para juegos de miniaturas pintado">
 </div>
 
-<p style="text-align:center;">
+<p>
     <em>📸 Ejemplos de ejércitos y miniaturas de juego pintados por Studio PF.</em>
 </p>
 
@@ -3416,7 +3415,7 @@ function changelanguepeinture() {
     <img src="img/gold2.jpg" alt="Ejemplo de unidad pintada nivel Gold">
     <img src="img/gold3.jpg" alt="Ejemplo de unidad pintada nivel Gold">
 </div>
-<p style="text-align:center;">
+<p>
     <em>Ejemplos de realizaciones en nivel Gold.</em>
 </p>
    <p>
@@ -3456,7 +3455,7 @@ function changelanguepeinture() {
         <img src="img/diamant2.jpg" alt="Ejemplo de figurilla pintada nivel Diamante">
         <img src="img/diamant3.jpg" alt="Ejemplo de figurilla pintada nivel Diamante">
     </div>
-    <p style="text-align:center;">
+    <p>
         <em>📸 Ejemplos de realizaciones en nivel Diamante.</em>
     </p>
    <p>
@@ -3517,7 +3516,7 @@ function changelanguepeinture() {
              alt="Ejemplo de conversión con piezas impresas en 3D">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Ejemplos de conversiones, kitbash y creaciones personalizadas.</em>
     </p>
 
@@ -3631,7 +3630,7 @@ function changelanguepeinture() {
     <img src="img/armee3.jpg" alt="Exemple d'armée Warhammer peinte">
 </div>
 
-<p style="text-align:center;">
+<p>
     <em>📸 Exemples d'armées peintes réalisées par Studio PF.</em>
 </p>
 </div>
@@ -3676,7 +3675,7 @@ function changelanguepeinture() {
       <img src="img/gold3.jpg" alt="Exemple d'unité peinte niveau Gold">
 </div>
 
-<p style="text-align:center;">
+<p>
     <em>Exemples de réalisations au niveau Gold.</em>
 </p>
    <p>
@@ -3730,7 +3729,7 @@ function changelanguepeinture() {
         <img src="img/diamant3.jpg" alt="Exemple de figurine peinte niveau Diamant">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Exemples de réalisations au niveau Diamant.</em>
     </p>
 
@@ -3793,7 +3792,7 @@ function changelanguepeinture() {
              alt="Exemple de conversion avec des pièces imprimées en 3D">
     </div>
 
-    <p style="text-align:center;">
+    <p>
         <em>📸 Exemples de conversions, kitbashs et créations personnalisées.</em>
     </p>
 
