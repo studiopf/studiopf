@@ -1289,7 +1289,7 @@ body{
 =================================================== */
 
 body.light-mode{
-  background: linear-gradient(135deg, #2f3438 0%, #56606a 50%, #9ca5ad 100%);
+  background: linear-gradient(135deg, #ADADAD 0%, #DBDBDB 50%, #F2F2F2 100%);
     color:#2d241d;
 }
 
@@ -1350,7 +1350,7 @@ body.light-mode .theme-toggle {
         MODE CLAIR
 ==========================*/
 body.light-mode{
-    --bg: linear-gradient(135deg,##DBDBDB 0%,#ADADAD 100%);
+    --bg: linear-gradient(135deg,#ADADADB 0%,#F2F2F2 100%);
     --text:#e8d9c0;
     
     /* Maintenance Box - Mode Sombre */
