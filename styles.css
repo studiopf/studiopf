@@ -1446,3 +1446,18 @@ button.pf-menu-button {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+  .menu-mobile {
+       background: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.menu {
+     background: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
