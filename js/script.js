@@ -189,10 +189,7 @@ changelangueinfo();
     changelanguepartenaires();
     initThemeToggle();
     updateAgeDisplay();
-document.getElementById("contenu").innerHTML = data;
 
-initMenuMobile();
-    
     
     initializecarroussel();
     initScrollBehaviors();
