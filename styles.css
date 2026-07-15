@@ -1599,7 +1599,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-mobile-nav {
     position: fixed;
-    top: 0;
+    top: 30px !important;
     right: -100%;
     width: 85%;
     max-width: 360px;
