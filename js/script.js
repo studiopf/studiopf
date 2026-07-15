@@ -2819,63 +2819,179 @@ function changelanguemenu() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `<!-- Mobile menu button -->
-<button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
-<!-- Side menu -->
-<nav id="menu-contenu" class="menu-mobile">
-    <ul class="menu">
-        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">TableTop Painting 🎨</a></li>
-        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Competitions 🏆</a></li>
-        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Training 📚</a></li>
-        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Gallery 🖼️</a></li>
-    </ul>
-</nav>
-<!-- Dark overlay when menu is open -->
-<div id="menu-overlay"></div>`;
+        html = `<div class="language-selector">
+    <button onclick="setLanguage(id); updateMeta(id); return false;" id="french">
+        <img src="img/Flag_of_France.png" alt="Français - Euro">
+    </button>
+
+    <button onclick="setLanguage(id); updateMeta(id); return false;" id="english">
+        <img src="img/Flag_of_the_United_States.png" alt="English - USD">
+    </button>
+
+    <button onclick="setLanguage(id); updateMeta(id); return false;" id="spanish">
+        <img src="img/Flag_of_Spain.png" alt="Español - Euro">
+    </button>
+</div>
+
+<ul class="pf-nav-list">
+
+    <li><a href="index.html" onclick="loadPage('index.html'); return false;">
+        🏠 Home
+    </a></li>
+
+    <li><a href="quisuisje.html" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
+        👋 About Me
+    </a></li>
+
+    <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
+        ⚔️ Armies & TableTop+
+    </a></li>
+
+    <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
+        🏆 Collection & Competition
+    </a></li>
+
+    <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">
+        📚 Painting Lessons
+    </a></li>
+
+    <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
+        🖼️ Gallery
+    </a></li>
+
+    <li><a href="mailto:studiopeinturefigurine@gmail.com">
+        ✉️ Contact Me
+    </a></li>
+
+</ul>
+
+<div class="pf-mobile-social">
+    <div class="pf-social-container">
+        <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
+        <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
+        <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+        <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<!-- Bouton menu mobile -->
-<button id="menu-toggle" class="menu-toggle" aria-label="Abrir el menú">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
-<!-- Menu latéral -->
-<nav id="menu-contenu" class="menu-mobile">
-    <ul class="menu">
-        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Pintura TableTop 🎨</a></li>
-        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Colección & Concursos 🏆</a></li>
-        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formación 📚</a></li>
-        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galería 🖼️</a></li>
-    </ul>
-</nav>
-<!-- Fond sombre quand menu ouvert -->
-<div id="menu-overlay"></div>`;
+        html = `<div class="language-selector">
+    <button onclick="setLanguage(id); updateMeta(id); return false;" id="french">
+        <img src="img/Flag_of_France.png" alt="Français - Euro">
+    </button>
+
+    <button onclick="setLanguage(id); updateMeta(id); return false;" id="english">
+        <img src="img/Flag_of_the_United_States.png" alt="English - USD">
+    </button>
+
+    <button onclick="setLanguage(id); updateMeta(id); return false;" id="spanish">
+        <img src="img/Flag_of_Spain.png" alt="Español - Euro">
+    </button>
+</div>
+
+<ul class="pf-nav-list">
+
+    <li><a href="index.html" onclick="loadPage('index.html'); return false;">
+        🏠 Inicio
+    </a></li>
+
+    <li><a href="quisuisje.html" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
+        👋 ¿Quién soy?
+    </a></li>
+
+    <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
+        ⚔️ Ejércitos & TableTop+
+    </a></li>
+
+    <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
+        🏆 Colección y Concursos
+    </a></li>
+
+    <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">
+        📚 Cursos de pintura
+    </a></li>
+
+    <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
+        🖼️ Galería
+    </a></li>
+
+    <li><a href="mailto:studiopeinturefigurine@gmail.com">
+        ✉️ Contacto
+    </a></li>
+
+</ul>
+
+<div class="pf-mobile-social">
+    <div class="pf-social-container">
+        <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
+        <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
+        <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+        <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</div>`;
     } else {
-        html = `   <!-- Bouton menu mobile -->
-<button id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
-    <span></span>
-    <span></span>
-    <span></span>
+        html = ` <div class="language-selector">
+           <button  onclick="setLanguage(id);  updateMeta(id); return false;" id="french">
+        <img src="img/Flag_of_France.png" alt="Français - Euro"></button>
+             <button onclick="setLanguage(id); updateMeta(id); return false;" id="english">
+    <img src="img/Flag_of_the_United_States.png" alt="English - USD">
 </button>
+               <button  onclick="setLanguage(id); updateMeta(id); return false;" id="spanish">
+        <img src="img/Flag_of_Spain.png" alt="Español - Euro"></button>
 
-<!-- Menu latéral -->
-<nav id="menu-contenu" class="menu-mobile">
+    </div>
+  
+  <ul class="pf-nav-list">
 
-    <ul class="menu">
-        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop 🎨</a></li>
-        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Concours 🏆</a></li>
-        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
-        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
-    </ul>
+    <li><a href="index.html" onclick="loadPage('index.html'); return false;">
+        🏠 Accueil
+    </a></li>
 
-</nav>
+    <li><a href="quisuisje.html" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
+        👋 Qui suis-je ?
+    </a></li>
 
-<!-- Fond sombre quand menu ouvert -->
-<div id="menu-overlay"></div>`;
+    <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
+        ⚔️ Armées & TableTop+
+    </a></li>
+
+    <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
+        🏆 Collection & Concours
+    </a></li>
+
+    <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">
+        📚 Cours de peinture
+    </a></li>
+
+    <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
+        🖼️ Galerie
+    </a></li>
+
+    <li><a href="mailto:studiopeinturefigurine@gmail.com">
+        ✉️ Me contacter
+    </a></li>
+
+</ul>
+    <!-- Réseaux sociaux -->
+    <div class="pf-mobile-social">
+        <div class="pf-social-container">
+            <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
+            <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+            <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>`;
     }
 
     menu.innerHTML = html;
