@@ -18,6 +18,11 @@
     object-fit:cover;
 }
 * {
+    justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin: 0;
     padding: 0;
     box-sizing: border-box;
