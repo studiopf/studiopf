@@ -1341,25 +1341,73 @@ body.light-mode .maintenance-box{
 }
 
 body.light-mode .button{
- display: inline-block;
-    padding: 10px 24px;
-    margin: 10px auto;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    color: #ffda79;                    /* jaune clair / doré clair */
-    text-align: center;
-    text-decoration: none;
-    background: rgba(30, 20, 12, 0.75); /* même fond que .card / .maintenance-box */
-    border: 2px solid #f4c876;         /* bordure jaune/dorée principale */
-    border-radius: 10px;
-    backdrop-filter: blur(6px);         /* effet verre dépoli */
-    box-shadow: 
-        0 6px 20px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255, 218, 121, 0.12); /* léger reflet intérieur */
-    transition: all 0.28s ease;
-    cursor: pointer;
-    letter-spacing: 0.5px;
+
+    display:inline-block;
+    padding:12px 28px;
+    margin:10px auto;
+
+    font-family:'Segoe UI',system-ui,sans-serif;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.6px;
+
+    color:#fff4d6;
+    text-align:center;
+    text-decoration:none;
+
+    background:linear-gradient(
+        180deg,
+        #7b5a39 0%,
+        #5f4329 45%,
+        #3f2c1c 100%
+    );
+
+    border:2px solid #f4c876;
+    border-radius:12px;
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35),
+        inset 0 1px 1px rgba(255,255,255,.18),
+        inset 0 -2px 4px rgba(0,0,0,.18);
+
+    text-shadow:
+        0 1px 2px rgba(0,0,0,.45);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+
+    cursor:pointer;
+}
+body.light-mode .button:hover{
+
+    color:#ffffff;
+
+    background:linear-gradient(
+        180deg,
+        #94704a 0%,
+        #735131 45%,
+        #513720 100%
+    );
+
+    border-color:#ffe4a0;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 16px 34px rgba(0,0,0,.40),
+        0 0 18px rgba(244,200,118,.22),
+        inset 0 1px 1px rgba(255,255,255,.22);
+}
+body.light-mode .button:active{
+    transform:translateY(1px);
+    box-shadow:
+        0 6px 12px rgba(0,0,0,.30),
+        inset 0 2px 6px rgba(0,0,0,.22);
 }
 
 
@@ -1397,9 +1445,9 @@ body.light-mode{
     --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
     --box-border: #8b5f3a;
     
-    --button-bg:#2a1c12;
-    --button-text:#d4b68c;
-    --button-border:#f4c876;
+   --button-bg:#6b4b2f;
+    --button-text:#fff3d9;
+    --button-border:#f7d88b;
     --title:#ffe39b;
 }
 }
