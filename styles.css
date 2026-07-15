@@ -1340,12 +1340,12 @@ body{
 
     background:linear-gradient(
         180deg,
-        #b01212 0%,
-        #9d0707 45%,
-        #640404 100%
+        #6B3838 0%,
+        #4D2828 50%,
+        #331B1B 100%
     );
 
-    border:2px solid #d86c6c;
+    border:2px solid #f4c876;
 
     border-radius:12px;
 
@@ -1371,14 +1371,14 @@ body{
 
     color:#ffffff;
 
-    background:linear-gradient(
+   background:linear-gradient(
         180deg,
-        #c91a1a 0%,
-        #ad0d0d 45%,
-        #760707 100%
+        #7C4646 0%,
+        #5E3131 50%,
+        #3C2020 100%
     );
 
-    border-color:#f2a5a5;
+    border-color:#F5C469;
 
     transform:translateY(-2px);
 
@@ -1495,10 +1495,10 @@ body.light-mode .theme-toggle {
 :root{
     --bg: linear-gradient(
     180deg,
-    #6B3838 0%,
-    #4D2828 35%,
-    #331B1B 70%,
-    #110909 100%
+    #331B1B 0%,
+    #211111 35%,
+    #110909 70%,
+    #080404 100%
 );
     --text:#e8d9c0;
     
@@ -1604,7 +1604,7 @@ button.pf-menu-button {
     width: 85%;
     max-width: 360px;
     height: 100vh;
-    background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 100%);
+    background: linear-gradient(180deg, #303030 0%, #0f0f0f 100%);
     transition: right 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 2000;
     overflow-y: auto;
