@@ -1238,9 +1238,9 @@ body.light-mode .theme-toggle {
     --bg: linear-gradient(135deg,#0b0805 0%,#1a120b 100%);
     --text:#d8cfc2;
     
-    /* Maintenance Box - Mode Sombre */
-    --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
-    --box-border: #8b5f3a;
+     /* Maintenance Box - Mode Clair */
+    --box-bg: rgba(245, 242, 235, 0.95);   /* Gris-beige très doux */
+    --box-border: #c9b38a;
     
     --button-bg:#2a1c12;
     --button-text:#ffd86a;
@@ -1255,14 +1255,16 @@ body.light-mode{
     --bg: linear-gradient(135deg,#f8f4ec 0%,#ece3d3 100%);
     --text:#2b241d;
     
-    /* Maintenance Box - Mode Clair */
-    --box-bg: rgba(245, 242, 235, 0.95);   /* Gris-beige très doux */
-    --box-border: #c9b38a;
-    
-    --button-bg:#f7e8c8;
-    --button-text:#6f4600;
-    --button-border:#b88629;
-    --title:#8b5b00;
+
+
+     /* Maintenance Box - Mode Sombre */
+    --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
+    --box-border: #8b5f3a;
+   
+   --button-bg:#2a1c12;
+    --button-text:#ffd86a;
+    --button-border:#d6a64b;
+    --title:#ffe39b;
 }
 
 /* ==========================
