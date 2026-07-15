@@ -437,6 +437,7 @@ p {
     margin: 0rem auto;
     max-width: 92%;
     color:var(--button-text);
+   text-align: center;
 }
 
 /* ==========================================================================
