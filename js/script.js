@@ -1278,22 +1278,28 @@ Each project is carried out with precision to highlight your figurines, whether 
         </div>
 <div class="center">
 <div class="maintenance-box">
-<h2>👋 Figurine Painter in France</h2>
+<h2>👋 Miniature Painter in France</h2>
+
 <p>
-I am <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
-Passionate painter and founder of Studio PF.<br><br>
-I have been painting figurines since 2020, a passion that was born somewhat by chance.<br>
-Covid transformed this hobby into a true artistic journey.<br>
-Today, I work with acrylics, pigments and oils in a style that brings figurines to life.<br><br>
-My goal: make your figurines come alive.
+I'm <strong>Pierre-François, also known as PF, <span id="pf-age">39</span> years old.</strong><br>
+A passionate miniature painter and the founder of Studio PF.<br><br>
+
+I've been painting miniatures since 2020, a passion that began almost by chance.<br>
+The Covid pandemic transformed this hobby into a true artistic journey.<br>
+
+Today, I work with acrylics, pigments, and oil paints to create miniatures that feel truly alive.<br><br>
+
+My goal: to make your miniatures come to life and tell their own story.
 </p>
+
 <blockquote>
-“Every figurine tells a story. My role is to make it shine.” ✨
+“Every miniature tells a story. My role is to make it shine.” ✨
 </blockquote>
+
 <p>
-<a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="button" target="_blank">
-Learn more about my journey ➜
-</a>
+    <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
+        ✨ Learn more about my journey ➜
+    </a>
 </p>
 </div>
 </div>
@@ -1404,22 +1410,28 @@ Cada proyecto se realiza con precisión para realzar tus figurines, ya sea para 
         </div>
 <div class="center">
 <div class="maintenance-box">
-<h2>👋 Pintor de Figurines en Francia</h2>
+<h2>👋 Pintor de Miniaturas en Francia</h2>
+
 <p>
-Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
+Soy <strong>Pierre-François, conocido como PF, <span id="pf-age">39</span> años.</strong><br>
 Pintor apasionado y fundador de Studio PF.<br><br>
-Practico la pintura de figurines desde 2020, una pasión que nació casi por casualidad.<br>
-El Covid transformó este hobby en una verdadera búsqueda artística.<br>
-Hoy trabajo con acrílicos, pigmentos y óleos con un estilo que da vida a las figurines.<br><br>
-Mi objetivo : hacer vibrar tus figurines como si cobraran vida.
+
+Pinto miniaturas desde 2020, una pasión que nació casi por casualidad.<br>
+La pandemia de la Covid transformó este hobby en una auténtica búsqueda artística.<br>
+
+Hoy trabajo con acrílicos, pigmentos y óleos, desarrollando un estilo que da vida a cada miniatura.<br><br>
+
+Mi objetivo: hacer que tus miniaturas transmitan emociones como si cobraran vida.
 </p>
+
 <blockquote>
-“Cada figurine cuenta una historia. Mi rol es hacerla brillar.” ✨
+«Cada miniatura cuenta una historia. Mi misión es hacerla brillar.» ✨
 </blockquote>
+
 <p>
-<a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="button" target="_blank">
-Saber más sobre mi trayectoria ➜
-</a>
+    <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
+        ✨ Descubre más sobre mi trayectoria ➜
+    </a>
 </p>
 </div>
 </div>
@@ -1554,11 +1566,11 @@ Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
 “Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨
 </blockquote>
 
-<p>
-<a href="https://www.leprogres.fr/culture-loisirs/2025/05/12/il-est-peintre-professionnel-sur-figurines-depuis-quelques-mois-les-demandes-affluent" class="button" target="_blank">
-En savoir plus sur mon parcours ➜
-</a>
-</p>
+  <p>
+            <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
+               ✨ En savoir plus sur mon parcours ➜
+            </a>
+        </p>
 
 </div>
 </div>
