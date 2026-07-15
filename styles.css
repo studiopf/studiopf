@@ -1159,7 +1159,7 @@ body,
     position: fixed;
 
     top:5px;
-    left:5px;
+    left:30px;
 
     width:24px;
     height:24px;
@@ -1286,15 +1286,15 @@ body.light-mode{
 /* BOUTON MENU HAMBURGER */
 /* ============================= */
 .pf-menu-button {
-    position: fixed !important;
+ 
     top: 5px !important;
-    right: 5px !important;
+    right: 20px !important;
     left: auto !important;           /* ← Force à ne pas être à gauche */
 
     width: 45px !important;
     height: 45px !important;
     padding: 0 !important;
-    display: flex !important;
+    
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
@@ -1448,11 +1448,11 @@ body.light-mode{
 
 .pf-social-container .social-icon {
 
-    width:45px;
+    width:40px;
 
-    height:45px;
+    height:40px;
 
-    display:flex;
+    display:grid;
 
     align-items:center;
 
@@ -1462,7 +1462,7 @@ body.light-mode{
 
     border-radius:50%;
 
-    box-shadow:0 2px 6px rgba(0,0,0,.35);
+    box-shadow:0 2px 4px rgba(0,0,0,.35);
 
 }
 
