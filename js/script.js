@@ -3962,10 +3962,10 @@ function changelanguementionslegales() {
 let html = "";
     if (currentLanguage === "english") {
         html = `
-       
+       <div class="maintenance-box">
           <h1>✨ Legal Notice ✨</h1>
 <p><strong>Website:</strong> studiopf.fr<br> <strong>Last updated:</strong> January 19, 2026</p>
-
+</div>
 <div class="maintenance-box">
   <h2>📌 Publisher</h2> 
   <p>
@@ -4022,9 +4022,9 @@ let html = "";
     }
     else if (currentLanguage === "spanish") {
       html = `
-           
+           <div class="maintenance-box">
           <h1>✨ Aviso Legal ✨</h1>
-<p><strong>Sitio web:</strong> studiopf.fr<br> <strong>Fecha de actualización:</strong> 19 de enero de 2026</p>
+<p><strong>Sitio web:</strong> studiopf.fr<br> <strong>Fecha de actualización:</strong> 19 de enero de 2026</p></div>
 
 <div class="maintenance-box">
   <h2>📌 Editor</h2> 
@@ -4083,8 +4083,9 @@ let html = "";
     // français = version par défaut → rien à faire, le HTML statique suffit
 else { // français (par défaut)
       html = `
+      <div class="maintenance-box">
           <h1>✨ Mentions Légales ✨</h1>
-<p><strong>Site :</strong> studiopf.fr<br> <strong>Date de mise à jour :</strong> 19 janvier 2026</p> <div class="maintenance-box">
+<p><strong>Site :</strong> studiopf.fr<br> <strong>Date de mise à jour :</strong> 19 janvier 2026</p></div> <div class="maintenance-box">
   <h2>📌 Éditeur</h2> 
   <p> <strong>Studio PF : Peinture Figurine</strong><br>
     Pierre-François FRASSE<br>
@@ -4126,11 +4127,11 @@ function changelangueconditions() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `
+        html = `div class="maintenance-box">
            <h1>✨ Terms and Conditions of Sale ✨</h1>
 <p><strong>Website:</strong> studiopf.fr<br>
 <strong>Last updated:</strong> March 2026</p>
-
+</div>
 <div class="maintenance-box">
     <h2>1. Scope of Application</h2>
     <p>These terms and conditions apply to all painting services, training sessions, and related services offered by Studio PF (Pierre-François FRASSE, sole trader, SIRET 832 040 380 00020).</p>
@@ -4274,11 +4275,11 @@ function changelangueconditions() {
         `;
     } 
     else if (currentLanguage === "spanish") {
-        html = `
+        html = `div class="maintenance-box">
           <h1>✨ Condiciones Generales de Venta ✨</h1>
 <p><strong>Sitio web:</strong> studiopf.fr<br>
 <strong>Última actualización:</strong> Marzo 2026</p>
-
+</div>
 <div class="maintenance-box">
     <h2>1. Ámbito de aplicación</h2>
     <p>Estas condiciones generales de venta se aplican a todos los servicios de pintura, formaciones y servicios asociados ofrecidos por Studio PF (Pierre-François FRASSE, autónomo, SIRET 832 040 380 00020).</p>
@@ -4421,11 +4422,11 @@ function changelangueconditions() {
         `;
     } 
     else { // français (par défaut)
-        html = `
+        html = `div class="maintenance-box">
             <h1>✨ Conditions Générales de Vente ✨</h1>
             <p><strong>Site :</strong> studiopf.fr<br>
             <strong>Dernière mise à jour :</strong> Mars 2026</p>
-
+</div>
             <div class="maintenance-box">
                 <h2>1. Champ d'application</h2>
                 <p>Ces conditions générales de vente s'appliquent à l'ensemble des prestations de peinture, formations et services associés proposés par Studio PF (Pierre-François FRASSE, micro-entrepreneur, SIRET 832 040 380 00020).</p>
