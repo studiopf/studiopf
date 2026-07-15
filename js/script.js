@@ -3691,7 +3691,6 @@ function changelanguepeinture() {
     </p>
     </div>
 
-let currentLanguage = "french";
 
 
     <div class="maintenance-box">
