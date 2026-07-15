@@ -1407,12 +1407,12 @@ Covid turned this hobby into a true artistic journey.<br>
 Today, I work with acrylics, pigments, and oils in a style that brings miniatures to life.<br><br>
 My goal: make your miniatures come alive.
 </p>
-<p><strong>“Every miniature tells a story. My role is to make it shine.” ✨</strong>
+<p><strong>“Every miniature tells a story. My role is to make it shine.” ✨</strong></p>
  
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
                ✨ Learn more about my journey ➜
             </a>
-        </p>
+        
  
 </div>
 </div>
@@ -1599,12 +1599,12 @@ El Covid transformó este hobby en una verdadera búsqueda artística.<br>
 Hoy trabajo el acrílico, los pigmentos y los óleos con un estilo que da vida a las figuritas.<br><br>
 Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
 </p>
-<p><strong>“Cada figurita cuenta una historia. Mi papel es hacerla brillar.” ✨</strong>
+<p><strong>“Cada figurita cuenta una historia. Mi papel es hacerla brillar.” ✨</strong></p>
  
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
                ✨ Saber más sobre mi trayectoria ➜
             </a>
-        </p>
+        
  
 </div>
 </div>
@@ -1837,13 +1837,13 @@ Aujourd’hui, je travaille l'acrylique, les pigments et les huiles avec un styl
 Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
 </p>
 
-<p><strong>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</strong>
+<p><strong>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</strong>  </p>
 
   
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
                ✨ En savoir plus sur mon parcours ➜
             </a>
-        </p>
+      
   
 
 </div>
