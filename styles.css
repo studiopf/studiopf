@@ -105,8 +105,8 @@ img {
    ========================================================================== */
 .button {
     display: inline-block;
-    padding: 10px 10px;
-    margin: 10px auto;
+   
+  
     font-family: 'Segoe UI', system-ui, sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -1088,8 +1088,7 @@ nav ul li a:hover {
 
 /* On s'assure que le contenu principal respire aussi */
     #contenu-principal {
-        padding-left: 8px;
-        padding-right: 8px;
+       
     }
    /* Blocs marrons (maintenance-box + card) → on réduit la largeur + marges latérales */
    /* Blocs principaux */
@@ -1102,8 +1101,7 @@ nav ul li a:hover {
     width: 100%;
     max-width: 92%;
 
-    margin: 15px auto;
-    padding: 10px;
+
 
     text-align: center;
 }
