@@ -3322,15 +3322,17 @@ function initializecarroussel() {
 // ────────────────────────────────────────────────
 
 function initializeCardToggle() {
-    document.querySelectorAll('.card[role="region"]').forEach(card => {
+    document.querySelectorAll('.maintenance-box').forEach(box => {
         const toggle = () => {
-            const expanded = card.getAttribute("aria-expanded") === "true";
-            card.setAttribute("aria-expanded", !expanded);
-            card.classList.toggle("collapsed", expanded);
+            const expanded = box.getAttribute("aria-expanded") === "true";
+            
+            box.setAttribute("aria-expanded", !expanded);
+            box.classList.toggle("collapsed", expanded);
         };
 
-        card.addEventListener("click", toggle);
-        card.addEventListener("keydown", e => {
+        box.addEventListener("click", toggle);
+        
+        box.addEventListener("keydown", e => {
             if (e.key === "Enter" || e.key === " ") {
                 e.preventDefault();
                 toggle();
