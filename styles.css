@@ -1694,7 +1694,25 @@ button.pf-menu-button {
     }
 }
 
-  .menu-mobile {
+  .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* espace entre les lignes */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-mobile li {
+    display: block;
+    width: 100%;
+}
+
+.menu-mobile li a {
+    display: block;
+    width: 100%;
+}
+  .menu-mobilefoot {
        background: transparent;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1702,6 +1720,7 @@ button.pf-menu-button {
     justify-content: center;
     font-size: 18px;
 }
+
 .menu {
      background: transparent;
     margin-top: 0px;
