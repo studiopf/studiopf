@@ -1227,21 +1227,37 @@ body{
 =================================================== */
 
 body.light-mode{
-    background:linear-gradient(135deg,#f4efe8 0%,#e6ddcf 100%);
+  background: linear-gradient(135deg, #2f3438 0%, #56606a 50%, #9ca5ad 100%);
     color:#2d241d;
 }
 
 
 body.light-mode .maintenance-box{
-    background:rgba(255,255,255,.88);
-    border:1px solid #c8b69b;
+        background: rgba(30, 20, 12, 0.75);
+    border: 1px solid #6b4e2f;
     box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 body.light-mode .button{
-    background:#fff;
-    color:#7a4f00;
-    border:2px solid #c89b3c;
+ display: inline-block;
+    padding: 10px 24px;
+    margin: 10px auto;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffda79;                    /* jaune clair / doré clair */
+    text-align: center;
+    text-decoration: none;
+    background: rgba(30, 20, 12, 0.75); /* même fond que .card / .maintenance-box */
+    border: 2px solid #f4c876;         /* bordure jaune/dorée principale */
+    border-radius: 10px;
+    backdrop-filter: blur(6px);         /* effet verre dépoli */
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 218, 121, 0.12); /* léger reflet intérieur */
+    transition: all 0.28s ease;
+    cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
 
