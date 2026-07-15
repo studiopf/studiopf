@@ -1294,9 +1294,9 @@ body.light-mode{
 
     position: fixed !important;
 
-    top: 20px !important;
-    right: 20px !important;
-    left: auto !important;
+    top: 5px !important;
+    right: 5px !important;
+   
 
     width:45px !important;
     height:45px !important;
@@ -1310,7 +1310,7 @@ body.light-mode{
 
     background:rgba(14,14,12,0.85) !important;
 
-    border:1px solid #6b4e2f !important;
+    border:1px solid #f4c876 !important;
 
     border-radius:8px !important;
 
@@ -1356,7 +1356,7 @@ body.light-mode{
 
     position:fixed;
 
-    top:20px;
+    top:5px;
     left:20px;
 
     width:40px;
@@ -1419,7 +1419,7 @@ body.light-mode{
 
     background:#111;
 
-    padding:90px 25px 30px;
+
 
     transition:.4s ease;
 
