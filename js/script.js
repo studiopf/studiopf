@@ -268,6 +268,14 @@ function changelangueforma() {
 <p>
     Découvrez la peinture au pinceau ou l'aérographe et de nombreuses techniques avancées comme les huiles pour donner vie à vos figurines et progresser à votre rythme.
 </p>
+ <div class="exemples-photos">
+    
+    <img src="img/studio.jpg" alt="Mon Studio et Setup Stream">
+</div>
+
+<p style="text-align:center;">
+    <em>📸 Mon Studio et Setup Stream.</em>
+</p>
     </div>
 
     <div class="maintenance-box">
