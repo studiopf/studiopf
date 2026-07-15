@@ -1402,7 +1402,7 @@ body{
 
 body.light-mode{
  background: linear-gradient(180deg, #F2F2F2 0%, #ADADAD 50%, #525252 100%);
-    color:#2d241d;
+    color:#d8cfc2;
 }
 
 
@@ -1507,7 +1507,7 @@ body.light-mode .theme-toggle {
     --box-border: #8b5f3a;
     
     --button-bg:#2a1c12;
-    --button-text:#d4b68c;
+    --button-text:#fff3d9;
     --button-border:#f4c876;
     --title:#ffe39b;
 }
