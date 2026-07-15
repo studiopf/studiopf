@@ -1410,7 +1410,7 @@ My goal: make your miniatures come alive.
 <p><strong>“Every miniature tells a story. My role is to make it shine.” ✨</strong></p>
  
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
-               ✨ Learn more about my journey ➜
+               ✨ Learn more about my journey
             </a>
         
  
@@ -1451,7 +1451,7 @@ From first contact to delivery, I do everything possible to make your project a 
             <a href="simulateur_devis.html"
                class="button"
                onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-                💬 Request a Quote ➜
+                💬 Request a Quote
             </a>
         </p>
     </div>
@@ -1602,7 +1602,7 @@ Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
 <p><strong>“Cada figurita cuenta una historia. Mi papel es hacerla brillar.” ✨</strong></p>
  
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
-               ✨ Saber más sobre mi trayectoria ➜
+               ✨ Saber más sobre mi trayectoria
             </a>
         
  
@@ -1643,7 +1643,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
             <a href="simulateur_devis.html"
                class="button"
                onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-                💬 Solicitar un presupuesto ➜
+                💬 Solicitar un presupuesto
             </a>
         </p>
     </div>
@@ -1841,7 +1841,7 @@ Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
 
   
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
-               ✨ En savoir plus sur mon parcours ➜
+               ✨ En savoir plus sur mon parcours
             </a>
       
   
@@ -1904,7 +1904,7 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
             <a href="simulateur_devis.html"
                class="button"
                onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-                💬 Demander un devis ➜
+                💬 Demander un devis
             </a>
         </p>
 
