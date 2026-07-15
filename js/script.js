@@ -4761,32 +4761,28 @@ function initThemeToggle() {
 }
 function initMenuMobile() {
 
-    const menuToggle = document.getElementById("menu-toggle");
-    const menuMobile = document.getElementById("menu-contenu");
-    const overlay = document.getElementById("menu-overlay");
+    const bouton = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu-contenu");
+    const fond = document.getElementById("menu-overlay");
 
 
-    if (!menuToggle || !menuMobile || !overlay) {
-        console.log("Erreur : éléments du menu introuvables");
-        return;
-    }
+    console.log(bouton, menu, fond);
 
 
-    menuToggle.onclick = function() {
+    bouton.addEventListener("click", function() {
 
-        console.log("clic hamburger");
+        console.log("OUVERTURE MENU");
 
-        menuMobile.classList.toggle("active");
-        overlay.classList.toggle("active");
+        menu.classList.toggle("active");
+        fond.classList.toggle("active");
 
-    };
-
-
-    overlay.onclick = function() {
-
-        menuMobile.classList.remove("active");
-        overlay.classList.remove("active");
-
-    };
+    });
 
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    initMenuMobile();
+
+});
