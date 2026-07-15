@@ -4071,7 +4071,8 @@ function changelanguemenu() {
             <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
             <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </div>`;
+    </div>
+</nav>`;
     }
 
     menu.innerHTML = html;
@@ -5993,28 +5994,49 @@ function initThemeToggle() {
     };
 
 }
-const pfButton = document.getElementById("pf-menu-button");
-const pfNav = document.getElementById("pf-mobile-nav");
+document.addEventListener("DOMContentLoaded", function () {
 
-// Ouvrir / fermer le menu
-pfButton.addEventListener("click", function() {
-    pfButton.classList.toggle("active");   // ← Important pour l'animation
-    pfNav.classList.toggle("active");
-});
+    const pfButton = document.getElementById("pf-menu-button");
+    const pfNav = document.getElementById("pf-mobile-nav");
 
-// Fermer le menu lorsqu'on clique sur un lien ou un bouton
-const pfItems = document.querySelectorAll("#pf-mobile-nav a, #pf-mobile-nav button");
+    if (!pfButton || !pfNav) return;
 
-pfItems.forEach(item => {
-    item.addEventListener("click", function () {
+    function fermerMenu() {
         pfButton.classList.remove("active");
         pfNav.classList.remove("active");
-    });
-});
-// Optionnel : fermer le menu en cliquant en dehors
-document.addEventListener("click", function(e) {
-    if (!pfNav.contains(e.target) && !pfButton.contains(e.target)) {
-        pfButton.classList.remove("active");
-        pfNav.classList.remove("active");
+        pfButton.setAttribute("aria-expanded", "false");
     }
+
+    // Ouvrir ou fermer le menu
+    pfButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+
+        const menuOuvert = pfNav.classList.toggle("active");
+        pfButton.classList.toggle("active", menuOuvert);
+        pfButton.setAttribute("aria-expanded", menuOuvert);
+    });
+
+    // Fermer avant l'exécution de loadPage()
+    pfNav.addEventListener("click", function (event) {
+
+        const elementClique = event.target.closest("a, button");
+
+        if (elementClique) {
+            fermerMenu();
+        }
+
+    }, true);
+
+    // Fermer en cliquant à l'extérieur
+    document.addEventListener("click", function (event) {
+
+        if (
+            !pfNav.contains(event.target) &&
+            !pfButton.contains(event.target)
+        ) {
+            fermerMenu();
+        }
+
+    });
+
 });
