@@ -2913,9 +2913,9 @@ else if (currentLanguage === "spanish") {
     html = `
    
     
-     <nav class="menu-mobile2">
+     <nav class="menu-mobile">
    
-        <ul class="menu2">
+        <ul class="menu">
             <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
             <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
             <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura 🕖</a></li>
@@ -2927,7 +2927,7 @@ else if (currentLanguage === "spanish") {
 <button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
 
 
- <div class="footer">
+ <div class="footer-adresse">
   <p><strong>STUDIO PF</strong><br>
   FRASSE Pierre-François<br>
   17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
@@ -2946,8 +2946,8 @@ else if (currentLanguage === "spanish") {
         html = ` 
        
        
- <nav class="menu-mobile2">
-            <ul class="menu2">
+ <nav class="menu-mobile">
+            <ul class="menu">
                      <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
         <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
         <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
@@ -2959,7 +2959,7 @@ else if (currentLanguage === "spanish") {
         <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
             <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
              
-               <div class="footer">
+               <div class="footer-adresse">
      <p><strong>STUDIO PF</strong><br>
       FRASSE Pierre-François<br>
       17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
