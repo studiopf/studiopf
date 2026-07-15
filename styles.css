@@ -1156,7 +1156,7 @@ body,
 
 .theme-toggle {
     position: fixed;
-    top: 12px;
+    top: 0px;
     right: 60px;
     width: 32px;
     height: 32px;
