@@ -1338,7 +1338,7 @@ button.pf-menu-button {
 }
 /* Animation hamburger quand ouvert */
 .pf-menu-button.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 .pf-menu-button.active span:nth-child(2) {
     opacity: 0;
