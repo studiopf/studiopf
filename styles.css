@@ -439,6 +439,9 @@ a:hover,
 /* ==========================================================================
    FOOTER – texte en #b89e7a (cohérent avec ta page maintenance)
    ========================================================================== */
+.footer{
+   background: linear-gradient(135deg, #111111 0%, #222222 50%, #444444 100%);
+}
 .footer,
 .footer p,
 .footer a,
