@@ -3691,7 +3691,71 @@ function changelanguepeinture() {
     </p>
     </div>
 
+<div class="maintenance-box ajust">
 
+    <h2>🛠️ Conversion & Création de figurines uniques</h2>
+
+    <p>
+        <strong>Idéal pour :</strong> Personnages personnalisés, héros uniques,
+        chefs d'armée, pièces de collection ou figurines qui n'existent pas
+        sous leur forme officielle.
+    </p>
+
+    <p>
+        Studio PF peut créer une figurine originale à partir d'un modèle existant,
+        en modifiant sa pose, son équipement, son apparence ou certains éléments
+        de sa silhouette.
+    </p>
+
+    <p>
+        La conversion peut être réalisée en combinant plusieurs sources :
+        <strong>figurines différentes, rabiots, pièces détachées, accessoires,
+        éléments imprimés en 3D ou bits provenant d'autres gammes.</strong>
+    </p>
+
+    <p>
+        Il est également possible de fusionner des éléments issus de deux figurines
+        afin de créer un personnage entièrement personnalisé, cohérent avec votre armée,
+        votre univers ou l'histoire de votre collection.
+    </p>
+
+    <p>
+        <strong>🔧 Travail pouvant être réalisé :</strong><br>
+        Modification de pose, remplacement de tête ou d'armes, ajout d'accessoires,
+        changement de membres, création d'équipement, assemblage de plusieurs modèles,
+        adaptation de pièces 3D, rebouchage des jointures et harmonisation de l'ensemble.
+    </p>
+
+    <p>
+        <strong>📋 Prestation uniquement sur devis :</strong><br>
+        Chaque conversion est étudiée individuellement selon la complexité du projet,
+        les pièces nécessaires, les modifications demandées et le temps de préparation.
+    </p>
+
+    <!-- Exemples -->
+    <div class="exemples-photos">
+        <img src="img/conversion1.jpg"
+             alt="Exemple de figurine convertie avec des rabiots">
+
+        <img src="img/conversion2.jpg"
+             alt="Exemple de figurine créée avec plusieurs modèles">
+
+        <img src="img/conversion3.jpg"
+             alt="Exemple de conversion avec des pièces imprimées en 3D">
+    </div>
+
+    <p style="text-align:center;">
+        <em>📸 Exemples de conversions, kitbashs et créations personnalisées.</em>
+    </p>
+
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20de%20conversion%20de%20figurine%20Studio%20PF&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20vous%20présenter%20un%20projet%20de%20conversion.%0A%0AFigurine%20de%20base%20:%0A%0AModifications%20souhaitées%20:%0A%0APièces,%20bits%20ou%20rabiots%20disponibles%20:%0A%0APièces%203D%20à%20intégrer%20:%0A%0APhotos,%20liens%20ou%20références%20:%0A%0AInformations%20complémentaires%20:%0A"
+           class="button">
+            Présenter mon projet de conversion 💬
+        </a>
+    </p>
+
+</div>
 
     <div class="maintenance-box">
 <div class="card-container3">
