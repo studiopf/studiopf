@@ -1267,3 +1267,15 @@ body.light-mode{
 }
 }
 
+.menu-mobile {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
