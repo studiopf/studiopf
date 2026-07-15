@@ -3153,6 +3153,7 @@ function changelanguepeinture() {
 <div class="exemples-photos">
     <img src="img/gold1.jpg" alt="Example of Gold level painted figurine">
     <img src="img/gold2.jpg" alt="Example of Gold level painted unit">
+     <img src="img/gold3.jpg" alt="Example of Gold level painted unit">
 </div>
 <p style="text-align:center;">
     <em>Examples of Gold level creations.</em>
@@ -3192,6 +3193,7 @@ function changelanguepeinture() {
     <div class="exemples-photos">
         <img src="img/diamant1.jpg" alt="Example of Diamond level painting">
         <img src="img/diamant2.jpg" alt="Example of Diamond level painted figurine">
+         <img src="img/diamant3.jpg" alt="Example of Diamond level painted figurine">
     </div>
     <p style="text-align:center;">
         <em>📸 Examples of Diamond level creations.</em>
@@ -3201,6 +3203,72 @@ function changelanguepeinture() {
     </p>
     </div>
 
+<div class="maintenance-box ajust">
+
+    <h2>🛠️ Miniature Conversion & Custom Creations</h2>
+
+    <p>
+        <strong>Ideal for:</strong> Custom characters, unique heroes,
+        army leaders, display pieces, or miniatures that do not exist
+        in an official version.
+    </p>
+
+    <p>
+        Studio PF can create a unique miniature from an existing model by
+        modifying its pose, equipment, appearance, or other parts of the sculpt.
+    </p>
+
+    <p>
+        Conversions can be created by combining different elements:
+        <strong>multiple miniatures, spare bits, accessories,
+        3D-printed parts, or components from other miniature ranges.</strong>
+    </p>
+
+    <p>
+        It is also possible to merge parts from two or more miniatures to create
+        a fully customized character that perfectly matches your army,
+        your setting, or the story behind your collection.
+    </p>
+
+    <p>
+        <strong>🔧 Available conversion work:</strong><br>
+        Pose modifications, weapon or head swaps, additional accessories,
+        limb replacements, custom equipment, combining multiple kits,
+        integrating 3D-printed parts, gap filling, and seamless finishing.
+    </p>
+
+    <p>
+        <strong>📋 Quote only:</strong><br>
+        Every conversion project is individually assessed according to its
+        complexity, the required parts, the requested modifications,
+        and the preparation time involved.
+    </p>
+
+    <!-- Examples -->
+    <div class="exemples-photos">
+        <img src="img/conversion1.jpg"
+             alt="Example of a converted miniature using bits">
+
+        <img src="img/conversion2.jpg"
+             alt="Example of a custom miniature created from multiple kits">
+
+        <img src="img/conversion3.jpg"
+             alt="Example of a conversion using 3D-printed parts">
+    </div>
+
+    <p style="text-align:center;">
+        <em>📸 Examples of conversions, kitbashes, and custom miniature creations.</em>
+    </p>
+
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Miniature%20Conversion%20Project%20Studio%20PF&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20present%20a%20miniature%20conversion%20project.%0A%0ABase%20miniature:%0A%0ARequested%20modifications:%0A%0AAvailable%20bits,%20parts%20or%20accessories:%0A%0A3D-printed%20parts%20to%20include:%0A%0APhotos,%20links%20or%20references:%0A%0AAdditional%20information:%0A"
+           class="button">
+            Present my conversion project 💬
+        </a>
+    </p>
+
+</div>
+  
     <div class="maintenance-box">
        <h2>Preparation 🛠️</h2>
 <ul>
@@ -3296,6 +3364,7 @@ function changelanguepeinture() {
 <div class="exemples-photos">
     <img src="img/gold1.jpg" alt="Ejemplo de figurilla pintada nivel Gold">
     <img src="img/gold2.jpg" alt="Ejemplo de unidad pintada nivel Gold">
+    <img src="img/gold3.jpg" alt="Ejemplo de unidad pintada nivel Gold">
 </div>
 <p style="text-align:center;">
     <em>Ejemplos de realizaciones en nivel Gold.</em>
@@ -3335,6 +3404,7 @@ function changelanguepeinture() {
     <div class="exemples-photos">
         <img src="img/diamant1.jpg" alt="Ejemplo de pintura nivel Diamante">
         <img src="img/diamant2.jpg" alt="Ejemplo de figurilla pintada nivel Diamante">
+        <img src="img/diamant3.jpg" alt="Ejemplo de figurilla pintada nivel Diamante">
     </div>
     <p style="text-align:center;">
         <em>📸 Ejemplos de realizaciones en nivel Diamante.</em>
@@ -3344,6 +3414,71 @@ function changelanguepeinture() {
     </p>
     </div>
 
+<div class="maintenance-box ajust">
+
+    <h2>🛠️ Conversión y creación de miniaturas únicas</h2>
+
+    <p>
+        <strong>Ideal para:</strong> Personajes personalizados, héroes únicos,
+        líderes de ejército, piezas de colección o miniaturas que no existen
+        en su versión oficial.
+    </p>
+
+    <p>
+        Studio PF puede crear una miniatura original a partir de un modelo existente,
+        modificando su pose, su equipamiento, su apariencia o determinados elementos
+        de su silueta.
+    </p>
+
+    <p>
+        La conversión puede realizarse combinando diferentes elementos:
+        <strong>miniaturas distintas, piezas sobrantes (bits), accesorios,
+        componentes impresos en 3D o piezas procedentes de otras gamas.</strong>
+    </p>
+
+    <p>
+        También es posible fusionar elementos de dos miniaturas diferentes para crear
+        un personaje completamente personalizado, coherente con tu ejército,
+        tu universo o la historia de tu colección.
+    </p>
+
+    <p>
+        <strong>🔧 Trabajos que pueden realizarse:</strong><br>
+        Modificación de poses, sustitución de cabezas o armas, incorporación de accesorios,
+        cambio de extremidades, creación de equipamiento, ensamblaje de varias miniaturas,
+        adaptación de piezas impresas en 3D, relleno de uniones y armonización del conjunto.
+    </p>
+
+    <p>
+        <strong>📋 Servicio únicamente bajo presupuesto:</strong><br>
+        Cada conversión se estudia de forma individual según la complejidad del proyecto,
+        las piezas necesarias, las modificaciones solicitadas y el tiempo de preparación.
+    </p>
+
+    <!-- Ejemplos -->
+    <div class="exemples-photos">
+        <img src="img/conversion1.jpg"
+             alt="Ejemplo de miniatura convertida con bits">
+
+        <img src="img/conversion2.jpg"
+             alt="Ejemplo de miniatura creada combinando varios modelos">
+
+        <img src="img/conversion3.jpg"
+             alt="Ejemplo de conversión con piezas impresas en 3D">
+    </div>
+
+    <p style="text-align:center;">
+        <em>📸 Ejemplos de conversiones, kitbash y creaciones personalizadas.</em>
+    </p>
+
+    <p>
+        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20conversi%C3%B3n%20de%20miniatura%20Studio%20PF&body=Hola%20Studio%20PF,%0A%0AMe%20gustar%C3%ADa%20presentar%20un%20proyecto%20de%20conversi%C3%B3n.%0A%0AMiniatura%20base%20:%0A%0AModificaciones%20deseadas%20:%0A%0APiezas,%20bits%20o%20accesorios%20disponibles%20:%0A%0APiezas%20impresas%20en%203D%20a%20integrar%20:%0A%0AFotos,%20enlaces%20o%20referencias%20:%0A%0AInformaci%C3%B3n%20adicional%20:%0A"
+           class="button">
+            Presentar mi proyecto de conversión 💬
+        </a>
+    </p>
+
+</div>
     <div class="maintenance-box">
        <h2>Preparación 🛠️</h2>
 <ul>
@@ -3448,6 +3583,7 @@ function changelanguepeinture() {
 <div class="exemples-photos">
     <img src="img/gold1.jpg" alt="Exemple de figurine peinte niveau Gold">
     <img src="img/gold2.jpg" alt="Exemple d'unité peinte niveau Gold">
+      <img src="img/gold3.jpg" alt="Exemple d'unité peinte niveau Gold">
 </div>
 
 <p style="text-align:center;">
@@ -3501,6 +3637,7 @@ function changelanguepeinture() {
     <div class="exemples-photos">
         <img src="img/diamant1.jpg" alt="Exemple de peinture niveau Diamant">
         <img src="img/diamant2.jpg" alt="Exemple de figurine peinte niveau Diamant">
+        <img src="img/diamant3.jpg" alt="Exemple de figurine peinte niveau Diamant">
     </div>
 
     <p style="text-align:center;">
@@ -3513,7 +3650,14 @@ function changelanguepeinture() {
     </p>
     </div>
 
+ <img src="img/conversion1.jpg"
+             alt="Exemple de figurine convertie avec des rabiots">
 
+        <img src="img/conversion2.jpg"
+             alt="Exemple de figurine créée avec plusieurs modèles">
+
+        <img src="img/conversion3.jpg"
+             alt="Exemple de conversion avec des pièces imprimées en 3D">
 
     <div class="maintenance-box">
        <h2>Préparation 🛠️</h2>
