@@ -1283,6 +1283,9 @@ body.light-mode{
 }
 }
 
+
+
+
 /* ============================= */
 /* BOUTON MENU HAMBURGER */
 /* ============================= */
@@ -1295,35 +1298,59 @@ body.light-mode{
     right:20px;
 
     width:45px;
-    height:40px;
+    height:45px;
 
     padding:0;
 
-    background:transparent;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
-    border:none;
+    background:rgba(14,14,12,0.85);
+
+    border:1px solid #6b4e2f;
+
+    border-radius:8px;
 
     cursor:pointer;
 
     z-index:3000;
 
+    backdrop-filter:blur(4px);
+
+    transition:.25s ease;
+
 }
 
+
+/* Les 3 traits */
 
 .pf-menu-button span {
 
     display:block;
 
-    width:35px;
+    width:30px;
     height:4px;
 
-    margin:6px 0;
+    margin:3px 0;
 
-    background:#d99b32;
+    background:#f4c876;
 
     border-radius:5px;
 
-    transition:.3s;
+    transition:.3s ease;
+
+}
+
+
+/* Effet au survol */
+
+.pf-menu-button:hover {
+
+    transform:scale(1.05);
+
+    border-color:#d99b32;
 
 }
 
