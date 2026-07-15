@@ -1282,7 +1282,7 @@ body,
 .theme-toggle {
     position: fixed;
     top: 12px;
-    right: 60px; /* espace pour laisser le bouton menu à droite */
+    left: 60px; /* placé à gauche du bouton menu */
     width: 32px;
     height: 32px;
     padding: 0;
@@ -1304,7 +1304,6 @@ body,
     opacity: 1;
     transform: scale(1.08);
 }
-
 /* ===================================================
    MODE SOMBRE (par défaut)
 =================================================== */
