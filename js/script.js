@@ -2516,6 +2516,13 @@ function changelanguequisuisje() {
 <p>
     <strong>« Every figurine tells a story. My role is to make it shine. » ✨</strong>
 </p>
+ <div class="exemples-photos">
+     <img src="img/moi.jpg" alt="Pierre-François FRASSE - fondateur de Studio PF">
+    </div>
+
+<p>
+    <em>📸 Pierre-François, your painter.</em>
+</p>
 <a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
     Discover my artistic universe 🖼️
 </a>
@@ -2701,6 +2708,13 @@ function changelanguequisuisje() {
 </p>
 <p>
     <strong>« Cada figurilla cuenta una historia. Mi rol es hacerla brillar. » ✨</strong>
+</p>
+ <div class="exemples-photos">
+     <img src="img/moi.jpg" alt="Pierre-François FRASSE - fondateur de Studio PF">
+    </div>
+
+<p>
+    <em>📸 Pierre-François, tu pintor.</em>
 </p>
 <a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
     Descubrir mi universo artístico 🖼️
@@ -2892,7 +2906,13 @@ function changelanguequisuisje() {
 <p>
     <strong>« Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller. » ✨</strong>
 </p>
+ <div class="exemples-photos">
+     <img src="img/moi.jpg" alt="Pierre-François FRASSE - fondateur de Studio PF">
+    </div>
 
+<p>
+    <em>📸 Pierre-François, ton peintre.</em>
+</p>
 <a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
     Découvrir mon univers artistique 🖼️
 </a>
