@@ -1308,9 +1308,9 @@ body,
 body{
     background: linear-gradient(
     180deg,
-    #6B3838 0%,
-    #4D2828 35%,
-    #331B1B 70%,
+    #4D2828 0%,
+    #331B1B 35%,
+    #261414 70%,
     #110909 100%
 );
     color:#d8cfc2;
