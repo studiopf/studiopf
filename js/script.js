@@ -5,6 +5,7 @@ const virtualPages = [
     "formation",
     "peinturecommission",
     "peinturecollection",
+     "quisuisje",
     "index",
     "conditions",
     "mentionslegales",
