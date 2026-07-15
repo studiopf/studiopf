@@ -1,6 +1,37 @@
 /* ==========================================================================
    RESET & BASE – inchangé
    ===================================================== font-size===================== */
+.fondlilia {
+    background-image: url("img/fondlilia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondknigt {
+    background-image: url("img/fondknigt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondnurgle {
+    background-image: url("img/fondnurgle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondfreezer {
+    background-image: url("img/fondfreezer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fonddemon {
+    background-image: url("img/fonddemon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .exemples-photos{
     display:flex;
     justify-content:center;
@@ -1722,7 +1753,7 @@ button.pf-menu-button {
   .menu-mobile ul {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* espace entre les lignes */
+    gap: 5px; /* espace entre les lignes */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1741,8 +1772,6 @@ button.pf-menu-button {
        background: transparent;
     margin-top: 0px;
     margin-bottom: 0px;
-    align-items: center;
-    justify-content: center;
     font-size: 18px;
 }
 
