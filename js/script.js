@@ -193,7 +193,7 @@ document.getElementById("contenu").innerHTML = data;
 
 initMenuMobile();
     
-    initializeCardToggle();
+    
     initializecarroussel();
     initScrollBehaviors();
     hideCurrentPage();
@@ -3317,29 +3317,6 @@ function initializecarroussel() {
     }, 4000);
 }
 
-// ────────────────────────────────────────────────
-// Card toggle (accessibilité)
-// ────────────────────────────────────────────────
-
-function initializeCardToggle() {
-    document.querySelectorAll('.maintenance-box').forEach(box => {
-        const toggle = () => {
-            const expanded = box.getAttribute("aria-expanded") === "true";
-            
-            box.setAttribute("aria-expanded", !expanded);
-            box.classList.toggle("collapsed", expanded);
-        };
-
-        box.addEventListener("click", toggle);
-        
-        box.addEventListener("keydown", e => {
-            if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                toggle();
-            }
-        });
-    });
-}
 
 // ────────────────────────────────────────────────
 // Simulateur de devis — logique tarifaire
