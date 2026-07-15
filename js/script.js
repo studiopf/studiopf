@@ -4763,15 +4763,15 @@ pfButton.addEventListener("click", function() {
     pfNav.classList.toggle("active");
 });
 
-// Fermer le menu quand on clique sur un lien
-const pfLinks = document.querySelectorAll("#pf-mobile-nav a");
-pfLinks.forEach(link => {
-    link.addEventListener("click", function() {
-        pfButton.classList.remove("active");  // ← Aussi ici
+// Fermer le menu lorsqu'on clique sur un lien ou un bouton
+const pfItems = document.querySelectorAll("#pf-mobile-nav a, #pf-mobile-nav button");
+
+pfItems.forEach(item => {
+    item.addEventListener("click", function () {
+        pfButton.classList.remove("active");
         pfNav.classList.remove("active");
     });
 });
-
 // Optionnel : fermer le menu en cliquant en dehors
 document.addEventListener("click", function(e) {
     if (!pfNav.contains(e.target) && !pfButton.contains(e.target)) {
