@@ -143,16 +143,6 @@ img {
     align-items: center;
 }
 
-.menu {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-.menu2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
 
 
  nav ul {
@@ -1083,17 +1073,6 @@ nav ul li a:hover {
         object-fit: contain;
         flex: 0 0 100%;
     }
-.menu {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 18px;
-}
-   .menu2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 18px;
-}
-
 
  
  
@@ -1161,116 +1140,12 @@ h1 {
     .language-selector img {
         width: 18px;
     }
-   .menu {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 12px;
-}
-      .menu2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 12px;
+  
+
+
 }
 
 
-}/* Bouton hamburger */
-.menu-toggle {
-    display: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 45px;
-    height: 40px;
-    background: transparent;
-    border: none;
-    z-index: 1001;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    display: block;
-    height: 4px;
-    width: 30px;
-    background: #d8a323;
-    margin: 6px auto;
-    border-radius: 3px;
-}
-
-
-/* Menu latéral */
-.menu-mobile {
-    transition: transform 0.3s ease;
-}
-
-
-/* Overlay */
-#menu-overlay {
-    display: none;
-}
-
-
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu-mobile {
-
-        position: fixed;
-        top: 0;
-        right: 0;
-
-        width: 280px;
-        height: 100vh;
-
-        background: linear-gradient(135deg, #0f0a05, #251a10);
-
-        padding-top: 80px;
-
-        transform: translateX(100%);
-        z-index: 1000;
-
-        box-shadow: -5px 0 20px rgba(0,0,0,0.5);
-    }
-
-
-    .menu-mobile.active {
-        transform: translateX(0);
-    }
-
-
-    .menu-mobile ul {
-        list-style: none;
-        padding: 0 25px;
-    }
-
-
-    .menu-mobile li {
-        margin: 20px 0;
-    }
-
-
-    .menu-mobile a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-
-
-    #menu-overlay.active {
-
-        display: block;
-
-        position: fixed;
-        inset: 0;
-
-        background: rgba(0,0,0,0.6);
-
-        z-index: 999;
-    }
-
-}
 /* ===== Transition ===== */
 
 body,
@@ -1388,4 +1263,220 @@ body.light-mode{
     --button-text:#6f4600;
     --button-border:#b88629;
     --title:#8b5b00;
+}
+
+/* ==========================
+   BOUTON HAMBURGER
+========================== */
+
+.menu-toggle {
+
+    display:none;
+
+    position:fixed;
+
+    top:20px;
+    right:20px;
+
+    width:45px;
+    height:40px;
+
+    background:transparent;
+    border:none;
+
+    cursor:pointer;
+
+    z-index:10001;
+}
+
+
+.menu-toggle span {
+
+    display:block;
+
+    width:30px;
+    height:4px;
+
+    background:#d8a323;
+
+    margin:6px auto;
+
+    border-radius:3px;
+
+}
+
+
+
+/* ==========================
+   MENU MOBILE
+========================== */
+
+.menu-mobile {
+
+    transition:transform 0.3s ease;
+
+}
+
+
+
+/* ==========================
+   OVERLAY
+========================== */
+
+#menu-overlay {
+
+    display:none;
+
+}
+
+
+
+/* ==========================
+   VERSION MOBILE
+========================== */
+
+
+@media(max-width:768px){
+
+
+    /* bouton visible */
+
+    .menu-toggle {
+
+        display:block;
+
+    }
+
+
+
+    /* panneau */
+
+    .menu-mobile {
+
+
+        position:fixed;
+
+
+        top:0;
+        right:0;
+
+
+        width:280px;
+
+        height:100vh;
+
+
+        background:linear-gradient(
+            135deg,
+            #0f0a05,
+            #251a10
+        );
+
+
+        padding-top:80px;
+
+
+        transform:translateX(100%);
+
+
+        z-index:10000;
+
+
+        box-shadow:-5px 0 20px rgba(0,0,0,0.5);
+
+
+    }
+
+
+
+    /* ouverture */
+
+    .menu-mobile.active {
+
+        transform:translateX(0);
+
+    }
+
+
+
+    /* liste */
+
+    .menu-mobile-list {
+
+
+        display:block;
+
+
+        list-style:none;
+
+
+        padding:0 25px;
+
+
+        margin:0;
+
+
+    }
+
+
+
+    /* lignes */
+
+    .menu-mobile-list li {
+
+
+        display:block;
+
+
+        margin:25px 0;
+
+
+    }
+
+
+
+    /* liens */
+
+    .menu-mobile-list a {
+
+
+        display:block;
+
+
+        color:#f4c876;
+
+
+        text-decoration:none;
+
+
+        font-size:18px;
+
+
+    }
+
+
+
+    /* fond derrière */
+
+    #menu-overlay.active {
+
+
+        display:block;
+
+
+        position:fixed;
+
+
+        inset:0;
+
+
+        background:rgba(0,0,0,0.6);
+
+
+        z-index:9999;
+
+
+    }
+
+
 }
