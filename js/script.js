@@ -3084,7 +3084,19 @@ function changelanguepeinture() {
 
     if (currentLanguage === "english") {
         html = `
-<h1>🎨 High-End Figurine Painting</h1>
+
+<h1>🎨 Commission Miniature Painting</h1>
+
+<div class="maintenance-box ajust">
+
+    <h2>⚔️ TableTop Armies</h2>
+
+    <p>
+        Studio PF offers two painting levels: <strong>Gold</strong> and <strong>Diamond</strong>, designed to suit your needs, your budget, and the importance of each miniature.
+    </p>
+
+</div>
+
 <div class="maintenance-box">
         <h2>⭐ Gold — Premium TableTop Finish</h2>
         <p>
@@ -3316,7 +3328,19 @@ function changelanguepeinture() {
 `;
     } else if (currentLanguage === "spanish") {
         html = `
-<h1>🎨 Pintura de Figurillas de Alta Gama</h1>
+
+<h1>🎨 Pintura de Miniaturas por Encargo</h1>
+
+<div class="maintenance-box ajust">
+
+    <h2>⚔️ Ejércitos TableTop</h2>
+
+    <p>
+        Studio PF ofrece dos niveles de pintura: <strong>Gold</strong> y <strong>Diamante</strong>, para adaptarse a tus necesidades, a tu presupuesto y a la importancia de cada miniatura.
+    </p>
+
+</div>
+
 <div class="maintenance-box">
         <h2>⭐ Gold — Acabado TableTop Premium</h2>
         <p>
@@ -3545,7 +3569,18 @@ function changelanguepeinture() {
     </div>
 `;
     } else {
-        html = ` <h1>🎨 Peinture de Figurines Haut de Gamme</h1>
+        html = `   <h1>🎨 Peinture de Figurines sur Commission</h1>
+   
+<div class="maintenance-box ajust">
+
+    <h2>⚔️ Armées TableTop</h2>
+
+    <p>
+        Studio PF propose deux niveaux de peintre : <strong> Gold</strong> et <strong> Diamant</strong>, afin de s'adapter à vos besoins, votre budget et à l'importance de chaque figurine.
+    </p>
+
+
+</div>
 
 <div class="maintenance-box">
 
