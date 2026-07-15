@@ -1347,7 +1347,7 @@ body.light-mode .theme-toggle {
         MODE CLAIR
 ==========================*/
 body.light-mode{
-    --bg: linear-gradient(135deg,##3B3B3B 0%,##ADADAD 100%);
+    --bg: linear-gradient(135deg,#696969 0%,#ADADAD 100%);
     --text:#e8d9c0;
     
     /* Maintenance Box - Mode Sombre */
