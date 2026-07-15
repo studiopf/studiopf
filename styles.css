@@ -1282,107 +1282,125 @@ body.light-mode{
     --title:#8b5b00;
 }
 }
-
-
-
-
 /* ============================= */
-/* BOUTON MENU HAMBURGER */
+/* BOUTON HAMBURGER */
 /* ============================= */
 
 .pf-menu-button {
 
     position: fixed !important;
 
-    top: 5px !important;
-    right: 5px !important;
-   
+    top: 10px !important;
+    right: 10px !important;
+    left: auto !important;
 
-    width:45px !important;
-    height:45px !important;
+    width:46px;
+    height:46px;
 
-    padding:0 !important;
+    padding:0;
 
-    display:flex !important;
-    flex-direction:column !important;
-    justify-content:center !important;
-    align-items:center !important;
+    display:flex;
 
-    background:rgba(14,14,12,0.85) !important;
+    flex-direction:column;
 
-    border:1px solid #f4c876 !important;
+    justify-content:center;
 
-    border-radius:8px !important;
+    align-items:center;
+
+
+    background:#0e0e0c !important;
+
+    border:1px solid #f4c876;
+
+    border-radius:10px;
 
     cursor:pointer;
 
-    z-index:99999 !important;
+    z-index:99999;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.5);
 
 }
 
 
+
 .pf-menu-button span {
 
-    display:block !important;
+    width:30px;
 
-    width:30px !important;
-    height:4px !important;
+    height:4px;
 
-    margin:3px 0 !important;
+    margin:3px 0;
 
-    background:#f4c876 !important;
+    background:#f4c876;
 
     border-radius:5px;
 
 }
 
 
-/* Effet au survol */
+
+/* Animation hover */
 
 .pf-menu-button:hover {
 
-    transform:scale(1.05);
+    transform:scale(1.08);
 
     border-color:#d99b32;
 
 }
 
 
+
 /* ============================= */
 /* BOUTON THEME */
 /* ============================= */
+
 
 .theme-toggle {
 
     position:fixed;
 
-    top:5px;
-    left:20px;
+    top:10px;
+
+    left:10px;
+
 
     width:40px;
+
     height:40px;
 
-    padding:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
 
     border-radius:50%;
 
+
     border:1px solid #6b4e2f;
 
-    background:rgba(14,14,12,0.75);
+
+    background:#0e0e0c;
+
 
     color:#f4c876;
 
+
     font-size:18px;
 
-    line-height:40px;
 
     cursor:pointer;
 
-    z-index:9999;
 
-    opacity:.85;
+    z-index:99999;
 
-    backdrop-filter:blur(4px);
+
+    box-shadow:0 4px 12px rgba(0,0,0,.5);
+
 
     transition:.25s;
 
@@ -1390,8 +1408,6 @@ body.light-mode{
 
 
 .theme-toggle:hover {
-
-    opacity:1;
 
     transform:scale(1.08);
 
@@ -1403,31 +1419,47 @@ body.light-mode{
 /* MENU MOBILE */
 /* ============================= */
 
+
 .pf-mobile-nav {
 
     position:fixed;
+
 
     top:0;
 
     right:-100%;
 
+
     width:85%;
 
     max-width:350px;
 
+
     height:100vh;
+
 
     background:#111;
 
 
+    padding:80px 25px 30px;
+
+
+    box-sizing:border-box;
+
 
     transition:.4s ease;
 
-    z-index:2000;
+
+    z-index:5000;
+
 
     overflow-y:auto;
 
+
+    box-shadow:-8px 0 25px rgba(0,0,0,.6);
+
 }
+
 
 
 .pf-mobile-nav.active {
@@ -1439,8 +1471,9 @@ body.light-mode{
 
 
 /* ============================= */
-/* LISTE MENU */
+/* LIENS MENU */
 /* ============================= */
+
 
 .pf-nav-list {
 
@@ -1450,44 +1483,56 @@ body.light-mode{
 
     margin:0;
 
+
     display:flex;
 
     flex-direction:column;
 
+    gap:15px;
+
 }
+
 
 
 .pf-nav-list li {
 
-    display:block;
-
     width:100%;
 
-    margin:18px 0;
-
 }
+
 
 
 .pf-nav-list a {
 
+
     display:block;
+
 
     width:100%;
 
-    color:white;
+
+    padding:12px 10px;
+
+
+    color:#fff;
+
 
     text-decoration:none;
 
+
     font-size:20px;
 
-    transition:.2s;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
 
 }
 
 
+
 .pf-nav-list a:hover {
 
-    color:#d99b32;
+    color:#f4c876;
 
 }
 
@@ -1497,61 +1542,106 @@ body.light-mode{
 /* RESEAUX SOCIAUX */
 /* ============================= */
 
+
 .pf-mobile-social {
 
-    margin-top:50px;
+    margin-top:40px;
 
 }
+
 
 
 .pf-social-container {
 
+
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
 
-    gap:0px;
+    grid-template-columns:repeat(2,45px);
 
-    justify-items:center;
 
-    align-items:center;
+    justify-content:center;
+
+
+    gap:20px;
+
 
 }
 
 
 
+/* Boutons réseaux */
+
+
 .pf-social-container .social-icon {
+
 
     width:45px;
 
     height:45px;
 
+
     display:flex;
+
 
     align-items:center;
 
     justify-content:center;
 
-    font-size:26px;
 
     border-radius:50%;
 
-    box-shadow:0 2px 6px rgba(0,0,0,.35);
+
+    background:#1b130b;
+
+
+    border:1px solid #6b4e2f;
+
+
+    color:#f4c876;
+
+
+    font-size:22px;
+
+
+    box-shadow:0 3px 8px rgba(0,0,0,.45);
+
+
+    transition:.25s;
+
+
+}
+
+
+
+.pf-social-container .social-icon:hover {
+
+
+    transform:scale(1.1);
+
+
+    border-color:#f4c876;
+
 
 }
 
 
 
 /* ============================= */
-/* TABLETTE / GRAND MOBILE */
+/* TABLETTE */
 /* ============================= */
+
 
 @media (min-width:768px){
 
+
     .pf-social-container {
 
-        grid-template-columns:repeat(4,1fr);
+        grid-template-columns:repeat(4,45px);
 
     }
 
 }
+
+
+
