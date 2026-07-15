@@ -464,9 +464,9 @@ a:hover,
 .footer {
     background: linear-gradient(
         to top,
-        #A8A8A8 0%,
-        #CFCFCF 55%,
-        #F2F2F2 100%
+        #808080 0%,
+        #525252 55%,
+        #2f2f2f 100%
     );
 
     border-top: 1px solid #9E9E9E;
@@ -489,6 +489,22 @@ a:hover,
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,0.8),
         0 3px 8px rgba(0,0,0,0.12);
+}
+.footer h2,
+.footer h3,
+.footer strong {
+    color: #1f1f1f;
+}
+
+.footer p,
+.footer li,
+.footer span,
+.footer a {
+    color: #3a3a3a;
+}
+
+.footer a:hover {
+    color: #8c5a00; /* rappel du doré Studio PF */
 }
 /* ==========================================================================
    MENU – inchangé
