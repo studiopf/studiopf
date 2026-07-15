@@ -28,43 +28,63 @@ textarea {
 }
 .ajust {
     max-width: 900px;
+    width: 100%;
     margin: 0 auto;
-    text-align: justify;
     line-height: 1.9;
     font-size: 1.08rem;
     word-spacing: 0.05em;
 }
 
+/* Paragraphes justifiés avec alinéa */
 .ajust p {
     margin: 0 0 1.6em;
+    text-align: justify !important;
+    text-indent: 2em;
 }
 
+/* Pas d'alinéa inutile sur le dernier paragraphe */
 .ajust p:last-child {
     margin-bottom: 0;
 }
 
+/* Titres centrés */
+.ajust h1,
 .ajust h2,
-.ajust h3 {
+.ajust h3,
+.ajust h4,
+.ajust h5 {
     margin-top: 1.8em;
     margin-bottom: 0.8em;
+    text-align: center !important;
 }
 
-.ajust ul {
+/* Listes alignées à gauche */
+.ajust ul,
+.ajust ol {
     margin: 1.5em 0;
     padding-left: 1.8em;
+    text-align: left !important;
 }
 
 .ajust li {
     margin-bottom: 0.8em;
+    text-align: left !important;
 }
 
+/* Citation alignée à gauche */
 .ajust blockquote {
     margin: 2em auto;
-
+    padding-left: 1em;
     border-left: 4px solid #c8a96a;
     font-style: italic;
     line-height: 1.8;
-    text-align: left;
+    text-align: left !important;
+}
+
+/* Liens et boutons restent centrés */
+.ajust .button,
+.ajust > a {
+    text-align: center !important;
 }
 img {
   height: 80%;
@@ -238,28 +258,28 @@ img {
 }
 
 .maintenance-box {
-    align-items: center;
-    text-align: center;
     margin-top: 15px;
     margin-bottom: 0;
-    border: 0px;
     width: 100%;
+    max-width: 1000px;
     position: relative;
+
     padding: 5px;
+
     background: rgba(30, 20, 12, 0.75);
     border: 1px solid #6b4e2f;
     border-radius: 10px;
-    max-width: 1000px;
+
     backdrop-filter: blur(4px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.65);
+
+    text-align: center;
 }
 
-
-
 .maintenance-box p {
-      font-size: 14px;
+    font-size: 14px;
     line-height: 1.55;
-    margin: 0em 0;
+    margin: 0 0 1em;
 }
 
 .logo {
