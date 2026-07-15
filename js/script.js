@@ -2879,31 +2879,28 @@ function changelanguefoot() {
     html = `
   
       
-     <nav class="menu-mobile">
-        <ul class="menu">
-            <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">General Terms and Conditions 📜</a></li>
-            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
-            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours 🕖</a></li>
-    
-        </ul>
-                </nav>
-                  
-                <button id="scrollToTopBtn" title="Back to top ⬆️" onclick="scrollToTop()">↑</button>
-<button id="scrollTotal" title="View Total" onclick="scrollTotal()">View Total</button>
+  <nav class="menu-mobile">
+    <ul class="menu">
+        <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Terms & Conditions 📜</a></li>
+        <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Legal Notice 💼</a></li>
+        <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Opening Hours 🕖</a></li>
+    </ul>
+</nav>
 
+<div class="footer-adresse">
+    <strong>STUDIO PF</strong><br>
+    Frasse Pierre-François<br>
+    17 Route de Lare, 42510 Saint-Georges-de-Baroille, France<br><br>
 
-
- <div class="center">
-  <p><strong>STUDIO PF</strong><br>
-  FRASSE Pierre-François<br>
-  17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
-
-  <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
-  <p>Phone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
+    <p>
+        Contact 📧 :
+        <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+        - Phone 📞 :
+        <a href="tel:+33775860837">+33 7 75 86 08 37</a>
+    </p>
 </div>
 
-
- <p>Showcase website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
+<p>Website created by <strong>Studio PF</strong> - © 2026 All rights reserved.</p>
 
 
 
@@ -2913,31 +2910,28 @@ else if (currentLanguage === "spanish") {
     html = `
    
     
-     <nav class="menu-mobile">
-   
-        <ul class="menu">
-            <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones Generales de Venta 📜</a></li>
-            <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html');return false;">Aviso Legal 💼</a></li>
-            <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horarios de Apertura 🕖</a></li>
- 
-        </ul>
-                </nav>
-                 
-                <button id="scrollToTopBtn" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
-<button id="scrollTotal" title="Ver total" onclick="scrollTotal()">Ver total</button>
+    <nav class="menu-mobile">
+    <ul class="menu">
+        <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones generales de venta 📜</a></li>
+        <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Aviso legal 💼</a></li>
+        <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horario de apertura 🕖</a></li>
+    </ul>
+</nav>
 
+<div class="footer-adresse">
+    <strong>STUDIO PF</strong><br>
+    Frasse Pierre-François<br>
+    17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
 
- <div class="footer-adresse">
-  <p><strong>STUDIO PF</strong><br>
-  FRASSE Pierre-François<br>
-  17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
-
-  <p>Contacto 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
-  <p>Teléfono 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-
- 
+    <p>
+        Contacto 📧 :
+        <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+        - Teléfono 📞 :
+        <a href="tel:+33775860837">07 75 86 08 37</a>
+    </p>
 </div>
- <p>Sitio web de presentación creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
+
+<p>Sitio web creado por <strong>Studio PF</strong> - © 2026 Todos los derechos reservados.</p>
 
 
 
@@ -2946,29 +2940,30 @@ else if (currentLanguage === "spanish") {
         html = ` 
        
        
- <nav class="menu-mobile">
+<nav class="menu-mobile">
             <ul class="menu">
-                     <li><a href="conditions.html"  onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
-        <li><a href="mentionslegales.html"  onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
-        <li><a href="horaires.html"  onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
-                
-</ul>  
+                <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
+                <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
+                <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
+            </ul>
         </nav>
-  
-       
-        <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
-            <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
-             
-               <div class="footer-adresse">
-     <p><strong>STUDIO PF</strong><br>
-      FRASSE Pierre-François<br>
-      17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
-        <p>Contact 📧 : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a></p>
-        <p>Téléphone 📞 : <a href="tel:+33775860837">07 75 86 08 37</a></p>
-     
+           
 
-  </div>
-       <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
+        <div class="footer-adresse">
+            <strong>STUDIO PF</strong><br>
+            Frasse Pierre-François<br>
+            17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
+
+            <p>
+                Contact 📧 :
+                <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+                - Téléphone 📞 :
+                <a href="tel:+33775860837">07 75 86 08 37</a>
+            </p>
+        </div>
+   
+
+     <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
        `;
     }
 
