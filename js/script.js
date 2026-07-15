@@ -159,10 +159,9 @@ function loadPage(page) {
             mainContainer.innerHTML = newContent.innerHTML;
 
             window.scrollTo(0, 0);
-            document.getElementById("contenu").innerHTML = data;
+mainContainer.innerHTML = newContent.innerHTML;
 
 initMenuMobile();
-
             applyLanguageAndInit();
 
             mainContainer.style.opacity = "1";
