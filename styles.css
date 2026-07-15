@@ -1776,3 +1776,39 @@ button.pf-menu-button {
         font-size: 20px;
     }
 }
+/* ============================= */
+/* LIENS MIS EN AVANT */
+/* ============================= */
+
+a.surligne {
+    color: #D8B06A;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a.surligne::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #D8B06A, #F4D28A);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+a.surligne:hover {
+    color: #F4D28A;
+}
+
+a.surligne:hover::after {
+    transform: scaleX(1.08);
+}
+
+a.surligne:visited {
+    color: #D8B06A;
+}
