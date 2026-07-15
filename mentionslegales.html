@@ -106,18 +106,9 @@ type="image/png">
 <body>
 
 
-    <header>
-     
-        <div class="language-selector">
-           <button  onclick="setLanguage(id);  updateMeta(id); return false;" id="french">
-        <img src="img/Flag_of_France.png" alt="Français"></button>
-           <button onclick="setLanguage(id); updateMeta(id); return false;" id="english">
-    <img src="img/Flag_of_the_United_States.png" alt="English - USD"></button>
-
-               <button  onclick="setLanguage(id); updateMeta(id); return false;" id="spanish">
-        <img src="img/Flag_of_Spain.png" alt="Español"></button>
-
-    </div>
+  <header>
+   
+        <button id="themeToggle" class="theme-toggle">🌙</button>
         
             <div id="info-container" class="info-container">
         <p class="info" id="infoParagraph">.</p>  
@@ -132,63 +123,52 @@ type="image/png">
          </a>    
 </div>  
    </div>
-       
-        
-        <div class="social">
-           <div class="social-bloc">
+    <!-- Bouton hamburger -->
+<button id="pf-menu-button" class="pf-menu-button" aria-label="Ouvrir le menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 
-   <div class="social-container">
-        
-           <div class="social-align"> <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon patreon" aria-label="patreon"><i class="fab fa-patreon"></i></a> </div>
-        </div> 
-                 </div>
-            
-           <div class="social-bloc-vide">  </div>
-            
-       <div class="social-bloc">
+<!-- Menu mobile -->
+<nav id="pf-mobile-nav" class="pf-mobile-nav">
 
-        <div class="social-container">
-            <div class="social-align"><a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> </div>
-            <div class="social-align"><a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a> </div>
- 
-         </div>
-                     </div>
-            
-             <div class="social-bloc-vide">  </div>
-       <div class="social-bloc">
-              <div class="social-container">
-                         <div class="social-align"> <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon twitch" aria-label="Twitch"><i class="fab fa-twitch"></i></a> </div>
-           <div class="social-align"> <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon youtube" aria-label="youtube"><i class="fab fa-youtube"></i></a> </div>
-           <div class="social-align"> <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon tiktok" aria-label="tiktok"><i class="fab fa-tiktok"></i></a> </div>
-        </div> 
-               </div>
-            
-              <div class="social-bloc-vide">  </div>
-       <div class="social-bloc">
+   <div class="language-selector">
+           <button  onclick="setLanguage(id);  updateMeta(id); return false;" id="french">
+        <img src="img/Flag_of_France.png" alt="Français - Euro"></button>
+             <button onclick="setLanguage(id); updateMeta(id); return false;" id="english">
+    <img src="img/Flag_of_the_United_States.png" alt="English - USD">
+</button>
+               <button  onclick="setLanguage(id); updateMeta(id); return false;" id="spanish">
+        <img src="img/Flag_of_Spain.png" alt="Español - Euro"></button>
 
-         <div class="social-container">   
-           <div class="social-align"> <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon discord" aria-label="Discord"><i class="fab fa-discord"></i></a> </div>
-            <div class="social-align"><a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a> </div>
-             <div class="social-align"><a href="mailto:studiopeinturefgurine@gmail.com" class="social-icon email" aria-label="Envoyer un e-mail"><i class="fas fa-envelope"></i></a></div>
-         </div>
-            </div>
+    </div>
+   <button id="themeToggle" class="theme-toggle">🌙</button>
+  
+    <ul class="pf-nav-list">
+        <li><a href="index.html" onclick="loadPage('index.html'); return false;">Accueil 🏠</a></li>
+        <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop 🎨</a></li>
+        <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Concours 🏆</a></li>
+        <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
+        <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
+        <li><a href="mailto:studiopeinturefgurine@gmail.com">Contactez-moi ✉️</a></li>
+    </ul>
+
+    <!-- Réseaux sociaux -->
+    <div class="pf-mobile-social">
+        <div class="pf-social-container">
+            <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
+            <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+            <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
         </div>
+    </div>
+</nav>
 
-
-        
-    
-         
-        <nav id="menu-contenu" class="menu-mobile">
-            <ul class="menu">
-                <li><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">Peinture TableTop 🎨</a></li>
-                 <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">Collection & Concours 🏆</a></li>
-              </ul>
-          <ul class="menu">
-                   <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">Formation 📚</a></li>
-                <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">Galerie 🖼️</a></li>
-            </ul>
-        </nav>
-   
 
   <div class="carroussel-container">
         <div class="carroussel" id="carroussel">
@@ -204,7 +184,7 @@ type="image/png">
         </div>
 
     </div>
-
+      
        </header>
 <main id="contenu-principal">
 <h1>✨ Mentions Légales ✨</h1>
