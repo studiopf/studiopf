@@ -4975,78 +4975,184 @@ function appelimg() {
 function initializeGalerie() {
     const filenames = appelimg();
     const base = 'img/';
-    const gallery   = document.getElementById('gallery');
-    const filters   = document.getElementById('filters');
-    const lightbox  = document.getElementById('lightbox');
-    const lbImg     = document.getElementById('lightbox-img');
+    const gallery = document.getElementById('gallery');
+    const filters = document.getElementById('filters');
 
-    if (!gallery || !filters || !lightbox || !lbImg) {
-        console.warn("Éléments galerie manquants → initializeGalerie annulé");
+    /*
+    La galerie n'existe pas forcément sur toutes les pages.
+    Dans ce cas, on initialise seulement la lightbox globale.
+    */
+    initializeLightboxGlobal();
+
+    if (!gallery || !filters) {
+        console.warn("Éléments de galerie absents sur cette page.");
         return;
     }
 
     const categorized = {};
+
     filenames.forEach(file => {
         const [folder] = file.split('/');
+
         if (!folder) return;
-        if (!categorized[folder]) categorized[folder] = [];
+
+        if (!categorized[folder]) {
+            categorized[folder] = [];
+        }
+
         categorized[folder].push(base + file);
     });
 
-    // Catégorie "Tous"
-    categorized.Tous = filenames.map(f => base + f);
+    // Catégorie contenant toutes les images
+    categorized.Tous = filenames.map(file => base + file);
 
-    // Boutons filtres
+    // Création des boutons de filtres
     filters.innerHTML = "";
-    Object.keys(categorized).sort().forEach(cat => {
-        const btn = document.createElement('button');
-        btn.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-        btn.className = cat.toLowerCase();
-        if (cat === 'Tous') btn.classList.add('active');
 
-        btn.addEventListener('click', () => {
-            filters.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            showImages(cat);
+    Object.keys(categorized).sort().forEach(category => {
+        const button = document.createElement('button');
+
+        button.textContent =
+            category.charAt(0).toUpperCase() + category.slice(1);
+
+        button.className = category.toLowerCase();
+
+        if (category === 'Tous') {
+            button.classList.add('active');
+        }
+
+        button.addEventListener('click', () => {
+            filters
+                .querySelectorAll('button')
+                .forEach(btn => btn.classList.remove('active'));
+
+            button.classList.add('active');
+
+            showImages(category);
         });
 
-        filters.appendChild(btn);
+        filters.appendChild(button);
     });
 
     function showImages(category) {
         gallery.innerHTML = "";
+
         if (!categorized[category]) return;
 
-        const frag = document.createDocumentFragment();
+        const fragment = document.createDocumentFragment();
+
         categorized[category].forEach(src => {
             const img = document.createElement('img');
+
             img.src = src;
-            img.alt = `Peinture figurine studio – ${category}`;
+            img.alt = `Peinture figurine Studio PF – ${category}`;
             img.className = 'gallery-img';
             img.loading = 'lazy';
 
-            img.addEventListener('click', () => {
-                lightbox.classList.add('active');
-                lbImg.src = src;
-                lbImg.alt = img.alt;
-            });
+            /*
+            Il n'est plus nécessaire d'ajouter un événement click ici.
+            La lightbox globale détectera automatiquement cette image.
+            */
 
-            frag.appendChild(img);
+            fragment.appendChild(img);
         });
-        gallery.appendChild(frag);
-    }
 
-    // Fermeture lightbox
-    lightbox.addEventListener('click', e => {
-        if (e.target === lightbox || e.target === lbImg) {
-            lightbox.classList.remove('active');
-        }
-    });
+        gallery.appendChild(fragment);
+    }
 
     // Affichage initial
     showImages('Tous');
 }
+function initializeLightboxGlobal() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
 
+    if (!lightbox || !lightboxImg) {
+        console.warn("Éléments de la lightbox manquants.");
+        return;
+    }
+
+    /*
+    Évite d'installer plusieurs fois les événements
+    lorsque initializeGalerie() est rappelée.
+    */
+    if (document.body.dataset.lightboxInitialized === "true") {
+        return;
+    }
+
+    document.body.dataset.lightboxInitialized = "true";
+
+    /*
+    Ouverture de la lightbox pour toutes les images du site,
+    y compris les images ajoutées dynamiquement.
+    */
+    document.addEventListener('click', event => {
+        const img = event.target.closest('img');
+
+        if (!img) return;
+
+        // Ne pas ouvrir la lightbox en cliquant sur son image
+        if (img.id === 'lightbox-img') return;
+
+        // Permet d'exclure certaines images
+        if (img.hasAttribute('data-no-lightbox')) return;
+
+        // Ignore les images situées dans un bouton
+        if (img.closest('button')) return;
+
+        // Ignore les images situées dans un lien externe
+        const parentLink = img.closest('a');
+
+        if (
+            parentLink &&
+            parentLink.getAttribute('href') &&
+            !parentLink.hasAttribute('data-lightbox')
+        ) {
+            return;
+        }
+
+        lightboxImg.src = img.currentSrc || img.src;
+        lightboxImg.alt = img.alt || "Image agrandie";
+
+        lightbox.classList.add('active');
+        document.body.classList.add('lightbox-open');
+    });
+
+    // Fermeture en cliquant sur le fond ou l'image agrandie
+    lightbox.addEventListener('click', event => {
+        if (
+            event.target === lightbox ||
+            event.target === lightboxImg
+        ) {
+            closeLightbox();
+        }
+    });
+
+    // Fermeture avec la touche Échap
+    document.addEventListener('keydown', event => {
+        if (
+            event.key === 'Escape' &&
+            lightbox.classList.contains('active')
+        ) {
+            closeLightbox();
+        }
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.classList.remove('lightbox-open');
+
+        /*
+        On efface l'image après l'animation de fermeture.
+        */
+        setTimeout(() => {
+            if (!lightbox.classList.contains('active')) {
+                lightboxImg.src = "";
+                lightboxImg.alt = "";
+            }
+        }, 300);
+    }
+}
 function changelanguementionslegales() {
      const main = document.getElementById("contenu-principal");
     if (!main) return;
