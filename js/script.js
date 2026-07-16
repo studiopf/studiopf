@@ -68,9 +68,11 @@ function updateMeta(lang) {
 
     document.title = title;
 
-    document.querySelector('meta[name="description"]').setAttribute("content", description);
-    document.querySelector('meta[name="author"]').setAttribute("content", author);
-    document.querySelector('meta[name="keywords"]').setAttribute("content", keywords);
+    const metaValues = { description, author, keywords };
+    Object.entries(metaValues).forEach(([name, content]) => {
+        const meta = document.querySelector(`meta[name="${name}"]`);
+        if (meta) meta.setAttribute("content", content);
+    });
 }
 // =============================
 // UTILITAIRES
@@ -156,8 +158,7 @@ function loadPage(page) {
                 throw new Error("contenu-principal manquant dans " + page);
             }
 
-            // CLEAN SAFE
-            mainContainer.innerHTML = "";
+            // Remplacement direct du contenu (évite une opération DOM inutile).
             mainContainer.innerHTML = newContent.innerHTML;
 
             window.scrollTo(0, 0);
@@ -183,21 +184,21 @@ function applyLanguageAndInit() {
     mettreAJourTarifLangue();
 changelangueinfo();
     changelanguemenu();
-   
+
 initializeLightboxGlobal();
     changelanguefoot();
     changelanguelogo();
-    
+
     changelanguepartenaires();
     initThemeToggle();
     updateAgeDisplay();
 
-    
+
     initializecarroussel();
     initScrollBehaviors();
     hideCurrentPage();
 
-    
+
     if (currentPage.includes("galerie")) {
         initGalerieWithLang();
         initializeGalerie();
@@ -214,7 +215,7 @@ initializeLightboxGlobal();
   changelanguequisuisje();
     }
 
-  
+
 
     if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
         changelangueconditions();
@@ -226,15 +227,15 @@ initializeLightboxGlobal();
     if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
         changelanguepeinture();
        genererTableTarifs();
-    
+
     }
         if (currentPage.includes("peinturecollection") && typeof changelanguecollection === "function") {
         changelanguecollection();
-            
+
     }
             if (currentPage.includes("pourquoi") && typeof changelanguepourquoi === "function") {
         changelanguepourquoi();
-            
+
     }
            if (currentPage.includes("index") && typeof changelangueindex === "function") {
         changelangueindex();
@@ -242,7 +243,7 @@ initializeLightboxGlobal();
     if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
         changelanguehoraires();
     }
-    
+
 }
 
 function changelanguepourquoi() {
@@ -282,13 +283,13 @@ From the first contact to delivery, I do everything possible to make your projec
     <p>
         This organization saves you time: your miniatures can be ordered, delivered, painted, and shipped back to you without any handling on your part.
     </p>
-   
+
         <a href="simulateur_devis.html"
            class="button"
            onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
             💬 Request a quote
         </a>
-   
+
 </div>
 </div>
 
@@ -397,13 +398,13 @@ Desde el primer contacto hasta la entrega, pongo todo mi esfuerzo para que tu pr
     <p>
         Esta organización te permite ahorrar tiempo: tus figuras pueden ser encargadas, entregadas, pintadas y reenviadas, sin que tengas que manipular nada.
     </p>
-   
+
         <a href="simulateur_devis.html"
            class="button"
            onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
             💬 Solicitar presupuesto
         </a>
-   
+
 </div>
 </div>
 
@@ -516,13 +517,13 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
             Cette organisation vous permet de gagner du temps : vos figurines peuvent être commandées, livrées, peintes puis réexpédiées, sans aucune manipulation de votre part.
         </p>
 
-        
+
             <a href="simulateur_devis.html"
                class="button"
                onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 💬 Demander un devis
             </a>
-        
+
     </div>
     </div>
       <div class="center">
@@ -646,7 +647,7 @@ Une peinture TableTop est pensée pour le jeu avec un excellent rendu à distanc
 
     main.innerHTML = html;
 }
-        
+
 function changelangueforma() {
     const main = document.getElementById("contenu-principal");
     if (!main) return;
@@ -662,7 +663,7 @@ function changelangueforma() {
  currentLanguage = "spanish";
         changelangueindex();
     } else {
-           html = ` 
+           html = `
             <div class="maintenance-box ajust">
        <h1>🎨 Cours de Peinture sur Figurines</h1>
 
@@ -688,7 +689,7 @@ function changelangueforma() {
 
     <div class="maintenance-box ajust">
       <h2>💡 Pourquoi Nous Choisir ?</h2>
-        
+
       <ul>
         <li>🖌️ Cours adaptés à tous les niveaux</li>
         <li>🎯 Suivi personnalisé sur vos projets</li>
@@ -696,11 +697,11 @@ function changelangueforma() {
       </ul>
       <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
     </div>
-   
+
      <div>
          <a href="#formationForm" class="button">S'inscrire 💬</a>
     </div>
-    
+
        <div class="maintenance-box">
       <h2>🖍️ Forfaits de Cours</h2>
       <div class="card">
@@ -709,25 +710,25 @@ function changelangueforma() {
         <p>Une pochette d’initiation sera remise.</p>
       </div>
 
-        
+
       <div class="card-container3">
         <div class="card">
           <h3>🕐 Cours 1h</h3>
           <p>50€/h</p>
           <p>Pour un suivi régulier</p>
-          
+
         </div>
         <div class="card">
           <h3>⏳ Cours 3h</h3>
           <p>150€</p>
           <p>Pour démarrer la peinture</p>
-       
+
         </div>
         <div class="card">
           <h3>🔥 Cours 5h</h3>
           <p>200€</p>
           <p>Pour lancer projet.</p>
-         
+
         </div>
       </div>
 
@@ -737,7 +738,7 @@ function changelangueforma() {
          <a href="#formationForm" class="button">S'inscrire 💬</a>
     </div>
 
-    
+
    </div>
        <div class="maintenance-box">
       <h2>📆 Stage en groupe</h2>
@@ -749,7 +750,7 @@ function changelangueforma() {
            <p>9h-12h / 14h-16h</p>
            <p>Repas inclus.</p>
            <p>Une pochette et la figurune sera remise.</p>
-          
+
         </div>
         <div class="card">
           <h3>📆 Stage 8h</h3>
@@ -760,7 +761,7 @@ function changelangueforma() {
         </div>
       </div>
          <p>Horaires à titre d'exemple.</p>
-     
+
    </div>
        <div class="maintenance-box">
         <h2>📆 Prestation événementielle</h2>
@@ -775,7 +776,7 @@ function changelangueforma() {
            <p>Comprend le trajet.</p>
            <p>Fourniture peinture fourni.</p>
          <p>Hors figurines.</p>
-         
+
         </div>
         <div class="card">
            <h3>📆 2 journées</h3>
@@ -792,7 +793,7 @@ function changelangueforma() {
    </div>
        <div class="maintenance-box">
       <h2>🖌️🔫 Choisissez vos armes :</h2>
-  
+
       <div class="card-container3">
         <div class="card">
           <h3>🖌️ Pinceau</h3>
@@ -807,12 +808,12 @@ function changelangueforma() {
           <p>Techniques précises pour débutants et avancés</p>
         </div>
       </div>
-  
+
 </div>
     <div class="maintenance-box">
-  
+
       <h2>🚀🎨 Lancez-vous !</h2>
-      
+
     <div class="card-container2">
         <div class="card">
           <h3>🎨 Matériel Fourni</h3>
@@ -829,8 +830,8 @@ function changelangueforma() {
       <div class="maintenance-box">
    <h2>📅 Réservez dès maintenant et devenez expert !</h2>
     <div class="center">
-   
-      
+
+
       <form onsubmit="event.preventDefault(); envoyerMailForma(this);" id="formationForm">
         <div>
           <label for="nom">Nom</label>
@@ -894,7 +895,7 @@ function changelangueforma() {
 
     </div>
     </div>
- 
+
            `;
     }
 
@@ -946,16 +947,15 @@ ${prenom} ${nom}`;
     let html = "";
 
     if (currentLanguage === "english") {
-             html = `  
+             html = `
              <h1>Quote Request - TableTop+ Commission</h1>
-           
+
         <form id="contactForm" action="#" class="maintenance-box">
-             
-                 
-       
-        
+
+
+
        <fieldset class="maintenance-box">
-               
+
                     <legend>Quote Simulator</legend>
                     <div class="cardform">
                         <label for="niveau">Painting Levels :</label><br>
@@ -976,12 +976,12 @@ ${prenom} ${nom}`;
                             <option value="" disabled hidden>Choose a level</option>
                             <option value="niveau1" selected>Gold - TableTop+ lvl3</option>
                             <option value="niveau2">Diamond - TableTop++ lvl4</option>
-           
+
                         </select>
                         <p><strong>Selected level :</strong> <span id="afficheniveau"></span></p><br>
                     </div>
-      
-        
+
+
        <div class="maintenance-box">
                     <div id="petiteinfanterie" class="cardform">
                         <label for="petiteinfanterie-input">Number of <strong>Infantry base 20-25mm</strong> :</label>
@@ -1156,27 +1156,26 @@ ${prenom} ${nom}`;
                            <div id="message" class="cardform">
                             <label for="message-input">To be as accurate as possible,<br>please provide the list of miniatures to paint, whether assembly is required,<br>and if you have a specific theme or colour scheme in mind : <span>*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Your message" required></textarea></div>
-                  
+
                     <p><span>*</span> Required fields</p>
                              <div class="center">
               <button type="submit" class="button">Send Quote Request by Email</button>
                    </div> </div>
-                     
-              
-          
+
+
+
             </form>
             `;
     } else if (currentLanguage === "spanish") {
-              html = `   
+              html = `
               <h1>Solicitud de Presupuesto comisión TableTop+</h1>
-           
+
         <form id="contactForm" action="#" class="maintenance-box">
-             
-                 
-       
-        
+
+
+
        <fieldset class="maintenance-box">
-               
+
                     <legend>Simulación de presupuesto</legend>
                     <div class="cardform">
                         <label for="niveau">Niveles de Pintura :</label><br>
@@ -1197,12 +1196,12 @@ ${prenom} ${nom}`;
                             <option value="" disabled hidden>Elige un nivel</option>
                             <option value="niveau1" selected>Oro - TableTop+ niv3</option>
                             <option value="niveau2">Diamante - TableTop++ niv4</option>
-           
+
                         </select>
                         <p><strong>Nivel seleccionado :</strong> <span id="afficheniveau"></span></p><br>
                     </div>
-      
-        
+
+
        <div class="maintenance-box">
                     <div id="petiteinfanterie" class="cardform">
                         <label for="petiteinfanterie-input">Número de <strong>Infantería peana 20-25mm</strong> :</label>
@@ -1377,14 +1376,14 @@ ${prenom} ${nom}`;
                            <div id="message" class="cardform">
                             <label for="message-input">Para ser lo más preciso posible,<br>por favor indica la lista de miniaturas a pintar, si se necesita montaje,<br>y si tienes un tema o esquema de colores ya definido : <span>*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Tu mensaje" required></textarea></div>
-                  
+
                     <p><span>*</span> Campos obligatorios</p>
                              <div class="center">
               <button type="submit" class="button">Enviar solicitud por correo</button>
                    </div> </div>
-                     
-              
-          
+
+
+
             </form>
               `;
     } else {
@@ -1392,14 +1391,13 @@ ${prenom} ${nom}`;
                           <h1>Demande de Devis commission TableTop+</h1>
 
 
-            
+
         <form id="contactForm" action="#" class="maintenance-box">
-              
-                  
-        
-         
+
+
+
        <fieldset class="maintenance-box">
-                
+
                     <legend>Simulation de devis</legend>
                     <div class="cardform">
                         <label for="niveau">Niveaux de Peinture :</label><br>
@@ -1421,12 +1419,12 @@ ${prenom} ${nom}`;
                             <option value="" disabled hidden>Choisissez un niveau</option>
                             <option value="niveau1" selected>Gold - TableTop+ niv3</option>
                             <option value="niveau2">Diamant - TableTop++ niv4</option>
-            
+
                         </select>
                         <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
                     </div>
-       
-         
+
+
        <div class="maintenance-box">
                     <div id="petiteinfanterie" class="cardform">
                         <label for="petiteinfanterie-input">Nombre de <strong>Infanteries socle 20-25mm</strong> :</label>
@@ -1619,15 +1617,15 @@ ${prenom} ${nom}`;
                            <div id="message" class="cardform">
                             <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span>*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
-                   
+
 
                     <p><span>*</span> Champs obligatoires</p>
                              <div class="center">
               <button type="submit" class="button">Envoyer la demande par mail</button>
-                   </div>   </div>   
-                      
-               
-           
+                   </div>   </div>
+
+
+
             </form>
         `;
     }
@@ -1635,22 +1633,6 @@ ${prenom} ${nom}`;
     main.innerHTML = html;
 }
 
-    
-
-// =============================
-// SCROLL FIX
-// =============================
-function initScrollBehaviors() {
-    const scrollBtn = document.getElementById("scrollToTopBtn");
-    if (!scrollBtn) return;
-
-    const update = () => {
-        scrollBtn.style.display = window.scrollY > 50 ? "block" : "none";
-    };
-
-    window.removeEventListener("scroll", update);
-    window.addEventListener("scroll", update);
-}
 
 
 // =============================
@@ -1667,20 +1649,20 @@ document.addEventListener("DOMContentLoaded", () => {
 // ────────────────────────────────────────────────
 
 
-   
+
    function changelangueindex() {
     const main = document.getElementById("contenu-principal");
-   
+
 
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `  
+        html = `
         <div class="center">
     <div class="maintenance-box ajust fondlilia">
         <h1>🎨 Professional Miniature Painting</h1>
         <p>
-            Welcome to <strong>Studio PF</strong>, a workshop specialized in 
+            Welcome to <strong>Studio PF</strong>, a workshop specialized in
             <strong>professional miniature painting</strong>.
         </p>
         <p>
@@ -1712,17 +1694,17 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
    </div>
 
-    <div class="maintenance-box ajust fondkigt">
+    <div class="maintenance-box ajust fondknigt">
       <h2>⚔️ Gaming Army Miniatures</h2>
 <p>
     Do you want an army that is enjoyable to play and visually cohesive?
 </p>
 <p>
-    I create <strong>TableTop</strong> quality paintings for miniature wargames with two levels of finish: 
+    I create <strong>TableTop</strong> quality paintings for miniature wargames with two levels of finish:
     <strong>Gold</strong> and <strong>Diamond</strong>.
 </p>
 <p>
-    Whether you play 
+    Whether you play
     <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer Age of Sigmar</strong></a>,
     <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>,
     <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
@@ -1751,13 +1733,13 @@ document.addEventListener("DOMContentLoaded", () => {
             Busts, resins, pop culture figures, manga, video games,
             cinema, fantasy, or science-fiction: each project is treated like a true miniature artwork.
         </p>
-        
+
             <a href="peinturecollection.html"
                class="button"
                onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
                 🏆 Discover Collection Pieces
             </a>
-        
+
     </div>
 
     <!--
@@ -1776,13 +1758,13 @@ document.addEventListener("DOMContentLoaded", () => {
             oils or pigments:<br>I share all the techniques
             I use daily in my professional work.
         </p>
-        
+
             <a href="formation.html"
                class="button"
                onclick="loadPage('formation.html'); scrollToTop(); return false;">
                 📚 Discover Course Packages
             </a>
-        
+
     </div>
     -->
 
@@ -1792,13 +1774,13 @@ document.addEventListener("DOMContentLoaded", () => {
             From TableTop+ armies to competition pieces,
             explore several hundred miniatures painted for players and collectors.
         </p>
-        
+
             <a href="galerie.html"
                class="button"
                onclick="loadPage('galerie.html'); scrollToTop(); return false;">
                 🖼️ View the Gallery
             </a>
-        
+
     </div>
 
 <div class="center">
@@ -1813,12 +1795,12 @@ Today, I work with acrylics, pigments, and oils in a style that brings miniature
 My goal: make your miniatures come alive.
 </p>
 <p><strong>“Every miniature tells a story. My role is to make it shine.” ✨</strong></p>
- 
+
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
                ✨ Learn more about my journey
             </a>
-        
- 
+
+
 </div>
 </div>
 
@@ -1853,13 +1835,13 @@ From first contact to delivery, I do everything possible to make your project a 
         <p>
             This process saves you time: your miniatures can be ordered, delivered, painted, and shipped back to you without any handling on your part.
         </p>
-        
+
             <a href="simulateur_devis.html"
                class="button"
                onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 💬 Request a Quote
             </a>
-        
+
     </div>
 </div>
         `;
@@ -1869,7 +1851,7 @@ From first contact to delivery, I do everything possible to make your project a 
     <div class="maintenance-box ajust fondlilia">
         <h1>🎨 Pintura profesional de figuritas</h1>
         <p>
-            Bienvenido a <strong>Studio PF</strong>, taller especializado en 
+            Bienvenido a <strong>Studio PF</strong>, taller especializado en
             <strong>pintura profesional de figuritas</strong>.
         </p>
         <p>
@@ -1891,7 +1873,7 @@ From first contact to delivery, I do everything possible to make your project a 
            onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">🏆 Piezas de colección y concursos
         </a>
     </li>
-    <!-- 
+    <!--
     <li>
         <a href="formation.html"
            onclick="loadPage('formation.html'); scrollToTop(); return false;">📚 Cursos de pintura de figuritas
@@ -1944,13 +1926,13 @@ From first contact to delivery, I do everything possible to make your project a 
             videojuegos, cine, fantasía o ciencia ficción:
             cada proyecto se trata como una verdadera obra en miniatura.
         </p>
-        
+
             <a href="peinturecollection.html"
                class="button"
                onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
                 🏆 Descubrir las piezas de colección
             </a>
-        
+
     </div>
 
 <!--
@@ -1969,13 +1951,13 @@ From first contact to delivery, I do everything possible to make your project a 
             óleos o pigmentos:<br>Comparto todas las técnicas
             que utilizo diariamente en mi actividad profesional.
         </p>
-        
+
             <a href="formation.html"
                class="button"
                onclick="loadPage('formation.html'); scrollToTop(); return false;">
                 📚 Descubrir los paquetes de cursos
             </a>
-        
+
     </div>
 -->
     <div class="maintenance-box ajust fondnurgle">
@@ -1985,13 +1967,13 @@ From first contact to delivery, I do everything possible to make your project a 
             explora varios cientos de figuritas realizadas
             para jugadores y coleccionistas.
         </p>
-        
+
             <a href="galerie.html"
                class="button"
                onclick="loadPage('galerie.html'); scrollToTop(); return false;">
                 🖼️ Ver la galería
             </a>
-        
+
     </div>
 
 <div class="center">
@@ -2006,12 +1988,12 @@ Hoy trabajo el acrílico, los pigmentos y los óleos con un estilo que da vida a
 Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
 </p>
 <p><strong>“Cada figurita cuenta una historia. Mi papel es hacerla brillar.” ✨</strong></p>
- 
+
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
                ✨ Saber más sobre mi trayectoria
             </a>
-        
- 
+
+
 </div>
 </div>
 
@@ -2046,19 +2028,19 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
         <p>
             Esta organización te permite ahorrar tiempo: tus figuritas pueden pedirse, entregarse, pintarse y reexpedirse, sin ninguna manipulación por tu parte.
         </p>
-        
+
             <a href="simulateur_devis.html"
                class="button"
                onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 💬 Solicitar un presupuesto
             </a>
-        
+
     </div>
 </div>
         `;
     } else {
         html = `
-        
+
          <div class="center">
 
     <div class="maintenance-box ajust fondlilia">
@@ -2088,13 +2070,13 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
     </li>
 
     <li>
-        <a href="peinturecollection.html" 
+        <a href="peinturecollection.html"
            onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">🏆 Pièces de collection & concours
         </a>
     </li>
 
     <li>
-        <a href="formation.html" 
+        <a href="formation.html"
            onclick="loadPage('formation.html'); scrollToTop(); return false;">📚 Cours de peinture sur figurines
         </a>
     </li>
@@ -2105,7 +2087,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
    </div>
 
 
-    <div class="maintenance-box ajust fondkigt">
+    <div class="maintenance-box ajust fondknigt">
 
       <h2>⚔️ Figurines d'Armées de jeu</h2>
 
@@ -2160,13 +2142,13 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
             chaque projet est traité comme une véritable œuvre miniature.
         </p>
 
-        
+
             <a href="peinturecollection.html"
                class="button"
                onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
                 🏆 Découvrir les pièces de collection
             </a>
-        
+
 
     </div>
 
@@ -2192,13 +2174,13 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
             que j'utilise quotidiennement dans mon activité professionnelle.
         </p>
 
-        
+
             <a href="formation.html"
                class="button"
                onclick="loadPage('formation.html'); scrollToTop(); return false;">
                 📚 Découvrir les forfaits cours
             </a>
-        
+
 
     </div>
 
@@ -2214,16 +2196,15 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
             pour des joueurs et des collectionneurs.
         </p>
 
-        
+
             <a href="galerie.html"
                class="button"
                onclick="loadPage('galerie.html'); scrollToTop(); return false;">
                 🖼️ Voir la galerie
             </a>
-        
+
 
     </div>
-
 
 
 
@@ -2246,17 +2227,15 @@ Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
 
 <p><strong>“Chaque figurine raconte une histoire. Mon rôle, c’est de la faire briller.” ✨</strong>  </p>
 
-  
+
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
                ✨ En savoir plus sur mon parcours
             </a>
-      
-  
+
+
 
 </div>
 </div>
-
-
 
 
 
@@ -2307,13 +2286,13 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
             Cette organisation vous permet de gagner du temps : vos figurines peuvent être commandées, livrées, peintes puis réexpédiées, sans aucune manipulation de votre part.
         </p>
 
-        
+
             <a href="simulateur_devis.html"
                class="button"
                onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
                 💬 Demander un devis
             </a>
-        
+
 
     </div>
 </div>
@@ -2325,7 +2304,7 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
 
 function changelanguecollection() {
       const main = document.getElementById("contenu-principal");
-   
+
 
      let html = "";
 
@@ -2353,12 +2332,12 @@ function changelanguecollection() {
     <p>
         <em>📸 Examples of collection, exhibition and competition pieces created by Studio PF.</em>
     </p>
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
      Request a personalized quote 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
@@ -2384,12 +2363,12 @@ function changelanguecollection() {
     <p>
         <em>📸 Examples of dioramas and exhibition scenes created by Studio PF.</em>
     </p>
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
      Request a personalized quote 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
@@ -2415,18 +2394,18 @@ function changelanguecollection() {
     <p>
         <em>📸 Examples of busts and collectible pieces created by Studio PF.</em>
     </p>
-    
+
  <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
      Request a personalized quote 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
     <h2>🎬 Manga, Movies, Series & Video Games</h2>
     <p>
-        Do you own a figurine inspired by your favorite universe?  
+        Do you own a figurine inspired by your favorite universe?
         Studio PF paints pieces from <strong>mangas, movies, series, video games and pop culture licenses</strong>, whether iconic characters or original creations.
     </p>
     <p>
@@ -2452,12 +2431,12 @@ function changelanguecollection() {
     <p>
         <em>📸 Some examples of pop culture inspired creations.</em>
     </p>
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
      Request a personalized quote 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
@@ -2537,12 +2516,12 @@ function changelanguecollection() {
     <p>
         <em>📸 Ejemplos de piezas de colección, exposición y concurso realizadas por Studio PF.</em>
     </p>
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
      Solicitar un presupuesto personalizado 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
@@ -2568,12 +2547,12 @@ function changelanguecollection() {
     <p>
         <em>📸 Ejemplos de dioramas y escenas de exposición realizados por Studio PF.</em>
     </p>
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
      Solicitar un presupuesto personalizado 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
@@ -2599,18 +2578,18 @@ function changelanguecollection() {
     <p>
         <em>📸 Ejemplos de bustos y piezas de colección realizados por Studio PF.</em>
     </p>
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
      Solicitar un presupuesto personalizado 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
     <h2>🎬 Manga, Películas, Series y Videojuegos</h2>
     <p>
-        ¿Posees una figurilla inspirada en tu universo favorito?  
+        ¿Posees una figurilla inspirada en tu universo favorito?
         Studio PF realiza la pintura de piezas provenientes de <strong>mangas, películas, series, videojuegos y licencias de pop culture</strong>, ya sean personajes icónicos o creaciones originales.
     </p>
     <p>
@@ -2636,12 +2615,12 @@ function changelanguecollection() {
     <p>
         <em>📸 Algunos ejemplos de realizaciones inspiradas en la pop culture.</em>
     </p>
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
      Solicitar un presupuesto personalizado 💬
 </a>
-    
+
 </div>
 
 <div class="maintenance-box ajust">
@@ -2728,12 +2707,12 @@ function changelanguecollection() {
         <em>📸 Exemples de pièces de collection, d'exposition et de concours réalisées par Studio PF.</em>
     </p>
 
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
 </a>
-    
+
 
 </div>
   <div class="maintenance-box ajust">
@@ -2766,12 +2745,12 @@ function changelanguecollection() {
         <em>📸 Exemples de dioramas et scènes d'exposition réalisés par Studio PF.</em>
     </p>
 
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
 </a>
-    
+
 
 </div>
 
@@ -2806,12 +2785,12 @@ function changelanguecollection() {
         <em>📸 Exemples de bustes et pièces de collection réalisés par Studio PF.</em>
     </p>
 
-    
+
   <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
 </a>
-    
+
 
 </div>
 
@@ -2853,16 +2832,15 @@ function changelanguecollection() {
         <em>📸 Quelques exemples de réalisations inspirées de la pop culture.</em>
     </p>
 
-    
+
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
 </a>
-    
+
 
 </div>
 
-      
 
 
 <div class="maintenance-box ajust">
@@ -2890,7 +2868,6 @@ function changelanguecollection() {
     </p>
 
 </div>
-
 
 
 
@@ -2948,9 +2925,9 @@ function changelanguecollection() {
 // Menus multilingues
 // ────────────────────────────────────────────────
 function changelanguequisuisje() {
-    
+
       const main = document.getElementById("contenu-principal");
-   
+
 
     let html = "";
 
@@ -3068,7 +3045,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- FORMATION & COMMUNAUTÉ -->
     <!-- ================================================== -->
- 
+
   <!--
   <div class="maintenance-box ajust">
     <h2>📚 Transmission and community</h2>
@@ -3589,14 +3566,14 @@ function changelanguequisuisje() {
 
     main.innerHTML = html;
 }
-        
+
 // ────────────────────────────────────────────────
 // Menus multilingues
 // ────────────────────────────────────────────────
 function changelanguepeinture() {
-    
+
       const main = document.getElementById("contenu-principal");
-   
+
 
     let html = "";
 
@@ -3663,9 +3640,9 @@ function changelanguepeinture() {
 <p>
     <em>Examples of Gold level creations.</em>
 </p>
-   
+
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-    
+
     </div>
 
     <div class="maintenance-box ajust">
@@ -3706,9 +3683,9 @@ function changelanguepeinture() {
     <p>
         <em>📸 Examples of Diamond level creations.</em>
     </p>
-   
+
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
-    
+
     </div>
 
 <div class="maintenance-box ajust">
@@ -3771,12 +3748,12 @@ function changelanguepeinture() {
         <em>📸 Examples of conversions, kitbashes, and custom miniature creations.</em>
     </p>
 
-    
+
         <a href="mailto:studiopeinturefigurine@gmail.com?subject=Miniature%20Conversion%20Project%20Studio%20PF&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20present%20a%20miniature%20conversion%20project.%0A%0ABase%20miniature:%0A%0ARequested%20modifications:%0A%0AAvailable%20bits,%20parts%20or%20accessories:%0A%0A3D-printed%20parts%20to%20include:%0A%0APhotos,%20links%20or%20references:%0A%0AAdditional%20information:%0A"
            class="button">
             Present my conversion project 💬
         </a>
-    
+
 
 </div>
 
@@ -3930,9 +3907,9 @@ function changelanguepeinture() {
 <p>
     <em>Ejemplos de realizaciones en nivel Gold.</em>
 </p>
-   
+
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
-    
+
     </div>
 
     <div class="maintenance-box ajust">
@@ -3973,9 +3950,9 @@ function changelanguepeinture() {
     <p>
         <em>📸 Ejemplos de realizaciones en nivel Diamante.</em>
     </p>
-   
+
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
-    
+
     </div>
 
 <div class="maintenance-box ajust">
@@ -4038,12 +4015,12 @@ function changelanguepeinture() {
         <em>📸 Ejemplos de conversiones, kitbash y creaciones personalizadas.</em>
     </p>
 
-    
+
         <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20conversi%C3%B3n%20de%20miniatura%20Studio%20PF&body=Hola%20Studio%20PF,%0A%0AMe%20gustar%C3%ADa%20presentar%20un%20proyecto%20de%20conversi%C3%B3n.%0A%0AMiniatura%20base%20:%0A%0AModificaciones%20deseadas%20:%0A%0APiezas,%20bits%20o%20accesorios%20disponibles%20:%0A%0APiezas%20impresas%20en%203D%20a%20integrar%20:%0A%0AFotos,%20enlaces%20o%20referencias%20:%0A%0AInformaci%C3%B3n%20adicional%20:%0A"
            class="button">
             Presentar mi proyecto de conversión 💬
         </a>
-    
+
 
 </div>
     <div class="maintenance-box ajust">
@@ -4132,7 +4109,7 @@ function changelanguepeinture() {
 `;
     } else {
         html = `   <h1>🎨 Peinture de Figurines sur Commission</h1>
-   
+
 <div class="maintenance-box ajust">
 
     <h2>⚔️ Armées TableTop</h2>
@@ -4203,13 +4180,11 @@ function changelanguepeinture() {
 <p>
     <em>Exemples de réalisations au niveau Gold.</em>
 </p>
-   
+
          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 
-    
+
     </div>
-
-
 
 
 
@@ -4262,9 +4237,9 @@ function changelanguepeinture() {
     </p>
 
 
-   
+
          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-    
+
     </div>
 
 <div class="maintenance-box ajust">
@@ -4327,12 +4302,12 @@ function changelanguepeinture() {
         <em>📸 Exemples de conversions, kitbashs et créations personnalisées.</em>
     </p>
 
-    
+
         <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20de%20conversion%20de%20figurine%20Studio%20PF&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20vous%20présenter%20un%20projet%20de%20conversion.%0A%0AFigurine%20de%20base%20:%0A%0AModifications%20souhaitées%20:%0A%0APièces,%20bits%20ou%20rabiots%20disponibles%20:%0A%0APièces%203D%20à%20intégrer%20:%0A%0APhotos,%20liens%20ou%20références%20:%0A%0AInformations%20complémentaires%20:%0A"
            class="button">
             Présenter mon projet de conversion 💬
         </a>
-    
+
 
 </div>
 
@@ -4467,7 +4442,7 @@ function changelanguemenu() {
     <li><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
         🏆 Collection & Competition
     </a></li>
-    
+
 <!--
     <li><a href="formation.html" onclick="loadPage('formation.html'); return false;">
         📚 Painting Lessons
@@ -4575,7 +4550,7 @@ function changelanguemenu() {
         <img src="img/Flag_of_Spain.png" alt="Español - Euro"></button>
 
     </div>
-  
+
   <ul class="pf-nav-list">
 
     <li><a href="index.html" onclick="loadPage('index.html'); return false;">
@@ -4637,8 +4612,8 @@ function changelanguefoot() {
 
    if (currentLanguage === "english") {
     html = `
-  
-      
+
+
   <nav class="menu-mobilefoot">
     <ul class="menu">
         <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Terms & Conditions 📜</a></li>
@@ -4666,11 +4641,11 @@ function changelanguefoot() {
 
 
     `;
-} 
+}
 else if (currentLanguage === "spanish") {
     html = `
-   
-    
+
+
     <nav class="menu-mobilefoot">
     <ul class="menu">
         <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones generales de venta 📜</a></li>
@@ -4698,9 +4673,9 @@ else if (currentLanguage === "spanish") {
 
     `;
     } else {
-        html = ` 
-       
-       
+        html = `
+
+
 <nav class="menu-mobilefoot">
             <ul class="menu">
                 <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
@@ -4708,7 +4683,7 @@ else if (currentLanguage === "spanish") {
                 <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
             </ul>
         </nav>
-           
+
 
         <div class="footer-adresse">
             <p><strong>STUDIO PF</strong><br>
@@ -4722,7 +4697,7 @@ else if (currentLanguage === "spanish") {
                 <a href="tel:+33775860837">07 75 86 08 37</a>
             </p>
         </div>
-   
+
 
      <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
        `;
@@ -4802,10 +4777,10 @@ function changelanguepartenaires() {
     </div>
 </div>
     `;
-} 
+}
 else if (currentLanguage === "spanish") {
     html = `
-    
+
 <div class="center">
     <div class="maintenance-boxpartenaire">
 
@@ -4870,7 +4845,7 @@ else if (currentLanguage === "spanish") {
 </div>
     `;
     } else {
-        html = `     
+        html = `
     <div class="center">
        <div class="maintenance-boxpartenaire">
                  <div class="cardpartenaire2">
@@ -4878,49 +4853,49 @@ else if (currentLanguage === "spanish") {
                     <div><a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority=high>
                     </a></div>
-              
+
                    <div> <p>Achetez moins cher d'occasion<br>5% de remise :<br><strong>STUDIOPF</strong></p></div>
-         
+
             </div>
 
             <div class="cardpartenaire">
-                
+
                    <div> <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority=high>
                     </a></div>
-                    
+
                   <div>  <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><br><strong>MAXIPF</strong></p></div>
-               
-            </div>         
+
+            </div>
                  </div>
 
 
 
          <div class="cardpartenaire2">
         <div class="cardpartenaire">
-                
+
                    <div> <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority=high>
                     </a></div>
-                
-               
+
+
                    <div> <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><br><strong>STUDIOPF</strong></p></div>
-             
+
             </div>
 
              <div class="cardpartenaire">
-                
+
                     <div><a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority=high>
                     </a></div>
-               
-               
+
+
                     <div><p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p></div>
-            
+
             </div>
            </div>
 
-       
+
     </div></div>
 
  `;
@@ -4937,7 +4912,7 @@ else if (currentLanguage === "spanish") {
 
 function initGalerieWithLang() {
     const main = document.getElementById("contenu-principal");
-  
+
       if (!main) return;
 
     let html = "";
@@ -5049,25 +5024,38 @@ function updateParagraph() {
 function initScrollBehaviors() {
     const scrollBtn = document.getElementById("scrollToTopBtn");
     const scrollBtnTo = document.getElementById("scrollTotal");
-    
     const formSection = document.getElementById("formSection");
-    
-    
-    if (!scrollBtn) return;
+
+    // Une navigation dynamique rappelle cette fonction : on retire donc
+    // les anciens écouteurs avant d'en enregistrer de nouveaux.
+    if (initScrollBehaviors._update) {
+        window.removeEventListener("scroll", initScrollBehaviors._update);
+        window.removeEventListener("resize", initScrollBehaviors._update);
+    }
+
+    if (!scrollBtn) {
+        initScrollBehaviors._update = null;
+        return;
+    }
 
     const update = () => {
         const scrolled = document.documentElement.scrollTop > 10;
         scrollBtn.style.display = scrolled ? "block" : "none";
-         if (currentPage.includes("simulateur_devis")) {
-        scrollBtnTo.style.display = scrolled ? "block" : "none";}
+
+        if (scrollBtnTo) {
+            scrollBtnTo.style.display =
+                currentPage.includes("simulateur_devis") && scrolled ? "block" : "none";
+        }
+
         if (formSection) {
-            formSection.style.display = (scrolled && !isMobile()) ? "block" : "none";
+            formSection.style.display = scrolled && !isMobile() ? "block" : "none";
         }
     };
 
-    window.addEventListener("scroll", update);
+    initScrollBehaviors._update = update;
+    window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
-    update(); // état initial
+    update();
 }
 
 // ────────────────────────────────────────────────
@@ -5075,6 +5063,11 @@ function initScrollBehaviors() {
 // ────────────────────────────────────────────────
 
 function initializecarroussel() {
+    if (initializecarroussel._intervalId) {
+        clearInterval(initializecarroussel._intervalId);
+        initializecarroussel._intervalId = null;
+    }
+
     const carroussel = document.getElementById("carroussel");
     if (!carroussel) return;
 
@@ -5082,7 +5075,7 @@ function initializecarroussel() {
     if (images.length < 2) return;
 
     let idx = 0;
-    setInterval(() => {
+    initializecarroussel._intervalId = setInterval(() => {
         idx = (idx + 1) % images.length;
         carroussel.style.transform = `translateX(-${idx * 100}%)`;
     }, 4000);
@@ -5124,7 +5117,7 @@ function mettreAJourTarifLangue() {
     if (currentLanguage === "english") {
         tarifheure = tarifheureus;
         symboleDevise = "$";
-        
+
     } else {
         tarifheure = tarifheureeu;
         symboleDevise = "€";
@@ -5330,7 +5323,6 @@ function genererTableTarifs() {
 
 
 
-
 function calculateTotals() {
     const niveauSelect = document.getElementById("niveau");
     if (!niveauSelect) return;
@@ -5364,8 +5356,8 @@ function calculateTotals() {
      totalEl.textContent = `${totalGeneral.toFixed(2)} ${symboleDevise}`;
     }
 
-    
-  
+
+
    // ── Comparaison ──
     const prevMap = {
         niveau1: null,
@@ -5441,11 +5433,11 @@ function initializeFormCalculations() {
 
         body += `${data.nom}\n${data.prenom}\n${data.adresse}\n${data.cp} ${data.ville}\n${data.pays}\n${data.email}\n${data.telephone}\n\n`;
 
-        
+
             body += categories.map(cat => `- ${cat} : ${quantities[cat]}`).join("\n") + "\n\n";
             body += `- Montage : ${data.montage}\n- Aimant : ${data.aimant}\n\n`;
             body += `Total estimé : ${total.toFixed(2)} ${symboleDevise}\n\n`;
-        
+
         body += `Message :\n${data.message}\n\nCordialement.`;
 
         const url = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -5724,7 +5716,7 @@ let html = "";
 <p><strong>Website:</strong> studiopf.fr<br> <strong>Last updated:</strong> January 19, 2026</p>
 </div>
 <div class="maintenance-box">
-  <h2>📌 Publisher</h2> 
+  <h2>📌 Publisher</h2>
   <p>
     <strong>Studio PF: Miniature Painting</strong><br>
     Pierre-François FRASSE<br>
@@ -5736,7 +5728,7 @@ let html = "";
   </p>
 </div>
 
-<div class="maintenance-box"> 
+<div class="maintenance-box">
   <h2>💻 Hosting Provider</h2>
   <p>
     GitHub Inc.<br>
@@ -5747,15 +5739,15 @@ let html = "";
     Domain registered with: Gandi SAS<br>
     63-65 boulevard Massena, 75013 Paris, France<br>
     Website: <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a>
-  </p> 
-</div> 
+  </p>
+</div>
 
 <div class="maintenance-box">
-  <h2>🔒 Intellectual Property</h2> 
+  <h2>🔒 Intellectual Property</h2>
   <p>
     All content on this website (texts, images, videos, logos, icons, etc.) is the exclusive property of Studio PF, unless otherwise stated. Any reproduction or use without prior written permission is prohibited.
-  </p> 
-</div> 
+  </p>
+</div>
 
 <div class="maintenance-box">
   <h2>📊 Personal Data</h2>
@@ -5765,11 +5757,11 @@ let html = "";
   </p>
 </div>
 
-<div class="maintenance-box"> 
+<div class="maintenance-box">
   <h2>🌐 Cookies</h2>
   <p>
     This website may use cookies to improve navigation and statistical analysis. You can disable cookies in your browser settings.
-  </p> 
+  </p>
 </div>
 
 <p>
@@ -5784,7 +5776,7 @@ let html = "";
 <p><strong>Sitio web:</strong> studiopf.fr<br> <strong>Fecha de actualización:</strong> 19 de enero de 2026</p></div>
 
 <div class="maintenance-box">
-  <h2>📌 Editor</h2> 
+  <h2>📌 Editor</h2>
   <p>
     <strong>Studio PF: Pintura de Miniaturas</strong><br>
     Pierre-François FRASSE<br>
@@ -5796,7 +5788,7 @@ let html = "";
   </p>
 </div>
 
-<div class="maintenance-box"> 
+<div class="maintenance-box">
   <h2>💻 Proveedor de alojamiento</h2>
   <p>
     GitHub Inc.<br>
@@ -5807,15 +5799,15 @@ let html = "";
     Dominio registrado en: Gandi SAS<br>
     63-65 boulevard Massena, 75013 París, Francia<br>
     Sitio web: <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a>
-  </p> 
-</div> 
+  </p>
+</div>
 
 <div class="maintenance-box">
-  <h2>🔒 Propiedad intelectual</h2> 
+  <h2>🔒 Propiedad intelectual</h2>
   <p>
     Todos los contenidos del sitio (textos, imágenes, vídeos, logotipos, iconos, etc.) son propiedad exclusiva de Studio PF, salvo indicación contraria. Queda prohibida cualquier reproducción o uso sin autorización previa por escrito.
-  </p> 
-</div> 
+  </p>
+</div>
 
 <div class="maintenance-box">
   <h2>📊 Datos personales</h2>
@@ -5825,11 +5817,11 @@ let html = "";
   </p>
 </div>
 
-<div class="maintenance-box"> 
+<div class="maintenance-box">
   <h2>🌐 Cookies</h2>
   <p>
     El sitio puede utilizar cookies para mejorar la navegación y el análisis estadístico. Puede desactivar las cookies en la configuración de su navegador.
-  </p> 
+  </p>
 </div>
 
 <p>
@@ -5843,7 +5835,7 @@ else { // français (par défaut)
       <div class="maintenance-box">
           <h1>✨ Mentions Légales ✨</h1>
 <p><strong>Site :</strong> studiopf.fr<br> <strong>Date de mise à jour :</strong> 19 janvier 2026</p></div> <div class="maintenance-box">
-  <h2>📌 Éditeur</h2> 
+  <h2>📌 Éditeur</h2>
   <p> <strong>Studio PF : Peinture Figurine</strong><br>
     Pierre-François FRASSE<br>
     <!-- Statut : Micro-entreprise<br>
@@ -5851,22 +5843,22 @@ else { // français (par défaut)
     Adresse : 17 route de lare, 42510 Saint Georges de Baroille, France<br>
     Téléphone : 07 75 860 837<br>
     E-mail : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> </p> </div>
-  <div class="maintenance-box"> 
+  <div class="maintenance-box">
     <h2>💻 Hébergeur</h2>
     <p> GitHub Inc.<br> 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA<br>
       Site : <a href="https://pages.github.com" target="_blank">https://pages.github.com</a> </p>
     <p> Domaine enregistré chez : Gandi SAS<br> 63-65 boulevard Massena, 75013 Paris, France<br>
-      Site : <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a> </p> 
-  </div> 
+      Site : <a href="https://www.gandi.net" target="_blank">https://www.gandi.net</a> </p>
+  </div>
    <div class="maintenance-box">
-        <h2>🔒 Propriété intellectuelle</h2> 
-        <p> Tous les contenus du site (textes, images, vidéos, logos, icônes, etc.) sont la propriété exclusive de Studio PF, sauf mention contraire. Toute reproduction ou utilisation sans autorisation écrite est interdite. </p> 
-   </div> 
+        <h2>🔒 Propriété intellectuelle</h2>
+        <p> Tous les contenus du site (textes, images, vidéos, logos, icônes, etc.) sont la propriété exclusive de Studio PF, sauf mention contraire. Toute reproduction ou utilisation sans autorisation écrite est interdite. </p>
+   </div>
    <div class="maintenance-box"> <h2>📊 Données personnelles</h2> <p> Les données collectées sont utilisées uniquement à des fins de relation client. Conformément au RGPD, vous pouvez demander l'accès, la modification ou la suppression de vos données par e-mail à : <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a> </p>
    </div>
-  <div class="maintenance-box"> 
+  <div class="maintenance-box">
      <h2>🌐 Cookies</h2>
-    <p> Le site peut utiliser des cookies pour améliorer la navigation et l’analyse sttistique. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur. </p> 
+    <p> Le site peut utiliser des cookies pour améliorer la navigation et l’analyse sttistique. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur. </p>
   </div>
           <p>Site Vitrine créé par <strong>Studio PF</strong> - @ dernière mise à jour 09.03.2026 - Tous droits réservés. </p>
         `;
@@ -6030,7 +6022,7 @@ function changelangueconditions() {
     </ul>
 </div>
         `;
-    } 
+    }
     else if (currentLanguage === "spanish") {
         html = `div class="maintenance-box">
           <h1>✨ Condiciones Generales de Venta ✨</h1>
@@ -6177,7 +6169,7 @@ function changelangueconditions() {
     </ul>
 </div>
         `;
-    } 
+    }
     else { // français (par défaut)
         html = `div class="maintenance-box">
             <h1>✨ Conditions Générales de Vente ✨</h1>
@@ -6225,9 +6217,9 @@ function changelangueconditions() {
             <div class="maintenance-box">
                 <h2>4. Livraison – Expédition</h2>
                 <p>L'expédition est réalisée via Colissimo avec suivi et assurance. Les frais de port sont à la charge du client. Studio PF décline toute responsabilité en cas de perte ou avarie après remise au transporteur.</p>
-            
+
             <ul>
-           
+
             <li>🚚 Expédition via Colissimo avec Diamant à partir de 150€ de valeur (et assurance allant jusqu'à 5000€ de valeur).</li>
               <li>📌 Mondial Relay possible mais assurance très limité en cas de problèmes comme casse ou perte/vol (max 500€).</li>
             <li>🎁 Frais de port offerts à partir de 3000 € de commande.</li>
@@ -6236,7 +6228,7 @@ function changelangueconditions() {
          <ul>
             <li>📦 Colissimo avec Diamant pour les envois de plus de 150 à 5000 € de valeur (valeur presation montage + peinture + valeur des figurines).</li>
             <li>📌 Mondial Relay possible mais assurance très limité en cas de problèmes comme casse ou perte/vol (max 500€).</li>
-           
+
         </ul>
         </div>
 
@@ -6254,8 +6246,8 @@ function changelangueconditions() {
         </ul>
 
         <ul>
- 
-   
+
+
 
   </ul>
             </div>
@@ -6327,7 +6319,7 @@ function changelangueconditions() {
         </ul>
  </div>
 
-           
+
         `;
     }
 
@@ -6398,10 +6390,10 @@ function changelanguehoraires() {
 </ul>
 </div>
         `;
-    } 
+    }
     else if (currentLanguage === "spanish") {
         html = `
-      
+
    <div class="maintenance-box">
          <h2>🕓 Horario de apertura del estudio</h2>
 <ul>
@@ -6455,10 +6447,10 @@ function changelanguehoraires() {
 </ul>
 </div>
         `;
-    } 
+    }
     else { // français
         html = `
-    
+
    <div class="maintenance-box">
                <h2>🕓 Horaires d'ouverture du Studio</h2>
     <ul>
@@ -6527,40 +6519,40 @@ function changelanguelogo() {
             <div class="cardlogoimg">
     <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
-    
+
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
 
-         </a>    
+         </a>
 </div>
-       
+
 
         `;
-    } 
+    }
     else if (currentLanguage === "spanish") {
         html = `
           <div class="cardlogoimg">
     <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
-    
+
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
 
-         </a>    
+         </a>
 </div>
-         
+
 
         `;
-    } 
+    }
     else { // français
         html = `
          <div class="cardlogoimg">
     <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
 
-    
+
         <img src="/img/logo.png" alt="Studio PF Logo" class="logo">
 
-         </a>    
+         </a>
 </div>
-         
+
         `;
     }
 
@@ -6569,15 +6561,15 @@ function changelanguelogo() {
 
  function changeniveau() {
 const select = document.getElementById('niveau');
-    
+
     // Si on est déjà sur l'avant-dernier ou le dernier → on ne fait rien
     if (select.selectedIndex >= select.options.length - 2) {
         return; // on bloque
     }
-    
+
     // Sinon on passe à l'option suivante
     select.selectedIndex = select.selectedIndex + 1;
-    
+
     // On prévient le formulaire qu’il y a eu un changement
     select.dispatchEvent(new Event('change'));
        calculateTotals();
@@ -6592,7 +6584,7 @@ const select = document.getElementById('niveau');
     });
 
 }
-            
+
 // ==============================
 // Bouton "Voir Total"
 // ==============================
