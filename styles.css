@@ -299,7 +299,7 @@ img {
 .maintenance-box {
     margin-top: 15px;
     margin-bottom: 0;
-    width: 800px;
+    width: 1000px;
     max-width: 1000px;
     position: relative;
 
@@ -505,7 +505,7 @@ a:hover,
     gap: 5px;
     justify-content: center;
     margin: 0rem auto;
-    max-width: 750px;
+    max-width: 600px;
     padding: 0 0px;
 }
 
@@ -1049,7 +1049,7 @@ nav ul li a:hover {
     padding: 0px;
     position: relative;
 }
-.maintenance-box p {
+.cardpartenaire p {
       font-size: 9px;
     line-height: 1.55;
 }
