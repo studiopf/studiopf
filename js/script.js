@@ -2354,9 +2354,10 @@ function changelanguecollection() {
         <em>📸 Examples of collection, exhibition and competition pieces created by Studio PF.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
-            Present my project 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
+   class="button">
+     Request a personalized quote 💬
+</a>
     
 </div>
 
@@ -2384,9 +2385,10 @@ function changelanguecollection() {
         <em>📸 Examples of dioramas and exhibition scenes created by Studio PF.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Diorama%20Project%20Studio%20PF" class="button">
-            Present my project 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
+   class="button">
+     Request a personalized quote 💬
+</a>
     
 </div>
 
@@ -2414,9 +2416,10 @@ function changelanguecollection() {
         <em>📸 Examples of busts and collectible pieces created by Studio PF.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
-            Present my project 💬
-        </a>
+ <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
+   class="button">
+     Request a personalized quote 💬
+</a>
     
 </div>
 
@@ -2450,9 +2453,10 @@ function changelanguecollection() {
         <em>📸 Some examples of pop culture inspired creations.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Collection%20Painting%20Project%20Studio%20PF" class="button">
-            Present my project 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
+   class="button">
+     Request a personalized quote 💬
+</a>
     
 </div>
 
@@ -2534,9 +2538,10 @@ function changelanguecollection() {
         <em>📸 Ejemplos de piezas de colección, exposición y concurso realizadas por Studio PF.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
-            Presentar mi proyecto 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
+   class="button">
+     Solicitar un presupuesto personalizado 💬
+</a>
     
 </div>
 
@@ -2564,9 +2569,10 @@ function changelanguecollection() {
         <em>📸 Ejemplos de dioramas y escenas de exposición realizados por Studio PF.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20diorama%20Studio%20PF" class="button">
-            Presentar mi proyecto 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
+   class="button">
+     Solicitar un presupuesto personalizado 💬
+</a>
     
 </div>
 
@@ -2594,9 +2600,10 @@ function changelanguecollection() {
         <em>📸 Ejemplos de bustos y piezas de colección realizados por Studio PF.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
-            Presentar mi proyecto 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
+   class="button">
+     Solicitar un presupuesto personalizado 💬
+</a>
     
 </div>
 
@@ -2630,9 +2637,10 @@ function changelanguecollection() {
         <em>📸 Algunos ejemplos de realizaciones inspiradas en la pop culture.</em>
     </p>
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20pintura%20de%20colecci%C3%B3n%20Studio%20PF" class="button">
-            Presentar mi proyecto 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
+   class="button">
+     Solicitar un presupuesto personalizado 💬
+</a>
     
 </div>
 
@@ -2721,9 +2729,10 @@ function changelanguecollection() {
     </p>
 
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
-            Présenter mon projet 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
     
 
 </div>
@@ -2758,9 +2767,10 @@ function changelanguecollection() {
     </p>
 
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20de%20diorama%20Studio%20PF" class="button">
-            Présenter mon projet 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
     
 
 </div>
@@ -2797,9 +2807,10 @@ function changelanguecollection() {
     </p>
 
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
-            Présenter mon projet 💬
-        </a>
+  <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
     
 
 </div>
@@ -2843,9 +2854,10 @@ function changelanguecollection() {
     </p>
 
     
-        <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20peinture%20de%20collection%20Studio%20PF" class="button">
-            Présenter mon projet 💬
-        </a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
     
 
 </div>
