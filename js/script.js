@@ -950,11 +950,11 @@ ${prenom} ${nom}`;
              html = `
              <h1>Quote Request - TableTop+ Commission</h1>
 
-        <form id="contactForm" action="#" class="maintenance-box">
+        <form id="contactForm" action="#" class="maintenance-box-fieldset">
 
 
 
-       <fieldset class="maintenance-box">
+       <fieldset class="maintenance-box-fieldset">
 
                     <legend>Quote Simulator</legend>
                     <div class="cardform">
@@ -1107,7 +1107,7 @@ ${prenom} ${nom}`;
 <h3><span id="oktotal">0.00</span></h3>
 </div></div>
         </fieldset>
-          <fieldset class="maintenance-box">
+          <fieldset class="maintenance-box-fieldset">
              <legend>Contact Information</legend>
                 <div class="center">
                     <label for="nom">Last Name<span>*</span></label>
@@ -1174,7 +1174,7 @@ ${prenom} ${nom}`;
 
 
 
-       <fieldset class="maintenance-box">
+       <fieldset class="maintenance-box-fieldset">
 
                     <legend>Simulación de presupuesto</legend>
                     <div class="cardform">
@@ -1327,7 +1327,7 @@ ${prenom} ${nom}`;
 <h3><span id="oktotal">0.00</span></h3>
 </div></div>
         </fieldset>
-          <fieldset class="maintenance-box">
+          <fieldset class="maintenance-box-fieldset">
              <legend>Datos de contacto</legend>
                 <div class="center">
                     <label for="nom">Nombre<span>*</span></label>
@@ -1396,7 +1396,7 @@ ${prenom} ${nom}`;
 
 
 
-       <fieldset class="maintenance-box">
+       <fieldset class="maintenance-box-fieldset">
 
                     <legend>Simulation de devis</legend>
                     <div class="cardform">
@@ -1568,7 +1568,7 @@ ${prenom} ${nom}`;
 
 </div></div>
         </fieldset>
-          <fieldset class="maintenance-box">
+          <fieldset class="maintenance-box-fieldset">
              <legend>Coordonnées</legend>
                 <div class="center">
                     <label for="nom">Nom<span>*</span></label>
