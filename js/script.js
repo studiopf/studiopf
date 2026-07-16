@@ -4751,7 +4751,7 @@ function changelanguepartenaires() {
 
                 <div><p>
                     Buy second-hand miniatures for less.<br>
-                    <strong>5% off</strong> with the code:<br>
+                    <strong>5% off</strong> with the code:<br><br>
                     <strong>STUDIOPF</strong>
                 </p></div>
             </div>
@@ -4763,7 +4763,7 @@ function changelanguepartenaires() {
 
               <div>  <p>
                     Get the miniatures of your dreams at amazing prices!<br>
-                    Up to <strong>19% off</strong> with the code:<br>
+                    Up to <strong>19% off</strong> with the code:<br><br>
                     <strong>MAXIPF</strong>
                 </p></div>
             </div>
@@ -4780,7 +4780,7 @@ function changelanguepartenaires() {
 
                 <div><p>
                     Outstanding pre-supported STL miniatures for your sci-fi and fantasy tabletop games.<br>
-                    <strong>10% off</strong> your order with the code:<br>
+                    <strong>10% off</strong> your order with the code:<br><br>
                     <strong>STUDIOPF</strong>
                 </p></div>
             </div>
@@ -4792,7 +4792,7 @@ function changelanguepartenaires() {
 
                 <div><p>
                     Modular 3D printed terrain for even more immersive tabletop battles.<br>
-                    <strong>10% off</strong> all printed models with the code:<br>
+                    <strong>10% off</strong> all printed models with the code:<br><br>
                     <strong>STUDIOPF10</strong>
                 </p></div>
             </div>
@@ -4818,7 +4818,7 @@ else if (currentLanguage === "spanish") {
 
                 <div><p>
                     Compra miniaturas de segunda mano al mejor precio.<br>
-                    <strong>5 % de descuento</strong> con el código:<br>
+                    <strong>5 % de descuento</strong> con el código:<br><br>
                     <strong>STUDIOPF</strong>
                 </p></div>
             </div>
@@ -4830,7 +4830,7 @@ else if (currentLanguage === "spanish") {
 
              <div>   <p>
                     ¡Las miniaturas de tus sueños al mejor precio!<br>
-                    Hasta un <strong>19 % de descuento</strong> con el código:<br>
+                    Hasta un <strong>19 % de descuento</strong> con el código:<br><br>
                     <strong>MAXIPF</strong>
                 </p></div>
             </div>
@@ -4847,7 +4847,7 @@ else if (currentLanguage === "spanish") {
 
               <div>  <p>
                     Magníficas miniaturas STL presoportadas para tus juegos de mesa de ciencia ficción y fantasía.<br>
-                    <strong>10 % de descuento</strong> en tu pedido con el código:<br>
+                    <strong>10 % de descuento</strong> en tu pedido con el código:<br><br>
                     <strong>STUDIOPF</strong>
                 </p></div>
             </div>
@@ -4859,7 +4859,7 @@ else if (currentLanguage === "spanish") {
 
                <div> <p>
                     Escenografía modular impresa en 3D para partidas aún más inmersivas.<br>
-                    <strong>10 % de descuento</strong> en todos los modelos impresos con el código:<br>
+                    <strong>10 % de descuento</strong> en todos los modelos impresos con el código:<br><br>
                     <strong>STUDIOPF10</strong>
                 </p></div>
             </div>
@@ -4889,7 +4889,7 @@ else if (currentLanguage === "spanish") {
                         <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority=high>
                     </a></div>
                     
-                  <div>  <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><strong>MAXIPF</strong></p></div>
+                  <div>  <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><br><strong>MAXIPF</strong></p></div>
                
             </div>         
                  </div>
@@ -4904,7 +4904,7 @@ else if (currentLanguage === "spanish") {
                     </a></div>
                 
                
-                   <div> <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><strong>STUDIOPF</strong></p></div>
+                   <div> <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><br><strong>STUDIOPF</strong></p></div>
              
             </div>
 
@@ -4915,7 +4915,7 @@ else if (currentLanguage === "spanish") {
                     </a></div>
                
                
-                    <div><p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><strong>STUDIOPF10</strong></p></div>
+                    <div><p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p></div>
             
             </div>
            </div>
