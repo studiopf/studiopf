@@ -1480,7 +1480,7 @@ body,
 
     position: fixed;
 
-    top:50px;
+    top:10px;
     left:20px;
 
     width:30px;
@@ -1818,7 +1818,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-mobile-nav {
     position: fixed;
-    top: 0;
+    top: 10px;
     right: -100%;
     width: 85%;
     max-width: 360px;
@@ -1956,7 +1956,7 @@ button.pf-menu-button {
 .pf-menu-button {
     position: fixed !important;
 
-    top: 0 !important;      /* ou 5px */
+    top: 10px !important;      /* ou 5px */
     right: 10px !important;
 
     width: 38px !important;
