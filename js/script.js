@@ -4853,8 +4853,8 @@ else if (currentLanguage === "spanish") {
     } else {
         html = `     
    
-       <div class="maintenance-box">
-                 <div class="card-container2">
+       <div class="maintenance-boxpartenaire">
+                 <div class="cardpartenaire2">
         <div class="cardpartenaire">
                     <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority=high>
@@ -4877,7 +4877,7 @@ else if (currentLanguage === "spanish") {
 
 
 
-         <div class="card-container2">
+         <div class="cardpartenaire2">
         <div class="cardpartenaire">
                 
                     <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
