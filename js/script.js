@@ -484,6 +484,7 @@ Una pintura TableTop está pensada para el juego con un excelente aspecto a dist
     } else {
            html = `     <div class="center">
 <div class="maintenance-box ajust">
+ <h1>❓FAQ</h1>
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
 <ul>
 <li>🎨 <strong>Un projet 100 % personnalisé</strong> : chaque figurine est peinte selon vos envies, votre univers, votre budget et le niveau de finition souhaité.</li>
@@ -1823,6 +1824,7 @@ My goal: make your miniatures come alive.
 
 <div class="center">
 <div class="maintenance-box ajust">
+ <h1>❓FAQ</h1>
 <h2>🪄 Why Choose Studio PF?</h2>
 <ul>
 <li>🎨 <strong>100% Personalized Projects</strong>: each miniature is painted according to your wishes, your universe, your budget, and the desired level of finish.</li>
@@ -2015,6 +2017,7 @@ Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
 
 <div class="center">
 <div class="maintenance-box ajust">
+ <h1>❓FAQ</h1>
 <h2>🪄 ¿Por qué elegir Studio PF?</h2>
 <ul>
 <li>🎨 <strong>Un proyecto 100 % personalizado</strong>: cada figurita se pinta según tus deseos, tu universo, tu presupuesto y el nivel de acabado deseado.</li>
@@ -2259,7 +2262,7 @@ Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
 
 <div class="center">
 <div class="maintenance-box ajust">
-
+ <h1>❓FAQ</h1>
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
 
 <ul>
