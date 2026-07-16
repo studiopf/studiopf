@@ -297,7 +297,7 @@ img {
 .maintenance-box {
     margin-top: 15px;
     margin-bottom: 0;
-    width: 100%;
+    width: 800px;
     max-width: 1000px;
     position: relative;
 
@@ -983,6 +983,24 @@ nav ul li a:hover {
    .social-bloc-vide
 {
   padding: 3px;
+}
+   .maintenance-box {
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 250px;
+    max-width: 1000px;
+    position: relative;
+
+
+
+    background: rgba(30, 20, 12, 0.75);
+    border: 1px solid #6b4e2f;
+    border-radius: 10px;
+
+    backdrop-filter: blur(4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.65);
+
+    text-align: center;
 }
    .exemples-photos{
     display:flex;
