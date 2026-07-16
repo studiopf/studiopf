@@ -4747,7 +4747,7 @@ function changelanguepartenaires() {
             <div class="cardpartenaire">
                 <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     Buy second-hand miniatures for less.<br>
@@ -4759,7 +4759,7 @@ function changelanguepartenaires() {
             <div class="cardpartenaire">
                 <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     Get the miniatures of your dreams at amazing prices!<br>
@@ -4776,7 +4776,7 @@ function changelanguepartenaires() {
             <div class="cardpartenaire">
                 <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     Outstanding pre-supported STL miniatures for your sci-fi and fantasy tabletop games.<br>
@@ -4788,7 +4788,7 @@ function changelanguepartenaires() {
             <div class="cardpartenaire">
                 <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     Modular 3D printed terrain for even more immersive tabletop battles.<br>
@@ -4814,7 +4814,7 @@ else if (currentLanguage === "spanish") {
             <div class="cardpartenaire">
                 <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-totalwar.png" alt="Logo Total Wargames" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     Compra miniaturas de segunda mano al mejor precio.<br>
@@ -4826,7 +4826,7 @@ else if (currentLanguage === "spanish") {
             <div class="cardpartenaire">
                 <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-maxireve.png" alt="Logo Maxi Rêve" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     ¡Las miniaturas de tus sueños al mejor precio!<br>
@@ -4843,7 +4843,7 @@ else if (currentLanguage === "spanish") {
             <div class="cardpartenaire">
                 <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-mezgike.png" alt="Logo Mezgike" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     Magníficas miniaturas STL presoportadas para tus juegos de mesa de ciencia ficción y fantasía.<br>
@@ -4855,7 +4855,7 @@ else if (currentLanguage === "spanish") {
             <div class="cardpartenaire">
                 <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                     <img src="img/logo-wargamesceneries.png" alt="Logo Wargame Sceneries" data-no-lightbox fetchpriority="high">
-                </a>
+                </a><br>
 
                 <p>
                     Escenografía modular impresa en 3D para partidas aún más inmersivas.<br>
@@ -4877,7 +4877,7 @@ else if (currentLanguage === "spanish") {
         <div class="cardpartenaire">
                     <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority=high>
-                    </a>
+                    </a><br>
               
                     <p>Achetez moins cher d'occasion<br>5% de remise :<br><strong>STUDIOPF</strong></p>
          
@@ -4887,7 +4887,7 @@ else if (currentLanguage === "spanish") {
                 
                     <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority=high>
-                    </a>
+                    </a><br>
                     
                     <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><strong>MAXIPF</strong></p>
                
@@ -4901,7 +4901,7 @@ else if (currentLanguage === "spanish") {
                 
                     <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority=high>
-                    </a>
+                    </a><br>
                 
                
                     <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><strong>STUDIOPF</strong></p>
@@ -4912,7 +4912,7 @@ else if (currentLanguage === "spanish") {
                 
                     <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority=high>
-                    </a>
+                    </a><br>
                
                
                     <p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><strong>STUDIOPF10</strong></p>
