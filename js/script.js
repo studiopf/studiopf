@@ -1923,7 +1923,7 @@ function changelanguecollection() {
      let html = "";
 
     if (currentLanguage === "english") {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box">
     <h1>🏆 Unique Pieces for Collection, Exhibition & Competitions</h1>
     <p>
         Studio PF creates <strong>high-end figurines</strong> for collectors, enthusiasts and competitors who want to transform their models into true exhibition pieces.
@@ -1935,10 +1935,13 @@ function changelanguecollection() {
         These creations benefit from in-depth artistic work that can represent <strong>dozens or even hundreds of hours of painting</strong>, using advanced techniques, meticulous attention to every detail, and a constant pursuit of the best possible result.
     </p>
     <!-- Illustrations -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
-        <img src="img/collection1.jpg" alt="Painted collectible figurine">
-        <img src="img/collection2.jpg" alt="Painted exhibition piece">
-        <img src="img/collection3.jpg" alt="Painted competition figurine">
+        <img src="img/collection1.jpg" alt="Painted collectible figurine"></div>
+        <div class="exemples-photos">
+        <img src="img/collection2.jpg" alt="Painted exhibition piece"></div>
+        <div class="exemples-photos">
+        <img src="img/collection3.jpg" alt="Painted competition figurine"></div>
     </div>
     <p>
         <em>📸 Examples of collection, exhibition and competition pieces created by Studio PF.</em>
@@ -1950,7 +1953,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <h2>🏞️ Dioramas & Exhibition Scenes</h2>
     <p>
         Studio PF creates <strong>custom dioramas</strong> that stage one or more figurines in a setting entirely designed to tell a story.
@@ -1962,10 +1965,13 @@ function changelanguecollection() {
         Intended for collectors, exhibition or competitions, the dioramas combine painting, composition, scenery, textures, vegetation, special effects and staging to transform a simple figurine into a unique work of art.
     </p>
     <!-- Illustrations -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
-        <img src="img/diorama1.jpg" alt="Figurine diorama">
-        <img src="img/diorama2.jpg" alt="Exhibition scene on diorama">
-        <img src="img/diorama3.jpg" alt="Diorama painted by Studio PF">
+        <img src="img/diorama1.jpg" alt="Figurine diorama"></div>
+        <div class="exemples-photos">
+        <img src="img/diorama2.jpg" alt="Exhibition scene on diorama"></div>
+        <div class="exemples-photos">
+        <img src="img/diorama3.jpg" alt="Diorama painted by Studio PF"></div>
     </div>
     <p>
         <em>📸 Examples of dioramas and exhibition scenes created by Studio PF.</em>
@@ -1977,7 +1983,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <h2>🗿 Busts & Collectible Pieces</h2>
     <p>
         Studio PF paints <strong>busts, miniature statues and collectible pieces</strong> intended to be displayed in a showcase or to enrich a personal collection.
@@ -1989,10 +1995,13 @@ function changelanguecollection() {
         These creations are aimed at both collectors and enthusiasts who want a unique piece, whether it is a historical, fantasy, science-fiction bust or an original creation.
     </p>
     <!-- Illustrations -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
-        <img src="img/buste1.jpg" alt="Painted historical bust">
-        <img src="img/buste2.jpg" alt="Painted fantasy bust">
-        <img src="img/buste3.jpg" alt="Painted collectible bust">
+        <img src="img/buste1.jpg" alt="Painted historical bust"></div>
+        <div class="exemples-photos">
+        <img src="img/buste2.jpg" alt="Painted fantasy bust"></div>
+        <div class="exemples-photos">
+        <img src="img/buste3.jpg" alt="Painted collectible bust"></div>
     </div>
     <p>
         <em>📸 Examples of busts and collectible pieces created by Studio PF.</em>
@@ -2004,7 +2013,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <h2>🎬 Manga, Movies, Series & Video Games</h2>
     <p>
         Do you own a figurine inspired by your favorite universe?  
@@ -2022,10 +2031,13 @@ function changelanguecollection() {
         The client provides the piece or acquires it directly from the creator or seller of their choice. Studio PF’s work then consists of preparing, painting and enhancing the figurine with a high-end finish.
     </p>
     <!-- Illustrations -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
-        <img src="img/pop1.jpg" alt="Painted manga figurine">
-        <img src="img/pop2.jpg" alt="Painted series figurine">
-        <img src="img/pop3.jpg" alt="Painted video game figurine">
+        <img src="img/pop1.jpg" alt="Painted manga figurine"></div>
+          <div class="exemples-photos">
+        <img src="img/pop2.jpg" alt="Painted series figurine"></div>
+          <div class="exemples-photos">
+        <img src="img/pop3.jpg" alt="Painted video game figurine"></div>
     </div>
     <p>
         <em>📸 Some examples of pop culture inspired creations.</em>
@@ -2091,7 +2103,7 @@ function changelanguecollection() {
     </table>
 </div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box">
     <h1>🏆 Piezas únicas para Colección, Exposición y Concursos</h1>
     <p>
         Studio PF realiza <strong>figurillas de alta gama</strong> destinadas a coleccionistas, apasionados y competidores que desean transformar sus modelos en verdaderas obras de exposición.
@@ -2103,10 +2115,13 @@ function changelanguecollection() {
         Estas realizaciones cuentan con un trabajo artístico profundo que puede representar <strong>decenas, incluso cientos de horas de pintura</strong>, con técnicas avanzadas, atención a los mínimos detalles y una búsqueda constante del mejor resultado posible.
     </p>
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/collection1.jpg" alt="Figurilla de colección pintada">
-        <img src="img/collection2.jpg" alt="Pieza de exposición pintada">
-        <img src="img/collection3.jpg" alt="Figurilla de concurso pintada">
+    <div class="exemples-photos3">
+      <div class="exemples-photos">
+        <img src="img/collection1.jpg" alt="Figurilla de colección pintada"></div>
+          <div class="exemples-photos">
+        <img src="img/collection2.jpg" alt="Pieza de exposición pintada"></div>
+          <div class="exemples-photos">
+        <img src="img/collection3.jpg" alt="Figurilla de concurso pintada"></divX
     </div>
     <p>
         <em>📸 Ejemplos de piezas de colección, exposición y concurso realizadas por Studio PF.</em>
@@ -2118,7 +2133,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <h2>🏞️ Dioramas y Escenas de Exposición</h2>
     <p>
         Studio PF realiza <strong>dioramas a medida</strong> que escenifican una o varias figurillas en un decorado completamente diseñado para contar una historia.
@@ -2130,10 +2145,13 @@ function changelanguecollection() {
         Destinados a coleccionistas, exposición o concursos, los dioramas combinan pintura, composición, decorados, texturas, vegetación, efectos especiales y puesta en escena para transformar una simple figurilla en una obra única.
     </p>
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/diorama1.jpg" alt="Diorama de figurillas">
-        <img src="img/diorama2.jpg" alt="Escena de exposición en diorama">
-        <img src="img/diorama3.jpg" alt="Diorama pintado por Studio PF">
+    <div class="exemples-photos3">
+      <div class="exemples-photos">
+        <img src="img/diorama1.jpg" alt="Diorama de figurillas"></div>
+          <div class="exemples-photos">
+        <img src="img/diorama2.jpg" alt="Escena de exposición en diorama"></div>
+          <div class="exemples-photos">
+        <img src="img/diorama3.jpg" alt="Diorama pintado por Studio PF"></div>
     </div>
     <p>
         <em>📸 Ejemplos de dioramas y escenas de exposición realizados por Studio PF.</em>
@@ -2145,7 +2163,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <h2>🗿 Bustos y Piezas de Colección</h2>
     <p>
         Studio PF realiza la pintura de <strong>bustos, estatuas en miniatura y piezas de colección</strong> destinadas a ser expuestas en vitrina o enriquecer una colección personal.
@@ -2157,10 +2175,13 @@ function changelanguecollection() {
         Estas realizaciones se dirigen tanto a coleccionistas como a apasionados que desean disponer de una pieza única, ya sea un busto histórico, de fantasía, ciencia ficción o una creación original.
     </p>
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/buste1.jpg" alt="Busto histórico pintado">
-        <img src="img/buste2.jpg" alt="Busto de fantasía pintado">
-        <img src="img/buste3.jpg" alt="Busto de colección pintado">
+    <div class="exemples-photos3">
+      <div class="exemples-photos">
+        <img src="img/buste1.jpg" alt="Busto histórico pintado"></div>
+          <div class="exemples-photos">
+        <img src="img/buste2.jpg" alt="Busto de fantasía pintado"></div>
+          <div class="exemples-photos">
+        <img src="img/buste3.jpg" alt="Busto de colección pintado"></div>
     </div>
     <p>
         <em>📸 Ejemplos de bustos y piezas de colección realizados por Studio PF.</em>
@@ -2172,7 +2193,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <h2>🎬 Manga, Películas, Series y Videojuegos</h2>
     <p>
         ¿Posees una figurilla inspirada en tu universo favorito?  
@@ -2190,10 +2211,13 @@ function changelanguecollection() {
         El cliente proporciona la pieza o la adquiere directamente del creador o vendedor de su elección. El trabajo de Studio PF consiste luego en preparar, pintar y realzar la figurilla con un acabado de alta gama.
     </p>
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/pop1.jpg" alt="Figurilla manga pintada">
-        <img src="img/pop2.jpg" alt="Figurilla de serie pintada">
-        <img src="img/pop3.jpg" alt="Figurilla de videojuego pintada">
+    <div class="exemples-photos3">
+      <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Figurilla manga pintada"></div>
+          <div class="exemples-photos">
+        <img src="img/pop2.jpg" alt="Figurilla de serie pintada"></div>
+          <div class="exemples-photos">
+        <img src="img/pop3.jpg" alt="Figurilla de videojuego pintada"></div>
     </div>
     <p>
         <em>📸 Algunos ejemplos de realizaciones inspiradas en la pop culture.</em>
@@ -2259,7 +2283,7 @@ function changelanguecollection() {
     </table>
 </div>`;
     } else {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box">
 
     <h1>🏆 Pièces uniques pour Collection, Exposition & Concours</h1>
 
@@ -2276,10 +2300,13 @@ function changelanguecollection() {
     </p>
 
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/collection1.jpg" alt="Figurine de collection peinte">
-        <img src="img/collection2.jpg" alt="Pièce d'exposition peinte">
-        <img src="img/collection3.jpg" alt="Figurine de concours peinte">
+    <div class="exemples-photos3">
+      <div class="exemples-photos">
+        <img src="img/collection1.jpg" alt="Figurine de collection peinte"></div>
+          <div class="exemples-photos">
+        <img src="img/collection2.jpg" alt="Pièce d'exposition peinte"></div>
+          <div class="exemples-photos">
+        <img src="img/collection3.jpg" alt="Figurine de concours peinte"></div>
     </div>
 
     <p>
@@ -2293,7 +2320,7 @@ function changelanguecollection() {
     </p>
 
 </div>
-  <div class="maintenance-box ajust">
+  <div class="maintenance-box">
 
     <h2>🏞️ Dioramas & Scènes d'exposition</h2>
 
@@ -2310,10 +2337,13 @@ function changelanguecollection() {
     </p>
 
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/diorama1.jpg" alt="Diorama de figurines">
-        <img src="img/diorama2.jpg" alt="Scène d'exposition sur diorama">
-        <img src="img/diorama3.jpg" alt="Diorama peint par Studio PF">
+    <div class="exemples-photos3">
+      <div class="exemples-photos">
+        <img src="img/diorama1.jpg" alt="Diorama de figurines"></div>
+          <div class="exemples-photos">
+        <img src="img/diorama2.jpg" alt="Scène d'exposition sur diorama"></div>
+          <div class="exemples-photos">
+        <img src="img/diorama3.jpg" alt="Diorama peint par Studio PF"></div>
     </div>
 
     <p>
@@ -2329,7 +2359,7 @@ function changelanguecollection() {
 </div>
 
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
 
     <h2>🗿 Bustes & Pièces de Collection</h2>
 
@@ -2346,10 +2376,13 @@ function changelanguecollection() {
     </p>
 
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/buste1.jpg" alt="Buste historique peint">
-        <img src="img/buste2.jpg" alt="Buste fantasy peint">
-        <img src="img/buste3.jpg" alt="Buste de collection peint">
+    <div class="exemples-photos3">
+      <div class="exemples-photos">
+        <img src="img/buste1.jpg" alt="Buste historique peint"></div>
+          <div class="exemples-photos">
+        <img src="img/buste2.jpg" alt="Buste fantasy peint"></div>
+          <div class="exemples-photos">
+        <img src="img/buste3.jpg" alt="Buste de collection peint"></div>
     </div>
 
     <p>
@@ -2365,7 +2398,7 @@ function changelanguecollection() {
 </div>
 
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
 
     <h2>🎬 Manga, Films, Séries & Jeux vidéo</h2>
 
@@ -2390,10 +2423,12 @@ function changelanguecollection() {
     </p>
 
     <!-- Illustrations -->
-    <div class="exemples-photos">
-        <img src="img/pop1.jpg" alt="Figurine manga peinte">
-        <img src="img/pop2.jpg" alt="Figurine de série peinte">
-        <img src="img/pop3.jpg" alt="Figurine de jeu vidéo peinte">
+    <div class="exemples-photos3">  <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Figurine manga peinte"></div>
+          <div class="exemples-photos">
+        <img src="img/pop2.jpg" alt="Figurine de série peinte"></div>
+          <div class="exemples-photos">
+        <img src="img/pop3.jpg" alt="Figurine de jeu vidéo peinte"></div>
     </div>
 
     <p>
@@ -3151,7 +3186,7 @@ function changelanguepeinture() {
 
 <h1>🎨 Commission Miniature Painting</h1>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
 
     <h2>⚔️ TableTop Armies</h2>
 
@@ -3159,10 +3194,13 @@ function changelanguepeinture() {
         Studio PF offers two painting levels: <strong>Gold</strong> and <strong>Diamond</strong>, designed to suit your needs, your budget, and the importance of each miniature.
     </p>
 <!-- Illustrations -->
+<div class="exemples-photos3">
 <div class="exemples-photos">
-    <img src="img/armee1.jpg" alt="Example of a painted army">
-    <img src="img/armee2.jpg" alt="Example of a painted tabletop army">
-    <img src="img/armee3.jpg" alt="Example of a painted wargaming army">
+    <img src="img/armee1.jpg" alt="Example of a painted army"></div>
+    <div class="exemples-photos">
+    <img src="img/armee2.jpg" alt="Example of a painted tabletop army"></div>
+    <div class="exemples-photos">
+    <img src="img/armee3.jpg" alt="Example of a painted wargaming army"></div>
 </div>
 
 <p>
@@ -3195,10 +3233,13 @@ function changelanguepeinture() {
             About 1h+ → <strong>€20</strong>
         </p>
      <!-- Illustrations -->
+<div class="exemples-photos3">
 <div class="exemples-photos">
-    <img src="img/gold1.jpg" alt="Example of Gold level painted figurine">
-    <img src="img/gold2.jpg" alt="Example of Gold level painted unit">
-     <img src="img/gold3.jpg" alt="Example of Gold level painted unit">
+    <img src="img/gold1.jpg" alt="Example of Gold level painted figurine"></div>
+    <div class="exemples-photos">
+    <img src="img/gold2.jpg" alt="Example of Gold level painted unit"></div>
+    <div class="exemples-photos">
+     <img src="img/gold3.jpg" alt="Example of Gold level painted unit"></div>
 </div>
 <p>
     <em>Examples of Gold level creations.</em>
@@ -3235,10 +3276,13 @@ function changelanguepeinture() {
             About 2h+ → <strong>€40</strong>
         </p>
       <!-- Exemples -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
-        <img src="img/diamant1.jpg" alt="Example of Diamond level painting">
-        <img src="img/diamant2.jpg" alt="Example of Diamond level painted figurine">
-         <img src="img/diamant3.jpg" alt="Example of Diamond level painted figurine">
+        <img src="img/diamant1.jpg" alt="Example of Diamond level painting"></div>
+        <div class="exemples-photos">
+        <img src="img/diamant2.jpg" alt="Example of Diamond level painted figurine"></div>
+        <div class="exemples-photos">
+         <img src="img/diamant3.jpg" alt="Example of Diamond level painted figurine"></div>
     </div>
     <p>
         <em>📸 Examples of Diamond level creations.</em>
@@ -3248,7 +3292,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
 
     <h2>🛠️ Miniature Conversion & Custom Creations</h2>
 
@@ -3290,15 +3334,18 @@ function changelanguepeinture() {
     </p>
 
     <!-- Examples -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
         <img src="img/conversion1.jpg"
-             alt="Example of a converted miniature using bits">
+             alt="Example of a converted miniature using bits"></div>
+             <div class="exemples-photos">
 
         <img src="img/conversion2.jpg"
-             alt="Example of a custom miniature created from multiple kits">
+             alt="Example of a custom miniature created from multiple kits"></div>
+             <div class="exemples-photos">
 
         <img src="img/conversion3.jpg"
-             alt="Example of a conversion using 3D-printed parts">
+             alt="Example of a conversion using 3D-printed parts"></div>
     </div>
 
     <p>
@@ -3404,7 +3451,7 @@ function changelanguepeinture() {
 
 <h1>🎨 Pintura de Miniaturas por Encargo</h1>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
 
     <h2>⚔️ Ejércitos TableTop</h2>
 
@@ -3413,10 +3460,13 @@ function changelanguepeinture() {
     </p>
 
 <!-- Ilustraciones -->
+<div class="exemples-photos3">
 <div class="exemples-photos">
-    <img src="img/armee1.jpg" alt="Ejemplo de ejército pintado">
-    <img src="img/armee2.jpg" alt="Ejemplo de ejército TableTop pintado">
-    <img src="img/armee3.jpg" alt="Ejemplo de ejército para juegos de miniaturas pintado">
+    <img src="img/armee1.jpg" alt="Ejemplo de ejército pintado"></div>
+    <div class="exemples-photos">
+    <img src="img/armee2.jpg" alt="Ejemplo de ejército TableTop pintado"></div>
+    <div class="exemples-photos">
+    <img src="img/armee3.jpg" alt="Ejemplo de ejército para juegos de miniaturas pintado"></div>
 </div>
 
 <p>
@@ -3450,10 +3500,13 @@ function changelanguepeinture() {
             Aproximadamente 1h+ → <strong>20€</strong>
         </p>
      <!-- Illustrations -->
+<div class="exemples-photos3">
 <div class="exemples-photos">
-    <img src="img/gold1.jpg" alt="Ejemplo de figurilla pintada nivel Gold">
-    <img src="img/gold2.jpg" alt="Ejemplo de unidad pintada nivel Gold">
-    <img src="img/gold3.jpg" alt="Ejemplo de unidad pintada nivel Gold">
+    <img src="img/gold1.jpg" alt="Ejemplo de figurilla pintada nivel Gold"></div>
+    <div class="exemples-photos">
+    <img src="img/gold2.jpg" alt="Ejemplo de unidad pintada nivel Gold"></div>
+    <div class="exemples-photos">
+    <img src="img/gold3.jpg" alt="Ejemplo de unidad pintada nivel Gold"></div>
 </div>
 <p>
     <em>Ejemplos de realizaciones en nivel Gold.</em>
@@ -3490,10 +3543,13 @@ function changelanguepeinture() {
             Aproximadamente 2h+ → <strong>40€</strong>
         </p>
       <!-- Exemples -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
-        <img src="img/diamant1.jpg" alt="Ejemplo de pintura nivel Diamante">
-        <img src="img/diamant2.jpg" alt="Ejemplo de figurilla pintada nivel Diamante">
-        <img src="img/diamant3.jpg" alt="Ejemplo de figurilla pintada nivel Diamante">
+        <img src="img/diamant1.jpg" alt="Ejemplo de pintura nivel Diamante"></div>
+        <div class="exemples-photos">
+        <img src="img/diamant2.jpg" alt="Ejemplo de figurilla pintada nivel Diamante"></div>
+        <div class="exemples-photos">
+        <img src="img/diamant3.jpg" alt="Ejemplo de figurilla pintada nivel Diamante"></div>
     </div>
     <p>
         <em>📸 Ejemplos de realizaciones en nivel Diamante.</em>
@@ -3503,7 +3559,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
 
     <h2>🛠️ Conversión y creación de miniaturas únicas</h2>
 
@@ -3545,15 +3601,18 @@ function changelanguepeinture() {
     </p>
 
     <!-- Ejemplos -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
         <img src="img/conversion1.jpg"
-             alt="Ejemplo de miniatura convertida con bits">
+             alt="Ejemplo de miniatura convertida con bits"></div>
+             <div class="exemples-photos">
 
         <img src="img/conversion2.jpg"
-             alt="Ejemplo de miniatura creada combinando varios modelos">
+             alt="Ejemplo de miniatura creada combinando varios modelos"></div>
+             <div class="exemples-photos">
 
         <img src="img/conversion3.jpg"
-             alt="Ejemplo de conversión con piezas impresas en 3D">
+             alt="Ejemplo de conversión con piezas impresas en 3D"></div>
     </div>
 
     <p>
@@ -3655,7 +3714,7 @@ function changelanguepeinture() {
     } else {
         html = `   <h1>🎨 Peinture de Figurines sur Commission</h1>
    
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
 
     <h2>⚔️ Armées TableTop</h2>
 
@@ -3664,10 +3723,13 @@ function changelanguepeinture() {
     </p>
 
 <!-- Illustrations -->
+<div class="exemples-photos3">
 <div class="exemples-photos">
-    <img src="img/armee1.jpg" alt="Exemple d'armée peinte">
-    <img src="img/armee2.jpg" alt="Exemple d'armée TableTop peinte">
-    <img src="img/armee3.jpg" alt="Exemple d'armée Warhammer peinte">
+    <img src="img/armee1.jpg" alt="Exemple d'armée peinte"></div>
+    <div class="exemples-photos">
+    <img src="img/armee2.jpg" alt="Exemple d'armée TableTop peinte"></div>
+    <div class="exemples-photos">
+    <img src="img/armee3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
 </div>
 
 <p>
@@ -3709,10 +3771,13 @@ function changelanguepeinture() {
             Environ 1h+ → <strong>20€</strong>
         </p>
      <!-- Illustrations -->
+<div class="exemples-photos3">
 <div class="exemples-photos">
-    <img src="img/gold1.jpg" alt="Exemple de figurine peinte niveau Gold">
-    <img src="img/gold2.jpg" alt="Exemple d'unité peinte niveau Gold">
-      <img src="img/gold3.jpg" alt="Exemple d'unité peinte niveau Gold">
+    <img src="img/gold1.jpg" alt="Exemple de figurine peinte niveau Gold"></div>
+    <div class="exemples-photos">
+    <img src="img/gold2.jpg" alt="Exemple d'unité peinte niveau Gold"></div>
+    <div class="exemples-photos">
+      <img src="img/gold3.jpg" alt="Exemple d'unité peinte niveau Gold"></div>
 </div>
 
 <p>
@@ -3763,10 +3828,13 @@ function changelanguepeinture() {
             Environ 2h+ → <strong>40€</strong>
         </p>
       <!-- Exemples -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
-        <img src="img/diamant1.jpg" alt="Exemple de peinture niveau Diamant">
-        <img src="img/diamant2.jpg" alt="Exemple de figurine peinte niveau Diamant">
-        <img src="img/diamant3.jpg" alt="Exemple de figurine peinte niveau Diamant">
+        <img src="img/diamant1.jpg" alt="Exemple de peinture niveau Diamant"></div>
+        <div class="exemples-photos">
+        <img src="img/diamant2.jpg" alt="Exemple de figurine peinte niveau Diamant"></div>
+        <div class="exemples-photos">
+        <img src="img/diamant3.jpg" alt="Exemple de figurine peinte niveau Diamant"></div>
     </div>
 
     <p>
@@ -3779,7 +3847,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
 
     <h2>🛠️ Conversion & Création de figurines uniques</h2>
 
@@ -3821,15 +3889,18 @@ function changelanguepeinture() {
     </p>
 
     <!-- Exemples -->
+    <div class="exemples-photos3">
     <div class="exemples-photos">
         <img src="img/conversion1.jpg"
-             alt="Exemple de figurine convertie avec des rabiots">
+             alt="Exemple de figurine convertie avec des rabiots"></div>
+             <div class="exemples-photos">
 
         <img src="img/conversion2.jpg"
-             alt="Exemple de figurine créée avec plusieurs modèles">
+             alt="Exemple de figurine créée avec plusieurs modèles"></div>
+             <div class="exemples-photos">
 
         <img src="img/conversion3.jpg"
-             alt="Exemple de conversion avec des pièces imprimées en 3D">
+             alt="Exemple de conversion avec des pièces imprimées en 3D"></div>
     </div>
 
     <p>
