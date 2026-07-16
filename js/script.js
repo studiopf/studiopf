@@ -258,7 +258,7 @@ function changelangueforma() {
         changelangueindex();
     } else {
            html = ` 
-            <div class="maintenance-box">
+            <div class="maintenance-box ajust">
        <h1>🎨 Cours de Peinture sur Figurines</h1>
 
 <p>
@@ -281,7 +281,7 @@ function changelangueforma() {
 
     </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
       <h2>💡 Pourquoi Nous Choisir ?</h2>
         
       <ul>
@@ -1272,7 +1272,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentLanguage === "english") {
         html = `  
         <div class="center">
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondlilia">
         <h1>🎨 Professional Miniature Painting</h1>
         <p>
             Welcome to <strong>Studio PF</strong>, a workshop specialized in 
@@ -1307,7 +1307,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
    </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondkigt">
       <h2>⚔️ Gaming Army Miniatures</h2>
 <p>
     Do you want an army that is enjoyable to play and visually cohesive?
@@ -1333,7 +1333,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </p>
     </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondfreezer">
         <h2>🏆 Collection & Competition Pieces</h2>
         <p>
             Are you looking for a <strong>unique</strong> miniature for a display cabinet,
@@ -1356,7 +1356,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
     <!--
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
         <h2>📚 Miniature Painting Courses</h2>
         <p>
             Do you want to <strong>learn</strong> or <strong>improve</strong> your technique?
@@ -1381,7 +1381,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     -->
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondnurgle">
         <h2>🖼️ Discover My Work</h2>
         <p>
             From TableTop+ armies to competition pieces,
@@ -1397,7 +1397,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
 <div class="center">
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 <h2>👋 Miniature Painter in France</h2>
 <p>
 I am <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
@@ -1418,7 +1418,7 @@ My goal: make your miniatures come alive.
 </div>
 
 <div class="center">
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 <h2>🪄 Why Choose Studio PF?</h2>
 <ul>
 <li>🎨 <strong>100% Personalized Projects</strong>: each miniature is painted according to your wishes, your universe, your budget, and the desired level of finish.</li>
@@ -1435,7 +1435,7 @@ From first contact to delivery, I do everything possible to make your project a 
 </div>
 
      <div class="center">
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
         <h2>⚙️ How It Works</h2>
         <ol>
             <li>💬 Contact me to discuss your project and get a personalized quote.</li>
@@ -1460,7 +1460,7 @@ From first contact to delivery, I do everything possible to make your project a 
     } else if (currentLanguage === "spanish") {
         html = `
       <div class="center">
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondlilia">
         <h1>🎨 Pintura profesional de figuritas</h1>
         <p>
             Bienvenido a <strong>Studio PF</strong>, taller especializado en 
@@ -1497,7 +1497,7 @@ From first contact to delivery, I do everything possible to make your project a 
     </div>
    </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
       <h2>⚔️ Figuritas de Ejércitos de juego</h2>
 <p>
     ¿Quieres un ejército agradable de jugar y visualmente homogéneo?
@@ -1523,7 +1523,7 @@ From first contact to delivery, I do everything possible to make your project a 
 </p>
     </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondfreezer">
         <h2>🏆 Piezas de colección y concursos</h2>
         <p>
             ¿Buscas una figurita <strong>única</strong> destinada a una vitrina,
@@ -1548,7 +1548,7 @@ From first contact to delivery, I do everything possible to make your project a 
     </div>
 
 <!--
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
         <h2>📚 Cursos de pintura de figuritas</h2>
         <p>
             ¿Quieres <strong>aprender</strong> o <strong>perfeccionar</strong> tu técnica?
@@ -1572,7 +1572,7 @@ From first contact to delivery, I do everything possible to make your project a 
         </p>
     </div>
 -->
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondnurgle">
         <h2>🖼️ Descubre mis realizaciones</h2>
         <p>
             Desde ejércitos TableTop+ hasta piezas de concurso,
@@ -1589,7 +1589,7 @@ From first contact to delivery, I do everything possible to make your project a 
     </div>
 
 <div class="center">
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 <h2>👋 Pintor de Figuritas en Francia</h2>
 <p>
 Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
@@ -1610,7 +1610,7 @@ Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
 </div>
 
 <div class="center">
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 <h2>🪄 ¿Por qué elegir Studio PF?</h2>
 <ul>
 <li>🎨 <strong>Un proyecto 100 % personalizado</strong>: cada figurita se pinta según tus deseos, tu universo, tu presupuesto y el nivel de acabado deseado.</li>
@@ -1627,7 +1627,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
 </div>
 
      <div class="center">
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
         <h2>⚙️ ¿Cómo funciona?</h2>
         <ol>
             <li>💬 Contáctame para hablar de tu proyecto y obtener un presupuesto personalizado.</li>
@@ -1654,7 +1654,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
         
          <div class="center">
 
-    <div class="maintenance-box fondlilia">
+    <div class="maintenance-box ajust fondlilia">
 
         <h1>🎨 Peinture professionnelle sur figurines</h1>
 
@@ -1698,7 +1698,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
    </div>
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondkigt">
 
       <h2>⚔️ Figurines d'Armées de jeu</h2>
 
@@ -1733,7 +1733,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
 
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondfreezer">
 
         <h2>🏆 Pièces de collection & concours</h2>
 
@@ -1765,7 +1765,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
 
 
 
-    <div class="maintenance-box fondnurgle">
+    <div class="maintenance-box ajust fonddemon">
 
         <h2>📚 Cours de peinture sur figurines</h2>
 
@@ -1797,7 +1797,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
 
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondnurgle">
 
         <h2>🖼️ Découvrez mes réalisations</h2>
 
@@ -1821,7 +1821,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
 
 
 <div class="center">
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
 <h2>👋 Peintre sur Figurine en France</h2>
 
@@ -1854,7 +1854,7 @@ Mon objectif : faire vibrer vos figurines comme si elles prenaient vie.
 
 
 <div class="center">
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
 
@@ -1880,7 +1880,7 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
 </div>
 
      <div class="center">
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
 
         <h2>⚙️ Comment ça marche ?</h2>
 
@@ -1923,7 +1923,7 @@ function changelanguecollection() {
      let html = "";
 
     if (currentLanguage === "english") {
-        html = `<div class="maintenance-box">
+        html = `<div class="maintenance-box ajust">
     <h1>🏆 Unique Pieces for Collection, Exhibition & Competitions</h1>
     <p>
         Studio PF creates <strong>high-end figurines</strong> for collectors, enthusiasts and competitors who want to transform their models into true exhibition pieces.
@@ -1953,7 +1953,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>🏞️ Dioramas & Exhibition Scenes</h2>
     <p>
         Studio PF creates <strong>custom dioramas</strong> that stage one or more figurines in a setting entirely designed to tell a story.
@@ -1983,7 +1983,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>🗿 Busts & Collectible Pieces</h2>
     <p>
         Studio PF paints <strong>busts, miniature statues and collectible pieces</strong> intended to be displayed in a showcase or to enrich a personal collection.
@@ -2013,7 +2013,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>🎬 Manga, Movies, Series & Video Games</h2>
     <p>
         Do you own a figurine inspired by your favorite universe?  
@@ -2069,7 +2069,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>A Unique Piece ✨</h2>
     <table class="tableborder1">
     <thead>
@@ -2103,7 +2103,7 @@ function changelanguecollection() {
     </table>
 </div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<div class="maintenance-box">
+        html = `<div class="maintenance-box ajust">
     <h1>🏆 Piezas únicas para Colección, Exposición y Concursos</h1>
     <p>
         Studio PF realiza <strong>figurillas de alta gama</strong> destinadas a coleccionistas, apasionados y competidores que desean transformar sus modelos en verdaderas obras de exposición.
@@ -2133,7 +2133,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>🏞️ Dioramas y Escenas de Exposición</h2>
     <p>
         Studio PF realiza <strong>dioramas a medida</strong> que escenifican una o varias figurillas en un decorado completamente diseñado para contar una historia.
@@ -2163,7 +2163,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>🗿 Bustos y Piezas de Colección</h2>
     <p>
         Studio PF realiza la pintura de <strong>bustos, estatuas en miniatura y piezas de colección</strong> destinadas a ser expuestas en vitrina o enriquecer una colección personal.
@@ -2193,7 +2193,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>🎬 Manga, Películas, Series y Videojuegos</h2>
     <p>
         ¿Posees una figurilla inspirada en tu universo favorito?  
@@ -2249,7 +2249,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <h2>Una pieza única ✨</h2>
     <table class="tableborder1">
     <thead>
@@ -2283,7 +2283,7 @@ function changelanguecollection() {
     </table>
 </div>`;
     } else {
-        html = `<div class="maintenance-box">
+        html = `<div class="maintenance-box ajust">
 
     <h1>🏆 Pièces uniques pour Collection, Exposition & Concours</h1>
 
@@ -2320,7 +2320,7 @@ function changelanguecollection() {
     </p>
 
 </div>
-  <div class="maintenance-box">
+  <div class="maintenance-box ajust">
 
     <h2>🏞️ Dioramas & Scènes d'exposition</h2>
 
@@ -2359,7 +2359,7 @@ function changelanguecollection() {
 </div>
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
 
     <h2>🗿 Bustes & Pièces de Collection</h2>
 
@@ -2398,7 +2398,7 @@ function changelanguecollection() {
 </div>
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
 
     <h2>🎬 Manga, Films, Séries & Jeux vidéo</h2>
 
@@ -2475,7 +2475,7 @@ function changelanguecollection() {
 
 
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
 <h2>Une pièce unique ✨</h2>
 
@@ -3186,7 +3186,7 @@ function changelanguepeinture() {
 
 <h1>🎨 Commission Miniature Painting</h1>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
     <h2>⚔️ TableTop Armies</h2>
 
@@ -3208,7 +3208,7 @@ function changelanguepeinture() {
 </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
         <h2>⭐ Gold — Premium TableTop Finish</h2>
         <p>
             <strong>Ideal for :</strong> Warhammer armies, units and large quantities of figurines.
@@ -3249,7 +3249,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
         <h2>👑 Diamond — Superior TableTop Finish</h2>
         <p>
             <strong>Ideal for :</strong> Characters, heroes, monsters,
@@ -3292,7 +3292,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
     <h2>🛠️ Miniature Conversion & Custom Creations</h2>
 
@@ -3362,7 +3362,7 @@ function changelanguepeinture() {
 </div>
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
     <div class="card-container3">
         <div class="card">
        <h2>Preparation 🛠️</h2>
@@ -3392,7 +3392,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Comparison Table -->
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -3425,7 +3425,7 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   <div class="maintenance-box">
+   <div class="maintenance-box ajust">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
@@ -3451,7 +3451,7 @@ function changelanguepeinture() {
 
 <h1>🎨 Pintura de Miniaturas por Encargo</h1>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
     <h2>⚔️ Ejércitos TableTop</h2>
 
@@ -3475,7 +3475,7 @@ function changelanguepeinture() {
 
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
         <h2>⭐ Gold — Acabado TableTop Premium</h2>
         <p>
             <strong>Ideal para :</strong> Ejércitos Warhammer, unidades y grandes cantidades de figurillas.
@@ -3516,7 +3516,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
         <h2>👑 Diamante — Acabado TableTop Superior</h2>
         <p>
             <strong>Ideal para :</strong> Personajes, héroes, monstruos,
@@ -3559,7 +3559,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
     <h2>🛠️ Conversión y creación de miniaturas únicas</h2>
 
@@ -3627,7 +3627,7 @@ function changelanguepeinture() {
     </p>
 
 </div>
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
     <div class="card-container3">
         <div class="card">
        <h2>Preparación 🛠️</h2>
@@ -3657,7 +3657,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Tableau comparaison -->
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -3690,7 +3690,7 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   <div class="maintenance-box">
+   <div class="maintenance-box ajust">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
@@ -3714,7 +3714,7 @@ function changelanguepeinture() {
     } else {
         html = `   <h1>🎨 Peinture de Figurines sur Commission</h1>
    
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
     <h2>⚔️ Armées TableTop</h2>
 
@@ -3737,7 +3737,7 @@ function changelanguepeinture() {
 </p>
 </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
 
         <h2>⭐ Gold — Finition TableTop Premium</h2>
@@ -3793,7 +3793,7 @@ function changelanguepeinture() {
 
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
 
         <h2>👑 Diamant — Finition TableTop Supérieure</h2>
 
@@ -3847,7 +3847,7 @@ function changelanguepeinture() {
     </p>
     </div>
 
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
 
     <h2>🛠️ Conversion & Création de figurines uniques</h2>
 
@@ -3916,7 +3916,7 @@ function changelanguepeinture() {
 
 </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
 <div class="card-container3">
  <div class="card">
        <h2>Préparation 🛠️</h2>
@@ -3947,7 +3947,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Tableau comparaison -->
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -3982,7 +3982,7 @@ function changelanguepeinture() {
 </div>
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
