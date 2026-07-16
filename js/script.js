@@ -7,6 +7,7 @@ const virtualPages = [
     "peinturecollection",
      "quisuisje",
     "index",
+        "pourquoi",
     "conditions",
     "mentionslegales",
     "horaires"
