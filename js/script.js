@@ -179,22 +179,22 @@ function loadPage(page) {
 // INIT GLOBAL
 // =============================
 function applyLanguageAndInit() {
-
+changelangueinfo();
+    
+    initializeLightboxGlobal();
+     initThemeToggle();
     updateDebugDisplay();
     mettreAJourTarifLangue();
-changelangueinfo();
-    changelanguemenu();
 
-initializeLightboxGlobal();
+    changelanguemenu();
     changelanguefoot();
     changelanguelogo();
 
     changelanguepartenaires();
-    initThemeToggle();
+   
     updateAgeDisplay();
 
 
-    initializecarroussel();
     initScrollBehaviors();
     hideCurrentPage();
 
@@ -4918,29 +4918,6 @@ function initScrollBehaviors() {
     window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
     update();
-}
-
-// ────────────────────────────────────────────────
-// carroussel simple (si présent)
-// ────────────────────────────────────────────────
-
-function initializecarroussel() {
-    if (initializecarroussel._intervalId) {
-        clearInterval(initializecarroussel._intervalId);
-        initializecarroussel._intervalId = null;
-    }
-
-    const carroussel = document.getElementById("carroussel");
-    if (!carroussel) return;
-
-    const images = carroussel.querySelectorAll("img");
-    if (images.length < 2) return;
-
-    let idx = 0;
-    initializecarroussel._intervalId = setInterval(() => {
-        idx = (idx + 1) % images.length;
-        carroussel.style.transform = `translateX(-${idx * 100}%)`;
-    }, 4000);
 }
 
 
