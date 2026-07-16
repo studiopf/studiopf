@@ -2130,7 +2130,7 @@ Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
 
 
 <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondmoi">
 
 <h2>👋 Peintre sur Figurine en France</h2>
 
