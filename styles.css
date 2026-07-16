@@ -1717,7 +1717,6 @@ body.light-mode{
      transform: translateY(8px);
     right: 15px !important;
     left: auto !important;
-
     width: 50px !important;
     height: 50px !important;
     padding: 0 !important;
@@ -1795,7 +1794,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-nav-list {
     list-style: none;
-    padding: 35px 20px 20px;
+    padding: 0px 20px 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -1911,7 +1910,7 @@ button.pf-menu-button {
        
         width: 38px !important;
         height: 38px !important;
-        top: 30px !important;
+     
         right: 10px !important;
         border-radius: 9px !important;
     }
@@ -1924,7 +1923,7 @@ button.pf-menu-button {
 
     /* Boutons du menu */
     .pf-nav-list {
-        padding: 25px 15px 15px;
+        padding: 0px 15px 15px;
         gap: 8px;
     }
 
