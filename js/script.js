@@ -4852,7 +4852,7 @@ else if (currentLanguage === "spanish") {
     `;
     } else {
         html = `     
-   
+    <div class="center">
        <div class="maintenance-boxpartenaire">
                  <div class="cardpartenaire2">
         <div class="cardpartenaire">
@@ -4902,7 +4902,7 @@ else if (currentLanguage === "spanish") {
            </div>
 
        
-    </div>
+    </div></div>
 
  `;
     }
