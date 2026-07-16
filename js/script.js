@@ -4855,7 +4855,7 @@ else if (currentLanguage === "spanish") {
    
        <div class="maintenance-box">
                  <div class="card-container2">
-        <div class="card">
+        <div class="cardpartenaire">
                     <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority=high>
                     </a>
@@ -4864,7 +4864,7 @@ else if (currentLanguage === "spanish") {
          
             </div>
 
-            <div class="card">
+            <div class="cardpartenaire">
                 
                     <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority=high>
@@ -4878,7 +4878,7 @@ else if (currentLanguage === "spanish") {
 
 
          <div class="card-container2">
-        <div class="card">
+        <div class="cardpartenaire">
                 
                     <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority=high>
@@ -4889,7 +4889,7 @@ else if (currentLanguage === "spanish") {
              
             </div>
 
-             <div class="card">
+             <div class="cardpartenaire">
                 
                     <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority=high>
