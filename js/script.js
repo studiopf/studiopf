@@ -4739,115 +4739,134 @@ function changelanguepartenaires() {
 
    if (currentLanguage === "english") {
     html = `
-   
+<div class="center">
+    <div class="maintenance-boxpartenaire">
 
-<div class="partenaires-container">
-    
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-totalwar.png" alt="Total Wargames Logo">
-            </a>
+        <div class="cardpartenaire2">
+
+            <div class="cardpartenaire">
+                <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    Buy second-hand miniatures for less.<br>
+                    <strong>5% off</strong> with the code:<br>
+                    <strong>STUDIOPF</strong>
+                </p>
+            </div>
+
+            <div class="cardpartenaire">
+                <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    Get the miniatures of your dreams at amazing prices!<br>
+                    Up to <strong>19% off</strong> with the code:<br>
+                    <strong>MAXIPF</strong>
+                </p>
+            </div>
+
         </div>
-        <div class="ppartenaire">
-            <p>Buy second-hand for less<br>5% discount:<br><strong>STUDIOPF</strong></p>
+
+
+        <div class="cardpartenaire2">
+
+            <div class="cardpartenaire">
+                <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    Outstanding pre-supported STL miniatures for your sci-fi and fantasy tabletop games.<br>
+                    <strong>10% off</strong> your order with the code:<br>
+                    <strong>STUDIOPF</strong>
+                </p>
+            </div>
+
+            <div class="cardpartenaire">
+                <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    Modular 3D printed terrain for even more immersive tabletop battles.<br>
+                    <strong>10% off</strong> all printed models with the code:<br>
+                    <strong>STUDIOPF10</strong>
+                </p>
+            </div>
+
         </div>
+
     </div>
-
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo">
-            </a>
-        </div> 
-        <div class="ppartenaire">
-            <p>Your dream miniatures at a huge discount!<br>up to -19%:<br><strong>MAXIPF</strong></p>
-        </div>
-    </div>
-       
-</div>
-
-<div class="partenaires-container">
-    
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-mezgike.png" alt="Mezgike Logo">
-            </a>
-        </div> 
-        <div class="ppartenaire">
-            <p>High-quality pre-supported STL miniatures for your sci-fi and fantasy tabletop battles.<br>-10% on your order<br>with the promo code:<br><strong>STUDIOPF</strong></p>
-        </div>
-    </div>
-
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo">
-            </a>
-        </div>
-        <div class="ppartenaire">
-          <p>Modular 3D-printed scenery for immersive gameplay.<br>-10% on all printed models<br>with the promo code:<br><strong>STUDIOPF10</strong></p>
-        </div>
-    </div>
-
 </div>
     `;
 } 
 else if (currentLanguage === "spanish") {
     html = `
     
+<div class="center">
+    <div class="maintenance-boxpartenaire">
 
-<div class="partenaires-container">
-    
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-totalwar.png" alt="Logo de Total Wargames">
-            </a>
+        <div class="cardpartenaire2">
+
+            <div class="cardpartenaire">
+                <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-totalwar.png" alt="Logo Total Wargames" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    Compra miniaturas de segunda mano al mejor precio.<br>
+                    <strong>5 % de descuento</strong> con el código:<br>
+                    <strong>STUDIOPF</strong>
+                </p>
+            </div>
+
+            <div class="cardpartenaire">
+                <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-maxireve.png" alt="Logo Maxi Rêve" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    ¡Las miniaturas de tus sueños al mejor precio!<br>
+                    Hasta un <strong>19 % de descuento</strong> con el código:<br>
+                    <strong>MAXIPF</strong>
+                </p>
+            </div>
+
         </div>
-        <div class="ppartenaire">
-            <p>Compra de segunda mano más barato<br>5% de descuento:<br><strong>STUDIOPF</strong></p>
+
+
+        <div class="cardpartenaire2">
+
+            <div class="cardpartenaire">
+                <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-mezgike.png" alt="Logo Mezgike" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    Magníficas miniaturas STL presoportadas para tus juegos de mesa de ciencia ficción y fantasía.<br>
+                    <strong>10 % de descuento</strong> en tu pedido con el código:<br>
+                    <strong>STUDIOPF</strong>
+                </p>
+            </div>
+
+            <div class="cardpartenaire">
+                <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                    <img src="img/logo-wargamesceneries.png" alt="Logo Wargame Sceneries" data-no-lightbox fetchpriority="high">
+                </a>
+
+                <p>
+                    Escenografía modular impresa en 3D para partidas aún más inmersivas.<br>
+                    <strong>10 % de descuento</strong> en todos los modelos impresos con el código:<br>
+                    <strong>STUDIOPF10</strong>
+                </p>
+            </div>
+
         </div>
+
     </div>
-
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-maxireve.png" alt="Logo de Maxi Rêve">
-            </a>
-        </div> 
-        <div class="ppartenaire">
-            <p>¡Tus miniaturas soñadas con grandes descuentos!<br>hasta -19%:<br><strong>MAXIPF</strong></p>
-        </div>
-    </div>
-       
-</div>
-
-<div class="partenaires-container">
-    
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-mezgike.png" alt="Logo de Mezgike">
-            </a>
-        </div> 
-        <div class="ppartenaire">
-            <p>Impresionantes miniaturas STL pre-soportadas para tus batallas de mesa de ciencia ficción y fantasía.<br>-10% en tu pedido<br>con el código promocional:<br><strong>STUDIOPF</strong></p>
-        </div>
-    </div>
-
-    <div class="maintenance-box">
-        <div class="cardpartenaire">
-            <a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
-                <img src="img/logo-wargamesceneries.png" alt="Logo de Wargame Sceneries">
-            </a>
-        </div>
-        <div class="ppartenaire">
-          <p>Escenografía modular impresa en 3D para partidas inmersivas.<br>-10% en todos los modelos impresos<br>con el código promocional:<br><strong>STUDIOPF10</strong></p>
-        </div>
-    </div>
-
 </div>
     `;
     } else {
