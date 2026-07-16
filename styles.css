@@ -2,7 +2,12 @@
    RESET & BASE – inchangé
    ===================================================== font-size===================== */
 
-
+.card-container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+}
 .exemples-photos3.card {
     width: auto;
     min-width: 0;
@@ -1139,7 +1144,7 @@ nav ul li a:hover {
       font-size: 12px;
     }
 
-    artenaires-container,
+    .partenaires-container,
     .card-container2 {
         margin-top: 0;
         margin-bottom: 0;
@@ -1924,7 +1929,7 @@ a.surligne:visited {
     background-position: center;
     background-size: contain;   /* ou 70% si tu préfères */
 
-    opacity: 0.10;              /* transparence du filigrane */
+    opacity: 0.15;              /* transparence du filigrane */
     filter: grayscale(20%);
     pointer-events: none;
 
