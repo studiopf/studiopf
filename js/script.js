@@ -230,7 +230,10 @@ initializeLightboxGlobal();
         if (currentPage.includes("peinturecollection") && typeof changelanguecollection === "function") {
         changelanguecollection();
             
-    
+    }
+            if (currentPage.includes("pourquoi") && typeof changelanguepourquoi === "function") {
+        changelanguepourquoi();
+            
     }
            if (currentPage.includes("index") && typeof changelangueindex === "function") {
         changelangueindex();
@@ -241,7 +244,407 @@ initializeLightboxGlobal();
     
 }
 
+function changelanguepourquoi() {
+    const main = document.getElementById("contenu-principal");
+    if (!main) return;
 
+    let html = "";
+
+    if (currentLanguage === "english") {
+         html = ` <div class="center">
+<div class="maintenance-box ajust">
+<h2>🪄 Why choose Studio PF?</h2>
+<ul>
+<li>🎨 <strong>A 100% custom project</strong>: each miniature is painted according to your wishes, your universe, your budget, and the desired level of finish.</li>
+<li>🔧 <strong>Professional preparation</strong>: cleaning, assembly, priming, corrections, and meticulous preparation to ensure a durable result.</li>
+<li>🧪 <strong>Immersive bases and advanced effects</strong>: textures, pigments, vegetation, 3D accessories, and many painting techniques to bring your army or collectible piece to life.</li>
+<li>📸 <strong>Transparent follow-up</strong>: you are informed at every important step and validate the final photos before shipping.</li>
+<li>📦 <strong>A turnkey service</strong>: your miniatures can be ordered from my partners, delivered directly to Studio PF, painted, and then shipped to you, ready to play or display.</li>
+<li>🛡️ <strong>Careful packaging and secure shipping</strong>: each order is protected with the utmost care to arrive in perfect condition.</li>
+</ul>
+<p>
+From the first contact to delivery, I do everything possible to make your project a simple, transparent experience that meets your expectations.
+</p>
+</div>
+</div>
+
+<div class="center">
+<div class="maintenance-box ajust">
+    <h2>⚙️ How does it work?</h2>
+    <ol>
+        <li>💬 Contact me to discuss your project and get a personalized quote.</li>
+        <li>🎲 Do you already own your miniatures? Send them directly to <strong>Studio PF</strong>. Don't have your army yet? Order it from my partners <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> or <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (new and second-hand miniatures) and have it delivered directly to the workshop.</li>
+        <li>🎨 I take care of the entire project: preparation, assembly, painting, basing, and finishing according to the chosen quality level.</li>
+        <li>📸 Once the painting is complete, I send you high-definition photos for validation before shipping or in-person handover.</li>
+        <li>📦 After your approval, your order is carefully packed and shipped securely.</li>
+    </ol>
+    <p>
+        This organization saves you time: your miniatures can be ordered, delivered, painted, and shipped back to you without any handling on your part.
+    </p>
+   
+        <a href="simulateur_devis.html"
+           class="button"
+           onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+            💬 Request a quote
+        </a>
+   
+</div>
+</div>
+
+<div class="center">
+<div class="maintenance-box ajust">
+<h2>❓ Frequently Asked Questions</h2>
+<h3>💰 How much does it cost to paint a miniature?</h3>
+<p>
+The price depends on several factors: the size of the miniature, its level of detail, the desired painting level, possible assembly, and chosen options. You can get a quick estimate using the quote simulator or contact me for a free personalized quote.
+</p>
+<hr>
+<h3>⏳ What are the production times?</h3>
+<p>
+Lead times vary depending on the size of the project and the time of year. On average, expect between 2 and 12 months depending on the complexity of the order. An estimated deadline is always provided when the quote is validated.
+</p>
+<hr>
+<h3>📦 Do I have to send you my miniatures?</h3>
+<p>
+Yes, if you already own your miniatures, you can ship them directly to the workshop. If you don't have them yet, they can be ordered from my partners and delivered directly to Studio PF so I can handle the entire project.
+</p>
+<hr>
+<h3>🖌️ Can I choose the colors for my army?</h3>
+<p>
+Of course. Every project is fully customized. You can provide a color scheme, illustrations, photos, or simply explain your vision. I can also advise you if you're unsure.
+</p>
+<hr>
+<h3>📸 Will I see the miniatures before shipping?</h3>
+<p>
+Yes. Before any shipment, high-definition photos are sent to you so you can validate the final result.
+</p>
+<hr>
+<h3>🎲 Do you only paint Warhammer?</h3>
+<p>
+No. I also paint miniatures for board games, role-playing games, historical miniatures, busts, collectibles, 3D prints, and many other ranges.
+</p>
+<hr>
+<h3>🚚 Do you ship outside France?</h3>
+<p>
+Yes. Orders can be shipped to France, Belgium, and many other countries. Shipping costs are calculated based on the destination.
+</p>
+<hr>
+<h3>💳 How does payment work?</h3>
+<p>
+To reserve your painting slot, a deposit is required when validating the quote. The balance is paid only after validation of the final photos, before shipping your order.
+</p>
+<hr>
+<h3>📅 Can I cancel my order?</h3>
+<p>
+An order can be cancelled before it starts according to the conditions set out in the Terms and Conditions. Deposits already paid correspond to the reservation of the work slot and are non-refundable.
+</p>
+<hr>
+<h3>🎁 Do you make personalized gifts?</h3>
+<p>
+Yes. A hand-painted miniature makes a unique gift for a collector, player, or painting enthusiast. Feel free to detail your project when requesting a quote.
+</p>
+<hr>
+<h3>🧲 Do you offer assembly and magnetization?</h3>
+<p>
+Yes. Assembly is one of the services offered. Magnetization is also possible upon request to facilitate transport or equipment changes.
+</p>
+<hr>
+<h3>🧑‍🎨 Do you offer painting classes?</h3>
+<p>
+Yes. Individual classes are available for all levels, from beginner to experienced painter. Sessions can focus on brushwork, airbrushing, or specific techniques according to your goals.
+</p>
+<hr>
+<h3>🖨️ Do you also offer 3D printing?</h3>
+<p>
+Yes. Studio PF also performs resin 3D printing from STL files provided by clients. The rights to use the files remain the responsibility of the client.
+</p>
+<hr>
+<h3>🏆 What is the difference between TableTop painting and collection painting?</h3>
+<p>
+TableTop painting is designed for gaming with an excellent look at tabletop distance. Collection or competition painting has a much higher level of finish, with more details, advanced techniques, and hours of work.
+</p>
+</div>
+</div>`;
+    } else if (currentLanguage === "spanish") {
+         html = ` <div class="center">
+<div class="maintenance-box ajust">
+<h2>🪄 ¿Por qué elegir Studio PF?</h2>
+<ul>
+<li>🎨 <strong>Un proyecto 100 % personalizado</strong>: cada figura es pintada según tus deseos, tu universo, tu presupuesto y el nivel de acabado deseado.</li>
+<li>🔧 <strong>Una preparación profesional</strong>: desbarbado, montaje, imprimación, correcciones y preparación minuciosa para garantizar un resultado duradero.</li>
+<li>🧪 <strong>Socles inmersivos y efectos avanzados</strong>: texturas, pigmentos, vegetación, accesorios 3D y numerosas técnicas de pintura para dar vida a tu ejército o a tu pieza de colección.</li>
+<li>📸 <strong>Un seguimiento transparente</strong>: se te informa en cada etapa importante y validas las fotos finales antes de cualquier envío.</li>
+<li>📦 <strong>Un servicio llave en mano</strong>: tus figuras pueden ser encargadas en mis socios, entregadas directamente al Studio PF, pintadas y luego enviadas a tu casa, listas para jugar o exponer.</li>
+<li>🛡️ <strong>Un embalaje cuidadoso y un envío seguro</strong>: cada pedido está protegido con el mayor cuidado para llegar en perfecto estado.</li>
+</ul>
+<p>
+Desde el primer contacto hasta la entrega, pongo todo mi esfuerzo para que tu proyecto sea una experiencia sencilla, transparente y a la altura de tus expectativas.
+</p>
+</div>
+</div>
+
+<div class="center">
+<div class="maintenance-box ajust">
+    <h2>⚙️ ¿Cómo funciona?</h2>
+    <ol>
+        <li>💬 Contáctame para hablar de tu proyecto y obtener un presupuesto personalizado.</li>
+        <li>🎲 ¿Ya tienes tus figuras? Envíalas directamente al <strong>Studio PF</strong>. ¿Aún no tienes tu ejército? Encuéntralo en mis socios <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> o <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figuras nuevas y de segunda mano) y haz que lo envíen directamente al taller.</li>
+        <li>🎨 Me encargo de todo el proyecto: preparación, montaje, pintura, bases y acabados según el nivel de calidad elegido.</li>
+        <li>📸 Una vez terminada la pintura, te envío fotos en alta definición para su validación antes del envío o entrega en mano.</li>
+        <li>📦 Tras tu validación, tu pedido es cuidadosamente embalado y enviado de forma segura.</li>
+    </ol>
+    <p>
+        Esta organización te permite ahorrar tiempo: tus figuras pueden ser encargadas, entregadas, pintadas y reenviadas, sin que tengas que manipular nada.
+    </p>
+   
+        <a href="simulateur_devis.html"
+           class="button"
+           onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+            💬 Solicitar presupuesto
+        </a>
+   
+</div>
+</div>
+
+<div class="center">
+<div class="maintenance-box ajust">
+<h2>❓ Preguntas frecuentes</h2>
+<h3>💰 ¿Cuánto cuesta pintar una figura?</h3>
+<p>
+El precio depende de varios criterios: el tamaño de la figura, su nivel de detalle, el nivel de pintura deseado, el montaje eventual y las opciones elegidas. Puedes obtener una estimación rápida gracias al simulador de presupuestos o contactarme para un presupuesto personalizado y gratuito.
+</p>
+<hr>
+<h3>⏳ ¿Cuáles son los plazos de realización?</h3>
+<p>
+Los plazos varían según el tamaño del proyecto y la época del año. Por término medio, cuenta entre 2 y 12 meses según la complejidad del pedido. Siempre se indica un plazo estimado al validar el presupuesto.
+</p>
+<hr>
+<h3>📦 ¿Debo enviarte mis figuras?</h3>
+<p>
+Sí, si ya tienes tus figuras, puedes enviarlas directamente al taller. Si aún no las tienes, pueden ser encargadas en mis socios y entregadas directamente al Studio PF para que yo me encargue de todo el proyecto.
+</p>
+<hr>
+<h3>🖌️ ¿Puedo elegir los colores de mi ejército?</h3>
+<p>
+Por supuesto. Cada proyecto es completamente personalizado. Puedes proporcionar un esquema de colores, ilustraciones, fotos o simplemente explicar tus deseos. También puedo aconsejarte si tienes dudas.
+</p>
+<hr>
+<h3>📸 ¿Veré las figuras antes de su envío?</h3>
+<p>
+Sí. Antes de cualquier envío, se te envían fotos en alta definición para que puedas validar el resultado final.
+</p>
+<hr>
+<h3>🎲 ¿Pintas solo Warhammer?</h3>
+<p>
+No. También pinto figuras de juegos de mesa, juegos de rol, figuras históricas, bustos, piezas de colección, impresiones 3D y muchas otras gamas.
+</p>
+<hr>
+<h3>🚚 ¿Envías fuera de Francia?</h3>
+<p>
+Sí. Los pedidos pueden enviarse a Francia, Bélgica y a muchos otros países. Los gastos de envío se calculan según el destino.
+</p>
+<hr>
+<h3>💳 ¿Cómo funciona el pago?</h3>
+<p>
+Para reservar tu franja de pintura, se solicita un anticipo al validar el presupuesto. El saldo se paga únicamente después de validar las fotos finales, antes del envío de tu pedido.
+</p>
+<hr>
+<h3>📅 ¿Puedo cancelar mi pedido?</h3>
+<p>
+Un pedido puede cancelarse antes de su inicio según las condiciones previstas en las CGV. Los anticipos ya pagados corresponden a la reserva de la franja de trabajo y no son reembolsables.
+</p>
+<hr>
+<h3>🎁 ¿Haces regalos personalizados?</h3>
+<p>
+Sí. Una figura pintada a mano es un regalo único para un coleccionista, un jugador o un apasionado de la pintura. No dudes en detallar tu proyecto al solicitar presupuesto.
+</p>
+<hr>
+<h3>🧲 ¿Ofreces montaje e imantación?</h3>
+<p>
+Sí. El montaje forma parte de los servicios ofrecidos. La imantación también es posible bajo demanda para facilitar el transporte o los cambios de equipo.
+</p>
+<hr>
+<h3>🧑‍🎨 ¿Das clases de pintura?</h3>
+<p>
+Sí. Se ofrecen clases individuales para todos los niveles, desde principiante hasta pintor experimentado. Las sesiones pueden centrarse en el pincel, el aerógrafo o técnicas específicas según tus objetivos.
+</p>
+<hr>
+<h3>🖨️ ¿También ofreces impresión 3D?</h3>
+<p>
+Sí. El Studio PF también realiza impresiones 3D en resina a partir de los archivos STL proporcionados por los clientes. Los derechos de uso de los archivos siguen siendo responsabilidad del cliente.
+</p>
+<hr>
+<h3>🏆 ¿Cuál es la diferencia entre una pintura TableTop y una pintura de colección?</h3>
+<p>
+Una pintura TableTop está pensada para el juego con un excelente aspecto a distancia de juego. Una pintura de colección o de concurso tiene un nivel de acabado mucho más alto, con más detalles, técnicas avanzadas y horas de trabajo.
+</p>
+</div>
+</div>`;
+    } else {
+           html = `     <div class="center">
+<div class="maintenance-box ajust">
+<h2>🪄 Pourquoi choisir Studio PF ?</h2>
+<ul>
+<li>🎨 <strong>Un projet 100 % personnalisé</strong> : chaque figurine est peinte selon vos envies, votre univers, votre budget et le niveau de finition souhaité.</li>
+<li>🔧 <strong>Une préparation professionnelle</strong> : ébarbage, montage, sous-couche, corrections et préparation minutieuse pour garantir un résultat durable.</li>
+<li>🧪 <strong>Des socles immersifs et des effets avancés</strong> : textures, pigments, végétation, accessoires 3D et nombreuses techniques de peinture pour donner vie à votre armée ou à votre pièce de collection.</li>
+<li>📸 <strong>Un suivi transparent</strong> : vous êtes informé à chaque étape importante et validez les photos finales avant toute expédition.</li>
+<li>📦 <strong>Un service clé en main</strong> : vos figurines peuvent être commandées chez mes partenaires, livrées directement au Studio PF, peintes puis expédiées chez vous, prêtes à jouer ou à exposer.</li>
+<li>🛡️ <strong>Un emballage soigné et une expédition sécurisée</strong> : chaque commande est protégée avec le plus grand soin pour arriver en parfait état.</li>
+</ul>
+<p>
+De la première prise de contact jusqu'à la livraison, je mets tout en œuvre pour que votre projet soit une expérience simple, transparente et à la hauteur de vos attentes.
+</p>
+</div>
+</div>
+      <div class="center">
+    <div class="maintenance-box ajust">
+        <h2>⚙️ Comment ça marche ?</h2>
+        <ol>
+            <li>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</li>
+            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
+            <li>🎨 Je prends en charge l'ensemble du projet : préparation, montage, peinture, soclage et finitions selon le niveau de qualité choisi.</li>
+
+            <li>📸 Une fois la peinture terminée, je vous envoie des photos haute définition pour validation avant l'expédition ou une remise en main propre.</li>
+
+            <li>📦 Après votre validation, votre commande est soigneusement emballée et expédiée en toute sécurité.</li>
+        </ol>
+
+        <p>
+            Cette organisation vous permet de gagner du temps : vos figurines peuvent être commandées, livrées, peintes puis réexpédiées, sans aucune manipulation de votre part.
+        </p>
+
+        
+            <a href="simulateur_devis.html"
+               class="button"
+               onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                💬 Demander un devis
+            </a>
+        
+    </div>
+    </div>
+      <div class="center">
+<div class="maintenance-box ajust">
+
+<h2>❓ Questions fréquentes</h2>
+
+<h3>💰 Combien coûte la peinture d'une figurine ?</h3>
+
+<p>
+Le tarif dépend de plusieurs critères : la taille de la figurine, son niveau de détail, le niveau de peinture souhaité, le montage éventuel et les options choisies. Vous pouvez obtenir une estimation rapidement grâce au simulateur de devis ou me contacter pour un devis personnalisé et gratuit.
+</p>
+
+<hr>
+
+<h3>⏳ Quels sont les délais de réalisation ?</h3>
+
+<p>
+Les délais varient selon la taille du projet et la période de l'année. En moyenne, comptez entre 2 et 12 mois selon la complexité de la commande. Un délai estimatif est toujours indiqué lors de la validation du devis.
+</p>
+
+<hr>
+
+<h3>📦 Dois-je vous envoyer mes figurines ?</h3>
+
+<p>
+Oui, si vous possédez déjà vos figurines, vous pouvez les expédier directement à l'atelier. Si vous ne les avez pas encore, elles peuvent être commandées chez mes partenaires et livrées directement au Studio PF afin que je prenne en charge l'ensemble du projet.
+</p>
+
+<hr>
+
+<h3>🖌️ Puis-je choisir les couleurs de mon armée ?</h3>
+
+<p>
+Bien sûr. Chaque projet est entièrement personnalisé. Vous pouvez fournir un schéma de couleurs, des illustrations, des photos ou simplement expliquer vos envies. Je peux également vous conseiller si vous hésitez.
+</p>
+
+<hr>
+
+<h3>📸 Vais-je voir les figurines avant leur expédition ?</h3>
+
+<p>
+Oui. Avant toute expédition, des photos haute définition vous sont envoyées afin que vous puissiez valider le résultat final.
+</p>
+
+<hr>
+
+<h3>🎲 Peignez-vous uniquement du Warhammer ?</h3>
+
+<p>
+Non. Je peins également des figurines de jeux de plateau, de jeux de rôle, des figurines historiques, des bustes, des pièces de collection, des impressions 3D et de nombreuses autres gammes.
+</p>
+
+<hr>
+
+<h3>🚚 Expédiez-vous en dehors de la France ?</h3>
+
+<p>
+Oui. Les commandes peuvent être expédiées en France, en Belgique et dans de nombreux autres pays. Les frais de port sont calculés en fonction de la destination.
+</p>
+
+<hr>
+
+<h3>💳 Comment se déroule le paiement ?</h3>
+
+<p>
+Afin de réserver votre créneau de peinture, un acompte est demandé lors de la validation du devis. Le solde est réglé uniquement après validation des photos finales, avant l'expédition de votre commande.
+</p>
+
+<hr>
+
+<h3>📅 Puis-je annuler ma commande ?</h3>
+
+<p>
+Une commande peut être annulée avant son démarrage selon les conditions prévues dans les CGV. Les acomptes déjà versés correspondent à la réservation du créneau de travail et ne sont pas remboursables.
+</p>
+
+<hr>
+
+<h3>🎁 Réalisez-vous des cadeaux personnalisés ?</h3>
+
+<p>
+Oui. Une figurine peinte à la main constitue un cadeau unique pour un collectionneur, un joueur ou un passionné de peinture. N'hésitez pas à préciser votre projet lors de votre demande de devis.
+</p>
+
+<hr>
+
+<h3>🧲 Proposez-vous le montage et l'aimantation ?</h3>
+
+<p>
+Oui. Le montage fait partie des prestations proposées. L'aimantation est également possible sur demande afin de faciliter le transport ou les changements d'équipement.
+</p>
+
+<hr>
+
+<h3>🧑‍🎨 Donnez-vous des cours de peinture ?</h3>
+
+<p>
+Oui. Des cours individuels sont proposés pour tous les niveaux, du débutant au peintre confirmé. Les séances peuvent porter sur le pinceau, l'aérographe ou des techniques spécifiques selon vos objectifs.
+</p>
+
+<hr>
+
+<h3>🖨️ Proposez-vous également de l'impression 3D ?</h3>
+
+<p>
+Oui. Le Studio PF réalise également des impressions 3D résine à partir des fichiers STL fournis par les clients. Les droits d'utilisation des fichiers restent sous la responsabilité du client.
+</p>
+
+<hr>
+
+<h3>🏆 Quelle est la différence entre une peinture TableTop et une peinture de collection ?</h3>
+
+<p>
+Une peinture TableTop est pensée pour le jeu avec un excellent rendu à distance de jeu. Une peinture de collection ou de concours bénéficie d'un niveau de finition beaucoup plus poussé, avec davantage de détails, de techniques avancées et d'heures de travail.
+</p>
+
+</div>
+</div>`;
+    }
+
+    main.innerHTML = html;
+}
+        
 function changelangueforma() {
     const main = document.getElementById("contenu-principal");
     if (!main) return;
