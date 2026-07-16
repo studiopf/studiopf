@@ -950,7 +950,7 @@ ${prenom} ${nom}`;
              html = `
              <h1>Quote Request - TableTop+ Commission</h1>
 
-        <form id="contactForm" action="#" class="maintenance-box-fieldset">
+        <form id="contactForm" action="#">
 
 
 
@@ -1170,7 +1170,7 @@ ${prenom} ${nom}`;
               html = `
               <h1>Solicitud de Presupuesto comisión TableTop+</h1>
 
-        <form id="contactForm" action="#" class="maintenance-box">
+        <form id="contactForm" action="#">
 
 
 
@@ -1392,7 +1392,7 @@ ${prenom} ${nom}`;
 
 
 
-        <form id="contactForm" action="#" class="maintenance-box">
+        <form id="contactForm" action="#">
 
 
 
