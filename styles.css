@@ -2035,6 +2035,7 @@ a.surligne:visited {
     color: #D8B06A;
 }
 /* Toutes les classes de fond deviennent des filigranes */
+.fondmoi,
 .fondlilia,
 .fondknigt,
 .fondnurgle,
@@ -2047,6 +2048,7 @@ a.surligne:visited {
 
 /* Filigrane */
 .fondlilia::before,
+.fondmoi::before,
 .fondknigt::before,
 .fondnurgle::before,
 .fondfreezer::before,
@@ -2068,6 +2070,7 @@ a.surligne:visited {
 
 /* Le contenu passe au-dessus */
 .fondlilia > *,
+.fondmoi > *,
 .fondknigt > *,
 .fondnurgle > *,
 .fondfreezer > *,
@@ -2090,7 +2093,9 @@ a.surligne:visited {
 .fondfreezer::before {
     background-image: url("../img/fondfreezer.png");
 }
-
+.fondmoi::before {
+    background-image: url("../img/moi.jpg");
+}
 .fonddemon::before {
     background-image: url("../img/fonddemon.png");
 }
