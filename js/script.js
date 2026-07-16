@@ -1654,7 +1654,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
         
          <div class="center">
 
-    <div class="maintenance-box">
+    <div class="maintenance-box fondlilia">
 
         <h1>🎨 Peinture professionnelle sur figurines</h1>
 
@@ -1765,7 +1765,7 @@ Desde el primer contacto hasta la entrega, pongo todo de mi parte para que tu pr
 
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box fondnurgle">
 
         <h2>📚 Cours de peinture sur figurines</h2>
 
