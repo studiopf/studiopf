@@ -1972,7 +1972,7 @@ button.pf-menu-button {
 }
     /* Boutons du menu */
     .pf-nav-list {
-        padding: 0px 15px 15px;
+        padding: 0px 10px 10px;
         gap: 8px;
     }
 
@@ -1984,18 +1984,18 @@ button.pf-menu-button {
 
     /* Réseaux sociaux */
     .pf-mobile-social {
-        margin-top: 20px;
-        padding: 0 15px 25px;
+        margin-top: 10px;
+        padding: 0 10px 20px;
     }
 
     .pf-social-container {
-        gap: 12px;
+        gap: 10px;
     }
 
     .pf-social-container .social-icon {
-        width: 42px;
-        height: 42px;
-        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
     }
 }
 /* ============================= */
