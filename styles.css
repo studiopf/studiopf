@@ -499,7 +499,7 @@ a:hover,
 /* ==========================================================================
    PARTENAIRES – version renforcée anti-débordement
    ========================================================================== */
-.partenaires-container,
+
 .card-container2 {
    margin-top: 2px;
     display: grid;
@@ -989,7 +989,7 @@ nav ul li a:hover {
 {
   padding: 3px;
 }
-   .partenaires-container,
+  
 .card-container2 {
    margin-top: 2px;
     display: grid;
@@ -1170,7 +1170,7 @@ nav ul li a:hover {
       font-size: 12px;
     }
 
-    .partenaires-container,
+   
     .card-container2 {
         margin-top: 0;
         margin-bottom: 0;
