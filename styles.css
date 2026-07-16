@@ -659,69 +659,155 @@ a:hover,
 /* ==========================================================================
    FOOTER – texte en #b89e7a (cohérent avec ta page maintenance)
    ========================================================================== */
-.footer {
+/* ==========================================================
+   THÈME CLAIR
+========================================================== */
+
+.theme-light .footer {
     background: linear-gradient(
         to top,
-        #808080 0%,
-        #525252 55%,
-        #2f2f2f 100%
+        #E5E5E5 0%,
+        #F1F1F1 55%,
+        #FAFAFA 100%
     );
 
-    border-top: 1px solid #9E9E9E;
+    border-top: 1px solid #CFCFCF;
 
     box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.9),
-        0 -3px 10px rgba(0,0,0,0.12);
+        inset 0 1px 0 rgba(255,255,255,0.95),
+        0 -3px 10px rgba(0,0,0,0.08);
 
-    padding: 15px 15px;
+    padding: 15px;
 }
 
-/* Bloc adresse */
-.footer-adresse {
+.theme-light .footer-adresse {
     width: auto;
     height: auto;
-    background: rgba(255,255,255,0.45);
-    border: 1px solid rgba(255,255,255,0.6);
+
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(210,210,210,0.9);
     border-radius: 10px;
+
     padding: 15px;
     margin-top: 15px;
- justify-content: center;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
+
     box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.8),
-        0 3px 8px rgba(0,0,0,0.12);
-}
-.footer h2,
-.footer h3,
-.footer strong {
-    color: #DED9D9;
+        inset 0 1px 0 rgba(255,255,255,0.95),
+        0 3px 8px rgba(0,0,0,0.08);
 }
 
-.footer p,
-.footer li,
-.footer span,
-.footer a {
-    color: #CCCACA;
+.theme-light .footer h2,
+.theme-light .footer h3,
+.theme-light .footer strong {
+    color: #2C2C2C;
 }
 
-.footer a:hover {
-    color: #F7B845; /* rappel du doré Studio PF */
-}
-.footer-adresse h2,
-.footer-adresse h3,
-.footer-adresse strong {
-    color: #1f1f1f;
+.theme-light .footer p,
+.theme-light .footer li,
+.theme-light .footer span,
+.theme-light .footer a {
+    color: #555555;
 }
 
-.footer-adresse p,
-.footer-adresse li,
-.footer-adresse span,
-.footer-adresse a {
-    color: #3a3a3a;
+.theme-light .footer a:hover {
+    color: #C98200;
 }
 
-.footer-adresse a:hover {
-    color: #8c5a00; /* rappel du doré Studio PF */
+.theme-light .footer-adresse h2,
+.theme-light .footer-adresse h3,
+.theme-light .footer-adresse strong {
+    color: #1F1F1F;
+}
+
+.theme-light .footer-adresse p,
+.theme-light .footer-adresse li,
+.theme-light .footer-adresse span,
+.theme-light .footer-adresse a {
+    color: #444444;
+}
+
+.theme-light .footer-adresse a:hover {
+    color: #A56A00;
+}
+
+
+/* ==========================================================
+   THÈME SOMBRE
+========================================================== */
+
+.theme-dark .footer {
+    background: linear-gradient(
+        to top,
+        #1F1F1F 0%,
+        #2C2C2C 55%,
+        #3B3B3B 100%
+    );
+
+    border-top: 1px solid #5A5A5A;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        0 -3px 10px rgba(0,0,0,0.35);
+
+    padding: 15px;
+}
+
+.theme-dark .footer-adresse {
+    width: auto;
+    height: auto;
+
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+
+    padding: 15px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.04),
+        0 3px 8px rgba(0,0,0,0.35);
+}
+
+.theme-dark .footer h2,
+.theme-dark .footer h3,
+.theme-dark .footer strong {
+    color: #F2F2F2;
+}
+
+.theme-dark .footer p,
+.theme-dark .footer li,
+.theme-dark .footer span,
+.theme-dark .footer a {
+    color: #D0D0D0;
+}
+
+.theme-dark .footer a:hover {
+    color: #F7B845;
+}
+
+.theme-dark .footer-adresse h2,
+.theme-dark .footer-adresse h3,
+.theme-dark .footer-adresse strong {
+    color: #F2F2F2;
+}
+
+.theme-dark .footer-adresse p,
+.theme-dark .footer-adresse li,
+.theme-dark .footer-adresse span,
+.theme-dark .footer-adresse a {
+    color: #D8D8D8;
+}
+
+.theme-dark .footer-adresse a:hover {
+    color: #F7B845;
 }
 /* ==========================================================================
    MENU – inchangé
@@ -1081,14 +1167,39 @@ nav ul li a:hover {
    align-items: center;
         justify-content: center;
 }
-   .cardpartenaire2 {
-   margin-top: 20px;
+  /* ==========================================================
+   THÈME CLAIR
+========================================================== */
+
+.theme-light .cardpartenaire2 {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
-  align-items: center;
-        justify-content: center;
-    margin: 0rem auto;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 10px;
+}
+
+
+/* ==========================================================
+   THÈME SOMBRE
+========================================================== */
+
+.theme-dark .cardpartenaire2 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
     max-width: 650px;
     padding: 10px;
 }
