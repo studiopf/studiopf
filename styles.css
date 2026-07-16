@@ -1183,7 +1183,6 @@ nav ul li a:hover {
    /* Blocs marrons (maintenance-box + card) → on réduit la largeur + marges latérales */
    /* Blocs principaux */
 .maintenance-box,
-.card,
 .card2,
 .card3,
 .cardform,
@@ -1191,21 +1190,25 @@ nav ul li a:hover {
     width: 100%;
     max-width: 92%;
 
-
-
     text-align: center;
 }
-   .card-container3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
- grid-template-columns: repeat(1, minmax(90px, 1fr));
+ .card-container3 {
+        margin-top: 0;
+        margin-bottom: 0;
         align-items: center;
         justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
+        display: grid;
+        grid-template-columns: repeat(1, minmax(90px, 1fr));
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+ .card,
+   {
+        max-width: 94%;            /* encore un peu plus d'air */
+        padding: 10px 10px;
+    }
+   
     .cardpartenaire {
         height: 45px;
     }
@@ -1809,6 +1812,7 @@ button.pf-menu-button {
 }
 
   .menu-mobile ul {
+   width:80%;
     display: flex;
     flex-direction: column;
     gap: 5px; /* espace entre les lignes */
