@@ -1,36 +1,6 @@
 /* ==========================================================================
    RESET & BASE – inchangé
    ===================================================== font-size===================== */
-.fondlilia {
-   background-image: url("../img/fondlilia.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fondknigt {
-    background-image: url("../img/fondknigt.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fondnurgle {
-    background-image: url("../img/fondnurgle.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fondfreezer {
-    background-image: url("../img/fondfreezer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fonddemon {
-    background-image: url("../img/fonddemon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 
 .exemples-photos3.card {
@@ -1928,4 +1898,34 @@ a.surligne:hover::after {
 
 a.surligne:visited {
     color: #D8B06A;
+}
+.fondlilia {
+   background-image: url("../img/fondlilia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondknigt {
+    background-image: url("../img/fondknigt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondnurgle {
+    background-image: url("../img/fondnurgle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondfreezer {
+    background-image: url("../img/fondfreezer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fonddemon {
+    background-image: url("../img/fonddemon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
