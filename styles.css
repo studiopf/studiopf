@@ -1755,7 +1755,7 @@ body.light-mode{
 /* ============================= */
 .pf-menu-button {
     position: fixed !important;
-    top: 10 !important;
+    top: 0 !important;
     right: 15px !important;
     left: auto !important;
 
@@ -1818,7 +1818,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-mobile-nav {
     position: fixed;
-    top: 10px;
+    top: 0px;
     right: -100%;
     width: 85%;
     max-width: 360px;
