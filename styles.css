@@ -49,21 +49,28 @@ textarea {
 }
 .ajust {
     max-width: 900px;
-    width: 100%;
+    width: calc(100% - 30px);
     margin: 0 auto;
+    padding: 0 15px;
+
     line-height: 1.9;
     font-size: 1.08rem;
     word-spacing: 0.05em;
 }
 
-/* Paragraphes justifiés avec alinéa */
+/* Paragraphes justifiés avec espace sur les côtés */
 .ajust p {
+    width: 100%;
+    max-width: 100%;
+
     margin: 0 0 1.6em;
+    padding: 0;
+
     text-align: justify !important;
     text-indent: 2em;
 }
 
-/* Pas d'alinéa inutile sur le dernier paragraphe */
+/* Dernier paragraphe */
 .ajust p:last-child {
     margin-bottom: 0;
 }
@@ -79,11 +86,11 @@ textarea {
     text-align: center !important;
 }
 
-/* Listes alignées à gauche */
+/* Listes */
 .ajust ul,
 .ajust ol {
     margin: 1.5em 0;
-    padding-left: 1.8em;
+    padding-left: 2em;
     text-align: left !important;
 }
 
@@ -92,19 +99,30 @@ textarea {
     text-align: left !important;
 }
 
-/* Citation alignée à gauche */
+/* Citation */
 .ajust blockquote {
-    margin: 2em auto;
-    padding-left: 1em;
+    margin: 2em 0;
+    padding: 0.5em 0 0.5em 1em;
+
     border-left: 4px solid #c8a96a;
+
     font-style: italic;
     line-height: 1.8;
     text-align: left !important;
 }
 
-/* Liens et boutons restent centrés */
-.ajust .button,
-.ajust > a {
+/* Conteneur de bouton centré */
+.ajust .button-container {
+    width: 100%;
+    margin: 1.5em 0;
+    text-align: center !important;
+}
+
+/* Boutons centrés */
+.ajust .button {
+    display: inline-block;
+    width: auto;
+    margin: 10px auto;
     text-align: center !important;
 }
 img {
