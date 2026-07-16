@@ -978,7 +978,7 @@ ${prenom} ${nom}`;
                             <option value="niveau2">Diamond - TableTop++ lvl4</option>
 
                         </select>
-                        <p><strong>Selected level :</strong> <span id="afficheniveau"></span></p><br>
+                       
                     </div>
 
 
@@ -1198,7 +1198,7 @@ ${prenom} ${nom}`;
                             <option value="niveau2">Diamante - TableTop++ niv4</option>
 
                         </select>
-                        <p><strong>Nivel seleccionado :</strong> <span id="afficheniveau"></span></p><br>
+                        
                     </div>
 
 
@@ -1421,7 +1421,7 @@ ${prenom} ${nom}`;
                             <option value="niveau2">Diamant - TableTop++ niv4</option>
 
                         </select>
-                        <p><strong>Niveau sélectionné :</strong> <span id="afficheniveau"></span></p><br>
+                      
                     </div>
 
 
