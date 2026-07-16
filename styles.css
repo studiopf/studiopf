@@ -295,7 +295,7 @@ img {
 }
 
 .maintenance-box {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 0;
     width: 1000px;
     max-width: 1000px;
@@ -952,7 +952,7 @@ nav ul li a:hover {
     border: 1px solid #6b4e2f;
     border-radius: 10px;
     backdrop-filter: blur(4px);
-   margin-top: 5px;
+   margin-top: 2px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.65);
     padding: 0rem;
     transition: all 0.28s ease;
@@ -996,7 +996,7 @@ nav ul li a:hover {
     padding: 0 0px;
 }
    .maintenance-box {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 0;
     width: 250px;
     max-width: 1000px;
@@ -1071,7 +1071,7 @@ nav ul li a:hover {
    font-size: 10px;
     line-height: 1.6;
     text-align: center;
-   margin-top: 8px;
+   margin-top: 4px;
     margin: 0rem auto;
     max-width: 92%;
     color: #e8d9c0;
@@ -1080,7 +1080,7 @@ nav ul li a:hover {
        font-size: 11px;
     line-height: 1.6;
     text-align: center;
-   margin-top: 4px;
+   margin-top: 2px;
     margin: 0rem auto;
     max-width: 92%;
     color: #e8d9c0;
