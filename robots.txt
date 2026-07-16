@@ -1,9 +1,5 @@
 User-agent: *
-Allow: /
 
-Disallow: /admin/
-Disallow: /test/
-Disallow: /temp/
-Disallow: /private/
+Allow: /
 
 Sitemap: https://studiopf.fr/sitemap.xml
