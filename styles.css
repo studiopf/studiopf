@@ -594,7 +594,7 @@ a:hover,
 }
 
 .cardpartenaire p {
-      font-size: 14px;
+      font-size: 16px;
     line-height: 1.55;
    align-items: center;
         justify-content: center;
@@ -1119,7 +1119,7 @@ nav ul li a:hover {
     position: relative;
 }
 .cardpartenaire p {
-      font-size: 10px;
+      font-size: 12px;
     line-height: 1.05;
    align-items: center;
         justify-content: center;
@@ -1453,7 +1453,7 @@ h1 {
         
     }
    .cardpartenaire p {
-      font-size: 9px;
+      font-size: 12px;
     line-height: 1;
    align-items: center;
         justify-content: center;
