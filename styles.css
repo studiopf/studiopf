@@ -1645,7 +1645,12 @@ body{
 =================================================== */
 
 body.light-mode{
- background: linear-gradient(180deg, #F2F2F2 0%, #ADADAD 50%, #525252 100%);
+ background: linear-gradient(
+    180deg,
+    #F6E3C3 0%,   /* Beige / crème clair */
+    #E89A2C 50%,  /* Orange intermédiaire */
+    #D9670A 100%  /* Orange foncé */
+);
     color:#d8cfc2;
 }
 
