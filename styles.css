@@ -323,22 +323,18 @@ img {
     width: auto;
     max-width: 1100px;
     position: relative;
-
-
-    border: 1px solid #6b4e2f;
-    border-radius: 10px;
-
-    backdrop-filter: blur(4px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.65);
-
     text-align: center;
 }
 
+ .maintenance-boxpartenaire p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #3A3A3A;
+}
 .maintenance-box p {
     font-size: 14px;
     line-height: 1.55;
-
-  
+  *
 }
 
 .maintenance-box button {
@@ -534,11 +530,11 @@ a:hover,
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
-   background: #F2F2F2;
+   
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 0 0px;
 }
 .card-container2logo {
@@ -553,20 +549,15 @@ a:hover,
 
 
 .cardpartenaire {
-    width: 50%;
-  
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0 auto;
-
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
+       background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.6);
     border-radius: 10px;
-
     overflow: hidden;
-
     box-shadow: 0 3px 10px rgba(0,0,0,.08);
     transition: transform .26s ease,
                 box-shadow .26s ease,
@@ -1035,11 +1026,10 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
-      background: #F2F2F2;
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
-    max-width: 600px;
+    max-width: 650px;
     padding: 0 0px;
 }
    .maintenance-box {
@@ -1067,16 +1057,12 @@ nav ul li a:hover {
     width: auto;
     max-width: 650px;
     position: relative;
-
-
-   
-    border: 1px solid #6b4e2f;
-    border-radius: 10px;
-
-    backdrop-filter: blur(4px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.65);
-
     text-align: center;
+}
+   .maintenance-boxpartenaire p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #3A3A3A;
 }
    .exemples-photos{
     display:flex;
@@ -1275,7 +1261,7 @@ nav ul li a:hover {
 }
    
     .cardpartenaire {
-        height: 45px;
+        height: 90px;
        align-items: center;
         justify-content: center;
     }
@@ -1423,7 +1409,7 @@ h1 {
         padding: 10px 10px;
     }
     .cardpartenaire {
-        height: 42px;
+        height: 60px;
     }
 
     .language-selector img {
