@@ -1899,33 +1899,63 @@ a.surligne:hover::after {
 a.surligne:visited {
     color: #D8B06A;
 }
-.fondlilia {
-   background-image: url("../img/fondlilia.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fondknigt {
-    background-image: url("../img/fondknigt.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fondnurgle {
-    background-image: url("../img/fondnurgle.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.fondfreezer {
-    background-image: url("../img/fondfreezer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+/* Toutes les classes de fond deviennent des filigranes */
+.fondlilia,
+.fondknigt,
+.fondnurgle,
+.fondfreezer,
 .fonddemon {
-    background-image: url("../img/fonddemon.png");
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Filigrane */
+.fondlilia::before,
+.fondknigt::before,
+.fondnurgle::before,
+.fondfreezer::before,
+.fonddemon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: contain;   /* ou 70% si tu préfères */
+
+    opacity: 0.10;              /* transparence du filigrane */
+    filter: grayscale(20%);
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+/* Le contenu passe au-dessus */
+.fondlilia > *,
+.fondknigt > *,
+.fondnurgle > *,
+.fondfreezer > *,
+.fonddemon > * {
+    position: relative;
+    z-index: 1;
+}
+.fondlilia::before {
+    background-image: url("../img/fondlilia.png");
+}
+
+.fondknigt::before {
+    background-image: url("../img/fondknigt.png");
+}
+
+.fondnurgle::before {
+    background-image: url("../img/fondnurgle.png");
+}
+
+.fondfreezer::before {
+    background-image: url("../img/fondfreezer.png");
+}
+
+.fonddemon::before {
+    background-image: url("../img/fonddemon.png");
 }
