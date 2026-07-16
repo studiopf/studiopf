@@ -1,15 +1,7 @@
 /* ==========================================================================
    RESET & BASE – inchangé
    ===================================================== font-size===================== */
-.button-center {
-    text-align: center !important;
-    text-indent: 0 !important;
-    margin-top: 25px !important;
-}
 
-.button-center .button {
-    display: inline-block;
-}
 .card-container3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
