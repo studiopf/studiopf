@@ -3735,6 +3735,7 @@ function changelanguepeinture() {
 <p>
     <em>📸 Exemples d'armées peintes réalisées par Studio PF.</em>
 </p>
+  <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 </div>
 
 <div class="maintenance-box ajust">
@@ -4057,6 +4058,9 @@ function changelanguemenu() {
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
         🖼️ Gallery
     </a></li>
+            <li><a href="pourquoi.html" onclick="loadPage('pourquoi.html'); return false;">
+        ❓ FAQ
+    </a></li>
 
     <li><a href="mailto:studiopeinturefigurine@gmail.com">
         ✉️ Contact Me
@@ -4119,6 +4123,9 @@ function changelanguemenu() {
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
         🖼️ Galería
     </a></li>
+            <li><a href="pourquoi.html" onclick="loadPage('pourquoi.html'); return false;">
+        ❓ FAQ
+    </a></li>
 
     <li><a href="mailto:studiopeinturefigurine@gmail.com">
         ✉️ Contacto
@@ -4174,6 +4181,9 @@ function changelanguemenu() {
 
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
         🖼️ Galerie
+    </a></li>
+            <li><a href="pourquoi.html" onclick="loadPage('pourquoi.html'); return false;">
+        ❓ FAQ
     </a></li>
 
     <li><a href="mailto:studiopeinturefigurine@gmail.com">
