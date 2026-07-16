@@ -320,8 +320,8 @@ img {
  .maintenance-boxpartenaire {
     margin-top: 10px;
     margin-bottom: 0;
-    width: 1000px;
-    max-width: 1000px;
+    width: auto;
+    max-width: 1100px;
     position: relative;
 
 
@@ -534,10 +534,11 @@ a:hover,
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
+   background: #F2F2F2;
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
-    max-width: 600px;
+    max-width: 1000px;
     padding: 0 0px;
 }
 .card-container2logo {
@@ -553,8 +554,7 @@ a:hover,
 
 .cardpartenaire {
     width: 50%;
-    height: 62px;
-
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1035,10 +1035,11 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
+      background: #F2F2F2;
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
-    max-width: 250px;
+    max-width: 600px;
     padding: 0 0px;
 }
    .maintenance-box {
@@ -1063,10 +1064,9 @@ nav ul li a:hover {
    .maintenance-boxpartenaire {
     margin-top: 10px;
     margin-bottom: 0;
-    width: 250px;
-    max-width: 1000px;
+    width: auto;
+    max-width: 650px;
     position: relative;
-
 
 
    
