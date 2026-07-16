@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    RESET & BASE – inchangé
    ===================================================== font-size===================== */
@@ -18,7 +19,7 @@
 }
 
  .exemples-photos3 {
-  
+
     grid-template-columns: 1fr;
  display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -158,7 +159,7 @@ img {
     border: 2px solid #f4c876;         /* bordure jaune/dorée principale */
     border-radius: 10px;
     backdrop-filter: blur(6px);         /* effet verre dépoli */
-    box-shadow: 
+    box-shadow:
         0 6px 20px rgba(0, 0, 0, 0.5),
         inset 0 1px 0 rgba(255, 218, 121, 0.12); /* léger reflet intérieur */
     transition: all 0.28s ease;
@@ -174,12 +175,12 @@ img {
 .button:hover,
 .button:focus {
      filter:brightness(1.08);
-   
+
     color: #ffffff;
     background: rgba(50, 35, 20, 0.85);
     border-color: #ffda79;             /* jaune plus lumineux au survol */
     transform: translateY(-3px) scale(1.04);
-    box-shadow: 
+    box-shadow:
         0 10px 28px rgba(244, 200, 118, 0.35),
         0 0 0 3px rgba(244, 200, 118, 0.18);
     outline: none;
@@ -188,7 +189,7 @@ img {
 /* Active / clic */
 .button:active {
     transform: translateY(-1px) scale(0.98);
-    box-shadow: 
+    box-shadow:
         0 4px 10px rgba(244, 200, 118, 0.25);
 }
 
@@ -222,7 +223,7 @@ img {
 .info-container {
     margin-top: 0;
     margin-bottom: 0;
-    border: 0px;
+    border: 0;
     width: 100%;
     position: relative;
     text-align: center;
@@ -232,7 +233,7 @@ img {
     background: linear-gradient(to bottom, #8B0000, #FF6347);
     margin-top: 0;
     margin-bottom: 0;
-    border: 0px;
+    border: 0;
     width: 100%;
     position: relative;
       font-size: 18px;
@@ -334,7 +335,6 @@ img {
 .maintenance-box p {
     font-size: 14px;
     line-height: 1.55;
-  *
 }
 
 .maintenance-box button {
@@ -345,17 +345,17 @@ img {
     position: relative;
     width: 200px; /* Augmenté pour PC */
     height: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0 8px 16px rgba(0,0,0,0.7));
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .logo-a {
     width: 100%;
     height: auto;
-    padding: 0px;
+    padding: 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -477,7 +477,7 @@ li, .p-social {
        font-size: 14px;
     line-height: 1.6;
     text-align: center;
-   margin-top: 0px;
+   margin-top: 0;
     margin: 0rem auto;
     max-width: 92%;
     color: #e8d9c0;
@@ -532,16 +532,16 @@ a:hover,
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
-   
+
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
     max-width: 1100px;
-    padding: 10 10px;
+    padding: 10px;
 }
 .card-container2logo {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -654,7 +654,7 @@ a:hover,
 .footer h2,
 .footer h3,
 .footer strong {
-    color: ##DED9D9;
+    color: #DED9D9;
 }
 
 .footer p,
@@ -732,7 +732,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 0px;
     padding: 0rem 0 0rem;
- 
+
     margin-bottom: 0;
 }
 
@@ -766,7 +766,7 @@ nav ul li a:hover {
 .language-selector img {
     width: 30px;
     height: auto;
-    border-radius: 0px;
+    border-radius: 0;
     transition: all 0.26s ease;
     cursor: pointer;
     /* Plus de border ni de box-shadow → pas de cadre */
@@ -817,7 +817,7 @@ nav ul li a:hover {
     margin-bottom: 0;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 0px;
+    border-radius: 0;
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -846,7 +846,7 @@ nav ul li a:hover {
 .lightbox img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .lightbox::after {
@@ -860,12 +860,12 @@ nav ul li a:hover {
 }
 
 .menugallery {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px; /* Réduit le gap pour moins d'écartement */
-    padding: 0px;
+    padding: 0;
 }
 
 .menugallery button {
@@ -887,7 +887,7 @@ nav ul li a:hover {
 .carroussel-container {
     margin-top: 0;
     margin-bottom: 0;
-    border: 0px;
+    border: 0;
     width: 100%;
     position: relative;
     max-width: 600px; /* Augmenté pour plus grand sur PC */
@@ -1028,7 +1028,7 @@ nav ul li a:hover {
 {
   padding: 3px;
 }
-  
+
 .card-container2 {
    margin-top: 2px;
     display: grid;
@@ -1050,7 +1050,7 @@ nav ul li a:hover {
         justify-content: center;
     margin: 0rem auto;
     max-width: 650px;
-    padding: 10 10px;
+    padding: 10px;
 }
    .maintenance-box {
     margin-top: 10px;
@@ -1100,7 +1100,7 @@ nav ul li a:hover {
     box-shadow:0 2px 10px rgba(0,0,0,.35);
     object-fit:cover;
 }
-   
+
     .center {
         justify-content: center;
         align-items: center;
@@ -1115,7 +1115,7 @@ nav ul li a:hover {
 /* bandeau défile */
 .info-container {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     position: relative;
 }
 .cardpartenaire p {
@@ -1124,12 +1124,12 @@ nav ul li a:hover {
    align-items: center;
         justify-content: center;
 }
-  
+
 .info {
     background: linear-gradient(to bottom, #8B0000, #FF6347);
     margin-top: 0;
     margin-bottom: 0;
-    border: 0px;
+    border: 0;
     width: 100%;
     position: relative;
     font-size: 10px;
@@ -1140,7 +1140,7 @@ nav ul li a:hover {
     animation: info 2s linear infinite alternate;
 }
 
-   li, -social {
+   li, .p-social {
    font-size: 10px;
     line-height: 1.6;
     text-align: center;
@@ -1158,7 +1158,7 @@ nav ul li a:hover {
     max-width: 92%;
     color: #e8d9c0;
 }
-   
+
 
     h1 {
           font-size: 12px;
@@ -1210,20 +1210,20 @@ nav ul li a:hover {
         max-height: 100%;
          width: 300px;
         height: 300px;
-        border-radius: 0px;
+        border-radius: 0;
     }
 
     .lightbox::after {
         content: '✕';
         position: absolute;
-        top: 0px;
-        right: 00px;
+        top: 0;
+        right: 0;
           font-size: 18px;
         color: white;
         cursor: pointer;
     }
 
-    
+
 
     nav ul {
         gap: 4px 8px;
@@ -1234,7 +1234,7 @@ nav ul li a:hover {
       font-size: 12px;
     }
 
-   
+
     .card-container2 {
         margin-top: 0;
         margin-bottom: 0;
@@ -1249,7 +1249,7 @@ nav ul li a:hover {
 
 /* On s'assure que le contenu principal respire aussi */
     #contenu-principal {
-       
+
     }
    /* Blocs marrons (maintenance-box + card) → on réduit la largeur + marges latérales */
    /* Blocs principaux */
@@ -1272,14 +1272,14 @@ nav ul li a:hover {
         justify-content: center;
 }
 
-  
+
 .card-container3 .card {
     width: auto;
     min-width: 0;
    align-items: center;
         justify-content: center;
 }
-   
+
     .cardpartenaire {
   width: 300px;
     height: 250px;
@@ -1292,7 +1292,7 @@ nav ul li a:hover {
        align-items: center;
         justify-content: center;
     }
-   
+
    .cardpartenaire img {
     background: #fff;
       width: auto;
@@ -1324,12 +1324,12 @@ nav ul li a:hover {
     }
 
     .menugallery {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 2px; /* Réduit sur mobile */
-        padding: 0px;
+        padding: 0;
     }
 
     .menugallery button {
@@ -1386,8 +1386,8 @@ nav ul li a:hover {
         flex: 0 0 100%;
     }
 
- 
- 
+
+
    .logo {
         width: 150px;          /* ← agrandi (au lieu de 150px) */
         max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
@@ -1450,7 +1450,7 @@ h1 {
   height: 200px;
     max-width: 100%;
     max-height: 100%;
-        
+
     }
    .cardpartenaire p {
       font-size: 12px;
@@ -1462,7 +1462,7 @@ h1 {
     .language-selector img {
         width: 18px;
     }
-  
+
 
 
 }
@@ -1718,11 +1718,11 @@ body.light-mode .theme-toggle {
     #080404 100%
 );
     --text:#e8d9c0;
-    
+
     /* Maintenance Box - Mode Sombre */
     --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
     --box-border: #8b5f3a;
-    
+
     --button-bg:#2a1c12;
     --button-text:#fff3d9;
     --button-border:#f4c876;
@@ -1735,17 +1735,17 @@ body.light-mode .theme-toggle {
 body.light-mode{
     --bg: linear-gradient(180deg, #F2F2F2 0%, #D9D9D9 40%, #ADADAD 100%);
     --text:#e8d9c0;
-    
+
     /* Maintenance Box - Mode Sombre */
     --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
     --box-border: #8b5f3a;
-    
+
    --button-bg:#6b4b2f;
     --button-text:#fff3d9;
     --button-border:#f7d88b;
     --title:#ffe39b;
 }
-}
+
 .header {
     display:flex;
     justify-content:flex-start;
@@ -1818,7 +1818,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-mobile-nav {
     position: fixed;
-    top: 0px;
+    top: 0;
     right: -100%;
     width: 85%;
     max-width: 360px;
@@ -1936,15 +1936,15 @@ button.pf-menu-button {
 }
   .menu-mobilefoot {
        background: transparent;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 18px;
 }
 
 .menu {
      background: transparent;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 18px;
 }
 /* ============================= */
