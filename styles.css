@@ -551,8 +551,10 @@ a:hover,
 
 
 .cardpartenaire {
+  display: flex;
+    flex-direction: column;
+    gap: 20px; /* espace entre les deux div */
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -1269,6 +1271,9 @@ nav ul li a:hover {
 }
    
     .cardpartenaire {
+        display: flex;
+    flex-direction: column;
+    gap: 20px; /* espace entre les deux div */
         height: 110px;
        align-items: center;
         justify-content: center;
