@@ -1702,7 +1702,6 @@ body.light-mode{
 /* Force le bouton hamburger à droite */
 button.pf-menu-button {
     position: fixed !important;
-    top: 30px !important;
     right: 15px !important;
     left: unset !important;
     margin-left: auto !important;
@@ -1724,7 +1723,7 @@ button.pf-menu-button {
 /* ============================= */
 .pf-mobile-nav {
     position: fixed;
-    top: 50px !important;
+   
     right: -100%;
     width: 85%;
     max-width: 360px;
