@@ -593,6 +593,12 @@ a:hover,
     text-decoration: none;
 }
 
+.cardpartenaire p {
+      font-size: 12px;
+    line-height: 1.55;
+   align-items: center;
+        justify-content: center;
+}
 /* Images : containment maximal */
 .cardpartenaire img {
     width: auto;
@@ -1113,8 +1119,8 @@ nav ul li a:hover {
     position: relative;
 }
 .cardpartenaire p {
-      font-size: 14px;
-    line-height: 1.55;
+      font-size: 10px;
+    line-height: 1.05;
    align-items: center;
         justify-content: center;
 }
@@ -1286,6 +1292,7 @@ nav ul li a:hover {
        align-items: center;
         justify-content: center;
     }
+   
    .cardpartenaire img {
     background: #fff;
       width: auto;
@@ -1445,6 +1452,12 @@ h1 {
     max-height: 100%;
         
     }
+   .cardpartenaire p {
+      font-size: 9px;
+    line-height: 1;
+   align-items: center;
+        justify-content: center;
+}
 
     .language-selector img {
         width: 18px;
