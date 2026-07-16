@@ -245,35 +245,67 @@ img {
 }
 
 /* Style pour centrer et réduire */
-.widget-container {
-    /* Fond */
+/* ==========================
+   THÈME CLAIR
+========================== */
+
+.theme-light .widget-container {
     background: linear-gradient(180deg, #F7F7F7 0%, #E7E7E7 55%, #D9D9D9 100%);
 
-    /* Bordure */
     border: 1px solid #B8B8B8;
     border-radius: 12px;
 
-    /* Relief */
     box-shadow:
         inset 0 2px 2px rgba(255,255,255,0.9),
         inset 0 -2px 4px rgba(0,0,0,0.08),
         0 4px 10px rgba(0,0,0,0.15);
 
-    /* Mise en page */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    /* Taille */
     transform: scale(0.7);
     transform-origin: center;
 
-    /* Espacement */
     padding: 10px;
 
-    /* Animation douce */
-    transition: all 0.25s ease;
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* ==========================
+   THÈME SOMBRE
+========================== */
+
+.theme-dark .widget-container {
+    background: linear-gradient(180deg, #3A3A3A 0%, #2A2A2A 55%, #1B1B1B 100%);
+
+    border: 1px solid #5A5A5A;
+    border-radius: 12px;
+
+    box-shadow:
+        inset 0 2px 2px rgba(255,255,255,0.05),
+        inset 0 -2px 5px rgba(0,0,0,0.55),
+        0 6px 14px rgba(0,0,0,0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transform: scale(0.7);
+    transform-origin: center;
+
+    padding: 10px;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 #contenu-principal {
