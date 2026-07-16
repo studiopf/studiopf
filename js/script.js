@@ -309,20 +309,20 @@ function changelangueforma() {
         <div class="card">
           <h3>🕐 Cours 1h</h3>
           <p>50€/h</p>
-          <p>Pour un suivi de projet régulier</p>
-          <p>Possibilité de placer l’heure en fin de journée, dans l’idéal début de matinée ou début après-midi.</p>
+          <p>Pour un suivi régulier</p>
+          
         </div>
         <div class="card">
           <h3>⏳ Cours 3h</h3>
           <p>150€</p>
-          <p>La solution conseillée pour démarrer la peinture ou un projet.</p>
-          <p>9h-12h, 14h-17h ou 16h-19h.</p>
+          <p>Pour démarrer la peinture</p>
+       
         </div>
         <div class="card">
           <h3>🔥 Cours 5h</h3>
           <p>200€</p>
-          <p>Grosse session pour avancer ou démarrer sur un gros projet.</p>
-          <p>14h-19h</p>
+          <p>Pour lancer projet.</p>
+         
         </div>
       </div>
 
