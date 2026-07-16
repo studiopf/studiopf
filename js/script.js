@@ -2597,6 +2597,13 @@ function changelanguequisuisje() {
 <p>
     A few months later, after a work accident followed by a layoff, and thanks to the support of my wife <strong>Gaëlle</strong>, I decided to turn this idea into reality. This is how <strong>Studio PF</strong> was born, with a simple ambition: to offer a professional painting service capable of bringing every figurine to life, whether intended for gaming, collecting, or competition.
 </p>
+<div class="exemples-photos">
+    <img src="img/covid.jpg" alt="One of the units printed and painted during the COVID pandemic...">
+</div>
+
+<p>
+    <em>📸 One of the units printed and painted during the COVID pandemic...</em>
+</p>
 <a href="peinturecommission.html"
    onclick="loadPage('peinturecommission.html'); return false;"
    class="button">
@@ -2789,6 +2796,13 @@ function changelanguequisuisje() {
 </p>
 <p>
     Algunos meses después, tras un accidente laboral seguido de un despido, y gracias al apoyo de mi esposa <strong>Gaëlle</strong>, decidí convertir esa idea en realidad. Así nació <strong>Studio PF</strong>, con una ambición sencilla: ofrecer un servicio de pintura profesional capaz de dar vida a cada figurilla, ya sea destinada al juego, a la colección o a la competición.
+</p>
+<div class="exemples-photos">
+    <img src="img/covid.jpg" alt="Una de las unidades impresa y pintada durante la pandemia de COVID...">
+</div>
+
+<p>
+    <em>📸 Una de las unidades impresa y pintada durante la pandemia de COVID...</em>
 </p>
 <a href="peinturecommission.html"
    onclick="loadPage('peinturecommission.html'); return false;"
@@ -2999,7 +3013,13 @@ function changelanguequisuisje() {
 <p>
     Quelques mois plus tard, après un accident du travail suivi d'un licenciement, et grace au soutien de mon épouse <strong>Gaëlle</strong>, j'ai décidé de transformer cette idée en réalité. C'est ainsi qu'est né <strong>Studio PF</strong>, avec une ambition simple : proposer un service de peinture professionnel capable de donner vie à chaque figurine, qu'elle soit destinée au jeu, à la collection ou à la compétition.
 </p>
+<div class="exemples-photos">
+     <img src="img/covid.jpg" alt="Une des unités imprimé et peinte pendant le Covid...">
+    </div>
 
+<p>
+    <em>📸 Une des unités imprimé et peinte pendant le Covid...</em>
+</p>
 <a href="peinturecommission.html"
    onclick="loadPage('peinturecommission.html'); return false;"
    class="button">
