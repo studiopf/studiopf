@@ -4595,7 +4595,7 @@ function changelanguefoot() {
     <p>
         Contact 📧 :
         <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
-        - Phone 📞 :
+        </p><p>Phone 📞 :
         <a href="tel:+33775860837">+33 7 75 86 08 37</a>
     </p>
 </div>
@@ -4626,7 +4626,7 @@ else if (currentLanguage === "spanish") {
     <p>
         Contacto 📧 :
         <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
-        - Teléfono 📞 :
+         </p><p>Teléfono 📞 :
         <a href="tel:+33775860837">07 75 86 08 37</a>
     </p>
 </div>
@@ -4657,7 +4657,7 @@ else if (currentLanguage === "spanish") {
             <p>
                 Contact 📧 :
                 <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
-                - Téléphone 📞 :
+                </p><p>Téléphone 📞 :
                 <a href="tel:+33775860837">07 75 86 08 37</a>
             </p>
         </div>
