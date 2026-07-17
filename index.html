@@ -106,37 +106,65 @@ type="image/png">
 
 </head>
 <body>
+<div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
 
 
     <header>
    
-        <button id="themeToggle" class="theme-toggle">🌙</button>
-        
-            <div id="info-container" class="info-container">
-        <p class="info" id="infoParagraph">.</p>  
+<div class="header-top">
+
+    <!-- Logo -->
+    <div class="header-logo">
+        <a href="index.html"
+           onclick="loadPage('index.html'); return false;"
+           class="logo-a"
+           aria-label="Retour à l'accueil">
+
+            <img
+                src="/img/logo.png"
+                alt="Studio PF Logo"
+                class="logo"
+                data-no-lightbox
+                fetchpriority="high">
+        </a>
     </div>
 
-<div id="logo-contenu" class="card-container2logo">
-        <div class="cardlogoimg">
-    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <!-- Icônes -->
+    <div class="header-contact">
 
-        <img src="/img/logo.png" alt="Studio PF Logo" data-no-lightbox class="logo" fetchpriority=high>
+        <a href="mailto:studiopeinturefigurine@gmail.com"
+           aria-label="Envoyer un email">
+            <i class="fas fa-envelope"></i>
+        </a>
 
-         </a>    
-</div>  
-   </div>
+        <a href="tel:+33775860837"
+           aria-label="Téléphoner">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+
+        <a href="https://www.instagram.com/studiopf.fr/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+    </div>
+
     <!-- Bouton hamburger -->
-<button
-    id="pf-menu-button"
-    class="pf-menu-button"
-    aria-label="Ouvrir le menu"
-    aria-expanded="false"
->
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+    <button
+        id="pf-menu-button"
+        class="pf-menu-button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false">
 
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</div>
 <!-- Menu mobile -->
 <nav id="pf-mobile-nav" class="pf-mobile-nav">
 
