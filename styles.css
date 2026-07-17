@@ -764,20 +764,15 @@ body.light-mode .footer-adresse {
     width: auto;
     height: auto;
 
-    background: rgba(255,255,255,0.75);
-    border: 1px solid rgba(210,210,210,0.9);
-    border-radius: 10px;
+   
 
     padding: 15px;
     margin-top: 15px;
 
-    display: flex;
     justify-content: center;
     align-items: center;
 
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.95),
-        0 3px 8px rgba(0,0,0,0.08);
+   
 }
 
 body.light-mode .footer h2,
@@ -840,20 +835,12 @@ body.light-mode .footer-adresse a:hover {
     width: auto;
     height: auto;
 
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 10px;
 
-    padding: 15px;
     margin-top: 15px;
 
-    display: flex;
     justify-content: center;
     align-items: center;
 
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.04),
-        0 3px 8px rgba(0,0,0,0.35);
 }
 
  .footer h2,
