@@ -3,7 +3,8 @@
    margin-top: 0;
     margin-bottom: 0;
     border: 0px;
-    width: 100%;
+ width: 100%;
+   max-width: 1200px;
     position: relative;
     text-align: center;
 }
@@ -106,7 +107,7 @@
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   max-width: 400px;
+   max-width: 760px;
     position: relative;
     text-align: center;
 }
@@ -1157,7 +1158,7 @@ nav {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   max-width: 300px;
+   max-width: 350px;
     position: relative;
     text-align: center;
 }
@@ -1594,7 +1595,7 @@ maintenance-box-fieldset {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   max-width: 250px;
+   max-width: 400px;
     position: relative;
     text-align: center;
 }
