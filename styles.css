@@ -1972,7 +1972,6 @@ body.light-mode {
     #D9670A 100%
 );
     --text:#e8d9c0;
-}
 
     /* Maintenance Box - Mode Sombre */
     --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
