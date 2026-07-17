@@ -116,6 +116,22 @@
     padding: 0;
 }
 @media (max-width: 768px) {
+   /* Filigrane */
+.fonddg::before,
+.fonddg::before,
+.fondslann::before,
+.fonddracaufeu::before,
+.fondlilia::before,
+.fondmoi::before,
+.fondknigt::before,
+.fondnurgle::before,
+.fondfreezer::before,
+.fonddemon::before {
+    /* Taille fixe */
+    background-size: 760px auto;
+    
+}
+
    .maintenance-box {
    width: 100%;
     max-width: 760px;
@@ -1165,9 +1181,25 @@ nav {
 }
 
 /* ==========================================================================
-   MEDIA QUERIES – base résolution (mobile first)
+    QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+      /* Filigrane */
+.fonddg::before,
+.fonddg::before,
+.fondslann::before,
+.fonddracaufeu::before,
+.fondlilia::before,
+.fondmoi::before,
+.fondknigt::before,
+.fondnurgle::before,
+.fondfreezer::before,
+.fonddemon::before {
+    /* Taille fixe */
+    background-size: 640px auto;
+    
+}
+
     .maintenance-box {
    width: 100%;
     max-width: 640px;
@@ -1576,6 +1608,21 @@ body.light-mode .cardpartenaire2 {
 
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
+      /* Filigrane */
+.fonddg::before,
+.fonddg::before,
+.fondslann::before,
+.fonddracaufeu::before,
+.fondlilia::before,
+.fondmoi::before,
+.fondknigt::before,
+.fondnurgle::before,
+.fondfreezer::before,
+.fonddemon::before {
+    /* Taille fixe */
+    background-size: 400px auto;
+}
+
     .maintenance-box {
    width: 100%;
     max-width: 400px;
@@ -2280,7 +2327,7 @@ a.surligne:visited {
     background-size: contain;
 
     /* Taille fixe */
-    background-size: 500px auto;
+    background-size: 1200px auto;
     
     /* beaucoup moins gris */
     filter: grayscale(35%);
