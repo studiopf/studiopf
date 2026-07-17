@@ -10,10 +10,16 @@
 }
 
 .maintenance-boxpartenaire {
-    background:var(--box-bg);
+   margin-top: 10px;
+    margin-bottom: 0;
+    width: 1000px;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+   background:var(--box-bg);
     border:1px solid var(--box-border);
 }
-.maintenance-box-fieldset {
+.maintenance-box-fieldset, cardform {
     margin-top: 10px;
     margin-bottom: 0;
     width: 1000px;
