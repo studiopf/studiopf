@@ -424,10 +424,11 @@ body.light-mode .widget-container {
 }
 
 #contenu-principal {
-    /* Ajouté pour centrage */
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-top: 70px;
 }
 
 
@@ -1476,9 +1477,7 @@ body.light-mode .cardpartenaire2 {
     }
 
 /* On s'assure que le contenu principal respire aussi */
-    #contenu-principal {
 
-    }
    /* Blocs marrons (maintenance-box + card) → on réduit la largeur + marges latérales */
    /* Blocs principaux */
 .maintenance-box,
