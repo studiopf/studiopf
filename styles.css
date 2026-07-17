@@ -11,7 +11,7 @@
 
 .maintenance-box{
     background:var(--box-bg);
-    border:1px solid var(--box-border);
+    border:1px solid var();
 }
 /* =========================
    Barre supérieure
@@ -277,7 +277,7 @@ img {
     color: --button-color;
     text-align: center;
     text-decoration: none;
-    background: rgba(30, 20, 12, 0.75); /* même fond que .card / .maintenance-box */
+    background: rgba(30, 20, 12, 0.75); /* même fond que .card /  */
     border: 2px solid --button-border;          /* bordure jaune/dorée principale */
     border-radius: 10px;
     backdrop-filter: blur(6px);         /* effet verre dépoli */
@@ -405,20 +405,7 @@ body.light-mode .widget-container {
     max-width: 780px;
 }
 
-.maintenance-box {
-    margin-top: 10px;
-    margin-bottom: 0;
-    width: 1000px;
-    max-width: 1000px;
-    position: relative;
-    background: rgba(30, 20, 12, 0.75);
-    border: 1px solid #6b4e2f;
-    border-radius: 10px;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.65);
-    text-align: center;
-}
-maintenance-box-fieldset {
+tenance-box-fieldset {
     margin-top: 10px;
     margin-bottom: 0;
     width: 1000px;
@@ -1229,6 +1216,7 @@ body.light-mode .cardpartenaire2 {
     position: relative;
     text-align: center;
 }
+    
    maintenance-box-fieldset {
     margin-top: 10px;
     margin-bottom: 0;
@@ -1238,6 +1226,15 @@ body.light-mode .cardpartenaire2 {
     text-align: center;
 }
 
+    .maintenance-box {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 1000px;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+}
+main
    .maintenance-boxpartenaire {
     margin-top: 15px;
     margin-bottom: 0;
@@ -1736,12 +1733,6 @@ body,
 
 
 
-body.light-mode .maintenance-box{
-        background: rgba(30, 20, 12, 0.75);
-    border: 1px solid #6b4e2f;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
 body.light-mode .button{
 
     display:inline-block;
@@ -1847,6 +1838,7 @@ body.light-mode .theme-toggle {
       --footer-ahover: #F7B845;
     /* Maintenance Box - Mode Sombre */
     --box-border: #8b5f3a;
+   --box-bg: #331B1B;
      --button-color: #ffda79; 
     --button-border: #f4c876;
 --button-hover: #ffda79;
@@ -1883,6 +1875,7 @@ body.light-mode {
 
     /* Maintenance Box - Mode Sombre */
     --box-border: #8b5f3a;
+    --box-bg: #331B1B;
    --button-bg:#6b4b2f;
     --button-text:#fff3d9;
     --button-border:#f7d88b;
