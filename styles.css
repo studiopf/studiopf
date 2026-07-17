@@ -4,11 +4,17 @@
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   width-max: 1100px;
+   width-max: 1300px;
     position: relative;
     text-align: center;
 }
 
+.maintenance-box{
+    background:var(--box-bg);
+    border:1px solid var(--box-border);
+    border:1px solid #6b4e2f;
+    box-shadow:0 12px 30px rgba(0,0,0,.75);
+}
 /* =========================
    Barre supérieure
 ========================= */
@@ -81,6 +87,19 @@
     padding: 0;
 }
 @media (max-width: 768px) {
+    .header-contact{
+    margin-right:50px;
+}
+
+.header-contact a{
+    font-size:1.05rem;
+
+}
+
+.header-contact a:hover{
+    color:var(--accent-color);
+    transform:scale(1.1);
+}
     .header-logo .logo{
     height:auto;
     width:70px;
@@ -90,7 +109,7 @@
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   width-max: 350px;
+   width-max: 400px;
     position: relative;
     text-align: center;
 }
@@ -786,7 +805,7 @@ body.light-mode .footer a {
 }
 
 body.light-mode .footer a:hover {
-    color: #C98200;
+    color: #2C2C2C;
 }
 
 body.light-mode .footer-adresse h2,
@@ -831,10 +850,7 @@ body.light-mode .footer-adresse a:hover {
  .footer-adresse {
     width: auto;
     height: auto;
-
-
     margin-top: 15px;
-
     justify-content: center;
     align-items: center;
 
@@ -1277,11 +1293,6 @@ body.light-mode .cardpartenaire2 {
     width: 250px;
     max-width: 1000px;
     position: relative;
-    background: rgba(30, 20, 12, 0.75);
-    border: 1px solid #6b4e2f;
-    border-radius: 10px;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.65);
     text-align: center;
 }
    maintenance-box-fieldset {
@@ -1477,7 +1488,6 @@ body.light-mode .cardpartenaire2 {
 .logopart {
     width: 100%;
     max-width: 92%;
-
     text-align: center;
 }
  .card-container3 {
@@ -1729,14 +1739,6 @@ body,
    MODE SOMBRE (par défaut)
 =================================================== */
 
-.maintenance-box{
-    background:var(--box-bg);
-    border:1px solid var(--box-border);
-    border:1px solid #6b4e2f;
-    box-shadow:0 12px 30px rgba(0,0,0,.75);
-}
-
-
 
 .button{
     display:inline-block;
@@ -1899,7 +1901,6 @@ body.light-mode .theme-toggle {
     --text:#e8d9c0;
 
     /* Maintenance Box - Mode Sombre */
-    --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
     --box-border: #8b5f3a;
 
     --button-bg:#2a1c12;
@@ -1927,7 +1928,6 @@ body.light-mode {
     --text:#e8d9c0;
 
     /* Maintenance Box - Mode Sombre */
-    --box-bg: rgba(35, 24, 16, 0.92);     /* Marron plus foncé */
     --box-border: #8b5f3a;
 
    --button-bg:#6b4b2f;
