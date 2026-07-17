@@ -11,7 +11,7 @@
 
 .maintenance-box{
     background:var(--box-bg);
-    border:1px solid var();
+    border:1px solid var(--box-border);
 }
 /* =========================
    Barre supérieure
@@ -70,7 +70,7 @@
     background:var(--header-color);
 }
 .widget-container {
-    width: 100%:
+    width: 100%;
      max-width: 1100px;
     margin: 0 auto;
 }
@@ -274,11 +274,11 @@ img {
     font-family: 'Segoe UI', system-ui, sans-serif;
     font-size: 12px;
     font-weight: 600;
-    color: --button-color;
+   color: var(--button-color);
     text-align: center;
     text-decoration: none;
     background: rgba(30, 20, 12, 0.75); /* même fond que .card /  */
-    border: 2px solid --button-border;          /* bordure jaune/dorée principale */
+   border: 2px solid var(--button-border);      /* bordure jaune/dorée principale */
     border-radius: 10px;
     backdrop-filter: blur(6px);         /* effet verre dépoli */
     box-shadow:
@@ -2207,6 +2207,10 @@ a.surligne:visited {
 }
 /* Toutes les classes de fond deviennent des filigranes */
 .fondmoi,
+.fonddg,
+.fonddg,
+.fondslann,
+.fonddracaufeu,
 .fondlilia,
 .fondknigt,
 .fondnurgle,
@@ -2218,28 +2222,49 @@ a.surligne:visited {
 }
 
 /* Filigrane */
+.fonddg::before,
+.fonddg::before,
+.fondslann::before,
+.fonddracaufeu::before,
 .fondlilia::before,
 .fondmoi::before,
 .fondknigt::before,
 .fondnurgle::before,
 .fondfreezer::before,
 .fonddemon::before {
-    content: "";
+  content: "";
     position: absolute;
     inset: 0;
 
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/fonddemon.png");
+
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;   /* ou 70% si tu préfères */
+    background-size: contain;
 
-    opacity: 0.15;              /* transparence du filigrane */
-    filter: grayscale(60%);
+    /* Taille fixe */
+    background-size: 500px auto;
+    
+    /* beaucoup moins gris */
+    filter: grayscale(15%);
+
     pointer-events: none;
-
     z-index: 0;
 }
 
 /* Le contenu passe au-dessus */
+.fonddg > *,
+.fonddg > *,
+.fondslann > *,
+.fonddracaufeu > *,
 .fondlilia > *,
 .fondmoi > *,
 .fondknigt > *,
@@ -2252,6 +2277,19 @@ a.surligne:visited {
 .fondlilia::before {
     background-image: url("../img/fondlilia.png");
 }
+.fondorc::before {
+    background-image: url("../img/orc.png");
+}
+.fonddg::before {
+    background-image: url("../img/dg.png");
+}
+.fondslann::before {
+    background-image: url("../img/slann.png");
+}
+.fonddracaufeu::before {
+    background-image: url("../img/dracaufeu.png");
+}
+
 
 .fondknigt::before {
     background-image: url("../img/fondknigt.png");
@@ -2265,7 +2303,7 @@ a.surligne:visited {
     background-image: url("../img/fondfreezer.png");
 }
 .fondmoi::before {
-    background-image: url("../img/moi.jpg");
+    background-image: url("../img/moi.png");
 }
 .fonddemon::before {
     background-image: url("../img/fonddemon.png");
