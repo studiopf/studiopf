@@ -1,3 +1,58 @@
+/* =========================
+   Barre supérieure
+========================= */
+
+.header-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    width:100%;
+    padding:10px 15px;
+    box-sizing:border-box;
+
+    background: var(--header-bg);
+    border-bottom:1px solid var(--header-border);
+}
+
+/* Logo */
+
+.header-logo .logo{
+    height:55px;
+    width:auto;
+}
+
+/* Icônes */
+
+.header-contact{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-left:auto;
+    margin-right:20px;
+}
+
+.header-contact a{
+    color:var(--header-color);
+    font-size:1.35rem;
+    text-decoration:none;
+    transition:.25s ease;
+}
+
+.header-contact a:hover{
+    color:var(--accent-color);
+    transform:scale(1.1);
+}
+
+/* Bouton hamburger */
+
+.pf-menu-button{
+    color:var(--header-color);
+}
+
+.pf-menu-button span{
+    background:var(--header-color);
+}
 .widget-container {
     width: 100%:
      max-width: 1100px;
@@ -603,17 +658,6 @@ a:hover,
     max-width: 1100px;
     padding: 10px;
 }
-.card-container2logo {
-    width: 100%;
-    padding: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 .cardpartenaire {
   display: flex;
     flex-direction: column;
@@ -1159,12 +1203,6 @@ nav ul li a:hover {
     height: auto;
 }
 
-.cardlogoimg {
-    text-align: center;
-    width: 350px;
-    height: auto;
-}
-
 .card:hover, .card2:hover, .card3:hover, .logopart:hover {
     transform: translateY(-6px) scale(1.02);
     border-color: #f4c876;
@@ -1578,18 +1616,6 @@ maintenance-box-fieldset {
         max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
         height: auto;
         margin: 0px auto;     /* un peu d'air autour */
-    }
-
-    .cardlogoimg {
-        width: 100%;
-        text-align: center;
-    }
-
-/* On force le conteneur logo + texte à être plus harmonieux */
-    .card-container2logo {
-        flex-direction: column;     /* déjà le cas normalement, mais on sécurise */
-        align-items: center;
-        padding: 0 0px;
     }
 
     .cardlogo {
