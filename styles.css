@@ -3,9 +3,18 @@
      max-width: 1000px;
     margin: 0 auto;
 }
+.widget {
+    width: 100%;
+     max-width: 1000px;
+    margin: 0 auto;
+}
 
 @media (max-width: 768px) {
     .widget-container {
+        width: 100%;
+        max-width: 300px;
+    }
+     .widget {
         width: 100%;
         max-width: 300px;
     }
