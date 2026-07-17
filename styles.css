@@ -405,7 +405,7 @@ body.light-mode .widget-container {
     max-width: 780px;
 }
 
-tenance-box-fieldset {
+.maintenance-box-fieldset {
     margin-top: 10px;
     margin-bottom: 0;
     width: 1000px;
@@ -1217,7 +1217,7 @@ body.light-mode .cardpartenaire2 {
     text-align: center;
 }
     
-   maintenance-box-fieldset {
+   .maintenance-box-fieldset {
     margin-top: 10px;
     margin-bottom: 0;
     width: 250px;
@@ -1234,7 +1234,6 @@ body.light-mode .cardpartenaire2 {
     position: relative;
     text-align: center;
 }
-main
    .maintenance-boxpartenaire {
     margin-top: 15px;
     margin-bottom: 0;
