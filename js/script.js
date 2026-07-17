@@ -4377,24 +4377,37 @@ function changelanguemenu() {
         ❓ FAQ
     </a></li>
 
-    <li><a href="mailto:studiopeinturefigurine@gmail.com">
-        ✉️ Contact Me
-    </a></li>
-
 </ul>
 
-<div class="pf-mobile-social">
-    <div class="pf-social-container">
-        <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
-        <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
-        <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
-        <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
-        <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    </div>
-</div>`;
+  <ul class="contact-list">
+    <li>
+        <a href="mailto:studiopeinturefigurine@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="tel:+33775860837">
+            <i class="fas fa-phone-alt"></i>
+            <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
+        </a>
+    </li>
+</ul>
+ <div class="pf-mobile-social">
+        <div class="pf-social-container">
+            <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/studioPFfr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+          
+           <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
+            <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
+
+        </div>
+    </div>`;
     } else if (currentLanguage === "spanish") {
         html = `<div class="language-selector">
     <button onclick="setLanguage(id); updateMeta(id); return false;" id="french">
@@ -4442,24 +4455,39 @@ function changelanguemenu() {
         ❓ FAQ
     </a></li>
 
-    <li><a href="mailto:studiopeinturefigurine@gmail.com">
-        ✉️ Contacto
-    </a></li>
-
 </ul>
 
-<div class="pf-mobile-social">
-    <div class="pf-social-container">
-        <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
-        <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
-        <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
-        <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
-        <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    </div>
-</div>`;
+
+  <ul class="contact-list">
+    <li>
+        <a href="mailto:studiopeinturefigurine@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="tel:+33775860837">
+            <i class="fas fa-phone-alt"></i>
+            <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
+        </a>
+    </li>
+</ul>
+
+ <div class="pf-mobile-social">
+        <div class="pf-social-container">
+            <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/studioPFfr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+          
+           <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
+            <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
+
+        </div>
+    </div>`;
     } else {
         html = ` <div class="language-selector">
            <button  onclick="setLanguage(id);  updateMeta(id); return false;" id="french">
@@ -4472,7 +4500,7 @@ function changelanguemenu() {
 
     </div>
 
-  <ul class="pf-nav-list">
+   <ul class="pf-nav-list">
 
     <li><a href="index.html" onclick="loadPage('index.html'); return false;">
         🏠 Accueil
@@ -4497,29 +4525,44 @@ function changelanguemenu() {
     <li><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
         🖼️ Galerie
     </a></li>
-            <li><a href="pourquoi.html" onclick="loadPage('pourquoi.html'); return false;">
+        <li><a href="pourquoi.html" onclick="loadPage('pourquoi.html'); return false;">
         ❓ FAQ
     </a></li>
 
-    <li><a href="mailto:studiopeinturefigurine@gmail.com">
-        ✉️ Me contacter
-    </a></li>
+</ul>
 
+
+  <ul class="contact-list">
+    <li>
+        <a href="mailto:studiopeinturefigurine@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="tel:+33775860837">
+            <i class="fas fa-phone-alt"></i>
+            <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
+        </a>
+    </li>
 </ul>
     <!-- Réseaux sociaux -->
     <div class="pf-mobile-social">
         <div class="pf-social-container">
-            <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
             <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/studioPFfr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+          
+           <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
             <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
             <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
             <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
-            <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+
         </div>
     </div>
-</nav>`;
+`;
     }
 
     menu.innerHTML = html;
