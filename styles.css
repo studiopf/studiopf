@@ -1,8 +1,19 @@
+.widget-container {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 
+@media (max-width: 768px) {
+    .widget-container {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 /* ==========================================================================
    RESET & BASE – inchangé
    ===================================================== font-size===================== */
-
+widget-container
 .card-container3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
