@@ -2260,7 +2260,7 @@ a.surligne:visited {
     background-size: contain;   /* ou 70% si tu préfères */
 
     opacity: 0.15;              /* transparence du filigrane */
-    filter: grayscale(20%);
+    filter: grayscale(60%);
     pointer-events: none;
 
     z-index: 0;
