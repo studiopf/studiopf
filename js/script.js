@@ -1711,7 +1711,15 @@ document.addEventListener("DOMContentLoaded", () => {
     <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>The Lord of the Rings™ Strategy Battle Game</strong></a>,
     board games, skirmish games, or 3D-printed miniatures, each army is painted with care to achieve an excellent look on the gaming table.
 </p>
-
+<!-- Illustrations -->
+<div class="exemples-photos3">
+ <div class="exemples-photos">
+    <img src="img/gold1.jpg" alt="Exemple d'armée peinte"></div>
+ <div class="exemples-photos">
+    <img src="img/gold3.jpg" alt="Exemple d'armée TableTop peinte"></div>
+ <div class="exemples-photos">
+    <img src="img/diamant3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
+</div>
     <a href="peinturecommission.html"
        class="button"
        onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -1733,6 +1741,16 @@ document.addEventListener("DOMContentLoaded", () => {
             Busts, resins, pop culture figures, manga, video games,
             cinema, fantasy, or science-fiction: each project is treated like a true miniature artwork.
         </p>
+  <!-- Illustrations -->
+    <div class="exemples-photos3">
+             <div class="exemples-photos">
+        <img src="img/pop3.jpg" alt="Figurine de collection peinte"></div>
+                   <div class="exemples-photos">
+        <img src="img/buste2.jpg" alt="Pièce d'exposition peinte"></div>
+                   <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Figurine de concours peinte"></div>
+    </div>
+
 
             <a href="peinturecollection.html"
                class="button"
@@ -1863,7 +1881,15 @@ My goal: make your miniatures come alive.
     <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>El Señor de los Anillos™ Strategy Battle Game</strong></a>,
     a juegos de mesa, escaramuzas o con figuritas impresas en 3D, cada ejército es pintado con cuidado para obtener un excelente resultado en la mesa de juego.
 </p>
-
+<!-- Illustrations -->
+<div class="exemples-photos3">
+ <div class="exemples-photos">
+    <img src="img/gold1.jpg" alt="Exemple d'armée peinte"></div>
+ <div class="exemples-photos">
+    <img src="img/gold3.jpg" alt="Exemple d'armée TableTop peinte"></div>
+ <div class="exemples-photos">
+    <img src="img/diamant3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
+</div>
     <a href="peinturecommission.html"
        class="button"
        onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -1887,7 +1913,15 @@ My goal: make your miniatures come alive.
             videojuegos, cine, fantasía o ciencia ficción:
             cada proyecto se trata como una verdadera obra en miniatura.
         </p>
-
+  <!-- Illustrations -->
+    <div class="exemples-photos3">
+             <div class="exemples-photos">
+        <img src="img/pop3.jpg" alt="Figurine de collection peinte"></div>
+                   <div class="exemples-photos">
+        <img src="img/buste2.jpg" alt="Pièce d'exposition peinte"></div>
+                   <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Figurine de concours peinte"></div>
+    </div>
             <a href="peinturecollection.html"
                class="button"
                onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
@@ -2030,6 +2064,19 @@ Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
     à des jeux de plateau, d'escarmouche ou avec des figurines imprimées en 3D, chaque armée est peinte avec soin afin d'obtenir un excellent rendu sur la table de jeu.
 </p>
 
+<!-- Illustrations -->
+<div class="exemples-photos3">
+ <div class="exemples-photos">
+    <img src="img/gold1.jpg" alt="Exemple d'armée peinte"></div>
+ <div class="exemples-photos">
+    <img src="img/gold3.jpg" alt="Exemple d'armée TableTop peinte"></div>
+ <div class="exemples-photos">
+    <img src="img/diamant3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
+</div>
+
+<p>
+    <em>📸 Exemples d'armées peintes réalisées par Studio PF.</em>
+</p>
 
 
     <a href="peinturecommission.html"
@@ -2063,7 +2110,19 @@ Mi objetivo: hacer vibrar tus figuritas como si cobraran vida.
             chaque projet est traité comme une véritable œuvre miniature.
         </p>
 
+  <!-- Illustrations -->
+    <div class="exemples-photos3">
+             <div class="exemples-photos">
+        <img src="img/pop3.jpg" alt="Figurine de collection peinte"></div>
+                   <div class="exemples-photos">
+        <img src="img/buste2.jpg" alt="Pièce d'exposition peinte"></div>
+                   <div class="exemples-photos">
+        <img src="img/pop1.jpg" alt="Figurine de concours peinte"></div>
+    </div>
 
+    <p>
+        <em>📸 Exemples de pièces de collection, d'exposition et de concours réalisées par Studio PF.</em>
+    </p>
             <a href="peinturecollection.html"
                class="button"
                onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
