@@ -29,7 +29,7 @@
 /* Logo */
 
 .header-logo .logo{
-    height:55px;
+    height:auto;
     width:auto;
 }
 
@@ -1151,7 +1151,7 @@ nav ul li a:hover {
     position: fixed;
     bottom: 90px;
     right: 20px;
-    background-color: #555;
+    background-color: var(--scroll-bg);
     color: #FFD700;
     border: none;
     padding: 15px;
@@ -1958,6 +1958,7 @@ body.light-mode .theme-toggle {
     --header-color:#FFFFFF;
     --header-border:#545454;
     --accent-color:#F4C876;
+    --scroll-bg: #080404;
 }
 
 /*==========================
@@ -1985,6 +1986,7 @@ body.light-mode {
     --header-color:#2D2D2D;
     --header-border:#D9D9D9;
     --accent-color:#B86A00;
+     --sroll-bg: #FAFAFA;
 }
 
 header {
