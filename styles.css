@@ -30,7 +30,7 @@
 
 .header-logo .logo{
     height:auto;
-    width:110px;
+    width:90px;
 }
 
 /* Icônes */
@@ -40,7 +40,7 @@
     align-items:center;
     gap:18px;
     margin-left:auto;
-    margin-right:50px;
+    margin-right:60px;
 }
 
 .header-contact a{
@@ -59,7 +59,7 @@
 
 .pf-menu-button{
     color:var(--header-color);
-    margin-left:50px;
+    margin-left:60px;
 }
 
 .pf-menu-button span{
@@ -83,7 +83,7 @@
 @media (max-width: 768px) {
     .header-logo .logo{
     height:auto;
-    width:80px;
+    width:60px;
 }
    .info-container {
     margin-top: 0;
@@ -1755,14 +1755,7 @@ body,
    MODE SOMBRE (par défaut)
 =================================================== */
 
-body{
-    background: linear-gradient(
-    180deg,
-    #4D2828 0%,
-    #331B1B 35%,
-    #261414 70%,
-    #050303 100%
-);
+
     color:#d8cfc2;
 }
 
