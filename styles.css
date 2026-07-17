@@ -746,9 +746,9 @@ a:hover,
 body.light-mode .footer {
     background: linear-gradient(
         to top,
-        #E5E5E5 0%,
-        #F1F1F1 55%,
-        #FAFAFA 100%
+        #D9670A 0%,
+        #E89A2C 55%,
+        #F6E3C3 100%
     );
 
     border-top: 1px solid #CFCFCF;
@@ -817,9 +817,9 @@ body.light-mode .footer-adresse a:hover {
  .footer {
     background: linear-gradient(
         to top,
-        #1F1F1F 0%,
-        #2C2C2C 55%,
-        #3B3B3B 100%
+        #331B1B 0%,
+        #211111 55%,
+        #110909 100%
     );
 
     border-top: 1px solid #5A5A5A;
