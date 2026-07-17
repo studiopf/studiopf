@@ -1011,22 +1011,22 @@ nav ul li a:hover {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0px;
+    gap: 5px;
     max-width: 900px;
-    margin: auto;
+    margin: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .gallery img {
     width: 100%;
+    height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 0;
     cursor: pointer;
-    transition: transform 0.3s;
+
 }
 
 .gallery img:hover {
@@ -1067,12 +1067,11 @@ nav ul li a:hover {
 }
 
 .menugallery {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 5px; /* Réduit le gap pour moins d'écartement */
-    padding: 0;
+    gap: 5px; /* même espacement horizontal et vertical */
 }
 
 .menugallery button {
@@ -1183,7 +1182,7 @@ nav ul li a:hover {
     position: fixed;
     bottom: 400px;
     right: 20px;
-    background-color: #555;
+    background-color: var(--scroll-bg);
     color: #FFD700;
     border: none;
     padding: 25px;
@@ -1545,20 +1544,20 @@ maintenance-box-fieldset {
         margin-bottom: 0;
     }
 
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 0px;
-        max-width: 300px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px; /* même espacement entre toutes les images */
+    max-width: 300px;
+    margin: 0;
+}
 
     .menugallery {
         margin-top: 0;
         margin-bottom: 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 2px; /* Réduit sur mobile */
+        gap: 5px; /* Réduit sur mobile */
         padding: 0;
     }
 
@@ -1937,7 +1936,7 @@ body.light-mode {
     --header-color:#2D2D2D;
     --header-border:#D9D9D9;
     --accent-color:#B86A00;
-     --sroll-bg: #FAFAFA;
+    --scroll-bg: #FAFAFA;
 }
 
 
@@ -2140,6 +2139,12 @@ button.pf-menu-button {
 }
 
 .menu {
+     background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.menufoot {
      background: transparent;
     margin-top: 0;
     margin-bottom: 0;
