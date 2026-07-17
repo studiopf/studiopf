@@ -1729,10 +1729,6 @@ body,
    MODE SOMBRE (par défaut)
 =================================================== */
 
-
-    color:#d8cfc2;
-}
-
 .maintenance-box{
     background:var(--box-bg);
     border:1px solid var(--box-border);
