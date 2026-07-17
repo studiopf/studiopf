@@ -2343,13 +2343,13 @@ a.surligne:visited {
     background-size: contain;
 
     /* Taille fixe */
-    background-size: 1200px auto;
+    background-size: 1000px auto;
     
     /* beaucoup moins gris */
     filter: grayscale(35%);
 
     pointer-events: none;
-    z-index: 0;
+    z-index: 100;
 }
 
 /* Le contenu passe au-dessus */
