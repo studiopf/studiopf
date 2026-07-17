@@ -1,11 +1,11 @@
 .widget-container {
-    width: 1000px
+    width: 100%:
      max-width: 1100px;
     margin: 0 auto;
 }
 .widget {
-      width: 900px
-     max-width: 1000px;
+      width: 100%;
+     max-width: 1100px;
     margin: 0 auto;
 }
 .contact-list {
@@ -15,12 +15,12 @@
 }
 @media (max-width: 768px) {
     .widget-container {
-        width: 300px;
+        width: 100%;
         max-width: 350px;
     }
      .widget {
-        width: 250px;
-        max-width: 300px;
+        width: 100%;
+        max-width: 350px;
     }
 }
 /* ==========================================================================
