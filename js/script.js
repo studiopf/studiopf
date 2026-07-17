@@ -4382,14 +4382,14 @@ function changelanguemenu() {
   <ul class="contact-list">
     <li>
         <a href="mailto:studiopeinturefigurine@gmail.com">
-            <i class="fas fa-envelope"></i>
+            
             <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
         </a>
     </li>
 
     <li>
         <a href="tel:+33775860837">
-            <i class="fas fa-phone-alt"></i>
+         
             <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
         </a>
     </li>
@@ -4461,14 +4461,14 @@ function changelanguemenu() {
   <ul class="contact-list">
     <li>
         <a href="mailto:studiopeinturefigurine@gmail.com">
-            <i class="fas fa-envelope"></i>
+     
             <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
         </a>
     </li>
 
     <li>
         <a href="tel:+33775860837">
-            <i class="fas fa-phone-alt"></i>
+           
             <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
         </a>
     </li>
@@ -4535,14 +4535,14 @@ function changelanguemenu() {
   <ul class="contact-list">
     <li>
         <a href="mailto:studiopeinturefigurine@gmail.com">
-            <i class="fas fa-envelope"></i>
+           
             <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
         </a>
     </li>
 
     <li>
         <a href="tel:+33775860837">
-            <i class="fas fa-phone-alt"></i>
+         
             <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
         </a>
     </li>
