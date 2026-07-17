@@ -1991,8 +1991,8 @@ header {
 /* ============================= */
 .pf-menu-button {
     position: fixed !important;
-    top: 0 !important;
-    right: 15px !important;
+    top: auto !important;
+    right: auto !important;
     left: auto !important;
 
     /* Supprimer cette ligne */
