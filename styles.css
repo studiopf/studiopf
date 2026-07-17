@@ -12,8 +12,8 @@
 .maintenance-boxpartenaire {
    margin-top: 10px;
     margin-bottom: 0;
-    width: 1000px;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1200px;
     position: relative;
     text-align: center;
    background:var(--box-bg);
@@ -22,8 +22,8 @@
 .maintenance-box-fieldset {
     margin-top: 10px;
     margin-bottom: 0;
-    width: 1000px;
-    max-width: 1000px;
+      width: 100%;
+    max-width: 1200px;
     position: relative;
     text-align: center;
 }
@@ -118,6 +118,14 @@
 @media (max-width: 768px) {
    .maintenance-box {
    width: 100%;
+    max-width: 760px;
+}
+   .maintenance-boxpartenaire {
+    width: 100%;
+    max-width: 760px;
+}
+.maintenance-box-fieldset {
+      width: 100%;
     max-width: 760px;
 }
     .header-contact{
@@ -1164,6 +1172,14 @@ nav {
    width: 100%;
     max-width: 640px;
 }
+      .maintenance-boxpartenaire {
+    width: 100%;
+    max-width: 640px;
+}
+.maintenance-box-fieldset {
+      width: 100%;
+    max-width: 640px;
+}
    .info-container {
     margin-top: 0;
     margin-bottom: 0;
@@ -1562,6 +1578,14 @@ body.light-mode .cardpartenaire2 {
 @media (max-width: 400px) {
     .maintenance-box {
    width: 100%;
+    max-width: 400px;
+}
+         .maintenance-boxpartenaire {
+    width: 100%;
+    max-width: 400px;
+}
+.maintenance-box-fieldset {
+      width: 100%;
     max-width: 400px;
 }
    .info-container {
