@@ -1864,15 +1864,7 @@ body{
    MODE CLAIR
 =================================================== */
 
-body.light-mode{
- background: linear-gradient(
-    180deg,
-    #F6E3C3 0%,   /* Beige / crème clair */
-    #E89A2C 50%,  /* Orange intermédiaire */
-    #D9670A 100%  /* Orange foncé */
-);
-    color:#d8cfc2;
-}
+
 
 
 body.light-mode .maintenance-box{
@@ -1964,10 +1956,10 @@ body.light-mode .theme-toggle {
 :root{
     --bg: linear-gradient(
     180deg,
-    #331B1B 0%,
-    #211111 35%,
-    #110909 70%,
-    #080404 100%
+    #080404 0%,
+    #110909 35%,
+    #211111 70%,
+    #331B1B 100%
 );
     --text:#e8d9c0;
 
@@ -1989,7 +1981,13 @@ body.light-mode .theme-toggle {
         MODE CLAIR
 ==========================*/
 body.light-mode{
-    --bg: linear-gradient(180deg, #F2F2F2 0%, #D9D9D9 40%, #ADADAD 100%);
+     --bg: linear-gradient(
+    180deg,
+    #FAFAFA 0%,
+    #F6E3C3 35%,
+    #E89A2C 70%,
+    #D9670A 100%
+);
     --text:#e8d9c0;
 
     /* Maintenance Box - Mode Sombre */
