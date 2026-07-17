@@ -724,29 +724,8 @@ body.light-mode .footer {
         #E89A2C 55%,
         #D9670A 100%
     );
-
     border-top: 1px solid #CFCFCF;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.95),
-        0 -3px 10px rgba(0,0,0,0.08);
-
     padding: 15px;
-}
-
-body.light-mode .footer-adresse {
-    width: auto;
-    height: auto;
-
-   
-
-    padding: 15px;
-    margin-top: 15px;
-
-    justify-content: center;
-    align-items: center;
-
-   
 }
 
 body.light-mode .footer h2,
@@ -787,7 +766,6 @@ body.light-mode .footer-adresse a:hover {
 /* ==========================================================
    THÈME SOMBRE
 ========================================================== */
-
  .footer {
     background: linear-gradient(
         to top,
@@ -795,27 +773,16 @@ body.light-mode .footer-adresse a:hover {
         #211111 55%,
         #331B1B 100%
     );
-
     border-top: 1px solid #5A5A5A;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.08),
-        0 -3px 10px rgba(0,0,0,0.35);
-
     padding: 15px;
 }
-
  .footer-adresse {
     width: auto;
     height: auto;
     margin-top: 15px;
     justify-content: center;
     align-items: center;
-
 }
-
- *
-
  .footer p,
  .footer li,
  .footer span,
@@ -836,7 +803,7 @@ body.light-mode .footer-adresse a:hover {
 }
 
  .footer-adresse a:hover {
-   color: --footer-ahover; #F7B845;
+   color: --footer-ahover;
 }
 /* ==========================================================================
    MENU – inchangé
