@@ -117,7 +117,7 @@
 }
 @media (max-width: 768px) {
    /* Filigrane */
-.fonddg::before,
+.fondorc::before,
 .fonddg::before,
 .fondslann::before,
 .fonddracaufeu::before,
@@ -1185,7 +1185,7 @@ nav {
    ========================================================================== */
 @media (max-width: 640px) {
       /* Filigrane */
-.fonddg::before,
+.fondorc::before,
 .fonddg::before,
 .fondslann::before,
 .fonddracaufeu::before,
@@ -1609,7 +1609,7 @@ body.light-mode .cardpartenaire2 {
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
       /* Filigrane */
-.fonddg::before,
+.fondorc::before,
 .fonddg::before,
 .fondslann::before,
 .fonddracaufeu::before,
@@ -2293,7 +2293,7 @@ a.surligne:visited {
 }
 /* Toutes les classes de fond deviennent des filigranes */
 .fondmoi,
-.fonddg,
+.fondorc,
 .fonddg,
 .fondslann,
 .fonddracaufeu,
@@ -2309,7 +2309,7 @@ a.surligne:visited {
 
 /* Filigrane */
 .fonddg::before,
-.fonddg::before,
+.fondorc::before,
 .fondslann::before,
 .fonddracaufeu::before,
 .fondlilia::before,
@@ -2337,7 +2337,7 @@ a.surligne:visited {
 }
 
 /* Le contenu passe au-dessus */
-.fonddg > *,
+.fondorc > *,
 .fonddg > *,
 .fondslann > *,
 .fonddracaufeu > *,
