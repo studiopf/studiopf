@@ -12,8 +12,6 @@
 .maintenance-box{
     background:var(--box-bg);
     border:1px solid var(--box-border);
-    border:1px solid #6b4e2f;
-    box-shadow:0 12px 30px rgba(0,0,0,.75);
 }
 /* =========================
    Barre supérieure
@@ -276,11 +274,11 @@ img {
     font-family: 'Segoe UI', system-ui, sans-serif;
     font-size: 12px;
     font-weight: 600;
-    color: #ffda79;                    /* jaune clair / doré clair */
+    color: --button-color;
     text-align: center;
     text-decoration: none;
     background: rgba(30, 20, 12, 0.75); /* même fond que .card / .maintenance-box */
-    border: 2px solid #f4c876;         /* bordure jaune/dorée principale */
+    border: 2px solid --button-border;          /* bordure jaune/dorée principale */
     border-radius: 10px;
     backdrop-filter: blur(6px);         /* effet verre dépoli */
     box-shadow:
@@ -317,33 +315,6 @@ img {
         0 4px 10px rgba(244, 200, 118, 0.25);
 }
 
-/* Variante plus petite (optionnelle) */
-.button.small {
-    padding: 8px 8px;
-      font-size: 10px;
-}
-
-/* Variante pleine largeur (utile pour mobile) */
-.button.full {
-    display: block;
-    width: 90%;
-    max-width: 360px;
-    margin: 20px auto;
-}
-
-/* Variante secondaire (si tu veux un bouton plus discret) */
-.button.secondary {
-    background: rgba(180, 140, 60, 0.18);
-    border-color: #d4a76c;
-    color: #d4b68c;
-}
-
-.button.secondary:hover {
-    background: rgba(244, 200, 118, 0.28);
-    border-color: #ffda79;
-    color: #ffda79;
-}
-
 .info {
     background: linear-gradient(to bottom, #8B0000, #FF6347);
     margin-top: 0;
@@ -366,25 +337,19 @@ img {
 
 body.light-mode .widget-container {
     background: linear-gradient(180deg, #F7F7F7 0%, #E7E7E7 55%, #D9D9D9 100%);
-
     border: 1px solid #B8B8B8;
     border-radius: 12px;
-
     box-shadow:
         inset 0 2px 2px rgba(255,255,255,0.9),
         inset 0 -2px 4px rgba(0,0,0,0.08),
         0 4px 10px rgba(0,0,0,0.15);
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     transform: scale(0.7);
     transform-origin: center;
-
     padding: 10px;
-
     transition:
         background 0.25s ease,
         border-color 0.25s ease,
@@ -398,25 +363,19 @@ body.light-mode .widget-container {
 
  .widget-container {
     background: linear-gradient(180deg, #3A3A3A 0%, #2A2A2A 55%, #1B1B1B 100%);
-
     border: 1px solid #5A5A5A;
     border-radius: 12px;
-
     box-shadow:
         inset 0 2px 2px rgba(255,255,255,0.05),
         inset 0 -2px 5px rgba(0,0,0,0.55),
         0 6px 14px rgba(0,0,0,0.45);
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     transform: scale(0.7);
     transform-origin: center;
-
     padding: 10px;
-
     transition:
         background 0.25s ease,
         border-color 0.25s ease,
@@ -427,7 +386,6 @@ body.light-mode .widget-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding-top: 70px;
 }
 
@@ -486,7 +444,6 @@ maintenance-box-fieldset {
     line-height: 1.55;
 }
 .maintenance-box button {
-
    text-align: center;
 }
 .logo {
@@ -653,7 +610,7 @@ a {
 
 a:hover,
 .highlight {
-    color: #ffda79;
+    color:  --button-hover;
 }
 
 
@@ -857,38 +814,29 @@ body.light-mode .footer-adresse a:hover {
 
 }
 
- .footer h2,
- .footer h3,
- .footer strong {
-    color: #F2F2F2;
-}
+ *
 
  .footer p,
  .footer li,
  .footer span,
  .footer a {
-    color: #D0D0D0;
+    color: --footer-p;
 }
 
  .footer a:hover {
-    color: #F7B845;
+    color: --footer-ahover;
 }
 
- .footer-adresse h2,
- .footer-adresse h3,
- .footer-adresse strong {
-    color: #F2F2F2;
-}
 
  .footer-adresse p,
  .footer-adresse li,
  .footer-adresse span,
  .footer-adresse a {
-    color: #D8D8D8;
+    color: --footer-p;
 }
 
  .footer-adresse a:hover {
-    color: #F7B845;
+   color: --footer-ahover; #F7B845;
 }
 /* ==========================================================================
    MENU – inchangé
@@ -939,7 +887,6 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 0px;
     padding: 0rem 0 0rem;
-
     margin-bottom: 0;
 }
 
@@ -1897,10 +1844,13 @@ body.light-mode .theme-toggle {
     #331B1B 100%
 );
     --text:#e8d9c0;
-
+ --footer-p: #D0D0D0;
+      --footer-ahover: #F7B845;
     /* Maintenance Box - Mode Sombre */
     --box-border: #8b5f3a;
-
+     --button-color: #ffda79; 
+    --button-border: #f4c876;
+--button-hover: #ffda79;
     --button-bg:#2a1c12;
     --button-text:#fff3d9;
     --button-border:#f4c876;
