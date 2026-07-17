@@ -610,7 +610,7 @@ a {
 
 a:hover,
 .highlight {
-    color:  --button-hover;
+    color: var(--button-hover);
 }
 
 
@@ -787,11 +787,11 @@ body.light-mode .footer-adresse a:hover {
  .footer li,
  .footer span,
  .footer a {
-    color: --footer-p;
+    color: var(--footer-p);
 }
 
  .footer a:hover {
-    color: --footer-ahover;
+    color: var(--footer-ahover);
 }
 
 
@@ -799,11 +799,11 @@ body.light-mode .footer-adresse a:hover {
  .footer-adresse li,
  .footer-adresse span,
  .footer-adresse a {
-    color: --footer-p;
+    color: var(--footer-p);
 }
 
  .footer-adresse a:hover {
-   color: --footer-ahover;
+   color: var(--footer-ahover);
 }
 /* ==========================================================================
    MENU – inchangé
@@ -1074,7 +1074,7 @@ nav ul li a:hover {
 
 /* Style du bouton fleche */
 #scrollToTopBtn {
-    border: 2px solid #FFD700;
+    border: 5px solid #FFD700;
     position: fixed;
     bottom: 90px;
     right: 20px;
@@ -1082,17 +1082,26 @@ nav ul li a:hover {
     color: #FFD700;
     border: none;
     padding: 15px;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 900;
     border-radius: 50%;
     cursor: pointer;
     display: none;
     z-index: 2000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+ transition: all 0.25s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #F4C876;
+    color: #2a1c12;
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 8px 18px rgba(244, 200, 118, 0.45);
 }
 
 /* Style du bouton fleche */
 #scrollTotal {
-    border: 1px solid #FFD700;
+    border: 5px solid #FFD700;
     position: fixed;
     bottom: 400px;
     right: 20px;
@@ -1106,8 +1115,15 @@ nav ul li a:hover {
     display: none;
     z-index: 2000;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+ transition: all 0.25s ease;
 }
 
+#scrollTotal:hover {
+    background-color: var(--scrolltotal-bg); 
+    color: var(--scrolltotal-c); 
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 8px 18px rgba(244, 200, 118, 0.45);
+}
 /* ==========================================================================
    CARTES GÉNÉRIQUES – inchangé
    ========================================================================== */
@@ -1810,6 +1826,8 @@ body.light-mode .theme-toggle {
     #211111 70%,
     #331B1B 100%
 );
+    --scrolltotal-bg: #F4C876;
+--scrolltotal-c :#2a1c12;
     --text:#e8d9c0;
  --footer-p: #D0D0D0;
       --footer-ahover: #F7B845;
@@ -1844,7 +1862,8 @@ body.light-mode {
 
     /* Maintenance Box - Mode Sombre */
     --box-border: #8b5f3a;
-
+--scrolltotal-bg: #2a1c12;
+--scrolltotal-c :#F4C876;
    --button-bg:#6b4b2f;
     --button-text:#fff3d9;
     --button-border:#f7d88b;
