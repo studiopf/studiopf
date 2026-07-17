@@ -928,6 +928,31 @@ nav {
     transform: scale(1.5);
 }
 
+.exemples-photos:hover {
+    transform: scale(1.2);
+}
+/*==========================
+      Mini Menu
+==========================*/
+
+.minimenu a {
+    display: inline-block;
+    padding: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--minimenu-text);
+    background: var(--minimenu-bg);
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+.minimenu a:hover {
+    background: var(--minimenu-hover-bg);
+    color: var(--minimenu-hover-text);
+}
+
 .lightbox {
     display: none;
     position: fixed;
@@ -1798,6 +1823,14 @@ body.light-mode .theme-toggle {
     MODE SOMBRE (défaut)
 ==========================*/
 :root{
+      --menufoot-bg: rgba(30, 20, 12, 0.55);
+    --menufoot-text: #F4C876;
+    --menufoot-hover-bg: rgba(244, 200, 118, 0.20);
+    --menufoot-hover-text: #FFE39B;
+     --minimenu-bg: rgba(30, 20, 12, 0.55);
+    --minimenu-text: #F4C876;
+    --minimenu-hover-bg: rgba(244, 200, 118, 0.20);
+    --minimenu-hover-text: #FFE39B;
     --bg: linear-gradient(
     180deg,
     #080404 0%,
@@ -1831,6 +1864,14 @@ body.light-mode .theme-toggle {
         MODE CLAIR
 ==========================*/
 body.light-mode {
+       --menufoot-bg: rgba(255,255,255,0.75);
+    --menufoot-text: #7A4D12;
+    --menufoot-hover-bg: rgba(244, 200, 118, 0.45);
+    --menufoot-hover-text: #4E2F08;
+       --minimenu-bg: rgba(255,255,255,0.75);
+    --minimenu-text: #7A4D12;
+    --minimenu-hover-bg: rgba(244, 200, 118, 0.45);
+    --minimenu-hover-text: #4E2F08;
      --bg: linear-gradient(
     180deg,
     #FAFAFA 0%,
@@ -2066,6 +2107,23 @@ button.pf-menu-button {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 18px;
+}
+.menufoot a {
+    display: inline-block;
+    padding: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--menufoot-text);
+    background: var(--menufoot-bg);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all .25s ease;
+}
+
+.menufoot a:hover {
+    background: var(--menufoot-hover-bg);
+    color: var(--menufoot-hover-text);
 }
 /* ============================= */
 /* VERSION MOBILE */
