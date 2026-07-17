@@ -59,6 +59,7 @@
 
 .pf-menu-button{
     color:var(--header-color);
+    margin-left:50px;
 }
 
 .pf-menu-button span{
@@ -1988,6 +1989,7 @@ body.light-mode {
     --accent-color:#B86A00;
      --sroll-bg: #FAFAFA;
 }
+
 
 header {
     position: fixed;
