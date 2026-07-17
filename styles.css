@@ -1,3 +1,14 @@
+/* bandeau défile */
+.info-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+   width-max: 1100px;
+    position: relative;
+    text-align: center;
+}
+
 /* =========================
    Barre supérieure
 ========================= */
@@ -69,6 +80,16 @@
     padding: 0;
 }
 @media (max-width: 768px) {
+   .info-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+   width-max: 350px;
+    position: relative;
+    text-align: center;
+}
+
     .widget-container {
         width: 100%;
         max-width: 350px;
@@ -297,15 +318,6 @@ img {
     background: rgba(244, 200, 118, 0.28);
     border-color: #ffda79;
     color: #ffda79;
-}
-/* bandeau défile */
-.info-container {
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
-    width: 100%;
-    position: relative;
-    text-align: center;
 }
 
 .info {
@@ -1212,6 +1224,16 @@ nav ul li a:hover {
    MEDIA QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+   .info-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+   width-max: 300px;
+    position: relative;
+    text-align: center;
+}
+
    .social-bloc-vide
 {
   padding: 3px;
@@ -1331,12 +1353,7 @@ body.light-mode .cardpartenaire2 {
         max-width: 600px;
         padding: 0 0px;
     }
-/* bandeau défile */
-.info-container {
-    width: 100%;
-    padding: 0;
-    position: relative;
-}
+
 .cardpartenaire p {
       font-size: 12px;
     line-height: 1.05;
@@ -1637,6 +1654,16 @@ maintenance-box-fieldset {
 
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
+   .info-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+   width-max: 250px;
+    position: relative;
+    text-align: center;
+}
+
       .logo {
         width: 120px;              /* un peu plus petit que sur 640px */
         max-width: 70%;
