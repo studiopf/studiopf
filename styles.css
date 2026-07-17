@@ -102,12 +102,12 @@
 }
 .widget-container {
     width: 100%;
-     max-width: 1100px;
+     max-width: 1200px;
     margin: 0 auto;
 }
 .widget {
       width: 100%;
-     max-width: 1100px;
+     max-width: 1200px;
     margin: 0 auto;
 }
 .contact-list {
@@ -173,11 +173,11 @@
 
     .widget-container {
         width: 100%;
-        max-width: 350px;
+        max-width: 760px;
     }
      .widget {
         width: 100%;
-        max-width: 350px;
+        max-width: 760px;
     }
 }
 /* ==========================================================================
@@ -1184,6 +1184,14 @@ nav {
     QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+    .widget-container {
+        width: 100%;
+        max-width: 640px;
+    }
+     .widget {
+        width: 100%;
+        max-width: 640px;
+    }
       /* Filigrane */
 .fondorc::before,
 .fonddg::before,
@@ -1217,7 +1225,7 @@ nav {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   max-width: 350px;
+   max-width: 640px;
     position: relative;
     text-align: center;
 }
@@ -1234,7 +1242,7 @@ nav {
     gap: 5px;
 
     margin: 0rem auto;
-    max-width: 250px;
+    max-width: 300px;
     padding: 0 0px;
    align-items: center;
         justify-content: center;
@@ -1253,7 +1261,7 @@ body.light-mode .cardpartenaire2 {
     justify-content: center;
 
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 640px;
     padding: 10px;
 }
 
@@ -1272,7 +1280,7 @@ body.light-mode .cardpartenaire2 {
     justify-content: center;
 
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 640px;
     padding: 10px;
 }
 
@@ -1608,6 +1616,14 @@ body.light-mode .cardpartenaire2 {
 
 /* Pour très petits écrans (320–400px) */
 @media (max-width: 400px) {
+    .widget-container {
+        width: 100%;
+        max-width: 400px;
+    }
+     .widget {
+        width: 100%;
+        max-width: 400px;
+    }
       /* Filigrane */
 .fondorc::before,
 .fonddg::before,
