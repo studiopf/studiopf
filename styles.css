@@ -1952,6 +1952,10 @@ body.light-mode .theme-toggle {
     --button-text:#fff3d9;
     --button-border:#f4c876;
     --title:#ffe39b;
+       --header-bg:#3B3B3B;
+    --header-color:#FFFFFF;
+    --header-border:#545454;
+    --accent-color:#F4C876;
 }
 
 /*==========================
@@ -1969,6 +1973,10 @@ body.light-mode{
     --button-text:#fff3d9;
     --button-border:#f7d88b;
     --title:#ffe39b;
+    --header-bg:#FAFAFA;
+    --header-color:#2D2D2D;
+    --header-border:#D9D9D9;
+    --accent-color:#B86A00;
 }
 
 header {
