@@ -4,7 +4,7 @@
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   width-max: 1300px;
+   max-width: 1300px;
     position: relative;
     text-align: center;
 }
@@ -107,7 +107,7 @@
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   width-max: 400px;
+   max-width: 400px;
     position: relative;
     text-align: center;
 }
@@ -124,7 +124,7 @@
 /* ==========================================================================
    RESET & BASE – inchangé
    ===================================================== font-size===================== */
-widget-container
+.widget-container
 .card-container3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1150,7 +1150,7 @@ nav {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   width-max: 300px;
+   max-width: 300px;
     position: relative;
     text-align: center;
 }
@@ -1579,7 +1579,7 @@ maintenance-box-fieldset {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-   width-max: 250px;
+   max-width: 250px;
     position: relative;
     text-align: center;
 }
