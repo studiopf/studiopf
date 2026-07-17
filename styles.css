@@ -935,22 +935,22 @@ nav {
       Mini Menu
 ==========================*/
 
-.minimenu a {
+.menu-mobile a {
     display: inline-block;
     padding: 0;
     border-radius: 6px;
     font-size: 14px;
     font-weight: 700;
-    color: var(--minimenu-text);
-    background: var(--minimenu-bg);
+    color: var(--menu-mobile-text);
+    background: var(--menu-mobile-bg);
     white-space: nowrap;
     text-decoration: none;
     transition: all .25s ease;
 }
 
-.minimenu a:hover {
-    background: var(--minimenu-hover-bg);
-    color: var(--minimenu-hover-text);
+.menu-mobile a:hover {
+    background: var(--menu-mobile-hover-bg);
+    color: var(--menu-mobile-hover-text);
 }
 
 .lightbox {
@@ -1827,10 +1827,10 @@ body.light-mode .theme-toggle {
     --menufoot-text: #F4C876;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.20);
     --menufoot-hover-text: #FFE39B;
-     --minimenu-bg: rgba(30, 20, 12, 0.55);
-    --minimenu-text: #F4C876;
-    --minimenu-hover-bg: rgba(244, 200, 118, 0.20);
-    --minimenu-hover-text: #FFE39B;
+     --menu-mobile-bg: rgba(30, 20, 12, 0.55);
+    --menu-mobile-text: #F4C876;
+    --menu-mobile-hover-bg: rgba(244, 200, 118, 0.20);
+    --menu-mobile-hover-text: #FFE39B;
     --bg: linear-gradient(
     180deg,
     #080404 0%,
@@ -1868,10 +1868,10 @@ body.light-mode {
     --menufoot-text: #7A4D12;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.45);
     --menufoot-hover-text: #4E2F08;
-       --minimenu-bg: rgba(255,255,255,0.75);
-    --minimenu-text: #7A4D12;
-    --minimenu-hover-bg: rgba(244, 200, 118, 0.45);
-    --minimenu-hover-text: #4E2F08;
+       --menu-mobile-bg: rgba(255,255,255,0.75);
+    --menu-mobile-text: #7A4D12;
+    --menu-mobile-hover-bg: rgba(244, 200, 118, 0.45);
+    --menu-mobile-hover-text: #4E2F08;
      --bg: linear-gradient(
     180deg,
     #FAFAFA 0%,
