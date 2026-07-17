@@ -8,7 +8,11 @@
      max-width: 1000px;
     margin: 0 auto;
 }
-
+.contact-list {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
 @media (max-width: 768px) {
     .widget-container {
         width: 300px;
