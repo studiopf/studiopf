@@ -578,7 +578,7 @@ h3 {
     color: #d4a76c;
 }
 
-li, .p-social {
+.p-social {
        font-size: 14px;
     line-height: 1.6;
     text-align: center;
@@ -784,7 +784,6 @@ body.light-mode .footer-adresse a:hover {
     align-items: center;
 }
  .footer p,
- .footer li,
  .footer span,
  .footer a {
     color: var(--footer-p);
@@ -796,7 +795,6 @@ body.light-mode .footer-adresse a:hover {
 
 
  .footer-adresse p,
- .footer-adresse li,
  .footer-adresse span,
  .footer-adresse a {
     color: var(--footer-p);
