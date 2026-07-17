@@ -13,7 +13,14 @@
     background:var(--box-bg);
     border:1px solid var(--box-border);
 }
-
+.maintenance-box-fieldset {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 1000px;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+}
 .maintenance-box {
     margin-top: 10px;
     margin-bottom: 0;
