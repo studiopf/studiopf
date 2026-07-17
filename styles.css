@@ -1843,20 +1843,21 @@ body.light-mode .theme-toggle {
         MODE CLAIR
 ==========================*/
 body.light-mode {
-    --maintenance-bg: linear-gradient(
+  --maintenance-bg: linear-gradient(
         180deg,
-        #D78B2B 0%,
-        #F7E6C5 50%,
-        #D78B2B 100%
+        #F2E8D8 0%,
+        #FCF8F0 50%,
+        #F2E8D8 100%
     );
 
-    --maintenance-border-top: rgba(255,255,255,0.85);
-    --maintenance-border-bottom: rgba(120,80,20,0.35);
+    --maintenance-border-top: rgba(255,255,255,0.95);
+    --maintenance-border-bottom: rgba(210,190,150,0.45);
 
     --maintenance-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.70),
-        inset 0 -1px 0 rgba(120,80,20,0.12),
-        0 6px 16px rgba(0,0,0,0.12);
+        inset 0 1px 0 rgba(255,255,255,0.90),
+        inset 0 -1px 0 rgba(210,190,150,0.18),
+        0 6px 16px rgba(0,0,0,0.10);
+}
        --menufoot-bg: rgba(255,255,255,0.75);
     --menufoot-text: #7A4D12;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.45);
