@@ -438,7 +438,7 @@ body.light-mode .widget-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 90px;
+    padding-top: 10px;
 }
 
 
@@ -2283,7 +2283,7 @@ a.surligne:visited {
     background-size: 500px auto;
     
     /* beaucoup moins gris */
-    filter: grayscale(55%);
+    filter: grayscale(35%);
 
     pointer-events: none;
     z-index: 0;
