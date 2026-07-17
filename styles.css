@@ -1106,7 +1106,7 @@ nav ul li a:hover {
     bottom: 400px;
     right: 20px;
     background-color: var(--scroll-bg);
-    color: #FFD700;
+    color: var(--scroll-c); 
     border: none;
     padding: 25px;
     font-size: 20px;
@@ -1826,6 +1826,8 @@ body.light-mode .theme-toggle {
     #211111 70%,
     #331B1B 100%
 );
+       --scroll-bg: #080404;
+    --scroll-c:#FFD700;
     --scrolltotal-bg: #F4C876;
 --scrolltotal-c :#2a1c12;
     --text:#e8d9c0;
@@ -1844,7 +1846,6 @@ body.light-mode .theme-toggle {
     --header-color:#FFFFFF;
     --header-border:#545454;
     --accent-color:#F4C876;
-    --scroll-bg: #080404;
 }
 
 /*==========================
@@ -1873,6 +1874,7 @@ body.light-mode {
     --header-border:#D9D9D9;
     --accent-color:#B86A00;
     --scroll-bg: #FAFAFA;
+        --scroll-c:#FFD700;
 }
 
 
