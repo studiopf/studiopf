@@ -2275,16 +2275,6 @@ a.surligne:visited {
     position: absolute;
     inset: 0;
 
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.05) 0%,
-            rgba(0, 0, 0, 0.12) 20%,
-            rgba(0, 0, 0, 0.30) 55%,
-            rgba(0, 0, 0, 0.85) 100%
-        ),
-        url("../img/fonddemon.png");
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2293,7 +2283,7 @@ a.surligne:visited {
     background-size: 500px auto;
     
     /* beaucoup moins gris */
-    filter: grayscale(15%);
+    filter: grayscale(55%);
 
     pointer-events: none;
     z-index: 0;
@@ -2314,36 +2304,114 @@ a.surligne:visited {
     z-index: 1;
 }
 .fondlilia::before {
-    background-image: url("../img/fondlilia.png");
+   background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+      url("../img/fondlilia.png");
+    
 }
 .fondorc::before {
-    background-image: url("../img/orc.png");
+       background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+         url("../img/orc.png");
 }
 .fonddg::before {
-    background-image: url("../img/dg.png");
+      background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+         url("../img/dg.png");
 }
 .fondslann::before {
-    background-image: url("../img/slann.png");
+      background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+         url("../img/slann.png");
 }
 .fonddracaufeu::before {
-    background-image: url("../img/dracaufeu.png");
+      background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+         url("../img/dracaufeu.png");
 }
 
 
 .fondknigt::before {
-    background-image: url("../img/fondknigt.png");
+      background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+         url("../img/fondknigt.png");
 }
 
 .fondnurgle::before {
-    background-image: url("../img/fondnurgle.png");
+      background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+         url("../img/fondnurgle.png");
 }
 
 .fondfreezer::before {
-    background-image: url("../img/fondfreezer.png");
+     background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),url("../img/fondfreezer.png");
 }
 .fondmoi::before {
-    background-image: url("../img/moi.png");
+     background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),url("../img/moi.png");
 }
 .fonddemon::before {
-    background-image: url("../img/fonddemon.png");
+     background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ), url("../img/fonddemon.png");
 }
