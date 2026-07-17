@@ -1945,9 +1945,12 @@ body.light-mode{
     --title:#ffe39b;
 }
 
-.header {
-    display:flex;
-    justify-content:flex-start;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 /* ============================= */
 /* BOUTON MENU HAMBURGER */
