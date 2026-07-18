@@ -1657,16 +1657,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentLanguage === "english") {
         html = `
-    <div class="center">
+  <div class="center">
     <div class="maintenance-box ajust fondlilia">
         <h1>🎨 Professional Miniature Painting</h1>
         <p>
-            Welcome to <strong>Studio PF</strong>, a workshop specialized in 
+            Welcome to <strong>Studio PF</strong>, a workshop specialized in
             <strong>professional miniature painting</strong>.
         </p>
         <p>
-            Whether you are a player, collector, or painter looking to improve,
-            I will support you with services tailored to your project.
+            Whether you are a player, collector, or painter wishing to progress,
+            I support you with services adapted to your project.
         </p>
         <p>
             Discover my three painting services:
@@ -1696,10 +1696,10 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="maintenance-box ajust fondknigt">
       <h2>⚔️ Gaming Army Miniatures</h2>
 <p>
-    Do you want a visually cohesive and pleasant-to-play army?
+    Do you want a pleasant-to-play and visually cohesive army?
 </p>
 <p>
-    I create <strong>TableTop</strong> quality paintings for miniature wargames with two levels of finish:
+    I create <strong>TableTop</strong> paintings for miniature games with two levels of finish:
     <strong>Gold</strong> and <strong>Diamond</strong>.
 </p>
 <p>
@@ -1708,7 +1708,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>,
     <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
     <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>The Lord of the Rings</strong></a>,
-    board games, skirmish games, or 3D-printed miniatures, each army is painted with care to achieve an excellent look on the gaming table.
+    board games, skirmish games, or with 3D-printed miniatures, each army is painted with care to achieve an excellent result on the gaming table.
 </p>
 <!-- Illustrations -->
 <div class="exemples-photos3">
@@ -1730,17 +1730,17 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="maintenance-box ajust fondfreezer">
         <h2>🏆 Collection & Competition Pieces</h2>
         <p>
-            Looking for a <strong>unique</strong> miniature for a display cabinet,
-            exhibition, or competition?
+            Are you looking for a <strong>unique</strong> miniature for a display cabinet,
+            an exhibition, or a competition?
         </p>
         <p>
-            I create high-end pieces with in-depth work on 
-            <strong>lighting</strong>, textures, contrasts, and finishes.
+            I create high-end pieces with in-depth work on
+            lighting, textures, contrasts, and finishes.
         </p>
         <p>
-            Busts, resins, pop culture miniatures, manga, 
+            Busts, resins, pop culture miniatures, manga,
             video games, cinema, fantasy or science-fiction:
-            every project is treated as a true miniature artwork.
+            each project is treated as a true miniature artwork.
         </p>
   <!-- Illustrations -->
     <div class="exemples-photos3">
@@ -1751,6 +1751,7 @@ document.addEventListener("DOMContentLoaded", () => {
                    <div class="exemples-photos">
         <img src="img/pop1.jpg" alt="Painted competition miniature"></div>
     </div>
+       
             <a href="peinturecollection.html"
                class="button"
                onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
@@ -1762,17 +1763,17 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="maintenance-box ajust fonddemon">
         <h2>📚 Miniature Painting Courses</h2>
         <p>
-            Want to <strong>learn</strong> or <strong>improve</strong> your technique?
+            Do you want to <strong>learn</strong> or <strong>perfect</strong> your technique?
         </p>
         <p>
             I offer personalized <strong>courses</strong> adapted to your level,
-            in-person or online.
+            in workshop or remotely.
         </p>
         <p>
              <strong>Airbrush</strong>, blending, highlighting,
             light management, basing, textures,
             oils or pigments:<br>I share all the techniques
-            I use daily in my professional work.
+            I use daily in my professional activity.
         </p>
        
             <a href="formation.html"
@@ -1804,14 +1805,14 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="maintenance-box ajust fondmoi">
 <h2>👋 Miniature Painter in France</h2>
 <p>
-I am <strong>Pierre-François, aka PF, <span id="pf-age">39</span> years old.</strong><br>
+I am <strong>Pierre-François, alias PF, <span id="pf-age">39</span> years old.</strong><br>
 Passionate painter and founder of Studio PF.<br><br>
-I have been painting miniatures since 2020, a passion that started somewhat by chance.<br>
-Covid turned this hobby into a true artistic journey.<br>
-Today I work with acrylics, pigments, and oils in a style that brings miniatures to life.<br><br>
-My goal: make your miniatures come alive.
+I have been painting miniatures since 2020, a passion born somewhat by chance.<br>
+Covid transformed this hobby into a true artistic quest.<br>
+Today, I work with acrylics, pigments, and oils in a style that brings miniatures to life.<br><br>
+My goal: make your miniatures vibrate as if they were coming to life.
 </p>
-<p><strong>“Every miniature tells a story. My role is to make it shine.” ✨</strong> </p>
+<p><strong>“Each miniature tells a story. My role is to make it shine.” ✨</strong> </p>
  
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">✨ Learn more about my journey</a>
 </div>
@@ -1823,7 +1824,7 @@ My goal: make your miniatures come alive.
     <div class="maintenance-box ajust fondlilia">
         <h1>🎨 Pintura profesional de miniaturas</h1>
         <p>
-            Bienvenido a <strong>Studio PF</strong>, taller especializado en 
+            Bienvenido a <strong>Studio PF</strong>, taller especializado en la
             <strong>pintura profesional de miniaturas</strong>.
         </p>
         <p>
@@ -1837,17 +1838,17 @@ My goal: make your miniatures come alive.
             <ul class="menu">
     <li>
         <a href="peinturecommission.html"
-           onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">⚔️ Miniaturas de Ejércitos de juego
+           onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">⚔️ Miniaturas de Ejércitos de Juego
         </a>
     </li>
     <li>
         <a href="peinturecollection.html"
-           onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">🏆 Piezas de colección y concursos
+           onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">🏆 Piezas de Colección y Concursos
         </a>
     </li>
     <li>
         <a href="formation.html"
-           onclick="loadPage('formation.html'); scrollToTop(); return false;">📚 Cursos de pintura de miniaturas
+           onclick="loadPage('formation.html'); scrollToTop(); return false;">📚 Cursos de Pintura de Miniaturas
         </a>
     </li>
 </ul>
@@ -1856,9 +1857,9 @@ My goal: make your miniatures come alive.
   
  <div class="center">
     <div class="maintenance-box ajust fondknigt">
-      <h2>⚔️ Miniaturas de Ejércitos de juego</h2>
+      <h2>⚔️ Miniaturas de Ejércitos de Juego</h2>
 <p>
-    ¿Quieres un ejército agradable de jugar y visualmente homogéneo?
+    ¿Deseas un ejército agradable de jugar y visualmente homogéneo?
 </p>
 <p>
     Realizo pinturas <strong>TableTop</strong> destinadas a juegos de miniaturas con dos niveles de acabado:
@@ -1870,7 +1871,7 @@ My goal: make your miniatures come alive.
     <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-40-000/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer 40,000</strong></a>,
     <a href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-the-old-world/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Warhammer The Old World</strong></a>,
     <a href="https://maxireves.fr/selection-jeux/games-workshop/seigneur-des-anneaux/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>El Señor de los Anillos</strong></a>,
-    a juegos de mesa, escaramuzas o con miniaturas impresas en 3D, cada ejército se pinta con esmero para obtener un excelente resultado en la mesa de juego.
+    a juegos de mesa, escaramuzas o con miniaturas impresas en 3D, cada ejército es pintado con esmero para obtener un excelente resultado en la mesa de juego.
 </p>
 <!-- Illustrations -->
 <div class="exemples-photos3">
@@ -1890,7 +1891,7 @@ My goal: make your miniatures come alive.
     </div>
  <div class="center">
     <div class="maintenance-box ajust fondfreezer">
-        <h2>🏆 Piezas de colección y concursos</h2>
+        <h2>🏆 Piezas de Colección y Concursos</h2>
         <p>
             ¿Buscas una miniatura <strong>única</strong> destinada a una vitrina,
             una exposición o un concurso?
@@ -1923,12 +1924,12 @@ My goal: make your miniatures come alive.
     </div></div>
  <div class="center">
     <div class="maintenance-box ajust fonddemon">
-        <h2>📚 Cursos de pintura de miniaturas</h2>
+        <h2>📚 Cursos de Pintura de Miniaturas</h2>
         <p>
-            ¿Quieres <strong>aprender</strong> o <strong>perfeccionar</strong> tu técnica?
+            ¿Deseas <strong>aprender</strong> o <strong>perfeccionar</strong> tu técnica?
         </p>
         <p>
-            Ofrezco <strong>cursos</strong> personalizados adaptados a tu nivel,
+            Propongo <strong>cursos</strong> personalizados adaptados a tu nivel,
             en taller o a distancia.
         </p>
         <p>
@@ -1969,7 +1970,7 @@ My goal: make your miniatures come alive.
 <p>
 Soy <strong>Pierre-François, alias PF, <span id="pf-age">39</span> años.</strong><br>
 Pintor apasionado y fundador de Studio PF.<br><br>
-Practico la pintura de miniaturas desde 2020, una pasión que surgió un poco por casualidad.<br>
+Practico la pintura de miniaturas desde 2020, una pasión nacida un poco por casualidad.<br>
 El Covid transformó este hobby en una verdadera búsqueda artística.<br>
 Hoy trabajo el acrílico, los pigmentos y los óleos con un estilo que da vida a las miniaturas.<br><br>
 Mi objetivo: hacer vibrar tus miniaturas como si cobraran vida.
@@ -1979,11 +1980,10 @@ Mi objetivo: hacer vibrar tus miniaturas como si cobraran vida.
             <a href="quisuisje.html" class="button" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">✨ Saber más sobre mi trayectoria</a>
 </div>
 </div>
-
         `;
     } else {
         html = `
-<div class="center">
+ <div class="center">
     <div class="maintenance-box ajust fondlilia">
 
         <h1>🎨 Peinture professionnelle sur figurines</h1>
@@ -2100,6 +2100,7 @@ Mi objetivo: hacer vibrar tus miniaturas como si cobraran vida.
                    <div class="exemples-photos">
         <img src="img/pop1.jpg" alt="Figurine de concours peinte"></div>
     </div>
+
         
             <a href="peinturecollection.html"
                class="button"
