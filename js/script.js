@@ -183,12 +183,10 @@ changelangueinfo();
     
     initializeLightboxGlobal();
      initThemeToggle();
-    const maintenanceBackground = localStorage.getItem("maintenanceBackground");
 
-if (maintenanceBackground === "off") {
-    document.body.classList.add("maintenance-transparent");
+    if (localStorage.getItem("maintenanceBackground") === "off") {
+    document.body.classList.add("no-maintenance-bg");
 }
-    
     updateDebugDisplay();
     mettreAJourTarifLangue();
 
@@ -6444,11 +6442,11 @@ function scrollTotal(offset = 100) {
 
 }
 function toggleMaintenanceBackground() {
-    document.body.classList.toggle("maintenance-transparent");
+    document.body.classList.toggle("no-maintenance-bg");
 
     localStorage.setItem(
         "maintenanceBackground",
-        document.body.classList.contains("maintenance-transparent")
+        document.body.classList.contains("no-maintenance-bg")
             ? "off"
             : "on"
     );
