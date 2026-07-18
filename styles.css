@@ -224,7 +224,12 @@ info-container {
     padding: 0;
 }
 @media (max-width: 768px) {
-
+.maintenance-box p {
+text-shadow: var(--shadow-p-box-mob);
+}
+     .maintenance-box a {
+text-shadow: var(--shadow-p-box-mob);
+}
    .maintenance-box {
        max-width: 700px;
     width: calc(100% - 30px);
@@ -1267,6 +1272,12 @@ nav {
     QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+   .maintenance-box p {
+text-shadow: var(--shadow-p-box-mob);
+}
+     .maintenance-box a {
+text-shadow: var(--shadow-p-box-mob);
+}
    .exemples-photos img{
     width: 150px;
     height: auto;
@@ -1638,7 +1649,13 @@ body.light-mode .cardpartenaire2 {
 
 /* Pour très petits écrans (320–px) */
 @media (max-width: 400px) {
-
+.maintenance-box p {
+text-shadow: var(--shadow-p-box-mob);
+}
+     .maintenance-box a {
+text-shadow: var(--shadow-p-box-mob);
+}
+   
    .exemples-photos img{
     width: 140px;
     height: auto;
@@ -1907,7 +1924,12 @@ body.light-mode .theme-toggle {
         #151515 100%
     );
 --shadow-color: #ffffff;
-
+--shadow-p-box-mob:
+    0 0 1px var(--shadow-color),
+    -0.5px 0 0 var(--shadow-color),
+     0.5px 0 0 var(--shadow-color),
+     0 -0.5px 0 var(--shadow-color),
+     0  0.5px 0 var(--shadow-color);
     --shadow-p-box:
         -1px 0 0 var(--shadow-color),
          1px 0 0 var(--shadow-color),
@@ -1975,9 +1997,18 @@ body.light-mode {
         #FCF8F0 50%,
         #F2E8D8 100%
     );
---shadow-p-box : 0px 0px 0 #000;;
---shadow-color: #000000;
 
+--shadow-color: #000000;
+--shadow-p-box-mob:
+    -0.5px 0 0 var(--shadow-color),
+     0.5px 0 0 var(--shadow-color),
+     0 -0.5px 0 var(--shadow-color),
+     0  0.5px 0 var(--shadow-color),
+    -0.5px -0.5px 0 var(--shadow-color),
+     0.5px -0.5px 0 var(--shadow-color),
+    -0.5px  0.5px 0 var(--shadow-color),
+     0.5px  0.5px 0 var(--shadow-color);
+   
     --shadow-p-box:
         -1px 0 0 var(--shadow-color),
          1px 0 0 var(--shadow-color),
