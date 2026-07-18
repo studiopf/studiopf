@@ -91,7 +91,7 @@ input[type="radio"] {
    margin-top: 0;
     margin-bottom: 0;
     border: 0px;
- width: 1200px;
+ width: 1000px;
     position: relative;
     text-align: center;
 }
@@ -114,18 +114,27 @@ input[type="radio"] {
     text-align: center;
 }
 .maintenance-box {
-   width: 1000px;
+    width: 100vw;
+    max-width: none;
+    box-sizing: border-box;
+
     margin-top: 10px;
     margin-bottom: 0;
-    max-width: 1200px;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
     position: relative;
     text-align: center;
+
     background: var(--maintenance-bg);
+
     border-top: 1px solid var(--maintenance-border-top);
     border-bottom: 1px solid var(--maintenance-border-bottom);
     border-left: none;
     border-right: none;
-    border-radius: 10px;
+
+    border-radius: 0;
     box-shadow: var(--maintenance-shadow);
     overflow: hidden;
 }
@@ -269,12 +278,16 @@ input[type="radio"] {
    ===================================================== font-size===================== */
 .widget-container
 .card-container3 {
+        width: 100%;
+   margin-top: 2px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    width: 100%;
-   align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+  align-items: center;
         justify-content: center;
+    margin: 0rem auto;
+    max-width: 700px;
+    padding: 0 0px;
 }
 .exemples-photos3 {
     width: auto;
@@ -1320,12 +1333,23 @@ text-shadow: --shadow-a-box;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
-
     margin: 0rem auto;
     max-width: 300px;
     padding: 0 0px;
    align-items: center;
         justify-content: center;
+}
+   .card-container3 {
+        width: 100%;
+   margin-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+  align-items: center;
+        justify-content: center;
+    margin: 0rem auto;
+    max-width: 200px;
+    padding: 0 0px;
 }
   /* ==========================================================
    THÈME CLAIR
@@ -1519,17 +1543,7 @@ body.light-mode .cardpartenaire2 {
       font-size: 12px;
     }
 
-    .card-container2 {
-        margin-top: 0;
-        margin-bottom: 0;
-        align-items: center;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(1, minmax(90px, 1fr));
-        gap: 8px;
-        align-items: center;
-        justify-content: center;
-    }
+  
 
 /* On s'assure que le contenu principal respire aussi */
 
@@ -1541,14 +1555,6 @@ body.light-mode .cardpartenaire2 {
     width: 100%;
     max-width: 92%;
     text-align: center;
-}
- .card-container3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    width: 100%;
-    align-items: center;
-        justify-content: center;
 }
 
 
