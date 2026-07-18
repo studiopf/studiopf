@@ -2363,7 +2363,51 @@ a.surligne:visited {
 .fondnain::before,
 .fondmort::before,
 .fondcusto::before {
-        content: "";
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1200px auto;
+
+    /* Le dégradé que tu utilises déjà */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        #000 0%,
+        #000 55%,
+        rgba(0,0,0,.90) 75%,
+        rgba(0,0,0,.65) 90%,
+        rgba(0,0,0,.25) 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        #000 0%,
+        #000 55%,
+        rgba(0,0,0,.90) 75%,
+        rgba(0,0,0,.65) 90%,
+        rgba(0,0,0,.25) 100%
+    );
+
+    pointer-events: none;
+    z-index: 0;
+}
+.fondmoi::after,
+.fondorc::after,
+.fonddg::after,
+.fondslann::after,
+.fonddracaufeu::after,
+.fondlilia::after,
+.fondknigt::after,
+.fondnurgle::after,
+.fondfreezer::after,
+.fonddemon::after,
+.fondpirate::after,
+.fondnain::after,
+.fondmort::after,
+.fondcusto::after {
+    content: "";
     position: absolute;
     inset: 0;
 
@@ -2371,30 +2415,30 @@ a.surligne:visited {
     background-position: top center;
     background-size: 800px auto;
 
-opacity: 0.95;
-filter: grayscale(30%) brightness(1) contrast(1);
+    opacity: .95;
+    filter: grayscale(30%) brightness(1) contrast(1);
 
--webkit-mask-image: linear-gradient(
-    to bottom,
-    #000 0%,
-    #000 55%,
-    rgba(0, 0, 0, 0.90) 75%,
-    rgba(0, 0, 0, 0.65) 90%,
-    rgba(0, 0, 0, 0.25) 100%
-);
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        #000 0%,
+        #000 55%,
+        rgba(0,0,0,.90) 75%,
+        rgba(0,0,0,.65) 90%,
+        rgba(0,0,0,.25) 100%
+    );
 
-mask-image: linear-gradient(
-    to bottom,
-    #000 0%,
-    #000 55%,
-    rgba(0, 0, 0, 0.90) 75%,
-    rgba(0, 0, 0, 0.65) 90%,
-    rgba(0, 0, 0, 0.25) 100%
-);
+    mask-image: linear-gradient(
+        to bottom,
+        #000 0%,
+        #000 55%,
+        rgba(0,0,0,.90) 75%,
+        rgba(0,0,0,.65) 90%,
+        rgba(0,0,0,.25) 100%
+    );
+
     pointer-events: none;
-    z-index: 0;
+    z-index: 1;
 }
-
 
 /* ==========================================
        LE CONTENU PASSE DEVANT LE FILIGRANE
@@ -2423,7 +2467,7 @@ mask-image: linear-gradient(
            IMAGES DES DIFFÉRENTS FONDS
 ========================================== */
 
-.fondlilia::before {
+.fondlilia::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2435,7 +2479,7 @@ mask-image: linear-gradient(
         url("../img/fondlilia.png");
 }
 
-.fondorc::before {
+.fondorc::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2447,7 +2491,7 @@ mask-image: linear-gradient(
         url("../img/orc.png");
 }
 
-.fonddg::before {
+.fonddg::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2459,7 +2503,7 @@ mask-image: linear-gradient(
         url("../img/dg.png");
 }
 
-.fondslann::before {
+.fondslann::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2471,7 +2515,7 @@ mask-image: linear-gradient(
         url("../img/slann.png");
 }
 
-.fonddracaufeu::before {
+.fonddracaufeu::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2483,7 +2527,7 @@ mask-image: linear-gradient(
         url("../img/dracaufeu.png");
 }
 
-.fondknigt::before {
+.fondknigt::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2495,7 +2539,7 @@ mask-image: linear-gradient(
         url("../img/fondknigt.png");
 }
 
-.fondnurgle::before {
+.fondnurgle::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2507,7 +2551,7 @@ mask-image: linear-gradient(
         url("../img/fondnurgle.png");
 }
 
-.fondfreezer::before {
+.fondfreezer::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2519,7 +2563,7 @@ mask-image: linear-gradient(
         url("../img/fondfreezer.png");
 }
 
-.fondmoi::before {
+.fondmoi::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2531,7 +2575,7 @@ mask-image: linear-gradient(
         url("../img/moi.png");
 }
 
-.fonddemon::before {
+.fonddemon::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2543,7 +2587,7 @@ mask-image: linear-gradient(
         url("../img/fonddemon.png");
 }
 
-.fondpirate::before {
+.fondpirate::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2555,7 +2599,7 @@ mask-image: linear-gradient(
         url("../img/fondpirate.png");
 }
 
-.fondnain::before {
+.fondnain::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2567,7 +2611,7 @@ mask-image: linear-gradient(
         url("../img/fondnain.png");
 }
 
-.fondmort::before {
+.fondmort::after {
     background-image:
         linear-gradient(
             to bottom,
@@ -2579,7 +2623,7 @@ mask-image: linear-gradient(
         url("../img/fondmort.png");
 }
 
-.fondcusto::before {
+.fondcusto::after {
     background-image:
         linear-gradient(
             to bottom,
