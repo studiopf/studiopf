@@ -3565,7 +3565,7 @@ function changelanguepeinture() {
 </div>
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
     <div class="card-container3">
         <div class="card">
        <h2>Preparation 🛠️</h2>
@@ -3595,7 +3595,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Comparison Table -->
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -3628,7 +3628,7 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   <div class="maintenance-box">
+   <div class="maintenance-box ajust">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
@@ -3813,7 +3813,7 @@ function changelanguepeinture() {
 
 
 </div>
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
     <div class="card-container3">
         <div class="card">
        <h2>Preparación 🛠️</h2>
@@ -3843,7 +3843,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Tableau comparaison -->
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -3876,7 +3876,7 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   <div class="maintenance-box">
+   <div class="maintenance-box ajust">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
@@ -4444,7 +4444,7 @@ function changelanguefoot() {
     <p><strong>STUDIO PF</strong><br>
             FRASSE Pierre-François<br>
             17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
-    17 Route de Lare, 42510 Saint-Georges-de-Baroille, France<br><br>
+ 
 
     <p>
         Contact 📧 :
