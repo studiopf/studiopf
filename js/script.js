@@ -666,6 +666,7 @@ function changelangueforma() {
         changelangueindex();
     } else {
            html = `
+             <div class="center">
             <div class="maintenance-box ajust fonddg">
        <h1>🎨 Cours de Peinture sur Figurines</h1>
 
@@ -947,6 +948,9 @@ ${prenom} ${nom}`;
 
     if (currentLanguage === "english") {
              html = `
+              <div class="center">
+    <div class="maintenance-box ajust">
+
              <h1>Quote Request - TableTop+ Commission</h1>
 
         <form id="contactForm" action="#">
@@ -956,7 +960,7 @@ ${prenom} ${nom}`;
        <fieldset>
 
                     <legend>Quote Simulator</legend>
-                    <div class="maintenance-box-fieldset fondcusto">
+                    <div class="card fondcusto">
                         <label for="niveau">Painting Levels :</label><br>
                       <p>
     Level ⭐ Gold :<br>
@@ -1161,12 +1165,13 @@ ${prenom} ${nom}`;
               <button type="submit" class="button">Send Quote Request by Email</button>
                    </div> </div>
 
-
-
             </form>
+            </div></div>
             `;
     } else if (currentLanguage === "spanish") {
               html = `
+               <div class="center">
+    <div class="maintenance-box ajust">
               <h1>Solicitud de Presupuesto comisión TableTop+</h1>
 
         <form id="contactForm" action="#">
@@ -1176,7 +1181,7 @@ ${prenom} ${nom}`;
        <fieldset>
 
                     <legend>Simulación de presupuesto</legend>
-                    <div class="cardform">
+                   <div class="card fondcusto">
                         <label for="niveau">Niveles de Pintura :</label><br>
                       <p>
     Nivel ⭐ Oro :<br>
@@ -1372,7 +1377,7 @@ ${prenom} ${nom}`;
     </div>
        </fieldset>
          <div class="maintenance-box ajust">
-                           <div id="message" class="cardform">
+                           <div id="message" class="cardform fondknigt">
                             <label for="message-input">Para ser lo más preciso posible,<br>por favor indica la lista de miniaturas a pintar, si se necesita montaje,<br>y si tienes un tema o esquema de colores ya definido : <span>*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Tu mensaje" required></textarea></div>
 
@@ -1381,14 +1386,15 @@ ${prenom} ${nom}`;
               <button type="submit" class="button">Enviar solicitud por correo</button>
                    </div> </div>
 
-
-
             </form>
+            </div> </div>
               `;
     } else {
         html = `
-                          <h1>Demande de Devis commission TableTop+</h1>
+         <div class="center">
+    <div class="maintenance-box ajust">
 
+                          <h1>Demande de Devis commission TableTop+</h1>
 
 
         <form id="contactForm" action="#">
@@ -1398,7 +1404,7 @@ ${prenom} ${nom}`;
        <fieldset>
 
                     <legend>Simulation de devis</legend>
-                    <div class="cardform">
+                    <div class="card fondcusto">
                         <label for="niveau">Niveaux de Peinture :</label><br>
                       <p>
     Niveau ⭐ Gold :<br>
@@ -1613,7 +1619,7 @@ ${prenom} ${nom}`;
     </div>
        </fieldset>
          <div class="maintenance-box ajust">
-                           <div id="message" class="cardform">
+                         <div id="message" class="cardform fondknigt">
                             <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span>*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
 
@@ -1626,6 +1632,7 @@ ${prenom} ${nom}`;
 
 
             </form>
+            </div> </div>
         `;
     }
 
