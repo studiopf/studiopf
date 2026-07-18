@@ -107,12 +107,13 @@ type="image/png">
 </head>
 <body>
 
-     <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
-
     <header>
          
 <div class="header-top">
   <button id="themeToggle" class="theme-toggle">🌙</button>
+  <button onclick="toggleMaintenanceBackground()">
+    Fond ON / OFF
+</button>
     <!-- Logo -->
     <div class="header-logo">
         <a href="index.html"
@@ -235,6 +236,7 @@ type="image/png">
         </div>
     </div>
 </nav>
+          <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
     </header>
     <!-- Contenu principal qui change dynamiquement -->
   <main id="contenu-principal">
