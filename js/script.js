@@ -4110,8 +4110,8 @@ function changelanguepeinture() {
         <div class="card">
     <h2>Peinture 🎨</h2>
 
-        <li><strong>⭐ Gold :</strong> rendu propre et efficace</p>
-        <li><strong>👑 Diamant :</strong> détails soignés, contrastes renforcés et points focaux travaillés</p>
+        <p><strong>⭐ Gold :</strong> rendu propre et efficace</p>
+        <p><strong>👑 Diamant :</strong> détails soignés, contrastes renforcés et points focaux travaillés</p>
 
 </div>
 
