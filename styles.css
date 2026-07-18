@@ -126,7 +126,7 @@ info-container {
     text-align: center;
 }
 .maintenance-box-part {
-    width: 100%;
+   width: calc(100% - 30px);
     margin-top: 10px;
     margin-bottom: 0;
       max-width: 1200px;
@@ -228,6 +228,14 @@ info-container {
    .maintenance-box {
        max-width: 700px;
     width: calc(100% - 30px);
+}
+   .maintenance-box-part {
+     width: calc(100% - 30px);
+    margin-top: 10px;
+    margin-bottom: 0;
+      max-width: 700px;
+    position: relative;
+    text-align: center;
 }
    .maintenance-boxpartenaire {
     width: 100%;
@@ -1272,7 +1280,14 @@ nav {
         max-width: 600px;
     }
       /* Filigrane */
-
+ .maintenance-box-part {
+     width: calc(100% - 30px);
+    margin-top: 10px;
+    margin-bottom: 0;
+      max-width: 640px;
+    position: relative;
+    text-align: center;
+}
     .maintenance-box {
            max-width: 600px;
     width: calc(100% - 30px);
@@ -1636,7 +1651,14 @@ body.light-mode .cardpartenaire2 {
         width: 100%;
         max-width: 350px;
     }
-
+ .maintenance-box-part {
+     width: calc(100% - 30px);
+    margin-top: 10px;
+    margin-bottom: 0;
+      max-width: 400px;
+    position: relative;
+    text-align: center;
+}
     .maintenance-box {
        max-width: 400px;
     width: calc(100% - 30px);
