@@ -242,33 +242,54 @@
 
     <header>
    
-        <button id="themeToggle" class="theme-toggle">🌙</button>
-        
-            <div id="info-container" class="info-container">
-        <p class="info" id="infoParagraph">.</p>  
+<div class="header-top">
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+    <!-- Logo -->
+    <div class="header-logo">
+        <a href="index.html"
+           onclick="loadPage('index.html'); return false;"
+           class="logo-a"
+           aria-label="Retour à l'accueil">
+
+            <img
+                src="/img/logo.png"
+                alt="Studio PF Logo"
+                class="logo"
+                data-no-lightbox
+                fetchpriority="high">
+        </a>
+     
     </div>
 
-<div id="logo-contenu" class="card-container2logo">
-        <div class="cardlogoimg">
-    <a href="index.html" onclick="loadPage('index.html'); return false;" class="logo-a" aria-label="Retour à l'accueil">
+    <!-- Icônes -->
+  <div class="header-contact">
 
-        <img src="/img/logo.png" alt="Studio PF Logo" data-no-lightbox class="logo" fetchpriority=high>
+        <a href="mailto:studiopeinturefigurine@gmail.com"
+           aria-label="Envoyer un email">
+            <i class="fas fa-envelope"></i>
+        </a>
 
-         </a>    
-</div>  
-   </div>
-    <!-- Bouton hamburger -->
-<button
-    id="pf-menu-button"
-    class="pf-menu-button"
-    aria-label="Ouvrir le menu"
-    aria-expanded="false"
->
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+        <a href="tel:+33775860837"
+           aria-label="Téléphoner">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
 
+      <!-- Bouton hamburger -->
+    <button
+        id="pf-menu-button"
+        class="pf-menu-button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button> 
+ 
+</div>
+        <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
 <!-- Menu mobile -->
 <nav id="pf-mobile-nav" class="pf-mobile-nav">
 
@@ -312,26 +333,39 @@
         ❓ FAQ
     </a></li>
 
-    <li><a href="mailto:studiopeinturefigurine@gmail.com">
-        ✉️ Me contacter
-    </a></li>
+</ul>
 
+
+  <ul class="contact-list">
+    <li>
+        <a href="mailto:studiopeinturefigurine@gmail.com">
+           
+            <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="tel:+33775860837">
+          <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
+        </a>
+    </li>
 </ul>
     <!-- Réseaux sociaux -->
     <div class="pf-mobile-social">
         <div class="pf-social-container">
-            <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
             <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/studioPFfr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
+          
+           <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
             <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
             <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
             <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
-            <a href="https://wa.me/33775860837" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+
         </div>
     </div>
 </nav>
-
 
        </header>
     <!-- Contenu principal qui change dynamiquement -->
