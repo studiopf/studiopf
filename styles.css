@@ -135,12 +135,11 @@ info-container {
 }
 .maintenance-box {
     max-width: 1200px;
-    width: calc(100% - 30px);
-    margin-top: 12px;
+    width: 100%;
+    margin-top: 10px;
     margin-bottom: 0;
     position: relative;
     text-align: center;
- background-size: 1200px auto;
     background: var(--maintenance-bg);
     border-top: 1px solid var(--maintenance-border-top);
     border-bottom: 1px solid var(--maintenance-border-bottom);
@@ -409,12 +408,9 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 0px;
-   margin-top: 20px;
     margin: 0rem auto;
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 0 0px;
 }
 /* ==========================================================================
@@ -1027,7 +1023,7 @@ nav {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 5px;
     max-width: 1200px;
     margin: 0;
@@ -1402,17 +1398,6 @@ body.light-mode .cardpartenaire2 {
     margin:20px 0 12px;
 }
 
-    .center {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-    flex-direction: column;
-        gap: 0px;
-        margin: 0rem auto;
-        max-width: 600px;
-        padding: 0 0px;
-    }
 
 .cardpartenaire p {
       font-size: 12px;
