@@ -254,7 +254,8 @@ function changelanguepourquoi() {
 
     if (currentLanguage === "english") {
          html = ` <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddemon">
+ <h1>❓FAQ</h1>
 <h2>🪄 Why choose Studio PF?</h2>
 <ul>
 <li>🎨 <strong>A 100% custom project</strong>: each miniature is painted according to your wishes, your universe, your budget, and the desired level of finish.</li>
@@ -271,7 +272,7 @@ From the first contact to delivery, I do everything possible to make your projec
 </div>
 
 <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondknigt">
     <h2>⚙️ How does it work?</h2>
     <ol>
         <li>💬 Contact me to discuss your project and get a personalized quote.</li>
@@ -294,7 +295,7 @@ From the first contact to delivery, I do everything possible to make your projec
 </div>
 
 <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondfreezer">
 <h2>❓ Frequently Asked Questions</h2>
 <h3>💰 How much does it cost to paint a miniature?</h3>
 <p>
@@ -369,7 +370,8 @@ TableTop painting is designed for gaming with an excellent look at tabletop dist
 </div>`;
     } else if (currentLanguage === "spanish") {
          html = ` <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddemon">
+ <h1>❓FAQ</h1>
 <h2>🪄 ¿Por qué elegir Studio PF?</h2>
 <ul>
 <li>🎨 <strong>Un proyecto 100 % personalizado</strong>: cada figura es pintada según tus deseos, tu universo, tu presupuesto y el nivel de acabado deseado.</li>
@@ -386,7 +388,7 @@ Desde el primer contacto hasta la entrega, pongo todo mi esfuerzo para que tu pr
 </div>
 
 <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondknigt">
     <h2>⚙️ ¿Cómo funciona?</h2>
     <ol>
         <li>💬 Contáctame para hablar de tu proyecto y obtener un presupuesto personalizado.</li>
@@ -409,7 +411,7 @@ Desde el primer contacto hasta la entrega, pongo todo mi esfuerzo para que tu pr
 </div>
 
 <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondfreezer">
 <h2>❓ Preguntas frecuentes</h2>
 <h3>💰 ¿Cuánto cuesta pintar una figura?</h3>
 <p>
@@ -484,7 +486,7 @@ Una pintura TableTop está pensada para el juego con un excelente aspecto a dist
 </div>`;
     } else {
            html = `     <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddemon">
  <h1>❓FAQ</h1>
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
 <ul>
@@ -501,7 +503,7 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
 </div>
 </div>
       <div class="center">
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondknigt">
         <h2>⚙️ Comment ça marche ?</h2>
         <ol>
             <li>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</li>
@@ -527,7 +529,7 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
     </div>
     </div>
       <div class="center">
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondfreezer">
 
 <h2>❓ Questions fréquentes</h2>
 
@@ -664,7 +666,7 @@ function changelangueforma() {
         changelangueindex();
     } else {
            html = `
-            <div class="maintenance-box ajust">
+            <div class="maintenance-box ajust fonddg">
        <h1>🎨 Cours de Peinture sur Figurines</h1>
 
 <p>
@@ -684,7 +686,7 @@ function changelangueforma() {
 
     </div>
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondnurgle">
       <h2>💡 Pourquoi Nous Choisir ?</h2>
 
       <ul>
@@ -699,7 +701,7 @@ function changelangueforma() {
          <a href="#formationForm" class="button">S'inscrire 💬</a>
     </div>
 
-       <div class="maintenance-box">
+       <div class="maintenance-box ajust fondmort">
       <h2>🖍️ Forfaits de Cours</h2>
       <div class="card">
         <h3>🌱 Cours individuel Débutant ou Confirmé</h3>
@@ -737,7 +739,7 @@ function changelangueforma() {
 
 
    </div>
-       <div class="maintenance-box">
+       <div class="maintenance-box ajust fondnain">
       <h2>📆 Stage en groupe</h2>
 <p>Plusieurs thèmes possibles : lumières, théorie des couleurs, buste, choix d’un thème d’armée...</p>
     <div class="card-container2">
@@ -760,7 +762,7 @@ function changelangueforma() {
          <p>Horaires à titre d'exemple.</p>
 
    </div>
-       <div class="maintenance-box">
+       <div class="maintenance-box ajust fondlilia">
         <h2>📆 Prestation événementielle</h2>
         <p>Initiation au modélisme, premiers pas pour Warhammer (montage, peinture et jeu)...</p>
         <p>Sur devis</p>
@@ -788,7 +790,7 @@ function changelangueforma() {
 
    <p>Horaires à titre d'exemple.</p>
    </div>
-       <div class="maintenance-box">
+       <div class="maintenance-box ajust fondfreezer">
       <h2>🖌️🔫 Choisissez vos armes :</h2>
 
       <div class="card-container3">
@@ -807,7 +809,7 @@ function changelangueforma() {
       </div>
 
 </div>
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust fondmoi">
 
       <h2>🚀🎨 Lancez-vous !</h2>
 
@@ -824,7 +826,7 @@ function changelangueforma() {
       </div>
      </div>
 
-      <div class="maintenance-box">
+      <div class="maintenance-box ajust fondcusto">
    <h2>📅 Réservez dès maintenant et devenez expert !</h2>
     <div class="center">
 
@@ -954,7 +956,7 @@ ${prenom} ${nom}`;
        <fieldset class="maintenance-box-fieldset">
 
                     <legend>Quote Simulator</legend>
-                    <div class="cardform">
+                    <div class="maintenance-box-fieldset fondcusto">
                         <label for="niveau">Painting Levels :</label><br>
                       <p>
     Level ⭐ Gold :<br>
@@ -1104,7 +1106,7 @@ ${prenom} ${nom}`;
 <h3><span id="oktotal">0.00</span></h3>
 </div></div>
         </fieldset>
-          <fieldset class="maintenance-box-fieldset">
+          <fieldset class="maintenance-box-fieldset fondknigt">
              <legend>Contact Information</legend>
                 <div class="center">
                     <label for="nom">Last Name<span>*</span></label>
@@ -1150,7 +1152,7 @@ ${prenom} ${nom}`;
     </div>
        </fieldset>
          <div class="maintenance-box">
-                           <div id="message" class="cardform">
+                           <div id="message" class="cardform fondknigt">
                             <label for="message-input">To be as accurate as possible,<br>please provide the list of miniatures to paint, whether assembly is required,<br>and if you have a specific theme or colour scheme in mind : <span>*</span></label>
                             <div class="center"><textarea id="message-input" name="message" placeholder="Your message" required></textarea></div>
 
@@ -2197,7 +2199,7 @@ function changelanguecollection() {
      let html = "";
 
     if (currentLanguage === "english") {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box ajust fondorc">
     <h1>🏆 Unique Pieces for Collection, Exhibition & Competitions</h1>
     <p>
         Studio PF creates <strong>high-end figurines</strong> for collectors, enthusiasts and competitors who want to transform their models into true exhibition pieces.
@@ -2224,7 +2226,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondknigt">
     <h2>🏞️ Dioramas & Exhibition Scenes</h2>
     <p>
         Studio PF creates <strong>custom dioramas</strong> that stage one or more figurines in a setting entirely designed to tell a story.
@@ -2252,7 +2254,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondnain">
     <h2>🗿 Busts & Collectible Pieces</h2>
     <p>
         Studio PF paints <strong>busts, miniature statues and collectible pieces</strong> intended to be displayed in a showcase or to enrich a personal collection.
@@ -2279,7 +2281,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondfreezer">
     <h2>🎬 Manga, Movies, Series & Video Games</h2>
     <p>
         Do you own a figurine inspired by your favorite universe?
@@ -2312,7 +2314,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddg">
     <h2>🎨 An Artistic Approach to Painting</h2>
     <p>
         <strong>✨ Volume work:</strong><br>
@@ -2332,7 +2334,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondslann">
     <h2>A Unique Piece ✨</h2>
     <table class="tableborder1">
     <thead>
@@ -2366,7 +2368,7 @@ function changelanguecollection() {
     </table>
 </div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box ajust fondorc">
     <h1>🏆 Piezas únicas para Colección, Exposición y Concursos</h1>
     <p>
         Studio PF realiza <strong>figurillas de alta gama</strong> destinadas a coleccionistas, apasionados y competidores que desean transformar sus modelos en verdaderas obras de exposición.
@@ -2393,7 +2395,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondknigt">
     <h2>🏞️ Dioramas y Escenas de Exposición</h2>
     <p>
         Studio PF realiza <strong>dioramas a medida</strong> que escenifican una o varias figurillas en un decorado completamente diseñado para contar una historia.
@@ -2420,7 +2422,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondnain">
     <h2>🗿 Bustos y Piezas de Colección</h2>
     <p>
         Studio PF realiza la pintura de <strong>bustos, estatuas en miniatura y piezas de colección</strong> destinadas a ser expuestas en vitrina o enriquecer una colección personal.
@@ -2447,7 +2449,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondfreezer">
     <h2>🎬 Manga, Películas, Series y Videojuegos</h2>
     <p>
         ¿Posees una figurilla inspirada en tu universo favorito?
@@ -2481,7 +2483,7 @@ function changelanguecollection() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddg">
     <h2>🎨 Un enfoque artístico de la pintura</h2>
     <p>
         <strong>✨ Trabajo de volúmenes:</strong><br>
@@ -2501,7 +2503,7 @@ function changelanguecollection() {
     </p>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondslann">
     <h2>Una pieza única ✨</h2>
     <table class="tableborder1">
     <thead>
@@ -2535,7 +2537,7 @@ function changelanguecollection() {
     </table>
 </div>`;
     } else {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box ajust fondorc">
 
     <h1>🏆 Pièces uniques pour Collection, Exposition & Concours</h1>
 
@@ -2568,7 +2570,7 @@ function changelanguecollection() {
 
 
 </div>
-  <div class="maintenance-box ajust">
+  <div class="maintenance-box ajust fondknigt">
 
     <h2>🏞️ Dioramas & Scènes d'exposition</h2>
 
@@ -2603,7 +2605,7 @@ function changelanguecollection() {
 </div>
 
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondnain">
 
     <h2>🗿 Bustes & Pièces de Collection</h2>
 
@@ -2638,7 +2640,7 @@ function changelanguecollection() {
 </div>
 
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondfreezer">
 
     <h2>🎬 Manga, Films, Séries & Jeux vidéo</h2>
 
@@ -2681,7 +2683,7 @@ function changelanguecollection() {
 
 
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddg">
 
     <h2>🎨 Une approche artistique de la peinture</h2>
 
@@ -2709,7 +2711,7 @@ function changelanguecollection() {
 
 
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondslann">
 
 <h2>Une pièce unique ✨</h2>
 
@@ -2770,7 +2772,7 @@ function changelanguequisuisje() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box ajust fonddmoi">
      <h1>👋 Who am I?</h1>
 <h2>Pierre-François, aka PF — Professional Figurine Painter & Founder of Studio PF</h2>
 <p>
@@ -2797,7 +2799,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- ORIGINES & DÉBUTS -->
     <!-- ================================================== -->
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondfreezer">
     <h2>🏰 From imaginary worlds to the first brushes</h2>
     <p>
         Passionate since childhood about fantasy, science fiction, Tolkien,
@@ -2834,7 +2836,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- PROGRESSION & CRÉATION DU STUDIO -->
     <!-- ================================================== -->
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondslann">
     <h2>🦎 From passion to profession</h2>
 <p>
     Over the years, I have had the opportunity to paint many armies and factions. It all started with my
@@ -2878,7 +2880,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
 
   <!--
-  <div class="maintenance-box ajust">
+  <div class="maintenance-box ajust fondnurgle">
     <h2>📚 Transmission and community</h2>
  <p>
     When I created <strong>Studio PF</strong>, I didn’t just want to paint figurines. I also wanted to pass on everything I wish I had learned when I started. My own difficulties taught me the importance of a clear method: avoiding classic mistakes, understanding the right techniques, mastering the airbrush, and progressing with confidence. Today, it is this experience that I share through my training courses and content.
@@ -2909,7 +2911,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- AUJOURD’HUI & ENGAGEMENTS -->
     <!-- ================================================== -->
-  <div class="maintenance-box ajust">
+  <div class="maintenance-box ajust fondknigt">
     <h2>🚀 Studio PF today</h2>
     <p>
         Alongside my professional painting activity, I am the president of the miniature wargaming association
@@ -2963,7 +2965,7 @@ function changelanguequisuisje() {
     </a>
 </div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<div class="maintenance-box ajust">
+        html = `<div class="maintenance-box ajust fonddmoi">
      <h1>👋 ¿Quién soy?</h1>
 <h2>Pierre-François, alias PF — Artista pintor de figurillas y fundador de Studio PF</h2>
 <p>
@@ -2990,7 +2992,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- ORIGINES & DÉBUTS -->
     <!-- ================================================== -->
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondfreezer">
     <h2>🏰 De los mundos imaginarios a los primeros pinceles</h2>
     <p>
         Apasionado desde la infancia por la fantasía, la ciencia ficción, Tolkien,
@@ -3027,7 +3029,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- PROGRESSION & CRÉATION DU STUDIO -->
     <!-- ================================================== -->
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondslann">
     <h2>🦎 De la pasión al oficio</h2>
 <p>
     A lo largo de los años, he tenido la oportunidad de pintar numerosos ejércitos y facciones. Todo comenzó con mis
@@ -3071,7 +3073,7 @@ function changelanguequisuisje() {
     <!-- FORMATION & COMMUNAUTÉ -->
     <!-- ================================================== -->
  <!--
- <div class="maintenance-box ajust">
+ <div class="maintenance-box ajust fondnurgle">
     <h2>📚 Transmisión y comunidad</h2>
  <p>
     Al crear <strong>Studio PF</strong>, no quería solo pintar figurillas. También quería transmitir todo lo que me hubiera gustado aprender cuando empecé. Mis propias dificultades me enseñaron la importancia de un método claro: evitar errores clásicos, comprender los gestos correctos, dominar el aerógrafo y progresar con confianza. Hoy, es esa experiencia la que comparto a través de mis formaciones y contenidos.
@@ -3102,7 +3104,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- AUJOURD’HUI & ENGAGEMENTS -->
     <!-- ================================================== -->
-  <div class="maintenance-box ajust">
+  <div class="maintenance-box ajust fondknigt">
     <h2>🚀 Studio PF hoy</h2>
     <p>
         Paralelamente a mi actividad como pintor profesional, soy presidente de la asociación de juegos de figurillas
@@ -3156,7 +3158,7 @@ function changelanguequisuisje() {
     </a>
 </div>`;
     } else {
-        html = ` <div class="maintenance-box ajust">
+        html = ` <div class="maintenance-box ajust fonddmoi">
      <h1>👋 Qui suis-je ?</h1>
 
 <h2>Pierre-François, alias PF — Artiste peintre sur figurines & fondateur de Studio PF</h2>
@@ -3188,7 +3190,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- ORIGINES & DÉBUTS -->
     <!-- ================================================== -->
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondfreezer">
     <h2>🏰 Des mondes imaginaires aux premiers pinceaux</h2>
 
     <p>
@@ -3229,7 +3231,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- PROGRESSION & CRÉATION DU STUDIO -->
     <!-- ================================================== -->
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondslann">
     <h2>🦎 De la passion au métier</h2>
 
 <p>
@@ -3284,7 +3286,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- FORMATION & COMMUNAUTÉ -->
     <!-- ================================================== -->
-  <div class="maintenance-box ajust">
+  <div class="maintenance-box ajust fondnurgle">
     <h2>📚 Transmission et communauté</h2>
 
  <p>
@@ -3322,7 +3324,7 @@ function changelanguequisuisje() {
     <!-- ================================================== -->
     <!-- AUJOURD’HUI & ENGAGEMENTS -->
     <!-- ================================================== -->
-  <div class="maintenance-box ajust">
+  <div class="maintenance-box ajust fondknigt">
     <h2>🚀 Studio PF aujourd’hui</h2>
 
     <p>
@@ -3402,7 +3404,7 @@ function changelanguepeinture() {
 
 <h1>🎨 Commission Miniature Painting</h1>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondmort">
 
     <h2>⚔️ TableTop Armies</h2>
 
@@ -3421,7 +3423,7 @@ function changelanguepeinture() {
 
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddg">
         <h2>⭐ Gold — Premium TableTop Finish</h2>
         <p>
             <strong>Ideal for :</strong> Warhammer armies, units and large quantities of figurines.
@@ -3458,7 +3460,7 @@ function changelanguepeinture() {
 
     </div>
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondnurgle">
         <h2>👑 Diamond — Superior TableTop Finish</h2>
         <p>
             <strong>Ideal for :</strong> Characters, heroes, monsters,
@@ -3498,7 +3500,7 @@ function changelanguepeinture() {
 
     </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondpirate">
 
     <h2>🛠️ Miniature Conversion & Custom Creations</h2>
 
@@ -3563,7 +3565,7 @@ function changelanguepeinture() {
 </div>
 
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
     <div class="card-container3">
         <div class="card">
        <h2>Preparation 🛠️</h2>
@@ -3593,7 +3595,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Comparison Table -->
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -3626,7 +3628,7 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   <div class="maintenance-box ajust">
+   <div class="maintenance-box">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
@@ -3652,7 +3654,7 @@ function changelanguepeinture() {
 
 <h1>🎨 Pintura de Miniaturas por Encargo</h1>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondmort">
 
     <h2>⚔️ Ejércitos TableTop</h2>
 
@@ -3671,7 +3673,7 @@ function changelanguepeinture() {
 </div>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddg">
         <h2>⭐ Gold — Acabado TableTop Premium</h2>
         <p>
             <strong>Ideal para :</strong> Ejércitos Warhammer, unidades y grandes cantidades de figurillas.
@@ -3708,7 +3710,7 @@ function changelanguepeinture() {
 
     </div>
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondnurgle">
         <h2>👑 Diamante — Acabado TableTop Superior</h2>
         <p>
             <strong>Ideal para :</strong> Personajes, héroes, monstruos,
@@ -3747,7 +3749,7 @@ function changelanguepeinture() {
 
     </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondpirate">
 
     <h2>🛠️ Conversión y creación de miniaturas únicas</h2>
 
@@ -3810,7 +3812,7 @@ function changelanguepeinture() {
 
 
 </div>
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
     <div class="card-container3">
         <div class="card">
        <h2>Preparación 🛠️</h2>
@@ -3840,7 +3842,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Tableau comparaison -->
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -3873,7 +3875,7 @@ function changelanguepeinture() {
         </tbody>
     </table>
 </div>
-   <div class="maintenance-box ajust">
+   <div class="maintenance-box">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
@@ -3897,7 +3899,7 @@ function changelanguepeinture() {
     } else {
         html = `   <h1>🎨 Peinture de Figurines sur Commission</h1>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondmort">
 
     <h2>⚔️ Armées TableTop</h2>
 
@@ -3918,7 +3920,7 @@ function changelanguepeinture() {
   <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fonddg">
 
 
         <h2>⭐ Gold — Finition TableTop Premium</h2>
@@ -3969,7 +3971,7 @@ function changelanguepeinture() {
 
 
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondnurgle">
 
         <h2>👑 Diamant — Finition TableTop Supérieure</h2>
 
@@ -4017,7 +4019,7 @@ function changelanguepeinture() {
 
     </div>
 
-<div class="maintenance-box ajust">
+<div class="maintenance-box ajust fondpirate">
 
     <h2>🛠️ Conversion & Création de figurines uniques</h2>
 
@@ -4081,7 +4083,7 @@ function changelanguepeinture() {
 
 </div>
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
 <div class="card-container3">
  <div class="card">
        <h2>Préparation 🛠️</h2>
@@ -4112,7 +4114,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Tableau comparaison -->
-<div class="maintenance-box ajust">
+<div class="maintenance-box">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -4147,7 +4149,7 @@ function changelanguepeinture() {
 </div>
 
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
