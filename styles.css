@@ -28,7 +28,8 @@
     text-align: center;
 }
 .maintenance-box {
-   width: 1000px;
+   width: 100%;
+   max-width: 1000px;
     margin-top: 10px;
     margin-bottom: 0;
     max-width: 1200px;
@@ -134,7 +135,7 @@
 }
 
    .maintenance-box {
-   width: 700px;
+   width: 100%;
     max-width: 700px;
 }
    .maintenance-boxpartenaire {
@@ -237,7 +238,7 @@ textarea {
     word-spacing: 0.05em;
 }
 
-/* Paragraphes justifiés avec espace sur les côtés */
+/* Paragraphes alignés à gauche */
 .ajust p {
     width: 100%;
     max-width: 100%;
@@ -245,14 +246,10 @@ textarea {
     margin: 0 0 1.6em;
     padding: 0;
 
-    text-align: justify !important;
+    text-align: left !important;
     text-indent: 2em;
 }
 
-/* Dernier paragraphe */
-.ajust p:last-child {
-    margin-bottom: 0;
-}
 
 /* Titres centrés */
 .ajust h1,
@@ -1204,8 +1201,8 @@ nav {
 }
 
     .maintenance-box {
-   width: 600px;
-    max-width: 600px;
+       width: 100%;
+   max-width: 600px;
 }
       .maintenance-box p {
 text-shadow: --shadow-p-box;
@@ -1615,7 +1612,7 @@ body.light-mode .cardpartenaire2 {
 }
 
     .maintenance-box {
-   width: 350px;
+   width: 100%;
     max-width: 350px;
 }
          .maintenance-boxpartenaire {
