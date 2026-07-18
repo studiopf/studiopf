@@ -1136,7 +1136,7 @@ nav {
     background-position: center;
     border: none;
     cursor: pointer;
-    font-size: 0px;
+    font-size: 10px;
     color: white;
     text-shadow: 1px 1px 2px black;
 }
@@ -1590,7 +1590,7 @@ body.light-mode .cardpartenaire2 {
         background-position: center;
         border: none;
         cursor: pointer;
-        font-size: 0px;
+        font-size: 10px;
         color: white;
         text-shadow: 1px 1px 2px black;
     }
@@ -1805,9 +1805,9 @@ body,
     text-decoration:none;
     background:linear-gradient(
         180deg,
-        #6B3838 0%,
-        #4D2828 50%,
-        #331B1B 100%
+        ##C4C4C4 0%,
+        #999999 50%,
+        ##696969 100%
     );
     border:2px solid #f4c876;
     border-radius:12px;
@@ -1829,9 +1829,9 @@ body,
     color:#ffffff;
    background:linear-gradient(
         180deg,
-        #7C4646 0%,
-        #5E3131 50%,
-        #3C2020 100%
+        ##F2F2F2 0%,
+        #C4C4C4 50%,
+        #999999 100%
     );
     border-color:#F5C469;
     transform:translateY(-2px);
@@ -2081,7 +2081,7 @@ body.light-mode {
     /* Mainenance Box - Mode Sombre */
     --box-border: #8b5f3a;
     --box-bg: #331B1B;
-   --button-bg:#6b4b2f;
+   --button-bg:#999999;
     --button-text:#0F0F0F;
     --button-border:#f7d88b;
     --title:#0A0A0A;
