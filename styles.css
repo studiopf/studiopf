@@ -227,9 +227,7 @@ info-container {
 .maintenance-box p {
 text-shadow: var(--shadow-p-box-mob);
 }
-     .maintenance-box a {
-text-shadow: var(--shadow-p-box-mob);
-}
+   
    .maintenance-box {
        max-width: 700px;
     width: calc(100% - 30px);
@@ -694,8 +692,7 @@ p {
    margin-top: 2px;
     margin: 0rem auto;
     max-width: 92%;
-    color: var(--button-text);
-   text-align: center;
+    color: var(--text-p);
 }
 
 /* ==========================================================================
@@ -1429,15 +1426,7 @@ body.light-mode .cardpartenaire2 {
     max-width: 92%;
     color: #e8d9c0;
 }
-   p {
-       font-size: 11px;
-    line-height: 1.6;
-    text-align: center;
-   margin-top: 2px;
-    margin: 0rem auto;
-    max-width: 92%;
-    color: var(--text-p);
-}
+
 
 
     h1 {
@@ -1648,9 +1637,7 @@ body.light-mode .cardpartenaire2 {
 .maintenance-box p {
 text-shadow: var(--shadow-p-box-mob);
 }
-     .maintenance-box a {
-text-shadow: var(--shadow-p-box-mob);
-}
+     
    
    .exemples-photos img{
     width: 140px;
@@ -1922,19 +1909,30 @@ body.light-mode .theme-toggle {
 --shadow-color: #ffffff;
 --shadow-p-box-mob:
     0 0 1px var(--shadow-color),
-    -0.5px 0 0 var(--shadow-color),
-     0.5px 0 0 var(--shadow-color),
-     0 -0.5px 0 var(--shadow-color),
-     0  0.5px 0 var(--shadow-color);
-    --shadow-p-box:
-        -1px 0 0 var(--shadow-color),
-         1px 0 0 var(--shadow-color),
-         0 -1px 0 var(--shadow-color),
-         0 1px 0 var(--shadow-color),
-        -1px -1px 0 var(--shadow-color),
-         1px -1px 0 var(--shadow-color),
-        -1px 1px 0 var(--shadow-color),
-         1px 1px 0 var(--shadow-color);
+    -0.75px 0 0 var(--shadow-color),
+     0.75px 0 0 var(--shadow-color),
+     0 -0.75px 0 var(--shadow-color),
+     0  0.75px 0 var(--shadow-color),
+    -0.75px -0.75px 0 var(--shadow-color),
+     0.75px -0.75px 0 var(--shadow-color),
+    -0.75px  0.75px 0 var(--shadow-color),
+     0.75px  0.75px 0 var(--shadow-color);
+  --shadow-p-box:
+    /* 1re couronne */
+    -1px 0 0 var(--shadow-color),
+     1px 0 0 var(--shadow-color),
+     0 -1px 0 var(--shadow-color),
+     0  1px 0 var(--shadow-color),
+    -1px -1px 0 var(--shadow-color),
+     1px -1px 0 var(--shadow-color),
+    -1px  1px 0 var(--shadow-color),
+     1px  1px 0 var(--shadow-color),
+
+    /* Renfort */
+    -2px 0 1px var(--shadow-color),
+     2px 0 1px var(--shadow-color),
+     0 -2px 1px var(--shadow-color),
+     0  2px 1px var(--shadow-color);
 
     --maintenance-border-top: rgba(255,255,255,0.28);
     --maintenance-border-bottom: rgba(255,255,255,0.28);
@@ -2224,6 +2222,14 @@ button.pf-menu-button {
 
 /* Tablette */
 @media (min-width: 768px) {
+      p {
+       font-size: 11px;
+    line-height: 1.6;
+   margin-top: 2px;
+    margin: 0rem auto;
+    max-width: 92%;
+    color: var(--text-p);
+}
    .exemples-photos img{
     width: 200px;
     height: auto;
