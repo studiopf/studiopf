@@ -6465,8 +6465,8 @@ function updateBackgroundButton() {
     const enabled = !document.body.classList.contains("no-maintenance-bg");
 
     btn.textContent = enabled
-        ? "🖼️ Fond : ON"
-        : "🚫 Fond : OFF";
+        ? "🖼️👁️"
+        : "🖼️🚫";
 }
 
 function initThemeToggle() {
