@@ -3590,18 +3590,18 @@ function changelanguepeinture() {
 
        <div class="card">
     <h2>Painting 🎨</h2>
-    <ul>
-        <li><strong>⭐ Gold :</strong> clean and efficient result</li>
-        <li><strong>👑 Diamond :</strong> careful details, enhanced contrasts and worked focal points</li>
-    </ul>
+   
+        <p><strong>⭐ Gold :</strong> clean and efficient result</p>
+        <p><strong>👑 Diamond :</strong> careful details, enhanced contrasts and worked focal points</p>
+
 </div>
 
        <div class="card">
     <h2>Basing 🌿</h2>
-    <ul>
-        <li><strong>⭐ Gold :</strong> worked and harmonious base</li>
-        <li><strong>👑 Diamond :</strong> scenic base with atmosphere</li>
-    </ul>
+   
+        <p><strong>⭐ Gold :</strong> worked and harmonious base</p>
+        <p><strong>👑 Diamond :</strong> scenic base with atmosphere</p>
+   
 </div>
 </div>
 </div>
@@ -3838,18 +3838,18 @@ function changelanguepeinture() {
 
  <div class="card">
     <h2>Pintura 🎨</h2>
-    <ul>
-        <li><strong>⭐ Gold :</strong> acabado limpio y eficiente</li>
-        <li><strong>👑 Diamante :</strong> detalles cuidados, contrastes reforzados y puntos focales trabajados</li>
-    </ul>
+    
+        <p><strong>⭐ Gold :</strong> acabado limpio y eficiente</p>
+        <p><strong>👑 Diamante :</strong> detalles cuidados, contrastes reforzados y puntos focales trabajados</p>
+
 </div>
 
  <div class="card">
     <h2>Ensocado 🌿</h2>
-    <ul>
-        <li><strong>⭐ Gold :</strong> base trabajada y armoniosa</li>
-        <li><strong>👑 Diamante :</strong> base escénica con ambientación</li>
-    </ul>
+ 
+        <p><strong>⭐ Gold :</strong> base trabajada y armoniosa</p>
+        <p><strong>👑 Diamante :</strong> base escénica con ambientación</p>
+  
 </div>
 </div>
 </div>
@@ -4109,18 +4109,18 @@ function changelanguepeinture() {
 
         <div class="card">
     <h2>Peinture 🎨</h2>
-    <ul>
-        <li><strong>⭐ Gold :</strong> rendu propre et efficace</li>
-        <li><strong>👑 Diamant :</strong> détails soignés, contrastes renforcés et points focaux travaillés</li>
-    </ul>
+
+        <li><strong>⭐ Gold :</strong> rendu propre et efficace</p>
+        <li><strong>👑 Diamant :</strong> détails soignés, contrastes renforcés et points focaux travaillés</p>
+
 </div>
 
  <div class="card">
     <h2>Soclage 🌿</h2>
-    <ul>
-        <li><strong>⭐ Gold :</strong> socle travaillé et harmonieux</li>
-        <li><strong>👑 Diamant :</strong> socle scénique avec mise en ambiance</li>
-    </ul>
+ 
+        <p><strong>⭐ Gold :</strong> socle travaillé et harmonieux</p>
+        <p><strong>👑 Diamant :</strong> socle scénique avec mise en ambiance</p>
+
 </div>
 </div>
 </div>
