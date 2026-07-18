@@ -224,6 +224,16 @@ info-container {
     padding: 0;
 }
 @media (max-width: 768px) {
+   /* bandeau défile */
+.info-container {
+   margin-top: 0;
+    margin-bottom: 0;
+    border: 0px;
+ width: 100%;
+   max-width: 760px;
+    position: relative;
+    text-align: center;
+}
 .maintenance-box p {
 text-shadow: var(--shadow-p-box-mob);
 }
@@ -470,7 +480,16 @@ img {
     text-shadow: 2px 2px 4px #555;
     animation: info 2s linear infinite alternate;
 }
-
+/* bandeau défile */
+.info-container {
+   margin-top: 0;
+    margin-bottom: 0;
+    border: 0px;
+ width: 100%;
+   max-width: 1200px;
+    position: relative;
+    text-align: center;
+}
 /* Style pour centrer et réduire */
 /* ==========================
    THÈME CLAIR
@@ -1264,6 +1283,16 @@ nav {
     QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+   /* bandeau défile */
+.info-container {
+   margin-top: 0;
+    margin-bottom: 0;
+    border: 0px;
+ width: 100%;
+   max-width: 6400px;
+    position: relative;
+    text-align: center;
+}
    .maintenance-box p {
 text-shadow: var(--shadow-p-box-mob);
 }
@@ -1637,6 +1666,16 @@ body.light-mode .cardpartenaire2 {
 
 /* Pour très petits écrans (320–px) */
 @media (max-width: 400px) {
+   /* bandeau défile */
+.info-container {
+   margin-top: 0;
+    margin-bottom: 0;
+    border: 0px;
+ width: 100%;
+   max-width: 400px;
+    position: relative;
+    text-align: center;
+}
 .maintenance-box p {
 text-shadow: var(--shadow-p-box-mob);
 }
