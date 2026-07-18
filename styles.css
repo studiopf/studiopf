@@ -43,7 +43,8 @@
     box-shadow: var(--maintenance-shadow);
     overflow: hidden;
 }
-    
+ 
+
 /* =========================
    Barre supérieure
 ========================= */
@@ -1482,6 +1483,9 @@ body.light-mode .cardpartenaire2 {
         justify-content: center;
 }
 
+  
+
+
     .cardpartenaire {
   width: 300px;
     height: 250px;
@@ -2307,7 +2311,10 @@ a.surligne:hover::after {
 a.surligne:visited {
     color: #D8B06A;
 }
-/* Toutes les classes de fond deviennent des filigranes */
+/* ==========================================
+   CONTENEURS AVEC IMAGE DE FOND EN FILIGRANE
+========================================== */
+
 .fondmoi,
 .fondorc,
 .fonddg,
@@ -2317,57 +2324,81 @@ a.surligne:visited {
 .fondknigt,
 .fondnurgle,
 .fondfreezer,
-.fonddemon {
+.fonddemon,
+.fondpirate,
+.fondnain,
+.fondmort,
+.fondcusto {
     position: relative;
     overflow: hidden;
     isolation: isolate;
 }
 
-/* Filigrane */
-.fonddg::before,
+
+/* ==========================================
+                 FILIGRANE
+========================================== */
+
+.fondmoi::before,
 .fondorc::before,
+.fonddg::before,
 .fondslann::before,
 .fonddracaufeu::before,
 .fondlilia::before,
-.fondmoi::before,
 .fondknigt::before,
 .fondnurgle::before,
 .fondfreezer::before,
-.fonddemon::before {
-  content: "";
+.fonddemon::before,
+.fondpirate::before,
+.fondnain::before,
+.fondmort::before,
+.fondcusto::before {
+    content: "";
     position: absolute;
     inset: 0;
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-
-    /* Taille fixe */
     background-size: 1000px auto;
-    
-    /* beaucoup moins gris */
+
     filter: grayscale(35%);
 
     pointer-events: none;
-    z-index: 100;
+
+    /* Le filigrane reste derrière le contenu */
+    z-index: 0;
 }
 
-/* Le contenu passe au-dessus */
+
+/* ==========================================
+       LE CONTENU PASSE DEVANT LE FILIGRANE
+========================================== */
+
+.fondmoi > *,
 .fondorc > *,
 .fonddg > *,
 .fondslann > *,
 .fonddracaufeu > *,
 .fondlilia > *,
-.fondmoi > *,
 .fondknigt > *,
 .fondnurgle > *,
 .fondfreezer > *,
-.fonddemon > * {
+.fonddemon > *,
+.fondpirate > *,
+.fondnain > *,
+.fondmort > *,
+.fondcusto > * {
     position: relative;
     z-index: 1;
 }
+
+
+/* ==========================================
+           IMAGES DES DIFFÉRENTS FONDS
+========================================== */
+
 .fondlilia::before {
-   background-image:
+    background-image:
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.05) 0%,
@@ -2375,57 +2406,59 @@ a.surligne:visited {
             rgba(0, 0, 0, 0.30) 55%,
             rgba(0, 0, 0, 0.85) 100%
         ),
-      url("../img/fondlilia.png");
-    
-}
-.fondorc::before {
-       background-image:
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.05) 0%,
-            rgba(0, 0, 0, 0.12) 20%,
-            rgba(0, 0, 0, 0.30) 55%,
-            rgba(0, 0, 0, 0.85) 100%
-        ),
-         url("../img/orc.png");
-}
-.fonddg::before {
-      background-image:
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.05) 0%,
-            rgba(0, 0, 0, 0.12) 20%,
-            rgba(0, 0, 0, 0.30) 55%,
-            rgba(0, 0, 0, 0.85) 100%
-        ),
-         url("../img/dg.png");
-}
-.fondslann::before {
-      background-image:
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.05) 0%,
-            rgba(0, 0, 0, 0.12) 20%,
-            rgba(0, 0, 0, 0.30) 55%,
-            rgba(0, 0, 0, 0.85) 100%
-        ),
-         url("../img/slann.png");
-}
-.fonddracaufeu::before {
-      background-image:
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.05) 0%,
-            rgba(0, 0, 0, 0.12) 20%,
-            rgba(0, 0, 0, 0.30) 55%,
-            rgba(0, 0, 0, 0.85) 100%
-        ),
-         url("../img/dracaufeu.png");
+        url("../img/fondlilia.png");
 }
 
+.fondorc::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/orc.png");
+}
+
+.fonddg::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/dg.png");
+}
+
+.fondslann::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/slann.png");
+}
+
+.fonddracaufeu::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/dracaufeu.png");
+}
 
 .fondknigt::before {
-      background-image:
+    background-image:
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.05) 0%,
@@ -2433,11 +2466,11 @@ a.surligne:visited {
             rgba(0, 0, 0, 0.30) 55%,
             rgba(0, 0, 0, 0.85) 100%
         ),
-         url("../img/fondknigt.png");
+        url("../img/fondknigt.png");
 }
 
 .fondnurgle::before {
-      background-image:
+    background-image:
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.05) 0%,
@@ -2445,36 +2478,89 @@ a.surligne:visited {
             rgba(0, 0, 0, 0.30) 55%,
             rgba(0, 0, 0, 0.85) 100%
         ),
-         url("../img/fondnurgle.png");
+        url("../img/fondnurgle.png");
 }
 
 .fondfreezer::before {
-     background-image:
+    background-image:
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.05) 0%,
             rgba(0, 0, 0, 0.12) 20%,
             rgba(0, 0, 0, 0.30) 55%,
             rgba(0, 0, 0, 0.85) 100%
-        ),url("../img/fondfreezer.png");
+        ),
+        url("../img/fondfreezer.png");
 }
+
 .fondmoi::before {
-     background-image:
+    background-image:
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.05) 0%,
             rgba(0, 0, 0, 0.12) 20%,
             rgba(0, 0, 0, 0.30) 55%,
             rgba(0, 0, 0, 0.85) 100%
-        ),url("../img/moi.png");
+        ),
+        url("../img/moi.png");
 }
+
 .fonddemon::before {
-     background-image:
+    background-image:
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0.05) 0%,
             rgba(0, 0, 0, 0.12) 20%,
             rgba(0, 0, 0, 0.30) 55%,
             rgba(0, 0, 0, 0.85) 100%
-        ), url("../img/fonddemon.png");
+        ),
+        url("../img/fonddemon.png");
+}
+
+.fondpirate::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/fondpirate.png");
+}
+
+.fondnain::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/fondnain.png");
+}
+
+.fondmort::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/fondmort.png");
+}
+
+.fondcusto::before {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.12) 20%,
+            rgba(0, 0, 0, 0.30) 55%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("../img/fondcusto.png");
 }
