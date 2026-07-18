@@ -1031,14 +1031,14 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 .gallery img {
-   width:300px;
-    max-width:100%;
+   width: 350px;
+    max-width: 100%;
    border: 2px solid #303030;
     margin-top: 0;
     margin-bottom: 0;
@@ -1289,7 +1289,7 @@ nav {
     margin-bottom: 0;
     border: 0px;
  width: 100%;
-   max-width: 6400px;
+   max-width: 640px;
     position: relative;
     text-align: center;
 }
@@ -1299,8 +1299,12 @@ text-shadow: var(--shadow-p-box-mob);
      .maintenance-box a {
 text-shadow: var(--shadow-p-box-mob);
 }
+   .gallery {
+    max-width: 600px;
+    margin: 0;
+}
    .gallery img{
-       width: 150px;
+       width: 140px;
     height: auto;
    }
    .exemples-photos img{
@@ -1598,7 +1602,7 @@ body.light-mode .cardpartenaire2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 5px; /* même espacement entre toutes les images */
-    max-width: 300px;
+    max-width: 700px;
     margin: 0;
 }
 
@@ -1679,9 +1683,13 @@ body.light-mode .cardpartenaire2 {
 .maintenance-box p {
 text-shadow: var(--shadow-p-box-mob);
 }
+   .gallery {
+    max-width: 400px;
+    margin: 0;
+}
      
    .gallery img{
-       width: 140px;
+       width: 90px;
     height: auto;
    }
    .exemples-photos img{
@@ -2275,8 +2283,12 @@ button.pf-menu-button {
     max-width: 92%;
     color: var(--text-p);
 }
+   .gallery {
+    max-width: 700px;
+    margin: 0;
+}
    .gallery img{
-       width: 200px;
+       width: 150px;
     height: auto;
    }
    .exemples-photos img{
