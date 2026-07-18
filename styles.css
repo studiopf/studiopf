@@ -1048,22 +1048,6 @@ nav {
     overflow: hidden;
 }
 
-.carroussel {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    transition: transform 1s ease-in-out;
-    will-change: transform;
-    transform: translateZ(0);
-}
-
-.carroussel img {
-    width: 100%; /* Rendu responsive */
-    height: auto; /* Changé pour auto pour responsive */
-    object-fit: contain;
-    flex: 0 0 100%;
-}
-
 .tous {
     background-size: contain;
     background-repeat: no-repeat;
@@ -1296,7 +1280,7 @@ body.light-mode .cardpartenaire2 {
 }
 
 .exemples-photos img{
-    width:240px;
+    width:300px;
     max-width:100%;
     border-radius:10px;
     object-fit:cover;
