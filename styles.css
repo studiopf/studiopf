@@ -705,7 +705,7 @@ h3 {
 }
 
 p {
-       font-size: 14px;
+       font-size: 16px;
     line-height: 1.6;
    margin-top: 2px;
     margin: 0rem auto;
@@ -1282,7 +1282,7 @@ nav {
    ========================================================================== */
 @media (max-width: 640px) {
     p {
-       font-size: 9px;
+       font-size: 10px;
     color: var(--text-p);
 }
    /* bandeau défile */
@@ -2257,7 +2257,7 @@ button.pf-menu-button {
 /* Tablette */
 @media (min-width: 768px) {
       p {
-       font-size: 10px;
+       font-size: 12px;
     line-height: 1.6;
    margin-top: 2px;
     margin: 0rem auto;
