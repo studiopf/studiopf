@@ -568,9 +568,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
 }
 strong{
-
     color:var(--title);
-
 }
 h1 {
      font-size: 18px;
@@ -605,7 +603,7 @@ p {
    margin-top: 2px;
     margin: 0rem auto;
     max-width: 92%;
-    color:var(--button-text);
+    color: var(--button-text);
    text-align: center;
 }
 
@@ -952,6 +950,25 @@ nav {
       Mini Menu
 ==========================*/
 
+.menu-mobilefoot a {
+    display: inline-block;
+    padding: 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--menufoot-text);
+    background: var(--menufoot-bg);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all .25s ease;
+}
+
+.menu-mobilefoot a:hover {
+    background: var(--menufoot-hover-bg);
+    color: var(--menufoot-hover-text);
+}
+
+
 .menu-mobile a {
     display: inline-block;
     padding: 0;
@@ -969,7 +986,6 @@ nav {
     background: var(--menu-mobile-hover-bg);
     color: var(--menu-mobile-hover-text);
 }
-
 .lightbox {
     display: none;
     position: fixed;
@@ -1415,7 +1431,6 @@ body.light-mode .cardpartenaire2 {
     }
 
 
-
     nav ul {
         gap: 4px 8px;
     }
@@ -1424,7 +1439,6 @@ body.light-mode .cardpartenaire2 {
         padding: 0px 0px;
       font-size: 12px;
     }
-
 
     .card-container2 {
         margin-top: 0;
@@ -1467,9 +1481,6 @@ body.light-mode .cardpartenaire2 {
         justify-content: center;
 }
 
-  
-
-
     .cardpartenaire {
   width: 300px;
     height: 250px;
@@ -1491,7 +1502,6 @@ body.light-mode .cardpartenaire2 {
     border-radius: 8px;
    width: 100%;
 }
-
 
     .social-icon {
         width: 32px;
@@ -1551,33 +1561,6 @@ body.light-mode .cardpartenaire2 {
         padding: 12px;
         font-size: 18px;
     }
-
-    .carroussel-container {
-        margin-top: 0;
-        margin-bottom: 0;
-        max-width: 250px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .carroussel {
-        margin-top: 0;
-        margin-bottom: 0;
-        display: flex;
-        transition: transform 1s ease-in-out;
-        will-change: transform;
-        transform: translateZ(0);
-    }
-
-    .carroussel img {
-        width: 100%; /* Responsive sur mobile */
-        height: auto;
-        object-fit: contain;
-        flex: 0 0 100%;
-    }
-
-
-
    .logo {
         width: 150px;          /* ← agrandi (au lieu de 150px) */
         max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
@@ -1672,8 +1655,6 @@ h1 {
         max-width: 94%;            /* encore un peu plus d'air */
         padding: 10px 10px;
     }
-
- 
    
     .cardpartenaire {
        width: 250px;
@@ -1785,7 +1766,6 @@ body,
 .button:active{
 
     transform:translateY(1px);
-
     box-shadow:
         0 6px 12px rgba(0,0,0,.45),
         inset 0 2px 6px rgba(0,0,0,.30);
@@ -1796,7 +1776,6 @@ body,
 =================================================== */
 
 body.light-mode .button{
-
     display:inline-block;
     padding:12px 28px;
     margin:10px auto;
@@ -1896,10 +1875,12 @@ body.light-mode .theme-toggle {
         inset 0 1px 0 rgba(255,255,255,0.08),
         inset 0 -1px 0 rgba(255,255,255,0.08),
         0 8px 18px rgba(0,0,0,0.35);
-      --menufoot-bg: rgba(30, 20, 12, 0.55);
+     
+   --menufoot-bg: rgba(30, 20, 12, 0.55);
     --menufoot-text: #e8d9c0;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.20);
     --menufoot-hover-text: #FFE39B;
+   
      --menu-mobile-bg: rgba(30, 20, 12, 0.55);
     --menu-mobile-text: #F4C876;
     --menu-mobile-hover-bg: rgba(244, 200, 118, 0.20);
@@ -1953,7 +1934,7 @@ body.light-mode {
         inset 0 1px 0 rgba(255,255,255,0.90),
         inset 0 -1px 0 rgba(210,190,150,0.18),
         0 6px 16px rgba(0,0,0,0.10);
-       --menufoot-bg: rgba(255,255,255,0.75);
+       --menufoot-bg:rgba(255,255,255,0.75);
     --menufoot-text: #2C2C2C;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.45);
     --menufoot-hover-text: #0A0A0A;
@@ -2202,23 +2183,7 @@ button.pf-menu-button {
     margin-bottom: 0;
     font-size: 18px;
 }
-.menufoot a {
-    display: inline-block;
-    padding: 0;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--menufoot-text);
-    background: var(--menufoot-bg);
-    text-decoration: none;
-    white-space: nowrap;
-    transition: all .25s ease;
-}
 
-.menufoot a:hover {
-    background: var(--menufoot-hover-bg);
-    color: var(--menufoot-hover-text);
-}
 /* ============================= */
 /* VERSION MOBILE */
 /* ============================= */
