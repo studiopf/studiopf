@@ -97,16 +97,10 @@ textarea:disabled {
         CHECKBOX / RADIO
 ========================== */
 
-input[type="checkbox"],
-input[type="radio"] {
-    width: auto;
-    margin-right: 6px;
-    accent-color: #FFD700;
-}
 /* bandeau défile */
-.info-container {
+.ontainer {
     width: 100%;
-    max-width: none;
+    max-width: 1200px;
 
     margin: 0;
     border: 0;
@@ -135,21 +129,20 @@ input[type="radio"] {
     text-align: center;
 }
 .maintenance-box-part {
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 0;
-      width: 1200px;
+      max-width: 1200px;
     position: relative;
     text-align: center;
 }
 .maintenance-box {
     width: 100%;
-    max-width: none;
-    box-sizing: border-box;
+    max-width: 1200px;
 
     margin-top: 10px;
     margin-bottom: 0;
 
-    margin-left: calc(50% - 50vw);
     position: relative;
     text-align: center;
 
@@ -296,7 +289,7 @@ mask-image: linear-gradient(
     height:auto;
     width:70px;
 }
-   .info-container {
+   .ontainer {
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
@@ -563,8 +556,7 @@ body.light-mode .widget-container {
 }
 
 #contenu-principal {
-    display: flex;
-    flex-direction: column;
+   
     align-items: center;
     padding-top: 80px;
 }
@@ -1341,7 +1333,7 @@ text-shadow: var(--shadow-p-box);
       width: 100%;
     max-width: 600px;
 }
-   .info-container {
+   .ontainer {
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
@@ -1413,8 +1405,6 @@ body.light-mode .cardpartenaire2 {
     flex-wrap:wrap;
     margin:20px 0 10px;
 }
-
-
 
     .center {
         justify-content: center;
@@ -1713,7 +1703,7 @@ mask-image: linear-gradient(
       width: 100%;
     max-width: 350px;
 }
-   .info-container {
+   .ontainer {
     margin-top: 5px;
     margin-bottom: 20px;
     border: 0;
