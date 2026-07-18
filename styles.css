@@ -1440,7 +1440,7 @@ body.light-mode .cardpartenaire2 {
    margin-top: 4px;
     margin: 0rem auto;
     max-width: 92%;
-    color: #e8d9c0;
+    color: #2C2C2C;
 }
 
 
@@ -2022,7 +2022,7 @@ body.light-mode {
         #FCF8F0 50%,
         #F2E8D8 100%
     );
-
+  --text-p : #2C2C2C;
 --shadow-color: #000000;
 --shadow-p-box-mob:
     -0.5px 0 0 var(--shadow-color),
