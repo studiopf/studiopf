@@ -2462,7 +2462,7 @@ a.surligne:visited {
            IMAGES DES DIFFÉRENTS FONDS
 ========================================== */
 
-.fondlilia::after {
+.fondlilia::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2474,7 +2474,7 @@ a.surligne:visited {
         url("../img/fondlilia.png");
 }
 
-.fondorc::after {
+.fondorc::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2486,7 +2486,7 @@ a.surligne:visited {
         url("../img/orc.png");
 }
 
-.fonddg::after {
+.fonddg::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2498,7 +2498,7 @@ a.surligne:visited {
         url("../img/dg.png");
 }
 
-.fondslann::after {
+.fondslann::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2510,7 +2510,7 @@ a.surligne:visited {
         url("../img/slann.png");
 }
 
-.fonddracaufeu::after {
+.fonddracaufeu::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2522,7 +2522,7 @@ a.surligne:visited {
         url("../img/dracaufeu.png");
 }
 
-.fondknigt::after {
+.fondknigt::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2534,7 +2534,7 @@ a.surligne:visited {
         url("../img/fondknigt.png");
 }
 
-.fondnurgle::after {
+.fondnurgle::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2546,7 +2546,7 @@ a.surligne:visited {
         url("../img/fondnurgle.png");
 }
 
-.fondfreezer::after {
+.fondfreezer::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2558,7 +2558,7 @@ a.surligne:visited {
         url("../img/fondfreezer.png");
 }
 
-.fondmoi::after {
+.fondmoi::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2570,7 +2570,7 @@ a.surligne:visited {
         url("../img/moi.png");
 }
 
-.fonddemon::after {
+.fonddemon::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2582,7 +2582,7 @@ a.surligne:visited {
         url("../img/fonddemon.png");
 }
 
-.fondpirate::after {
+.fondpirate::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2594,7 +2594,7 @@ a.surligne:visited {
         url("../img/fondpirate.png");
 }
 
-.fondnain::after {
+.fondnain::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2606,7 +2606,7 @@ a.surligne:visited {
         url("../img/fondnain.png");
 }
 
-.fondmort::after {
+.fondmort::before {
     background-image:
         linear-gradient(
             to bottom,
@@ -2618,7 +2618,7 @@ a.surligne:visited {
         url("../img/fondmort.png");
 }
 
-.fondcusto::after {
+.fondcusto::before {
     background-image:
         linear-gradient(
             to bottom,
