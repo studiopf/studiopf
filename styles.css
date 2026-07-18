@@ -1,7 +1,21 @@
 /* ==========================
    INPUTS & SELECT
 ========================== */
-
+   .card {
+       margin-top: 10px;
+    margin-bottom: 0;
+      width: 100%;
+    position: relative;
+    text-align: center;
+             background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    transition: transform .26s ease,
+                box-shadow .26s ease,
+                border-color .26s ease;
+   }
 input,
 select,
 textarea {
@@ -77,8 +91,7 @@ input[type="radio"] {
    margin-top: 0;
     margin-bottom: 0;
     border: 0px;
- width: 100%;
-   max-width: 1200px;
+ width: 1200px;
     position: relative;
     text-align: center;
 }
@@ -91,19 +104,17 @@ input[type="radio"] {
     position: relative;
     text-align: center;
    background:var(--box-bg);
-    border:1px solid var(--box-border);
+    border: 1px solid var(--box-border);
 }
 .maintenance-box-fieldset {
     margin-top: 10px;
     margin-bottom: 0;
-      width: 100%;
-    max-width: 1200px;
+      width: 1200px;
     position: relative;
     text-align: center;
 }
 .maintenance-box {
-   width: 100%;
-   max-width: 1000px;
+   width: 1000px;
     margin-top: 10px;
     margin-bottom: 0;
     max-width: 1200px;
@@ -209,16 +220,14 @@ input[type="radio"] {
 }
 
    .maintenance-box {
-   width: 100%;
-    max-width: 700px;
+   width: 700px;
 }
    .maintenance-boxpartenaire {
     width: 100%;
     max-width: 700px;
 }
 .maintenance-box-fieldset {
-      width: 100%;
-    max-width: 700px;
+      width: 700px;
 }
     .header-contact{
     margin-right:50px;
@@ -241,8 +250,7 @@ input[type="radio"] {
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
-    width: 100%;
-   max-width: 650px;
+    width: 650px;
     position: relative;
     text-align: center;
 }
@@ -268,12 +276,13 @@ input[type="radio"] {
    align-items: center;
         justify-content: center;
 }
-.exemples-photos3.card {
+.exemples-photos3 {
     width: auto;
     min-width: 0;
    align-items: center;
         justify-content: center;
 }
+
 
  .exemples-photos3 {
 
@@ -1003,6 +1012,7 @@ nav {
 .gallery img {
     width: 100%;
     height: 100%;
+   border: 2px solid #303030;
     margin-top: 0;
     margin-bottom: 0;
     object-fit: cover;
@@ -1275,8 +1285,7 @@ nav {
 }
 
     .maintenance-box {
-       width: 100%;
-   max-width: 600px;
+       width: 600px;
 }
       .maintenance-box p {
 text-shadow: --shadow-p-box;
@@ -1296,8 +1305,7 @@ text-shadow: --shadow-a-box;
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
-    width: 100%;
-   max-width: 550px;
+    width: 550px;
     position: relative;
     text-align: center;
 }
@@ -1373,7 +1381,7 @@ body.light-mode .cardpartenaire2 {
     object-fit:cover;
     max-width:100%;
     border-radius:10px;
-    border:2px solid #c9a35a;
+    border: 2px solid #303030;
     box-shadow:0 2px 10px rgba(0,0,0,.35);
     object-fit:cover;
     height: auto;
@@ -1527,8 +1535,7 @@ body.light-mode .cardpartenaire2 {
 
    /* Blocs marrons ( + card) → on réduit la largeur + marges latérales */
    /* Blocs principaux */
-.card2,
-.card3,
+
 .cardform,
 .logopart {
     width: 100%;
@@ -1544,13 +1551,6 @@ body.light-mode .cardpartenaire2 {
         justify-content: center;
 }
 
-
-.card-container3 .card {
-    width: auto;
-    min-width: 0;
-   align-items: center;
-        justify-content: center;
-}
 
     .cardpartenaire {
   width: 300px;
@@ -1701,8 +1701,7 @@ body.light-mode .cardpartenaire2 {
     margin-top: 5px;
     margin-bottom: 20px;
     border: 0;
-    width: 100%;
-   max-width: 350px;
+    width: 350px;
     position: relative;
     text-align: center;
 }
@@ -1718,9 +1717,8 @@ h1 {
     margin: 0rem 0 0rem;
 }
 
-    .card,
-    .card2,
-    .card3,
+ 
+   
     .cardform,
     .logopart {
         max-width: 94%;            /* encore un peu plus d'air */
