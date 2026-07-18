@@ -16,14 +16,31 @@
                 box-shadow .26s ease,
                 border-color .26s ease;
    }
+.exemples-photos img{
+    width:300px;
+    max-width:100%;
+    border-radius:10px;
+    object-fit:cover;
+    max-width:100%;
+    border-radius:10px;
+   border: 2px solid #303030;
+    box-shadow:0 2px 10px rgba(0,0,0,.35);
+    object-fit:cover;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    object-fit: cover;
+    border-radius: 0;
+    cursor: pointer;
+}
 input,
 select,
 textarea {
     width: 100%;
     padding: 12px 14px;
 
-    background: var(--box-bg);
-    color: var(--text);
+  
+    color: rgba(180,180,180,0.8);
 
     border: 1px solid var(--button-border);
     border-radius: 10px;
@@ -88,12 +105,16 @@ input[type="radio"] {
 }
 /* bandeau défile */
 .info-container {
-   margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
- width: 1000px;
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+    border: 0;
+
     position: relative;
     text-align: center;
+
+    box-sizing: border-box;
 }
 
 .maintenance-boxpartenaire {
@@ -109,12 +130,12 @@ input[type="radio"] {
 .maintenance-box-fieldset {
     margin-top: 10px;
     margin-bottom: 0;
-      width: 1200px;
+      width: 600px;
     position: relative;
     text-align: center;
 }
 .maintenance-box {
-    width: 100vw;
+    width: 100%;
     max-width: none;
     box-sizing: border-box;
 
@@ -122,8 +143,6 @@ input[type="radio"] {
     margin-bottom: 0;
 
     margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-
     position: relative;
     text-align: center;
 
@@ -212,39 +231,7 @@ input[type="radio"] {
     padding: 0;
 }
 @media (max-width: 768px) {
-   .fondmoi::before,
-.fondorc::before,
-.fonddg::before,
-.fondslann::before,
-.fonddracaufeu::before,
-.fondlilia::before,
-.fondknigt::before,
-.fondnurgle::before,
-.fondfreezer::before,
-.fonddemon::before,
-.fondpirate::before,
-.fondnain::before,
-.fondmort::before,
-.fondcusto::before {
-        content: "";
-    position: absolute;
-    inset: 0;
 
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 800px auto;
-
-opacity: 0.95;
-filter: grayscale(30%) brightness(1) contrast(1);
-
--webkit-mask-image: linear-gradient(
-    to bottom,
-    #000 0%,
-    #000 55%,
-    rgba(0, 0, 0, 0.90) 75%,
-    rgba(0, 0, 0, 0.65) 90%,
-    rgba(0, 0, 0, 0.25) 100%
-);
 
 mask-image: linear-gradient(
     to bottom,
@@ -325,16 +312,10 @@ mask-image: linear-gradient(
    ===================================================== font-size===================== */
 .widget-container
 .card-container3 {
-        width: 100%;
-   margin-top: 2px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 5px;
-  align-items: center;
+   width: auto;
+    min-width: 0;
+   align-items: center;
         justify-content: center;
-    margin: 0rem auto;
-    max-width: 700px;
-    padding: 0 0px;
 }
 .exemples-photos3 {
     width: auto;
@@ -353,7 +334,7 @@ mask-image: linear-gradient(
     margin: 0 auto;
 }
 
-.exemples-photos{
+.exemples-photos {
     display:flex;
     justify-content:center;
     gap:18px;
@@ -766,6 +747,12 @@ a:hover,
 /* ==========================================================================
    PARTENAIRES – version renforcée anti-débordement
    ========================================================================== */
+.card-container3 {
+   width: auto;
+    min-width: 0;
+   align-items: center;
+        justify-content: center;
+}
 
 .card-container2 {
    width: 100%;
@@ -1307,7 +1294,7 @@ nav {
     height: auto;
 }
 
-.card:hover, .card2:hover, .card3:hover, .logopart:hover {
+.cardform:hover, .card:hover, .card2:hover, .card3:hover, .logopart:hover {
     transform: translateY(-6px) scale(1.02);
     border-color: #f4c876;
 }
@@ -1329,20 +1316,6 @@ nav {
         max-width: 600px;
     }
       /* Filigrane */
-.fondorc::before,
-.fonddg::before,
-.fondslann::before,
-.fonddracaufeu::before,
-.fondlilia::before,
-.fondmoi::before,
-.fondknigt::before,
-.fondnurgle::before,
-.fondfreezer::before,
-.fonddemon::before {
-    /* Taille fixe */
-    background-size: 600px auto;
-    
-}
 
     .maintenance-box {
        width: 600px;
@@ -1386,18 +1359,7 @@ text-shadow: var(--shadow-p-box);
    align-items: center;
         justify-content: center;
 }
-   .card-container3 {
-        width: 100%;
-   margin-top: 2px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 5px;
-  align-items: center;
-        justify-content: center;
-    margin: 0rem auto;
-    max-width: 200px;
-    padding: 0 0px;
-}
+ 
   /* ==========================================================
    THÈME CLAIR
 ========================================================== */
@@ -1445,23 +1407,7 @@ body.light-mode .cardpartenaire2 {
     margin:20px 0 10px;
 }
 
-.exemples-photos img{
-    width:300px;
-    max-width:100%;
-    border-radius:10px;
-    object-fit:cover;
-    max-width:100%;
-    border-radius:10px;
-    border: 2px solid #303030;
-    box-shadow:0 2px 10px rgba(0,0,0,.35);
-    object-fit:cover;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    object-fit: cover;
-    border-radius: 0;
-    cursor: pointer;
-}
+
 
     .center {
         justify-content: center;
@@ -1597,11 +1543,22 @@ body.light-mode .cardpartenaire2 {
    /* Blocs marrons ( + card) → on réduit la largeur + marges latérales */
    /* Blocs principaux */
 
-.cardform,
+.cardform{    background: rgba(30, 20, 12, 0.75);
+    border: 1px solid #6b4e2f;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+   margin-top: 2px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.65);
+    padding: 0rem;
+    transition: all 0.28s ease;
+    text-align: center;
+         }
+   
 .logopart {
     width: 100%;
     max-width: 92%;
     text-align: center;
+   
 }
 
 
@@ -1711,39 +1668,6 @@ body.light-mode .cardpartenaire2 {
 
 /* Pour très petits écrans (320–px) */
 @media (max-width: 400px) {
-   .fondmoi::before,
-.fondorc::before,
-.fonddg::before,
-.fondslann::before,
-.fonddracaufeu::before,
-.fondlilia::before,
-.fondknigt::before,
-.fondnurgle::before,
-.fondfreezer::before,
-.fonddemon::before,
-.fondpirate::before,
-.fondnain::before,
-.fondmort::before,
-.fondcusto::before {
-        content: "";
-    position: absolute;
-    inset: 0;
-
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 200px auto;
-
-opacity: 0.95;
-filter: grayscale(30%) brightness(1) contrast(1);
-
--webkit-mask-image: linear-gradient(
-    to bottom,
-    #000 0%,
-    #000 55%,
-    rgba(0, 0, 0, 0.90) 75%,
-    rgba(0, 0, 0, 0.65) 90%,
-    rgba(0, 0, 0, 0.25) 100%
-);
 
 mask-image: linear-gradient(
     to bottom,
@@ -1769,20 +1693,6 @@ mask-image: linear-gradient(
         width: 100%;
         max-width: 350px;
     }
-      /* Filigrane */
-.fondorc::before,
-.fonddg::before,
-.fondslann::before,
-.fonddracaufeu::before,
-.fondlilia::before,
-.fondmoi::before,
-.fondknigt::before,
-.fondnurgle::before,
-.fondfreezer::before,
-.fonddemon::before {
-    /* Taille fixe */
-    background-size: 350px auto;
-}
 
     .maintenance-box {
    width: 100%;
@@ -2505,7 +2415,7 @@ a.surligne:visited {
 
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 1200px auto;
+    background-size: auto auto;
 
 opacity: 0.95;
 filter: grayscale(30%) brightness(1) contrast(1);
