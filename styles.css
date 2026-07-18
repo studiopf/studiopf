@@ -468,7 +468,6 @@ img {
       font-size: 18px;
     font-weight: bold;
     color: white;
-    text-transform:.fondorc::before, uppercase;
     text-shadow: 2px 2px 4px #555;
     animation: info 2s linear infinite alternate;
 }
@@ -834,12 +833,12 @@ body.light-mode .footer {
         #FCF8F0 55%,
         #F2E8D8 100%
     );
-   
+   --text-p: #2C2C2C;
+--text-a: #0A0A0A;
     border-top: 1px solid #CFCFCF;
     padding: 15px;
 }
---text-p: #2C2C2C;
---text-a: #0A0A0A;
+
 body.light-mode .footer h2,
 body.light-mode .footer h3,
 body.light-mode .footer strong {
@@ -1426,7 +1425,7 @@ body.light-mode .cardpartenaire2 {
    margin-top: 2px;
     margin: 0rem auto;
     max-width: 92%;
-    color: --text-p;
+    color: var(--text-p);
 }
 
 
@@ -1889,7 +1888,7 @@ body.light-mode .theme-toggle {
 ==========================*/
 :root{
    --text-p : #e8d9c0;
-   --text-a: #D8B06A;
+   --text-a : #D8B06A;
      --maintenance-bg: linear-gradient(
         180deg,
         #151515 0%,
