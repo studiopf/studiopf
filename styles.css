@@ -337,9 +337,7 @@ textarea {
     width: calc(100% - 30px);
     margin: 0 auto;
     padding: 0 15px;
-
     line-height: 1.9;
-    font-size: 1.08rem;
     word-spacing: 0.05em;
 }
 
