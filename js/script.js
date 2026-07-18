@@ -2772,7 +2772,7 @@ function changelanguequisuisje() {
     let html = "";
 
     if (currentLanguage === "english") {
-        html = `<div class="maintenance-box ajust fonddmoi">
+        html = `<div class="maintenance-box ajust fondmoi">
      <h1>👋 Who am I?</h1>
 <h2>Pierre-François, aka PF — Professional Figurine Painter & Founder of Studio PF</h2>
 <p>
@@ -2965,7 +2965,7 @@ function changelanguequisuisje() {
     </a>
 </div>`;
     } else if (currentLanguage === "spanish") {
-        html = `<div class="maintenance-box ajust fonddmoi">
+        html = `<div class="maintenance-box ajust fondmoi">
      <h1>👋 ¿Quién soy?</h1>
 <h2>Pierre-François, alias PF — Artista pintor de figurillas y fundador de Studio PF</h2>
 <p>
@@ -3158,7 +3158,7 @@ function changelanguequisuisje() {
     </a>
 </div>`;
     } else {
-        html = ` <div class="maintenance-box ajust fonddmoi">
+        html = ` <div class="maintenance-box ajust fondmoi">
      <h1>👋 Qui suis-je ?</h1>
 
 <h2>Pierre-François, alias PF — Artiste peintre sur figurines & fondateur de Studio PF</h2>
