@@ -953,7 +953,7 @@ ${prenom} ${nom}`;
 
 
 
-       <fieldset class="maintenance-box-fieldset">
+       <fieldset>
 
                     <legend>Quote Simulator</legend>
                     <div class="maintenance-box-fieldset fondcusto">
@@ -1173,7 +1173,7 @@ ${prenom} ${nom}`;
 
 
 
-       <fieldset class="maintenance-box-fieldset">
+       <fieldset>
 
                     <legend>Simulación de presupuesto</legend>
                     <div class="cardform">
@@ -1326,7 +1326,7 @@ ${prenom} ${nom}`;
 <h3><span id="oktotal">0.00</span></h3>
 </div></div>
         </fieldset>
-          <fieldset class="maintenance-box-fieldset">
+          <fieldset>
              <legend>Datos de contacto</legend>
                 <div class="center">
                     <label for="nom">Nombre<span>*</span></label>
@@ -1395,7 +1395,7 @@ ${prenom} ${nom}`;
 
 
 
-       <fieldset class="maintenance-box-fieldset">
+       <fieldset>
 
                     <legend>Simulation de devis</legend>
                     <div class="cardform">
@@ -1567,7 +1567,7 @@ ${prenom} ${nom}`;
 
 </div></div>
         </fieldset>
-          <fieldset class="maintenance-box-fieldset">
+          <fieldset>
              <legend>Coordonnées</legend>
                 <div class="center">
                     <label for="nom">Nom<span>*</span></label>
