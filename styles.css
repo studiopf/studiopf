@@ -1764,7 +1764,22 @@ body,
     transition: background .35s ease,color .35s ease,border-color .35s ease,box-shadow .35s ease;
 }
 
-
+.theme-toggleFond {
+    width:60px;
+    height:30px;
+    padding:0;
+    border-radius:50%;
+    border:1px solid #6b4e2f;
+    background:rgba(14,14,12,0.75);
+    color:#f4c876;
+    font-size:12px;
+    line-height:24px;
+    cursor:pointer;
+    z-index:9999;
+    opacity:0.85;
+    backdrop-filter:blur(1px);
+    transition:all .25s ease;
+}
 .theme-toggle {
     width:30px;
     height:30px;
