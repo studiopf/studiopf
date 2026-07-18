@@ -844,7 +844,7 @@ body.light-mode .footer {
         #FCF8F0 55%,
         #F2E8D8 100%
     );
-   --text-p: #2C2C2C;
+   --text-p: #0F0F0F;
 --text-a: #0A0A0A;
     border-top: 1px solid #CFCFCF;
     padding: 15px;
@@ -1443,7 +1443,7 @@ body.light-mode .cardpartenaire2 {
    margin-top: 4px;
     margin: 0rem auto;
     max-width: 92%;
-    color: #2C2C2C;
+    color: #0F0F0F;
 }
 
 
@@ -1961,7 +1961,7 @@ body.no-maintenance-bg{
         #353535 50%,
         #151515 100%
     );
---shadow-color: #2C2C2C;
+--shadow-color: #0F0F0F;
 --shadow-p-box-mob:
     0 0 1px var(--shadow-color),
     -0.75px 0 0 var(--shadow-color),
@@ -2047,7 +2047,7 @@ body.light-mode {
         #FCF8F0 50%,
         #F2E8D8 100%
     );
-  --text-p : #2C2C2C;
+  --text-p : #0F0F0F;
 --shadow-color: #FFF6E0;
 --shadow-p-box-mob:
     -0.5px 0 0 var(--shadow-color),
@@ -2077,11 +2077,11 @@ body.light-mode {
         inset 0 -1px 0 rgba(210,190,150,0.18),
         0 6px 16px rgba(0,0,0,0.10);
        --menufoot-bg:rgba(255,255,255,0.75);
-    --menufoot-text: #2C2C2C;
+    --menufoot-text: #0F0F0F;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.45);
     --menufoot-hover-text: #0A0A0A;
        --menu-mobile-bg: rgba(255,255,255,0.75);
-    --menu-mobile-text: #2C2C2C;
+    --menu-mobile-text: #0F0F0F;
     --menu-mobile-hover-bg: rgba(244, 200, 118, 0.45);
     --menu-mobile-hover-text: #0A0A0A;
      --bg: linear-gradient(
@@ -2091,13 +2091,13 @@ body.light-mode {
     #E89A2C 70%,
     #D9670A 100%
 );
-    --text:#2C2C2C;
+    --text:#0F0F0F;
 
     /* Mainenance Box - Mode Sombre */
     --box-border: #8b5f3a;
     --box-bg: #331B1B;
    --button-bg:#6b4b2f;
-    --button-text:#2C2C2C;
+    --button-text:#0F0F0F;
     --button-border:#f7d88b;
     --title:#0A0A0A;
     --header-bg:#FAFAFA;
