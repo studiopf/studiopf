@@ -468,7 +468,7 @@ img {
       font-size: 18px;
     font-weight: bold;
     color: white;
-    text-transform: uppercase;
+    text-transform:.fondorc::before, uppercase;
     text-shadow: 2px 2px 4px #555;
     animation: info 2s linear infinite alternate;
 }
@@ -769,10 +769,10 @@ a:hover,
                 border-color .26s ease;
 }
 .cardpartenaire a {
-   color: --text-p;
+   color: var(--text-p);
     text-shadow: 0px 0px 0 #000;}
 .cardpartenaire p {
-    color: --text-p;
+    color: var(--text-p);
     text-shadow: 0px 0px 0 #000;}
 
 .cardpartenaire:hover {
@@ -1636,18 +1636,6 @@ body.light-mode .cardpartenaire2 {
 /* Pour très petits écrans (320–px) */
 @media (max-width: 400px) {
 
-mask-image: linear-gradient(
-    to bottom,
-    #000 0%,
-    #000 55%,
-    rgba(0, 0, 0, 0.90) 75%,
-    rgba(0, 0, 0, 0.65) 90%,
-    rgba(0, 0, 0, 0.25) 100%
-);
-    pointer-events: none;
-    z-index: 0;
-}
-
    .exemples-photos img{
     width: 140px;
     height: auto;
@@ -2303,7 +2291,7 @@ button.pf-menu-button {
 /* ============================= */
 
 a.surligne {
-    color: --text-a;
+    color: var(--text-a);
     text-decoration: none;
     font-weight: 600;
     position: relative;
