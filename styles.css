@@ -607,11 +607,6 @@ p {
     max-width: 92%;
     color:var(--button-text);
    text-align: center;
-   text-shadow:
-    -1px 0 0 #000,
-     1px 0 0 #000,
-     0 -1px 0 #000,
-     0 1px 0 #000;
 }
 
 /* ==========================================================================
@@ -622,11 +617,6 @@ a {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.25s ease;
-   text-shadow:
-    -1px 0 0 #000,
-     1px 0 0 #000,
-     0 -1px 0 #000,
-     0 1px 0 #000;
 }
 
 a:hover,
@@ -1197,6 +1187,12 @@ nav {
     .maintenance-box {
    width: 600px;
     max-width: 600px;
+}
+      .maintenance-box p {
+text-shadow: --shadow-p-box;
+}
+     .maintenance-box a {
+text-shadow: --shadow-a-box;
 }
       .maintenance-boxpartenaire {
     width: 100%;
@@ -1886,6 +1882,10 @@ body.light-mode .theme-toggle {
         #353535 50%,
         #151515 100%
     );
+--shadow-p-box :     -1px 0 0 #000,
+     1px 0 0 #000,
+     0 -1px 0 #000,
+     0 1px 0 #000;
 
     --maintenance-border-top: rgba(255,255,255,0.28);
     --maintenance-border-bottom: rgba(255,255,255,0.28);
@@ -1942,6 +1942,7 @@ body.light-mode {
         #FCF8F0 50%,
         #F2E8D8 100%
     );
+--shadow-p-box : 0px 0px 0 #000;;
 
     --maintenance-border-top: rgba(255,255,255,0.95);
     --maintenance-border-bottom: rgba(210,190,150,0.45);
@@ -1965,13 +1966,13 @@ body.light-mode {
     #E89A2C 70%,
     #D9670A 100%
 );
-    --text:#e8d9c0;
+    --text:#2C2C2C;
 
     /* Mainenance Box - Mode Sombre */
     --box-border: #8b5f3a;
     --box-bg: #331B1B;
    --button-bg:#6b4b2f;
-    --button-text:#fff3d9;
+    --button-text:#2C2C2C;
     --button-border:#f7d88b;
     --title:#ffe39b;
     --header-bg:#FAFAFA;
