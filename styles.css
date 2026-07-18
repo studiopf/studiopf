@@ -17,7 +17,7 @@
                 border-color .26s ease;
    }
 
-.exemples-photos img{
+.exemples-photos img {
     width:300px;
     max-width:100%;
     border-radius:10px;
@@ -233,9 +233,6 @@ info-container {
    max-width: 760px;
     position: relative;
     text-align: center;
-}
-.maintenance-box p {
-text-shadow: var(--shadow-p-box-mob);
 }
    
    .maintenance-box {
@@ -516,7 +513,6 @@ body.light-mode .widget-container {
         box-shadow 0.25s ease;
 }
 
-
 /* ==========================
    THÈME SOMBRE
 ========================== */
@@ -718,7 +714,6 @@ p {
    LIENS & HIGHLIGHT – inchangé
    ========================================================================== */
 a {
-  color:var(--button-text);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.25s ease;
@@ -1283,6 +1278,10 @@ nav {
     QUERIES – base résolution (mobile first)
    ========================================================================== */
 @media (max-width: 640px) {
+    p {
+       font-size: 9px;
+    color: var(--text-p);
+}
    /* bandeau défile */
 .info-container {
    margin-top: 0;
@@ -1292,12 +1291,6 @@ nav {
    max-width: 640px;
     position: relative;
     text-align: center;
-}
-   .maintenance-box p {
-text-shadow: var(--shadow-p-box-mob);
-}
-     .maintenance-box a {
-text-shadow: var(--shadow-p-box-mob);
 }
    .gallery {
     max-width: 600px;
@@ -1332,12 +1325,7 @@ text-shadow: var(--shadow-p-box-mob);
            max-width: 600px;
     width: calc(100% - 30px);
 }
-      .maintenance-box p {
-text-shadow: var(--shadow-p-box);
-}
-     .maintenance-box a {
-text-shadow: var(--shadow-p-box);
-}
+
       .maintenance-boxpartenaire {
     width: 100%;
     max-width: 600px;
@@ -1345,14 +1333,6 @@ text-shadow: var(--shadow-p-box);
 .maintenance-box-fieldset {
       width: 100%;
     max-width: 600px;
-}
-   .ontainer {
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
-    width: 550px;
-    position: relative;
-    text-align: center;
 }
 
    .social-bloc-vide
@@ -1680,9 +1660,7 @@ body.light-mode .cardpartenaire2 {
     position: relative;
     text-align: center;
 }
-.maintenance-box p {
-text-shadow: var(--shadow-p-box-mob);
-}
+
    .gallery {
     max-width: 400px;
     margin: 0;
@@ -2276,7 +2254,7 @@ button.pf-menu-button {
 /* Tablette */
 @media (min-width: 768px) {
       p {
-       font-size: 11px;
+       font-size: 10px;
     line-height: 1.6;
    margin-top: 2px;
     margin: 0rem auto;
