@@ -3,7 +3,7 @@
    margin-top: 0;
     margin-bottom: 0;
     border: 0px;
- width: 100%;
+ width: 1000px;
    max-width: 1200px;
     position: relative;
     text-align: center;
@@ -166,7 +166,7 @@
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
-    width: 100%;
+    width: 700px;
    max-width: 700px;
     position: relative;
     text-align: center;
@@ -1214,7 +1214,7 @@ nav {
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
-    width: 100%;
+    width: 600px;
    max-width: 600px;
     position: relative;
     text-align: center;
@@ -1652,8 +1652,8 @@ body.light-mode .cardpartenaire2 {
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
-    width: 100%;
-   max-width: 350px;
+    width: 350px;
+   max-width: 400px;
     position: relative;
     text-align: center;
 }
