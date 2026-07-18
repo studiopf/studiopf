@@ -4736,33 +4736,43 @@ function initGalerieWithLang() {
 
     if (currentLanguage === "english") {
         html = `
-            <h1 class="galerie-title">🎨 Gallery</h1>
+           <div class="maintenance-box ajust">
+<h1 class="galerie-title">🎨 Gallery</h1>   
+<div class="center">
+           
             <p class="galerie-description">✨ Step into a world where every miniature becomes a work of art.</p>
             <div class="menugallery" id="filters"></div>
             <div class="gallery" id="gallery"></div>
             <div class="lightbox" id="lightbox">
      <img id="lightbox-img" src="images/placeholder.jpg" alt="Studio PF">
-    </div>
+    </div>    </div>    </div>
         `;
     } else if (currentLanguage === "spanish") {
         html = `
-            <h1 class="galerie-title">🎨 Galería</h1>
+           <div class="maintenance-box ajust">
+<h1 class="galerie-title">🎨 Galería</h1>   
+<div class="center">
+         
             <p class="galerie-description">✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.</p>
             <div class="menugallery" id="filters"></div>
             <div class="gallery" id="gallery"></div>
                <div class="lightbox" id="lightbox">
      <img id="lightbox-img" src="images/placeholder.jpg" alt="Studio PF">
-    </div>
+    </div>    </div>    </div>
         `;
     } else {
         html = `
-            <h1 class="galerie-title">🎨 Galerie</h1>
+
+         <div class="maintenance-box ajust">
+<h1 class="galerie-title">🎨 Galerie</h1>   
+<div class="center">
+
             <p class="galerie-description">✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.</p>
             <div class="menugallery" id="filters"></div>
             <div class="gallery" id="gallery"></div>
              <div class="lightbox" id="lightbox">
      <img id="lightbox-img" src="images/placeholder.jpg" alt="Studio PF">
-    </div>
+    </div>    </div>    </div>
         `;
     }
 
