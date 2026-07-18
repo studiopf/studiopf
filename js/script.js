@@ -710,7 +710,7 @@ function changelangueforma() {
       </div>
 
 
-      <div class="card-container3">
+      <div class="card-container2">
         <div class="card">
           <h3>🕐 Cours 1h</h3>
           <p>50€/h</p>
