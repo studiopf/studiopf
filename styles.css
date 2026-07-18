@@ -756,11 +756,11 @@ body.light-mode .footer p,
 body.light-mode .footer li,
 body.light-mode .footer span,
 body.light-mode .footer a {
-    color: #2C2C2C;
+    color: #0A0A0A;
 }
 
 body.light-mode .footer a:hover {
-    color: #2C2C2C;
+    color: #1F1F1F;
 }
 
 body.light-mode .footer-adresse h2,
