@@ -3428,7 +3428,7 @@ function changelanguepeinture() {
     <div class="exemples-photos">
     <img src="img/armee3.jpg" alt="Example of a painted wargaming army"></div>
 </div>
-
+ <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 </div>
 
 <div class="maintenance-box ajust fonddg">
@@ -3680,6 +3680,7 @@ function changelanguepeinture() {
     <div class="exemples-photos">
     <img src="img/armee3.jpg" alt="Ejemplo de ejército para juegos de miniaturas pintado"></div>
 </div>
+   <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
 </div>
 
 <div class="maintenance-box ajust fonddg">
