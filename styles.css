@@ -137,8 +137,8 @@ textarea:disabled {
     text-align: center;
 }
 .maintenance-box {
-    width: 100%;
     max-width: 1200px;
+    width: calc(100% - 30px);
 
     margin-top: 10px;
     margin-bottom: 0;
@@ -233,7 +233,8 @@ textarea:disabled {
 @media (max-width: 768px) {
 
    .maintenance-box {
-   width: 700px;
+       max-width: 700px;
+    width: calc(100% - 30px);
 }
    .maintenance-boxpartenaire {
     width: 100%;
@@ -324,7 +325,7 @@ textarea {
     height: 100px;
 }
 .ajust {
-    max-width: 900px;
+    max-width: 1200px;
     width: calc(100% - 30px);
     margin: 0 auto;
     padding: 0 15px;
@@ -527,7 +528,8 @@ body.light-mode .widget-container {
 }
 
 #contenu-principal {
-   
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding-top: 80px;
 }
@@ -1283,7 +1285,8 @@ nav {
       /* Filigrane */
 
     .maintenance-box {
-       width: 600px;
+           max-width: 600px;
+    width: calc(100% - 30px);
 }
       .maintenance-box p {
 text-shadow: var(--shadow-p-box);
@@ -1646,8 +1649,8 @@ body.light-mode .cardpartenaire2 {
     }
 
     .maintenance-box {
-   width: 100%;
-    max-width: 350px;
+       max-width: 400px;
+    width: calc(100% - 30px);
 }
          .maintenance-boxpartenaire {
     width: 100%;
