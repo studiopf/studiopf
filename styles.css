@@ -232,7 +232,7 @@ input[type="radio"] {
 
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 500px auto;
+    background-size: 800px auto;
 
 opacity: 0.95;
 filter: grayscale(30%) brightness(1) contrast(1);
@@ -271,7 +271,7 @@ mask-image: linear-gradient(
 .fondfreezer::before,
 .fonddemon::before {
     /* Taille fixe */
-    background-size: 600px auto;
+    background-size: 700px auto;
     
 }
 
@@ -1348,10 +1348,12 @@ nav {
        width: 600px;
 }
       .maintenance-box p {
-text-shadow: --shadow-p-box;
+text-shadow: var(--shadow-p-box);
+         text-shadow: var(--shadow-color);
 }
      .maintenance-box a {
-text-shadow: --shadow-a-box;
+text-shadow: var(--shadow-a-box);
+        text-shadow: var(--shadow-color);
 }
       .maintenance-boxpartenaire {
     width: 100%;
@@ -2031,10 +2033,18 @@ body.light-mode .theme-toggle {
         #353535 50%,
         #151515 100%
     );
---shadow-p-box :     -1px 0 0 #000,
-     1px 0 0 #000,
-     0 -1px 0 #000,
-     0 1px 0 #000;
+--shadow-color: #ffffff;
+
+    --shadow-p-box:
+        -1px 0 0 var(--shadow-color),
+         1px 0 0 var(--shadow-color),
+         0 -1px 0 var(--shadow-color),
+         0 1px 0 var(--shadow-color),
+        -1px -1px 0 var(--shadow-color),
+         1px -1px 0 var(--shadow-color),
+        -1px 1px 0 var(--shadow-color),
+         1px 1px 0 var(--shadow-color);
+}
 
     --maintenance-border-top: rgba(255,255,255,0.28);
     --maintenance-border-bottom: rgba(255,255,255,0.28);
@@ -2094,7 +2104,18 @@ body.light-mode {
         #F2E8D8 100%
     );
 --shadow-p-box : 0px 0px 0 #000;;
+--shadow-color: #000000;
 
+    --shadow-p-box:
+        -1px 0 0 var(--shadow-color),
+         1px 0 0 var(--shadow-color),
+         0 -1px 0 var(--shadow-color),
+         0 1px 0 var(--shadow-color),
+        -1px -1px 0 var(--shadow-color),
+         1px -1px 0 var(--shadow-color),
+        -1px 1px 0 var(--shadow-color),
+         1px 1px 0 var(--shadow-color);
+}
     --maintenance-border-top: rgba(255,255,255,0.95);
     --maintenance-border-bottom: rgba(210,190,150,0.45);
 
@@ -2487,7 +2508,7 @@ a.surligne:visited {
 
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 800px auto;
+    background-size: 1200px auto;
 
 opacity: 0.95;
 filter: grayscale(30%) brightness(1) contrast(1);
