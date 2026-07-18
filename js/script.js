@@ -257,14 +257,14 @@ function changelanguepourquoi() {
 <div class="maintenance-box ajust fonddemon">
  <h1>❓FAQ</h1>
 <h2>🪄 Why choose Studio PF?</h2>
-<ul>
-<li>🎨 <strong>A 100% custom project</strong>: each miniature is painted according to your wishes, your universe, your budget, and the desired level of finish.</li>
-<li>🔧 <strong>Professional preparation</strong>: cleaning, assembly, priming, corrections, and meticulous preparation to ensure a durable result.</li>
-<li>🧪 <strong>Immersive bases and advanced effects</strong>: textures, pigments, vegetation, 3D accessories, and many painting techniques to bring your army or collectible piece to life.</li>
-<li>📸 <strong>Transparent follow-up</strong>: you are informed at every important step and validate the final photos before shipping.</li>
-<li>📦 <strong>A turnkey service</strong>: your miniatures can be ordered from my partners, delivered directly to Studio PF, painted, and then shipped to you, ready to play or display.</li>
-<li>🛡️ <strong>Careful packaging and secure shipping</strong>: each order is protected with the utmost care to arrive in perfect condition.</li>
-</ul>
+
+<p>🎨 <strong>A 100% custom project</strong>: each miniature is painted according to your wishes, your universe, your budget, and the desired level of finish.</p>
+<p>🔧 <strong>Professional preparation</strong>: cleaning, assembly, priming, corrections, and meticulous preparation to ensure a durable result.</p>
+<p>🧪 <strong>Immersive bases and advanced effects</strong>: textures, pigments, vegetation, 3D accessories, and many painting techniques to bring your army or collectible piece to life.</p>
+<p>📸 <strong>Transparent follow-up</strong>: you are informed at every important step and validate the final photos before shipping.</p>
+<p>📦 <strong>A turnkey service</strong>: your miniatures can be ordered from my partners, delivered directly to Studio PF, painted, and then shipped to you, ready to play or display.</p>
+<p>🛡️ <strong>Careful packaging and secure shipping</strong>: each order is protected with the utmost care to arrive in perfect condition.</p>
+
 <p>
 From the first contact to delivery, I do everything possible to make your project a simple, transparent experience that meets your expectations.
 </p>
@@ -274,13 +274,13 @@ From the first contact to delivery, I do everything possible to make your projec
 <div class="center">
 <div class="maintenance-box ajust fondknigt">
     <h2>⚙️ How does it work?</h2>
-    <ol>
-        <li>💬 Contact me to discuss your project and get a personalized quote.</li>
-        <li>🎲 Do you already own your miniatures? Send them directly to <strong>Studio PF</strong>. Don't have your army yet? Order it from my partners <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> or <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (new and second-hand miniatures) and have it delivered directly to the workshop.</li>
-        <li>🎨 I take care of the entire project: preparation, assembly, painting, basing, and finishing according to the chosen quality level.</li>
-        <li>📸 Once the painting is complete, I send you high-definition photos for validation before shipping or in-person handover.</li>
-        <li>📦 After your approval, your order is carefully packed and shipped securely.</li>
-    </ol>
+   
+        <p>💬 Contact me to discuss your project and get a personalized quote.</p>
+        <p>🎲 Do you already own your miniatures? Send them directly to <strong>Studio PF</strong>. Don't have your army yet? Order it from my partners <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> or <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (new and second-hand miniatures) and have it delivered directly to the workshop.</p>
+        <p>🎨 I take care of the entire project: preparation, assembly, painting, basing, and finishing according to the chosen quality level.</p>
+        <p>📸 Once the painting is complete, I send you high-definition photos for validation before shipping or in-person handover.</p>
+        <p>📦 After your approval, your order is carefully packed and shipped securely.</p>
+   
     <p>
         This organization saves you time: your miniatures can be ordered, delivered, painted, and shipped back to you without any handling on your part.
     </p>
@@ -373,14 +373,14 @@ TableTop painting is designed for gaming with an excellent look at tabletop dist
 <div class="maintenance-box ajust fonddemon">
  <h1>❓FAQ</h1>
 <h2>🪄 ¿Por qué elegir Studio PF?</h2>
-<ul>
-<li>🎨 <strong>Un proyecto 100 % personalizado</strong>: cada figura es pintada según tus deseos, tu universo, tu presupuesto y el nivel de acabado deseado.</li>
-<li>🔧 <strong>Una preparación profesional</strong>: desbarbado, montaje, imprimación, correcciones y preparación minuciosa para garantizar un resultado duradero.</li>
-<li>🧪 <strong>Socles inmersivos y efectos avanzados</strong>: texturas, pigmentos, vegetación, accesorios 3D y numerosas técnicas de pintura para dar vida a tu ejército o a tu pieza de colección.</li>
-<li>📸 <strong>Un seguimiento transparente</strong>: se te informa en cada etapa importante y validas las fotos finales antes de cualquier envío.</li>
-<li>📦 <strong>Un servicio llave en mano</strong>: tus figuras pueden ser encargadas en mis socios, entregadas directamente al Studio PF, pintadas y luego enviadas a tu casa, listas para jugar o exponer.</li>
-<li>🛡️ <strong>Un embalaje cuidadoso y un envío seguro</strong>: cada pedido está protegido con el mayor cuidado para llegar en perfecto estado.</li>
-</ul>
+
+<p>🎨 <strong>Un proyecto 100 % personalizado</strong>: cada figura es pintada según tus deseos, tu universo, tu presupuesto y el nivel de acabado deseado.</p>
+<p>🔧 <strong>Una preparación profesional</strong>: desbarbado, montaje, imprimación, correcciones y preparación minuciosa para garantizar un resultado duradero.</p>
+<p>🧪 <strong>Socles inmersivos y efectos avanzados</strong>: texturas, pigmentos, vegetación, accesorios 3D y numerosas técnicas de pintura para dar vida a tu ejército o a tu pieza de colección.</p>
+<p>📸 <strong>Un seguimiento transparente</strong>: se te informa en cada etapa importante y validas las fotos finales antes de cualquier envío.</p>
+<p>📦 <strong>Un servicio llave en mano</strong>: tus figuras pueden ser encargadas en mis socios, entregadas directamente al Studio PF, pintadas y luego enviadas a tu casa, listas para jugar o exponer.</p>
+<p>🛡️ <strong>Un embalaje cuidadoso y un envío seguro</strong>: cada pedido está protegido con el mayor cuidado para llegar en perfecto estado.</p>
+
 <p>
 Desde el primer contacto hasta la entrega, pongo todo mi esfuerzo para que tu proyecto sea una experiencia sencilla, transparente y a la altura de tus expectativas.
 </p>
@@ -390,13 +390,13 @@ Desde el primer contacto hasta la entrega, pongo todo mi esfuerzo para que tu pr
 <div class="center">
 <div class="maintenance-box ajust fondknigt">
     <h2>⚙️ ¿Cómo funciona?</h2>
-    <ol>
-        <li>💬 Contáctame para hablar de tu proyecto y obtener un presupuesto personalizado.</li>
-        <li>🎲 ¿Ya tienes tus figuras? Envíalas directamente al <strong>Studio PF</strong>. ¿Aún no tienes tu ejército? Encuéntralo en mis socios <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> o <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figuras nuevas y de segunda mano) y haz que lo envíen directamente al taller.</li>
-        <li>🎨 Me encargo de todo el proyecto: preparación, montaje, pintura, bases y acabados según el nivel de calidad elegido.</li>
-        <li>📸 Una vez terminada la pintura, te envío fotos en alta definición para su validación antes del envío o entrega en mano.</li>
-        <li>📦 Tras tu validación, tu pedido es cuidadosamente embalado y enviado de forma segura.</li>
-    </ol>
+   
+        <p>💬 Contáctame para hablar de tu proyecto y obtener un presupuesto personalizado.</p>
+        <p>🎲 ¿Ya tienes tus figuras? Envíalas directamente al <strong>Studio PF</strong>. ¿Aún no tienes tu ejército? Encuéntralo en mis socios <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> o <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figuras nuevas y de segunda mano) y haz que lo envíen directamente al taller.</p>
+        <p>🎨 Me encargo de todo el proyecto: preparación, montaje, pintura, bases y acabados según el nivel de calidad elegido.</p>
+        <p>📸 Una vez terminada la pintura, te envío fotos en alta definición para su validación antes del envío o entrega en mano.</p>
+        <p>📦 Tras tu validación, tu pedido es cuidadosamente embalado y enviado de forma segura.</p>
+    
     <p>
         Esta organización te permite ahorrar tiempo: tus figuras pueden ser encargadas, entregadas, pintadas y reenviadas, sin que tengas que manipular nada.
     </p>
@@ -489,14 +489,14 @@ Una pintura TableTop está pensada para el juego con un excelente aspecto a dist
 <div class="maintenance-box ajust fonddemon">
  <h1>❓FAQ</h1>
 <h2>🪄 Pourquoi choisir Studio PF ?</h2>
-<ul>
-<li>🎨 <strong>Un projet 100 % personnalisé</strong> : chaque figurine est peinte selon vos envies, votre univers, votre budget et le niveau de finition souhaité.</li>
-<li>🔧 <strong>Une préparation professionnelle</strong> : ébarbage, montage, sous-couche, corrections et préparation minutieuse pour garantir un résultat durable.</li>
-<li>🧪 <strong>Des socles immersifs et des effets avancés</strong> : textures, pigments, végétation, accessoires 3D et nombreuses techniques de peinture pour donner vie à votre armée ou à votre pièce de collection.</li>
-<li>📸 <strong>Un suivi transparent</strong> : vous êtes informé à chaque étape importante et validez les photos finales avant toute expédition.</li>
-<li>📦 <strong>Un service clé en main</strong> : vos figurines peuvent être commandées chez mes partenaires, livrées directement au Studio PF, peintes puis expédiées chez vous, prêtes à jouer ou à exposer.</li>
-<li>🛡️ <strong>Un emballage soigné et une expédition sécurisée</strong> : chaque commande est protégée avec le plus grand soin pour arriver en parfait état.</li>
-</ul>
+
+<p>🎨 <strong>Un projet 100 % personnalisé</strong> : chaque figurine est peinte selon vos envies, votre univers, votre budget et le niveau de finition souhaité.</p>
+<p>🔧 <strong>Une préparation professionnelle</strong> : ébarbage, montage, sous-couche, corrections et préparation minutieuse pour garantir un résultat durable.</p>
+<p>🧪 <strong>Des socles immersifs et des effets avancés</strong> : textures, pigments, végétation, accessoires 3D et nombreuses techniques de peinture pour donner vie à votre armée ou à votre pièce de collection.</p>
+<p>📸 <strong>Un suivi transparent</strong> : vous êtes informé à chaque étape importante et validez les photos finales avant toute expédition.</p>
+<p>📦 <strong>Un service clé en main</strong> : vos figurines peuvent être commandées chez mes partenaires, livrées directement au Studio PF, peintes puis expédiées chez vous, prêtes à jouer ou à exposer.</p>
+<p>🛡️ <strong>Un emballage soigné et une expédition sécurisée</strong> : chaque commande est protégée avec le plus grand soin pour arriver en parfait état.</p>
+
 <p>
 De la première prise de contact jusqu'à la livraison, je mets tout en œuvre pour que votre projet soit une expérience simple, transparente et à la hauteur de vos attentes.
 </p>
@@ -505,15 +505,15 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
       <div class="center">
     <div class="maintenance-box ajust fondknigt">
         <h2>⚙️ Comment ça marche ?</h2>
-        <ol>
-            <li>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</li>
-            <li>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</li>
-            <li>🎨 Je prends en charge l'ensemble du projet : préparation, montage, peinture, soclage et finitions selon le niveau de qualité choisi.</li>
+       
+            <p>💬 Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.</p>
+            <p>🎲 Vous possédez déjà vos figurines ? Envoyez-les directement au <strong>Studio PF</strong>. Vous n'avez pas encore votre armée ? Commandez-la chez mes partenaires <a href="https://maxireves.fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Maxi Rêves</strong></a> ou <a href="https://www.totalwargame.com/fr/" class="surligne" target="_blank" rel="noopener noreferrer"><strong>Total Wargame</strong></a> (figurines neuves et d'occasion) et faites-la livrer directement à l'atelier.</p>
+            <p>🎨 Je prends en charge l'ensemble du projet : préparation, montage, peinture, soclage et finitions selon le niveau de qualité choisi.</p>
 
-            <li>📸 Une fois la peinture terminée, je vous envoie des photos haute définition pour validation avant l'expédition ou une remise en main propre.</li>
+            <p>📸 Une fois la peinture terminée, je vous envoie des photos haute définition pour validation avant l'expédition ou une remise en main propre.</p>
 
-            <li>📦 Après votre validation, votre commande est soigneusement emballée et expédiée en toute sécurité.</li>
-        </ol>
+            <p>📦 Après votre validation, votre commande est soigneusement emballée et expédiée en toute sécurité.</p>
+        
 
         <p>
             Cette organisation vous permet de gagner du temps : vos figurines peuvent être commandées, livrées, peintes puis réexpédiées, sans aucune manipulation de votre part.
