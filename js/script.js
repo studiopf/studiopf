@@ -4738,7 +4738,7 @@ function initGalerieWithLang() {
         html = `
 
                 <div class="center">
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
 <h1>🎨 Gallery</h1>
             <p class="galerie-description">✨ Step into a world where every miniature becomes a work of art.</p>
             <div class="menugallery" id="filters"></div>
@@ -4752,7 +4752,7 @@ function initGalerieWithLang() {
 
 
             <div class="center">
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
 <h1>🎨 Galería</h1>
             <p class="galerie-description">✨ Adéntrate en un mundo donde cada miniatura se convierte en una obra de arte.</p>
             <div class="menugallery" id="filters"></div>
@@ -4765,7 +4765,7 @@ function initGalerieWithLang() {
         html = `
 
    <div class="center">
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box">
 <h1>🎨 Galerie</h1>
 
             <p class="galerie-description">✨ Entrez dans un univers où chaque figurine devient une œuvre d'art.</p>
