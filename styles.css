@@ -1120,7 +1120,7 @@ nav {
 #scrollTotal {
     border: 5px solid #FFD700;
     position: fixed;
-    bottom: px;
+    bottom: 400px;
     right: 20px;
     background-color: var(--scroll-bg);
     color: var(--scroll-c); 
