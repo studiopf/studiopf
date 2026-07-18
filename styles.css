@@ -232,36 +232,6 @@ textarea:disabled {
 }
 @media (max-width: 768px) {
 
-
-mask-image: linear-gradient(
-    to bottom,
-    #000 0%,
-    #000 55%,
-    rgba(0, 0, 0, 0.90) 75%,
-    rgba(0, 0, 0, 0.65) 90%,
-    rgba(0, 0, 0, 0.25) 100%
-);
-
-    pointer-events: none;
-    z-index: 0;
-}
-
-   /* Filigrane */
-.fondorc::before,
-.fonddg::before,
-.fondslann::before,
-.fonddracaufeu::before,
-.fondlilia::before,
-.fondmoi::before,
-.fondknigt::before,
-.fondnurgle::before,
-.fondfreezer::before,
-.fonddemon::before {
-    /* Taille fixe */
-    background-size: 700px auto;
-    
-}
-
    .maintenance-box {
    width: 700px;
 }
