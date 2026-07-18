@@ -101,13 +101,10 @@ textarea:disabled {
 info-container {
     width: 100%;
     max-width: 1200px;
-
     margin: 0;
     border: 0;
-
     position: relative;
     text-align: center;
-
     box-sizing: border-box;
 }
 
@@ -139,10 +136,8 @@ info-container {
 .maintenance-box {
     max-width: 1200px;
     width: calc(100% - 30px);
-
     margin-top: 10px;
     margin-bottom: 0;
-
     position: relative;
     text-align: center;
 
