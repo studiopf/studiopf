@@ -3575,11 +3575,11 @@ function changelanguepeinture() {
     <div class="card-container2">
         <div class="card">
        <h2>Preparation 🛠️</h2>
-<ul>
-    <li>Cleaning</li>
-    <li>Assembly</li>
-    <li>Optimal preparation before painting</li>
-</ul>
+
+    <p>Cleaning</p>
+    <p>Assembly</p>
+    <p>Optimal preparation before painting</p>
+
 </div>
 
        <div class="card">
@@ -3820,15 +3820,14 @@ function changelanguepeinture() {
 
 
 </div>
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondkigt">
     <div class="card-container2">
         <div class="card">
        <h2>Preparación 🛠️</h2>
-<ul>
-    <li>Limpieza</li>
-    <li>Ensamblaje</li>
-    <li>Preparación óptima antes de pintar</li>
-</ul>
+
+    <p>Limpieza</p>
+    <p>Ensamblaje</p>
+    <p>Preparación óptima antes de pintar</p>
 </div>
 
  <div class="card">
@@ -4092,15 +4091,13 @@ function changelanguepeinture() {
 
 </div>
 
-    <div class="maintenance-box ajust">
+    <div class="maintenance-box ajust fondkigt">
 <div class="card-container2">
  <div class="card">
        <h2>Préparation 🛠️</h2>
-<ul>
-    <li>Nettoyage</li>
-    <li>Assemblage</li>
-    <li>Préparation optimale avant peinture</li>
-</ul>
+    <p>Nettoyage</p>
+    <p>Assemblage</p>
+    <p>Préparation optimale avant peinture</p>
 </div>
 
 
