@@ -3644,10 +3644,11 @@ function changelanguepeinture() {
 
 </tbody>
 </table>
-  </div>
         <div>
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
     </div>
+  </div>
+
 `;
     } else if (currentLanguage === "spanish") {
         html = `
@@ -3891,10 +3892,11 @@ function changelanguepeinture() {
 
 </tbody>
 </table>
-  </div>
         <div>
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
     </div>
+  </div>
+
 `;
     } else {
         html = `   <h1>🎨 Peinture de Figurines sur Commission</h1>
@@ -4165,10 +4167,11 @@ function changelanguepeinture() {
 
 </tbody>
 </table>
-  </div>
         <div>
          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </div>
+  </div>
+
 
          `;
     }
