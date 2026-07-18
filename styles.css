@@ -894,12 +894,16 @@ body.light-mode .footer-adresse a:hover {
     border-top: 1px solid #5A5A5A;
     padding: 15px;
 }
- .footer-adresse {
+.footer-adresse {
     width: auto;
     height: auto;
     margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
  .footer p,
  .footer span,
@@ -1031,7 +1035,7 @@ nav {
     margin-bottom: 0;
 }
 .gallery img {
-   width: 250px;
+   width: 280px;
     max-width: 100%;
    border: 2px solid #303030;
     margin-top: 0;
@@ -1042,11 +1046,11 @@ nav {
 }
 
 .gallery img:hover {
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 
 .exemples-photos:hover {
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 /*==========================
       Mini Menu
@@ -1130,13 +1134,13 @@ nav {
 }
 
 .menugallery button {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
     background-position: center;
     border: none;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 0px;
     color: white;
     text-shadow: 1px 1px 2px black;
 }
@@ -1296,7 +1300,7 @@ nav {
     margin: 0;
 }
    .gallery img{
-       width: 140px;
+       width: 120px;
     height: auto;
    }
    .exemples-photos img{
@@ -1590,7 +1594,7 @@ body.light-mode .cardpartenaire2 {
         background-position: center;
         border: none;
         cursor: pointer;
-        font-size: 10px;
+        font-size: 0px;
         color: white;
         text-shadow: 1px 1px 2px black;
     }
@@ -1655,7 +1659,7 @@ body.light-mode .cardpartenaire2 {
 }
      
    .gallery img{
-       width: 90px;
+       width: 80px;
     height: auto;
    }
    .exemples-photos img{
@@ -2276,7 +2280,7 @@ button.pf-menu-button {
     margin: 0;
 }
    .gallery img{
-       width: 150px;
+       width: 140px;
     height: auto;
    }
    .exemples-photos img{
