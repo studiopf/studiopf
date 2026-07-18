@@ -2366,25 +2366,6 @@ a.surligne:visited {
     background-position: top center;
     background-size: 1200px auto;
 
-    /* Le dégradé que tu utilises déjà */
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        #000 0%,
-        #000 55%,
-        rgba(0,0,0,.90) 75%,
-        rgba(0,0,0,.65) 90%,
-        rgba(0,0,0,.25) 100%
-    );
-
-    mask-image: linear-gradient(
-        to bottom,
-        #000 0%,
-        #000 55%,
-        rgba(0,0,0,.90) 75%,
-        rgba(0,0,0,.65) 90%,
-        rgba(0,0,0,.25) 100%
-    );
-
     pointer-events: none;
     z-index: 0;
 }
