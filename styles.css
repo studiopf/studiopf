@@ -744,17 +744,18 @@ body.light-mode .footer {
     padding: 15px;
 }
 --text-p : #2C2C2C;
+--text-a: #0A0A0A;
 body.light-mode .footer h2,
 body.light-mode .footer h3,
 body.light-mode .footer strong {
-    color: #2C2C2C;
+    color: #1F1F1F;
 }
 
 body.light-mode .footer p,
 body.light-mode .footer li,
 body.light-mode .footer span,
 body.light-mode .footer a {
-    color: #555555;
+    color: #2C2C2C;
 }
 
 body.light-mode .footer a:hover {
@@ -775,7 +776,7 @@ body.light-mode .footer-adresse a {
 }
 
 body.light-mode .footer-adresse a:hover {
-    color: #A56A00;
+    color: #1F1F1F;
 }
 
 
@@ -1875,6 +1876,7 @@ body.light-mode .theme-toggle {
 ==========================*/
 :root{
    --text-p : #e8d9c0;
+   --text-a: #D8B06A;
      --maintenance-bg: linear-gradient(
         180deg,
         #151515 0%,
@@ -1894,7 +1896,7 @@ body.light-mode .theme-toggle {
         inset 0 -1px 0 rgba(255,255,255,0.08),
         0 8px 18px rgba(0,0,0,0.35);
       --menufoot-bg: rgba(30, 20, 12, 0.55);
-    --menufoot-text: #F4C876;
+    --menufoot-text: #e8d9c0;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.20);
     --menufoot-hover-text: #FFE39B;
      --menu-mobile-bg: rgba(30, 20, 12, 0.55);
@@ -1913,7 +1915,7 @@ body.light-mode .theme-toggle {
     --scroll-chover :#FFD700;
     --scroll-c:#FFD700;
     --text:#e8d9c0;
- --footer-p: #D0D0D0;
+ --footer-p: #e8d9c0;
       --footer-ahover: #F7B845;
     /*  Box - Mode Sombre */
     --box-border: #8b5f3a;
@@ -1951,13 +1953,13 @@ body.light-mode {
         inset 0 -1px 0 rgba(210,190,150,0.18),
         0 6px 16px rgba(0,0,0,0.10);
        --menufoot-bg: rgba(255,255,255,0.75);
-    --menufoot-text: #7A4D12;
+    --menufoot-text: #2C2C2C;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.45);
-    --menufoot-hover-text: #4E2F08;
+    --menufoot-hover-text: #0A0A0A;
        --menu-mobile-bg: rgba(255,255,255,0.75);
-    --menu-mobile-text: #7A4D12;
+    --menu-mobile-text: #2C2C2C;
     --menu-mobile-hover-bg: rgba(244, 200, 118, 0.45);
-    --menu-mobile-hover-text: #4E2F08;
+    --menu-mobile-hover-text: #0A0A0A;
      --bg: linear-gradient(
     180deg,
     #FAFAFA 0%,
@@ -1973,7 +1975,7 @@ body.light-mode {
    --button-bg:#6b4b2f;
     --button-text:#2C2C2C;
     --button-border:#f7d88b;
-    --title:#2D2D2D;
+    --title:#0A0A0A;
     --header-bg:#FAFAFA;
     --header-color:#2D2D2D;
     --header-border:#D9D9D9;
@@ -2272,7 +2274,7 @@ button.pf-menu-button {
 /* ============================= */
 
 a.surligne {
-    color: #D8B06A;
+    color: --text-a;
     text-decoration: none;
     font-weight: 600;
     position: relative;
