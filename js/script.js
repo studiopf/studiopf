@@ -706,7 +706,7 @@ function changelangueforma() {
          <a href="#formationForm" class="button">S'inscrire 💬</a>
     </div>
 
-       <div class="maintenance-box fondmort">
+       <div class="maintenance-box ajust fondmort">
       <h2>🖍️ Forfaits de Cours</h2>
       <div class="card">
         <h3>🌱 Cours individuel Débutant ou Confirmé</h3>
@@ -795,7 +795,7 @@ function changelangueforma() {
 
    <p>Horaires à titre d'exemple.</p>
    </div>
-       <div class="maintenance-box fondfreezer">
+       <div class="maintenance-box ajust fondfreezer">
       <h2>🖌️🔫 Choisissez vos armes :</h2>
 
       <div class="card-container2">
