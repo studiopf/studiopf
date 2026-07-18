@@ -212,6 +212,53 @@ input[type="radio"] {
     padding: 0;
 }
 @media (max-width: 768px) {
+   .fondmoi::before,
+.fondorc::before,
+.fonddg::before,
+.fondslann::before,
+.fonddracaufeu::before,
+.fondlilia::before,
+.fondknigt::before,
+.fondnurgle::before,
+.fondfreezer::before,
+.fonddemon::before,
+.fondpirate::before,
+.fondnain::before,
+.fondmort::before,
+.fondcusto::before {
+        content: "";
+    position: absolute;
+    inset: 0;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 500px auto;
+
+opacity: 0.95;
+filter: grayscale(30%) brightness(1) contrast(1);
+
+-webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.90) 75%,
+    rgba(0, 0, 0, 0.65) 90%,
+    rgba(0, 0, 0, 0.25) 100%
+);
+
+mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.90) 75%,
+    rgba(0, 0, 0, 0.65) 90%,
+    rgba(0, 0, 0, 0.25) 100%
+);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
    /* Filigrane */
 .fondorc::before,
 .fonddg::before,
@@ -1664,6 +1711,52 @@ body.light-mode .cardpartenaire2 {
 
 /* Pour très petits écrans (320–px) */
 @media (max-width: 400px) {
+   .fondmoi::before,
+.fondorc::before,
+.fonddg::before,
+.fondslann::before,
+.fonddracaufeu::before,
+.fondlilia::before,
+.fondknigt::before,
+.fondnurgle::before,
+.fondfreezer::before,
+.fonddemon::before,
+.fondpirate::before,
+.fondnain::before,
+.fondmort::before,
+.fondcusto::before {
+        content: "";
+    position: absolute;
+    inset: 0;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 200px auto;
+
+opacity: 0.95;
+filter: grayscale(30%) brightness(1) contrast(1);
+
+-webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.90) 75%,
+    rgba(0, 0, 0, 0.65) 90%,
+    rgba(0, 0, 0, 0.25) 100%
+);
+
+mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.90) 75%,
+    rgba(0, 0, 0, 0.65) 90%,
+    rgba(0, 0, 0, 0.25) 100%
+);
+    pointer-events: none;
+    z-index: 0;
+}
+
    .exemples-photos img{
     width: 140px;
     height: auto;
@@ -2396,25 +2489,26 @@ a.surligne:visited {
     background-position: top center;
     background-size: 800px auto;
 
-opacity: 0.75;
-filter: grayscale(40%) brightness(0.85) contrast(0.9);
+opacity: 0.95;
+filter: grayscale(30%) brightness(1) contrast(1);
 
-    /* Dégradé de transparence */
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        rgba(0,0,0,1) 0%,
-        rgba(0,0,0,0.8) 30%,
-        rgba(0,0,0,0.35) 70%,
-        rgba(0,0,0,0) 100%
-    );
-    mask-image: linear-gradient(
-        to bottom,
-        rgba(0,0,0,1) 0%,
-        rgba(0,0,0,0.8) 30%,
-        rgba(0,0,0,0.35) 70%,
-        rgba(0,0,0,0) 100%
-    );
+-webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.90) 75%,
+    rgba(0, 0, 0, 0.65) 90%,
+    rgba(0, 0, 0, 0.25) 100%
+);
 
+mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 55%,
+    rgba(0, 0, 0, 0.90) 75%,
+    rgba(0, 0, 0, 0.65) 90%,
+    rgba(0, 0, 0, 0.25) 100%
+);
     pointer-events: none;
     z-index: 0;
 }
