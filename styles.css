@@ -2388,53 +2388,6 @@ a.surligne:visited {
     pointer-events: none;
     z-index: 0;
 }
-.fondmoi::before,
-.fondorc::before,
-.fonddg::before,
-.fondslann::before,
-.fonddracaufeu::before,
-.fondlilia::before,
-.fondknigt::before,
-.fondnurgle::before,
-.fondfreezer::before,
-.fonddemon::before,
-.fondpirate::before,
-.fondnain::before,
-.fondmort::before,
-.fondcusto::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 800px auto;
-
-    opacity: .95;
-    filter: grayscale(30%) brightness(1) contrast(1);
-
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        #000 0%,
-        #000 55%,
-        rgba(0,0,0,.90) 75%,
-        rgba(0,0,0,.65) 90%,
-        rgba(0,0,0,.25) 100%
-    );
-
-    mask-image: linear-gradient(
-        to bottom,
-        #000 0%,
-        #000 55%,
-        rgba(0,0,0,.90) 75%,
-        rgba(0,0,0,.65) 90%,
-        rgba(0,0,0,.25) 100%
-    );
-
-    pointer-events: none;
-    z-index: 1;
-}
-
 /* ==========================================
        LE CONTENU PASSE DEVANT LE FILIGRANE
 ========================================== */
