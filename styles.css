@@ -1929,10 +1929,14 @@ body.light-mode .theme-toggle {
     color: #8b5b00;
     border-color: #c8b69b;
 }
+body.no-maintenance-bg{
+    --fond-display: none;
+}
 /*==========================
     MODE SOMBRE (défaut)
 ==========================*/
 :root{
+     --fond-display: block;
    --fond: 600px auto;
  --opacity-fond : 0.65; /* Ajuste entre 0 et 1 */
    --text-p : #e8d9c0;
@@ -2456,6 +2460,8 @@ a.surligne:visited {
     content: "";
     position: absolute;
     inset: 0;
+
+    display: var(--fond-display);
 
     background-repeat: no-repeat;
     background-position: top center;
