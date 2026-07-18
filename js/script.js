@@ -4439,7 +4439,7 @@ function changelanguefoot() {
 
 <div class="footer-adresse">
     <p><strong>STUDIO PF</strong><br>
-            Frasse Pierre-François<br>
+            FRASSE Pierre-François<br>
             17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
     17 Route de Lare, 42510 Saint-Georges-de-Baroille, France<br><br>
 
@@ -4471,7 +4471,7 @@ else if (currentLanguage === "spanish") {
 
 <div class="footer-adresse">
    <p><strong>STUDIO PF</strong><br>
-            Frasse Pierre-François<br>
+            FRASSE Pierre-François<br>
             17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
 
     <p>
@@ -4501,7 +4501,7 @@ else if (currentLanguage === "spanish") {
 
         <div class="footer-adresse">
             <p><strong>STUDIO PF</strong><br>
-            Frasse Pierre-François<br>
+            FRASSE Pierre-François<br>
             17 route de Lare 42510 Saint-Georges-de-Baroille<br><br></p>
 
             <p>
