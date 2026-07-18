@@ -1936,7 +1936,6 @@ body.light-mode {
         inset 0 1px 0 rgba(255,255,255,0.90),
         inset 0 -1px 0 rgba(210,190,150,0.18),
         0 6px 16px rgba(0,0,0,0.10);
-}
        --menufoot-bg: rgba(255,255,255,0.75);
     --menufoot-text: #7A4D12;
     --menufoot-hover-bg: rgba(244, 200, 118, 0.45);
