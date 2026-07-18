@@ -438,7 +438,7 @@ body.light-mode .widget-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 
@@ -1792,9 +1792,6 @@ body,
    MODE CLAIR
 =================================================== */
 
-
-
-
 body.light-mode .button{
 
     display:inline-block;
@@ -1974,7 +1971,7 @@ body.light-mode {
    --button-bg:#6b4b2f;
     --button-text:#2C2C2C;
     --button-border:#f7d88b;
-    --title:#ffe39b;
+    --title:#2D2D2D;
     --header-bg:#FAFAFA;
     --header-color:#2D2D2D;
     --header-border:#D9D9D9;
