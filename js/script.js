@@ -679,9 +679,6 @@ function changelangueforma() {
      <img src="img/studio.jpg" alt="Mon Studio et Setup Stream">
     </div>
 
-<p>
-    <em>📸 Mon Studio et Setup Stream.</em>
-</p>
 </div>
 
 
@@ -1720,9 +1717,6 @@ document.addEventListener("DOMContentLoaded", () => {
  <div class="exemples-photos">
     <img src="img/diamant3.jpg" alt="Example of a Warhammer painted army"></div>
 </div>
-<p>
-    <em>📸 Examples of painted armies by Studio PF.</em>
-</p>
     <a href="peinturecommission.html"
        class="button"
        onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -1755,10 +1749,6 @@ document.addEventListener("DOMContentLoaded", () => {
                    <div class="exemples-photos">
         <img src="img/pop1.jpg" alt="Painted competition miniature"></div>
     </div>
-    <p>
-        <em>📸 Examples of collection, exhibition, and competition pieces by Studio PF.</em>
-    </p>
-       
             <a href="peinturecollection.html"
                class="button"
                onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;">
@@ -1889,9 +1879,6 @@ My goal: make your miniatures come alive.
  <div class="exemples-photos">
     <img src="img/diamant3.jpg" alt="Ejemplo de ejército Warhammer pintado"></div>
 </div>
-<p>
-    <em>📸 Ejemplos de ejércitos pintados realizados por Studio PF.</em>
-</p>
     <a href="peinturecommission.html"
        class="button"
        onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -1924,9 +1911,6 @@ My goal: make your miniatures come alive.
                    <div class="exemples-photos">
         <img src="img/pop1.jpg" alt="Miniatura de concurso pintada"></div>
     </div>
-    <p>
-        <em>📸 Ejemplos de piezas de colección, exposición y concurso realizadas por Studio PF.</em>
-    </p>
        
             <a href="peinturecollection.html"
                class="button"
@@ -2075,9 +2059,6 @@ Mi objetivo: hacer vibrar tus miniaturas como si cobraran vida.
     <img src="img/diamant3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
 </div>
 
-<p>
-    <em>📸 Exemples d'armées peintes réalisées par Studio PF.</em>
-</p>
     <a href="peinturecommission.html"
        class="button"
        onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;">
@@ -2117,10 +2098,6 @@ Mi objetivo: hacer vibrar tus miniaturas como si cobraran vida.
                    <div class="exemples-photos">
         <img src="img/pop1.jpg" alt="Figurine de concours peinte"></div>
     </div>
-
-    <p>
-        <em>📸 Exemples de pièces de collection, d'exposition et de concours réalisées par Studio PF.</em>
-    </p>
         
             <a href="peinturecollection.html"
                class="button"
@@ -2240,10 +2217,6 @@ function changelanguecollection() {
         <div class="exemples-photos">
         <img src="img/collection3.jpg" alt="Painted competition figurine"></div>
     </div>
-    <p>
-        <em>📸 Examples of collection, exhibition and competition pieces created by Studio PF.</em>
-    </p>
-
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
      Request a personalized quote 💬
@@ -2271,9 +2244,6 @@ function changelanguecollection() {
         <div class="exemples-photos">
         <img src="img/diorama3.jpg" alt="Diorama painted by Studio PF"></div>
     </div>
-    <p>
-        <em>📸 Examples of dioramas and exhibition scenes created by Studio PF.</em>
-    </p>
 
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
@@ -2302,10 +2272,6 @@ function changelanguecollection() {
         <div class="exemples-photos">
         <img src="img/buste3.jpg" alt="Painted collectible bust"></div>
     </div>
-    <p>
-        <em>📸 Examples of busts and collectible pieces created by Studio PF.</em>
-    </p>
-
  <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
      Request a personalized quote 💬
@@ -2339,10 +2305,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/pop3.jpg" alt="Painted video game figurine"></div>
     </div>
-    <p>
-        <em>📸 Some examples of pop culture inspired creations.</em>
-    </p>
-
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Quote%20Request%20-%20Miniature%20Painting%20Project&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20the%20following%20project:%0A%0A---%20Project%20type%20(Army%20/%20Collection%20/%20Competition)%20:%0A%0A---%20Game%20or%20universe%20:%0A%0A---%20Miniature(s)%20name%20:%0A%0A---%20Number%20of%20miniatures%20:%0A%0A---%20Desired%20painting%20level%20(TableTop%20/%20TableTop%2B%20/%20Display)%20:%0A%0A---%20Assembly%20required%20(Yes%20/%20No)%20:%0A%0A---%20Preferred%20deadline%20(if%20urgent)%20:%0A%0A---%20Reference%20photos%20or%20links%20:%0A%0A---%20Additional%20comments%20or%20special%20requests%20:%0A%0AThank%20you!"
    class="button">
      Request a personalized quote 💬
@@ -2424,10 +2386,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/collection3.jpg" alt="Figurilla de concurso pintada"></divX
     </div>
-    <p>
-        <em>📸 Ejemplos de piezas de colección, exposición y concurso realizadas por Studio PF.</em>
-    </p>
-
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
      Solicitar un presupuesto personalizado 💬
@@ -2455,10 +2413,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/diorama3.jpg" alt="Diorama pintado por Studio PF"></div>
     </div>
-    <p>
-        <em>📸 Ejemplos de dioramas y escenas de exposición realizados por Studio PF.</em>
-    </p>
-
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
      Solicitar un presupuesto personalizado 💬
@@ -2486,10 +2440,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/buste3.jpg" alt="Busto de colección pintado"></div>
     </div>
-    <p>
-        <em>📸 Ejemplos de bustos y piezas de colección realizados por Studio PF.</em>
-    </p>
-
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
      Solicitar un presupuesto personalizado 💬
@@ -2523,9 +2473,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/pop3.jpg" alt="Figurilla de videojuego pintada"></div>
     </div>
-    <p>
-        <em>📸 Algunos ejemplos de realizaciones inspiradas en la pop culture.</em>
-    </p>
 
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF,%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto:%0A%0A---%20Tipo%20de%20proyecto%20(Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso)%20:%0A%0A---%20Juego%20o%20universo%20:%0A%0A---%20Nombre%20de%20las%20miniaturas%20:%0A%0A---%20Cantidad%20de%20miniaturas%20:%0A%0A---%20Nivel%20de%20acabado%20deseado%20(TableTop%20/%20TableTop%2B%20/%20Vitrina)%20:%0A%0A---%20%C2%BFEs%20necesario%20el%20montaje%3F%20(S%C3%AD%20/%20No)%20:%0A%0A---%20Fecha%20deseada%20(si%20es%20urgente)%20:%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%20:%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%20:%0A%0A%C2%A1Muchas%20gracias!"
    class="button">
@@ -2614,11 +2561,6 @@ function changelanguecollection() {
         <img src="img/collection3.jpg" alt="Figurine de concours peinte"></div>
     </div>
 
-    <p>
-        <em>📸 Exemples de pièces de collection, d'exposition et de concours réalisées par Studio PF.</em>
-    </p>
-
-
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
@@ -2651,11 +2593,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/diorama3.jpg" alt="Diorama peint par Studio PF"></div>
     </div>
-
-    <p>
-        <em>📸 Exemples de dioramas et scènes d'exposition réalisés par Studio PF.</em>
-    </p>
-
 
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
@@ -2691,11 +2628,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/buste3.jpg" alt="Buste de collection peint"></div>
     </div>
-
-    <p>
-        <em>📸 Exemples de bustes et pièces de collection réalisés par Studio PF.</em>
-    </p>
-
 
   <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
@@ -2738,11 +2670,6 @@ function changelanguecollection() {
           <div class="exemples-photos">
         <img src="img/pop3.jpg" alt="Figurine de jeu vidéo peinte"></div>
     </div>
-
-    <p>
-        <em>📸 Quelques exemples de réalisations inspirées de la pop culture.</em>
-    </p>
-
 
 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
@@ -2862,9 +2789,6 @@ function changelanguequisuisje() {
      <img src="img/moi.jpg" alt="Pierre-François FRASSE - fondateur de Studio PF">
     </div>
 
-<p>
-    <em>📸 Pierre-François, your painter.</em>
-</p>
 <a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
     Discover my artistic universe 🖼️
 </a>
@@ -2942,10 +2866,6 @@ function changelanguequisuisje() {
 <div class="exemples-photos">
     <img src="img/covid.jpg" alt="One of the units printed and painted during the COVID pandemic...">
 </div>
-
-<p>
-    <em>📸 One of the units printed and painted during the COVID pandemic...</em>
-</p>
 <a href="peinturecommission.html"
    onclick="loadPage('peinturecommission.html'); return false;"
    class="button">
@@ -3062,9 +2982,6 @@ function changelanguequisuisje() {
      <img src="img/moi.jpg" alt="Pierre-François FRASSE - fondateur de Studio PF">
     </div>
 
-<p>
-    <em>📸 Pierre-François, tu pintor.</em>
-</p>
 <a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
     Descubrir mi universo artístico 🖼️
 </a>
@@ -3143,9 +3060,6 @@ function changelanguequisuisje() {
     <img src="img/covid.jpg" alt="Una de las unidades impresa y pintada durante la pandemia de COVID...">
 </div>
 
-<p>
-    <em>📸 Una de las unidades impresa y pintada durante la pandemia de COVID...</em>
-</p>
 <a href="peinturecommission.html"
    onclick="loadPage('peinturecommission.html'); return false;"
    class="button">
@@ -3266,9 +3180,6 @@ function changelanguequisuisje() {
      <img src="img/moi.jpg" alt="Pierre-François FRASSE - fondateur de Studio PF">
     </div>
 
-<p>
-    <em>📸 Pierre-François, ton peintre.</em>
-</p>
 <a href="galerie.html" onclick="loadPage('galerie.html'); return false;" class="button">
     Découvrir mon univers artistique 🖼️
 </a>
@@ -3359,9 +3270,7 @@ function changelanguequisuisje() {
      <img src="img/covid.jpg" alt="Une des unités imprimé et peinte pendant le Covid...">
     </div>
 
-<p>
-    <em>📸 Une des unités imprimé et peinte pendant le Covid...</em>
-</p>
+
 <a href="peinturecommission.html"
    onclick="loadPage('peinturecommission.html'); return false;"
    class="button">
@@ -3510,9 +3419,6 @@ function changelanguepeinture() {
     <img src="img/armee3.jpg" alt="Example of a painted wargaming army"></div>
 </div>
 
-<p>
-    <em>📸 Examples of painted armies and tabletop miniatures by Studio PF.</em>
-</p>
 </div>
 
 <div class="maintenance-box ajust">
@@ -3548,11 +3454,7 @@ function changelanguepeinture() {
     <div class="exemples-photos">
      <img src="img/gold3.jpg" alt="Example of Gold level painted unit"></div>
 </div>
-<p>
-    <em>Examples of Gold level creations.</em>
-</p>
-
-         <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
+    <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 
     </div>
 
@@ -3591,9 +3493,6 @@ function changelanguepeinture() {
         <div class="exemples-photos">
          <img src="img/diamant3.jpg" alt="Example of Diamond level painted figurine"></div>
     </div>
-    <p>
-        <em>📸 Examples of Diamond level creations.</em>
-    </p>
 
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Request a quote 💬</a>
 
@@ -3654,11 +3553,6 @@ function changelanguepeinture() {
         <img src="img/conversion3.jpg"
              alt="Example of a conversion using 3D-printed parts"></div>
     </div>
-
-    <p>
-        <em>📸 Examples of conversions, kitbashes, and custom miniature creations.</em>
-    </p>
-
 
         <a href="mailto:studiopeinturefigurine@gmail.com?subject=Miniature%20Conversion%20Project%20Studio%20PF&body=Hello%20Studio%20PF,%0A%0AI%20would%20like%20to%20present%20a%20miniature%20conversion%20project.%0A%0ABase%20miniature:%0A%0ARequested%20modifications:%0A%0AAvailable%20bits,%20parts%20or%20accessories:%0A%0A3D-printed%20parts%20to%20include:%0A%0APhotos,%20links%20or%20references:%0A%0AAdditional%20information:%0A"
            class="button">
@@ -3775,11 +3669,6 @@ function changelanguepeinture() {
     <div class="exemples-photos">
     <img src="img/armee3.jpg" alt="Ejemplo de ejército para juegos de miniaturas pintado"></div>
 </div>
-
-<p>
-    <em>📸 Ejemplos de ejércitos y miniaturas de juego pintados por Studio PF.</em>
-</p>
-
 </div>
 
 <div class="maintenance-box ajust">
@@ -3815,10 +3704,6 @@ function changelanguepeinture() {
     <div class="exemples-photos">
     <img src="img/gold3.jpg" alt="Ejemplo de unidad pintada nivel Gold"></div>
 </div>
-<p>
-    <em>Ejemplos de realizaciones en nivel Gold.</em>
-</p>
-
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
 
     </div>
@@ -3858,10 +3743,6 @@ function changelanguepeinture() {
         <div class="exemples-photos">
         <img src="img/diamant3.jpg" alt="Ejemplo de figurilla pintada nivel Diamante"></div>
     </div>
-    <p>
-        <em>📸 Ejemplos de realizaciones en nivel Diamante.</em>
-    </p>
-
          <a href="simulateur_devis" class="button" onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Solicitar presupuesto 💬</a>
 
     </div>
@@ -3921,11 +3802,6 @@ function changelanguepeinture() {
         <img src="img/conversion3.jpg"
              alt="Ejemplo de conversión con piezas impresas en 3D"></div>
     </div>
-
-    <p>
-        <em>📸 Ejemplos de conversiones, kitbash y creaciones personalizadas.</em>
-    </p>
-
 
         <a href="mailto:studiopeinturefigurine@gmail.com?subject=Proyecto%20de%20conversi%C3%B3n%20de%20miniatura%20Studio%20PF&body=Hola%20Studio%20PF,%0A%0AMe%20gustar%C3%ADa%20presentar%20un%20proyecto%20de%20conversi%C3%B3n.%0A%0AMiniatura%20base%20:%0A%0AModificaciones%20deseadas%20:%0A%0APiezas,%20bits%20o%20accesorios%20disponibles%20:%0A%0APiezas%20impresas%20en%203D%20a%20integrar%20:%0A%0AFotos,%20enlaces%20o%20referencias%20:%0A%0AInformaci%C3%B3n%20adicional%20:%0A"
            class="button">
@@ -4039,9 +3915,6 @@ function changelanguepeinture() {
     <img src="img/armee3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
 </div>
 
-<p>
-    <em>📸 Exemples d'armées peintes réalisées par Studio PF.</em>
-</p>
   <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 </div>
 
@@ -4088,9 +3961,6 @@ function changelanguepeinture() {
       <img src="img/gold3.jpg" alt="Exemple d'unité peinte niveau Gold"></div>
 </div>
 
-<p>
-    <em>Exemples de réalisations au niveau Gold.</em>
-</p>
 
          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 
@@ -4142,12 +4012,6 @@ function changelanguepeinture() {
         <div class="exemples-photos">
         <img src="img/diamant3.jpg" alt="Exemple de figurine peinte niveau Diamant"></div>
     </div>
-
-    <p>
-        <em>📸 Exemples de réalisations au niveau Diamant.</em>
-    </p>
-
-
 
          <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 
@@ -4208,11 +4072,6 @@ function changelanguepeinture() {
         <img src="img/conversion3.jpg"
              alt="Exemple de conversion avec des pièces imprimées en 3D"></div>
     </div>
-
-    <p>
-        <em>📸 Exemples de conversions, kitbashs et créations personnalisées.</em>
-    </p>
-
 
         <a href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20de%20conversion%20de%20figurine%20Studio%20PF&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20vous%20présenter%20un%20projet%20de%20conversion.%0A%0AFigurine%20de%20base%20:%0A%0AModifications%20souhaitées%20:%0A%0APièces,%20bits%20ou%20rabiots%20disponibles%20:%0A%0APièces%203D%20à%20intégrer%20:%0A%0APhotos,%20liens%20ou%20références%20:%0A%0AInformations%20complémentaires%20:%0A"
            class="button">
