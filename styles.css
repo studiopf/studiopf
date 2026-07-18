@@ -1349,11 +1349,9 @@ nav {
 }
       .maintenance-box p {
 text-shadow: var(--shadow-p-box);
-         text-shadow: var(--shadow-color);
 }
      .maintenance-box a {
-text-shadow: var(--shadow-a-box);
-        text-shadow: var(--shadow-color);
+text-shadow: var(--shadow-p-box);
 }
       .maintenance-boxpartenaire {
     width: 100%;
@@ -2044,7 +2042,6 @@ body.light-mode .theme-toggle {
          1px -1px 0 var(--shadow-color),
         -1px 1px 0 var(--shadow-color),
          1px 1px 0 var(--shadow-color);
-}
 
     --maintenance-border-top: rgba(255,255,255,0.28);
     --maintenance-border-bottom: rgba(255,255,255,0.28);
@@ -2115,7 +2112,7 @@ body.light-mode {
          1px -1px 0 var(--shadow-color),
         -1px 1px 0 var(--shadow-color),
          1px 1px 0 var(--shadow-color);
-}
+
     --maintenance-border-top: rgba(255,255,255,0.95);
     --maintenance-border-bottom: rgba(210,190,150,0.45);
 
