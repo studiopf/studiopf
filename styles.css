@@ -530,7 +530,7 @@ body.light-mode .widget-container {
 }
 
 #contenu-principal {
-    display: grid;
+    display: flex;
    flex-direction: column;
    justify-content: center;
     text-align: center;
