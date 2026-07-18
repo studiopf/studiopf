@@ -1933,6 +1933,8 @@ body.light-mode .theme-toggle {
     MODE SOMBRE (défaut)
 ==========================*/
 :root{
+   --fond: 600px auto;
+ --opacity-fond : 0.65; /* Ajuste entre 0 et 1 */
    --text-p : #e8d9c0;
    --text-a : #D8B06A;
      --maintenance-bg: linear-gradient(
@@ -2020,6 +2022,7 @@ body.light-mode .theme-toggle {
         MODE CLAIR
 ==========================*/
 body.light-mode {
+ --opacity-fond : 0.45; /* Ajuste entre 0 et 1 */
   --maintenance-bg: linear-gradient(
         180deg,
         #F2E8D8 0%,
@@ -2456,8 +2459,8 @@ a.surligne:visited {
 
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 600px auto;
-  opacity: 0.65; /* Ajuste entre 0 et 1 */
+    background-size: var(--fond);
+    opacity: var(--opacity-fond);
     pointer-events: none;
     z-index: 0;
 }
