@@ -187,6 +187,8 @@ changelangueinfo();
     if (localStorage.getItem("maintenanceBackground") === "off") {
     document.body.classList.add("no-maintenance-bg");
 }
+    updateBackgroundButton();
+    
     updateDebugDisplay();
     mettreAJourTarifLangue();
 
@@ -6450,6 +6452,21 @@ function toggleMaintenanceBackground() {
             ? "off"
             : "on"
     );
+
+    updateBackgroundButton();
+}
+
+// Au chargement
+if (localStorage.getItem("maintenanceBackground") === "off") {
+    document.body.classList.add("no-maintenance-bg");
+}
+function updateBackgroundButton() {
+    const btn = document.getElementById("btnFond");
+    const enabled = !document.body.classList.contains("no-maintenance-bg");
+
+    btn.textContent = enabled
+        ? "🖼️ Fond : ON"
+        : "🚫 Fond : OFF";
 }
 
 function initThemeToggle() {
