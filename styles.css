@@ -1,9 +1,83 @@
+/* ==========================
+   INPUTS & SELECT
+========================== */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    background: var(--box-bg);
+    color: var(--text);
+
+    border: 1px solid var(--button-border);
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    outline: none;
+    transition: all 0.25s ease;
+
+    box-sizing: border-box;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(180,180,180,0.8);
+}
+
+/* Focus */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #FFD700;
+
+    box-shadow:
+        0 0 0 3px rgba(255,215,0,0.15),
+        0 0 12px rgba(255,215,0,0.25);
+
+    transform: translateY(-1px);
+}
+
+/* Hover */
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #FFD700;
+}
+
+/* Select */
+select {
+    cursor: pointer;
+}
+
+/* Désactivé */
+input:disabled,
+select:disabled,
+textarea:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ==========================
+        CHECKBOX / RADIO
+========================== */
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+    accent-color: #FFD700;
+}
 /* bandeau défile */
 .info-container {
    margin-top: 0;
     margin-bottom: 0;
     border: 0px;
- width: 1000px;
+ width: 100%;
    max-width: 1200px;
     position: relative;
     text-align: center;
@@ -167,8 +241,8 @@
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
-    width: 700px;
-   max-width: 700px;
+    width: 100%;
+   max-width: 650px;
     position: relative;
     text-align: center;
 }
@@ -1222,8 +1296,8 @@ text-shadow: --shadow-a-box;
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
-    width: 600px;
-   max-width: 600px;
+    width: 100%;
+   max-width: 550px;
     position: relative;
     text-align: center;
 }
@@ -1624,11 +1698,11 @@ body.light-mode .cardpartenaire2 {
     max-width: 350px;
 }
    .info-container {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
     border: 0;
-    width: 350px;
-   max-width: 400px;
+    width: 100%;
+   max-width: 350px;
     position: relative;
     text-align: center;
 }
