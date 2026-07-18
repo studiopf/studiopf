@@ -2358,7 +2358,7 @@ a.surligne:visited {
     inset: 0;
 
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: 1000px auto;
 
     filter: grayscale(35%);
