@@ -438,7 +438,7 @@ body.light-mode .widget-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 
@@ -648,7 +648,6 @@ a:hover,
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
-
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
@@ -676,8 +675,10 @@ a:hover,
                 border-color .26s ease;
 }
 .cardpartenaire a {
+   color: --text-p;
     text-shadow: 0px 0px 0 #000;}
 .cardpartenaire p {
+    color: --text-p;
     text-shadow: 0px 0px 0 #000;}
 
 .cardpartenaire:hover {
@@ -742,7 +743,7 @@ body.light-mode .footer {
     border-top: 1px solid #CFCFCF;
     padding: 15px;
 }
-
+--text-p : #2C2C2C;
 body.light-mode .footer h2,
 body.light-mode .footer h3,
 body.light-mode .footer strong {
@@ -1344,7 +1345,7 @@ body.light-mode .cardpartenaire2 {
    margin-top: 2px;
     margin: 0rem auto;
     max-width: 92%;
-    color: #e8d9c0;
+    color: --text-p;
 }
 
 
@@ -1873,6 +1874,7 @@ body.light-mode .theme-toggle {
     MODE SOMBRE (défaut)
 ==========================*/
 :root{
+   --text-p : #e8d9c0;
      --maintenance-bg: linear-gradient(
         180deg,
         #151515 0%,
