@@ -134,6 +134,13 @@ input[type="radio"] {
     position: relative;
     text-align: center;
 }
+.maintenance-box-part {
+    margin-top: 10px;
+    margin-bottom: 0;
+      width: 1000px;
+    position: relative;
+    text-align: center;
+}
 .maintenance-box {
     width: 100%;
     max-width: none;
