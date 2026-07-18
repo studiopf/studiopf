@@ -2392,7 +2392,7 @@ a.surligne:visited {
     background-position: top center;
     background-size: 800px auto;
 
-opacity: 0.20;
+opacity: 0.75;
 filter: grayscale(40%) brightness(0.85) contrast(0.9);
 
     /* Dégradé de transparence */
