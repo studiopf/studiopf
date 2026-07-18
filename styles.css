@@ -299,10 +299,6 @@ info-container {
 .card-container3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    width: 100%;
-   align-items: center;
-        justify-content: center;
 }
 .exemples-photos3 {
     width: auto;
