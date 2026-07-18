@@ -255,7 +255,6 @@ text-shadow: var(--shadow-p-box-mob);
 
 .header-contact a{
     font-size:1.05rem;
-
 }
 
 .header-contact a:hover{
@@ -301,7 +300,6 @@ text-shadow: var(--shadow-p-box-mob);
 
 
  .exemples-photos3 {
-
     grid-template-columns: 1fr;
  display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -341,10 +339,8 @@ textarea {
 .ajust p {
     width: 100%;
     max-width: 100%;
-
     margin: 0 0 1.6em;
     padding: 0;
-
     text-align: left !important;
     text-indent: 2em;
 }
@@ -1524,7 +1520,7 @@ body.light-mode .cardpartenaire2 {
    /* Blocs marrons ( + card) → on réduit la largeur + marges latérales */
    /* Blocs principaux */
 
-.cardform{    background: rgba(30, 20, 12, 0.75);
+.cardform{    
     border: 1px solid #6b4e2f;
     border-radius: 10px;
     backdrop-filter: blur(4px);
