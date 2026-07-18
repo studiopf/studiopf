@@ -2369,7 +2369,7 @@ a.surligne:visited {
 
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: auto auto;
+    background-size: 800px auto;
 
 opacity: 0.95;
 filter: grayscale(30%) brightness(1) contrast(1);
