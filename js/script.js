@@ -4083,7 +4083,7 @@ function changelanguepeinture() {
 
 </div>
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
 <div class="card-container3">
  <div class="card">
        <h2>Préparation 🛠️</h2>
@@ -4114,7 +4114,7 @@ function changelanguepeinture() {
 </div>
 
 <!-- Tableau comparaison -->
-<div class="maintenance-box">
+<div class="maintenance-box ajust">
     <table class="tableborder1">
         <thead>
             <tr>
@@ -4149,7 +4149,7 @@ function changelanguepeinture() {
 </div>
 
 
-    <div class="maintenance-box">
+    <div class="maintenance-box ajust">
     <h2 data-i18n="TarifLangLabels">Tarif 2026-2027</h2>
 <table class="tableborder1">
 <thead>
