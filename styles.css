@@ -414,6 +414,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 0px;
+   margin-top: 20px;
     margin: 0rem auto;
     max-width: 1200px;
     padding: 0 0px;
@@ -1765,7 +1766,7 @@ body,
 }
 
 .theme-toggleFond {
-    width:60px;
+    width:90px;
     height:30px;
     padding:0;
     border-radius:50%;
