@@ -607,6 +607,15 @@ p {
     max-width: 92%;
     color:var(--button-text);
    text-align: center;
+   text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+     0px -2px 0 #000,
+     0px  2px 0 #000,
+    -2px  0px 0 #000,
+     2px  0px 0 #000;
 }
 
 /* ==========================================================================
@@ -617,6 +626,15 @@ a {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.25s ease;
+   text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+     0px -2px 0 #000,
+     0px  2px 0 #000,
+    -2px  0px 0 #000,
+     2px  0px 0 #000;
 }
 
 a:hover,
