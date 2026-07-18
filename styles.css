@@ -2331,7 +2331,7 @@ a.surligne:visited {
 .fondnain::before,
 .fondmort::before,
 .fondcusto::before {
-    content: "";
+        content: "";
     position: absolute;
     inset: 0;
 
@@ -2339,11 +2339,26 @@ a.surligne:visited {
     background-position: top center;
     background-size: 800px auto;
 
+    opacity: 0.18;
     filter: grayscale(35%);
 
-    pointer-events: none;
+    /* Dégradé de transparence */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,0.8) 30%,
+        rgba(0,0,0,0.35) 70%,
+        rgba(0,0,0,0) 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,0.8) 30%,
+        rgba(0,0,0,0.35) 70%,
+        rgba(0,0,0,0) 100%
+    );
 
-    /* Le filigrane reste derrière le contenu */
+    pointer-events: none;
     z-index: 0;
 }
 
