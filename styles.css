@@ -2393,20 +2393,20 @@ a.surligne:visited {
     pointer-events: none;
     z-index: 0;
 }
-.fondmoi::after,
-.fondorc::after,
-.fonddg::after,
-.fondslann::after,
-.fonddracaufeu::after,
-.fondlilia::after,
-.fondknigt::after,
-.fondnurgle::after,
-.fondfreezer::after,
-.fonddemon::after,
-.fondpirate::after,
-.fondnain::after,
-.fondmort::after,
-.fondcusto::after {
+.fondmoi::before,
+.fondorc::before,
+.fonddg::before,
+.fondslann::before,
+.fonddracaufeu::before,
+.fondlilia::before,
+.fondknigt::before,
+.fondnurgle::before,
+.fondfreezer::before,
+.fonddemon::before,
+.fondpirate::before,
+.fondnain::before,
+.fondmort::before,
+.fondcusto::before {
     content: "";
     position: absolute;
     inset: 0;
