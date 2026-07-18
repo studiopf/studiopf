@@ -792,7 +792,7 @@ function changelangueforma() {
        <div class="maintenance-box ajust fondfreezer">
       <h2>🖌️🔫 Choisissez vos armes :</h2>
 
-      <div class="card-container3">
+      <div class="card-container2">
         <div class="card">
           <h3>🖌️ Pinceau</h3>
           <p>Techniques pour débutants et avancés</p>
@@ -3572,7 +3572,7 @@ function changelanguepeinture() {
 
 
     <div class="maintenance-box ajust">
-    <div class="card-container3">
+    <div class="card-container2">
         <div class="card">
        <h2>Preparation 🛠️</h2>
 <ul>
@@ -3821,7 +3821,7 @@ function changelanguepeinture() {
 
 </div>
     <div class="maintenance-box ajust">
-    <div class="card-container3">
+    <div class="card-container2">
         <div class="card">
        <h2>Preparación 🛠️</h2>
 <ul>
@@ -4093,7 +4093,7 @@ function changelanguepeinture() {
 </div>
 
     <div class="maintenance-box ajust">
-<div class="card-container3">
+<div class="card-container2">
  <div class="card">
        <h2>Préparation 🛠️</h2>
 <ul>
