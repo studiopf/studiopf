@@ -959,7 +959,7 @@ function initializeMaintenanceBoxes() {
 }
 
 
-/* Ouvrir / fermer au clic */
+/* Ouverture / fermeture au clic */
 document.addEventListener("click", function (event) {
     const header = event.target.closest(".maintenance-header");
 
@@ -971,14 +971,10 @@ document.addEventListener("click", function (event) {
 
     const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
-
     const isCollapsed = box.classList.contains("is-collapsed");
 
     box.classList.toggle("is-collapsed", !isCollapsed);
-    header.setAttribute(
-        "aria-expanded",
-        isCollapsed ? "true" : "false"
-    );
+    header.setAttribute("aria-expanded", isCollapsed ? "true" : "false");
 
     if (content) {
         content.hidden = !isCollapsed;
@@ -991,13 +987,12 @@ document.addEventListener("click", function (event) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    /* Ferme tous les blocs au chargement */
-    initializeMaintenanceBoxes();
-
     if (typeof changelangueinfo === "function") {
         changelangueinfo();
     }
+
+    /* À placer après changelangueinfo() */
+    initializeMaintenanceBoxes();
 
     if (typeof initializeLightboxGlobal === "function") {
         initializeLightboxGlobal();
