@@ -4568,9 +4568,6 @@ function appelimg() {
 }
 
 function initializeGalerie() {
-    const filenames = appelimg();
-    const base = "img/";
-
     const gallery = document.getElementById("gallery");
     const filters = document.getElementById("filters");
 
@@ -4580,13 +4577,19 @@ function initializeGalerie() {
         return;
     }
 
+    // Vérifie que appelimg() existe
+    if (typeof appelimg !== "function") {
+        console.error("La fonction appelimg() est introuvable.");
+        gallery.innerHTML = "<p>Impossible de charger la galerie.</p>";
+        return;
+    }
+
+    const filenames = appelimg();
+    const base = "img/";
+
     if (!Array.isArray(filenames) || filenames.length === 0) {
         console.warn("Aucune image retournée par appelimg().");
-
-        gallery.innerHTML = `
-            <p>Aucune image disponible dans la galerie.</p>
-        `;
-
+        gallery.innerHTML = "<p>Aucune image disponible dans la galerie.</p>";
         return;
     }
 
@@ -4597,7 +4600,8 @@ function initializeGalerie() {
             return;
         }
 
-        const [folder] = file.split("/");
+        const cleanFile = file.trim();
+        const [folder] = cleanFile.split("/");
 
         if (!folder) {
             return;
@@ -4607,13 +4611,14 @@ function initializeGalerie() {
             categorized[folder] = [];
         }
 
-        categorized[folder].push(base + file);
+        categorized[folder].push(base + cleanFile);
     });
 
-    // Toutes les images
-    categorized.Tous = filenames.map(file => base + file);
+    // Catégorie contenant toutes les images
+    categorized.Tous = filenames
+        .filter(file => typeof file === "string" && file.trim() !== "")
+        .map(file => base + file.trim());
 
-    // Nettoyage
     filters.innerHTML = "";
     gallery.innerHTML = "";
 
@@ -4622,12 +4627,14 @@ function initializeGalerie() {
 
         const images = categorized[category];
 
-        if (!images || images.length === 0) {
+        if (!Array.isArray(images) || images.length === 0) {
             gallery.innerHTML = `
-                <p>Aucune image dans cette catégorie.</p>
+                <p>Aucune image disponible dans cette catégorie.</p>
             `;
             return;
         }
+
+        const fragment = document.createDocumentFragment();
 
         images.forEach(src => {
             const imageContainer = document.createElement("div");
@@ -4636,8 +4643,10 @@ function initializeGalerie() {
             const img = document.createElement("img");
 
             img.src = src;
-            img.alt = `Figurine peinte – ${category}`;
+            img.alt = `Peinture figurine Studio PF – ${category}`;
+            img.className = "gallery-img";
             img.loading = "lazy";
+            img.decoding = "async";
 
             img.addEventListener("error", () => {
                 console.warn("Image introuvable :", src);
@@ -4645,16 +4654,18 @@ function initializeGalerie() {
             });
 
             imageContainer.appendChild(img);
-            gallery.appendChild(imageContainer);
+            fragment.appendChild(imageContainer);
         });
 
-        // Initialisation après insertion des images
+        gallery.appendChild(fragment);
+
+        // Réinitialisation de la lightbox après ajout des images
         if (typeof initializeLightboxGlobal === "function") {
             initializeLightboxGlobal();
         }
     }
 
-    // Mettre Tous en premier
+    // Tous apparaît en premier
     const categories = Object.keys(categorized).sort((a, b) => {
         if (a === "Tous") return -1;
         if (b === "Tous") return 1;
@@ -4671,6 +4682,8 @@ function initializeGalerie() {
 
         button.className = category
             .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
             .replace(/\s+/g, "-");
 
         if (category === "Tous") {
@@ -4678,51 +4691,61 @@ function initializeGalerie() {
         }
 
         button.addEventListener("click", () => {
-            filters
-                .querySelectorAll("button")
-                .forEach(btn => btn.classList.remove("active"));
+            filters.querySelectorAll("button").forEach(btn => {
+                btn.classList.remove("active");
+            });
 
             button.classList.add("active");
-
             showImages(category);
         });
 
         filters.appendChild(button);
     });
 
-    // Affichage initial obligatoire
+    // Affichage initial
     showImages("Tous");
 }
 
-    function showImages(category) {
-        gallery.innerHTML = "";
+function showImages(category) {
+    gallery.innerHTML = "";
 
-        if (!categorized[category]) return;
+    const images = categorized[category];
 
-        const fragment = document.createDocumentFragment();
-
-        categorized[category].forEach(src => {
-            const img = document.createElement('img');
-
-            img.src = src;
-            img.alt = `Peinture figurine Studio PF – ${category}`;
-            img.className = 'gallery-img';
-            img.loading = 'lazy';
-
-            /*
-            Il n'est plus nécessaire d'ajouter un événement click ici.
-            La lightbox globale détectera automatiquement cette image.
-            */
-
-            fragment.appendChild(img);
-        });
-
-        gallery.appendChild(fragment);
+    if (!images || images.length === 0) {
+        gallery.innerHTML = `
+            <p>Aucune image disponible dans cette catégorie.</p>
+        `;
+        return;
     }
 
-    // Affichage initial
-    showImages('Tous');
+    const fragment = document.createDocumentFragment();
+
+    images.forEach(src => {
+        const img = document.createElement("img");
+
+        img.src = src;
+        img.alt = `Peinture figurine Studio PF – ${category}`;
+        img.className = "gallery-img";
+        img.loading = "lazy";
+
+        img.addEventListener("error", () => {
+            console.warn("Image introuvable :", src);
+            img.remove();
+        });
+
+        fragment.appendChild(img);
+    });
+
+    gallery.appendChild(fragment);
+
+    if (typeof initializeLightboxGlobal === "function") {
+        initializeLightboxGlobal();
+    }
 }
+
+// Affichage initial
+showImages("Tous");
+
 function initializeLightboxGlobal() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
