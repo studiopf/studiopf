@@ -1,6 +1,157 @@
 /* ==========================
    INPUTS & SELECT
 ========================== */
+/* ==========================
+      MAINTENANCE BOX
+========================== */
+
+.maintenance-box {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 10px auto 0;
+
+    position: relative;
+    overflow: hidden;
+
+    text-align: center;
+
+    background: var(--maintenance-bg);
+
+    border-top: 1px solid var(--maintenance-border-top);
+    border-bottom: 1px solid var(--maintenance-border-bottom);
+    border-left: none;
+    border-right: none;
+
+    border-radius: 0;
+
+    box-shadow: var(--maintenance-shadow);
+
+    transition:
+        background .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ==========================
+        BARRE DU HAUT
+========================== */
+
+.maintenance-header{
+    width:100%;
+    min-height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+
+    padding:10px 18px;
+
+    background:rgba(0,0,0,.12);
+
+    border:none;
+    border-bottom:1px solid var(--maintenance-border-bottom);
+
+    color:var(--title);
+
+    cursor:pointer;
+
+    font:inherit;
+    text-align:left;
+
+    transition:
+        background .35s ease,
+        color .35s ease;
+}
+
+.maintenance-header:hover{
+    background:rgba(255,255,255,.08);
+}
+
+/* Titre */
+
+.maintenance-title{
+    flex:1;
+
+    font-size:20px;
+    font-weight:700;
+}
+
+/* Flèche */
+
+.maintenance-arrow{
+    width:32px;
+    height:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+    font-weight:900;
+
+    transition:transform .35s ease;
+}
+
+/* ==========================
+          CONTENU
+========================== */
+
+.maintenance-content{
+    overflow:hidden;
+
+    max-height:5000px;
+
+    padding:15px;
+
+    transition:
+        max-height .45s ease,
+        padding .35s ease,
+        opacity .35s ease;
+
+    opacity:1;
+}
+
+/* Bloc fermé */
+
+.maintenance-box.is-collapsed .maintenance-content{
+    max-height:0;
+
+    padding-top:0;
+    padding-bottom:0;
+
+    opacity:0;
+}
+
+/* Rotation de la flèche */
+
+.maintenance-box.is-collapsed .maintenance-arrow{
+    transform:rotate(-90deg);
+}
+
+/* ==========================
+          MOBILE
+========================== */
+
+@media (max-width:800px){
+
+    .maintenance-header{
+        padding:10px 12px;
+    }
+
+    .maintenance-title{
+        font-size:17px;
+    }
+
+    .maintenance-arrow{
+        width:28px;
+        height:28px;
+        font-size:18px;
+    }
+
+}
+
 body {
     background-image: url("../img/fondlilia.png");
     background-repeat: no-repeat;
@@ -141,22 +292,7 @@ info-container {
     position: relative;
     text-align: center;
 }
-.maintenance-box {
-    max-width: 1200px;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 0;
-    position: relative;
-    text-align: center;
-    background: var(--maintenance-bg);
-    border-top: 1px solid var(--maintenance-border-top);
-    border-bottom: 1px solid var(--maintenance-border-bottom);
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
-    box-shadow: var(--maintenance-shadow);
-    overflow: hidden;
-}
+
  
 
 /* =========================
