@@ -1,6 +1,14 @@
 /* ==========================
    INPUTS & SELECT
 ========================== */
+body {
+    background-image: url("../img/fondlilia.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; /* ou contain selon l'effet souhaité */
+    background-attachment: fixed; /* facultatif */
+    min-height: 100vh;
+}
    .card {
        margin-top: 12px;
     margin-bottom: 0;
