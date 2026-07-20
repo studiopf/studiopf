@@ -257,11 +257,10 @@ body {
    color: var(--text-a);
     text-decoration: none;
     font-weight: 600;
-    position: relative;
     transition: color 0.3s ease;
 }
 .contact-list a {
-position: relative;
+ margin: 40px 0;
    color: var(--text-a);
    
 }
