@@ -41,80 +41,32 @@
         box-shadow .35s ease;
 }
 
-/* Le bouton reste toujours visible */
 .maintenance-header {
-     width: 100%;
-    max-width: 1600px;
-    padding: 0px 0px;
-    font-size: 32px;
-    font-weight: 800;
-    color: var(--text-p);
-    margin: 0;
-    line-height: 1.5;
-   
-    position: relative;
-$
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-   
-
-    box-sizing: border-box;
-
-    border: none;
-    background: transparent;
-    color: var(--title, #ffe39b);
-
-    font-family: inherit;
+    width: 100%;
+    gap: 15px;
     text-align: left;
-
-    cursor: pointer;
-
-    transition:
-        background 0.3s ease,
-        color 0.3s ease;
 }
+
+.maintenance-title {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.maintenance-arrow {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
 
 .maintenance-header:hover {
     background: rgba(244, 200, 118, 0.12);
 }
 
-/* Titre */
-.maintenance-title {
-    flex: 1;
-}
 
-/* Flèche */
-.maintenance-arrow {
-    flex-shrink: 0;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 32px;
-    height: 32px;
-
-    font-size: 20px;
-    font-weight: 900;
-
-    transform: rotate(0deg);
-
-    transition: transform 0.3s ease;
-}
-
-/* Contenu visible par défaut */
-.maintenance-content {
-     width: 100%;
-    max-width: 1600px;
-    padding: 0px 0px 0px;
-
-    box-sizing: border-box;
-}
-
-/* Seul le contenu est masqué */
-..is-collapsed > .maintenance-content {
-    display: none;
-}
 
 /* Rotation de la flèche lorsque le bloc est fermé */
 ..is-collapsed
@@ -122,21 +74,6 @@ $
     transform: rotate(-90deg);
 }
 
-/* Bouton de fin */
-.maintenance-content > .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: fit-content;
-    max-width: 100%;
-
-    margin: 25px auto 0;
-    padding: 0px 0px;
-
-    box-sizing: border-box;
-    text-align: center;
-}
 
 /* Mobile */
 @media screen and (max-width: 800px) {
@@ -153,14 +90,7 @@ $
         font-size: 17px;
     }
 
-    .maintenance-content {
-         max-width: 800px;
-        padding: 0px 0px 0px;
-    }
 
-    .maintenance-content > .button {
-        width: 100%;
-    }
 }
 
 body {
@@ -353,10 +283,7 @@ text-shadow: var(--shadow-p-box-mob);
        max-width: 760px;
     width: 100%;
 }
-   .maintenance-content {
-     width: 100%;
-    max-width: 760px;
-   }
+   
    .maintenance-box-part {
      width: 100%;
     margin-top: 12px;
@@ -1388,10 +1315,7 @@ nav {
            max-width: 640px;
     width: 100%;
 }
-      .maintenance-content {
-     width: 100%;
-    max-width: 640px;
-   }
+     
 
       .maintenance-boxpartenaire {
     width: 100%;
@@ -1714,10 +1638,7 @@ body.light-mode .cardpartenaire2 {
        max-width: 400px;
     width: 100%;
 }
-      .maintenance-content {
-     width: 100%;
-    max-width: 400px;
-   }
+    
          .maintenance-boxpartenaire {
     width: 100%;
     max-width: 400px;
