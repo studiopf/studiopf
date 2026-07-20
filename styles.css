@@ -43,7 +43,7 @@
     font-family: inherit;
     font-size: clamp(18px, 2vw, 24px);
     font-weight: 800;
-    line-height: 1.3;
+    line-height: 1.5;
     text-align: left;
 
     cursor: pointer;
@@ -748,7 +748,7 @@ strong{
 }
 h1 {
      font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 1px;
     margin: 0rem 0 0rem;
 }
@@ -775,12 +775,12 @@ h3 {
 
 p {
        font-size: 22px;
-    line-height: 1.6;
+    line-height: 2;
    margin-top: 2px;
     margin: 0rem auto;
-    max-width: 92%;
+    max-width: 100%;
     color: var(--text-p);
-    font-weight: 600; /* ou 700 */
+    font-weight: 800; /* ou 700 */
 }
 
 /* ==========================================================================
