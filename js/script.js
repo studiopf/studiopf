@@ -4569,27 +4569,39 @@ function appelimg() {
 
 function initializeGalerie() {
     const filenames = appelimg();
-    const base = 'img/';
-    const gallery = document.getElementById('gallery');
-    const filters = document.getElementById('filters');
+    const base = "img/";
 
-    /*
-    La galerie n'existe pas forcément sur toutes les pages.
-    Dans ce cas, on initialise seulement la lightbox globale.
-    */
-    initializeLightboxGlobal();
+    const gallery = document.getElementById("gallery");
+    const filters = document.getElementById("filters");
 
+    // La galerie n'existe que sur galerie.html
     if (!gallery || !filters) {
-        console.warn("Éléments de galerie absents sur cette page.");
+        console.warn("Éléments #gallery ou #filters introuvables.");
+        return;
+    }
+
+    if (!Array.isArray(filenames) || filenames.length === 0) {
+        console.warn("Aucune image retournée par appelimg().");
+
+        gallery.innerHTML = `
+            <p>Aucune image disponible dans la galerie.</p>
+        `;
+
         return;
     }
 
     const categorized = {};
 
     filenames.forEach(file => {
-        const [folder] = file.split('/');
+        if (typeof file !== "string" || file.trim() === "") {
+            return;
+        }
 
-        if (!folder) return;
+        const [folder] = file.split("/");
+
+        if (!folder) {
+            return;
+        }
 
         if (!categorized[folder]) {
             categorized[folder] = [];
@@ -4598,36 +4610,89 @@ function initializeGalerie() {
         categorized[folder].push(base + file);
     });
 
-    // Catégorie contenant toutes les images
+    // Toutes les images
     categorized.Tous = filenames.map(file => base + file);
 
-    // Création des boutons de filtres
+    // Nettoyage
     filters.innerHTML = "";
+    gallery.innerHTML = "";
 
-    Object.keys(categorized).sort().forEach(category => {
-        const button = document.createElement('button');
+    function showImages(category) {
+        gallery.innerHTML = "";
 
+        const images = categorized[category];
+
+        if (!images || images.length === 0) {
+            gallery.innerHTML = `
+                <p>Aucune image dans cette catégorie.</p>
+            `;
+            return;
+        }
+
+        images.forEach(src => {
+            const imageContainer = document.createElement("div");
+            imageContainer.className = "gallery-item";
+
+            const img = document.createElement("img");
+
+            img.src = src;
+            img.alt = `Figurine peinte – ${category}`;
+            img.loading = "lazy";
+
+            img.addEventListener("error", () => {
+                console.warn("Image introuvable :", src);
+                imageContainer.remove();
+            });
+
+            imageContainer.appendChild(img);
+            gallery.appendChild(imageContainer);
+        });
+
+        // Initialisation après insertion des images
+        if (typeof initializeLightboxGlobal === "function") {
+            initializeLightboxGlobal();
+        }
+    }
+
+    // Mettre Tous en premier
+    const categories = Object.keys(categorized).sort((a, b) => {
+        if (a === "Tous") return -1;
+        if (b === "Tous") return 1;
+
+        return a.localeCompare(b, "fr");
+    });
+
+    categories.forEach(category => {
+        const button = document.createElement("button");
+
+        button.type = "button";
         button.textContent =
             category.charAt(0).toUpperCase() + category.slice(1);
 
-        button.className = category.toLowerCase();
+        button.className = category
+            .toLowerCase()
+            .replace(/\s+/g, "-");
 
-        if (category === 'Tous') {
-            button.classList.add('active');
+        if (category === "Tous") {
+            button.classList.add("active");
         }
 
-        button.addEventListener('click', () => {
+        button.addEventListener("click", () => {
             filters
-                .querySelectorAll('button')
-                .forEach(btn => btn.classList.remove('active'));
+                .querySelectorAll("button")
+                .forEach(btn => btn.classList.remove("active"));
 
-            button.classList.add('active');
+            button.classList.add("active");
 
             showImages(category);
         });
 
         filters.appendChild(button);
     });
+
+    // Affichage initial obligatoire
+    showImages("Tous");
+}
 
     function showImages(category) {
         gallery.innerHTML = "";
