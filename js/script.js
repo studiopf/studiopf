@@ -271,7 +271,9 @@ function appelimg() {
 }
 
 
-function initializeLightboxGlobal() {
+
+
+  function initializeLightboxGlobal() {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
 
@@ -281,8 +283,8 @@ function initializeLightboxGlobal() {
     }
 
     /*
-    Évite d'installer plusieurs fois les événements
-    lorsque initializeGalerie() est rappelée après loadPage().
+    Évite d'installer plusieurs fois les événements,
+    même après plusieurs appels à loadPage().
     */
     if (lightbox.dataset.initialized === "true") {
         return;
@@ -357,22 +359,17 @@ function initializeLightboxGlobal() {
     }
 
     // =============================
-    // IMAGES ACTUELLEMENT AFFICHÉES
+    // RÉCUPÉRATION DES IMAGES
     // =============================
 
-    function getVisibleGalleryImages() {
-        const gallery = document.getElementById("gallery");
-
-        if (!gallery) {
-            return [];
-        }
-
+    function getVisiblePageImages() {
         return Array.from(
-            gallery.querySelectorAll(
-                "img.gallery-img[data-lightbox]"
+            document.querySelectorAll(
+                "img[data-lightbox], img.gallery-img"
             )
         ).filter(img => {
             return (
+                img !== lightboxImg &&
                 img.id !== "lightbox-img" &&
                 !img.hasAttribute("data-no-lightbox") &&
                 img.offsetParent !== null
@@ -389,10 +386,6 @@ function initializeLightboxGlobal() {
             return;
         }
 
-        /*
-        Navigation en boucle :
-        après la dernière image, retour à la première.
-        */
         currentIndex =
             (index + currentImages.length) %
             currentImages.length;
@@ -408,10 +401,6 @@ function initializeLightboxGlobal() {
             selectedImage.alt ||
             "Image agrandie";
 
-        /*
-        Cache les flèches lorsqu'il n'y a
-        qu'une seule image dans la catégorie.
-        */
         const hasSeveralImages =
             currentImages.length > 1;
 
@@ -422,42 +411,27 @@ function initializeLightboxGlobal() {
             hasSeveralImages ? "flex" : "none";
     }
 
-    function showPreviousImage() {
-        displayImage(currentIndex - 1);
-    }
-
-    function showNextImage() {
-        displayImage(currentIndex + 1);
-    }
-
     // =============================
     // OUVERTURE
     // =============================
 
     function openLightbox(clickedImage) {
-        currentImages =
-            getVisibleGalleryImages();
+        currentImages = getVisiblePageImages();
 
         currentIndex =
             currentImages.indexOf(clickedImage);
 
         if (currentIndex === -1) {
-            return;
+            currentImages = [clickedImage];
+            currentIndex = 0;
         }
 
         displayImage(currentIndex);
 
         lightbox.classList.add("active");
-        document.body.classList.add(
-            "lightbox-open"
-        );
+        lightbox.setAttribute("aria-hidden", "false");
 
-        lightbox.setAttribute(
-            "aria-hidden",
-            "false"
-        );
-
-        closeButton.focus();
+        document.body.classList.add("lightbox-open");
     }
 
     // =============================
@@ -466,15 +440,9 @@ function initializeLightboxGlobal() {
 
     function closeLightbox() {
         lightbox.classList.remove("active");
+        lightbox.setAttribute("aria-hidden", "true");
 
-        document.body.classList.remove(
-            "lightbox-open"
-        );
-
-        lightbox.setAttribute(
-            "aria-hidden",
-            "true"
-        );
+        document.body.classList.remove("lightbox-open");
 
         lightboxImg.src = "";
         lightboxImg.alt = "";
@@ -484,117 +452,78 @@ function initializeLightboxGlobal() {
     }
 
     // =============================
-    // CLIC SUR UNE IMAGE
+    // CLIC GLOBAL SUR LES IMAGES
     // =============================
 
-    document.addEventListener("click", event => {
-        const clickedImage =
-            event.target.closest(
-                "#gallery img.gallery-img[data-lightbox]"
-            );
+    document.addEventListener("click", function (event) {
+        const clickedImage = event.target.closest(
+            "img[data-lightbox], img.gallery-img"
+        );
 
         if (!clickedImage) {
             return;
         }
 
         if (
-            clickedImage.hasAttribute(
-                "data-no-lightbox"
-            )
+            clickedImage === lightboxImg ||
+            clickedImage.id === "lightbox-img" ||
+            clickedImage.hasAttribute("data-no-lightbox")
         ) {
             return;
         }
+
+        event.preventDefault();
 
         openLightbox(clickedImage);
     });
 
     // =============================
-    // BOUTONS DE NAVIGATION
+    // NAVIGATION
     // =============================
 
-    previousButton.addEventListener(
-        "click",
-        event => {
-            event.stopPropagation();
-            showPreviousImage();
-        }
-    );
+    previousButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        displayImage(currentIndex - 1);
+    });
 
-    nextButton.addEventListener(
-        "click",
-        event => {
-            event.stopPropagation();
-            showNextImage();
-        }
-    );
+    nextButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        displayImage(currentIndex + 1);
+    });
 
-    closeButton.addEventListener(
-        "click",
-        event => {
-            event.stopPropagation();
+    closeButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        closeLightbox();
+    });
+
+    // Fermer en cliquant sur le fond
+    lightbox.addEventListener("click", function (event) {
+        if (event.target === lightbox) {
             closeLightbox();
         }
-    );
+    });
 
     // =============================
-    // CLIC SUR LE FOND
+    // CLAVIER
     // =============================
 
-    lightbox.addEventListener(
-        "click",
-        event => {
-            /*
-            Ferme uniquement en cliquant
-            directement sur le fond noir.
-            */
-            if (event.target === lightbox) {
-                closeLightbox();
-            }
+    document.addEventListener("keydown", function (event) {
+        if (!lightbox.classList.contains("active")) {
+            return;
         }
-    );
 
-    /*
-    Empêche le clic sur l'image agrandie
-    de fermer la lightbox.
-    */
-    lightboxImg.addEventListener(
-        "click",
-        event => {
-            event.stopPropagation();
+        if (event.key === "Escape") {
+            closeLightbox();
         }
-    );
 
-    // =============================
-    // NAVIGATION AU CLAVIER
-    // =============================
-
-    document.addEventListener(
-        "keydown",
-        event => {
-            if (
-                !lightbox.classList.contains(
-                    "active"
-                )
-            ) {
-                return;
-            }
-
-            if (event.key === "Escape") {
-                event.preventDefault();
-                closeLightbox();
-            }
-
-            if (event.key === "ArrowLeft") {
-                event.preventDefault();
-                showPreviousImage();
-            }
-
-            if (event.key === "ArrowRight") {
-                event.preventDefault();
-                showNextImage();
-            }
+        if (event.key === "ArrowLeft") {
+            displayImage(currentIndex - 1);
         }
-    );
+
+        if (event.key === "ArrowRight") {
+            displayImage(currentIndex + 1);
+        }
+    });
 }
 function changelangueinfo() {
 
