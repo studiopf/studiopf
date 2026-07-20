@@ -5658,55 +5658,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-document.addEventListener("DOMContentLoaded", () => {
-    const maintenanceBoxes =
-        document.querySelectorAll(".maintenance-box");
+document.addEventListener("click", function (event) {
 
-    maintenanceBoxes.forEach((box, index) => {
-        const header = box.querySelector(".maintenance-header");
-        const content = box.querySelector(".maintenance-content");
+    const header = event.target.closest(".maintenance-header");
 
-        if (!header || !content) {
-            return;
-        }
+    if (!header) {
+        return;
+    }
 
-        /*
-         * Utilise data-box-id si présent.
-         * Sinon, génère un identifiant selon la position du bloc.
-         */
-        const boxId =
-            box.dataset.boxId || `maintenance-box-${index}`;
+    const box = header.closest(".maintenance-box");
 
-        const storageKey = `maintenanceCollapsed-${boxId}`;
+    if (!box) {
+        return;
+    }
 
-        /*
-         * Restaure l'état précédemment enregistré.
-         */
-        const isCollapsed =
-            localStorage.getItem(storageKey) === "true";
+    const isCollapsed = box.classList.toggle("is-collapsed");
 
-        box.classList.toggle("is-collapsed", isCollapsed);
-        header.setAttribute(
-            "aria-expanded",
-            String(!isCollapsed)
-        );
-
-        /*
-         * Ouvre ou ferme le bloc au clic.
-         */
-        header.addEventListener("click", () => {
-            const collapsed =
-                box.classList.toggle("is-collapsed");
-
-            header.setAttribute(
-                "aria-expanded",
-                String(!collapsed)
-            );
-
-            localStorage.setItem(
-                storageKey,
-                String(collapsed)
-            );
-        });
-    });
+    header.setAttribute(
+        "aria-expanded",
+        isCollapsed ? "false" : "true"
+    );
 });
