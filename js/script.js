@@ -333,66 +333,55 @@ function initializeLightboxGlobal() {
         }, 300);
     }
 }
-function changelangueinfo(){
-if(currentLanguage=== "french"){
-// Chargement du message d'information
-fetch('/data/messageinfo.txt')
-    .then(response => response.text())
-    .then(texte => {
-        // Vérifie si le texte est vide ou contient uniquement des espaces
-        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
-       if (messageinfo === '') {
-    document.querySelector('.info-container').style.display = 'none';
-    document.querySelector('.info').style.display = 'none';
+function changelangueinfo() {
+
+    let fichier = "/data/messageinfo.txt";
+
+    if (currentLanguage === "english") {
+        fichier = "/data/messageinfoUK.txt";
+    } else if (currentLanguage === "spanish") {
+        fichier = "/data/messageinfo-es.txt";
+    }
+
+    fetch(fichier)
+        .then(response => response.text())
+        .then(texte => {
+
+            messageinfo = texte.trim() === ""
+                ? "Pas d'informations pour le moment"
+                : texte;
+
+            const container = document.querySelector(".info-container");
+            const info = document.querySelector(".info");
+
+            if (texte.trim() === "") {
+                container.style.display = "none";
+                info.style.display = "none";
+            } else {
+                container.style.display = "";
+                info.style.display = "";
+            }
+
+            updateParagraph();
+        })
+        .catch(() => {
+            messageinfo = "error";
+            updateParagraph();
+        });
 }
-        updateParagraph(); // Appel de la fonction après avoir récupéré le message
-    })
-    .catch(error => {
-        messageinfo = "error";
-        updateParagraph();
-    });
-}
-if(currentLanguage=== "english"){
-// Chargement du message d'information
-fetch('/data/messageinfoUK.txt')
-    .then(response => response.text())
-    .then(texte => {
-        // Vérifie si le texte est vide ou contient uniquement des espaces
-        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
-       if (messageinfo === '') {
-    document.querySelector('.info-container').style.display = 'none';
-    document.querySelector('.info').style.display = 'none';
-}
-        updateParagraph(); // Appel de la fonction après avoir récupéré le message
-    })
-    .catch(error => {
-        messageinfo = "error";
-        updateParagraph();
-    });
-}
-if(currentLanguage=== "spanish"){
-// Chargement du message d'information
-fetch('/data/messageinfo-es.txt')
-    .then(response => response.text())
-    .then(texte => {
-        // Vérifie si le texte est vide ou contient uniquement des espaces
-        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
-       if (messageinfo === '') {
-    document.querySelector('.info-container').style.display = 'none';
-    document.querySelector('.info').style.display = 'none';
-}
-        updateParagraph(); // Appel de la fonction après avoir récupéré le message
-    })
-    .catch(error => {
-        messageinfo = "error";
-        updateParagraph();
-    });
-}
+
+function updateParagraph() {
+    const paragraph = document.getElementById("infoParagraph");
+
+    if (paragraph) {
+        paragraph.innerHTML = messageinfo.replace(/\r?\n/g, "<br>");
+    }
 }
 function updateParagraph() {
-    const paragraph = document.getElementById('infoParagraph');
+    const paragraph = document.getElementById("infoParagraph");
+
     if (paragraph) {
-        paragraph.textContent = messageinfo; // Met le contenu dans le <p>
+        paragraph.innerHTML = messageinfo.replace(/\r?\n/g, "<br>");
     }
 }
 
