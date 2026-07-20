@@ -6550,3 +6550,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+function initializeMaintenanceBoxes() {
+    document.querySelectorAll(".maintenance-box").forEach(function (box) {
+        const header = box.querySelector(".maintenance-header");
+        const content = box.querySelector(".maintenance-content");
+        const arrow = box.querySelector(".maintenance-arrow");
+
+        if (!header || !content) return;
+
+        const isCollapsed = box.classList.contains("is-collapsed");
+
+        header.setAttribute(
+            "aria-expanded",
+            isCollapsed ? "false" : "true"
+        );
+
+        content.hidden = isCollapsed;
+
+        if (arrow) {
+            arrow.textContent = isCollapsed ? "▼" : "▲";
+        }
+    });
+}
+
+document.addEventListener(
+    "DOMContentLoaded",
+    initializeMaintenanceBoxes
