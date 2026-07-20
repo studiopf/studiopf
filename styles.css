@@ -194,7 +194,7 @@ body {
     margin-bottom: 0;
     border: 0px;
  width: 100%;
-   max-width: 1200px;
+   max-width: 100px;
     position: relative;
     text-align: center;
 }
@@ -203,7 +203,7 @@ body {
    margin-top: 12px;
     margin-bottom: 0;
    width: 100%;
-    max-width: 1200px;
+    max-width: 1900px;
     position: relative;
     text-align: center;
    background:var(--box-bg);
@@ -220,7 +220,7 @@ body {
    width: calc(100% - 30px);
     margin-top: 12px;
     margin-bottom: 0;
-      max-width: 1200px;
+      max-width: 1900px;
     position: relative;
     text-align: center;
 }
@@ -287,12 +287,12 @@ body {
 }
 .widget-container {
     width: 100%;
-     max-width: 1200px;
+     max-width: 1900px;
     margin: 0 auto;
 }
 .widget {
       width: 100%;
-     max-width: 1200px;
+     max-width: 1900px;
     margin: 0 auto;
 }
 .contact-list {
@@ -415,7 +415,7 @@ textarea {
     height: 100px;
 }
 .ajust {
-    max-width: 1200px;
+    max-width: 1900px;
     width: calc(100% - 30px);
     margin: 0 auto;
     padding: 0 15px;
@@ -564,7 +564,7 @@ img {
     margin-bottom: 0;
     border: 0px;
  width: 100%;
-   max-width: 1200px;
+   max-width: 1900px;
     position: relative;
     text-align: center;
 }
@@ -812,7 +812,7 @@ a:hover,
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
-    max-width: 1200px;
+    max-width: 1900px;
     padding: 0 0px;
 }
 
@@ -825,7 +825,7 @@ a:hover,
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
-    max-width: 1200px;
+    max-width: 1900px;
     padding: 12px;
 }
 .cardpartenaire {
@@ -1103,7 +1103,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 5px;
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
