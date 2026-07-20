@@ -4745,7 +4745,7 @@ function showImages(category) {
 
 // Affichage initial
 showImages("Tous");
-}
+
 
 function initializeLightboxGlobal() {
     const lightbox = document.getElementById('lightbox');
@@ -5738,7 +5738,6 @@ function initThemeToggle() {
 
 }
 document.addEventListener("DOMContentLoaded", function () {
-
     const pfButton = document.getElementById("pf-menu-button");
     const pfNav = document.getElementById("pf-mobile-nav");
 
@@ -5750,38 +5749,39 @@ document.addEventListener("DOMContentLoaded", function () {
         pfButton.setAttribute("aria-expanded", "false");
     }
 
-    // Ouvrir ou fermer le menu
     pfButton.addEventListener("click", function (event) {
         event.stopPropagation();
 
         const menuOuvert = pfNav.classList.toggle("active");
+
         pfButton.classList.toggle("active", menuOuvert);
-        pfButton.setAttribute("aria-expanded", menuOuvert);
+
+        pfButton.setAttribute(
+            "aria-expanded",
+            menuOuvert ? "true" : "false"
+        );
     });
 
-    // Fermer avant l'exécution de loadPage()
-    pfNav.addEventListener("click", function (event) {
+    pfNav.addEventListener(
+        "click",
+        function (event) {
+            const elementClique = event.target.closest("a, button");
 
-        const elementClique = event.target.closest("a, button");
+            if (elementClique) {
+                fermerMenu();
+            }
+        },
+        true
+    );
 
-        if (elementClique) {
-            fermerMenu();
-        }
-
-    }, true);
-
-    // Fermer en cliquant à l'extérieur
     document.addEventListener("click", function (event) {
-
         if (
             !pfNav.contains(event.target) &&
             !pfButton.contains(event.target)
         ) {
             fermerMenu();
         }
-
     });
-
 });
 
 document.addEventListener("click", function (event) {
@@ -5796,7 +5796,8 @@ document.addEventListener("click", function (event) {
     const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
 
-    const isCurrentlyCollapsed = box.classList.contains("is-collapsed");
+    const isCurrentlyCollapsed =
+        box.classList.contains("is-collapsed");
 
     if (isCurrentlyCollapsed) {
         box.classList.remove("is-collapsed");
