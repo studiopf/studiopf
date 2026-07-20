@@ -8,7 +8,6 @@
 /* ==========================
    BOÎTES REPLIABLES
 ========================== */
-
 .maintenance-box {
     width: 100%;
     max-width: 1600px;
@@ -41,7 +40,7 @@
     color: var(--title, #ffe39b);
 
     font-family: inherit;
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(28px, 2vw, 24px);
     font-weight: 800;
     line-height: 1.5;
     text-align: left;
@@ -143,7 +142,6 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', system-ui, sans-serif;
     min-height: 100vh;
     padding: 0px 0px 0px;
     line-height: 1.55;
@@ -344,7 +342,7 @@ text-shadow: var(--shadow-p-box-mob);
 }
 
 .header-contact a{
-    font-size:1.05rem;
+    -size:1.05rem;
 }
 
 .header-contact a:hover{
@@ -2226,7 +2224,6 @@ button.pf-menu-button {
     transform: translateX(12px);
     box-shadow: 0 5px 15px rgba(244, 200, 118, 0.15);
 }
-
 /* ============================= */
 /* RESEAUX SOCIAUX */
 /* ============================= */
