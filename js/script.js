@@ -66,29 +66,6 @@ function updateAgeDisplay() {
 }
 
 
-// =============================
-// INITIALISATION
-// =============================
-function applyLanguageAndInit() {
-    updateMeta(currentLanguage);           // ← à définir ailleurs si pas déjà fait
-    updateDebugDisplay();
-    updateAgeDisplay();
-
-    // Initialisations globales (sécurité : vérification d'existence)
-    if (typeof initializeLightboxGlobal === "function") initializeLightboxGlobal();
-    if (typeof initThemeToggle === "function") initThemeToggle();
-    if (typeof initializeMaintenanceBoxes === "function") initializeMaintenanceBoxes();
-    if (typeof updateBackgroundButton === "function") updateBackgroundButton();
-    if (typeof initScrollBehaviors === "function") initScrollBehaviors();
-
-    // Initialisations spécifiques par page
-    if (currentPage.includes("galerie") && typeof initializeGalerie === "function") {
-        initializeGalerie();
-    }
-    if (typeof initializeFormationForm === "function") {
-        initializeFormationForm();
-    }
-}
 
 // =============================
 // FORMULAIRE FORMATION
@@ -131,3 +108,4 @@ function initializeFormationForm() {
         window.location.href = mailtoUrl;
     }
 }
+
