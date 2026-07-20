@@ -800,17 +800,40 @@ document.addEventListener("click", function (event) {
         }
     }
 });
-function applyLanguageAndInit() {
-changelangueinfo();
-initializeLightboxGlobal();
-     initThemeToggle();
-updateDebugDisplay();
-    mettreAJourTarifLangue();
-    updateAgeDisplay();
+document.addEventListener("DOMContentLoaded", () => {
+    if (typeof changelangueinfo === "function") {
+        changelangueinfo();
+    }
 
-    initScrollBehaviors();
-    hideCurrentPage();
-     initializeGalerie();
-    genererTableTarifs();
-}
-applyLanguageAndInit();
+    if (typeof initializeLightboxGlobal === "function") {
+        initializeLightboxGlobal();
+    }
+
+    if (typeof initThemeToggle === "function") {
+        initThemeToggle();
+    }
+
+    if (typeof updateDebugDisplay === "function") {
+        updateDebugDisplay();
+    }
+
+    if (typeof updateAgeDisplay === "function") {
+        updateAgeDisplay();
+    }
+
+    if (typeof initScrollBehaviors === "function") {
+        initScrollBehaviors();
+    }
+
+    if (typeof hideCurrentPage === "function") {
+        hideCurrentPage();
+    }
+
+    if (
+        document.getElementById("gallery") &&
+        document.getElementById("filters") &&
+        typeof initializeGalerie === "function"
+    ) {
+        initializeGalerie();
+    }
+});
