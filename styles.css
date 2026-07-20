@@ -289,13 +289,7 @@ info-container {
 /* =========================
    Barre supérieure
 ========================= */
-.header-bloc {
-   display: flex;
-             align-items: center;
-    justify-content:space-between;
-             max-width: 1200px;
-    width: calc(100% - 30px);
-}
+
 .header-top {
       max-width: 1200px;
     width: calc(100% - 30px);
