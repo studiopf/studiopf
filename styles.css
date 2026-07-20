@@ -5,151 +5,139 @@
       MAINTENANCE BOX
 ========================== */
 
-.maintenance-box {
-    max-width: 1200px;
-    width: 100%;
-
-    margin: 10px auto 0;
-
-    position: relative;
-    overflow: hidden;
-
-    text-align: center;
-
-    background: var(--maintenance-bg);
-
-    border-top: 1px solid var(--maintenance-border-top);
-    border-bottom: 1px solid var(--maintenance-border-bottom);
-    border-left: none;
-    border-right: none;
-
-    border-radius: 0;
-
-    box-shadow: var(--maintenance-shadow);
-
-    transition:
-        background .35s ease,
-        border-color .35s ease,
-        box-shadow .35s ease;
-}
-
 /* ==========================
-        BARRE DU HAUT
+   BOÎTES REPLIABLES
 ========================== */
 
-.maintenance-header{
-    width:100%;
-    min-height:48px;
+.maintenance-box {
+    width: 100%;
+    max-width: 1100px;
+    margin: 15px auto;
+    padding: 0;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
+    display: block;
+    position: relative;
 
-    padding:10px 18px;
+    overflow: hidden;
 
-    background:rgba(0,0,0,.12);
-
-    border:none;
-    border-bottom:1px solid var(--maintenance-border-bottom);
-
-    color:var(--title);
-
-    cursor:pointer;
-
-    font:inherit;
-    text-align:left;
-
-    transition:
-        background .35s ease,
-        color .35s ease;
+    border-bottom: 2px solid var(--box-border, #f4c876);
 }
 
-.maintenance-header:hover{
-    background:rgba(255,255,255,.08);
+/* Le bouton reste toujours visible */
+.maintenance-header {
+    width: 100%;
+    min-height: 60px;
+    padding: 14px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    box-sizing: border-box;
+
+    border: none;
+    background: transparent;
+    color: var(--title, #ffe39b);
+
+    font-family: inherit;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 800;
+    line-height: 1.3;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.maintenance-header:hover {
+    background: rgba(244, 200, 118, 0.12);
 }
 
 /* Titre */
-
-.maintenance-title{
-    flex:1;
-
-    font-size:20px;
-    font-weight:700;
+.maintenance-title {
+    flex: 1;
 }
 
 /* Flèche */
+.maintenance-arrow {
+    flex-shrink: 0;
 
-.maintenance-arrow{
-    width:32px;
-    height:32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    width: 32px;
+    height: 32px;
 
-    font-size:22px;
-    font-weight:900;
+    font-size: 20px;
+    font-weight: 900;
 
-    transition:transform .35s ease;
+    transform: rotate(0deg);
+
+    transition: transform 0.3s ease;
 }
 
-/* ==========================
-          CONTENU
-========================== */
+/* Contenu visible par défaut */
+.maintenance-content {
+    display: block;
+    width: 100%;
+    padding: 20px 18px 28px;
 
-.maintenance-content{
-    overflow:hidden;
-
-    max-height:5000px;
-
-    padding:15px;
-
-    transition:
-        max-height .45s ease,
-        padding .35s ease,
-        opacity .35s ease;
-
-    opacity:1;
+    box-sizing: border-box;
 }
 
-/* Bloc fermé */
-
-.maintenance-box.is-collapsed .maintenance-content{
-    max-height:0;
-
-    padding-top:0;
-    padding-bottom:0;
-
-    opacity:0;
+/* Seul le contenu est masqué */
+.maintenance-box.is-collapsed > .maintenance-content {
+    display: none;
 }
 
-/* Rotation de la flèche */
-
-.maintenance-box.is-collapsed .maintenance-arrow{
-    transform:rotate(-90deg);
+/* Rotation de la flèche lorsque le bloc est fermé */
+.maintenance-box.is-collapsed
+.maintenance-arrow {
+    transform: rotate(-90deg);
 }
 
-/* ==========================
-          MOBILE
-========================== */
+/* Bouton de fin */
+.maintenance-content > .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-@media (max-width:800px){
+    width: fit-content;
+    max-width: 100%;
 
-    .maintenance-header{
-        padding:10px 12px;
+    margin: 25px auto 0;
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+
+    .maintenance-box {
+        margin: 10px auto;
     }
 
-    .maintenance-title{
-        font-size:17px;
+    .maintenance-header {
+        min-height: 55px;
+        padding: 12px 14px;
+
+        font-size: 17px;
     }
 
-    .maintenance-arrow{
-        width:28px;
-        height:28px;
-        font-size:18px;
+    .maintenance-content {
+        padding: 18px 14px 24px;
     }
 
+    .maintenance-content > .button {
+        width: 100%;
+    }
 }
 
 body {
