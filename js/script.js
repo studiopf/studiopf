@@ -800,3 +800,17 @@ document.addEventListener("click", function (event) {
         }
     }
 });
+function applyLanguageAndInit() {
+changelangueinfo();
+initializeLightboxGlobal();
+     initThemeToggle();
+updateDebugDisplay();
+    mettreAJourTarifLangue();
+    updateAgeDisplay();
+
+    initScrollBehaviors();
+    hideCurrentPage();
+     initializeGalerie();
+    genererTableTarifs();
+}
+applyLanguageAndInit();
