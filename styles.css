@@ -1,9 +1,57 @@
-/* ==========================
-   INPUTS & SELECT
-========================== */
-/* ==========================
-      MAINTENANCE BOX
-========================== */
+.exemples-photos3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.exemples-photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0 12px;
+    transition: transform 0.3s ease;
+}
+
+.exemples-photos:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+.exemples-photos img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    object-fit: cover;
+    border: 2px solid #303030;
+    border-radius: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .exemples-photos3 {
+        grid-template-columns: 1fr;
+    }
+
+    .exemples-photos:hover {
+        transform: none;
+    }
+}
+
+[hidden] {
+    display: none !important;
+}
 
 /* ==========================
    BOÎTES REPLIABLES
@@ -131,22 +179,6 @@ body {
                 border-color .26s ease;
    }
 
-.exemples-photos img {
-    width:300px;
-    max-width:100%;
-    border-radius:12px;
-    object-fit:cover;
-    border-radius:12px;
-   border: 2px solid #303030;
-    box-shadow:0 2px 12px rgba(0,0,0,.35);
-    object-fit:cover;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    object-fit: cover;
-    border-radius: 0;
-    cursor: pointer;
-}
 
 
 /* ==========================
@@ -353,39 +385,8 @@ text-shadow: var(--shadow-p-box-mob);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.exemples-photos3 {
-    display: grid;
-}
-.exemples-photos3[hidden] {
-    display: none !important;
-}
-[hidden] {
-    display: none !important;
-}
-.exemples-photos3 {
-    display: grid !important;
-    width: auto;
-    min-width: 0;
-   align-items: center;
-        justify-content: center;
-}
 
 
- .exemples-photos3 {
-    grid-template-columns: 1fr;
- display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    margin: 0 auto;
-}
-
-.exemples-photos {
-    display:flex;
-    justify-content:center;
-  
-    flex-wrap:wrap;
-    margin:20px 0 12px;
-}
 
 * {
     margin: 0;
@@ -1110,9 +1111,7 @@ nav {
     transform: scale(1.5);
 }
 
-.exemples-photos:hover {
-    transform: scale(1.5);
-}
+
 /*==========================
       Mini Menu
 ==========================*/
@@ -1401,15 +1400,6 @@ body.light-mode .cardpartenaire2 {
     padding: 12px;
 }
 
-
-  
-   .exemples-photos{
-    display:flex;
-    justify-content:center;
-   
-    flex-wrap:wrap;
-    margin:20px 0 12px;
-}
 
 
 .cardpartenaire p {
