@@ -237,13 +237,10 @@ function applyLanguageAndInit() {
     if (typeof initThemeToggle === "function") {
         initThemeToggle();
     }
-
-    // Gestion du fond
-    if (localStorage.getItem("maintenanceBackground") === "off") {
-        document.body.classList.add("no-maintenance-bg");
-    } else {
-        document.body.classList.remove("no-maintenance-bg");
+    if (typeof initializeMaintenanceBoxes === "function") {
+        initializeMaintenanceBoxes();
     }
+
 
     if (typeof updateBackgroundButton === "function") {
         updateBackgroundButton();
@@ -360,6 +357,14 @@ function applyLanguageAndInit() {
     ) {
         changelanguehoraires();
     }
+        mainContainer.innerHTML = newContent.innerHTML;
+
+
+window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "instant"
+});
 }
 
 function changelanguepourquoi() {
@@ -4748,95 +4753,58 @@ showImages("Tous");
 
 
 function initializeLightboxGlobal() {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
+    const images = document.querySelectorAll(
+        "#contenu-principal img"
+    );
 
-    if (!lightbox || !lightboxImg) {
-        console.warn("Éléments de la lightbox manquants.");
-        return;
-    }
-
-    /*
-    Évite d'installer plusieurs fois les événements
-    lorsque initializeGalerie() est rappelée.
-    */
-    if (document.body.dataset.lightboxInitialized === "true") {
-        return;
-    }
-
-    document.body.dataset.lightboxInitialized = "true";
-
-    /*
-    Ouverture de la lightbox pour toutes les images du site,
-    y compris les images ajoutées dynamiquement.
-    */
-    document.addEventListener('click', event => {
-        const img = event.target.closest('img');
-
-        if (!img) return;
-
-        // Ne pas ouvrir la lightbox en cliquant sur son image
-        if (img.id === 'lightbox-img') return;
-
-        // Permet d'exclure certaines images
-        if (img.hasAttribute('data-no-lightbox')) return;
-
-        // Ignore les images situées dans un bouton
-        if (img.closest('button')) return;
-
-        // Ignore les images situées dans un lien externe
-        const parentLink = img.closest('a');
-
-        if (
-            parentLink &&
-            parentLink.getAttribute('href') &&
-            !parentLink.hasAttribute('data-lightbox')
-        ) {
+    images.forEach(function (image) {
+        // Évite d'ajouter plusieurs fois l'événement
+        if (image.dataset.lightboxInitialized === "true") {
             return;
         }
 
-        lightboxImg.src = img.currentSrc || img.src;
-        lightboxImg.alt = img.alt || "Image agrandie";
+        image.dataset.lightboxInitialized = "true";
 
-        lightbox.classList.add('active');
-        document.body.classList.add('lightbox-open');
+        image.addEventListener("click", function () {
+            console.log("Image cliquée :", image.src);
+
+            // Ton code d'ouverture de lightbox ici
+        });
     });
-
-    // Fermeture en cliquant sur le fond ou l'image agrandie
-    lightbox.addEventListener('click', event => {
-        if (
-            event.target === lightbox ||
-            event.target === lightboxImg
-        ) {
-            closeLightbox();
-        }
-    });
-
-    // Fermeture avec la touche Échap
-    document.addEventListener('keydown', event => {
-        if (
-            event.key === 'Escape' &&
-            lightbox.classList.contains('active')
-        ) {
-            closeLightbox();
-        }
-    });
-
-    function closeLightbox() {
-        lightbox.classList.remove('active');
-        document.body.classList.remove('lightbox-open');
-
-        /*
-        On efface l'image après l'animation de fermeture.
-        */
-        setTimeout(() => {
-            if (!lightbox.classList.contains('active')) {
-                lightboxImg.src = "";
-                lightboxImg.alt = "";
-            }
-        }, 300);
-    }
 }
+function initializeMaintenanceBoxes() {
+    const boxes = document.querySelectorAll(
+        "#contenu-principal .maintenance-box"
+    );
+
+    boxes.forEach(function (box, index) {
+        const header = box.querySelector(".maintenance-header");
+        const content = box.querySelector(".maintenance-content");
+        const arrow = box.querySelector(".maintenance-arrow");
+
+        if (!header || !content) return;
+
+        // Premier bloc ouvert, les autres fermés
+        const doitEtreOuvert = index === 0;
+
+        box.classList.toggle(
+            "is-collapsed",
+            !doitEtreOuvert
+        );
+
+        header.setAttribute(
+            "aria-expanded",
+            doitEtreOuvert ? "true" : "false"
+        );
+
+        content.hidden = !doitEtreOuvert;
+
+        if (arrow) {
+            arrow.textContent = doitEtreOuvert ? "▲" : "▼";
+        }
+    });
+}
+ 
 function changelanguementionslegales() {
      const main = document.getElementById("contenu-principal");
     if (!main) return;
@@ -5738,75 +5706,17 @@ function initThemeToggle() {
 
 }
 document.addEventListener("click", function (event) {
-
-    /* ==========================
-       MENU MOBILE
-    ========================== */
-
-    const pfButton = document.getElementById("pf-menu-button");
-    const pfNav = document.getElementById("pf-mobile-nav");
-
-    function fermerMenu() {
-        if (!pfButton || !pfNav) return;
-
-        pfButton.classList.remove("active");
-        pfNav.classList.remove("active");
-        pfButton.setAttribute("aria-expanded", "false");
-    }
-
-    // Clic sur le bouton hamburger
-    const boutonClique = event.target.closest("#pf-menu-button");
-
-    if (boutonClique && pfNav) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        const menuOuvert = pfNav.classList.toggle("active");
-
-        boutonClique.classList.toggle("active", menuOuvert);
-
-        boutonClique.setAttribute(
-            "aria-expanded",
-            menuOuvert ? "true" : "false"
-        );
-
-        return;
-    }
-
-    // Clic sur un lien ou bouton du menu
-    const elementMenuClique = event.target.closest(
-        "#pf-mobile-nav a, #pf-mobile-nav button"
-    );
-
-    if (elementMenuClique) {
-        fermerMenu();
-        return;
-    }
-
-    // Clic à l’extérieur du menu
-    if (
-        pfButton &&
-        pfNav &&
-        !pfNav.contains(event.target) &&
-        !pfButton.contains(event.target)
-    ) {
-        fermerMenu();
-    }
-
-    /* ==========================
-       BOÎTES REPLIABLES
-    ========================== */
-
     const header = event.target.closest(".maintenance-header");
 
     if (!header) return;
 
     const box = header.closest(".maintenance-box");
-
     if (!box) return;
 
     const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
+
+    if (!content) return;
 
     const doitOuvrir = box.classList.contains("is-collapsed");
 
@@ -5817,9 +5727,7 @@ document.addEventListener("click", function (event) {
         doitOuvrir ? "true" : "false"
     );
 
-    if (content) {
-        content.hidden = !doitOuvrir;
-    }
+    content.hidden = !doitOuvrir;
 
     if (arrow) {
         arrow.textContent = doitOuvrir ? "▲" : "▼";
