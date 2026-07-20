@@ -361,18 +361,17 @@ function appelimg() {
     // =============================
     // RÉCUPÉRATION DES IMAGES
     // =============================
-
-  function getVisiblePageImages() {
+function getVisiblePageImages() {
     return Array.from(document.images).filter(img => {
         return (
             img !== lightboxImg &&
             img.id !== "lightbox-img" &&
             !img.hasAttribute("data-no-lightbox") &&
-            img.offsetParent !== null
+            img.offsetParent !== null &&
+            !img.closest(".logo, .social-icon, nav, footer")
         );
     });
 }
-
     // =============================
     // AFFICHAGE D'UNE IMAGE
     // =============================
