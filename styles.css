@@ -51,7 +51,9 @@
     color: var(--text-p);
     margin: 0;
     line-height: 1.5;
-    display: flex;
+   
+    position: relative;
+$
     align-items: center;
     justify-content: space-between;
    
@@ -214,8 +216,8 @@ body {
     margin-bottom: 0;
     border: 0px;
  width: 100%;
-   max-width: 100px;
-    position: relative;
+   max-width: 800px;
+    position: center;
     text-align: center;
 }
 
@@ -343,7 +345,7 @@ text-shadow: var(--shadow-p-box-mob);
     border: 0px;
        max-width: 760px;
     width: 100%;
-    position: relative;
+
     text-align: center;
 }
    
@@ -602,7 +604,7 @@ img {
     border: 0px;
  width: 100%;
    max-width: 1900px;
-    position: relative;
+    position: center;
     text-align: center;
 }
 /* Style pour centrer et réduire */
