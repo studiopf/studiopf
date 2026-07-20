@@ -1973,7 +1973,7 @@ body.no-maintenance-bg{
 :root{
      --fond-display: block;
    --fond: 600px auto;
- --opacity-fond : 0.55; /* Ajuste entre 0 et 1 */
+ --opacity-fond : 0.35; /* Ajuste entre 0 et 1 */
    --text-p : #e8d9c0;
    --text-a : #D8B06A;
      --maintenance-bg: linear-gradient(
@@ -2061,7 +2061,7 @@ body.no-maintenance-bg{
         MODE CLAIR
 ==========================*/
 body.light-mode {
- --opacity-fond : 0.35; /* Ajuste entre 0 et 1 */
+ --opacity-fond : 0.25; /* Ajuste entre 0 et 1 */
   --maintenance-bg: linear-gradient(
         180deg,
         #F2E8D8 0%,
