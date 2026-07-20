@@ -182,65 +182,7 @@ body {
     border-radius: 0;
     cursor: pointer;
 }
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 12px 14px;
 
-  
-    color: rgba(180,180,180,0.8);
-
-    border: 1px solid var(--button-border);
-    border-radius: 12px;
-
-    font-size: 15px;
-    font-family: inherit;
-
-    outline: none;
-    transition: all 0.25s ease;
-
-    box-sizing: border-box;
-}
-
-/* Placeholder */
-input::placeholder,
-textarea::placeholder {
-    color: rgba(180,180,180,0.8);
-}
-
-/* Focus */
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #FFD700;
-
-    box-shadow:
-        0 0 0 3px rgba(255,215,0,0.15),
-        0 0 12px rgba(255,215,0,0.25);
-
-    transform: translateY(-1px);
-}
-
-/* Hover */
-input:hover,
-select:hover,
-textarea:hover {
-    border-color: #FFD700;
-}
-
-/* Select */
-select {
-    cursor: pointer;
-}
-
-/* Désactivé */
-input:disabled,
-select:disabled,
-textarea:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
 
 /* ==========================
         CHECKBOX / RADIO
@@ -433,7 +375,7 @@ text-shadow: var(--shadow-p-box-mob);
 }
 /* ==========================================================================
    RESET & BASE – inchangé
-   ===================================================== font-size===================== */
+   ===================================================== ==================== */
 .widget-container
 .card-container3 {
     display: grid;
@@ -1742,12 +1684,7 @@ body.light-mode .cardpartenaire2 {
         font-size: 18px;
     }
 
-    #scrollTotal {
-        bottom: 112px;
-        right: 12px;
-        padding: 12px;
-        font-size: 18px;
-    }
+
    .logo {
         width: 150px;          /* ← agrandi (au lieu de 150px) */
         max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
