@@ -4434,62 +4434,6 @@ function genererTableTarifs() {
 
 
 
-function calculateTotals() {
-    const niveauSelect = document.getElementById("niveau");
-    if (!niveauSelect) return;
-
-    const niveau = niveauSelect.value || "niveau1";
-
-    let totalGeneral = 0;
-
-
-    categories.forEach(cat => {
-        const input   = document.getElementById(`${cat}-input`);
-        const prixEl  = document.getElementById(`prix${cat}`);
-        const totalEl = document.getElementById(`total${cat}`);
-
-        if (!input || !prixEl || !totalEl) return;
-
-        const qty = Number(input.value) || 0;
-
-        const unitPrice = (tariffs[cat]?.[niveau] ?? 0) * tarifheure;
-        const catTotal = qty * unitPrice;
-
-        prixEl.textContent  = unitPrice.toFixed(2);
-        totalEl.textContent = catTotal.toFixed(2);
-
-        totalGeneral += catTotal;
-    });
-
-    // 🔥 affichage du total global
-    const totalEl = document.getElementById("oktotal");
-    if (totalEl) {
-     totalEl.textContent = `${totalGeneral.toFixed(2)} ${symboleDevise}`;
-    }
-
-
-
-   // ── Comparaison ──
-    const prevMap = {
-        niveau1: null,
-        niveau2: "niveau1",
-        expo: "niveau2"
-    };
-
-    const prevLevel = prevMap[niveau];
-    let totalPrev = 0;
-
-    if (prevLevel) {
-        categories.forEach(cat => {
-            const qty = Number(document.getElementById(`${cat}-input`)?.value) || 0;
-            const prevPrice = (tariffs[cat]?.[prevLevel] ?? 0) * tarifheure;
-
-            totalPrev += qty * prevPrice;
-        });
-    }
-}
-
-
 
 // ────────────────────────────────────────────────
 // Formulaire de demande de formation
