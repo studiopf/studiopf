@@ -823,17 +823,17 @@ a:hover,
    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 12px;
+  $
   align-items: center;
         justify-content: center;
     margin: 0rem auto;
     max-width: 1900px;
-    padding: 12px;
+    padding: 0px;
 }
 .cardpartenaire {
   display: flex;
     flex-direction: column;
-    gap: 20px; /* espace entre les deux div */
+ 
     width: 500px;
     height: 250px;
     max-width: 100%;
