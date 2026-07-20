@@ -356,6 +356,9 @@ text-shadow: var(--shadow-p-box-mob);
 .exemples-photos3 {
     display: grid;
 }
+.exemples-photos3[hidden] {
+    display: none !important;
+}
 [hidden] {
     display: none !important;
 }
