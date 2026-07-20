@@ -5630,8 +5630,6 @@ document.addEventListener("click", function (event) {
 });
 
 
-}
-
 function initThemeToggle() {
 
     const themeToggle = document.getElementById("themeToggle");
