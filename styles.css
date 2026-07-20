@@ -9,6 +9,12 @@
    BOÎTES REPLIABLES
 ========================== */
 .maintenance-box {
+       font-size: 32px;
+    font-weight: 800;
+    color: var(--text-p);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
     width: 100%;
     max-width: 1600px;
     margin: 10px auto 0;
@@ -40,7 +46,11 @@
      width: 100%;
     max-width: 1600px;
     padding: 0px 0px;
-
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-p);
+    margin: 0;
+    line-height: 1.5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,9 +63,6 @@
     color: var(--title, #ffe39b);
 
     font-family: inherit;
-    font-size: clamp(28px, 2vw, 24px);
-    font-weight: 800;
-    line-height: 1.5;
     text-align: left;
 
     cursor: pointer;
@@ -285,7 +292,7 @@ body {
 
 .header-contact a:hover{
     color:var(--accent-color);
-    transform:scale(1.1);
+    transform:scale(1.5);
 }
 
 /* Bouton hamburger */
@@ -366,7 +373,7 @@ text-shadow: var(--shadow-p-box-mob);
 
 .header-contact a:hover{
     color:var(--accent-color);
-    transform:scale(1.1);
+    transform:scale(1.5);
 }
     .header-logo .logo{
     height:auto;
@@ -564,15 +571,21 @@ img {
 
 .info {
     background: linear-gradient(to bottom, #8B0000, #FF6347);
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
     width: 100%;
     position: relative;
-      font-size: 18px;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
+    font-size: 18px;
     font-weight: bold;
+    line-height: 1;
+
     color: white;
     text-shadow: 2px 2px 4px #555;
+
     animation: info 2s linear infinite alternate;
 }
 /* bandeau défile */
@@ -794,9 +807,11 @@ h3 {
 
 p {
     font-size: 32px;
-    line-height: 2.8;
     font-weight: 800;
     color: var(--text-p);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 /* ==========================================================================
    LIENS & HIGHLIGHT – inchangé
@@ -1106,7 +1121,7 @@ nav {
     box-shadow: 0 0 8px rgba(0,123,255,0.5);
 }
 .language-selector img:hover {
-    transform: scale(1.18);
+    transform: scale(1.58);
 }
 
 /* Le reste (cartes, gallery, , boutons scroll,  queries) reste IDENTIQUE */
@@ -1285,30 +1300,7 @@ nav {
     transform: translateY(-3px) scale(1.08);
     box-shadow: 0 8px 18px rgba(244, 200, 118, 0.45);
 }
-/* Style du bouton fleche */
-#scrollTotal {
-    border: 5px solid #FFD700;
-    position: fixed;
-    bottom: 400px;
-    right: 20px;
-    background-color: var(--scroll-bg);
-    color: var(--scroll-c); 
-    border: none;
-    padding: 25px;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    z-index: 2000;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
- transition: all 0.25s ease;
-}
-#scrollTotal:hover {
-    background-color: var(--scroll-bghover); 
-    color: var(--scroll-chover); 
-    transform: translateY(-3px) scale(1.08);
-    box-shadow: 0 8px 18px rgba(244, 200, 118, 0.45);
-}
+
 /* ==========================================================================
    CARTES GÉNÉRIQUES – inchangé
    ========================================================================== */
@@ -1489,7 +1481,7 @@ body.light-mode .cardpartenaire2 {
 }
 
    li, .p-social {
-   font-size: 11px;
+   font-size: 12px;
     line-height: 1.6;
     text-align: center;
    margin-top: 4px;
@@ -2292,7 +2284,7 @@ button.pf-menu-button {
 }
 
 .pf-social-container .social-icon:hover {
-    transform: scale(1.15) rotate(10deg);
+    transform: scale(1.55) rotate(10deg);
     background: #f4c876;
     color: #111;
     border-color: #f4c876;
@@ -2691,7 +2683,7 @@ a.surligne:visited {
     color: #f4c876;
     background: rgba(0, 0, 0, 0.9);
 
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 /* ==========================
