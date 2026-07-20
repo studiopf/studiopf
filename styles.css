@@ -153,6 +153,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    padding: 0px 0px 0px;
+    line-height: 1.55;
+    background:var(--bg);
+    color:var(--text);
+
     background-image: url("../img/fondlilia.png");
     background-repeat: no-repeat;
     background-position: center top;
@@ -794,16 +803,7 @@ tr:nth-child(even) td {
     width: 12px;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    min-height: 100vh;
-    padding: 0px 0px 0px;
-    line-height: 1.55;
-    background:var(--bg);
-    color:var(--text);
-}
+
 
 ul, ol {
     list-style: none;
