@@ -245,7 +245,33 @@ changelangueinfo();
     if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
         changelanguehoraires();
     }
+function initializeMaintenanceBoxes() {
+    document.querySelectorAll(".maintenance-box").forEach(function (box) {
+        const header = box.querySelector(".maintenance-header");
+        const content = box.querySelector(".maintenance-content");
+        const arrow = box.querySelector(".maintenance-arrow");
 
+        if (!header || !content) return;
+
+        const isCollapsed = box.classList.contains("is-collapsed");
+
+        header.setAttribute(
+            "aria-expanded",
+            isCollapsed ? "false" : "true"
+        );
+
+        content.hidden = isCollapsed;
+
+        if (arrow) {
+            arrow.textContent = isCollapsed ? "▼" : "▲";
+        }
+    });
+}
+
+document.addEventListener(
+    "DOMContentLoaded",
+    initializeMaintenanceBoxes
+);
 }
 
 function changelanguepourquoi() {
@@ -5612,6 +5638,7 @@ function initThemeToggle() {
     };
 
 }
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const pfButton = document.getElementById("pf-menu-button");
@@ -5660,6 +5687,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("click", function (event) {
 
+
+  
+
+
     const header = event.target.closest(".maintenance-header");
 
     if (!header) {
@@ -5678,4 +5709,42 @@ document.addEventListener("click", function (event) {
         "aria-expanded",
         isCollapsed ? "false" : "true"
     );
+});
+document.addEventListener("click", function (event) {
+    const header = event.target.closest(".maintenance-header");
+
+    if (!header) return;
+
+    const box = header.closest(".maintenance-box");
+
+    if (!box) return;
+
+    const content = box.querySelector(".maintenance-content");
+    const arrow = box.querySelector(".maintenance-arrow");
+
+    const isCurrentlyCollapsed = box.classList.contains("is-collapsed");
+
+    if (isCurrentlyCollapsed) {
+        box.classList.remove("is-collapsed");
+        header.setAttribute("aria-expanded", "true");
+
+        if (content) {
+            content.hidden = false;
+        }
+
+        if (arrow) {
+            arrow.textContent = "▲";
+        }
+    } else {
+        box.classList.add("is-collapsed");
+        header.setAttribute("aria-expanded", "false");
+
+        if (content) {
+            content.hidden = true;
+        }
+
+        if (arrow) {
+            arrow.textContent = "▼";
+        }
+    }
 });
