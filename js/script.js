@@ -937,27 +937,28 @@ function genererTableTarifs() {
 
 }
 function initializeMaintenanceBoxes() {
-    document.querySelectorAll(".maintenance-box").forEach((box) => {
+    document.querySelectorAll(".maintenance-box").forEach((box, index) => {
         const header = box.querySelector(".maintenance-header");
         const content = box.querySelector(".maintenance-content");
         const arrow = box.querySelector(".maintenance-arrow");
 
-        box.classList.add("is-collapsed");
+        const isOpen = index === 0; // Le premier reste ouvert
+
+        box.classList.toggle("is-collapsed", !isOpen);
 
         if (header) {
-            header.setAttribute("aria-expanded", "false");
+            header.setAttribute("aria-expanded", isOpen ? "true" : "false");
         }
 
         if (content) {
-            content.hidden = true;
+            content.hidden = !isOpen;
         }
 
         if (arrow) {
-            arrow.textContent = "▼";
+            arrow.textContent = isOpen ? "▲" : "▼";
         }
     });
 }
-
 
 /* Ouverture / fermeture au clic */
 document.addEventListener("click", function (event) {
