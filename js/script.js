@@ -939,10 +939,9 @@ function genererTableTarifs() {
 function initializeMaintenanceBoxes() {
     document.querySelectorAll(".maintenance-box").forEach((box, index) => {
         const header = box.querySelector(".maintenance-header");
-        const content = box.querySelector(".maintenance-content");
         const arrow = box.querySelector(".maintenance-arrow");
 
-        const isOpen = index === 0; // Le premier reste ouvert
+        const isOpen = index === 0;
 
         box.classList.toggle("is-collapsed", !isOpen);
 
@@ -950,49 +949,68 @@ function initializeMaintenanceBoxes() {
             header.setAttribute("aria-expanded", isOpen ? "true" : "false");
         }
 
-        if (content) {
-            content.hidden = !isOpen;
-        }
-
         if (arrow) {
             arrow.textContent = isOpen ? "▲" : "▼";
         }
+
+        [...box.children].forEach(child => {
+            if (child !== header) {
+                child.hidden = !isOpen;
+            }
+        });
     });
 }
-
-/* Ouverture / fermeture au clic */
 document.addEventListener("click", function (event) {
-    const header = event.target.closest(".maintenance-header");
 
+    const header = event.target.closest(".maintenance-header");
     if (!header) return;
 
     const box = header.closest(".maintenance-box");
-
     if (!box) return;
 
-    const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
+
     const isCollapsed = box.classList.contains("is-collapsed");
 
-    box.classList.toggle("is-collapsed", !isCollapsed);
-    header.setAttribute("aria-expanded", isCollapsed ? "true" : "false");
+    if (isCollapsed) {
 
-    if (content) {
-        content.hidden = !isCollapsed;
+        box.classList.remove("is-collapsed");
+        header.setAttribute("aria-expanded", "true");
+
+        if (arrow) {
+            arrow.textContent = "▲";
+        }
+
+        [...box.children].forEach(child => {
+            if (child !== header) {
+                child.hidden = false;
+            }
+        });
+
+    } else {
+
+        box.classList.add("is-collapsed");
+        header.setAttribute("aria-expanded", "false");
+
+        if (arrow) {
+            arrow.textContent = "▼";
+        }
+
+        [...box.children].forEach(child => {
+            if (child !== header) {
+                child.hidden = true;
+            }
+        });
+
     }
 
-    if (arrow) {
-        arrow.textContent = isCollapsed ? "▲" : "▼";
-    }
 });
-
-
 document.addEventListener("DOMContentLoaded", () => {
+
     if (typeof changelangueinfo === "function") {
         changelangueinfo();
     }
 
-    /* À placer après changelangueinfo() */
     initializeMaintenanceBoxes();
 
     if (typeof initializeLightboxGlobal === "function") {
@@ -1026,4 +1044,5 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
         initializeGalerie();
     }
+
 });
