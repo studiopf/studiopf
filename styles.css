@@ -161,13 +161,6 @@ body {
     line-height: 1.55;
     background:var(--bg);
     color:var(--text);
-
-    background-image: url("../img/fondlilia.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover; /* ou contain selon l'effet souhaité */
-    background-attachment: fixed; /* facultatif */
-    min-height: 100vh;
 }
    .card {
        margin-top: 12px;
