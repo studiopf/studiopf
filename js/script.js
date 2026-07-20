@@ -5737,54 +5737,66 @@ function initThemeToggle() {
     };
 
 }
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("click", function (event) {
+
+    /* ==========================
+       MENU MOBILE
+    ========================== */
+
     const pfButton = document.getElementById("pf-menu-button");
     const pfNav = document.getElementById("pf-mobile-nav");
 
-    if (!pfButton || !pfNav) return;
-
     function fermerMenu() {
+        if (!pfButton || !pfNav) return;
+
         pfButton.classList.remove("active");
         pfNav.classList.remove("active");
         pfButton.setAttribute("aria-expanded", "false");
     }
 
-    pfButton.addEventListener("click", function (event) {
+    // Clic sur le bouton hamburger
+    const boutonClique = event.target.closest("#pf-menu-button");
+
+    if (boutonClique && pfNav) {
+        event.preventDefault();
         event.stopPropagation();
 
         const menuOuvert = pfNav.classList.toggle("active");
 
-        pfButton.classList.toggle("active", menuOuvert);
+        boutonClique.classList.toggle("active", menuOuvert);
 
-        pfButton.setAttribute(
+        boutonClique.setAttribute(
             "aria-expanded",
             menuOuvert ? "true" : "false"
         );
-    });
 
-    pfNav.addEventListener(
-        "click",
-        function (event) {
-            const elementClique = event.target.closest("a, button");
+        return;
+    }
 
-            if (elementClique) {
-                fermerMenu();
-            }
-        },
-        true
+    // Clic sur un lien ou bouton du menu
+    const elementMenuClique = event.target.closest(
+        "#pf-mobile-nav a, #pf-mobile-nav button"
     );
 
-    document.addEventListener("click", function (event) {
-        if (
-            !pfNav.contains(event.target) &&
-            !pfButton.contains(event.target)
-        ) {
-            fermerMenu();
-        }
-    });
-});
+    if (elementMenuClique) {
+        fermerMenu();
+        return;
+    }
 
-document.addEventListener("click", function (event) {
+    // Clic à l’extérieur du menu
+    if (
+        pfButton &&
+        pfNav &&
+        !pfNav.contains(event.target) &&
+        !pfButton.contains(event.target)
+    ) {
+        fermerMenu();
+    }
+
+    /* ==========================
+       BOÎTES REPLIABLES
+    ========================== */
+
     const header = event.target.closest(".maintenance-header");
 
     if (!header) return;
@@ -5796,30 +5808,20 @@ document.addEventListener("click", function (event) {
     const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
 
-    const isCurrentlyCollapsed =
-        box.classList.contains("is-collapsed");
+    const doitOuvrir = box.classList.contains("is-collapsed");
 
-    if (isCurrentlyCollapsed) {
-        box.classList.remove("is-collapsed");
-        header.setAttribute("aria-expanded", "true");
+    box.classList.toggle("is-collapsed", !doitOuvrir);
 
-        if (content) {
-            content.hidden = false;
-        }
+    header.setAttribute(
+        "aria-expanded",
+        doitOuvrir ? "true" : "false"
+    );
 
-        if (arrow) {
-            arrow.textContent = "▲";
-        }
-    } else {
-        box.classList.add("is-collapsed");
-        header.setAttribute("aria-expanded", "false");
+    if (content) {
+        content.hidden = !doitOuvrir;
+    }
 
-        if (content) {
-            content.hidden = true;
-        }
-
-        if (arrow) {
-            arrow.textContent = "▼";
-        }
+    if (arrow) {
+        arrow.textContent = doitOuvrir ? "▲" : "▼";
     }
 });
