@@ -65,76 +65,7 @@ function updateAgeDisplay() {
     if (el) el.textContent = pfAge;
 }
 
-// =============================
-// CHARGEMENT DYNAMIQUE DES PAGES
-// =============================
-async function loadPage(page = "index.html") {
-    const mainContainer = document.getElementById("contenu-principal");
-    if (!mainContainer) {
-        console.error("Erreur : #contenu-principal introuvable.");
-        return;
-    }
 
-    // Normalisation : on s'assure d'avoir toujours l'extension .html
-    let fileName = page.trim();
-    if (!fileName.endsWith(".html")) {
-        fileName = fileName === "" ? "index.html" : fileName + ".html";
-    }
-
-    // Mise à jour de currentPage (sans extension)
-    currentPage = fileName.replace(/\.html$/, "");
-
-    mainContainer.style.opacity = "0";
-
-    try {
-        const response = await fetch(fileName, { 
-            cache: "no-cache" 
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status} - ${fileName}`);
-        }
-
-        const html = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
-
-        const newContent = doc.querySelector("#contenu-principal");
-        if (!newContent) {
-            throw new Error(`#contenu-principal absent dans "${fileName}"`);
-        }
-
-        mainContainer.innerHTML = newContent.innerHTML;
-
-        applyLanguageAndInit();
-        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-
-    } catch (error) {
-        console.error(`Erreur dans loadPage("${fileName}") :`, error);
-        
-        mainContainer.innerHTML = `
-            <div class="center">
-                <div class="maintenance-box ajust">
-                    <h2>⚠️ Erreur de chargement</h2>
-                    <p>La page <strong>${fileName}</strong> n'a pas pu être chargée.</p>
-                    <button type="button" class="button" onclick="loadPage('index.html')">
-                        🏠 Retour à l'accueil
-                    </button>
-                </div>
-            </div>
-        `;
-    } finally {
-        mainContainer.style.opacity = "1";
-    }
-}
-
-// =============================
-// INIT AUTO
-// =============================
-document.addEventListener("DOMContentLoaded", () => {
-    // On force toujours l'extension ici
-    loadPage(currentPage);
-});
 // =============================
 // INITIALISATION
 // =============================
@@ -200,11 +131,3 @@ function initializeFormationForm() {
         window.location.href = mailtoUrl;
     }
 }
-
-// =============================
-// INIT AUTO
-// =============================
-document.addEventListener("DOMContentLoaded", () => {
-    // Charger la page actuelle (sans .html)
-    loadPage(currentPage + ".html");
-});
