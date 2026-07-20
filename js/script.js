@@ -1,7 +1,6 @@
 
 // Add near the top (after global variables)
 const virtualPages = [
-    "simulateur_devis",
     "formation",
     "peinturecommission",
     "peinturecollection",
