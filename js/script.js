@@ -362,20 +362,16 @@ function appelimg() {
     // RÉCUPÉRATION DES IMAGES
     // =============================
 
-    function getVisiblePageImages() {
-        return Array.from(
-            document.querySelectorAll(
-                "img[data-lightbox], img.gallery-img"
-            )
-        ).filter(img => {
-            return (
-                img !== lightboxImg &&
-                img.id !== "lightbox-img" &&
-                !img.hasAttribute("data-no-lightbox") &&
-                img.offsetParent !== null
-            );
-        });
-    }
+  function getVisiblePageImages() {
+    return Array.from(document.images).filter(img => {
+        return (
+            img !== lightboxImg &&
+            img.id !== "lightbox-img" &&
+            !img.hasAttribute("data-no-lightbox") &&
+            img.offsetParent !== null
+        );
+    });
+}
 
     // =============================
     // AFFICHAGE D'UNE IMAGE
@@ -456,9 +452,7 @@ function appelimg() {
     // =============================
 
     document.addEventListener("click", function (event) {
-        const clickedImage = event.target.closest(
-            "img[data-lightbox], img.gallery-img"
-        );
+      const clickedImage = event.target.closest("img");
 
         if (!clickedImage) {
             return;
