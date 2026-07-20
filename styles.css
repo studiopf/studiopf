@@ -260,7 +260,8 @@ textarea:disabled {
 
 /* bandeau défile */
 info-container {
-
+     width: 100%;
+ height:auto;
     margin: 0;
     border: 0;
     position: relative;
