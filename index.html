@@ -253,53 +253,58 @@ type="image/png">
     <button
         class="maintenance-header"
         type="button"
-        aria-expanded="false"
+        aria-expanded="true"
+        aria-controls="maintenance-presentation"
     >
-        <span class="maintenance-title">
-            <h1>🎨 Peinture professionnelle de figurines Warhammer &amp; Collection</h1>
-        </span>
+        <h1 class="maintenance-title">
+            🎨 Peinture professionnelle de figurines Warhammer &amp; Collection
+        </h1>
 
-        <span class="maintenance-arrow" aria-hidden="true">
-            ▼
-        </span>
+        <span class="maintenance-arrow" aria-hidden="true">▲</span>
     </button>
 
     <div
         class="maintenance-content"
         id="maintenance-presentation"
     >
+        <p>
+            Vous recherchez un
+            <strong>peintre professionnel de figurines</strong>
+            pour donner vie à votre armée, une pièce de collection
+            ou progresser en peinture ?
+        </p>
 
-      <p>
-Vous recherchez un <strong>peintre professionnel de figurines</strong> pour donner vie à votre armée,
-une pièce de collection ou progresser en peinture ?
-</p>
+        <p>
+            Bienvenue chez <strong>Studio PF</strong>.
+            Je suis <strong>Pierre-François (PF)</strong>,
+            peintre professionnel spécialisé dans la peinture de figurines,
+            les armées Warhammer, les pièces de collection
+            et les cours personnalisés.
+        </p>
 
-<p>
-Bienvenue chez <strong>Studio PF</strong>.
-Je suis <strong>Pierre-François (PF)</strong>, peintre professionnel spécialisé dans la peinture de figurines,
-les armées Warhammer, les pièces de collection et les cours personnalisés.
-</p>
+        <p>
+            Chaque projet est entièrement réalisé à la main
+            avec le même objectif :
+            <strong>transformer vos figurines en véritables pièces uniques.</strong>
+        </p>
 
-<p>
-Chaque projet est entièrement réalisé à la main avec le même objectif :
-<strong>transformer vos figurines en véritables pièces uniques.</strong>
-</p>
+        <p>
+            <strong>
+                ✨ « Chaque figurine raconte une histoire.
+                Mon rôle est de la faire briller. »
+            </strong>
+        </p>
 
-<p><strong>✨ « Chaque figurine raconte une histoire. Mon rôle est de la faire briller. »</strong></p>
+        <p>Découvrez les prestations proposées :</p>
+    </div>
 
-<p>
-Découvrez les prestations proposées :
-</p>
-       
+</div>
 
 
 <!-- =========================
      PEINTURE D’ARMÉES
 ========================= -->
-<div
-    class="maintenance-box ajust is-collapsed"
-    data-box-id="armees"
->
+<div class="maintenance-box ajust is-collapsed" data-box-id="armees">
 
     <button
         class="maintenance-header"
@@ -307,20 +312,18 @@ Découvrez les prestations proposées :
         aria-expanded="false"
         aria-controls="maintenance-armees"
     >
-        <span class="maintenance-title">
-            <h2>⚔️ Peinture d’armées Warhammer</h2>
-        </span>
+        <h2 class="maintenance-title">
+            ⚔️ Peinture d’armées Warhammer
+        </h2>
 
-        <span class="maintenance-arrow" aria-hidden="true">
-            ▼
-        </span>
+        <span class="maintenance-arrow" aria-hidden="true">▼</span>
     </button>
 
     <div
         class="maintenance-content"
         id="maintenance-armees"
+        hidden
     >
-
         <p>
             Vous souhaitez une armée homogène, lisible
             et spectaculaire sur la table de jeu ?
@@ -383,14 +386,9 @@ Découvrez les prestations proposées :
 
         </div>
 
-        <a
-            href="peinturecommission.html"
-            class="button"
-            onclick="loadPage('peinturecommission.html'); scrollToTop(); return false;"
-        >
+        <a href="peinturecommission.html" class="button">
             ⚔️ Découvrir les niveaux Gold et Diamant
         </a>
-
     </div>
 
 </div>
@@ -399,10 +397,7 @@ Découvrez les prestations proposées :
 <!-- =========================
      COLLECTION ET CONCOURS
 ========================= -->
-<div
-    class="maintenance-box ajust is-collapsed"
-    data-box-id="collection"
->
+<div class="maintenance-box ajust is-collapsed" data-box-id="collection">
 
     <button
         class="maintenance-header"
@@ -410,20 +405,18 @@ Découvrez les prestations proposées :
         aria-expanded="false"
         aria-controls="maintenance-collection"
     >
-        <span class="maintenance-title">
-            <h2>🏆 Pièces de collection &amp; concours</h2>
-        </span>
+        <h2 class="maintenance-title">
+            🏆 Pièces de collection &amp; concours
+        </h2>
 
-        <span class="maintenance-arrow" aria-hidden="true">
-            ▼
-        </span>
+        <span class="maintenance-arrow" aria-hidden="true">▼</span>
     </button>
 
     <div
         class="maintenance-content"
         id="maintenance-collection"
+        hidden
     >
-
         <p>
             Vous souhaitez une figurine unique
             qui attire immédiatement le regard ?
@@ -476,14 +469,9 @@ Découvrez les prestations proposées :
 
         </div>
 
-        <a
-            href="peinturecollection.html"
-            class="button"
-            onclick="loadPage('peinturecollection.html'); scrollToTop(); return false;"
-        >
+        <a href="peinturecollection.html" class="button">
             🏆 Découvrir les pièces de collection
         </a>
-
     </div>
 
 </div>
@@ -492,10 +480,7 @@ Découvrez les prestations proposées :
 <!-- =========================
      COURS DE PEINTURE
 ========================= -->
-<div
-    class="maintenance-box ajust is-collapsed"
-    data-box-id="cours"
->
+<div class="maintenance-box ajust is-collapsed" data-box-id="cours">
 
     <button
         class="maintenance-header"
@@ -503,20 +488,18 @@ Découvrez les prestations proposées :
         aria-expanded="false"
         aria-controls="maintenance-cours"
     >
-        <span class="maintenance-title">
-            <h2>📚 Cours de peinture sur figurines</h2>
-        </span>
+        <h2 class="maintenance-title">
+            📚 Cours de peinture sur figurines
+        </h2>
 
-        <span class="maintenance-arrow" aria-hidden="true">
-            ▼
-        </span>
+        <span class="maintenance-arrow" aria-hidden="true">▼</span>
     </button>
 
     <div
         class="maintenance-content"
         id="maintenance-cours"
+        hidden
     >
-
         <p>
             Progressez rapidement grâce à un accompagnement
             entièrement personnalisé.
@@ -528,18 +511,14 @@ Découvrez les prestations proposées :
             à votre matériel et aux résultats que vous souhaitez obtenir.
         </p>
 
-        <p>
-            Les séances peuvent notamment aborder :
-        </p>
+        <p>Les séances peuvent notamment aborder :</p>
 
-      
-            <p>🖌️ Préparation et maîtrise du pinceau</p>
-            <p>💨 Utilisation de l’aérographe</p>
-            <p>🌈 Dégradés et transitions</p>
-            <p>💡 Lumières, volumes et contrastes</p>
-            <p>✨ NMM, OSL et effets avancés</p>
-            <p>🏞️ Soclage, textures, huiles et pigments</p>
-       
+        <p>🖌️ Préparation et maîtrise du pinceau</p>
+        <p>💨 Utilisation de l’aérographe</p>
+        <p>🌈 Dégradés et transitions</p>
+        <p>💡 Lumières, volumes et contrastes</p>
+        <p>✨ NMM, OSL et effets avancés</p>
+        <p>🏞️ Soclage, textures, huiles et pigments</p>
 
         <p>
             Je partage les méthodes et les techniques
@@ -547,32 +526,18 @@ Découvrez les prestations proposées :
             dans mon activité de peintre professionnel.
         </p>
 
-        <a
-            href="formation.html"
-            class="button"
-            onclick="loadPage('formation.html'); scrollToTop(); return false;"
-        >
+        <a href="formation.html" class="button">
             📚 Découvrir les cours et les forfaits
         </a>
-
     </div>
 
 </div>
-
-    </div>
-
-</div><br><br>
-
-
 
 
 <!-- =========================
      POURQUOI STUDIO PF
 ========================= -->
-<div
-    class="maintenance-box ajust is-collapsed"
-    data-box-id="avantages"
->
+<div class="maintenance-box ajust is-collapsed" data-box-id="avantages">
 
     <button
         class="maintenance-header"
@@ -580,52 +545,44 @@ Découvrez les prestations proposées :
         aria-expanded="false"
         aria-controls="maintenance-avantages"
     >
-        <span class="maintenance-title">
-            <h2>⭐ Pourquoi choisir Studio PF ?</h2>
-        </span>
+        <h2 class="maintenance-title">
+            ⭐ Pourquoi choisir Studio PF ?
+        </h2>
 
-        <span class="maintenance-arrow" aria-hidden="true">
-            ▼
-        </span>
+        <span class="maintenance-arrow" aria-hidden="true">▼</span>
     </button>
 
     <div
         class="maintenance-content"
         id="maintenance-avantages"
+        hidden
     >
-
         <p>
             Confier ses figurines demande de la confiance.
             Chaque projet bénéficie donc d’un accompagnement
             attentif et personnalisé.
         </p>
 
-       
-            <p>🎨 Peinture entièrement réalisée à la main</p>
-            <p>🧩 Projet adapté à votre univers et à vos attentes</p>
-            <p>💬 Conseils avant, pendant et après la réalisation</p>
-            <p>🏞️ Travail personnalisé des socles et des finitions</p>
-            <p>📸 Validation du résultat à partir de photos</p>
-            <p>📦 Expédition protégée partout en France</p>
-            <p>🖼️ Plusieurs centaines de figurines réalisées</p>
-    
-        <a
-            href="galerie.html"
-            class="button"
-            onclick="loadPage('galerie.html'); scrollToTop(); return false;"
-        >
+        <p>🎨 Peinture entièrement réalisée à la main</p>
+        <p>🧩 Projet adapté à votre univers et à vos attentes</p>
+        <p>💬 Conseils avant, pendant et après la réalisation</p>
+        <p>🏞️ Travail personnalisé des socles et des finitions</p>
+        <p>📸 Validation du résultat à partir de photos</p>
+        <p>📦 Expédition protégée partout en France</p>
+        <p>🖼️ Plusieurs centaines de figurines réalisées</p>
+
+        <a href="galerie.html" class="button">
             🖼️ Voir les réalisations de Studio PF
         </a>
+    </div>
 
-   
+</div>
+
 
 <!-- =========================
      FONCTIONNEMENT
 ========================= -->
-<div
-    class="maintenance-box ajust is-collapsed"
-    data-box-id="fonctionnement"
->
+<div class="maintenance-box ajust is-collapsed" data-box-id="fonctionnement">
 
     <button
         class="maintenance-header"
@@ -633,93 +590,83 @@ Découvrez les prestations proposées :
         aria-expanded="false"
         aria-controls="maintenance-fonctionnement"
     >
-        <span class="maintenance-title">
-            <h2>⚙️ Comment fonctionne une commande ?</h2>
-        </span>
+        <h2 class="maintenance-title">
+            ⚙️ Comment fonctionne une commande ?
+        </h2>
 
-        <span class="maintenance-arrow" aria-hidden="true">
-            ▼
-        </span>
+        <span class="maintenance-arrow" aria-hidden="true">▼</span>
     </button>
 
     <div
         class="maintenance-content"
         id="maintenance-fonctionnement"
+        hidden
     >
+        <p>
+            <strong>1️⃣ Vous demandez un devis.</strong><br>
+            Vous présentez vos figurines, le niveau de finition souhaité,
+            vos couleurs et les particularités du projet.
+        </p>
 
-        <div class="etapes-commande">
+        <p aria-hidden="true">↓</p>
 
-            <div class="etape-commande">
-                <strong>1️⃣ Vous demandez un devis.</strong>
+        <p>
+            <strong>2️⃣ Nous définissons votre projet.</strong><br>
+            Je vous conseille et nous validons ensemble la prestation,
+            le schéma de couleurs, le soclage et les différentes options.
+        </p>
 
-                <p>
-                    Vous présentez vos figurines,
-                    le niveau de finition souhaité,
-                    vos couleurs et les particularités du projet.
-                </p>
-            </div>
+        <p aria-hidden="true">↓</p>
 
-            <div class="etape-fleche" aria-hidden="true">
-                ↓
-            </div>
+        <p>
+            <strong>3️⃣ Je réalise vos figurines.</strong><br>
+            Préparation, montage, peinture, effets spéciaux,
+            finitions et réalisation des socles.
+        </p>
 
-            <div class="etape-commande">
-                <strong>2️⃣ Nous définissons votre projet.</strong>
+        <p aria-hidden="true">↓</p>
 
-                <p>
-                    Je vous conseille et nous validons ensemble
-                    la prestation, le schéma de couleurs,
-                    le soclage et les différentes options.
-                </p>
-            </div>
+        <p>
+            <strong>
+                4️⃣ Validation par photos puis expédition sécurisée.
+            </strong><br>
+            Vous validez le résultat à partir de photos détaillées
+            avant la préparation et l’expédition de vos figurines.
+        </p>
 
-            <div class="etape-fleche" aria-hidden="true">
-                ↓
-            </div>
-
-            <div class="etape-commande">
-                <strong>3️⃣ Je réalise vos figurines.</strong>
-
-                <p>
-                    Préparation, montage, peinture,
-                    effets spéciaux, finitions
-                    et réalisation des socles.
-                </p>
-            </div>
-
-            <div class="etape-fleche" aria-hidden="true">
-                ↓
-            </div>
-
-            <div class="etape-commande">
-                <strong>
-                    4️⃣ Validation par photos puis expédition sécurisée.
-                </strong>
-
-                <p>
-                    Vous validez le résultat à partir de photos détaillées
-                    avant la préparation et l’expédition de vos figurines.
-                </p>
-            </div>
-
-        </div>
-
-        <a
-            href="simulateur_devis.html"
-            class="button"
-            onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;"
-        >
+        <a href="simulateur_devis.html" class="button">
             🧾 Préparer mon futur projet
         </a>
-
     </div>
 
 </div>
-  </div>
-
- </div>
 
 
+<style>
+/* En-tête des blocs repliables */
+.maintenance-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    text-align: left;
+}
+
+.maintenance-title {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.maintenance-arrow {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.maintenance-content[hidden] {
+    display: none;
+}
+</style>
        </main>
 
 
