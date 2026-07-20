@@ -65,7 +65,24 @@ function updateAgeDisplay() {
     if (el) el.textContent = pfAge;
 }
 
+// =============================
+// LANGUE
+// =============================
+function setLanguage(lang) {
+    currentLanguage = lang;
 
+    highlightLanguage(lang);
+    updateDebugDisplay();
+
+
+
+}
+
+function highlightLanguage(langId) {
+    document.querySelectorAll('.language-selector button').forEach(btn => {
+        btn.classList.toggle('selected', btn.id === langId);
+    });
+}
 
 // =============================
 // FORMULAIRE FORMATION
@@ -316,6 +333,70 @@ function initializeLightboxGlobal() {
         }, 300);
     }
 }
+function changelangueinfo(){
+if(currentLanguage=== "french"){
+// Chargement du message d'information
+fetch('/data/messageinfo.txt')
+    .then(response => response.text())
+    .then(texte => {
+        // Vérifie si le texte est vide ou contient uniquement des espaces
+        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
+       if (messageinfo === '') {
+    document.querySelector('.info-container').style.display = 'none';
+    document.querySelector('.info').style.display = 'none';
+}
+        updateParagraph(); // Appel de la fonction après avoir récupéré le message
+    })
+    .catch(error => {
+        messageinfo = "error";
+        updateParagraph();
+    });
+}
+if(currentLanguage=== "english"){
+// Chargement du message d'information
+fetch('/data/messageinfoUK.txt')
+    .then(response => response.text())
+    .then(texte => {
+        // Vérifie si le texte est vide ou contient uniquement des espaces
+        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
+       if (messageinfo === '') {
+    document.querySelector('.info-container').style.display = 'none';
+    document.querySelector('.info').style.display = 'none';
+}
+        updateParagraph(); // Appel de la fonction après avoir récupéré le message
+    })
+    .catch(error => {
+        messageinfo = "error";
+        updateParagraph();
+    });
+}
+if(currentLanguage=== "spanish"){
+// Chargement du message d'information
+fetch('/data/messageinfo-es.txt')
+    .then(response => response.text())
+    .then(texte => {
+        // Vérifie si le texte est vide ou contient uniquement des espaces
+        messageinfo = texte.trim() === '' ? "Pas d'informations pour le moment" : texte;
+       if (messageinfo === '') {
+    document.querySelector('.info-container').style.display = 'none';
+    document.querySelector('.info').style.display = 'none';
+}
+        updateParagraph(); // Appel de la fonction après avoir récupéré le message
+    })
+    .catch(error => {
+        messageinfo = "error";
+        updateParagraph();
+    });
+}
+}
+function updateParagraph() {
+    const paragraph = document.getElementById('infoParagraph');
+    if (paragraph) {
+        paragraph.textContent = messageinfo; // Met le contenu dans le <p>
+    }
+}
+
+
 function initThemeToggle() {
 
     const themeToggle = document.getElementById("themeToggle");
@@ -443,3 +524,41 @@ function initScrollBehaviors() {
     });
 
 }
+document.addEventListener("click", function (event) {
+    const header = event.target.closest(".maintenance-header");
+
+    if (!header) return;
+
+    const box = header.closest(".maintenance-box");
+
+    if (!box) return;
+
+    const content = box.querySelector(".maintenance-content");
+    const arrow = box.querySelector(".maintenance-arrow");
+
+    const isCurrentlyCollapsed = box.classList.contains("is-collapsed");
+
+    if (isCurrentlyCollapsed) {
+        box.classList.remove("is-collapsed");
+        header.setAttribute("aria-expanded", "true");
+
+        if (content) {
+            content.hidden = false;
+        }
+
+        if (arrow) {
+            arrow.textContent = "▲";
+        }
+    } else {
+        box.classList.add("is-collapsed");
+        header.setAttribute("aria-expanded", "false");
+
+        if (content) {
+            content.hidden = true;
+        }
+
+        if (arrow) {
+            arrow.textContent = "▼";
+        }
+    }
+});
