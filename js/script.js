@@ -936,6 +936,30 @@ function genererTableTarifs() {
     });
 
 }
+function initializeMaintenanceBoxes() {
+    document.querySelectorAll(".maintenance-box").forEach((box) => {
+        const header = box.querySelector(".maintenance-header");
+        const content = box.querySelector(".maintenance-content");
+        const arrow = box.querySelector(".maintenance-arrow");
+
+        box.classList.add("is-collapsed");
+
+        if (header) {
+            header.setAttribute("aria-expanded", "false");
+        }
+
+        if (content) {
+            content.hidden = true;
+        }
+
+        if (arrow) {
+            arrow.textContent = "▼";
+        }
+    });
+}
+
+
+/* Ouvrir / fermer au clic */
 document.addEventListener("click", function (event) {
     const header = event.target.closest(".maintenance-header");
 
@@ -948,33 +972,29 @@ document.addEventListener("click", function (event) {
     const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
 
-    const isCurrentlyCollapsed = box.classList.contains("is-collapsed");
+    const isCollapsed = box.classList.contains("is-collapsed");
 
-    if (isCurrentlyCollapsed) {
-        box.classList.remove("is-collapsed");
-        header.setAttribute("aria-expanded", "true");
+    box.classList.toggle("is-collapsed", !isCollapsed);
+    header.setAttribute(
+        "aria-expanded",
+        isCollapsed ? "true" : "false"
+    );
 
-        if (content) {
-            content.hidden = false;
-        }
+    if (content) {
+        content.hidden = !isCollapsed;
+    }
 
-        if (arrow) {
-            arrow.textContent = "▲";
-        }
-    } else {
-        box.classList.add("is-collapsed");
-        header.setAttribute("aria-expanded", "false");
-
-        if (content) {
-            content.hidden = true;
-        }
-
-        if (arrow) {
-            arrow.textContent = "▼";
-        }
+    if (arrow) {
+        arrow.textContent = isCollapsed ? "▲" : "▼";
     }
 });
+
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    /* Ferme tous les blocs au chargement */
+    initializeMaintenanceBoxes();
+
     if (typeof changelangueinfo === "function") {
         changelangueinfo();
     }
