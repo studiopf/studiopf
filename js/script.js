@@ -4745,6 +4745,7 @@ function showImages(category) {
 
 // Affichage initial
 showImages("Tous");
+}
 
 function initializeLightboxGlobal() {
     const lightbox = document.getElementById('lightbox');
