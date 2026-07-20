@@ -112,16 +112,20 @@
     flex: 1;
     min-width: 0;
     margin: 0;
-
+    text-shadow:
+        0 1px 0 #000,
+        0 2px 2px rgba(0,0,0,.8),
+        0 0 6px rgba(0,0,0,.7);
 }
 
 .maintenance-arrow {
     flex-shrink: 0;
     margin-left: auto;
-   background: var(--maintenance-bg);
+    text-shadow:
+        0 1px 0 #000,
+        0 2px 2px rgba(0,0,0,.8),
+        0 0 6px rgba(0,0,0,.7);
 }
-
-
 .maintenance-header:hover {
     background: rgba(244, 200, 118, 0.12);
 }
