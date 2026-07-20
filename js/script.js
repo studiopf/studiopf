@@ -5554,24 +5554,6 @@ function changelanguelogo() {
 
 }
 
-// ==============================
-// Bouton "Voir Total"
-// ==============================
-
-// Masquer le bouton lorsqu'on clique sur un lien ou un bouton
-document.addEventListener("click", function (event) {
-
-    if (event.target.closest("a, button")) {
-
-      
-
-        if (scrollBtn) {
-            scrollBtn.style.display = "none";
-        }
-    }
-
-});
-
 
 function initThemeToggle() {
 
