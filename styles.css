@@ -112,7 +112,7 @@
     flex: 1;
     min-width: 0;
     margin: 0;
-   background: var(--maintenance-bg);
+
 }
 
 .maintenance-arrow {
@@ -235,7 +235,7 @@ body {
     justify-content:space-between;
 
     width:100%;
-    padding:12px 15px;
+    padding:10px 10px;
     box-sizing:border-box;
 
     background: var(--header-bg);
@@ -247,7 +247,7 @@ body {
 
 .header-logo .logo{
     height:auto;
-    width:90px;
+    width:30px;
 }
 
 /* Icônes */
