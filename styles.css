@@ -245,8 +245,7 @@ textarea:disabled {
 /* ==========================
         CHECKBOX / RADIO
 ========================== */
-.header-bloc{ max-width: 1200px;
-    width: calc(100% - 30px);}
+
 /* bandeau défile */
 info-container {
            max-width: 1200px;
@@ -290,8 +289,14 @@ info-container {
 /* =========================
    Barre supérieure
 ========================= */
-
-.header-top{
+.header-bloc {
+   display: flex;
+             align-items: center;
+    justify-content:space-between;
+             max-width: 1200px;
+    width: calc(100% - 30px);
+}
+.header-top {
       max-width: 1200px;
     width: calc(100% - 30px);
     display: flex;
