@@ -13,8 +13,13 @@ let currentLanguage = "french";
 
 function getPageInfo() {
     const path = window.location.pathname.substring(1);
-    let currentPage = path.substring(path.lastIndexOf("/") + 1) || "index.html";
-    const pageName = currentPage.substring(0, currentPage.lastIndexOf(".")) || "index";
+    const lastSegment = path.substring(path.lastIndexOf("/") + 1);
+    
+    let currentPage = lastSegment || "index.html";
+    const pageName = currentPage.includes(".") 
+        ? currentPage.substring(0, currentPage.lastIndexOf(".")) 
+        : currentPage;
+
     const folder = path.substring(0, path.lastIndexOf("/"));
 
     return { folder, pageName, currentPage };
@@ -44,8 +49,11 @@ function updateDebugDisplay() {
                            currentLanguage === "spanish" ? "Español" : "Français";
         langSpan.textContent = displayLang;
     }
+
     const pageSpan = document.getElementById("currentPage");
-    if (pageSpan) pageSpan.textContent = currentPage || "inconnue";
+    if (pageSpan) {
+        pageSpan.textContent = currentPage || "inconnue";
+    }
 }
 
 function isMobile() {
@@ -57,7 +65,6 @@ function updateAgeDisplay() {
     if (el) el.textContent = pfAge;
 }
 
-
 // =============================
 // CHARGEMENT DYNAMIQUE DES PAGES
 // =============================
@@ -68,11 +75,14 @@ async function loadPage(page = "index.html") {
         return;
     }
 
+    // Normalisation du nom de page
     if (typeof page !== "string" || page.trim() === "") {
         page = "index.html";
     }
     page = page.trim();
-    currentPage = page.replace(".html", "");
+
+    // Retirer l'extension si présente
+    currentPage = page.replace(/\.html$/, "");
 
     mainContainer.style.opacity = "0";
 
@@ -83,17 +93,16 @@ async function loadPage(page = "index.html") {
         const html = await response.text();
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, "text/html");
-        const newContent = doc.querySelector("#contenu-principal");
 
+        const newContent = doc.querySelector("#contenu-principal");
         if (!newContent) {
             throw new Error(`#contenu-principal absent dans "${page}"`);
         }
 
         mainContainer.innerHTML = newContent.innerHTML;
 
-        // Initialisations globales et spécifiques
+        // Initialisations
         applyLanguageAndInit();
-
         window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 
     } catch (error) {
@@ -118,10 +127,11 @@ async function loadPage(page = "index.html") {
 // INITIALISATION
 // =============================
 function applyLanguageAndInit() {
-    updateMeta(currentLanguage);
+    updateMeta(currentLanguage);           // ← à définir ailleurs si pas déjà fait
     updateDebugDisplay();
     updateAgeDisplay();
 
+    // Initialisations globales (sécurité : vérification d'existence)
     if (typeof initializeLightboxGlobal === "function") initializeLightboxGlobal();
     if (typeof initThemeToggle === "function") initThemeToggle();
     if (typeof initializeMaintenanceBoxes === "function") initializeMaintenanceBoxes();
@@ -144,11 +154,13 @@ function initializeFormationForm() {
     const form = document.getElementById("formationForm");
     if (!form) return;
 
+    // Retirer les anciens listeners pour éviter les doublons
     form.removeEventListener("submit", handleSubmit);
     form.addEventListener("submit", handleSubmit);
 
     function handleSubmit(e) {
         e.preventDefault();
+
         const getValue = id => document.getElementById(id)?.value.trim() || "";
 
         const data = {
@@ -165,8 +177,11 @@ function initializeFormationForm() {
         };
 
         const subject = `Demande de cours de peinture - ${data.prenom} ${data.nom}`;
+
         let body = `Bonjour,\n\nVoici ma demande de cours de peinture (${data.cours}) :\n\n`;
-        body += `${data.nom}\n${data.prenom}\n${data.adresse}\n${data.cp} ${data.ville}\n${data.pays}\n${data.email}\n${data.telephone}\n\n`;
+        body += `${data.nom} ${data.prenom}\n`;
+        body += `${data.adresse}\n${data.cp} ${data.ville}\n${data.pays}\n`;
+        body += `${data.email}\n${data.telephone}\n\n`;
         body += `Message :\n${data.message}\n\nCordialement,\n${data.prenom} ${data.nom}`;
 
         const mailtoUrl = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -178,5 +193,6 @@ function initializeFormationForm() {
 // INIT AUTO
 // =============================
 document.addEventListener("DOMContentLoaded", () => {
-    loadPage(currentPage);
+    // Charger la page actuelle (sans .html)
+    loadPage(currentPage + ".html");
 });
