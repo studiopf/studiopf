@@ -526,11 +526,10 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
         </p>
 
 
-            <a href="simulateur_devis.html"
-               class="button"
-               onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
-                💬 Demander un devis
-            </a>
+           <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
 
     </div>
     </div>
@@ -3931,7 +3930,10 @@ function changelanguepeinture() {
     <img src="img/armee3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
 </div>
 
-  <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
 </div>
 
 <div class="maintenance-box ajust fonddg">
@@ -3978,8 +3980,10 @@ function changelanguepeinture() {
 </div>
 
 
-         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
-
+      <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
 
     </div>
 
@@ -4029,7 +4033,10 @@ function changelanguepeinture() {
         <img src="img/diamant3.jpg" alt="Exemple de figurine peinte niveau Diamant"></div>
     </div>
 
-         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+    <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
 
     </div>
 
@@ -4178,7 +4185,10 @@ function changelanguepeinture() {
 </tbody>
 </table>
         <div>
-         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+    <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
     </div>
   </div>
 
