@@ -124,127 +124,244 @@ function setLanguage(lang) {
 // =============================
 // LOAD PAGE (FIX PRINCIPAL)
 // =============================
-function loadPage(page) {
-
-    if (!page) {
-        console.warn("page undefined → fallback index");
-        page = currentPage;
-        hideCurrentPage();
-    }
-
-    currentPage = page;
+async function loadPage(page = "index.html") {
 
     const mainContainer = document.getElementById("contenu-principal");
+
     if (!mainContainer) {
-        console.error("contenu-principal introuvable");
+        console.error("Erreur : #contenu-principal introuvable.");
         return;
     }
 
+    // Sécurité si page est vide ou incorrecte
+    if (typeof page !== "string" || page.trim() === "") {
+        page = "index.html";
+    }
+
+    page = page.trim();
+
+
+
+    currentPage = page;
     mainContainer.style.opacity = "0";
 
-    fetch(page)
-        .then(response => {
-            if (!response.ok) throw new Error(`Statut ${response.status}`);
-            return response.text();
-        })
-        .then(html => {
-
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, "text/html");
-            const newContent = doc.querySelector("#contenu-principal");
-
-            if (!newContent) {
-                throw new Error("contenu-principal manquant dans " + page);
-            }
-
-            // Remplacement direct du contenu (évite une opération DOM inutile).
-            mainContainer.innerHTML = newContent.innerHTML;
-
-            window.scrollTo(0, 0);
-
-            applyLanguageAndInit();
-
-            mainContainer.style.opacity = "1";
-        })
-        .catch(err => {
-            console.error(err);
-            mainContainer.innerHTML = `<p style="color:red">Erreur chargement ${page}</p>`;
-            mainContainer.style.opacity = "1";
+    try {
+        const response = await fetch(page, {
+            cache: "no-cache"
         });
-}
 
+        if (!response.ok) {
+            throw new Error(
+                `Impossible de charger "${page}" — erreur HTTP ${response.status}`
+            );
+        }
+
+        const html = await response.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const newContent = doc.querySelector("#contenu-principal");
+
+        if (!newContent) {
+            throw new Error(
+                `La balise #contenu-principal est absente de "${page}".`
+            );
+        }
+
+        mainContainer.innerHTML = newContent.innerHTML;
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant"
+        });
+
+        /*
+         * Une erreur dans applyLanguageAndInit() ne doit pas
+         * être affichée comme une erreur de chargement de page.
+         */
+        try {
+            if (typeof applyLanguageAndInit === "function") {
+                applyLanguageAndInit();
+            }
+        } catch (initError) {
+            console.error(
+                `Erreur pendant l'initialisation de "${page}" :`,
+                initError
+            );
+        }
+
+    } catch (error) {
+        console.error(`Erreur dans loadPage("${page}") :`, error);
+
+        mainContainer.innerHTML = `
+            <div class="center">
+                <div class="maintenance-box ajust">
+                    <h2>⚠️ Erreur de chargement</h2>
+
+                    <p>
+                        La page <strong>${page}</strong> n'a pas pu être chargée.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="button"
+                        onclick="loadPage('index.html')"
+                    >
+                        🏠 Retour à l'accueil
+                    </button>
+                </div>
+            </div>
+        `;
+    } finally {
+        mainContainer.style.opacity = "1";
+    }
+}
 
 // =============================
 // INIT GLOBAL
 // =============================
 function applyLanguageAndInit() {
-changelangueinfo();
-    
-    initializeLightboxGlobal();
-     initThemeToggle();
 
+    // Fonctions globales
+    if (typeof changelangueinfo === "function") {
+        changelangueinfo();
+    }
+
+    if (typeof initializeLightboxGlobal === "function") {
+        initializeLightboxGlobal();
+    }
+
+    if (typeof initThemeToggle === "function") {
+        initThemeToggle();
+    }
+
+    // Gestion du fond
     if (localStorage.getItem("maintenanceBackground") === "off") {
-    document.body.classList.add("no-maintenance-bg");
-}
-    updateBackgroundButton();
-    
-    updateDebugDisplay();
-    mettreAJourTarifLangue();
+        document.body.classList.add("no-maintenance-bg");
+    } else {
+        document.body.classList.remove("no-maintenance-bg");
+    }
 
-    changelanguemenu();
-    changelanguefoot();
-    changelanguelogo();
+    if (typeof updateBackgroundButton === "function") {
+        updateBackgroundButton();
+    }
 
-    changelanguepartenaires();
-   
-    updateAgeDisplay();
+    if (typeof updateDebugDisplay === "function") {
+        updateDebugDisplay();
+    }
 
+    // Menus et éléments globaux
+    if (typeof changelanguemenu === "function") {
+        changelanguemenu();
+    }
 
-    initScrollBehaviors();
-    hideCurrentPage();
+    if (typeof changelanguefoot === "function") {
+        changelanguefoot();
+    }
 
+    if (typeof changelanguelogo === "function") {
+        changelanguelogo();
+    }
+
+    if (typeof changelanguepartenaires === "function") {
+        changelanguepartenaires();
+    }
+
+    if (typeof updateAgeDisplay === "function") {
+        updateAgeDisplay();
+    }
+
+    if (typeof initScrollBehaviors === "function") {
+        initScrollBehaviors();
+    }
+
+    if (typeof hideCurrentPage === "function") {
+        hideCurrentPage();
+    }
+
+    // =============================
+    // INITIALISATION PAR PAGE
+    // =============================
 
     if (currentPage.includes("galerie")) {
-        initGalerieWithLang();
-        initializeGalerie();
-    }
-    if (currentPage.includes("formation") && typeof changelangueforma === "function") {
-        changelangueforma();
-        initializeFormationForm();
-    }
-     if (currentPage.includes("quisuisje") && typeof changelanguequisuisje === "function") {
-  changelanguequisuisje();
+
+        if (typeof initGalerieWithLang === "function") {
+            initGalerieWithLang();
+        }
+
+        if (typeof initializeGalerie === "function") {
+            initializeGalerie();
+        }
     }
 
+    if (currentPage.includes("formation")) {
 
+        if (typeof changelangueforma === "function") {
+            changelangueforma();
+        }
 
-    if (currentPage.includes("conditions") && typeof changelangueconditions === "function") {
+        if (typeof initializeFormationForm === "function") {
+            initializeFormationForm();
+        }
+    }
+
+    if (
+        currentPage.includes("quisuisje") &&
+        typeof changelanguequisuisje === "function"
+    ) {
+        changelanguequisuisje();
+    }
+
+    if (
+        currentPage.includes("conditions") &&
+        typeof changelangueconditions === "function"
+    ) {
         changelangueconditions();
     }
 
-    if (currentPage.includes("mentionslegales") && typeof changelanguementionslegales === "function") {
+    if (
+        currentPage.includes("mentionslegales") &&
+        typeof changelanguementionslegales === "function"
+    ) {
         changelanguementionslegales();
     }
-    if (currentPage.includes("peinturecommission") && typeof changelanguepeinture === "function") {
+
+    if (
+        currentPage.includes("peinturecommission") &&
+        typeof changelanguepeinture === "function"
+    ) {
         changelanguepeinture();
-       genererTableTarifs();
-
     }
-        if (currentPage.includes("peinturecollection") && typeof changelanguecollection === "function") {
+
+    if (
+        currentPage.includes("peinturecollection") &&
+        typeof changelanguecollection === "function"
+    ) {
         changelanguecollection();
-
     }
-            if (currentPage.includes("pourquoi") && typeof changelanguepourquoi === "function") {
+
+    if (
+        currentPage.includes("pourquoi") &&
+        typeof changelanguepourquoi === "function"
+    ) {
         changelanguepourquoi();
-
     }
-           if (currentPage.includes("index") && typeof changelangueindex === "function") {
+
+    if (
+        currentPage.includes("index") &&
+        typeof changelangueindex === "function"
+    ) {
         changelangueindex();
     }
-    if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
+
+    if (
+        currentPage.includes("horaires") &&
+        typeof changelanguehoraires === "function"
+    ) {
         changelanguehoraires();
     }
-
 }
 
 function changelanguepourquoi() {
