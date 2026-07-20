@@ -515,6 +515,244 @@ function initScrollBehaviors() {
     update();
 }
 
+// ────────────────────────────────────────────────
+// Simulateur de devis — logique tarifaire
+// ────────────────────────────────────────────────
+
+const niveauLabels = {
+    niveau1: "Niveau Gold - Niv3, Qualité supérieur : 🔍 Parfait pour valoriser les figurines de jeu. Notre recommandation.",
+    niveau2: "Niveau Diamant - Niv4, Qualité supérieur ultime : 🎨 Chaque pièce devient une œuvre d’art. Pour les pièces principales.",
+};
+
+const niveauLabelsmini = {
+    niveau1: "Gold",
+    niveau2: "Diamant",
+};
+
+
+const tarifheureeu = 20;
+const tarifheureus = 25;
+
+let tarifheure = tarifheureeu;
+let symboleDevise = "€";
+
+
+const TarifLangLabels = {
+    english: "Rates 2026-2027",
+     french: "Tarif 2026-2027",
+    spanish: "Tarifas 2026-2027",
+};
+
+
+
+function mettreAJourTarifLangue() {
+
+    if (currentLanguage === "english") {
+        tarifheure = tarifheureus;
+        symboleDevise = "$";
+
+    } else {
+        tarifheure = tarifheureeu;
+        symboleDevise = "€";
+    }
+
+}
+
+
+
+// =======================
+// TARIFS
+// =======================
+
+const tariffs = {
+
+    petiteinfanterie: { niveau1: 0.5, niveau2: 1 },
+    infanterie: { niveau1: 1, niveau2: 2 },
+    infanterieelite: { niveau1: 1.5, niveau2: 3 },
+
+    personnage: { niveau1: 3, niveau2: 6 },
+    personnageelite: { niveau1: 4, niveau2: 8 },
+    personnagemonstrueux: { niveau1: 6, niveau2: 12 },
+
+    personnagesurmonstre: { niveau1: 8, niveau2: 16 },
+    personnagesurgrandmonstre: { niveau1: 12, niveau2: 24 },
+
+    cavalerie: { niveau1: 2, niveau2: 4 },
+    cavalerielourde: { niveau1: 3, niveau2: 6 },
+
+    petitvehiculemonstre: { niveau1: 3, niveau2: 6 },
+    vehiculemonstremoyen: { niveau1: 5, niveau2: 10 },
+    grosvehiculemonstre: { niveau1: 8, niveau2: 16 },
+    enormevehiculemonstre: { niveau1: 12, niveau2: 24 },
+
+    titanvehiculemonstre: { niveau1: 18, niveau2: 36 }
+
+};
+
+const categories = Object.keys(tariffs);
+
+// =======================
+// NOMS DES CATEGORIES
+// =======================
+
+const categoriesLabel = {
+
+    petiteinfanterie: {
+        fr: "Infanterie 20-25mm",
+        en: "Infantry 20-25mm",
+        es: "Infantería 20-25mm"
+    },
+
+    infanterie: {
+        fr: "Infanterie 28-32mm",
+        en: "Infantry 28-32mm",
+        es: "Infantería 28-32mm"
+    },
+
+    infanterieelite: {
+        fr: "Infanterie élite 40-50mm",
+        en: "Elite Infantry 40-50mm",
+        es: "Infantería élite 40-50mm"
+    },
+
+    personnage: {
+        fr: "Personnage à pied 25-32mm",
+        en: "Foot Character 25-32mm",
+        es: "Personaje a pie 25-32mm"
+    },
+
+    personnageelite: {
+        fr: "Personnage élite 40-50mm",
+        en: "Elite Character 40-50mm",
+        es: "Personaje élite 40-50mm"
+    },
+
+    personnagemonstrueux: {
+        fr: "Personnage monstrueux 60-100mm",
+        en: "Monstrous Character 60-100mm",
+        es: "Personaje monstruoso 60-100mm"
+    },
+
+    personnagesurmonstre: {
+        fr: "Personnage sur monstre 120mm",
+        en: "Character Mounted on Monster 120mm",
+        es: "Personaje sobre monstruo 120mm"
+    },
+
+    personnagesurgrandmonstre: {
+        fr: "Personnage sur grand monstre",
+        en: "Character Mounted on Large Monster",
+        es: "Personaje sobre gran monstruo"
+    },
+
+    cavalerie: {
+        fr: "Cavalerie 60-75mm",
+        en: "Cavalry 60-75mm",
+        es: "Caballería 60-75mm"
+    },
+
+    cavalerielourde: {
+        fr: "Cavalerie lourde 90-105mm",
+        en: "Heavy Cavalry 90-105mm",
+        es: "Caballería pesada 90-105mm"
+    },
+
+    petitvehiculemonstre: {
+        fr: "Petit véhicule / monstre",
+        en: "Small Vehicle / Monster",
+        es: "Vehículo pequeño / Monstruo"
+    },
+
+    vehiculemonstremoyen: {
+        fr: "Véhicule / monstre moyen",
+        en: "Medium Vehicle / Monster",
+        es: "Vehículo mediano / Monstruo"
+    },
+
+    grosvehiculemonstre: {
+        fr: "Gros véhicule / monstre",
+        en: "Large Vehicle / Monster",
+        es: "Vehículo grande / Monstruo"
+    },
+
+    enormevehiculemonstre: {
+        fr: "Énorme véhicule / monstre",
+        en: "Huge Vehicle / Monster",
+        es: "Vehículo enorme / Monstruo"
+    },
+
+    titanvehiculemonstre: {
+        fr: "Titanesque",
+        en: "Titanic",
+        es: "Titánico"
+    }
+
+};
+
+
+
+// =======================
+// GENERATION TABLE TARIFS
+// =======================
+
+function genererTableTarifs() {
+
+
+    const tbody = document.getElementById("tarifTableBody");
+
+    if (!tbody) {
+        console.error("Table tarifTableBody introuvable");
+        return;
+    }
+
+
+    mettreAJourTarifLangue();
+
+
+    tbody.innerHTML = "";
+
+
+    let langue = currentLanguage === "english" ? "en" :
+                 currentLanguage === "spanish" ? "es" : "fr";
+
+
+
+    Object.keys(tariffs).forEach(categorie => {
+
+
+        if (!categoriesLabel[categorie]) {
+            console.warn("Catégorie manquante :", categorie);
+            return;
+        }
+
+
+        let ligne = document.createElement("tr");
+
+
+        ligne.innerHTML = `
+
+            <td>
+                ${categoriesLabel[categorie][langue]}
+            </td>
+
+            <td>
+                ${tariffs[categorie].niveau1}h /
+                ${(tariffs[categorie].niveau1 * tarifheure).toFixed(0)}${symboleDevise}
+            </td>
+
+            <td>
+                ${tariffs[categorie].niveau2}h /
+                ${(tariffs[categorie].niveau2 * tarifheure).toFixed(0)}${symboleDevise}
+            </td>
+
+        `;
+
+
+        tbody.appendChild(ligne);
+
+    });
+
+}
 
   function scrollToTop() {
     // 1. Remonter tout en haut de la page (toujours)
