@@ -776,9 +776,9 @@ h3 {
 }
 
 p {
-       font-size: clamp(20px, 1.2vw, 22px);
+       font-size: clamp(28px, 1.2vw, 22px);
     line-height: 1.8;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--text-p);
     
 }
