@@ -284,7 +284,9 @@ body {
 }
 
 .header-contact a {
-    color:var(--header-color);
+    padding: 10px;
+     margin-right:60px;
+    color:var(--text-a);
     font-size:1.35rem;
     text-decoration:none;
     transition:.25s ease;
@@ -324,6 +326,11 @@ body {
     font-weight: 600;
     position: relative;
     transition: color 0.3s ease;
+}
+.contact-list a {
+position: relative;
+   color: var(--text-a);
+   
 }
 @media (max-width: 768px) {
       .maintenance-box p {
@@ -379,7 +386,7 @@ text-shadow: var(--shadow-p-box-mob);
     height:auto;
     width:70px;
 }
-   .ontainer {
+   .container {
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
@@ -2029,7 +2036,7 @@ body.no-maintenance-bg{
        --scroll-bg: #FAFAFA;
     --scroll-chover :#FFD700;
     --scroll-c:#FFD700;
-    --text:#C2C2C;
+    --text:#C2C2C2;
  --footer-p: #e8d9c0;
       --footer-ahover: #F7B845;
     /*  Box - Mode Sombre */
