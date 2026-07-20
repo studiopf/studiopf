@@ -234,9 +234,9 @@ type="image/png">
         </div>
     </div>
 </nav>
-
+ <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
     </header>
-      <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
+     
     
   <body>
     
@@ -719,37 +719,6 @@ Découvrez les prestations proposées :
 
 
        </main>
-<script>
-
-document.addEventListener("DOMContentLoaded", function(){
-
-let currentSlide = 0;
-const carroussel = document.getElementById("carroussel");
-const slides = document.querySelectorAll("#carroussel img");
-const totalSlides = slides.length;
-
-function moveSlide(direction){
-
-    currentSlide += direction;
-
-    if(currentSlide >= totalSlides){
-        currentSlide = 0;
-    }
-
-    if(currentSlide < 0){
-        currentSlide = totalSlides - 1;
-    }
-
-    carroussel.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
-
-setInterval(function(){
-    moveSlide(1);
-},3000);
-
-});
-
-</script>
 
 
 
