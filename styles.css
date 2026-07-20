@@ -11,15 +11,28 @@
 .maintenance-box {
     width: 100%;
     max-width: 1600px;
-    margin: 15px auto;
-    padding: 0;
+    margin: 10px auto 0;
 
-    display: block;
     position: relative;
-
     overflow: hidden;
 
-    border-bottom: 2px solid var(--box-border, #f4c876);
+    text-align: center;
+
+    background: var(--maintenance-bg);
+
+    border-top: 1px solid var(--maintenance-border-top);
+    border-bottom: 1px solid var(--maintenance-border-bottom);
+    border-left: none;
+    border-right: none;
+
+    border-radius: 0;
+
+    box-shadow: var(--maintenance-shadow);
+
+    transition:
+        background .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
 }
 
 /* Le bouton reste toujours visible */
