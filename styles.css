@@ -24,8 +24,8 @@
 
 /* Le bouton reste toujours visible */
 .maintenance-header {
-    width: 100%;
-    min-height: 60px;
+     width: 100%;
+    max-width: 1600px;
     padding: 0px 0px;
 
     display: flex;
@@ -82,8 +82,8 @@
 
 /* Contenu visible par défaut */
 .maintenance-content {
-    display: block;
-    width: 100%;
+     width: 100%;
+    max-width: 1600px;
     padding: 0px 0px 0px;
 
     box-sizing: border-box;
@@ -121,16 +121,18 @@
 
     .maintenance-box {
         margin: 10px auto;
+        width: 100%;
+    max-width: 800px;
     }
 
     .maintenance-header {
-        min-height: 55px;
         padding: 0px 0px;
-
+  max-width: 800px;
         font-size: 17px;
     }
 
     .maintenance-content {
+         max-width: 800px;
         padding: 0px 0px 2px;
     }
 
@@ -201,7 +203,7 @@ body {
    margin-top: 12px;
     margin-bottom: 0;
    width: 100%;
-    max-width: 1900px;
+    max-width: 800px;
     position: relative;
     text-align: center;
    background:var(--box-bg);
@@ -215,7 +217,7 @@ body {
     text-align: center;
 }
 .maintenance-box-part {
-   width: calc(100% - 30px);
+   width: 100%;
     margin-top: 12px;
     margin-bottom: 0;
       max-width: 1900px;
@@ -312,18 +314,22 @@ text-shadow: var(--shadow-p-box-mob);
    margin-top: 0;
     margin-bottom: 0;
     border: 0px;
-       max-width: 700px;
-    width: calc(100% - 30px);
+       max-width: 760px;
+    width: 100%;
     position: relative;
     text-align: center;
 }
    
    .maintenance-box {
-       max-width: 700px;
-    width: calc(100% - 30px);
+       max-width: 760px;
+    width: 100%;
 }
+   .maintenance-content {
+     width: 100%;
+    max-width: 760px;
+   }
    .maintenance-box-part {
-     width: calc(100% - 30px);
+     width: 100%;
     margin-top: 12px;
     margin-bottom: 0;
       max-width: 700px;
@@ -414,7 +420,7 @@ textarea {
 }
 .ajust {
     max-width: 1900px;
-    width: calc(100% - 30px);
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     line-height: 1.9;
@@ -1334,6 +1340,7 @@ nav {
     position: relative;
     text-align: center;
 }
+   
    .gallery {
     max-width: 600px;
     margin: 0;
@@ -1348,15 +1355,15 @@ nav {
 }
     .widget-container {
         width: 100%;
-        max-width: 600px;
+        max-width: 640px;
     }
      .widget {
         width: 100%;
-        max-width: 600px;
+        max-width: 640px;
     }
       /* Filigrane */
  .maintenance-box-part {
-     width: calc(100% - 30px);
+     width: 100%;
     margin-top: 20px;
     margin-bottom: 0;
       max-width: 640px;
@@ -1364,17 +1371,21 @@ nav {
     text-align: center;
 }
     .maintenance-box {
-           max-width: 600px;
-    width: calc(100% - 30px);
+           max-width: 640px;
+    width: 100%;
 }
+      .maintenance-content {
+     width: 100%;
+    max-width: 640px;
+   }
 
       .maintenance-boxpartenaire {
     width: 100%;
-    max-width: 600px;
+    max-width: 640px;
 }
 .maintenance-box-fieldset {
       width: 100%;
-    max-width: 600px;
+    max-width: 640px;
 }
 
    .social-bloc-vide
@@ -1465,7 +1476,7 @@ body.light-mode .cardpartenaire2 {
 }
 
    li, .p-social {
-   font-size: 12px;
+   font-size: 11px;
     line-height: 1.6;
     text-align: center;
    margin-top: 4px;
@@ -1649,6 +1660,15 @@ body.light-mode .cardpartenaire2 {
     position: relative;
     text-align: center;
 }
+   .info {
+    background: linear-gradient(to bottom, #8B0000, #FF6347);
+
+    position: relative;
+      font-size: 8px;
+
+    text-shadow: 1px 1px 2px #555;
+
+}
 
    .gallery {
     max-width: 400px;
@@ -1672,7 +1692,7 @@ body.light-mode .cardpartenaire2 {
         max-width: 350px;
     }
  .maintenance-box-part {
-     width: calc(100% - 30px);
+     width: 100%;
     margin-top: 12px;
     margin-bottom: 0;
       max-width: 400px;
@@ -1681,11 +1701,15 @@ body.light-mode .cardpartenaire2 {
 }
     .maintenance-box {
        max-width: 400px;
-    width: calc(100% - 30px);
+    width: 100%;
 }
+      .maintenance-content {
+     width: 100%;
+    max-width: 400px;
+   }
          .maintenance-boxpartenaire {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
 }
 .maintenance-box-fieldset {
       width: 100%;
