@@ -213,6 +213,10 @@ changelangueinfo();
         changelangueforma();
         initializeFormationForm();
     }
+        if (currentPage.includes("simulateur_devis") && typeof changelanguesimu === "function") {
+        changelanguesimu();
+            initializeFormCalculations();
+    }
             if (currentPage.includes("quisuisje") && typeof changelanguequisuisje === "function") {
   changelanguequisuisje();
     }
@@ -245,33 +249,7 @@ changelangueinfo();
     if (currentPage.includes("horaires") && typeof changelanguehoraires === "function") {
         changelanguehoraires();
     }
-function initializeMaintenanceBoxes() {
-    document.querySelectorAll(".maintenance-box").forEach(function (box) {
-        const header = box.querySelector(".maintenance-header");
-        const content = box.querySelector(".maintenance-content");
-        const arrow = box.querySelector(".maintenance-arrow");
 
-        if (!header || !content) return;
-
-        const isCollapsed = box.classList.contains("is-collapsed");
-
-        header.setAttribute(
-            "aria-expanded",
-            isCollapsed ? "false" : "true"
-        );
-
-        content.hidden = isCollapsed;
-
-        if (arrow) {
-            arrow.textContent = isCollapsed ? "▼" : "▲";
-        }
-    });
-}
-
-document.addEventListener(
-    "DOMContentLoaded",
-    initializeMaintenanceBoxes
-);
 }
 
 function changelanguepourquoi() {
@@ -548,10 +526,11 @@ De la première prise de contact jusqu'à la livraison, je mets tout en œuvre p
         </p>
 
 
-           <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
-   class="button">
-     Demander un devis personnalisé 💬
-</a>
+            <a href="simulateur_devis.html"
+               class="button"
+               onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">
+                💬 Demander un devis
+            </a>
 
     </div>
     </div>
@@ -965,7 +944,707 @@ ${prenom} ${nom}`;
 
   window.location.href = mailtoLink;
 }
-   
+    function changelanguesimu() {
+    const main = document.getElementById("contenu-principal");
+    if (!main) return;
+
+    let html = "";
+
+    if (currentLanguage === "english") {
+             html = `
+              <div class="center">
+    <div class="maintenance-box ajust">
+
+             <h1>Quote Request - TableTop+ Commission</h1>
+
+        <form id="contactForm" action="#">
+
+
+
+       <fieldset>
+
+                    <legend>Quote Simulator</legend>
+                    <div class="card fondcusto">
+                        <label for="niveau">Painting Levels :</label><br>
+                      <p>
+    Level ⭐ Gold :<br>
+    Premium TableTop+ finish.<br>
+    🔍 Ideal for armies, collections and gaming miniatures requiring a clean, detailed and efficient result.<br>
+    <em>Our recommendation for most projects.</em><br><br>
+</p>
+<p>
+    Level 👑 Diamond :<br>
+    High-end TableTop++ finish, close to display quality.<br>
+    🎨 Each miniature becomes a unique piece with more details, contrasts and artistic work.<br>
+    <em>Intended for centerpiece miniatures, iconic characters and collector pieces.</em><br><br>
+</p>
+                        <p>Basing is included.</p>
+                        <select id="niveau" class="select" name="niveau" required>
+                            <option value="" disabled hidden>Choose a level</option>
+                            <option value="niveau1" selected>Gold - TableTop+ lvl3</option>
+                            <option value="niveau2">Diamond - TableTop++ lvl4</option>
+
+                        </select>
+                       
+                    </div>
+
+
+       <div class="maintenance-box ajust">
+                    <div id="petiteinfanterie" class="cardform">
+                        <label for="petiteinfanterie-input">Number of <strong>Infantry base 20-25mm</strong> :</label>
+                        <p>Example: Skinks, Battle Dwarfs, Skeletons, Goblins, Plaguebearers...</p>
+                        <p>Unit price : <span id="prixpetiteinfanterie">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpetiteinfanterie">0.00</span> €</p>
+                        <input type="number" id="petiteinfanterie-input" name="petiteinfanterie" min="0">
+                    </div>
+                    <div id="infanterie" class="cardform">
+                        <label for="infanterie-input">Number of <strong>Infantry base 28-32mm</strong> :</label>
+                        <p>Example: Space Marines, Stormcast, Votann, Sisters of Battle, Eldar...</p>
+                        <p>Unit price : <span id="prixinfanterie">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalinfanterie">0.00</span> €</p>
+                        <input type="number" id="infanterie-input" name="infanterie" min="0">
+                    </div>
+                    <div id="infanterieelite" class="cardform">
+                        <label for="infanterieelite-input">Number of <strong>Elite Infantry base 40-50mm</strong> :</label>
+                        <p>Example: Terminators, Custodes, Kroxigors, Tyranid Warriors...</p>
+                        <p>Unit price : <span id="prixinfanterieelite">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalinfanterieelite">0.00</span> €</p>
+                        <input type="number" id="infanterieelite-input" name="infanterieelite" min="0">
+                    </div>
+                    <div id="personnage" class="cardform">
+                        <label for="personnage-input">Number of <strong>Foot Characters base 25-32mm</strong> :</label>
+                        <p>Example: Space Marine Captain/Sergeant, Wizard...</p>
+                        <p>Unit price : <span id="prixpersonnage">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnage">0.00</span> €</p>
+                        <input type="number" id="personnage-input" name="personnage" min="0">
+                    </div>
+                    <div id="personnageelite" class="cardform">
+                        <label for="personnageelite-input">Number of <strong>Elite Foot Characters base 40-50mm</strong> :</label>
+                        <p>Example: Space Marine Captain/Sergeant in Phobos armour, Terminator Sorcerer</p>
+                        <p>Unit price : <span id="prixpersonnageelite">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnageelite">0.00</span> €</p>
+                        <input type="number" id="personnageelite-input" name="personnageelite" min="0">
+                    </div>
+                    <div id="personnagemonstrueux" class="cardform">
+                        <label for="personnagemonstrueux-input">Number of <strong>Monstrous Characters base 60-100mm</strong> :</label>
+                        <p>Example: Primarchs, Treelord, Tyranid Prince...</p>
+                        <p>Unit price : <span id="prixpersonnagemonstrueux">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnagemonstrueux">0.00</span> €</p>
+                        <input type="number" id="personnagemonstrueux-input" name="personnagemonstrueux" min="0">
+                    </div>
+                    <div id="personnagesurmonstre" class="cardform">
+                        <label for="personnagesurmonstre-input">Number of <strong>Characters on Monsters base 120mm oval</strong> :</label>
+                        <p>Example: MetaRodeur, Idoneth Turtle, Saurus on Carnosaur...</p>
+                        <p>Unit price : <span id="prixpersonnagesurmonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnagesurmonstre">0.00</span> €</p>
+                        <input type="number" id="personnagesurmonstre-input" name="personnagesurmonstre" min="0">
+                    </div>
+                    <div id="personnagesurgrandmonstre" class="cardform">
+                        <label for="personnagesurgrandmonstre-input">Number of <strong>Characters on Large Monsters base 130-160mm or larger</strong> :</label>
+                        <p>Example: Fulgrim, Allarielle, Stormcast Dragon, Crocodile Dragon...</p>
+                        <p>Unit price : <span id="prixpersonnagesurgrandmonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnagesurgrandmonstre">0.00</span> €</p>
+                        <input type="number" id="personnagesurgrandmonstre-input" name="personnagesurgrandmonstre" min="0">
+                    </div>
+                    <div id="cavalerie" class="cardform">
+                        <label for="cavalerie-input">Number of <strong>Cavalry base oval 60-75mm</strong> :</label>
+                        <p>Example: Eldar Jetbikes, Idoneth Morenas, Skeleton Cavalry...</p>
+                        <p>Unit price : <span id="prixcavalerie">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalcavalerie">0.00</span> €</p>
+                        <input type="number" id="cavalerie-input" name="cavalerie" min="0">
+                    </div>
+                    <div id="cavalerielourde" class="cardform">
+                        <label for="cavalerielourde-input">Number of <strong>Heavy Cavalry base oval 90-105mm</strong> :</label>
+                        <p>Example: Custodes Jetbikes, Saurus on Aggradon, Idoneth Allopex...</p>
+                        <p>Unit price : <span id="prixcavalerielourde">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalcavalerielourde">0.00</span> €</p>
+                        <input type="number" id="cavalerielourde-input" name="cavalerielourde" min="0">
+                    </div>
+                    <div id="petitvehiculemonstre" class="cardform">
+                        <label for="petitvehiculemonstre-input">Number of <strong>Small Vehicles/Monsters base oval 75-90mm or larger</strong> :</label>
+                        <p>Example: Sentinel, Beast of Nurgle, Drone...</p>
+                        <p>Unit price : <span id="prixpetitvehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpetitvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="petitvehiculemonstre-input" name="petitvehiculemonstre" min="0">
+                    </div>
+                    <div id="vehiculemonstremoyen" class="cardform">
+                        <label for="vehiculemonstremoyen-input">Number of <strong>Medium Vehicles/Monsters base 80-100mm or larger</strong> :</label>
+                        <p>Example: Rhino, Dreadnought, Drone...</p>
+                        <p>Unit price : <span id="prixvehiculemonstremoyen">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalvehiculemonstremoyen">0.00</span> €</p>
+                        <input type="number" id="vehiculemonstremoyen-input" name="vehiculemonstremoyen" min="0">
+                    </div>
+                    <div id="grosvehiculemonstre" class="cardform">
+                        <label for="grosvehiculemonstre-input">Number of <strong>Large Vehicles/Monsters base 90-100mm or larger</strong> :</label>
+                        <p>Example: Predator, Plagueburst, Daemon Prince, Armigers, Mancrusher...</p>
+                        <p>Unit price : <span id="prixgrosvehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalgrosvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="grosvehiculemonstre-input" name="grosvehiculemonstre" min="0">
+                    </div>
+                    <div id="enormevehiculemonstre" class="cardform">
+                        <label for="enormevehiculemonstre-input">Number of <strong>Huge Vehicles/Monsters base 100-130mm or larger</strong> :</label>
+                        <p>Example: Land Raider, Defiler, Aerodyne, Kragnos...</p>
+                        <p>Unit price : <span id="prixenormevehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalenormevehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="enormevehiculemonstre-input" name="enormevehiculemonstre" min="0">
+                    </div>
+                    <div id="titanvehiculemonstre" class="cardform">
+                        <label for="titanvehiculemonstre-input">Number of <strong>Titanic Vehicles/Monsters base 130-160mm or larger</strong> :</label>
+                        <p>Example: Spartan, Imperial Knight, Cogfort, Mega Gargant...</p>
+                        <p>Unit price : <span id="prixtitanvehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totaltitanvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="titanvehiculemonstre-input" name="titanvehiculemonstre" min="0">
+                    </div>
+                    <div id="montage" class="cardform">
+                        <label for="montage-input"><strong>Assembly</strong> required?</label>
+                        <select id="montage-input" name="montage">
+                            <option value="Oui" selected>Yes</option>
+                            <option value="Non">No</option>
+                        </select>
+                    </div>
+                    <div id="aimant" class="cardform">
+                        <label for="aimant-input"><strong>Magnetization</strong> required?</label>
+                        <select id="aimant-input" name="aimant">
+                            <option value="Oui">Yes</option>
+                            <option value="Non" selected>No</option>
+                        </select>
+                    </div>
+                    <div id="total" class="cardform">
+                        <h2 class="total">TOTAL :</h2>
+<h3><span id="oktotal">0.00</span></h3>
+</div></div>
+        </fieldset>
+          <fieldset class="maintenance-box-fieldset fondknigt">
+             <legend>Contact Information</legend>
+                <div class="center">
+                    <label for="nom">Last Name<span>*</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Last Name" required>
+                </div>
+                <div class="center">
+                    <label for="prenom">First Name<span>*</span></label>
+                    <input type="text" id="prenom" name="prenom" placeholder="First Name" required>
+                </div>
+                <div class="center">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="center">
+                    <label for="telephone">Phone<span>*</span></label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Phone" required>
+                </div>
+                <div class="center">
+                    <label for="adresse">Address<span>*</span></label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Address" required>
+                </div>
+                <div class="center">
+                    <label for="cp">Postal Code<span>*</span></label>
+                    <input type="text" id="cp" name="cp" placeholder="Postal Code" required>
+                </div>
+                <div class="center">
+                    <label for="ville">City<span>*</span></label>
+                    <input type="text" id="ville" name="ville" placeholder="City" required>
+                </div>
+                <div class="center">
+                    <label for="pays">Country <span>*</span></label>
+                    <select id="pays" name="pays" required>
+                        <option value="" disabled hidden>Choose a country</option>
+                        <option value="FRANCE" selected>France</option>
+                        <option value="BELGIQUE">Belgium</option>
+                        <option value="LUXEMBOURG">Luxembourg</option>
+                        <option value="SPAIN">Spain</option>
+                        <option value="GERMANY">Germany</option>
+                        <option value="ENGLAND">England</option>
+                        <option value="USA">USA</option>
+                        <option value="Autre">Other (please specify)</option>
+                    </select>
+    </div>
+       </fieldset>
+         <div class="maintenance-box ajust">
+                           <div id="message" class="cardform fondknigt">
+                            <label for="message-input">To be as accurate as possible,<br>please provide the list of miniatures to paint, whether assembly is required,<br>and if you have a specific theme or colour scheme in mind : <span>*</span></label>
+                            <div class="center"><textarea id="message-input" name="message" placeholder="Your message" required></textarea></div>
+
+                    <p><span>*</span> Required fields</p>
+                             <div class="center">
+              <button type="submit" class="button">Send Quote Request by Email</button>
+                   </div> </div>
+
+            </form>
+            </div></div>
+            `;
+    } else if (currentLanguage === "spanish") {
+              html = `
+               <div class="center">
+    <div class="maintenance-box ajust">
+              <h1>Solicitud de Presupuesto comisión TableTop+</h1>
+
+        <form id="contactForm" action="#">
+
+
+
+       <fieldset>
+
+                    <legend>Simulación de presupuesto</legend>
+                   <div class="card fondcusto">
+                        <label for="niveau">Niveles de Pintura :</label><br>
+                      <p>
+    Nivel ⭐ Oro :<br>
+    Acabado TableTop+ de alta calidad.<br>
+    🔍 Ideal para ejércitos, colecciones y miniaturas de juego que requieren un resultado limpio, detallado y eficiente.<br>
+    <em>Nuestra recomendación para la mayoría de los proyectos.</em><br><br>
+</p>
+<p>
+    Nivel 👑 Diamante :<br>
+    Acabado TableTop++ de gama alta, cercano a pieza de exposición.<br>
+    🎨 Cada miniatura se convierte en una pieza única con más detalles, contrastes y trabajo artístico.<br>
+    <em>Destinado a miniaturas principales, personajes emblemáticos y piezas de colección.</em><br><br>
+</p>
+                        <p>El entarimado está incluido.</p>
+                        <select id="niveau" class="select" name="niveau" required>
+                            <option value="" disabled hidden>Elige un nivel</option>
+                            <option value="niveau1" selected>Oro - TableTop+ niv3</option>
+                            <option value="niveau2">Diamante - TableTop++ niv4</option>
+
+                        </select>
+                        
+                    </div>
+
+
+       <div class="maintenance-box ajust">
+                    <div id="petiteinfanterie" class="cardform">
+                        <label for="petiteinfanterie-input">Número de <strong>Infantería peana 20-25mm</strong> :</label>
+                        <p>Ejemplo: Skinks, Enanos Battle, Esqueletos, Goblins, Pútridos...</p>
+                        <p>Precio unitario : <span id="prixpetiteinfanterie">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpetiteinfanterie">0.00</span> €</p>
+                        <input type="number" id="petiteinfanterie-input" name="petiteinfanterie" min="0">
+                    </div>
+                    <div id="infanterie" class="cardform">
+                        <label for="infanterie-input">Número de <strong>Infantería peana 28-32mm</strong> :</label>
+                        <p>Ejemplo: Space Marines, Stormcast, Votann, Hermanas de Batalla, Eldar...</p>
+                        <p>Precio unitario : <span id="prixinfanterie">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalinfanterie">0.00</span> €</p>
+                        <input type="number" id="infanterie-input" name="infanterie" min="0">
+                    </div>
+                    <div id="infanterieelite" class="cardform">
+                        <label for="infanterieelite-input">Número de <strong>Infantería élite peana 40-50mm</strong> :</label>
+                        <p>Ejemplo: Terminators, Custodes, Kroxigors, Guerreros Tyranid...</p>
+                        <p>Precio unitario : <span id="prixinfanterieelite">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalinfanterieelite">0.00</span> €</p>
+                        <input type="number" id="infanterieelite-input" name="infanterieelite" min="0">
+                    </div>
+                    <div id="personnage" class="cardform">
+                        <label for="personnage-input">Número de <strong>Personajes a Pie peana 25-32mm</strong> :</label>
+                        <p>Ejemplo: Capitán/Sargento Space Marines, Hechicero...</p>
+                        <p>Precio unitario : <span id="prixpersonnage">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnage">0.00</span> €</p>
+                        <input type="number" id="personnage-input" name="personnage" min="0">
+                    </div>
+                    <div id="personnageelite" class="cardform">
+                        <label for="personnageelite-input">Número de <strong>Personajes élite a Pie peana 40-50mm</strong> :</label>
+                        <p>Ejemplo: Capitán/Sargento Space Marines en armadura Phobos, Hechicero en armadura terminator</p>
+                        <p>Precio unitario : <span id="prixpersonnageelite">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnageelite">0.00</span> €</p>
+                        <input type="number" id="personnageelite-input" name="personnageelite" min="0">
+                    </div>
+                    <div id="personnagemonstrueux" class="cardform">
+                        <label for="personnagemonstrueux-input">Número de <strong>Personajes Monstruosos peana 60-100mm</strong> :</label>
+                        <p>Ejemplo: Primarcas, Treelord, Príncipe Tyranid...</p>
+                        <p>Precio unitario : <span id="prixpersonnagemonstrueux">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnagemonstrueux">0.00</span> €</p>
+                        <input type="number" id="personnagemonstrueux-input" name="personnagemonstrueux" min="0">
+                    </div>
+                    <div id="personnagesurmonstre" class="cardform">
+                        <label for="personnagesurmonstre-input">Número de <strong>Personajes sobre Monstruos peana 120mm oval</strong> :</label>
+                        <p>Ejemplo: MetaRodeur, Tortuga Idoneth, Saurus sobre Carnosaurio...</p>
+                        <p>Precio unitario : <span id="prixpersonnagesurmonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnagesurmonstre">0.00</span> €</p>
+                        <input type="number" id="personnagesurmonstre-input" name="personnagesurmonstre" min="0">
+                    </div>
+                    <div id="personnagesurgrandmonstre" class="cardform">
+                        <label for="personnagesurgrandmonstre-input">Número de <strong>Personajes sobre Grandes Monstruos peana 130-160mm o superior</strong> :</label>
+                        <p>Ejemplo: Fulgrim, Allarielle, Dragón Stormcast, Dragón Cocodrilo...</p>
+                        <p>Precio unitario : <span id="prixpersonnagesurgrandmonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpersonnagesurgrandmonstre">0.00</span> €</p>
+                        <input type="number" id="personnagesurgrandmonstre-input" name="personnagesurgrandmonstre" min="0">
+                    </div>
+                    <div id="cavalerie" class="cardform">
+                        <label for="cavalerie-input">Número de <strong>Caballería peana oval 60-75mm</strong> :</label>
+                        <p>Ejemplo: Motos Eldar, Morenas Idoneth, Caballería esqueletos...</p>
+                        <p>Precio unitario : <span id="prixcavalerie">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalcavalerie">0.00</span> €</p>
+                        <input type="number" id="cavalerie-input" name="cavalerie" min="0">
+                    </div>
+                    <div id="cavalerielourde" class="cardform">
+                        <label for="cavalerielourde-input">Número de <strong>Caballería pesada peana oval 90-105mm</strong> :</label>
+                        <p>Ejemplo: Motos Custodes, Saurus sobre Aggradon, Allopex Idoneth...</p>
+                        <p>Precio unitario : <span id="prixcavalerielourde">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalcavalerielourde">0.00</span> €</p>
+                        <input type="number" id="cavalerielourde-input" name="cavalerielourde" min="0">
+                    </div>
+                    <div id="petitvehiculemonstre" class="cardform">
+                        <label for="petitvehiculemonstre-input">Número de <strong>Pequeños Vehículos/Monstruos peana oval 75-90mm o superior</strong> :</label>
+                        <p>Ejemplo: Sentinel, Bestia de Nurgle, Dron...</p>
+                        <p>Precio unitario : <span id="prixpetitvehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalpetitvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="petitvehiculemonstre-input" name="petitvehiculemonstre" min="0">
+                    </div>
+                    <div id="vehiculemonstremoyen" class="cardform">
+                        <label for="vehiculemonstremoyen-input">Número de <strong>Vehículos/Monstruos Medianos peana 80-100mm o superior</strong> :</label>
+                        <p>Ejemplo: Rhino, Dreadnought, Dron...</p>
+                        <p>Precio unitario : <span id="prixvehiculemonstremoyen">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalvehiculemonstremoyen">0.00</span> €</p>
+                        <input type="number" id="vehiculemonstremoyen-input" name="vehiculemonstremoyen" min="0">
+                    </div>
+                    <div id="grosvehiculemonstre" class="cardform">
+                        <label for="grosvehiculemonstre-input">Número de <strong>Grandes Vehículos/Monstruos peana 90-100mm o superior</strong> :</label>
+                        <p>Ejemplo: Predator, Plague Burst, Príncipe Demonio, Armigers, Mancrusher...</p>
+                        <p>Precio unitario : <span id="prixgrosvehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalgrosvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="grosvehiculemonstre-input" name="grosvehiculemonstre" min="0">
+                    </div>
+                    <div id="enormevehiculemonstre" class="cardform">
+                        <label for="enormevehiculemonstre-input">Número de <strong>Enormes Vehículos/Monstruos peana 100-130 o superior</strong> :</label>
+                        <p>Ejemplo: Land Raider, Defiler, Aerodyne, Kragnos...</p>
+                        <p>Precio unitario : <span id="prixenormevehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totalenormevehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="enormevehiculemonstre-input" name="enormevehiculemonstre" min="0">
+                    </div>
+                    <div id="titanvehiculemonstre" class="cardform">
+                        <label for="titanvehiculemonstre-input">Número de <strong>Vehículos/Monstruos Titánicos peana 130-160mm o superior</strong> :</label>
+                        <p>Ejemplo: Spartan, Imperial Knight, Cogfort, Mega Gargant...</p>
+                        <p>Precio unitario : <span id="prixtitanvehiculemonstre">0.00</span> €</p>
+                        <p>Subtotal : <span id="totaltitanvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="titanvehiculemonstre-input" name="titanvehiculemonstre" min="0">
+                    </div>
+                    <div id="montage" class="cardform">
+                        <label for="montage-input"><strong>Montaje</strong> previsto ?</label>
+                        <select id="montage-input" name="montage">
+                            <option value="Oui" selected>Sí</option>
+                            <option value="Non">No</option>
+                        </select>
+                    </div>
+                    <div id="aimant" class="cardform">
+                        <label for="aimant-input"><strong>Imán</strong> previsto ?</label>
+                        <select id="aimant-input" name="aimant">
+                            <option value="Oui">Sí</option>
+                            <option value="Non" selected>No</option>
+                        </select>
+                    </div>
+                    <div id="total" class="cardform">
+                        <h2 class="total">TOTAL :</h2>
+<h3><span id="oktotal">0.00</span></h3>
+</div></div>
+        </fieldset>
+          <fieldset>
+             <legend>Datos de contacto</legend>
+                <div class="center">
+                    <label for="nom">Nombre<span>*</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Nombre" required>
+                </div>
+                <div class="center">
+                    <label for="prenom">Apellido<span>*</span></label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Apellido" required>
+                </div>
+                <div class="center">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="center">
+                    <label for="telephone">Teléfono<span>*</span></label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Teléfono" required>
+                </div>
+                <div class="center">
+                    <label for="adresse">Dirección<span>*</span></label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Dirección" required>
+                </div>
+                <div class="center">
+                    <label for="cp">Código Postal<span>*</span></label>
+                    <input type="text" id="cp" name="cp" placeholder="Código Postal" required>
+                </div>
+                <div class="center">
+                    <label for="ville">Ciudad<span>*</span></label>
+                    <input type="text" id="ville" name="ville" placeholder="Ciudad" required>
+                </div>
+                <div class="center">
+                    <label for="pays">País <span>*</span></label>
+                    <select id="pays" name="pays" required>
+                        <option value="" disabled hidden>Elige un país</option>
+                        <option value="FRANCE" selected>Francia</option>
+                        <option value="BELGIQUE">Bélgica</option>
+                        <option value="LUXEMBOURG">Luxemburgo</option>
+                        <option value="SPAIN">España</option>
+                        <option value="GERMANY">Alemania</option>
+                        <option value="ENGLAND">Inglaterra</option>
+                        <option value="USA">USA</option>
+                        <option value="Autre">Otro (por favor especificar)</option>
+                    </select>
+    </div>
+       </fieldset>
+         <div class="maintenance-box ajust">
+                           <div id="message" class="cardform fondknigt">
+                            <label for="message-input">Para ser lo más preciso posible,<br>por favor indica la lista de miniaturas a pintar, si se necesita montaje,<br>y si tienes un tema o esquema de colores ya definido : <span>*</span></label>
+                            <div class="center"><textarea id="message-input" name="message" placeholder="Tu mensaje" required></textarea></div>
+
+                    <p><span>*</span> Campos obligatorios</p>
+                             <div class="center">
+              <button type="submit" class="button">Enviar solicitud por correo</button>
+                   </div> </div>
+
+            </form>
+            </div> </div>
+              `;
+    } else {
+        html = `
+         <div class="center">
+    <div class="maintenance-box ajust">
+
+                          <h1>Demande de Devis commission TableTop+</h1>
+
+
+        <form id="contactForm" action="#">
+
+
+
+       <fieldset>
+
+                    <legend>Simulation de devis</legend>
+                    <div class="card fondcusto">
+                        <label for="niveau">Niveaux de Peinture :</label><br>
+                      <p>
+    Niveau ⭐ Gold :<br>
+    Finition TableTop+ de qualité supérieure.<br>
+    🔍 Idéal pour les armées, les collections et les figurines de jeu nécessitant un rendu propre, détaillé et efficace.<br>
+    <em>Notre recommandation pour la majorité des projets.</em><br><br>
+</p>
+
+<p>
+    Niveau 👑 Diamant :<br>
+    Finition TableTop++ haut de gamme, proche de la pièce d’exposition.<br>
+    🎨 Chaque figurine devient une pièce unique avec davantage de détails, de contrastes et de travail artistique.<br>
+    <em>Destiné aux figurines principales, personnages emblématiques et pièces de collection.</em><br><br>
+</p>
+                        <p>Le soclage est inclus.</p>
+                        <select id="niveau" class="select" name="niveau" required>
+                            <option value="" disabled hidden>Choisissez un niveau</option>
+                            <option value="niveau1" selected>Gold - TableTop+ niv3</option>
+                            <option value="niveau2">Diamant - TableTop++ niv4</option>
+
+                        </select>
+                      
+                    </div>
+
+
+       <div class="maintenance-box ajust">
+                    <div id="petiteinfanterie" class="cardform">
+                        <label for="petiteinfanterie-input">Nombre de <strong>Infanteries socle 20-25mm</strong> :</label>
+                        <p>Exemple : Skinks, Nains Battle, Squelettes, Gobelins, Veroleux...</p>
+                        <p>Prix unitaire : <span id="prixpetiteinfanterie">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalpetiteinfanterie">0.00</span> €</p>
+                        <input type="number" id="petiteinfanterie-input" name="petiteinfanterie" min="0">
+                    </div>
+
+                    <div id="infanterie" class="cardform">
+                        <label for="infanterie-input">Nombre d'<strong>Infanteries socle 28-32mm</strong> :</label>
+                        <p>Exemple : Space Marines, Stormcast, Votann, Soeurs de Bataille, Eldar...</p>
+                        <p>Prix unitaire : <span id="prixinfanterie">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalinfanterie">0.00</span> €</p>
+                        <input type="number" id="infanterie-input" name="infanterie" min="0">
+                    </div>
+
+                    <div id="infanterieelite" class="cardform">
+                        <label for="infanterieelite-input">Nombre d'<strong>Infanteries élite socle 40-50mm</strong> :</label>
+                        <p>Exemple : Terminators, Custodes, Kroxigors, Guerriers Tyranid...</p>
+                        <p>Prix unitaire : <span id="prixinfanterieelite">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalinfanterieelite">0.00</span> €</p>
+                        <input type="number" id="infanterieelite-input" name="infanterieelite" min="0">
+                    </div>
+
+                    <div id="personnage" class="cardform">
+                        <label for="personnage-input">Nombre de <strong>Personnages à Pied socle 25-32mm</strong> :</label>
+                        <p>Exemple : Capitaine/Sergeant Space Marines, Sorcier...</p>
+                        <p>Prix unitaire : <span id="prixpersonnage">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalpersonnage">0.00</span> €</p>
+                        <input type="number" id="personnage-input" name="personnage" min="0">
+                    </div>
+
+                    <div id="personnageelite" class="cardform">
+                        <label for="personnageelite-input">Nombre de <strong>Personnages élite à Pied socle 40-50mm</strong> :</label>
+                        <p>Exemple : Capitaine/Sergeant Space Marines en armure Phobos, Sorcier armure terminator</p>
+                        <p>Prix unitaire : <span id="prixpersonnageelite">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalpersonnageelite">0.00</span> €</p>
+                        <input type="number" id="personnageelite-input" name="personnageelite" min="0">
+                    </div>
+
+                    <div id="personnagemonstrueux" class="cardform">
+                        <label for="personnagemonstrueux-input">Nombre de <strong>Personnages Monstrueux socle 60-100mm</strong> :</label>
+                        <p>Exemple : Primarques, Treelord, Prince Tyranid...</p>
+                        <p>Prix unitaire : <span id="prixpersonnagemonstrueux">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalpersonnagemonstrueux">0.00</span> €</p>
+                        <input type="number" id="personnagemonstrueux-input" name="personnagemonstrueux" min="0">
+                    </div>
+
+                    <div id="personnagesurmonstre" class="cardform">
+                        <label for="personnagesurmonstre-input">Nombre de <strong>Personnages sur Monstres socle 120mm ovale</strong> :</label>
+                        <p>Exemple : MetaRodeur, Tortue Idoneth, Saurus sur Carnosaure...</p>
+                        <p>Prix unitaire : <span id="prixpersonnagesurmonstre">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalpersonnagesurmonstre">0.00</span> €</p>
+                        <input type="number" id="personnagesurmonstre-input" name="personnagesurmonstre" min="0">
+                    </div>
+
+                    <div id="personnagesurgrandmonstre" class="cardform">
+                        <label for="personnagesurgrandmonstre-input">Nombre de <strong>Personnages sur Grand Monstres socle 130-160mm ou supérieur</strong> :</label>
+                        <p>Exemple : Fulgrim, Allareille, Dragon Stormcast, Dragon Crocodile...</p>
+                        <p>Prix unitaire : <span id="prixpersonnagesurgrandmonstre">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalpersonnagesurgrandmonstre">0.00</span> €</p>
+                        <input type="number" id="personnagesurgrandmonstre-input" name="personnagesurgrandmonstre" min="0">
+                    </div>
+
+                    <div id="cavalerie" class="cardform">
+                        <label for="cavalerie-input">Nombre de <strong>Cavaleries socle ovale 60-75mm</strong> :</label>
+                        <p>Exemple : Motos Eldar, Murènes Idoneth, Cavalerie squelettes...</p>
+                        <p>Prix unitaire : <span id="prixcavalerie">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalcavalerie">0.00</span> €</p>
+                        <input type="number" id="cavalerie-input" name="cavalerie" min="0">
+                    </div>
+
+                    <div id="cavalerielourde" class="cardform">
+                        <label for="cavalerielourde-input">Nombre de <strong>Cavaleries lourdes socle ovale 90-105mm</strong> :</label>
+                        <p>Exemple : Motos Custodes, Saurus sur Aggradon, Allopex Idoneth...</p>
+                        <p>Prix unitaire : <span id="prixcavalerielourde">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalcavalerielourde">0.00</span> €</p>
+                        <input type="number" id="cavalerielourde-input" name="cavalerielourde" min="0">
+                    </div>
+
+                    <div id="petitvehiculemonstre" class="cardform">
+                        <label for="petitvehiculemonstre-input">Nombre de <strong>Petit Véhicules/Monstres socle ovale 75-90mm ou supérieur</strong> :</label>
+                        <p>Exemple : Sentinel, Bête de Nurgle, Drone...</p>
+                        <p>Prix unitaire : <span id="prixpetitvehiculemonstre">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalpetitvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="petitvehiculemonstre-input" name="petitvehiculemonstre" min="0">
+                    </div>
+
+                    <div id="vehiculemonstremoyen" class="cardform">
+                        <label for="vehiculemonstremoyen-input">Nombre de <strong>Véhicules/Monstres Moyen socle 80-100mm ou supérieur</strong> :</label>
+                        <p>Exemple : Rhino, Dreadnought, Drone...</p>
+                        <p>Prix unitaire : <span id="prixvehiculemonstremoyen">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalvehiculemonstremoyen">0.00</span> €</p>
+                        <input type="number" id="vehiculemonstremoyen-input" name="vehiculemonstremoyen" min="0">
+                    </div>
+
+                    <div id="grosvehiculemonstre" class="cardform">
+                        <label for="grosvehiculemonstre-input">Nombre de <strong>Gros Véhicules/Monstres socle 90-100mm ou supérieur</strong> :</label>
+                        <p>Exemple : Prédator, Plague Burst, Prince Démon, Armingers, Mancrusher...</p>
+                        <p>Prix unitaire : <span id="prixgrosvehiculemonstre">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalgrosvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="grosvehiculemonstre-input" name="grosvehiculemonstre" min="0">
+                    </div>
+
+                    <div id="enormevehiculemonstre" class="cardform">
+                        <label for="enormevehiculemonstre-input">Nombre de <strong>Énormes Véhicules/Monstres socle 100-130 ou supérieur</strong> :</label>
+                        <p>Exemple : Land Raider, Defiler, Aerodyne, Kragnos...</p>
+                        <p>Prix unitaire : <span id="prixenormevehiculemonstre">0.00</span> €</p>
+                        <p>Sous Total : <span id="totalenormevehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="enormevehiculemonstre-input" name="enormevehiculemonstre" min="0">
+                    </div>
+
+                    <div id="titanvehiculemonstre" class="cardform">
+                        <label for="titanvehiculemonstre-input">Nombre de <strong>Véhicules/Monstres Titanesques socle 130-160mm ou supérieur</strong> :</label>
+                        <p>Exemple : Spartan, Imperial Knight, Cogfort, Mega Gargant...</p>
+                        <p>Prix unitaire : <span id="prixtitanvehiculemonstre">0.00</span> €</p>
+                        <p>Sous Total : <span id="totaltitanvehiculemonstre">0.00</span> €</p>
+                        <input type="number" id="titanvehiculemonstre-input" name="titanvehiculemonstre" min="0">
+                    </div>
+
+                    <div id="montage" class="cardform">
+                        <label for="montage-input"><strong>Montage</strong> à prévoir ?</label>
+                        <select id="montage-input" name="montage">
+                            <option value="Oui" selected>Oui</option>
+                            <option value="Non">Non</option>
+                        </select>
+                    </div>
+
+                    <div id="aimant" class="cardform">
+                        <label for="aimant-input"><strong>Aimant</strong> à prévoir ?</label>
+                        <select id="aimant-input" name="aimant">
+                            <option value="Oui">Oui</option>
+                            <option value="Non" selected>Non</option>
+                        </select>
+                    </div>
+
+                    <div id="total" class="cardform">
+                        <h2 class="total">TOTAL :</h2>
+<h3><span id="oktotal">0.00</span></h3>
+
+</div></div>
+        </fieldset>
+          <fieldset>
+             <legend>Coordonnées</legend>
+                <div class="center">
+                    <label for="nom">Nom<span>*</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+                <div class="center">
+                    <label for="prenom">Prénom<span>*</span></label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                </div>
+                <div class="center">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="center">
+                    <label for="telephone">Téléphone<span>*</span></label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+                </div>
+                <div class="center">
+                    <label for="adresse">Adresse<span>*</span></label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
+                </div>
+                <div class="center">
+                    <label for="cp">Code Postal<span>*</span></label>
+                    <input type="text" id="cp" name="cp" placeholder="Code Postal" required>
+                </div>
+                <div class="center">
+                    <label for="ville">Ville<span>*</span></label>
+                    <input type="text" id="ville" name="ville" placeholder="Ville" required>
+                </div>
+                <div class="center">
+                    <label for="pays">Pays <span>*</span></label>
+                    <select id="pays" name="pays" required>
+                        <option value="" disabled hidden>Choisissez un pays</option>
+                        <option value="FRANCE" selected>France</option>
+                        <option value="BELGIQUE">Belgique</option>
+                        <option value="LUXEMBOURG">Luxembourg</option>
+                        <option value="SPAIN">SPAIN</option>
+                        <option value="GERMANY">Germany</option>
+                        <option value="ENGLAND">England</option>
+                        <option value="USA">USA</option>
+                        <option value="Autre">Autre (merci de préciser)</option>
+                    </select>
+    </div>
+       </fieldset>
+         <div class="maintenance-box ajust">
+                         <div id="message" class="cardform fondknigt">
+                            <label for="message-input">Afin d'être le plus précis possible,<br>Merci de définir la liste de figurines à peindre, si le montage est nécessaire,<br>et si vous avez un thème ou schéma de couleurs déjà défini : <span>*</span></label>
+                            <div class="center"><textarea id="message-input" name="message" placeholder="Votre message" required></textarea></div>
+
+
+                    <p><span>*</span> Champs obligatoires</p>
+                             <div class="center">
+              <button type="submit" class="button">Envoyer la demande par mail</button>
+                   </div>   </div>
+
+
+
+            </form>
+            </div> </div>
+        `;
+    }
+
+    main.innerHTML = html;
+}
+
+
+
 // =============================
 // INIT AUTO
 // =============================
@@ -3252,10 +3931,7 @@ function changelanguepeinture() {
     <img src="img/armee3.jpg" alt="Exemple d'armée Warhammer peinte"></div>
 </div>
 
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
-   class="button">
-     Demander un devis personnalisé 💬
-</a>
+  <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 </div>
 
 <div class="maintenance-box ajust fonddg">
@@ -3302,10 +3978,8 @@ function changelanguepeinture() {
 </div>
 
 
-      <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
-   class="button">
-     Demander un devis personnalisé 💬
-</a>
+         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
+
 
     </div>
 
@@ -3355,10 +4029,7 @@ function changelanguepeinture() {
         <img src="img/diamant3.jpg" alt="Exemple de figurine peinte niveau Diamant"></div>
     </div>
 
-    <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
-   class="button">
-     Demander un devis personnalisé 💬
-</a>
+         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
 
     </div>
 
@@ -3507,10 +4178,7 @@ function changelanguepeinture() {
 </tbody>
 </table>
         <div>
-    <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
-   class="button">
-     Demander un devis personnalisé 💬
-</a>
+         <a href="simulateur_devis" class="button"  onclick="loadPage('simulateur_devis.html'); scrollToTop(); return false;">Demander un devis 💬</a>
     </div>
   </div>
 
@@ -4193,7 +4861,7 @@ function updateParagraph() {
 
 function initScrollBehaviors() {
     const scrollBtn = document.getElementById("scrollToTopBtn");
-    
+    const scrollBtnTo = document.getElementById("scrollTotal");
     const formSection = document.getElementById("formSection");
 
     // Une navigation dynamique rappelle cette fonction : on retire donc
@@ -4470,8 +5138,181 @@ function genererTableTarifs() {
 
 
 
+function calculateTotals() {
+    const niveauSelect = document.getElementById("niveau");
+    if (!niveauSelect) return;
+
+    const niveau = niveauSelect.value || "niveau1";
+
+    let totalGeneral = 0;
 
 
+    categories.forEach(cat => {
+        const input   = document.getElementById(`${cat}-input`);
+        const prixEl  = document.getElementById(`prix${cat}`);
+        const totalEl = document.getElementById(`total${cat}`);
+
+        if (!input || !prixEl || !totalEl) return;
+
+        const qty = Number(input.value) || 0;
+
+        const unitPrice = (tariffs[cat]?.[niveau] ?? 0) * tarifheure;
+        const catTotal = qty * unitPrice;
+
+        prixEl.textContent  = unitPrice.toFixed(2);
+        totalEl.textContent = catTotal.toFixed(2);
+
+        totalGeneral += catTotal;
+    });
+
+    // 🔥 affichage du total global
+    const totalEl = document.getElementById("oktotal");
+    if (totalEl) {
+     totalEl.textContent = `${totalGeneral.toFixed(2)} ${symboleDevise}`;
+    }
+
+
+
+   // ── Comparaison ──
+    const prevMap = {
+        niveau1: null,
+        niveau2: "niveau1",
+        expo: "niveau2"
+    };
+
+    const prevLevel = prevMap[niveau];
+    let totalPrev = 0;
+
+    if (prevLevel) {
+        categories.forEach(cat => {
+            const qty = Number(document.getElementById(`${cat}-input`)?.value) || 0;
+            const prevPrice = (tariffs[cat]?.[prevLevel] ?? 0) * tarifheure;
+
+            totalPrev += qty * prevPrice;
+        });
+    }
+}
+
+function initializeFormCalculations() {
+    calculateTotals();
+
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+
+        const required = form.querySelectorAll("[required]");
+        let valid = true;
+
+        required.forEach(field => {
+            if (!field.value.trim()) {
+                valid = false;
+                field.classList.add("error");
+            } else {
+                field.classList.remove("error");
+            }
+        });
+
+        if (!valid) {
+            alert("Veuillez remplir tous les champs obligatoires.");
+            return;
+        }
+
+        const data = {
+            nom:      document.getElementById("nom")?.value      || "",
+            prenom:   document.getElementById("prenom")?.value   || "",
+            email:    document.getElementById("email")?.value    || "",
+            telephone:document.getElementById("telephone")?.value|| "",
+            adresse:  document.getElementById("adresse")?.value  || "",
+            cp:       document.getElementById("cp")?.value       || "",
+            ville:    document.getElementById("ville")?.value    || "",
+            pays:     document.getElementById("pays")?.value     || "",
+            niveau:   document.getElementById("niveau")?.value   || "niveau1",
+            montage:  document.getElementById("montage-input")?.value || "0",
+            aimant:   document.getElementById("aimant-input")?.value  || "0",
+            message:  document.getElementById("message-input")?.value || ""
+        };
+
+        const quantities = {};
+        categories.forEach(cat => {
+            quantities[cat] = Number(document.getElementById(`${cat}-input`)?.value) || 0;
+        });
+
+        const totalEl = document.getElementById("oktotal");
+        const total = totalEl?.textContent.includes("€") ? parseFloat(totalEl.textContent.replace(/[^\d.]/g, "")) : 0;
+
+        const subject = `Demande de Devis de ${data.prenom} ${data.nom} - ${niveauLabelsmini[data.niveau] || "?"}`;
+
+        let body = `Bonjour,\n\nVoici ma demande de devis de peinture (${niveauLabelsmini[data.niveau] || data.niveau}) :\n\n`;
+
+        body += `${data.nom}\n${data.prenom}\n${data.adresse}\n${data.cp} ${data.ville}\n${data.pays}\n${data.email}\n${data.telephone}\n\n`;
+
+
+            body += categories.map(cat => `- ${cat} : ${quantities[cat]}`).join("\n") + "\n\n";
+            body += `- Montage : ${data.montage}\n- Aimant : ${data.aimant}\n\n`;
+            body += `Total estimé : ${total.toFixed(2)} ${symboleDevise}\n\n`;
+
+        body += `Message :\n${data.message}\n\nCordialement.`;
+
+        const url = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = url;
+    });
+
+    // Recalcul live
+    document.querySelectorAll("#contactForm input, #contactForm select").forEach(el => {
+        el.addEventListener("input", calculateTotals);
+    });
+}
+
+// ────────────────────────────────────────────────
+// Formulaire de demande de formation
+// ────────────────────────────────────────────────
+
+function initializeFormationForm() {
+
+    const form = document.getElementById("formationForm");
+    if (!form) return;
+
+    // Supprime anciens listeners jQuery si présents
+    if (typeof $ !== "undefined") {
+        $(form).off("submit");
+    }
+
+    // ⚠️ évite d'ajouter plusieurs listeners si la fonction est rappelée
+    form.removeEventListener("submit", handleSubmit);
+    form.addEventListener("submit", handleSubmit);
+
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        const getValue = id => document.getElementById(id)?.value.trim() || "";
+
+        const data = {
+            nom: getValue("nom"),
+            prenom: getValue("prenom"),
+            email: getValue("email"),
+            telephone: getValue("telephone"),
+            adresse: getValue("adresse"),
+            cp: getValue("cp"),
+            ville: getValue("ville"),
+            pays: getValue("pays"),
+            cours: getValue("cours"),
+            message: getValue("message") || "Aucun message"
+        };
+
+        const subject = `Demande de cours de peinture - ${data.prenom} ${data.nom}`;
+
+        let body = `Bonjour,\n\nVoici ma demande de cours de peinture (${data.cours}) :\n\n`;
+        body += `${data.nom}\n${data.prenom}\n${data.adresse}\n${data.cp} ${data.ville}\n${data.pays}\n${data.email}\n${data.telephone}\n\n`;
+        body += `Message :\n${data.message}\n\nCordialement,\n${data.prenom} ${data.nom}`;
+
+        const mailtoUrl = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // ✅ plus propre que location.href
+        window.open(mailtoUrl, "_self");
+    }
+}
 // ────────────────────────────────────────────────
 // Galerie — chargement images + filtres
 // ────────────────────────────────────────────────
@@ -5546,7 +6387,8 @@ const select = document.getElementById('niveau');
 
     // On prévient le formulaire qu’il y a eu un changement
     select.dispatchEvent(new Event('change'));
-     
+       calculateTotals();
+    scrollTotal();
 
 }
       function scrollToTop() {
@@ -5567,7 +6409,7 @@ document.addEventListener("click", function (event) {
 
     if (event.target.closest("a, button")) {
 
-        
+        const scrollBtn = document.getElementById("scrollTotal");
 
         if (scrollBtn) {
             scrollBtn.style.display = "none";
@@ -5576,7 +6418,31 @@ document.addEventListener("click", function (event) {
 
 });
 
+function scrollTotal(offset = 100) {
 
+    // On masque le bouton
+    const scrollBtn = document.getElementById("scrollTotal");
+
+    if (scrollBtn) {
+        scrollBtn.style.display = "none";
+    }
+
+    // On cherche le titre "Total"
+    const totalElement = document.querySelector("h2.total");
+
+    if (totalElement) {
+
+        const elementTop =
+            totalElement.getBoundingClientRect().top + window.pageYOffset;
+
+        window.scrollTo({
+            top: elementTop - offset,
+            behavior: "smooth"
+        });
+
+    }
+
+}
 function toggleMaintenanceBackground() {
     document.body.classList.toggle("no-maintenance-bg");
 
@@ -5638,7 +6504,6 @@ function initThemeToggle() {
     };
 
 }
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const pfButton = document.getElementById("pf-menu-button");
@@ -5684,67 +6549,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-});
-document.addEventListener("click", function (event) {
-
-
-  
-
-
-    const header = event.target.closest(".maintenance-header");
-
-    if (!header) {
-        return;
-    }
-
-    const box = header.closest(".maintenance-box");
-
-    if (!box) {
-        return;
-    }
-
-    const isCollapsed = box.classList.toggle("is-collapsed");
-
-    header.setAttribute(
-        "aria-expanded",
-        isCollapsed ? "false" : "true"
-    );
-});
-document.addEventListener("click", function (event) {
-    const header = event.target.closest(".maintenance-header");
-
-    if (!header) return;
-
-    const box = header.closest(".maintenance-box");
-
-    if (!box) return;
-
-    const content = box.querySelector(".maintenance-content");
-    const arrow = box.querySelector(".maintenance-arrow");
-
-    const isCurrentlyCollapsed = box.classList.contains("is-collapsed");
-
-    if (isCurrentlyCollapsed) {
-        box.classList.remove("is-collapsed");
-        header.setAttribute("aria-expanded", "true");
-
-        if (content) {
-            content.hidden = false;
-        }
-
-        if (arrow) {
-            arrow.textContent = "▲";
-        }
-    } else {
-        box.classList.add("is-collapsed");
-        header.setAttribute("aria-expanded", "false");
-
-        if (content) {
-            content.hidden = true;
-        }
-
-        if (arrow) {
-            arrow.textContent = "▼";
-        }
-    }
 });
