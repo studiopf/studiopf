@@ -247,15 +247,14 @@ textarea:disabled {
 ========================== */
 
 /* bandeau défile */
-info-container {
-           max-width: 1200px;
-    width: calc(100% - 30px);
- height:auto;
-    margin: 0;
-    border: 0;
+.info-container {
+   margin-top: 0;
+    margin-bottom: 0;
+    border: 0px;
+ width: 100%;
+   max-width: 1200px;
     position: relative;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .maintenance-boxpartenaire {
@@ -290,17 +289,20 @@ info-container {
    Barre supérieure
 ========================= */
 
-.header-top {
-      max-width: 1200px;
-    width: calc(100% - 30px);
+
+.header-top{
+    display: flex;
+    align-items: center;
     justify-content:space-between;
 
+    width:100%;
     padding:12px 15px;
     box-sizing:border-box;
 
     background: var(--header-bg);
     border-bottom:1px solid var(--header-border);
 }
+
 
 /* Logo */
 
