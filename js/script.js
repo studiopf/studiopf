@@ -6550,29 +6550,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-function initializeMaintenanceBoxes() {
-    document.querySelectorAll(".maintenance-box").forEach(function (box) {
-        const header = box.querySelector(".maintenance-header");
-        const content = box.querySelector(".maintenance-content");
-        const arrow = box.querySelector(".maintenance-arrow");
 
-        if (!header || !content) return;
+document.addEventListener("click", function (event) {
+    const header = event.target.closest(".maintenance-header");
 
-        const isCollapsed = box.classList.contains("is-collapsed");
+    if (!header) return;
 
-        header.setAttribute(
-            "aria-expanded",
-            isCollapsed ? "false" : "true"
-        );
+    const box = header.closest(".maintenance-box");
 
-        content.hidden = isCollapsed;
+    if (!box) return;
+
+    const content = box.querySelector(".maintenance-content");
+    const arrow = box.querySelector(".maintenance-arrow");
+
+    const isCurrentlyCollapsed = box.classList.contains("is-collapsed");
+
+    if (isCurrentlyCollapsed) {
+        box.classList.remove("is-collapsed");
+        header.setAttribute("aria-expanded", "true");
+
+        if (content) {
+            content.hidden = false;
+        }
 
         if (arrow) {
-            arrow.textContent = isCollapsed ? "▼" : "▲";
+            arrow.textContent = "▲";
         }
-    });
-}
+    } else {
+        box.classList.add("is-collapsed");
+        header.setAttribute("aria-expanded", "false");
 
-document.addEventListener(
-    "DOMContentLoaded",
-    initializeMaintenanceBoxes
+        if (content) {
+            content.hidden = true;
+        }
+
+        if (arrow) {
+            arrow.textContent = "▼";
+        }
+    }
+});
