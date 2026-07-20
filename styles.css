@@ -258,8 +258,7 @@ textarea:disabled {
 
 /* bandeau défile */
 info-container {
-   max-width: 1200px;
-    width: calc(100% - 30px);
+
     margin: 0;
     border: 0;
     position: relative;
