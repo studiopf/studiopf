@@ -315,7 +315,7 @@ header {
     transition: color 0.3s ease;
 }
 .contact-list a {
- margin: 40px 0;
+ margin: 20px 0;
    color: var(--text-a);
    
 }
@@ -371,15 +371,6 @@ text-shadow: var(--shadow-p-box-mob);
     height:auto;
     width:70px;
 }
-   .container {
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
-    width: 650px;
-    position: relative;
-    text-align: center;
-}
-
     .widget-container {
         width: 100%;
         max-width: 700px;
@@ -405,15 +396,12 @@ text-shadow: var(--shadow-p-box-mob);
     padding: 0;
     box-sizing: border-box;
 }
-textarea {
-    width: 100%;
-    height: 100px;
-}
+
 .ajust {
     max-width: 1900px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0px;
     line-height: 1.2;
     word-spacing: 0.05em;
 }
@@ -747,20 +735,20 @@ strong{
     color:var(--title);
 }
 h1 {
-   font-size: clamp(20px, 2vw, 36px);
+   font-size: clamp(16px, 2vw, 36px);
     font-weight: 800;
     line-height: 1.2;
 }
 
 h2 {
 
-     font-size: clamp(18px, 1.7vw, 30px);
+     font-size: clamp(14px, 1.7vw, 30px);
     font-weight: 800;
     line-height: 1.25;
 }
 
 h3 {
-      font-size: clamp(18px, 1.4vw, 24px);
+      font-size: clamp(14px, 1.4vw, 24px);
     font-weight: 700;
     color: #d4a76c;
 }
@@ -788,7 +776,7 @@ p {
    ========================================================================== */
 a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     transition: color 0.25s ease;
 }
 
@@ -2739,6 +2727,7 @@ body.lightbox-open {
 }
 /* ==================== CAROUSEL ==================== */
 .carousel-container {
+    top: 20px;
     max-width: 800px;
     height: 250px; /* Hauteur sur desktop */
     margin: 0 auto;
