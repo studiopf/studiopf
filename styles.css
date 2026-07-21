@@ -2938,33 +2938,60 @@ button.pf-menu-button {
     margin-top: clamp(7px, 0.6vw, 12px);
 }
 
-/* ========================================================================== 
-   CORRECTIONS FLUIDES V3 — petits écrans sans @media
+/* ==========================================================================
+   RÉVISION RESPONSIVE V4
+   Images, espacement sous le header et lightbox mobile
    ========================================================================== */
 
-/* Réduit l'espace entre le header et le premier carrousel/contenu. */
+/* Le contenu commence immédiatement sous le header. */
 #contenu-principal {
-    padding-top: clamp(4px, 0.55vw, 10px);
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header + main,
+header + #contenu-principal,
+header + .info-container,
+.header-top + main,
+.header-top + #contenu-principal,
+.header-top + .info-container {
+    margin-top: 0;
+}
+
+#contenu-principal > :first-child,
+#contenu-principal > .ajust:first-child,
+#contenu-principal > .carousel-container:first-child,
+#contenu-principal > .carroussel-container:first-child,
+#contenu-principal > .info-container:first-child {
+    margin-top: 0;
+}
+
+.ajust {
+    margin-top: 0;
 }
 
 .carousel-container,
 .carroussel-container {
-    top: 0;
+    top: auto;
     margin-top: 0;
 }
 
-header + .info-container,
-header + main,
-header + #contenu-principal {
-    margin-top: 0;
+/* Header plus compact, sans créer une grande zone vide. */
+.header-top {
+    min-height: 0;
+    padding-top: clamp(3px, 0.35vw, 7px);
+    padding-bottom: clamp(3px, 0.35vw, 7px);
 }
 
-/* Bandeau réellement centré : évite le décalage provoqué par 100vw. */
+.header-logo .logo {
+    width: clamp(52px, 4vw, 76px);
+}
+
+/* Bandeau centré et limité à la largeur réellement disponible. */
 .info-container {
     position: relative;
     inset: auto;
-    left: auto;
-    right: auto;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -2976,113 +3003,186 @@ header + #contenu-principal {
 .info {
     width: 100%;
     max-width: 100%;
+    min-height: 0;
     margin: 0 auto;
-    padding-inline: clamp(5px, 1.2vw, 22px);
-    overflow-wrap: anywhere;
+    padding: clamp(2px, 0.25vw, 5px) clamp(6px, 1vw, 18px);
     text-align: center;
-    animation-name: info-fluid-v3;
-    animation-duration: 5s;
+    overflow-wrap: anywhere;
+    animation: info-v4 6s ease-in-out infinite alternate;
 }
 
-@keyframes info-fluid-v3 {
-    from { transform: translateX(0.25%); }
-    to   { transform: translateX(-0.25%); }
+@keyframes info-v4 {
+    from { transform: translateX(0.12%); }
+    to   { transform: translateX(-0.12%); }
 }
 
-/* Les trois exemples restent sur une seule ligne et défilent si nécessaire. */
+/* Images moins imposantes sur les grands écrans. */
+.exemples-photos {
+    gap: clamp(5px, 0.5vw, 10px);
+}
+
+.exemples-photos img {
+    width: clamp(105px, 9.5vw, 180px);
+    max-width: 100%;
+    height: auto;
+}
+
 .exemples-photos3 {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(clamp(105px, 28vw, 360px), 1fr);
-    grid-template-columns: none;
+    grid-template-columns: repeat(3, minmax(0, 180px));
+    justify-content: center;
+    align-items: center;
+    gap: clamp(5px, 0.6vw, 12px);
     width: 100%;
     max-width: 100%;
-    gap: clamp(4px, 0.7vw, 10px);
+    margin-inline: auto;
     overflow-x: auto;
     overflow-y: hidden;
-    overscroll-behavior-inline: contain;
-    scroll-snap-type: inline proximity;
-    scrollbar-width: thin;
+    padding-bottom: 2px;
     -webkit-overflow-scrolling: touch;
 }
 
 .exemples-photos3 > * {
     min-width: 0;
-    scroll-snap-align: center;
 }
 
 .exemples-photos3 img {
     display: block;
     width: 100%;
+    max-width: 180px;
     height: auto;
+    margin-inline: auto;
     object-fit: cover;
 }
 
-/* Les composants deviennent leurs propres conteneurs responsifs. */
-.header-top,
-.lightbox {
-    container-type: inline-size;
+/* Galerie plus dense sur écran 1900 px. */
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 170px));
+    justify-content: center;
+    align-items: start;
+    gap: clamp(4px, 0.45vw, 8px);
 }
 
-/* Ajustements compacts lorsque le header manque de place. */
-@container (max-width: 700px) {
+.gallery img {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-inline: auto;
+}
+
+/* Évite un agrandissement excessif au survol. */
+.exemples-photos:hover,
+.gallery img:hover {
+    transform: scale(1.06);
+}
+
+/* Lightbox desktop : image contenue et commandes latérales. */
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    width: auto;
+    height: auto;
+    max-width: calc(100vw - 150px);
+    max-height: calc(100vh - 70px);
+    object-fit: contain;
+}
+
+.lightbox-nav {
+    z-index: 10003;
+}
+
+.lightbox-close {
+    z-index: 10004;
+}
+
+/* Mobile : image sur la première ligne, flèches réellement sous la photo. */
+@media (max-width: 700px) {
     .header-top {
-        min-height: 0;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: clamp(5px, 2vw, 10px);
-        gap: 3px;
+        padding-top: 2px;
+        padding-bottom: 2px;
     }
 
     .header-logo .logo {
-        width: clamp(48px, 15vw, 66px);
+        width: clamp(46px, 14vw, 60px);
     }
 
-    .header-contact {
-        gap: 1px;
+    #contenu-principal {
+        padding-top: 0;
     }
 
-    .header-contact a {
-        width: clamp(27px, 9vw, 33px);
-        height: clamp(27px, 9vw, 33px);
-        padding: 2px;
-        font-size: clamp(15px, 5vw, 19px);
+    .carousel-container {
+        height: clamp(150px, 48vw, 220px);
     }
-}
 
-/* Lightbox : l'image garde une zone dédiée et les flèches passent dessous. */
-@container (max-width: 700px) {
+    .exemples-photos3 {
+        grid-template-columns: repeat(3, minmax(105px, 1fr));
+        justify-content: start;
+        gap: 5px;
+    }
+
+    .exemples-photos3 img {
+        max-width: 150px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(85px, 120px));
+        gap: 4px;
+    }
+
+    .gallery img {
+        max-width: 120px;
+    }
+
     .lightbox.active {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: minmax(0, 1fr) auto;
         align-items: center;
         justify-items: center;
-        gap: clamp(6px, 2vw, 12px);
-        padding: clamp(42px, 12vw, 56px) clamp(8px, 3vw, 16px) clamp(10px, 3vw, 18px);
+        column-gap: 10px;
+        row-gap: 8px;
+        width: 100%;
+        height: 100dvh;
+        padding:
+            max(44px, env(safe-area-inset-top))
+            8px
+            max(10px, env(safe-area-inset-bottom));
+        overflow: hidden;
     }
 
     .lightbox img {
         grid-column: 1 / -1;
         grid-row: 1;
-        width: 100%;
-        height: 100%;
+        align-self: center;
+        width: auto;
+        height: auto;
         max-width: 100%;
-        max-height: 100%;
+        max-height: calc(100dvh - 125px);
         object-fit: contain;
     }
 
     .lightbox-nav {
-        position: static;
+        position: relative;
+        inset: auto;
         top: auto;
-        left: auto;
         right: auto;
-        width: clamp(48px, 18vw, 72px);
-        height: clamp(38px, 12vw, 50px);
+        bottom: auto;
+        left: auto;
+        display: flex;
+        width: clamp(52px, 17vw, 70px);
+        height: clamp(40px, 12vw, 50px);
         margin: 0;
+        padding: 0;
         transform: none;
-        border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 9px;
+        background: rgba(20,20,20,0.9);
         font-size: clamp(24px, 8vw, 34px);
+        line-height: 1;
     }
 
     .lightbox-prev {
@@ -3097,14 +3197,18 @@ header + #contenu-principal {
         justify-self: start;
     }
 
-    .lightbox-nav:hover {
-        transform: scale(1.05);
+    .lightbox-nav:hover,
+    .lightbox-nav:focus,
+    .lightbox-nav:active {
+        transform: none;
     }
 
     .lightbox-close {
-        top: clamp(5px, 2vw, 10px);
-        right: clamp(5px, 2vw, 10px);
-        width: clamp(34px, 10vw, 42px);
-        height: clamp(34px, 10vw, 42px);
+        position: absolute;
+        top: max(5px, env(safe-area-inset-top));
+        right: 7px;
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
     }
 }
