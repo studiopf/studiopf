@@ -7,6 +7,15 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}/* bandeau défile */
+.info-container {
+   margin-top: 0;
+    margin-bottom: 0;
+    border: 0px;
+ width: 100%;
+   max-width: 1900px;
+    position: center;
+    text-align: center;
 }
 
 .exemples-photos {
@@ -476,7 +485,6 @@ img {
     text-align: center;
     gap: 0px;
     margin: 0rem auto;
-    max-width: 1000px;
     padding: 0 0px;
 }
 /* ==========================================================================
@@ -546,16 +554,7 @@ img {
 
     animation: info 2s linear infinite alternate;
 }
-/* bandeau défile */
-.info-container {
-   margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
- width: 100%;
-   max-width: 1900px;
-    position: center;
-    text-align: center;
-}
+
 /* Style pour centrer et réduire */
 /* ==========================
    THÈME CLAIR
@@ -1089,11 +1088,18 @@ nav {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    
-    max-width: 1900px;
+      justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
+      max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    line-height: 0;
+    word-spacing: 0.0em;
 }
 .gallery img {
    width: 280px;
@@ -1302,7 +1308,7 @@ nav {
 }
    
    .gallery {
-    max-width: 600px;
+    max-width: 640px;
     margin: 0;
 }
    .gallery img{
@@ -1532,7 +1538,7 @@ body.light-mode .cardpartenaire2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 5px; /* même espacement entre toutes les images */
-    max-width: 700px;
+    max-width: 760px;
     margin: 0;
 }
 
