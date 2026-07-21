@@ -960,45 +960,51 @@ function initializeMaintenanceBoxes() {
         });
     });
 }
-
 document.addEventListener("click", function (event) {
-    const header = event.target.closest(".maintenance-header");
 
+    const header = event.target.closest(".maintenance-header");
     if (!header) return;
 
     const box = header.closest(".maintenance-box");
-
     if (!box) return;
 
-    const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
 
-    if (!content || !arrow) return;
+    const isCollapsed = box.classList.contains("is-collapsed");
 
-    const isCurrentlyOpen = !content.hidden;
+    if (isCollapsed) {
 
-    content.hidden = isCurrentlyOpen;
-    header.setAttribute(
-        "aria-expanded",
-        isCurrentlyOpen ? "false" : "true"
-    );
+        box.classList.remove("is-collapsed");
+        header.setAttribute("aria-expanded", "true");
 
-    arrow.textContent = isCurrentlyOpen ? "▼" : "▲";
+        if (arrow) {
+            arrow.textContent = "▲";
+        }
 
-    // Remonte sur le titre
-    const title = box.querySelector(".maintenance-title");
+        [...box.children].forEach(child => {
+            if (child !== header) {
+                child.hidden = false;
+            }
+        });
 
-    if (title) {
-        setTimeout(() => {
-            title.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }, 50);
+    } else {
+
+        box.classList.add("is-collapsed");
+        header.setAttribute("aria-expanded", "false");
+
+        if (arrow) {
+            arrow.textContent = "▼";
+        }
+
+        [...box.children].forEach(child => {
+            if (child !== header) {
+                child.hidden = true;
+            }
+        });
+
     }
+
 });
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
     if (typeof changelangueinfo === "function") {
@@ -1045,15 +1051,15 @@ let currentSlide = 0;
 let carouselInterval;
 
 const carouselImages = [
-    "/img/carrousel/carrousel1.jpg",
-    "/img/carrousel/carrousel2.jpg",
-    "/img/carrousel/carrousel3.jpg",
-    "/img/carrousel/carrousel4.jpg",
-    "/img/carrousel/carrousel5.jpg",
-    "/img/carrousel/carrousel6.jpg",
-    "/img/carrousel/carrousel7.jpg",
-    "/img/carrousel/carrousel8.jpg",
-    "/img/carrousel/carrousel9.jpg"
+    "https://peinturefigurine.fr/img/carroussel/carrousel1.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel2.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel3.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel4.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel5.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel6.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel7.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel8.jpg",
+    "https://peinturefigurine.fr/img/carroussel/carrousel9.jpg"
 ];
 
 function initializeCarousel() {
