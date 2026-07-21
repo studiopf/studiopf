@@ -16,6 +16,36 @@
     margin: 20px 0 12px;
     transition: transform 0.3s ease;
 }
+/* Bandeau sur toute la largeur */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0 auto;
+    padding: 0;
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/* Texte du bandeau correctement centré */
+.info {
+    width: 100%;
+
+    margin: 0;
+    padding: 2px 10px;
+
+    text-align: center;
+    line-height: 1.2;
+
+    animation: info 4s ease-in-out infinite alternate;
+}
 
 .exemples-photos:hover {
     transform: scale(1.5);
@@ -37,16 +67,6 @@
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 
     cursor: pointer;
-}
-
-@media screen and (max-width: 800px) {
-    .exemples-photos3 {
-        grid-template-columns: 1fr;
-    }
-
-    .exemples-photos:hover {
-        transform: none;
-    }
 }
 
 [hidden] {
@@ -96,29 +116,47 @@ text-shadow: var(--shadow-p-box-mob);
 .maintenance-header {
     display: flex;
     align-items: center;
+
     width: 100%;
-    gap: 5px;
-
-    padding: 0;
-    margin: 0;
-
-    background: var(--maintenance-bg);
-    border: none;
-    cursor: pointer;
-
-    font: inherit;
-    color: var(--text-p);
-    text-align: left;
-
     min-height: 0;
+
+    margin: 0;
+    padding: 2px 5px;
+
+    gap: 5px;
     line-height: 1;
 }
 .maintenance-arrow {
-    margin-left: auto;
-    flex: 0 0 auto;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding: 0 3px;
+
+    line-height: 1;
+}
+.maintenance-title {
+    display: flex;
+    align-items: center;
+
+    flex: 1 1 auto;
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+/* Supprime les marges générales ajoutées aux titres */
+.maintenance-title h1,
+.maintenance-title h2 {
+    width: 100%;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.15;
 }
 
 .maintenance-title,
@@ -138,25 +176,6 @@ text-shadow: var(--shadow-p-box-mob);
 ..is-collapsed
 .maintenance-arrow {
     transform: rotate(-90deg);
-}
-
-
-/* Mobile */
-@media screen and (max-width: 800px) {
-
-    .maintenance-box {
-        margin: 10px auto;
-        width: 100%;
-    max-width: 800px;
-    }
-
-    .maintenance-header {
-        padding: 0px 0px;
-  max-width: 800px;
-        font-size: 17px;
-    }
-
-
 }
 
 body {
@@ -190,16 +209,7 @@ body {
         CHECKBOX / RADIO
 ========================== */
 
-/* bandeau défile */
-.info-container {
-   margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
- width: 100%;
-   max-width: 800px;
-    position: center;
-    text-align: center;
-}
+
 
 .maintenance-boxpartenaire {
    margin-top: 12px;
@@ -262,24 +272,29 @@ header {
 }
 
 /* Icônes */
-
+/* Icônes téléphone et mail plus rapprochées */
 .header-contact {
-    display:flex;
-  padding: 10px;
-    align-items:center;
-    margin-left:auto;
-    margin-right:60px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 0;
 }
 
 .header-contact a {
-    padding: 10px;
-     margin-right:30px;
-    color:var(--text-a);
-    font-size:1.35rem;
-    text-decoration:none;
-    transition:.25s ease;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin: 0;
+    padding: 5px;
+
+    color: var(--text-a);
+    font-size: 1.35rem;
+    text-decoration: none;
+}
 .header-contact a:hover{
     color:var(--accent-color);
     transform:scale(1.5);
@@ -318,68 +333,6 @@ header {
  margin: 20px 0;
    color: var(--text-a);
    
-}
-@media (max-width: 768px) {
-      .maintenance-box p {
-             font-size: 12px;
-text-shadow: var(--shadow-p-box-mob);
-}
-   /* bandeau défile */
-.info-container {
-   margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
-       max-width: 760px;
-    width: 100%;
-
-    text-align: center;
-}
-   
-   .maintenance-box {
-       max-width: 760px;
-    width: 100%;
-}
-   
-   .maintenance-box-part {
-     width: 100%;
-    margin-top: 12px;
-    margin-bottom: 0;
-      max-width: 700px;
-    position: relative;
-    text-align: center;
-}
-   .maintenance-boxpartenaire {
-    width: 100%;
-    max-width: 700px;
-}
-.maintenance-box-fieldset {
-      width: 700px;
-}
-    .header-contact{
-    margin-right:50px;
-}
-
-.header-contact a{
-    -size:1.05rem;
-}
-
-.header-contact a:hover{
-    color:var(--accent-color);
-    transform:scale(1.5);
-}
-    .header-logo .logo{
-    height:auto;
-    width:70px;
-}
-    .widget-container {
-        width: 100%;
-        max-width: 700px;
-    }
-     .widget {
-        width: 100%;
-        max-width: 700px;
-    }
-}
 /* ==========================================================================
    RESET & BASE – inchangé
    ===================================================== ==================== */
@@ -527,35 +480,7 @@ img {
         0 4px 12px rgba(244, 200, 118, 0.25);
 }
 
-.info {
-    background: linear-gradient(to bottom, #8B0000, #FF6347);
-    width: 100%;
-    position: relative;
 
-    margin: 0;
-    padding: 0;
-
-    border: 0;
-
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.2;
-
-    color: white;
-    text-shadow: 2px 2px 4px #555;
-
-    animation: info 2s linear infinite alternate;
-}
-/* bandeau défile */
-.info-container {
-   margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
- width: 100%;
-   max-width: 1900px;
-    position: center;
-    text-align: center;
-}
 /* Style pour centrer et réduire */
 /* ==========================
    THÈME CLAIR
@@ -1285,427 +1210,6 @@ nav {
 /* ==========================================================================
     QUERIES – base résolution (mobile first)
    ========================================================================== */
-@media (max-width: 640px) {
-    p {
-       font-size: 12px;
-    color: var(--text-p);
-}
-   /* bandeau défile */
-.info-container {
-   margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
- width: 100%;
-   max-width: 640px;
-    position: relative;
-    text-align: center;
-}
-   
-   .gallery {
-    max-width: 600px;
-    margin: 0;
-}
-   .gallery img{
-       width: 120px;
-    height: auto;
-   }
-   .exemples-photos img{
-    width: 150px;
-    height: auto;
-}
-    .widget-container {
-        width: 100%;
-        max-width: 640px;
-    }
-     .widget {
-        width: 100%;
-        max-width: 640px;
-    }
-      /* Filigrane */
- .maintenance-box-part {
-     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0;
-      max-width: 640px;
-    position: relative;
-    text-align: center;
-}
-    .maintenance-box {
-           max-width: 640px;
-    width: 100%;
-}
-     
-
-      .maintenance-boxpartenaire {
-    width: 100%;
-    max-width: 640px;
-}
-.maintenance-box-fieldset {
-      width: 100%;
-    max-width: 640px;
-}
-
-   .social-bloc-vide
-{
-  padding: 3px;
-}
-
-.card-container2 {
-   margin-top: 2px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   
-    margin: 0rem auto;
-    max-width: 300px;
-    padding: 0 0px;
-   align-items: center;
-        justify-content: center;
-}
- 
-  /* ==========================================================
-   THÈME CLAIR
-========================================================== */
-
-body.light-mode .cardpartenaire2 {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    
-
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 12px;
-}
-
-
-/* ==========================================================
-   THÈME SOMBRE
-========================================================== */
-
- .cardpartenaire2 {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    
-
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 12px;
-}
-
-
-
-.cardpartenaire p {
-      font-size: 12px;
-    line-height: 1.05;
-   align-items: center;
-        justify-content: center;
-}
-
-.info {
-    background: linear-gradient(to bottom, #8B0000, #FF6347);
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
-    width: 100%;
-    position: relative;
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px #555;
-    animation: info 2s linear infinite alternate;
-}
-
-   li, .p-social {
-   font-size: 12px;
-    line-height: 1.2;
-    text-align: center;
-   margin-top: 4px;
-    margin: 0rem auto;
-    max-width: 92%;
-    color: #0F0F0F;
-}
-
-
-
-    h1 {
-          font-size: 12px;
-        margin: 0.3rem 0;
-        letter-spacing: 0.5px;
-    }
-
-    h2 {
-          font-size: 12px;
-        margin: 0.3rem 0;
-    }
-
-    h3 {
-         font-size: 12px;
-    }
-
-    h4, h5 {
-          font-size: 12px;
-    }
-
-    h1, h2, h3, h4, h5 {
-        text-shadow: 0 2px 5px rgba(0,0,0,0.6);
-    }
-    .table-container {
-        text-align: center;
-        font-size: 12px;
-    }
-
-
-    nav ul li a {
-        padding: 0px 0px;
-      font-size: 12px;
-    }
-
-  
-
-/* On s'assure que le contenu principal respire aussi */
-
-   /* Blocs marrons ( + card) → on réduit la largeur + marges latérales */
-   /* Blocs principaux */
-
-.cardform{    
-    border: 1px solid #6b4e2f;
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-   margin-top: 2px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.65);
-    padding: 0rem;
-    transition: all 0.28s ease;
-    text-align: center;
-         }
-   
-.logopart {
-    width: 100%;
-    max-width: 92%;
-    text-align: center;
-   
-}
-
-
-    .cardpartenaire {
-  width: 300px;
-    height: 250px;
-    max-width: 100%;
-    max-height: 100%;
-        display: flex;
-    flex-direction: column;
- 
-        height: 112px;
-       align-items: center;
-        justify-content: center;
-    }
-
-   .cardpartenaire img {
-    background: #fff;
-      width: auto;
-      height: 70%;
-    padding: 5px;
-    border-radius: 8px;
-   width: 100%;
-}
-
-    .social-icon {
-        width: 18px;
-        height: 18px;
-           font-size: 18px;
-    }
-
-    .language-selector img {
-        width: 20px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 5px; /* même espacement entre toutes les images */
-    max-width: 700px;
-    margin: 0;
-}
-
-    .menugallery {
-        margin-top: 0;
-        margin-bottom: 0;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 5px; /* Réduit sur mobile */
-        padding: 0;
-    }
-
-    .menugallery button {
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        background-position: center;
-        border: none;
-        cursor: pointer;
-        font-size: 0px;
-        color: white;
-        text-shadow: 1px 1px 2px black;
-    }
-
-    .menugallery button:hover {
-        opacity: 0.8;
-    }
-
-    #scrollToTopBtn {
-        bottom: 60px;
-        right: 12px;
-        padding: 12px;
-        font-size: 18px;
-    }
-
-
-   .logo {
-        width: 150px;          /* ← agrandi (au lieu de 150px) */
-        max-width: 65%;        /* évite qu'il devienne trop gros sur très petits écrans */
-        height: auto;
-        margin: 0px auto;     /* un peu d'air autour */
-    }
-
-    .cardlogo {
-        padding: 0 15px;
-        margin-top: -12px;         /* rapproche un peu le texte du logo */
-    }
-
-   .button {
-        padding: 12px 24px;           /* un peu moins large */
-          font-size: 12px;
-        min-height: 42px;             /* zone de clic confortable */
-    }
-
-    .button.full-width {
-        width: 96%;
-        padding: 16px 20px;
-    }
-}
-
-/* Pour très petits écrans (320–px) */
-@media (max-width: 400px) {
-   /* bandeau défile */
-.info-container {
-   margin-top: 0;
-    margin-bottom: 0;
-    border: 0px;
- width: 100%;
-   max-width: 400px;
-    position: relative;
-    text-align: center;
-}
-   .info {
-    background: linear-gradient(to bottom, #8B0000, #FF6347);
-
-    position: relative;
-      font-size: 8px;
-
-    text-shadow: 1px 1px 2px #555;
-
-}
-
-   .gallery {
-    max-width: 400px;
-    margin: 0;
-}
-     
-   .gallery img{
-       width: 80px;
-    height: auto;
-   }
-   .exemples-photos img{
-    width: 140px;
-    height: auto;
-}
-    .widget-container {
-        width: 100%;
-        max-width: 350px;
-    }
-     .widget {
-        width: 100%;
-        max-width: 350px;
-    }
- .maintenance-box-part {
-     width: 100%;
-    margin-top: 12px;
-    margin-bottom: 0;
-      max-width: 400px;
-    position: relative;
-    text-align: center;
-}
-    .maintenance-box {
-       max-width: 400px;
-    width: 100%;
-}
-    
-         .maintenance-boxpartenaire {
-    width: 100%;
-    max-width: 400px;
-}
-.maintenance-box-fieldset {
-      width: 100%;
-    max-width: 400px;
-}
-   .container {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border: 0;
-    width: 350px;
-    position: relative;
-    text-align: center;
-}
-
-      .logo {
-        width: 120px;              /* un peu plus petit que sur 600px */
-        max-width: 70%;
-    }
-h1 {
-      font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin: 0rem 0 0rem;
-}
-
- 
-   
-    .cardform,
-    .logopart {
-        max-width: 94%;            /* encore un peu plus d'air */
-        padding: 12px 12px;
-    }
-   
-    .cardpartenaire {
-       width: 250px;
-  height: 200px;
-    max-width: 100%;
-    max-height: 100%;
-
-    }
-   .cardpartenaire p {
-      font-size: 12px;
-    line-height: 1;
-   align-items: center;
-        justify-content: center;
-}
-
-    .language-selector img {
-        width: 18px;
-    }
-
-
-
-}
 
 
 /* ===== Transition ===== */
@@ -2222,32 +1726,6 @@ button.pf-menu-button {
     border-color: #f4c876;
 }
 
-/* Tablette */
-@media (min-width: 768px) {
-      p {
-       font-size: 12px;
-    line-height: 1.6;
-   margin-top: 2px;
-    margin: 0rem auto;
-    max-width: 92%;
-    color: var(--text-p);
-}
-   .gallery {
-    max-width: 700px;
-    margin: 0;
-}
-   .gallery img{
-       width: 140px;
-    height: auto;
-   }
-   .exemples-photos img{
-    width: 200px;
-    height: auto;
-}
-    .pf-social-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
 
   .menu-mobile ul {
    width:100%;
@@ -2288,57 +1766,6 @@ button.pf-menu-button {
     font-size: 18px;
 }
 
-/* ============================= */
-/* VERSION MOBILE */
-/* ============================= */
-@media (max-width: 768px) {
-
-   /* Bouton hamburger */
-.pf-menu-button {
-    position: fixed !important;
-
-    top: 12px !important;      /* ou 5px */
-    right: 12px !important;
-
-    width: 38px !important;
-    height: 38px !important;
-
-    border-radius: 9px !important;
-}
-
-.pf-menu-button span {
-    width: 20px !important;
-    height: 2.5px !important;
-    margin: 2.5px 0 !important;
-}
-    /* Boutons du menu */
-    .pf-nav-list {
-        padding: 0px 12px 12px;
-        gap: 8px;
-    }
-
-    .pf-nav-list a {
-        padding: 12px 16px;
-        font-size: 15px;
-        border-radius: 8px;
-    }
-
-    /* Réseaux sociaux */
-    .pf-mobile-social {
-        margin-top: 12px;
-        padding: 0 12px 20px;
-    }
-
-    .pf-social-container {
-        gap: 12px;
-    }
-
-    .pf-social-container .social-icon {
-        width: 35px;
-        height: 35px;
-        font-size: 15px;
-    }
-}
 /* ============================= */
 /* LIENS MIS EN AVANT */
 /* ============================= */
@@ -2684,47 +2111,7 @@ body.lightbox-open {
    VERSION MOBILE
 ========================== */
 
-@media screen and (max-width: 700px) {
 
-    .lightbox img {
-        max-width: 100%;
-        max-height: calc(100% - 80px);
-    }
-
-    .lightbox-close {
-        top: 10px;
-        right: 10px;
-
-        width: 42px;
-        height: 42px;
-
-        font-size: 22px;
-    }
-
-    .lightbox-nav {
-        top: auto;
-        bottom: 10px;
-
-        width: 55px;
-        height: 50px;
-
-        font-size: 30px;
-
-        transform: none;
-    }
-
-    .lightbox-nav:hover {
-        transform: scale(1.05);
-    }
-
-    .lightbox-prev {
-        left: calc(50% - 70px);
-    }
-
-    .lightbox-next {
-        right: calc(50% - 70px);
-    }
-}
 /* ==================== CAROUSEL ==================== */
 .carousel-container {
     top: 20px;
@@ -2806,21 +2193,4 @@ body.lightbox-open {
     background: #FFD700;
     border-color: #FFD700;
     transform: scale(1.3);
-}
-
-/* Version mobile */
-@media (max-width: 767px) {
-    .carousel-container {
-        height: 180px; /* Plus petit sur mobile */
-    }
-    
-    .carousel-arrow {
-        padding: 8px 12px;
-        font-size: 22px;
-    }
-    
-    .carousel-dot {
-        width: 12px;
-        height: 12px;
-    }
 }
