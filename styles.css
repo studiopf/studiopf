@@ -317,20 +317,21 @@ header {
 .ajust {
     max-width: 1900px;
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto 0;
     padding: 0 0px;
     line-height: 1.2;
     word-spacing: 0.05em;
 }
 
 .ajust p {
-    width: calc(100% - 20px);
-    max-width: calc(100% - 20px);
-    margin: 0 0 1.6em 20px;
-    text-align: left !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1em;
+    padding-left: 16px;
+    text-align: left;
     text-indent: 2em;
+    line-height: 1.35;
 }
-
 
 /* Titres centrés */
 .ajust h1,
@@ -2473,7 +2474,7 @@ svg {
 
 #contenu-principal {
     width: 100%;
-    padding-top: clamp(12px, 1.58vw, 30px);
+    padding-top: clamp(12px, 1.58vw, 10px);
     padding-inline: var(--page-gutter);
 }
 
@@ -2668,18 +2669,21 @@ body.light-mode .widget-container {
 }
 
 /* Grilles adaptatives */
-.exemples-photos3 {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, clamp(180px, 21vw, 380px)), 1fr));
-    gap: var(--space-sm);
-}
-
 .exemples-photos {
     margin: var(--space-lg) 0 var(--space-md);
     gap: var(--space-sm);
 }
 
+
+
+.exemples-photos3 {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-sm);
+}
+
 .exemples-photos img {
-    width: clamp(140px, 15.8vw, 300px);
+    width: clamp(120px, 13vw, 220px);
+    height: auto;
 }
 
 .card-container2,
