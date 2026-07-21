@@ -406,7 +406,7 @@ type="image/png">
                 aria-controls="dioramas-content"
             >
                 <h3 class="maintenance-title">🏞️ Dioramas &amp; Scènes d'exposition</h3>
-                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+                <span class="maintenance-arrow" aria-hidden="true">voir plus ▼</span>
             </button>
 
             <div class="maintenance-content" id="dioramas-content" hidden>
@@ -442,7 +442,7 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
                 aria-controls="bustes-content"
             >
                 <h3 class="maintenance-title">🗿 Bustes &amp; Pièces de Collection</h3>
-                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+                <span class="maintenance-arrow" aria-hidden="true">voir plus ▼</span>
             </button>
 
             <div class="maintenance-content" id="bustes-content" hidden>
@@ -489,7 +489,7 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
                 aria-controls="pop-culture-content"
             >
                 <h3 class="maintenance-title">🎬 Figurines Pop Culture</h3>
-                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+                <span class="maintenance-arrow" aria-hidden="true">voir plus ▼</span>
             </button>
 
             <div class="maintenance-content" id="pop-culture-content" hidden>
@@ -621,7 +621,7 @@ document.addEventListener("DOMContentLoaded", function () {
         content.hidden = !expanded;
 
         if (arrow) {
-            arrow.textContent = expanded ? "▲" : "▼";
+            arrow.textContent = expanded ? "▲" : "voir plus ▼";
         }
 
         button.addEventListener("click", function () {
@@ -631,7 +631,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content.hidden = isExpanded;
 
             if (arrow) {
-                arrow.textContent = isExpanded ? "▼" : "▲";
+                arrow.textContent = isExpanded ? "voir plus ▼" : "▲";
             }
         });
     });
