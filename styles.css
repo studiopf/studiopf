@@ -1606,7 +1606,7 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 9999;
+  
     width: 100%;
 }
 /* ============================= */
@@ -2318,7 +2318,7 @@ img {
 /* Header : icônes téléphone et mail rapprochées */
 .header-top {
     position: relative;
-    z-index: 10002;
+  z-index: 9999;
 }
 
 .header-contact {
@@ -3098,8 +3098,8 @@ header + .info-container,
 }
 
 @keyframes info-v4 {
-    from { transform: translateX(0.12%); }
-    to   { transform: translateX(-0.12%); }
+    from { transform: translateX(0.2%); }
+    to   { transform: translateX(-0.2%); }
 }
 
 /* Images moins imposantes sur les grands écrans. */
