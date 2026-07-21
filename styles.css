@@ -239,7 +239,12 @@ body {
    Barre supérieure
 ========================= */
 
-
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+}
 .header-top{
     display: flex;
     align-items: center;
