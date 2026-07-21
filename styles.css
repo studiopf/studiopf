@@ -323,12 +323,10 @@ header {
     word-spacing: 0.05em;
 }
 
-/* Paragraphes alignés à gauche */
 .ajust p {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 0 1.6em;
-    padding: 0;
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    margin: 0 0 1.6em 20px;
     text-align: left !important;
     text-indent: 2em;
 }
