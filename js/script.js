@@ -880,11 +880,34 @@ function genererTableTarifs() {
 ===================================================== */
 
 function getMaintenanceHeader(box) {
-    return box.querySelector(":scope > .maintenance-header, :scope > h1 > .maintenance-header, :scope > h2 > .maintenance-header, :scope > h3 > .maintenance-header");
+    return box.querySelector(
+        ":scope > .maintenance-header, " +
+        ":scope > h1 > .maintenance-header, " +
+        ":scope > h2 > .maintenance-header, " +
+        ":scope > h3 > .maintenance-header"
+    );
 }
+
 function getMaintenanceTitle(box) {
+    /*
+     * Cas 1 :
+     * le H1, H2 ou H3 contient le bouton.
+     */
+    const directTitle = box.querySelector(
+        ":scope > h1, :scope > h2, :scope > h3"
+    );
+
+    if (directTitle) {
+        return directTitle;
+    }
+
+    /*
+     * Cas 2 :
+     * le bouton contient réellement le titre.
+     */
     const header = getMaintenanceHeader(box);
-    return header?.querySelector(".maintenance-title h1, .maintenance-title h2, .maintenance-title h3, h1, h2, h3") || null;
+
+    return header?.querySelector("h1, h2, h3") || null;
 }
 
 function getMaintenanceContent(box) {
