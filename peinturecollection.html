@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 
+
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,8 +98,10 @@ type="image/png">
 }
 </script>
 
+
 </head>
-    <body>
+<body>
+
 <header>        
 <div class="header-top">
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Changer le thème">🌙</button>
@@ -353,9 +356,8 @@ type="image/png">
       
 <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
     </header>
-     
-    
-    <div class="carousel-container">
+
+<div class="carousel-container">
     <div class="carousel" id="carousel"></div>
     
     <!-- Navigation arrows -->
@@ -365,273 +367,393 @@ type="image/png">
     <!-- Dots -->
     <div class="carousel-dots" id="carousel-dots"></div>
 </div>
-    <!-- Contenu principal qui change dynamiquement -->
-  <main id="contenu-principal">
+
 <main id="contenu-principal">
-<div class="maintenance-box ajust fondorc">
 
-    <h1>🏆 Pièces uniques pour Collection, Exposition & Concours</h1>
+    <section class="maintenance-box ajust fondorc" data-box-id="collection-introduction">
+        <button
+            class="maintenance-header"
+            type="button"
+            aria-expanded="true"
+            aria-controls="collection-introduction-content"
+        >
+            <h1 class="maintenance-title">🏆 Pièces uniques pour Collection, Exposition &amp; Concours</h1>
+            <span class="maintenance-arrow" aria-hidden="true">▲</span>
+        </button>
 
-    <p>
-        Studio PF réalise des <strong>figurines haut de gamme</strong> destinées aux collectionneurs, passionnés et compétiteurs souhaitant transformer leurs modèles en véritables œuvres d'exposition.
-    </p>
+        <div class="maintenance-content" id="collection-introduction-content">
+            <p>
+                Studio PF réalise des <strong>figurines haut de gamme</strong> destinées aux collectionneurs,
+                passionnés et compétiteurs souhaitant transformer leurs modèles en véritables œuvres d'exposition.
+            </p>
 
-    <p>
-        Chaque projet est entièrement personnalisé en fonction de la sculpture, de son univers et de son objectif : enrichir une collection, être exposé en vitrine ou participer à un concours de peinture.
-    </p>
+            <p>
+                Chaque projet est entièrement personnalisé en fonction de la sculpture, de son univers et de son objectif :
+                enrichir une collection, être exposé en vitrine ou participer à un concours de peinture.
+            </p>
 
-    <p>
-        Ces réalisations bénéficient d'un travail artistique approfondi pouvant représenter <strong>plusieurs dizaines, voire plusieurs centaines d'heures de peinture</strong>, avec des techniques avancées, une attention portée aux moindres détails et une recherche permanente du meilleur rendu possible.
-    </p>
+            <p>
+                Ces réalisations bénéficient d'un travail artistique approfondi pouvant représenter
+                <strong>plusieurs dizaines, voire plusieurs centaines d'heures de peinture</strong>,
+                avec des techniques avancées, une attention portée aux moindres détails
+                et une recherche permanente du meilleur rendu possible.
+            </p>
 
-    <!-- Illustrations -->
-    <div class="exemples-photos3">
-             <div class="exemples-photos">
-        <img src="img/collection1.jpg" alt="Figurine de collection peinte"></div>
-                   <div class="exemples-photos">
-        <img src="img/collection2.jpg" alt="Pièce d'exposition peinte"></div>
-                   <div class="exemples-photos">
-        <img src="img/collection3.jpg" alt="Figurine de concours peinte"></div>
-    </div>
-
-    
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
-   class="button">
-     Demander un devis personnalisé 💬
-</a>
-    
-
-</div>
-  <div class="maintenance-box ajust fondknigt">
-
-    <h2>🏞️ Dioramas & Scènes d'exposition</h2>
-
-    <p>
-        Studio PF réalise des <strong>dioramas sur mesure</strong> mettant en scène une ou plusieurs figurines dans un décor entièrement pensé pour raconter une histoire.
-    </p>
-
-    <p>
-        Champs de bataille, ruines antiques, donjons, paysages enneigés, forêts, cités futuristes ou environnements post-apocalyptiques : chaque projet est conçu pour créer une véritable scène vivante et immersive.
-    </p>
-
-    <p>
-        Destinés aux collectionneurs, à l'exposition ou aux concours, les dioramas associent peinture, composition, décors, textures, végétation, effets spéciaux et mise en scène afin de transformer une simple figurine en une œuvre unique.
-    </p>
-
-    <!-- Illustrations -->
-         <div class="exemples-photos3">
-    <div class="exemples-photos">
-        <img src="img/diorama1.jpg" alt="Diorama de figurines"></div>
+            <div class="exemples-photos3">
                 <div class="exemples-photos">
-        <img src="img/diorama2.jpg" alt="Scène d'exposition sur diorama"></div>
-               <div class="exemples-photos">
-        <img src="img/diorama3.jpg" alt="Diorama peint par Studio PF"></div>
-    </div>
+                    <img src="img/collection1.jpg" alt="Figurine de collection peinte" loading="lazy">
+                </div>
+                <div class="exemples-photos">
+                    <img src="img/collection2.jpg" alt="Pièce d'exposition peinte" loading="lazy">
+                </div>
+                <div class="exemples-photos">
+                    <img src="img/collection3.jpg" alt="Figurine de concours peinte" loading="lazy">
+                </div>
+            </div>
 
-    
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+            <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
 </a>
-    
+        </div>
+    </section>
 
-</div>
+    <section class="maintenance-box ajust fondknigt" data-box-id="types-projets">
+        <h2 class="maintenance-title">🎨 Types de projets</h2>
 
+        <div class="maintenance-box ajust is-collapsed" data-box-id="dioramas">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="dioramas-content"
+            >
+                <h3 class="maintenance-title">🏞️ Dioramas &amp; Scènes d'exposition</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
-    <div class="maintenance-box ajust fondnain">
+            <div class="maintenance-content" id="dioramas-content" hidden>
+                <p>
+                    Studio PF réalise des <strong>dioramas sur mesure</strong> mettant en scène une ou plusieurs figurines
+                    dans un décor entièrement pensé pour raconter une histoire.
+                </p>
 
-    <h2>🗿 Bustes & Pièces de Collection</h2>
+                <p>
+                    Champs de bataille, ruines antiques, donjons, paysages enneigés, forêts, cités futuristes
+                    ou environnements post-apocalyptiques : chaque projet est conçu pour créer une véritable scène vivante et immersive.
+                </p>
 
-    <p>
-        Studio PF réalise la peinture de <strong>bustes, statues miniatures et pièces de collection</strong> destinés à être exposés en vitrine ou à enrichir une collection personnelle.
-    </p>
+                <p>
+                    Destinés aux collectionneurs, à l'exposition ou aux concours, les dioramas associent peinture,
+                    composition, décors, textures, végétation, effets spéciaux et mise en scène
+                    afin de transformer une simple figurine en une œuvre unique.
+                </p>
 
-    <p>
-        Chaque projet fait l'objet d'une approche entièrement personnalisée afin de mettre en valeur la sculpture, les volumes, les textures et l'expression du personnage. Carnation, métaux, cuir, tissus, vieillissement ou effets d'ambiance : chaque détail est travaillé pour donner vie à la pièce.
-    </p>
+                <div class="exemples-photos3">
+                    <div class="exemples-photos">
+                        <img src="img/diorama1.jpg" alt="Diorama de figurines" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/diorama2.jpg" alt="Scène d'exposition sur diorama" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/diorama3.jpg" alt="Diorama peint par Studio PF" loading="lazy">
+                    </div>
+                </div>
 
-    <p>
-        Ces réalisations s'adressent aussi bien aux collectionneurs qu'aux passionnés souhaitant disposer d'une pièce unique, qu'il s'agisse d'un buste historique, fantasy, science-fiction ou d'une création originale.
-    </p>
-
-    <!-- Illustrations -->
-    <div class="exemples-photos3">
-          <div class="exemples-photos">
-        <img src="img/buste1.jpg" alt="Buste historique peint"></div>
-          <div class="exemples-photos">
-        <img src="img/buste2.jpg" alt="Buste fantasy peint"></div>
-          <div class="exemples-photos">
-        <img src="img/buste3.jpg" alt="Buste de collection peint"></div>
-    </div>
-    
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+                <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
 </a>
-    
+            </div>
+        </div>
 
-</div>
+        <div class="maintenance-box ajust is-collapsed fondnain" data-box-id="bustes">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="bustes-content"
+            >
+                <h3 class="maintenance-title">🗿 Bustes &amp; Pièces de Collection</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
+            <div class="maintenance-content" id="bustes-content" hidden>
+                <p>
+                    Studio PF réalise la peinture de <strong>bustes, statues miniatures et pièces de collection</strong>
+                    destinés à être exposés en vitrine ou à enrichir une collection personnelle.
+                </p>
 
-    <div class="maintenance-box ajust fondfreezer">
+                <p>
+                    Chaque projet fait l'objet d'une approche entièrement personnalisée afin de mettre en valeur la sculpture,
+                    les volumes, les textures et l'expression du personnage. Carnation, métaux, cuir, tissus,
+                    vieillissement ou effets d'ambiance : chaque détail est travaillé pour donner vie à la pièce.
+                </p>
 
-    <h2>🎬 Manga, Films, Séries & Jeux vidéo</h2>
+                <p>
+                    Ces réalisations s'adressent aussi bien aux collectionneurs qu'aux passionnés souhaitant disposer d'une pièce unique,
+                    qu'il s'agisse d'un buste historique, fantasy, science-fiction ou d'une création originale.
+                </p>
 
-    <p>
-        Vous possédez une figurine inspirée de votre univers préféré ?
-        Studio PF réalise la peinture de pièces issues de <strong>mangas, films, séries, jeux vidéo et licences de pop culture</strong>, qu'il s'agisse de personnages iconiques ou de créations originales.
-    </p>
+                <div class="exemples-photos3">
+                    <div class="exemples-photos">
+                        <img src="img/buste1.jpg" alt="Buste historique peint" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/buste2.jpg" alt="Buste fantasy peint" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/buste3.jpg" alt="Buste de collection peint" loading="lazy">
+                    </div>
+                </div>
 
-    <p>
-        Dragon Ball, One Piece, Naruto, Demon Slayer, Star Wars, Marvel, DC Comics, Le Seigneur des Anneaux, The Witcher, Elden Ring, Zelda, WarCraft... Toutes les licences sont les bienvenues.
-    </p>
-
-    <p>
-        La plupart de ces modèles proviennent de créateurs 3D indépendants ou sont disponibles auprès de plateformes spécialisées telles que Etsy, MyMiniFactory ou d'autres boutiques dédiées aux collectionneurs.
-    </p>
-
-    <h3>Informations importantes</h3>
-
-    <p>
-        <strong>Studio PF ne fournit pas les figurines et ne réalise pas leur impression 3D dans le cadre de cette prestation.</strong><br>
-        Le client fournit la pièce ou l'acquiert directement auprès du créateur ou du vendeur de son choix. Le travail de Studio PF consiste ensuite à préparer, peindre et mettre en valeur la figurine avec une finition haut de gamme.
-    </p>
-
-    <!-- Illustrations -->
-    <div class="exemples-photos3">
-          <div class="exemples-photos">
-        <img src="img/pop1.jpg" alt="Figurine manga peinte"></div>
-          <div class="exemples-photos">
-        <img src="img/pop2.jpg" alt="Figurine de série peinte"></div>
-          <div class="exemples-photos">
-        <img src="img/pop3.jpg" alt="Figurine de jeu vidéo peinte"></div>
-    </div>
-    
-<a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+                <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
    class="button">
      Demander un devis personnalisé 💬
 </a>
-    
+            </div>
+        </div>
 
-</div>
+        <div class="maintenance-box ajust is-collapsed fondfreezer" data-box-id="pop-culture">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="pop-culture-content"
+            >
+                <h3 class="maintenance-title">🎬 Manga, Films, Séries &amp; Jeux vidéo</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
-      
+            <div class="maintenance-content" id="pop-culture-content" hidden>
+                <p>
+                    Vous possédez une figurine inspirée de votre univers préféré ?
+                    Studio PF réalise la peinture de pièces issues de
+                    <strong>mangas, films, séries, jeux vidéo et licences de pop culture</strong>,
+                    qu'il s'agisse de personnages iconiques ou de créations originales.
+                </p>
 
+                <p>
+                    Dragon Ball, One Piece, Naruto, Demon Slayer, Star Wars, Marvel, DC Comics,
+                    Le Seigneur des Anneaux, The Witcher, Elden Ring, Zelda, WarCraft...
+                    Toutes les licences sont les bienvenues.
+                </p>
 
-<div class="maintenance-box ajust fonddg">
+                <p>
+                    La plupart de ces modèles proviennent de créateurs 3D indépendants
+                    ou sont disponibles auprès de plateformes spécialisées telles que Etsy,
+                    MyMiniFactory ou d'autres boutiques dédiées aux collectionneurs.
+                </p>
 
-    <h2>🎨 Une approche artistique de la peinture</h2>
+                <h4>Informations importantes</h4>
 
-    <p>
-        <strong>✨ Travail des volumes :</strong><br>
-        Chaque pièce est peinte en recherchant des dégradés subtils, des transitions naturelles et des éclaircissements précis afin de révéler toute la richesse de la sculpture et d'accentuer sa lisibilité sous tous les angles.
-    </p>
+                <p>
+                    <strong>Studio PF ne fournit pas les figurines et ne réalise pas leur impression 3D dans le cadre de cette prestation.</strong><br>
+                    Le client fournit la pièce ou l'acquiert directement auprès du créateur ou du vendeur de son choix.
+                    Le travail de Studio PF consiste ensuite à préparer, peindre et mettre en valeur la figurine
+                    avec une finition haut de gamme.
+                </p>
 
-    <p>
-        <strong>🎭 Direction artistique :</strong><br>
-        Les couleurs, les contrastes et les effets de lumière sont pensés dans leur ensemble pour créer une composition harmonieuse. L'objectif est de guider le regard et de donner à la figurine une véritable identité visuelle.
-    </p>
+                <div class="exemples-photos3">
+                    <div class="exemples-photos">
+                        <img src="img/pop1.jpg" alt="Figurine manga peinte" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/pop2.jpg" alt="Figurine de série peinte" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/pop3.jpg" alt="Figurine de jeu vidéo peinte" loading="lazy">
+                    </div>
+                </div>
 
-    <p>
-        <strong>🧪 Matières & textures :</strong><br>
-        Métal, cuir, tissus, peau, bois, pierre, rouille ou matériaux fantastiques : chaque texture est travaillée individuellement afin de renforcer le réalisme ou le style recherché par la pièce.
-    </p>
+                <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20le%20projet%20suivant%20:%0A%0A---%20Type%20de%20projet%20(Arm%C3%A9e%20/%20Collection%20/%20Concours)%20:%0A%0A---%20Jeu%20ou%20univers%20:%0A%0A---%20Nom%20des%20figurines%20:%0A%0A---%20Nombre%20de%20figurines%20:%0A%0A---%20Niveau%20de%20peinture%20souhait%C3%A9%20(TableTop%20/%20TableTop%2B%20/%20Vitrine)%20:%0A%0A---%20Montage%20%C3%A0%20r%C3%A9aliser%20(Oui%20/%20Non)%20:%0A%0A---%20Date%20souhait%C3%A9e%20(si%20urgence)%20:%0A%0A---%20Photos%20ou%20liens%20de%20r%C3%A9f%C3%A9rence%20:%0A%0A---%20Commentaires%20ou%20demandes%20particuli%C3%A8res%20:%0A%0AMerci%20!"
+   class="button">
+     Demander un devis personnalisé 💬
+</a>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        <strong>💡 Techniques avancées :</strong><br>
-        Selon les besoins du projet, Studio PF utilise des glacis, peintures à l'huile, pigments, effets de lumière (OSL), weathering, fondus, détails très fins et de nombreuses techniques professionnelles pour obtenir un résultat digne d'une pièce d'exposition ou de concours.
-    </p>
+    <section class="maintenance-box ajust fonddg" data-box-id="approche-artistique">
+        <h2 class="maintenance-title">✨ Approche artistique &amp; niveau de finition</h2>
 
-</div>
+        <div class="maintenance-box ajust is-collapsed" data-box-id="volumes">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="volumes-content"
+            >
+                <h3 class="maintenance-title">✨ Travail des volumes</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
+            <div class="maintenance-content" id="volumes-content" hidden>
+                <p>
+                    Chaque pièce est peinte en recherchant des dégradés subtils,
+                    des transitions naturelles et des éclaircissements précis
+                    afin de révéler toute la richesse de la sculpture
+                    et d'accentuer sa lisibilité sous tous les angles.
+                </p>
+            </div>
+        </div>
 
+        <div class="maintenance-box ajust is-collapsed" data-box-id="direction-artistique">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="direction-artistique-content"
+            >
+                <h3 class="maintenance-title">🎭 Direction artistique</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
+            <div class="maintenance-content" id="direction-artistique-content" hidden>
+                <p>
+                    Les couleurs, les contrastes et les effets de lumière sont pensés dans leur ensemble
+                    pour créer une composition harmonieuse. L'objectif est de guider le regard
+                    et de donner à la figurine une véritable identité visuelle.
+                </p>
+            </div>
+        </div>
 
-<div class="maintenance-box ajust fondslann">
+        <div class="maintenance-box ajust is-collapsed" data-box-id="matieres-textures">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="matieres-textures-content"
+            >
+                <h3 class="maintenance-title">🧪 Matières &amp; textures</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
-<h2>Une pièce unique ✨</h2>
+            <div class="maintenance-content" id="matieres-textures-content" hidden>
+                <p>
+                    Métal, cuir, tissus, peau, bois, pierre, rouille ou matériaux fantastiques :
+                    chaque texture est travaillée individuellement
+                    afin de renforcer le réalisme ou le style recherché par la pièce.
+                </p>
+            </div>
+        </div>
 
-<table class="tableborder1">
+        <div class="maintenance-box ajust is-collapsed" data-box-id="techniques-avancees">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="techniques-avancees-content"
+            >
+                <h3 class="maintenance-title">💡 Techniques avancées</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
-<thead>
-<tr>
-<th>🎨 Caractéristiques</th>
-<th>Collection</th>
-</tr>
-</thead>
+            <div class="maintenance-content" id="techniques-avancees-content" hidden>
+                <p>
+                    Selon les besoins du projet, Studio PF utilise des glacis, peintures à l'huile,
+                    pigments, effets de lumière (OSL), weathering, fondus, détails très fins
+                    et de nombreuses techniques professionnelles pour obtenir un résultat
+                    digne d'une pièce d'exposition ou de concours.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<tbody>
+    <section class="maintenance-box ajust fondslann" data-box-id="piece-unique">
+        <h2 class="maintenance-title">Une pièce unique ✨</h2>
 
-<tr>
-<td>Destination</td>
-<td>Collection<br>exposition<br>vitrine ou concours</td>
-</tr>
+        <div class="maintenance-box ajust is-collapsed" data-box-id="caracteristiques-collection">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="caracteristiques-collection-content"
+            >
+                <h3 class="maintenance-title">🎨 Caractéristiques</h3>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
 
-<tr>
-<td>Niveau de finition</td>
-<td>Très haute finition avec travail artistique approfondi</td>
-</tr>
-
-<tr>
-<td>Peinture</td>
-<td>Dégradés fins<br> nuances complexes<br>textures<br>effets avancés</td>
-</tr>
-
-<tr>
-<td>Temps de réalisation</td>
-<td>Projet pouvant représenter plusieurs dizaines d'heures de travail</td>
-</tr>
-
-<tr>
-<td>Approche</td>
-<td>Chaque pièce est unique<br>étudiée individuellement</td>
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
+            <div class="maintenance-content" id="caracteristiques-collection-content" hidden>
+                <table class="tableborder1">
+                    <thead>
+                        <tr>
+                            <th>🎨 Caractéristiques</th>
+                            <th>Collection</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Destination</td>
+                            <td>Collection<br>exposition<br>vitrine ou concours</td>
+                        </tr>
+                        <tr>
+                            <td>Niveau de finition</td>
+                            <td>Très haute finition avec travail artistique approfondi</td>
+                        </tr>
+                        <tr>
+                            <td>Peinture</td>
+                            <td>Dégradés fins<br>nuances complexes<br>textures<br>effets avancés</td>
+                        </tr>
+                        <tr>
+                            <td>Temps de réalisation</td>
+                            <td>Projet pouvant représenter plusieurs dizaines d'heures de travail</td>
+                        </tr>
+                        <tr>
+                            <td>Approche</td>
+                            <td>Chaque pièce est unique<br>étudiée individuellement</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
 </main>
-   
 
-
-
-
-
-<!-- JS propre -->
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionButtons = document.querySelectorAll(
+        "#contenu-principal .maintenance-header[aria-controls]"
+    );
 
-    const cards = document.querySelectorAll('.card');
+    accordionButtons.forEach(function (button) {
+        const contentId = button.getAttribute("aria-controls");
+        const content = document.getElementById(contentId);
+        const arrow = button.querySelector(".maintenance-arrow");
 
-    cards.forEach(card => {
-        card.addEventListener('click', () => toggleCard(card));
+        if (!content) return;
 
-        card.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                toggleCard(card);
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        content.hidden = !expanded;
+
+        if (arrow) {
+            arrow.textContent = expanded ? "▲" : "▼";
+        }
+
+        button.addEventListener("click", function () {
+            const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+            button.setAttribute("aria-expanded", String(!isExpanded));
+            content.hidden = isExpanded;
+
+            if (arrow) {
+                arrow.textContent = isExpanded ? "▼" : "▲";
             }
         });
     });
-
-    function toggleCard(card) {
-        const isCollapsed = card.classList.toggle('collapsed');
-        card.setAttribute('aria-expanded', !isCollapsed);
-    }
-
 });
-
 </script>
+
 <footer>
- <div class="widget-container">
+
+    <div class="widget-container">
 <div  class="widget" id="featurable-58715cac-8740-4d37-9791-1757461ff35d" data-featurable-async data-location-code="fr"></div><script src="https://featurable.com/assets/bundle.js" defer></script>
     </div>
 
  <div class="center">
-            <div class="maintenance-box-fieldset">
+            <div class="maintenance-box-part">
                  <div class="cardpartenaire2">
         <div class="cardpartenaire">
                    <div> <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
@@ -694,10 +816,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
         </nav>
            
-
+<div class="center">
         <div class="footer-adresse">
            <p><strong>STUDIO PF</strong><br>
-            Frasse Pierre-François<br>
+            FRASSE Pierre-François<br>
             17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
 </p> 
             <p>
@@ -707,15 +829,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="tel:+33775860837">07 75 86 08 37</a>
             </p>
         </div>
-   
-
-     <p>Site Vitrine créé par <strong>Studio PF</strong> - @ 2026 Tous droits réservés. </p>
-    </div>
+      </div>
+   </div>
 
 </footer>
-      <!-- Lightbox globale -->
+
+<!-- Lightbox globale -->
 <div id="lightbox" class="lightbox" aria-hidden="true">
-    <img id="lightbox-img" src="/img/logo.png" alt="Studio PF">
+       <img id="lightbox-img" src="/img/logo.png" alt="Studio PF">
 </div>
+
 </body>
 </html>
