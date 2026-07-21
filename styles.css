@@ -2146,11 +2146,14 @@ body.lightbox-open {
 
 /* ==================== CAROUSEL ==================== */
 .carousel-container {
-    top: 20px;
-    max-width: 800px;
-    height: 250px; /* Hauteur sur desktop */
+    width: min(100%, 600px);
+    height: auto;
     margin: 0 auto;
+    padding: 0;
+
     position: relative;
+    top: auto;
+
     overflow: hidden;
     border-radius: 8px;
 }
@@ -2158,16 +2161,25 @@ body.lightbox-open {
 .carousel {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
-    object-position: center 80%; 
+    display: block;
     flex: 0 0 100%;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: initial;
+    object-position: initial;
+
+    margin: 0;
+    padding: 0;
 }
 
 /* Flèches de navigation */
@@ -3127,9 +3139,14 @@ header + .info-container,
         width: clamp(46px, 14vw, 60px);
     }
 
+.carousel-container {
+        height: auto;
+        margin-top: 0;
+    }
 
-    .carousel-container {
-        height: clamp(150px, 48vw, 220px);
+    .carousel img {
+        width: 100%;
+        height: auto;
     }
 
     .exemples-photos3 {
