@@ -22,26 +22,15 @@
 <meta content="https://studiopf.fr/img/preview.jpg" name="twitter:image">
 <meta content="@studioPFfr" name="twitter:site">
 <!-- Optimisation connexions externes -->
-<link crossorigin="" href="https://code.jquery.com" rel="preconnect">
+<link crossorigin href="https://code.jquery.com" rel="preconnect">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <!-- Image principale (à remplacer par ton image LCP réelle) -->
 <link as="image" fetchpriority="high" href="/img/preview.png" rel="preload">
 <link href="/styles.css" rel="stylesheet">
 <!-- Favicon -->
 <link href="/img/favicon.png" rel="icon" type="image/png">
-<!-- Open Graph -->
-<meta content="Studio PF | Peinture professionnelle sur figurines" property="og:title">
-<meta content="Commission Warhammer, figurines de collection et peinture haut niveau." property="og:description">
-<meta content="https://studiopf.fr/img/preview.jpg" property="og:image">
-<meta content="https://studiopf.fr/" property="og:url">
-<meta content="website" property="og:type">
-<!-- Twitter -->
-<meta content="summary_large_image" name="twitter:card">
-<meta content="Studio PF | Peinture figurine professionnelle" name="twitter:title">
-<meta content="Commission Warhammer et figurines de collection." name="twitter:description">
-<meta content="https://studiopf.fr/img/preview.jpg" name="twitter:image">
 <!-- Scripts -->
-<script defer="" src="/js/script.js"></script>
+<script defer src="/js/script.js"></script>
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -70,7 +59,7 @@
 <!-- Logo -->
 <div class="header-logo">
 <a aria-label="Retour à l'accueil" class="logo-a" href="index.html" onclick="loadPage('index.html'); return false;">
-<img alt="Studio PF Logo" class="logo" data-no-lightbox="" fetchpriority="high" src="/img/logo.png">
+<img alt="Studio PF Logo" class="logo" data-no-lightbox fetchpriority="high" src="/img/logo.png">
 </a>
 </div>
 <!-- Icônes -->
@@ -83,22 +72,22 @@
 </a>
 </div>
 <!-- Bouton hamburger -->
-<button aria-expanded="false" aria-label="Ouvrir le menu" class="pf-menu-button" id="pf-menu-button" type="button">
+<button aria-controls="pf-mobile-nav" aria-expanded="false" aria-label="Ouvrir le menu" class="pf-menu-button" id="pf-menu-button" type="button">
 <span></span>
 <span></span>
 <span></span>
 </button>
 </div>
-<nav class="pf-mobile-nav" id="pf-mobile-nav">
+<nav aria-label="Navigation principale" class="pf-mobile-nav" id="pf-mobile-nav">
 <div class="language-selector">
-<button id="french" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="Français - Euro" data-no-lightbox="" src="img/Flag_of_France.png">
+<button aria-label="Afficher le site en français" id="french" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
+<img alt="Français - Euro" data-no-lightbox src="img/Flag_of_France.png">
 </button>
-<button id="english" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="English - USD" data-no-lightbox="" src="img/Flag_of_the_United_States.png">
+<button aria-label="Display the site in English" id="english" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
+<img alt="English - USD" data-no-lightbox src="img/Flag_of_the_United_States.png">
 </button>
-<button id="spanish" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="Español - Euro" data-no-lightbox="" src="img/Flag_of_Spain.png">
+<button aria-label="Mostrar el sitio en español" id="spanish" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
+<img alt="Español - Euro" data-no-lightbox src="img/Flag_of_Spain.png">
 </button>
 </div>
 <ul class="pf-nav-list">
@@ -148,7 +137,6 @@
                 </span>
             </a>
         </p>
-<br>
         <p>
             <a href="tel:+33775860837">
                 <span>
@@ -199,19 +187,19 @@
 </div><main id="contenu-principal">
 <div class="maintenance-box ajust fondmort" data-box-id="commission-introduction">
 <button aria-controls="commission-introduction-content" aria-expanded="true" class="maintenance-header" type="button">
-<h1 class="maintenance-title">🎨 Peinture de figurines sur commission</h1>
+<span class="maintenance-title" role="heading" aria-level="1">🎨 Peinture de figurines sur commission</span>
 <span aria-hidden="true" class="maintenance-arrow">▲</span>
 </button>
 <div class="maintenance-content" id="commission-introduction-content">
-<p>Je peint des armées et figurines de jeu avec deux niveaux de finition : <strong>Gold</strong> et <strong>Diamant</strong>. Chaque projet est adapté à vos figurines, à votre univers, à votre budget et au rendu recherché.</p>
+<p>Je peins des armées et figurines de jeu avec deux niveaux de finition : <strong>Gold</strong> et <strong>Diamant</strong>. Chaque projet est adapté à vos figurines, à votre univers, à votre budget et au rendu recherché.</p>
 <p>Comparez les deux niveaux de finition proposés pour vos armées, unités, personnages et figurines importantes.</p>
 
 <div class="maintenance-box ajust is-collapsed" data-box-id="niveau-gold">
 <button aria-controls="niveau-gold-content" aria-expanded="false" class="maintenance-header" type="button">
-<h3 class="maintenance-title">⭐ Gold — Finition TableTop Premium</h3>
+<span class="maintenance-title" role="heading" aria-level="3">⭐ Gold — Finition TableTop Premium</span>
 <span aria-hidden="true" class="maintenance-arrow">▼</span>
 </button>
-<div class="maintenance-content" hidden="" id="niveau-gold-content">
+<div class="maintenance-content" hidden id="niveau-gold-content">
 <p><strong>Idéal pour :</strong> les armées Warhammer, les unités et les grandes quantités de figurines.</p>
 <p>Une finition propre, efficace et homogène pour obtenir une armée avec un excellent rendu sur table tout en conservant un tarif accessible.</p>
 <p><strong>🎨 Techniques utilisées :</strong><br>Couleurs de base, ombrages simples, éclaircissements simples, détails essentiels et finition nette.</p>
@@ -236,10 +224,10 @@
  
 <div class="maintenance-box ajust is-collapsed" data-box-id="niveau-diamant">
 <button aria-controls="niveau-diamant-content" aria-expanded="false" class="maintenance-header" type="button">
-<h3 class="maintenance-title">👑 Diamant — Finition TableTop Supérieure</h3>
+<span class="maintenance-title" role="heading" aria-level="3">👑 Diamant — Finition TableTop Supérieure</span>
 <span aria-hidden="true" class="maintenance-arrow">▼</span>
 </button>
-<div class="maintenance-content" hidden="" id="niveau-diamant-content">
+<div class="maintenance-content" hidden id="niveau-diamant-content">
 <p><strong>Idéal pour :</strong> les personnages, héros, monstres, véhicules et figurines importantes de votre collection.</p>
 <p>Une peinture plus poussée avec davantage de contraste, de profondeur et un travail renforcé sur les détails et les points focaux.</p>
 <p><strong>🎨 Techniques utilisées :</strong><br>Éclaircissements avancés, travail des lumières, dégradés, effets à l’huile, décalcomanies, weathering et effets supplémentaires.</p>
@@ -277,12 +265,12 @@
  <br>
 <div class="maintenance-box ajust is-collapsed" data-box-id="comparaison-niveaux">
 <button aria-controls="comparaison-niveaux-content" aria-expanded="false" class="maintenance-header" type="button">
-<h3 class="maintenance-title">📊 Comparaison Gold et Diamant</h3>
+<span class="maintenance-title" role="heading" aria-level="3">📊 Comparaison Gold et Diamant</span>
 <span aria-hidden="true" class="maintenance-arrow">▼</span>
 </button>
-<div class="maintenance-content" hidden="" id="comparaison-niveaux-content">
+<div class="maintenance-content" hidden id="comparaison-niveaux-content">
 <table class="tableborder1">
-<thead><tr><th>Critère</th><th>⭐ Gold</th><th>👑 Diamant</th></tr></thead>
+<thead><tr><th scope="col">Critère</th><th scope="col">⭐ Gold</th><th scope="col">👑 Diamant</th></tr></thead>
 <tbody>
 <tr><td>Temps de peinture</td><td>1 h+ à 2 h+</td><td>2 h+ à 4 h+</td></tr>
 <tr><td>Finition</td><td>Nette, simple et efficace</td><td>Très détaillée, contrastée, avec points focaux</td></tr>
@@ -304,7 +292,7 @@
 <h3>📋 Tarif 2026–2027</h3>
 
 <table class="tableborder1">
-<thead><tr><th></th><th>Gold</th><th>Diamant</th></tr></thead>
+<thead><tr><th scope="col">Type de figurine</th><th scope="col">Gold</th><th scope="col">Diamant</th></tr></thead>
 <tbody id="tarifTableBody"></tbody>
 </table>
 <p>Les prix affichés sont indicatifs. Un devis personnalisé permet de confirmer précisément le coût du projet.</p>
@@ -323,14 +311,14 @@
 
 </main><footer>
 <div class="widget-container">
-<div class="widget" data-featurable-async="" data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d"></div><script defer="" src="https://featurable.com/assets/bundle.js"></script>
+<div class="widget" data-featurable-async data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d"></div><script defer src="https://featurable.com/assets/bundle.js"></script>
 </div>
 <div class="center">
 <div class="maintenance-box-part">
 <div class="cardpartenaire2">
 <div class="cardpartenaire">
 <div> <a class="apartenaire" href="https://www.totalwargame.com/fr/" rel="noopener noreferrer" target="_blank">
-<img alt="Total Wargames Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-totalwar.png">
+<img alt="Total Wargames Logo" data-no-lightbox fetchpriority="high" src="img/logo-totalwar.png">
 </a></div>
 <div>
 <p>Achetez moins cher d'occasion<br>5% de remise :<br><br><strong>STUDIOPF</strong></p>
@@ -338,7 +326,7 @@
 </div>
 <div class="cardpartenaire">
 <div> <a href="https://maxireves.fr/?ref=17962" rel="noopener noreferrer" target="_blank">
-<img alt="Maxi Rêve Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-maxireve.png">
+<img alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high" src="img/logo-maxireve.png">
 </a></div>
 <div>
 <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><br><strong>MAXIPF</strong></p>
@@ -348,7 +336,7 @@
 <div class="cardpartenaire2">
 <div class="cardpartenaire">
 <div><a href="https://mezgike.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Mezgike Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-mezgike.png">
+<img alt="Mezgike Logo" data-no-lightbox fetchpriority="high" src="img/logo-mezgike.png">
 </a></div>
 <div>
 <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><br><strong>STUDIOPF</strong></p>
@@ -356,19 +344,19 @@
 </div>
 <div class="cardpartenaire">
 <div><a class="apartenaire" href="https://wargamesceneries.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Wargame Sceneries Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-wargamesceneries.png">
+<img alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high" src="img/logo-wargamesceneries.png">
 </a></div>
 <div>
-<p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p>
+<p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% sur tous les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 <button id="scrollToTopBtn" onclick="scrollToTop()" title="Retour en haut ⬆️">↑</button>
-<button id="scrollTotal" onclick="scrollTotal()" title="Voir Total">Voir Total</button>
+
 <div class="footer" id="foot-contenu">
-<nav class="menu-mobilefoot">
+<nav aria-label="Liens légaux" class="menu-mobilefoot">
 <ul class="menufoot">
 <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
 <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
@@ -391,5 +379,5 @@
 </div>
 </div>
 </footer><div aria-hidden="true" class="lightbox" id="lightbox">
-<img alt="Studio PF" id="lightbox-img" src="/img/logo.png">
+<img alt="" id="lightbox-img" src="/img/logo.png">
 </div></body></html>
