@@ -1051,15 +1051,15 @@ let currentSlide = 0;
 let carouselInterval;
 
 const carouselImages = [
-    "https://peinturefigurine.fr/img/carroussel/carrousel1.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel2.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel3.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel4.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel5.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel6.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel7.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel8.jpg",
-    "https://peinturefigurine.fr/img/carroussel/carrousel9.jpg"
+    "/img/carrousel/carrousel1.jpg",
+    "/img/carrousel/carrousel2.jpg",
+    "/img/carrousel/carrousel3.jpg",
+    "/img/carrousel/carrousel4.jpg",
+    "/img/carrousel/carrousel5.jpg",
+    "/img/carrousel/carrousel6.jpg",
+    "/img/carrousel/carrousel7.jpg",
+    "/img/carrousel/carrousel8.jpg",
+    "/img/carrousel/carrousel9.jpg"
 ];
 
 function initializeCarousel() {
