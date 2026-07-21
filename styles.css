@@ -303,8 +303,8 @@ body {
 .contact-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-
+    gap: 5px;
+ align-items: center;
     margin: 0;
     padding: 0;
 
@@ -323,7 +323,6 @@ body {
 .contact-list li a span {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 .contact-list a {
  margin: 20px 0;
