@@ -1280,6 +1280,9 @@ function initializePageFeatures(root = document) {
 document.addEventListener("DOMContentLoaded", () => {
     highlightLanguage(currentLanguage);
     changelangueinfo();
+
+    hideCurrentPage();   // ← à remettre
+
     initializePageFeatures();
     startMaintenanceObserver();
 });
