@@ -105,12 +105,11 @@ type="image/png">
 </script>
 
 </head>
-
+<body>
 
     <header>        
 <div class="header-top">
-  <button id="themeToggle" class="theme-toggle">🌙</button>
-
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Changer le thème">🌙</button>
     <!-- Logo -->
     <div class="header-logo">
         <a href="index.html"
@@ -147,6 +146,7 @@ type="image/png">
     <button
         id="pf-menu-button"
         class="pf-menu-button"
+        type="button"
         aria-label="Ouvrir le menu"
         aria-expanded="false">
 
@@ -359,87 +359,10 @@ type="image/png">
 
 </nav>
       
-<!-- Menu mobile -->
-<nav id="pf-mobile-nav" class="pf-mobile-nav">
-
-   <div class="language-selector">
-           <button  onclick="setLanguage(id);  updateMeta(id); return false;" id="french">
-        <img src="img/Flag_of_France.png" alt="Français - Euro" data-no-lightbox></button>
-             <button onclick="setLanguage(id); updateMeta(id); return false;" id="english">
-    <img src="img/Flag_of_the_United_States.png" alt="English - USD" data-no-lightbox>
-</button>
-               <button  onclick="setLanguage(id); updateMeta(id); return false;" id="spanish">
-        <img src="img/Flag_of_Spain.png" alt="Español - Euro" data-no-lightbox></button>
-
-    </div>
-  
-  <ul class="pf-nav-list">
-
-    <p><a href="index.html" onclick="loadPage('index.html'); return false;">
-        🏠 Accueil
-    </a></p>
-
-    <p><a href="quisuisje.html" onclick="loadPage('quisuisje.html'); scrollToTop(); return false;">
-        👋 Qui suis-je ?
-    </a></p>
-
-    <p><a href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
-        ⚔️ Armées & TableTop+
-    </a></p>
-
-    <p><a href="peinturecollection.html" onclick="loadPage('peinturecollection.html'); return false;">
-        🏆 Collection & Concours
-    </a></p>
-
-    <p><a href="formation.html" onclick="loadPage('formation.html'); return false;">
-        📚 Cours de peinture
-    </a></p>
-
-    <p><a href="galerie.html" onclick="loadPage('galerie.html'); return false;">
-        🖼️ Galerie
-    </a></p>
-        <p><a href="pourquoi.html" onclick="loadPage('pourquoi.html'); return false;">
-        ❓ FAQ
-    </a></p>
-
-</ul>
-
-
-  <ul class="contact-list">
-    <li>
-        <a href="mailto:studiopeinturefigurine@gmail.com">
-           
-            <span> <i class="fas fa-envelope"></i> studiopeinturefigurine@mgmail.com</span>
-        </a>
-    </li>
-<br>
-    <li>
-        <a href="tel:+33775860837">
-          <span><i class="fas fa-phone-alt"></i> 07 75 860 837</span>
-        </a>
-    </li>
-</ul>
-    <!-- Réseaux sociaux -->
-    <div class="pf-mobile-social">
-        <div class="pf-social-container">
-            <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/studioPFfr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-discord"></i></a>
-          
-           <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-patreon"></i></a>
-            <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitch"></i></a>
-            <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
-
-        </div>
-    </div>
-</nav>
- <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
+<div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
     </header>
      
     
-  <body>
     <div class="carousel-container">
     <div class="carousel" id="carousel"></div>
     
@@ -540,7 +463,7 @@ type="image/png">
     </p>
 
     <p hidden>
-        Chaques armées bénéficient d’un schéma de couleurs cohérent,
+        Chaque armée bénéficie d’un schéma de couleurs cohérent,
         de contrastes adaptés au jeu
         et d’un soclage personnalisé selon votre univers.
     </p>
@@ -922,6 +845,7 @@ type="image/png">
     </div>
 
     <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
+    <button id="scrollTotal" title="Voir Total" onclick="scrollTotal()">Voir Total</button>
   <div id="foot-contenu" class="footer">
   
           <nav class="menu-mobilefoot">
