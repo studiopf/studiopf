@@ -1072,14 +1072,18 @@ function closeH2(box) {
          */
         if (element === header) {
             element.hidden = false;
+            element.removeAttribute("hidden");
             return;
         }
 
         /*
-         * Les titres H3 restent toujours visibles.
+         * Tous les blocs contenant un H3 restent toujours visibles.
+         * Seul leur contenu est refermé.
          */
         if (h3Boxes.includes(element)) {
             element.hidden = false;
+            element.removeAttribute("hidden");
+
             closeH3(element);
             return;
         }
@@ -1169,25 +1173,29 @@ function closeH3(box) {
     box.classList.add("is-collapsed");
 
     /*
-     * Le bloc complet reste visible pour conserver son titre.
+     * Le bloc H3 reste toujours visible.
      */
     box.hidden = false;
+    box.removeAttribute("hidden");
 
     setArrow(box, false);
 
     Array.from(box.children).forEach(element => {
+        /*
+         * Le titre H3 reste toujours visible.
+         */
         if (element === header) {
             element.hidden = false;
+            element.removeAttribute("hidden");
             return;
         }
 
         /*
-         * Masque uniquement les paragraphes, liens et <br>.
+         * Seul le contenu du H3 est masqué.
          */
         element.hidden = true;
     });
 }
-
 function openH3(box) {
     const header = getDirectHeader(box);
 
