@@ -2939,8 +2939,9 @@ th {
 }
 
 /* Carrousels et lightbox */
-.carroussel-container,
+.
 .carousel-container {
+    top: 5px;
     width: min(100%, 600px);
     margin-inline: auto;
 }
