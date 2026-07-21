@@ -654,7 +654,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function initScrollBehaviors() {
     const scrollBtn = document.getElementById("scrollToTopBtn");
-    const scrollBtnTo = document.getElementById("scrollTotal");
     const formSection = document.getElementById("formSection");
 
     // Une navigation dynamique rappelle cette fonction : on retire donc
