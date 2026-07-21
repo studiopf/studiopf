@@ -290,7 +290,7 @@
   <div class="maintenance-box ajust is-collapsed" data-box-id="dioramas">
             <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="dioramas-content">
                 <span class="maintenance-title" role="heading" aria-level="3">🏞️ Dioramas &amp; Scènes d'exposition</span>
-                <span class="maintenance-arrow" aria-hidden="true">voir plus ▼</span>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
             </button>
 
             <div class="maintenance-content" id="dioramas-content" hidden>
@@ -320,7 +320,7 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
         <div class="maintenance-box ajust is-collapsed fondnain" data-box-id="bustes">
             <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="bustes-content">
                 <span class="maintenance-title" role="heading" aria-level="3">🗿 Bustes &amp; Pièces de Collection</span>
-                <span class="maintenance-arrow" aria-hidden="true">voir plus ▼</span>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
             </button>
 
             <div class="maintenance-content" id="bustes-content" hidden>
@@ -361,7 +361,7 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
         <div class="maintenance-box ajust is-collapsed fondfreezer" data-box-id="pop-culture">
             <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="pop-culture-content">
                 <span class="maintenance-title" role="heading" aria-level="3">🎬 Figurines Pop Culture</span>
-                <span class="maintenance-arrow" aria-hidden="true">voir plus ▼</span>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
             </button>
 
             <div class="maintenance-content" id="pop-culture-content" hidden>
@@ -492,7 +492,7 @@ document.addEventListener("DOMContentLoaded", function () {
         content.hidden = !expanded;
 
         if (arrow) {
-            arrow.textContent = expanded ? "▲" : "voir plus ▼";
+            arrow.textContent = expanded ? "▲" : "▼";
         }
 
         button.addEventListener("click", function () {
@@ -502,7 +502,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content.hidden = isExpanded;
 
             if (arrow) {
-                arrow.textContent = isExpanded ? "voir plus ▼" : "▲";
+                arrow.textContent = isExpanded ? "▼" : "▲";
             }
         });
     });
