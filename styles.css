@@ -110,31 +110,28 @@
     min-height: 0;
     line-height: 1;
 }
+.maintenance-arrow {
+    margin-left: auto;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .maintenance-title,
 .maintenance-arrow {
     text-shadow:
-        -3px  0   0 #000,
-         3px  0   0 #000,
-         0   -3px 0 #000,
-         0    3px 0 #000,
-
-        -3px -3px 0 #000,
-         3px -3px 0 #000,
-        -3px  3px 0 #000,
-         3px  3px 0 #000,
+        -2px  0   0 #000,
+         2px  0   0 #000,
+         0   -2px 0 #000,
+         0    2px 0 #000,
 
         -2px -2px 0 #000,
          2px -2px 0 #000,
         -2px  2px 0 #000,
          2px  2px 0 #000,
 
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000,
-
-        0 0 10px rgba(0,0,0,.9),
-        0 6px 12px rgba(0,0,0,.7);
+        0 0 6px rgba(0,0,0,.8);
 }
 .maintenance-header:hover {
     background: rgba(244, 200, 118, 0.12);
