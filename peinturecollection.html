@@ -83,7 +83,7 @@
 </head>
 <body>
 
-<header>        
+<header>
 <div class="header-top">
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Changer le thème">🌙</button>
     <!-- Logo -->
@@ -92,7 +92,7 @@
 
             <img src="/img/logo.png" alt="Studio PF Logo" class="logo" data-no-lightbox fetchpriority="high">
         </a>
-     
+
     </div>
 
     <!-- Icônes -->
@@ -115,12 +115,12 @@
         <span></span>
         <span></span>
 
-    </button> 
-    
+    </button>
+
 </div>
 
 
-  <nav id="pf-mobile-nav" class="pf-mobile-nav">
+  <nav id="pf-mobile-nav" class="pf-mobile-nav" aria-label="Navigation principale">
 
     <div class="language-selector">
 
@@ -247,17 +247,17 @@
     </div>
 
 </nav>
-      
+
 <div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
     </header>
 
 <div class="carousel-container">
     <div class="carousel" id="carousel"></div>
-    
+
     <!-- Navigation arrows -->
-    <button class="carousel-arrow carousel-prev" onclick="prevSlide()" aria-label="Diapositive précédente">❮</button>
-    <button class="carousel-arrow carousel-next" onclick="nextSlide()" aria-label="Diapositive suivante">❯</button>
-    
+    <button class="carousel-arrow carousel-prev" type="button" onclick="prevSlide()" aria-label="Diapositive précédente">❮</button>
+    <button class="carousel-arrow carousel-next" type="button" onclick="nextSlide()" aria-label="Diapositive suivante">❯</button>
+
     <!-- Dots -->
     <div class="carousel-dots" id="carousel-dots"></div>
 </div>
@@ -265,10 +265,17 @@
 <main id="contenu-principal">
 
     <div class="maintenance-box ajust fondorc" data-box-id="collection-introduction">
-        <button class="maintenance-header" type="button" aria-expanded="true" aria-controls="collection-introduction-content">
-            <span class="maintenance-title" role="heading" aria-level="1">🏆 Pièces uniques pour Collection, Exposition &amp; Concours</span>
-            <span class="maintenance-arrow" aria-hidden="true">▲</span>
-        </button>
+        <h1 class="maintenance-title">
+
+            <button class="maintenance-header" type="button" aria-expanded="true" aria-controls="collection-introduction-content">
+
+                <span>🏆 Pièces uniques pour Collection, Exposition &amp; Concours</span>
+
+                <span class="maintenance-arrow" aria-hidden="true">▲</span>
+
+            </button>
+
+        </h1>
 
         <div class="maintenance-content" id="collection-introduction-content">
             <p>
@@ -288,10 +295,17 @@
                 et une recherche permanente du meilleur rendu possible.
             </p>
   <div class="maintenance-box ajust is-collapsed" data-box-id="dioramas">
-            <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="dioramas-content">
-                <span class="maintenance-title" role="heading" aria-level="3">🏞️ Dioramas &amp; Scènes d'exposition</span>
-                <span class="maintenance-arrow" aria-hidden="true">▼</span>
-            </button>
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="dioramas-content">
+
+                    <span>🏞️ Dioramas &amp; Scènes d'exposition</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
 
             <div class="maintenance-content" id="dioramas-content" hidden>
                <p>
@@ -318,10 +332,17 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
         </div>
 
         <div class="maintenance-box ajust is-collapsed fondnain" data-box-id="bustes">
-            <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="bustes-content">
-                <span class="maintenance-title" role="heading" aria-level="3">🗿 Bustes &amp; Pièces de Collection</span>
-                <span class="maintenance-arrow" aria-hidden="true">▼</span>
-            </button>
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="bustes-content">
+
+                    <span>🗿 Bustes &amp; Pièces de Collection</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
 
             <div class="maintenance-content" id="bustes-content" hidden>
                 <p>
@@ -359,10 +380,17 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
         </div>
 
         <div class="maintenance-box ajust is-collapsed fondfreezer" data-box-id="pop-culture">
-            <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="pop-culture-content">
-                <span class="maintenance-title" role="heading" aria-level="3">🎬 Figurines Pop Culture</span>
-                <span class="maintenance-arrow" aria-hidden="true">▼</span>
-            </button>
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="pop-culture-content">
+
+                    <span>🎬 Figurines Pop Culture</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
 
             <div class="maintenance-content" id="pop-culture-content" hidden>
                 <p>
@@ -422,7 +450,7 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
                 </div>
             </div>
 
-           
+
         </div>
     </div>
 
@@ -475,39 +503,6 @@ J'adore réaliser des <strong>pièces de collection uniques</strong> :
 
 </main>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const accordionButtons = document.querySelectorAll(
-        "#contenu-principal .maintenance-header[aria-controls]"
-    );
-
-    accordionButtons.forEach(function (button) {
-        const contentId = button.getAttribute("aria-controls");
-        const content = document.getElementById(contentId);
-        const arrow = button.querySelector(".maintenance-arrow");
-
-        if (!content) return;
-
-        const expanded = button.getAttribute("aria-expanded") === "true";
-        content.hidden = !expanded;
-
-        if (arrow) {
-            arrow.textContent = expanded ? "▲" : "▼";
-        }
-
-        button.addEventListener("click", function () {
-            const isExpanded = button.getAttribute("aria-expanded") === "true";
-
-            button.setAttribute("aria-expanded", String(!isExpanded));
-            content.hidden = isExpanded;
-
-            if (arrow) {
-                arrow.textContent = isExpanded ? "▼" : "▲";
-            }
-        });
-    });
-});
-</script>
 
 <footer>
 
@@ -530,7 +525,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <div class="cardpartenaire">
-                
+
                    <div> <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high">
                     </a>
@@ -538,29 +533,29 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div>
                     <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><br><strong>MAXIPF</strong></p>
                </div>
-            </div>         
+            </div>
                  </div>
 
 
 
          <div class="cardpartenaire2">
         <div class="cardpartenaire">
-                
+
                     <div><a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority="high">
                     </a></div>
-                
+
                <div>
                     <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><br><strong>STUDIOPF</strong></p>
              </div>
             </div>
 
              <div class="cardpartenaire">
-                
+
                     <div><a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
                         <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high">
                     </a></div>
-               
+
                <div>
                     <p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p>
             </div>
@@ -570,23 +565,23 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
     </div>
 
-    <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
+    <button id="scrollToTopBtn" type="button" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
   <div id="foot-contenu" class="footer">
-  
-          <nav class="menu-mobilefoot">
+
+          <nav class="menu-mobilefoot" aria-label="Navigation légale">
             <ul class="menufoot">
                 <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
                 <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
                 <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
             </ul>
         </nav>
-           
+
 <div class="center">
         <div class="footer-adresse">
            <p><strong>STUDIO PF</strong><br>
             FRASSE Pierre-François<br>
             17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
-</p> 
+</p>
             <p>
                 Contact 📧 :
                 <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
