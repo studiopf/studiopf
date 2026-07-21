@@ -935,372 +935,261 @@ function genererTableTarifs() {
     });
 
 }
-function initializeMaintenanceBoxes() {
-    const boxes = document.querySelectorAll(".maintenance-box");
-
-    boxes.forEach(box => {
-        const header = getDirectHeader(box);
-        const title = header?.querySelector("h1, h2, h3");
-
-        if (!header || !title) return;
-
-        /*
-         * Remplace tout ancien onclick placé directement sur le bouton.
-         */
-        header.onclick = function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-
-            const tagName = title.tagName;
-
-            /*
-             * Le H1 reste toujours ouvert.
-             */
-            if (tagName === "H1") return;
-
-            if (tagName === "H2") {
-                toggleH2(box);
-                return;
-            }
-
-            if (tagName === "H3") {
-                toggleH3(box);
-            }
-        };
-
-        /*
-         * État initial.
-         */
-        if (title.tagName === "H1") {
-            openH1(box);
-        }
-
-        if (title.tagName === "H2") {
-            closeH2(box);
-        }
-
-        if (title.tagName === "H3") {
-            closeH3(box);
-        }
-    });
-}
-
-
 /* =====================================================
-   OUTILS
+   ACCORDÉONS MAINTENANCE — H1 / H2 / H3
 ===================================================== */
 
-function getDirectHeader(box) {
-    return Array.from(box.children).find(element =>
-        element.classList.contains("maintenance-header")
+function getMaintenanceHeader(box) {
+    return Array.from(box.children).find(child =>
+        child.classList?.contains("maintenance-header")
+    ) || null;
+}
+
+function getMaintenanceTitle(box) {
+    const header = getMaintenanceHeader(box);
+    return header?.querySelector(".maintenance-title h1, .maintenance-title h2, .maintenance-title h3, h1, h2, h3") || null;
+}
+
+function getMaintenanceContent(box) {
+    return Array.from(box.children).filter(child =>
+        child !== getMaintenanceHeader(box) &&
+        !child.classList?.contains("maintenance-box")
     );
 }
 
-function getDirectH3Boxes(h2Box) {
-    return Array.from(h2Box.children).filter(element => {
-        if (!element.classList.contains("maintenance-box")) {
-            return false;
-        }
-
-        const header = getDirectHeader(element);
-
-        return Boolean(header?.querySelector("h3"));
-    });
+function getDirectMaintenanceChildren(box, level) {
+    return Array.from(box.children).filter(child =>
+        child.classList?.contains("maintenance-box") &&
+        getMaintenanceTitle(child)?.tagName === level
+    );
 }
 
-function setArrow(box, isOpen) {
-    const header = getDirectHeader(box);
+function setMaintenanceState(box, isOpen) {
+    const header = getMaintenanceHeader(box);
     const arrow = header?.querySelector(".maintenance-arrow");
 
-    header?.setAttribute(
-        "aria-expanded",
-        isOpen ? "true" : "false"
-    );
-
-    if (arrow) {
-        arrow.textContent = isOpen ? "▲" : "▼";
-    }
-}
-
-
-/* =====================================================
-   H1 : TOUJOURS OUVERT
-===================================================== */
-
-function openH1(box) {
-    box.classList.remove("is-collapsed");
-    box.hidden = false;
-
-    setArrow(box, true);
-
-    Array.from(box.children).forEach(element => {
-        element.hidden = false;
-    });
-}
-
-
-/* =====================================================
-   H2
-===================================================== */
-
-function toggleH2(box) {
-    const isClosed = box.classList.contains("is-collapsed");
-
-    if (isClosed) {
-        closeOtherH2(box);
-        openH2(box);
-        openFirstH3(box);
-    } else {
-        closeH2(box);
-    }
-
-    gentleScrollTo(getDirectHeader(box));
-}
-
-function closeH2(box) {
-    const header = getDirectHeader(box);
-    const h3Boxes = getDirectH3Boxes(box);
-
-    box.classList.add("is-collapsed");
-    box.hidden = false;
-
-    setArrow(box, false);
-
-    Array.from(box.children).forEach(element => {
-        /*
-         * Le titre H2 reste visible.
-         */
-        if (element === header) {
-            element.hidden = false;
-            element.removeAttribute("hidden");
-            return;
-        }
-
-        /*
-         * Tous les blocs contenant un H3 restent toujours visibles.
-         * Seul leur contenu est refermé.
-         */
-        if (h3Boxes.includes(element)) {
-            element.hidden = false;
-            element.removeAttribute("hidden");
-
-            closeH3(element);
-            return;
-        }
-
-        /*
-         * Le contenu propre au H2 est masqué.
-         */
-        element.hidden = true;
-    });
-}
-
-function openH2(box) {
-    const header = getDirectHeader(box);
-    const h3Boxes = getDirectH3Boxes(box);
-
-    box.classList.remove("is-collapsed");
-    box.hidden = false;
-
-    setArrow(box, true);
-
-    Array.from(box.children).forEach(element => {
-        if (element === header) {
-            element.hidden = false;
-            return;
-        }
-
-        /*
-         * Les blocs H3 restent visibles,
-         * mais sont d’abord tous refermés.
-         */
-        if (h3Boxes.includes(element)) {
-            element.hidden = false;
-            closeH3(element);
-            return;
-        }
-
-        /*
-         * Affiche les paragraphes propres au H2.
-         */
-        element.hidden = false;
-    });
-}
-
-function openFirstH3(h2Box) {
-    const h3Boxes = getDirectH3Boxes(h2Box);
-    const firstH3Box = h3Boxes[0];
-
-    if (!firstH3Box) return;
-
-    openH3(firstH3Box);
-}
-
-function closeOtherH2(currentBox) {
-    document.querySelectorAll(".maintenance-box").forEach(box => {
-        if (box === currentBox) return;
-
-        const header = getDirectHeader(box);
-        const title = header?.querySelector("h2");
-
-        if (title) {
-            closeH2(box);
-        }
-    });
-}
-
-
-/* =====================================================
-   H3
-===================================================== */
-
-function toggleH3(box) {
-    const isClosed = box.classList.contains("is-collapsed");
-
-    if (isClosed) {
-        closeOtherH3(box);
-        openH3(box);
-    } else {
-        closeH3(box);
-    }
-
-    gentleScrollTo(getDirectHeader(box));
-}
-
-function closeH3(box) {
-    const header = getDirectHeader(box);
-
-    box.classList.add("is-collapsed");
-
-    /*
-     * Le bloc H3 reste toujours visible.
-     */
+    box.classList.toggle("is-collapsed", !isOpen);
+    box.classList.toggle("is-open", isOpen);
     box.hidden = false;
     box.removeAttribute("hidden");
 
-    setArrow(box, false);
-
-    Array.from(box.children).forEach(element => {
-        /*
-         * Le titre H3 reste toujours visible.
-         */
-        if (element === header) {
-            element.hidden = false;
-            element.removeAttribute("hidden");
-            return;
-        }
-
-        /*
-         * Seul le contenu du H3 est masqué.
-         */
-        element.hidden = true;
-    });
-}
-function openH3(box) {
-    const header = getDirectHeader(box);
-
-    box.classList.remove("is-collapsed");
-    box.hidden = false;
-
-    setArrow(box, true);
-
-    Array.from(box.children).forEach(element => {
-        /*
-         * Retire réellement l’attribut hidden
-         * de tous les contenus du H3.
-         */
-        element.hidden = false;
-        element.removeAttribute("hidden");
-    });
-
     if (header) {
         header.hidden = false;
+        header.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    if (arrow) {
+        arrow.textContent = "▼";
+        arrow.classList.toggle("is-open", isOpen);
     }
 }
 
-function closeOtherH3(currentBox) {
-    const parentH2 = currentBox.parentElement;
+function showOwnMaintenanceContent(box, show) {
+    getMaintenanceContent(box).forEach(element => {
+        element.hidden = !show;
+    });
+}
 
-    if (!parentH2) return;
+function openH1Box(box) {
+    setMaintenanceState(box, true);
+    showOwnMaintenanceContent(box, true);
 
-    getDirectH3Boxes(parentH2).forEach(h3Box => {
-        if (h3Box !== currentBox) {
-            closeH3(h3Box);
+    Array.from(box.children).forEach(child => {
+        if (child.classList?.contains("maintenance-box")) {
+            child.hidden = false;
+            child.removeAttribute("hidden");
         }
     });
 }
 
+function closeH2Box(box) {
+    setMaintenanceState(box, false);
+    showOwnMaintenanceContent(box, false);
 
-/* =====================================================
-   DÉFILEMENT LÉGER
-===================================================== */
-
-function gentleScrollTo(element) {
-    if (!element) return;
-
-    window.setTimeout(() => {
-        const stickyHeader = document.querySelector("header");
-        const stickyHeight = stickyHeader
-            ? stickyHeader.getBoundingClientRect().height
-            : 0;
-
-        const rect = element.getBoundingClientRect();
-        const minimumTop = stickyHeight + 20;
-
-        /*
-         * Aucun déplacement si le titre est déjà visible.
-         */
-        if (rect.top >= minimumTop) return;
-
-        window.scrollBy({
-            top: rect.top - minimumTop,
-            behavior: "smooth"
-        });
-    }, 100);
+    getDirectMaintenanceChildren(box, "H3").forEach(h3Box => {
+        h3Box.hidden = false;
+        h3Box.removeAttribute("hidden");
+        closeH3Box(h3Box);
+    });
 }
 
+function openH2Box(box) {
+    setMaintenanceState(box, true);
+    showOwnMaintenanceContent(box, true);
+
+    const h3Boxes = getDirectMaintenanceChildren(box, "H3");
+    h3Boxes.forEach(closeH3Box);
+
+    if (h3Boxes[0]) {
+        openH3Box(h3Boxes[0]);
+    }
+}
+
+function closeH3Box(box) {
+    setMaintenanceState(box, false);
+    showOwnMaintenanceContent(box, false);
+}
+
+function openH3Box(box) {
+    setMaintenanceState(box, true);
+    showOwnMaintenanceContent(box, true);
+}
+
+function closeSameLevelBoxes(currentBox, level) {
+    const parent = currentBox.parentElement;
+    if (!parent) return;
+
+    Array.from(parent.children).forEach(box => {
+        if (
+            box !== currentBox &&
+            box.classList?.contains("maintenance-box") &&
+            getMaintenanceTitle(box)?.tagName === level
+        ) {
+            level === "H2" ? closeH2Box(box) : closeH3Box(box);
+        }
+    });
+}
+
+function getStickyTopOffset() {
+    const candidates = Array.from(document.querySelectorAll(
+        "header, .header-top, .info-container"
+    ));
+
+    const active = candidates.filter(element => {
+        const style = getComputedStyle(element);
+        const rect = element.getBoundingClientRect();
+        return (
+            (style.position === "fixed" || style.position === "sticky") &&
+            rect.height > 0 &&
+            rect.bottom > 0 &&
+            rect.top <= 2
+        );
+    });
+
+    const topLevel = active.filter(element =>
+        !active.some(other => other !== element && other.contains(element))
+    );
+
+    return topLevel.reduce((height, element) =>
+        height + element.getBoundingClientRect().height, 0
+    );
+}
+
+function scrollMaintenanceTitleIntoView(header) {
+    if (!header) return;
+
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            const offset = getStickyTopOffset() + 12;
+            const top = window.scrollY + header.getBoundingClientRect().top - offset;
+
+            window.scrollTo({
+                top: Math.max(0, top),
+                behavior: "smooth"
+            });
+        });
+    });
+}
+
+function handleMaintenanceClick(event) {
+    const header = event.target.closest(".maintenance-header");
+    if (!header) return;
+
+    const box = header.closest(".maintenance-box");
+    const title = box ? getMaintenanceTitle(box) : null;
+    if (!box || !title) return;
+
+    event.preventDefault();
+
+    const level = title.tagName;
+
+    if (level === "H1") {
+        openH1Box(box);
+        scrollMaintenanceTitleIntoView(header);
+        return;
+    }
+
+    const isOpen = box.classList.contains("is-open");
+
+    if (level === "H2") {
+        if (isOpen) {
+            closeH2Box(box);
+        } else {
+            closeSameLevelBoxes(box, "H2");
+            openH2Box(box);
+        }
+    }
+
+    if (level === "H3") {
+        if (isOpen) {
+            closeH3Box(box);
+        } else {
+            closeSameLevelBoxes(box, "H3");
+            openH3Box(box);
+        }
+    }
+
+    scrollMaintenanceTitleIntoView(header);
+}
+
+function initializeMaintenanceBoxes(root = document) {
+    root.querySelectorAll(".maintenance-box").forEach(box => {
+        const title = getMaintenanceTitle(box);
+        const header = getMaintenanceHeader(box);
+        if (!title || !header) return;
+
+        header.setAttribute("type", "button");
+
+        if (title.tagName === "H1") {
+            openH1Box(box);
+        } else if (title.tagName === "H2") {
+            closeH2Box(box);
+        } else if (title.tagName === "H3") {
+            closeH3Box(box);
+        }
+    });
+}
+
+if (!window.__maintenanceAccordionBound) {
+    document.addEventListener("click", handleMaintenanceClick);
+    window.__maintenanceAccordionBound = true;
+}
+
+const maintenanceObserver = new MutationObserver(mutations => {
+    for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+            if (!(node instanceof Element)) continue;
+
+            if (node.matches?.(".maintenance-box")) {
+                initializeMaintenanceBoxes(node.parentElement || document);
+            } else if (node.querySelector?.(".maintenance-box")) {
+                initializeMaintenanceBoxes(node);
+            }
+        }
+    }
+});
+
+function startMaintenanceObserver() {
+    if (!document.body || window.__maintenanceObserverStarted) return;
+    maintenanceObserver.observe(document.body, { childList: true, subtree: true });
+    window.__maintenanceObserverStarted = true;
+}
 
 /* =====================================================
-   INITIALISATION
+   INITIALISATION GÉNÉRALE
 ===================================================== */
 
-document.addEventListener(
-    "DOMContentLoaded",
-    initializeMaintenanceBoxes
-);
-
-
 document.addEventListener("DOMContentLoaded", () => {
-
-    if (typeof changelangueinfo === "function") {
-        changelangueinfo();
-    }
-
     initializeMaintenanceBoxes();
+    startMaintenanceObserver();
 
-    if (typeof initializeLightboxGlobal === "function") {
-        initializeLightboxGlobal();
-    }
-
-    if (typeof initThemeToggle === "function") {
-        initThemeToggle();
-    }
-
-    if (typeof updateDebugDisplay === "function") {
-        updateDebugDisplay();
-    }
-
-    if (typeof updateAgeDisplay === "function") {
-        updateAgeDisplay();
-    }
-
-    if (typeof initScrollBehaviors === "function") {
-        initScrollBehaviors();
-    }
-
-    if (typeof hideCurrentPage === "function") {
-        hideCurrentPage();
-    }
+    if (typeof changelangueinfo === "function") changelangueinfo();
+    if (typeof initializeLightboxGlobal === "function") initializeLightboxGlobal();
+    if (typeof initThemeToggle === "function") initThemeToggle();
+    if (typeof updateDebugDisplay === "function") updateDebugDisplay();
+    if (typeof updateAgeDisplay === "function") updateAgeDisplay();
+    if (typeof initScrollBehaviors === "function") initScrollBehaviors();
+    if (typeof hideCurrentPage === "function") hideCurrentPage();
 
     if (
         document.getElementById("gallery") &&
@@ -1309,8 +1198,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
         initializeGalerie();
     }
-
 });
+
+
 // Carousel functionality - images slide from right to left, sources in JS
 let currentSlide = 0;
 let carouselInterval;
