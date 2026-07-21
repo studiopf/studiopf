@@ -2873,3 +2873,236 @@ body.light-mode .footer {
 .gallery img:hover {
     transform: scale(clamp(1.02, 1.08, 1.12));
 }
+
+/* ========================================================================== 
+   AJUSTEMENTS HEADER ET CONTENU MAINTENANCE
+   ========================================================================== */
+
+:root {
+    --menu-button-size: clamp(42px, 2.65vw, 50px);
+    --menu-button-right: clamp(8px, 0.8vw, 15px);
+    --menu-safe-space: calc(var(--menu-button-size) + var(--menu-button-right) + clamp(8px, 0.8vw, 16px));
+    --maintenance-text-size: clamp(14px, 0.88vw, 17px);
+    --maintenance-text-gutter: clamp(18px, 4vw, 76px);
+}
+
+/* Réserve une zone au bouton fixe pour que les icônes ne passent plus dessous. */
+.header-top {
+    padding-right: var(--menu-safe-space);
+}
+
+.header-contact {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 auto;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0;
+    gap: clamp(3px, 0.4vw, 8px);
+}
+
+.header-contact a {
+    flex: 0 0 auto;
+    width: clamp(30px, 2.1vw, 40px);
+    height: clamp(30px, 2.1vw, 40px);
+    margin: 0;
+    padding: clamp(3px, 0.3vw, 6px);
+}
+
+button.pf-menu-button {
+    top: clamp(4px, 0.45vw, 9px) !important;
+    right: var(--menu-button-right) !important;
+    width: var(--menu-button-size) !important;
+    height: var(--menu-button-size) !important;
+    z-index: 10001 !important;
+}
+
+/* Paragraphes plus lisibles, légèrement agrandis et mieux centrés. */
+.maintenance-box p,
+.maintenance-content p {
+    width: calc(100% - (2 * var(--maintenance-text-gutter)));
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-size: var(--maintenance-text-size);
+    line-height: 1.45;
+    text-align: left;
+}
+
+/* Conserve un espace régulier entre plusieurs paragraphes. */
+.maintenance-content p + p,
+.maintenance-box p + p {
+    margin-top: clamp(7px, 0.6vw, 12px);
+}
+
+/* ========================================================================== 
+   CORRECTIONS FLUIDES V3 — petits écrans sans @media
+   ========================================================================== */
+
+/* Réduit l'espace entre le header et le premier carrousel/contenu. */
+#contenu-principal {
+    padding-top: clamp(4px, 0.55vw, 10px);
+}
+
+.carousel-container,
+.carroussel-container {
+    top: 0;
+    margin-top: 0;
+}
+
+header + .info-container,
+header + main,
+header + #contenu-principal {
+    margin-top: 0;
+}
+
+/* Bandeau réellement centré : évite le décalage provoqué par 100vw. */
+.info-container {
+    position: relative;
+    inset: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.info {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-inline: clamp(5px, 1.2vw, 22px);
+    overflow-wrap: anywhere;
+    text-align: center;
+    animation-name: info-fluid-v3;
+    animation-duration: 5s;
+}
+
+@keyframes info-fluid-v3 {
+    from { transform: translateX(0.25%); }
+    to   { transform: translateX(-0.25%); }
+}
+
+/* Les trois exemples restent sur une seule ligne et défilent si nécessaire. */
+.exemples-photos3 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(clamp(105px, 28vw, 360px), 1fr);
+    grid-template-columns: none;
+    width: 100%;
+    max-width: 100%;
+    gap: clamp(4px, 0.7vw, 10px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline proximity;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.exemples-photos3 > * {
+    min-width: 0;
+    scroll-snap-align: center;
+}
+
+.exemples-photos3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Les composants deviennent leurs propres conteneurs responsifs. */
+.header-top,
+.lightbox {
+    container-type: inline-size;
+}
+
+/* Ajustements compacts lorsque le header manque de place. */
+@container (max-width: 700px) {
+    .header-top {
+        min-height: 0;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: clamp(5px, 2vw, 10px);
+        gap: 3px;
+    }
+
+    .header-logo .logo {
+        width: clamp(48px, 15vw, 66px);
+    }
+
+    .header-contact {
+        gap: 1px;
+    }
+
+    .header-contact a {
+        width: clamp(27px, 9vw, 33px);
+        height: clamp(27px, 9vw, 33px);
+        padding: 2px;
+        font-size: clamp(15px, 5vw, 19px);
+    }
+}
+
+/* Lightbox : l'image garde une zone dédiée et les flèches passent dessous. */
+@container (max-width: 700px) {
+    .lightbox.active {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(0, 1fr) auto;
+        align-items: center;
+        justify-items: center;
+        gap: clamp(6px, 2vw, 12px);
+        padding: clamp(42px, 12vw, 56px) clamp(8px, 3vw, 16px) clamp(10px, 3vw, 18px);
+    }
+
+    .lightbox img {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .lightbox-nav {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: clamp(48px, 18vw, 72px);
+        height: clamp(38px, 12vw, 50px);
+        margin: 0;
+        transform: none;
+        border-radius: 8px;
+        font-size: clamp(24px, 8vw, 34px);
+    }
+
+    .lightbox-prev {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: end;
+    }
+
+    .lightbox-next {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: start;
+    }
+
+    .lightbox-nav:hover {
+        transform: scale(1.05);
+    }
+
+    .lightbox-close {
+        top: clamp(5px, 2vw, 10px);
+        right: clamp(5px, 2vw, 10px);
+        width: clamp(34px, 10vw, 42px);
+        height: clamp(34px, 10vw, 42px);
+    }
+}
