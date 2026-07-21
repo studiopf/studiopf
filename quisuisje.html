@@ -9,7 +9,6 @@
   </title>
   <meta content="Découvrez le parcours de Pierre-François, alias PF, artiste peintre professionnel sur figurines et fondateur de Studio PF : ses débuts, ses échecs, sa progression, ses commandes premium, ses cours et ses projets de concours." name="description"/>
   <meta content="Frasse Pierre-François - Studio PF" name="author"/>
-  <meta content="Pierre-François peintre figurine, PF Studio PF, artiste peintre sur figurines, peintre figurine professionnel, parcours peintre figurine, peinture Warhammer, peinture Age of Sigmar, peinture Warhammer 40K, cours peinture figurine, formation peinture figurine, commission peinture figurine, peinture figurine haut de gamme, figurine de collection, concours peinture figurine, Studio PF" name="keywords"/>
   <meta content="index, follow" name="robots"/>
   <link href="https://studiopf.fr/quisuisje.html" rel="canonical"/>
   <!-- Open Graph -->
@@ -30,7 +29,7 @@
   <meta content="https://studiopf.fr/img/preview.jpg" name="twitter:image"/>
   <meta content="Pierre-François, artiste peintre sur figurines et fondateur de Studio PF" name="twitter:image:alt"/>
   <!-- Optimisation des connexions externes -->
-  <link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+  <link href="https://cdnjs.cloudflare.com" rel="preconnect" crossorigin>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <!-- Préchargement de l'image principale -->
   <link as="image" fetchpriority="high" href="/img/preview.png" rel="preload"/>
@@ -163,22 +162,20 @@
     <!-- Logo -->
     <div class="header-logo">
      <a aria-label="Retour à l'accueil" class="logo-a" href="index.html" onclick="loadPage('index.html'); return false;">
-      <img alt="Studio PF Logo" class="logo" data-no-lightbox="" fetchpriority="high" src="/img/logo.png"/>
+      <img alt="Studio PF Logo" class="logo" data-no-lightbox fetchpriority="high" src="/img/logo.png"/>
      </a>
     </div>
     <!-- Icônes -->
     <div class="header-contact">
      <a aria-label="Envoyer un email" href="mailto:studiopeinturefigurine@gmail.com">
-      <i class="fas fa-envelope">
-      </i>
+      <i aria-hidden="true" class="fas fa-envelope"></i>
      </a>
      <a aria-label="Téléphoner" href="tel:+33775860837">
-      <i class="fas fa-phone-alt">
-      </i>
+      <i aria-hidden="true" class="fas fa-phone-alt"></i>
      </a>
     </div>
     <!-- Bouton hamburger -->
-    <button aria-expanded="false" aria-label="Ouvrir le menu" class="pf-menu-button" id="pf-menu-button" type="button">
+    <button aria-controls="pf-mobile-nav" aria-expanded="false" aria-label="Ouvrir le menu" class="pf-menu-button" id="pf-menu-button" type="button">
      <span>
      </span>
      <span>
@@ -187,16 +184,16 @@
      </span>
     </button>
    </div>
-   <nav class="pf-mobile-nav" id="pf-mobile-nav">
+   <nav aria-label="Navigation principale" class="pf-mobile-nav" id="pf-mobile-nav">
     <div class="language-selector">
-     <button id="french" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-      <img alt="Français - Euro" data-no-lightbox="" src="img/Flag_of_France.png"/>
+     <button aria-label="Afficher le site en français" id="french" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
+      <img alt="Français - Euro" data-no-lightbox src="img/Flag_of_France.png"/>
      </button>
-     <button id="english" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-      <img alt="English - USD" data-no-lightbox="" src="img/Flag_of_the_United_States.png"/>
+     <button aria-label="Afficher le site en anglais" id="english" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
+      <img alt="English - USD" data-no-lightbox src="img/Flag_of_the_United_States.png"/>
      </button>
-     <button id="spanish" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-      <img alt="Español - Euro" data-no-lightbox="" src="img/Flag_of_Spain.png"/>
+     <button aria-label="Afficher le site en espagnol" id="spanish" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
+      <img alt="Español - Euro" data-no-lightbox src="img/Flag_of_Spain.png"/>
      </button>
     </div>
     <ul class="pf-nav-list">
@@ -240,8 +237,7 @@
      <li>
       <a href="mailto:studiopeinturefigurine@gmail.com">
        <span>
-        <i class="fas fa-envelope">
-        </i>
+        <i aria-hidden="true" class="fas fa-envelope"></i>
         studiopeinturefigurine@gmail.com
        </span>
       </a>
@@ -249,8 +245,7 @@
      <li>
       <a href="tel:+33775860837">
        <span>
-        <i class="fas fa-phone-alt">
-        </i>
+        <i aria-hidden="true" class="fas fa-phone-alt"></i>
         07 75 86 08 37
        </span>
       </a>
@@ -259,54 +254,44 @@
     <div class="pf-mobile-social">
      <div class="pf-social-container">
       <a aria-label="Facebook" class="social-icon" href="https://www.facebook.com/studiopf.fr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-facebook-f">
-       </i>
+       <i aria-hidden="true" class="fab fa-facebook-f"></i>
       </a>
       <a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/studiopf.fr/" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-instagram">
-       </i>
+       <i aria-hidden="true" class="fab fa-instagram"></i>
       </a>
       <a aria-label="X" class="social-icon" href="https://x.com/studioPFfr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-x-twitter">
-       </i>
+       <i aria-hidden="true" class="fab fa-x-twitter"></i>
       </a>
       <a aria-label="Discord" class="social-icon" href="https://discord.gg/Jpa4yvfQVN" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-discord">
-       </i>
+       <i aria-hidden="true" class="fab fa-discord"></i>
       </a>
       <a aria-label="Patreon" class="social-icon" href="https://www.patreon.com/studiopf" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-patreon">
-       </i>
+       <i aria-hidden="true" class="fab fa-patreon"></i>
       </a>
       <a aria-label="Twitch" class="social-icon" href="https://www.twitch.tv/studiopf" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-twitch">
-       </i>
+       <i aria-hidden="true" class="fab fa-twitch"></i>
       </a>
       <a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@studiopf-fr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-youtube">
-       </i>
+       <i aria-hidden="true" class="fab fa-youtube"></i>
       </a>
       <a aria-label="TikTok" class="social-icon" href="https://www.tiktok.com/@studiopf.fr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-tiktok">
-       </i>
+       <i aria-hidden="true" class="fab fa-tiktok"></i>
       </a>
      </div>
     </div>
    </nav>
    <div class="info-container" id="info-container">
-    <p class="info" id="infoParagraph">
-     .
-    </p>
+    <p aria-live="polite" class="info" id="infoParagraph"></p>
    </div>
   </header>
   <div class="carousel-container">
    <div class="carousel" id="carousel">
    </div>
    <!-- Navigation arrows -->
-   <button aria-label="Previous slide" class="carousel-arrow carousel-prev" onclick="prevSlide()">
+   <button aria-label="Diapositive précédente" class="carousel-arrow carousel-prev" onclick="prevSlide()" type="button">
     ❮
    </button>
-   <button aria-label="Next slide" class="carousel-arrow carousel-next" onclick="nextSlide()">
+   <button aria-label="Diapositive suivante" class="carousel-arrow carousel-next" onclick="nextSlide()" type="button">
     ❯
    </button>
    <!-- Dots -->
@@ -382,7 +367,7 @@
       voir plus ▼
      </span>
     </button>
-    <div class="maintenance-content" hidden="" id="origines-content">
+    <div class="maintenance-content" hidden id="origines-content">
      <p>
       Passionné depuis l’enfance par la fantasy, la science-fiction, Tolkien,
       <a class="surligne" href="https://maxireves.fr/selection-jeux/jeux-de-figurines/star-wars/" rel="noopener noreferrer" target="_blank">
@@ -468,7 +453,7 @@
       voir plus ▼
      </span>
     </button>
-    <div class="maintenance-content" hidden="" id="passion-metier-content">
+    <div class="maintenance-content" hidden id="passion-metier-content">
      <p>
       Au fil des années, j'ai eu l'occasion de peindre de nombreuses armées et factions. Tout a commencé avec mes
       <a class="surligne" href="https://maxireves.fr/selection-jeux/games-workshop/warhammer-age-of-sigmar/la-grand-alliance-order/seraphon/" rel="noopener noreferrer" target="_blank">
@@ -552,7 +537,7 @@
       Sur le moment, cela me semblait presque irréaliste. Pourtant, cette idée a commencé à faire son chemin et le projet de créer un véritable studio de peinture est progressivement né.
      </p>
      <p>
-      Quelques mois plus tard, après un accident du travail suivi d'un licenciement, et grace au soutien de mon épouse
+      Quelques mois plus tard, après un accident du travail suivi d'un licenciement, et grâce au soutien de mon épouse
       <strong>
        Gaëlle
       </strong>
@@ -563,11 +548,11 @@
       , avec une ambition simple : proposer un service de peinture professionnel capable de donner vie à chaque figurine, qu'elle soit destinée au jeu, à la collection ou à la compétition.
      </p>
      <div class="exemples-photos">
-      <img alt="Une des unités imprimé et peinte pendant le Covid..." src="img/covid.jpg"/>
+      <img alt="Une des unités imprimées et peintes pendant le Covid" src="img/covid.jpg"/>
      </div>
      <p>
       <em>
-       📸 Une des unités imprimé et peinte pendant le Covid...
+       📸 Une des unités imprimées et peintes pendant le Covid
       </em>
      </p>
      <a class="button" href="peinturecommission.html" onclick="loadPage('peinturecommission.html'); return false;">
@@ -584,7 +569,7 @@
       voir plus ▼
      </span>
     </button>
-    <div class="maintenance-content" hidden="" id="transmission-communaute-content">
+    <div class="maintenance-content" hidden id="transmission-communaute-content">
      <p>
       En créant
       <strong>
@@ -692,7 +677,7 @@
       voir plus ▼
      </span>
     </button>
-    <div class="maintenance-content" hidden="" id="studio-aujourdhui-content">
+    <div class="maintenance-content" hidden id="studio-aujourdhui-content">
      <p>
       En parallèle de mon activité de peintre professionnel, je suis président de l'association de jeux de figurines
       <a class="surligne" href="https://grognards.fr/" rel="noopener noreferrer" target="_blank">
@@ -742,14 +727,14 @@
       </strong>
      </p>
      <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20de%20collection%20Studio%20PF&amp;body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20vous%20présenter%20mon%20projet.%0A%0A---%20Figurine%20ou%20projet%20:%0A%0A---%20Dimensions%20:%0A%0A---%20Univers%20:%0A%0A---%20Niveau%20de%20finition%20souhaité%20:%0A%0A---%20Photos%20ou%20liens%20:%0A%0A---%20Informations%20complémentaires%20:%0A">
-      Si vous avez un projet contactez moi 💬
+      Si vous avez un projet contactez-moi 💬
      </a>
     </div>
    </div>
   </main>
   <footer>
    <div class="widget-container">
-    <div class="widget" data-featurable-async="" data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d">
+    <div class="widget" data-featurable-async data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d">
     </div>
     <script defer="" src="https://featurable.com/assets/bundle.js">
     </script>
@@ -760,7 +745,7 @@
       <div class="cardpartenaire">
        <div>
         <a class="apartenaire" href="https://www.totalwargame.com/fr/" rel="noopener noreferrer" target="_blank">
-         <img alt="Total Wargames Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-totalwar.png"/>
+         <img alt="Total Wargames Logo" data-no-lightbox src="img/logo-totalwar.png"/>
         </a>
        </div>
        <div>
@@ -779,7 +764,7 @@
       <div class="cardpartenaire">
        <div>
         <a href="https://maxireves.fr/?ref=17962" rel="noopener noreferrer" target="_blank">
-         <img alt="Maxi Rêve Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-maxireve.png"/>
+         <img alt="Maxi Rêve Logo" data-no-lightbox src="img/logo-maxireve.png"/>
         </a>
        </div>
        <div>
@@ -800,7 +785,7 @@
       <div class="cardpartenaire">
        <div>
         <a href="https://mezgike.com/" rel="noopener noreferrer" target="_blank">
-         <img alt="Mezgike Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-mezgike.png"/>
+         <img alt="Mezgike Logo" data-no-lightbox src="img/logo-mezgike.png"/>
         </a>
        </div>
        <div>
@@ -821,14 +806,14 @@
       <div class="cardpartenaire">
        <div>
         <a class="apartenaire" href="https://wargamesceneries.com/" rel="noopener noreferrer" target="_blank">
-         <img alt="Wargame Sceneries Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-wargamesceneries.png"/>
+         <img alt="Wargame Sceneries Logo" data-no-lightbox src="img/logo-wargamesceneries.png"/>
         </a>
        </div>
        <div>
         <p>
          Des décors modulaires en impression 3D pour des parties immersives.
          <br/>
-         -10% tout les modèles imprimés
+         -10% tous les modèles imprimés
          <br/>
          avec le code promo :
          <br/>
@@ -842,13 +827,12 @@
      </div>
     </div>
    </div>
-   <button id="scrollToTopBtn" onclick="scrollToTop()" title="Retour en haut ⬆️">
+   <button id="scrollToTopBtn" onclick="scrollToTop()" title="Retour en haut ⬆️" type="button">
     ↑
    </button>
-   <button id="scrollTotal" onclick="scrollTotal()" title="Voir Total">
    </button>
    <div class="footer" id="foot-contenu">
-    <nav class="menu-mobilefoot">
+    <nav aria-label="Navigation secondaire" class="menu-mobilefoot">
      <ul class="menufoot">
       <li>
        <a href="conditions.html" onclick="loadPage('conditions.html'); return false;">
@@ -896,74 +880,8 @@
     </div>
    </div>
   </footer>
-  <div aria-hidden="true" class="lightbox" id="lightbox">
+  <div aria-hidden="true" aria-label="Aperçu de l’image" class="lightbox" id="lightbox" role="dialog">
    <img alt="Studio PF" id="lightbox-img" src="/img/logo.png"/>
   </div>
-  <script>
-   document.addEventListener("DOMContentLoaded", () => {
-    const boxes = document.querySelectorAll(
-        "#contenu-principal .maintenance-box[data-box-id]"
-    );
-
-    boxes.forEach((box) => {
-        const button = box.querySelector(":scope > .maintenance-header");
-        const content = box.querySelector(":scope > .maintenance-content");
-        const arrow = button?.querySelector(".maintenance-arrow");
-
-        if (!button || !content) return;
-
-        const setState = (open) => {
-            button.setAttribute("aria-expanded", String(open));
-            content.hidden = !open;
-            box.classList.toggle("is-collapsed", !open);
-
-            if (arrow) {
-                arrow.textContent = open ? "▲" : "voir plus ▼";
-            }
-        };
-
-        setState(button.getAttribute("aria-expanded") === "true");
-
-        button.addEventListener("click", () => {
-            const willOpen = button.getAttribute("aria-expanded") !== "true";
-
-            boxes.forEach((otherBox) => {
-                if (otherBox === box) return;
-
-                const otherButton = otherBox.querySelector(":scope > .maintenance-header");
-                const otherContent = otherBox.querySelector(":scope > .maintenance-content");
-                const otherArrow = otherButton?.querySelector(".maintenance-arrow");
-
-                if (!otherButton || !otherContent) return;
-
-                otherButton.setAttribute("aria-expanded", "false");
-                otherContent.hidden = true;
-                otherBox.classList.add("is-collapsed");
-
-                if (otherArrow) {
-                    otherArrow.textContent = "voir plus ▼";
-                }
-            });
-
-            setState(willOpen);
-
-            if (willOpen) {
-                requestAnimationFrame(() => {
-                    const headerOffset = document.querySelector("header")?.offsetHeight || 0;
-                    const top = box.getBoundingClientRect().top
-                        + window.scrollY
-                        - headerOffset
-                        - 10;
-
-                    window.scrollTo({
-                        top: Math.max(0, top),
-                        behavior: "smooth"
-                    });
-                });
-            }
-        });
-    });
-});
-  </script>
  </body>
 </html>
