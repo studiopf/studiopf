@@ -6,7 +6,7 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    gap: 10px;f
+    gap: 10px;
 }
 
 .exemples-photos {
@@ -3406,5 +3406,130 @@ header {
     .cardpartenaire img{
         max-height:140px;
         max-width:90%;
+    }
+}
+
+/* ========================================================================== 
+   ACCORDÉONS MAINTENANCE — RÈGLES FINALES COHÉRENTES
+   Ces règles remplacent les anciennes variantes dispersées dans le fichier.
+============================================================================= */
+.maintenance-box {
+    width: min(100%, var(--content-max, 1900px));
+    margin: 10px auto 0;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--maintenance-border-bottom, rgba(244, 200, 118, .45));
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.maintenance-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 8px clamp(8px, 1.2vw, 18px);
+    gap: 10px;
+    border: 0;
+    background: transparent;
+    color: var(--text-p);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.maintenance-header:hover,
+.maintenance-header:focus-visible {
+    background: rgba(244, 200, 118, .10);
+    outline: none;
+}
+
+.maintenance-title {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.maintenance-title h1,
+.maintenance-title h2,
+.maintenance-title h3,
+.maintenance-header h1,
+.maintenance-header h2,
+.maintenance-header h3 {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.15;
+    text-align: left !important;
+}
+
+.maintenance-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    min-width: 24px;
+    margin-left: auto;
+    padding: 0;
+    font-size: clamp(15px, 1.2vw, 20px);
+    font-weight: 900;
+    line-height: 1;
+    transform: rotate(-90deg);
+    transition: transform .25s ease;
+}
+
+.maintenance-arrow.is-open,
+.maintenance-box.is-open > .maintenance-header .maintenance-arrow {
+    transform: rotate(0deg);
+}
+
+.maintenance-box.is-collapsed > .maintenance-header {
+    border-bottom-color: transparent;
+}
+
+.maintenance-content[hidden],
+.maintenance-box > [hidden] {
+    display: none !important;
+}
+
+/* Les boîtes H3 restent visibles même quand leur contenu est fermé. */
+.maintenance-box .maintenance-box {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    border-bottom-color: color-mix(in srgb, var(--maintenance-border-bottom, #c8a96a) 55%, transparent);
+}
+
+@media (max-width: 700px) {
+    .maintenance-box {
+        margin-top: 6px;
+    }
+
+    .maintenance-header {
+        min-height: 46px;
+        align-items: center;
+        padding: 7px 8px;
+        gap: 7px;
+    }
+
+    .maintenance-title h1,
+    .maintenance-title h2,
+    .maintenance-title h3,
+    .maintenance-header h1,
+    .maintenance-header h2,
+    .maintenance-header h3 {
+        line-height: 1.18;
+    }
+
+    .maintenance-arrow {
+        min-width: 20px;
+        font-size: 16px;
     }
 }
