@@ -834,7 +834,7 @@ a:hover,
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    object-position: relative;
+    object-position: center;
     display: block;
 }
 
@@ -1030,7 +1030,7 @@ nav {
 }
 
 .language-selector button.selected {
-    opacity: 10;                 /* le bouton choisi devient bien visible */
+    opacity: 1;                 /* le bouton choisi devient bien visible */
     border: 5px solid #000000;  /* ou une bordure bleue, ou un fond différent */
     box-shadow: 0 0 8px rgba(0,123,255,0.5);
 }
@@ -1122,7 +1122,7 @@ nav {
     width: 150px;
     height: 150px;
     background-size: cover;
-    background-position: relative;
+    background-position: center;
     border: none;
     cursor: pointer;
     font-size: 0px;
@@ -1148,35 +1148,35 @@ nav {
 .tous {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: relative;
+    background-position: center;
     background-image: url('img/toutes.png');
 }
 
 .expo {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: relative;
+    background-position: center;
     background-image: url('/img/expo.png');
 }
 
 .concours {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: relative;
+    background-position: center;
     background-image: url('img/concours.png');
 }
 
 .niv3 {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: relative;
+    background-position: center;
     background-image: url('img/nivtrois.png');
 }
 
 .niv4 {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: relative;
+    background-position: center;
     background-image: url('img/nivquatre.png');
 }
 
@@ -3535,4 +3535,11 @@ header {
         min-width: 20px;
         font-size: 16px;
     }
+}
+
+.maintenance-box > h1,
+.maintenance-box > h2,
+.maintenance-box > h3 {
+    margin: 0;
+    padding: 0;
 }
