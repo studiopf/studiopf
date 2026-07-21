@@ -9,7 +9,8 @@ const virtualPages = [
 
 const info = getPageInfo();
 let currentPage = info.pageName || "index";
-let currentLanguage = "french";
+let currentLanguage = localStorage.getItem("language") || "french";
+let messageinfo = "";
 
 function getPageInfo() {
     const path = window.location.pathname.substring(1);
@@ -69,19 +70,15 @@ function updateAgeDisplay() {
 // LANGUE
 // =============================
 function setLanguage(lang) {
-    currentLanguage = lang;
+    const allowedLanguages = ["french", "english", "spanish"];
+    currentLanguage = allowedLanguages.includes(lang) ? lang : "french";
+    localStorage.setItem("language", currentLanguage);
 
-    highlightLanguage(lang);
+    highlightLanguage(currentLanguage);
     updateDebugDisplay();
 
-
-
-}
-
-function highlightLanguage(langId) {
-    document.querySelectorAll('.language-selector button').forEach(btn => {
-        btn.classList.toggle('selected', btn.id === langId);
-    });
+    if (typeof changelangueinfo === "function") changelangueinfo();
+    if (typeof genererTableTarifs === "function") genererTableTarifs();
 }
 
 // =============================
@@ -91,11 +88,7 @@ function initializeFormationForm() {
     const form = document.getElementById("formationForm");
     if (!form) return;
 
-    // Retirer les anciens listeners pour éviter les doublons
-    form.removeEventListener("submit", handleSubmit);
-    form.addEventListener("submit", handleSubmit);
-
-    function handleSubmit(e) {
+    form.onsubmit = function handleSubmit(e) {
         e.preventDefault();
 
         const getValue = id => document.getElementById(id)?.value.trim() || "";
@@ -123,7 +116,7 @@ function initializeFormationForm() {
 
         const mailtoUrl = `mailto:studiopeinturefigurine@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoUrl;
-    }
+    };
 }
 
 // ────────────────────────────────────────────────
@@ -460,7 +453,8 @@ function getVisiblePageImages() {
         if (
             clickedImage === lightboxImg ||
             clickedImage.id === "lightbox-img" ||
-            clickedImage.hasAttribute("data-no-lightbox")
+            clickedImage.hasAttribute("data-no-lightbox") ||
+            clickedImage.closest(".logo, .social-icon, nav, footer")
         ) {
             return;
         }
@@ -529,7 +523,10 @@ function changelangueinfo() {
     }
 
     fetch(fichier)
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) throw new Error(`Erreur HTTP ${response.status}`);
+            return response.text();
+        })
         .then(texte => {
 
             messageinfo = texte.trim() === ""
@@ -539,13 +536,8 @@ function changelangueinfo() {
             const container = document.querySelector(".info-container");
             const info = document.querySelector(".info");
 
-            if (texte.trim() === "") {
-                container.style.display = "none";
-                info.style.display = "none";
-            } else {
-                container.style.display = "";
-                info.style.display = "";
-            }
+            if (container) container.style.display = texte.trim() === "" ? "none" : "";
+            if (info) info.style.display = texte.trim() === "" ? "none" : "";
 
             updateParagraph();
         })
@@ -555,13 +547,6 @@ function changelangueinfo() {
         });
 }
 
-function updateParagraph() {
-    const paragraph = document.getElementById("infoParagraph");
-
-    if (paragraph) {
-        paragraph.innerHTML = messageinfo.replace(/\r?\n/g, "<br>");
-    }
-}
 function updateParagraph() {
     const paragraph = document.getElementById("infoParagraph");
 
@@ -606,54 +591,9 @@ function initThemeToggle() {
     };
 
 }
-document.addEventListener("DOMContentLoaded", function () {
-
-    const pfButton = document.getElementById("pf-menu-button");
-    const pfNav = document.getElementById("pf-mobile-nav");
-
-    if (!pfButton || !pfNav) return;
-
-    function fermerMenu() {
-        pfButton.classList.remove("active");
-        pfNav.classList.remove("active");
-        pfButton.setAttribute("aria-expanded", "false");
-    }
-
-    // Ouvrir ou fermer le menu
-    pfButton.addEventListener("click", function (event) {
-        event.stopPropagation();
-
-        const menuOuvert = pfNav.classList.toggle("active");
-        pfButton.classList.toggle("active", menuOuvert);
-        pfButton.setAttribute("aria-expanded", menuOuvert);
-    });
-
-    // Fermer avant l'exécution de loadPage()
-    pfNav.addEventListener("click", function (event) {
-
-        const elementClique = event.target.closest("a, button");
-
-        if (elementClique) {
-            fermerMenu();
-        }
-
-    }, true);
-
-    // Fermer en cliquant à l'extérieur
-    document.addEventListener("click", function (event) {
-
-        if (
-            !pfNav.contains(event.target) &&
-            !pfButton.contains(event.target)
-        ) {
-            fermerMenu();
-        }
-
-    });
-
-});
 function initScrollBehaviors() {
     const scrollBtn = document.getElementById("scrollToTopBtn");
+    const scrollBtnTo = document.getElementById("scrollBtnTo");
     const formSection = document.getElementById("formSection");
 
     // Une navigation dynamique rappelle cette fonction : on retire donc
@@ -1176,282 +1116,174 @@ function startMaintenanceObserver() {
 }
 
 /* =====================================================
-   INITIALISATION GÉNÉRALE
+   CARROUSEL
 ===================================================== */
+let currentSlide = 0;
+let carouselInterval = null;
+
+const carouselImages = [
+    "img/carrousel/carrousel1.jpg",
+    "img/carrousel/carrousel2.jpg",
+    "img/carrousel/carrousel3.jpg",
+    "img/carrousel/carrousel4.jpg",
+    "img/carrousel/carrousel5.jpg",
+    "img/carrousel/carrousel6.jpg",
+    "img/carrousel/carrousel7.jpg",
+    "img/carrousel/carrousel8.jpg",
+    "img/carrousel/carrousel9.jpg"
+];
+
+function initializeCarousel() {
+    const carousel = document.getElementById("carousel");
+    const dotsContainer = document.getElementById("carousel-dots");
+
+    if (!carousel || !dotsContainer) {
+        stopAutoSlide();
+        return;
+    }
+
+    if (carousel.dataset.initialized === "true") return;
+    carousel.dataset.initialized = "true";
+
+    currentSlide = 0;
+    carousel.replaceChildren();
+    dotsContainer.replaceChildren();
+
+    const imagesFragment = document.createDocumentFragment();
+    const dotsFragment = document.createDocumentFragment();
+
+    carouselImages.forEach((src, index) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `Studio PF – image ${index + 1}`;
+        img.loading = index === 0 ? "eager" : "lazy";
+        img.setAttribute("data-no-lightbox", "");
+        img.style.flex = "0 0 100%";
+        img.style.width = "100%";
+        img.style.objectFit = "contain";
+        img.style.objectPosition = "center 80%";
+        imagesFragment.appendChild(img);
+
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "carousel-dot";
+        dot.setAttribute("aria-label", `Afficher l’image ${index + 1}`);
+        dot.classList.toggle("active", index === 0);
+        dot.addEventListener("click", () => goToSlide(index, true));
+        dotsFragment.appendChild(dot);
+    });
+
+    carousel.appendChild(imagesFragment);
+    dotsContainer.appendChild(dotsFragment);
+    applyCarouselPosition(false);
+    startAutoSlide();
+}
+
+function applyCarouselPosition(animate = true) {
+    const carousel = document.getElementById("carousel");
+    if (!carousel) return;
+
+    carousel.style.transition = animate ? "transform 0.5s ease-in-out" : "none";
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    document.querySelectorAll("#carousel-dots .carousel-dot").forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentSlide);
+        dot.setAttribute("aria-current", index === currentSlide ? "true" : "false");
+    });
+}
+
+function goToSlide(index, restartTimer = false) {
+    if (!carouselImages.length) return;
+    currentSlide = (index + carouselImages.length) % carouselImages.length;
+    applyCarouselPosition(true);
+    if (restartTimer) startAutoSlide();
+}
+
+function nextSlide() {
+    goToSlide(currentSlide + 1, false);
+}
+
+function prevSlide() {
+    goToSlide(currentSlide - 1, true);
+}
+
+function stopAutoSlide() {
+    if (carouselInterval !== null) {
+        clearInterval(carouselInterval);
+        carouselInterval = null;
+    }
+}
+
+function startAutoSlide() {
+    stopAutoSlide();
+    if (!document.getElementById("carousel") || carouselImages.length < 2) return;
+    carouselInterval = window.setInterval(nextSlide, 4000);
+}
+
+/* =====================================================
+   MENU MOBILE
+===================================================== */
+function initializeMobileMenu() {
+    const button = document.getElementById("pf-menu-button");
+    const nav = document.getElementById("pf-mobile-nav");
+    if (!button || !nav || button.dataset.initialized === "true") return;
+
+    button.dataset.initialized = "true";
+
+    const closeMenu = () => {
+        button.classList.remove("active");
+        nav.classList.remove("active");
+        button.setAttribute("aria-expanded", "false");
+    };
+
+    button.addEventListener("click", event => {
+        event.stopPropagation();
+        const isOpen = nav.classList.toggle("active");
+        button.classList.toggle("active", isOpen);
+        button.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    nav.addEventListener("click", event => {
+        if (event.target.closest("a, button")) closeMenu();
+    });
+
+    document.addEventListener("click", event => {
+        if (!nav.contains(event.target) && !button.contains(event.target)) closeMenu();
+    });
+}
+
+/* =====================================================
+   INITIALISATION UNIQUE
+===================================================== */
+function initializePageFeatures(root = document) {
+    initializeMaintenanceBoxes(root);
+    initializeMobileMenu();
+    initializeFormationForm();
+    initializeLightboxGlobal();
+    initThemeToggle();
+    updateDebugDisplay();
+    updateAgeDisplay();
+    initScrollBehaviors();
+    initializeCarousel();
+
+    if (document.getElementById("tarifTableBody")) genererTableTarifs();
+
+    if (document.getElementById("gallery") && document.getElementById("filters")) {
+        const gallery = document.getElementById("gallery");
+        if (gallery.dataset.initialized !== "true") {
+            gallery.dataset.initialized = "true";
+            initializeGalerie();
+        }
+    }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-    initializeMaintenanceBoxes();
+    highlightLanguage(currentLanguage);
+    changelangueinfo();
+    initializePageFeatures();
     startMaintenanceObserver();
-
-    if (typeof changelangueinfo === "function") changelangueinfo();
-    if (typeof initializeLightboxGlobal === "function") initializeLightboxGlobal();
-    if (typeof initThemeToggle === "function") initThemeToggle();
-    if (typeof updateDebugDisplay === "function") updateDebugDisplay();
-    if (typeof updateAgeDisplay === "function") updateAgeDisplay();
-    if (typeof initScrollBehaviors === "function") initScrollBehaviors();
-    if (typeof hideCurrentPage === "function") hideCurrentPage();
-
-    if (
-        document.getElementById("gallery") &&
-        document.getElementById("filters") &&
-        typeof initializeGalerie === "function"
-    ) {
-        initializeGalerie();
-    }
 });
 
+// À appeler après un chargement dynamique de contenu (loadPage/AJAX).
+window.reinitializePageFeatures = initializePageFeatures;
 
-// Carousel functionality - images slide from right to left, sources in JS
-let currentSlide = 0;
-let carouselInterval;
-
-const carouselImages = [
-    "img/carrousel/carrousel1.jpg",
-    "img/carrousel/carrousel2.jpg",
-    "img/carrousel/carrousel3.jpg",
-    "img/carrousel/carrousel4.jpg",
-    "img/carrousel/carrousel5.jpg",
-    "img/carrousel/carrousel6.jpg",
-    "img/carrousel/carrousel7.jpg",
-    "img/carrousel/carrousel8.jpg",
-    "img/carrousel/carrousel9.jpg"
-];
-
-function initializeCarousel() {
-    const carousel = document.getElementById('carousel');
-    const dotsContainer = document.getElementById('carousel-dots');
-    
-    if (!carousel || !dotsContainer) return;
-    
-    // Clear existing content
-    carousel.innerHTML = '';
-    dotsContainer.innerHTML = '';
-    
-    // Create images
-    carouselImages.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = "Studio Peinture Figurine";
-        img.style.flex = '0 0 100%';
-        img.style.width = '100%';
-        img.style.objectFit = 'contain';
-        img.style.objectPosition = 'center 80%';
-        carousel.appendChild(img);
-        
-        // Create dot
-        const dot = document.createElement('div');
-        dot.className = 'carousel-dot';
-        if (index === 0) dot.classList.add('active');
-        dot.onclick = () => goToSlide(index);
-        dotsContainer.appendChild(dot);
-    });
-    
-    // Set initial position
-    carousel.style.transform = 'translateX(0%)';
-    
-    // Start auto-slide (right to left = next slide)
-    startAutoSlide();
-}
-
-function updateDots() {
-    const dots = document.querySelectorAll('.carousel-dot');
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentSlide);
-    });
-}
-
-function goToSlide(index) {
-    currentSlide = index;
-    const carousel = document.getElementById('carousel');
-    if (carousel) {
-        carousel.style.transition = 'transform 0.5s ease-in-out';
-        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-    updateDots();
-    resetAutoSlide();
-}
-
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % carouselImages.length;
-    goToSlide(currentSlide);
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + carouselImages.length) % carouselImages.length;
-    goToSlide(currentSlide);
-}
-
-function startAutoSlide() {
-    if (carouselInterval) clearInterval(carouselInterval);
-    carouselInterval = setInterval(() => {
-        nextSlide();
-    }, 4000); // Change every 4 seconds
-}
-
-function resetAutoSlide() {
-    if (carouselInterval) {
-        clearInterval(carouselInterval);
-    }
-    startAutoSlide();
-}
-
-// Initialize carousel when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    initializeCarousel();
-    
-    // Re-initialize if page is loaded dynamically
-    const observer = new MutationObserver(() => {
-        if (document.getElementById('carousel')) {
-            initializeCarousel();
-        }
-    });
-    observer.observe(document.getElementById('contenu-principal') || document.body, { childList: true, subtree: true });
-
-    document.addEventListener("DOMContentLoaded", () => {
-
-    if (typeof changelangueinfo === "function") {
-        changelangueinfo();
-    }
-
-    initializeMaintenanceBoxes();
-
-    if (typeof initializeLightboxGlobal === "function") {
-        initializeLightboxGlobal();
-    }
-
-    if (typeof initThemeToggle === "function") {
-        initThemeToggle();
-    }
-
-    if (typeof updateDebugDisplay === "function") {
-        updateDebugDisplay();
-    }
-
-    if (typeof updateAgeDisplay === "function") {
-        updateAgeDisplay();
-    }
-
-    if (typeof initScrollBehaviors === "function") {
-        initScrollBehaviors();
-    }
-
-    if (typeof hideCurrentPage === "function") {
-        hideCurrentPage();
-    }
-
-    if (
-        document.getElementById("gallery") &&
-        document.getElementById("filters") &&
-        typeof initializeGalerie === "function"
-    ) {
-        initializeGalerie();
-    }
-
-});
-// Carousel functionality - images slide from right to left, sources in JS
-let currentSlide = 0;
-let carouselInterval;
-
-const carouselImages = [
-    "img/carrousel/carrousel1.jpg",
-    "img/carrousel/carrousel2.jpg",
-    "img/carrousel/carrousel3.jpg",
-    "img/carrousel/carrousel4.jpg",
-    "img/carrousel/carrousel5.jpg",
-    "img/carrousel/carrousel6.jpg",
-    "img/carrousel/carrousel7.jpg",
-    "img/carrousel/carrousel8.jpg",
-    "img/carrousel/carrousel9.jpg"
-];
-
-function initializeCarousel() {
-    const carousel = document.getElementById('carousel');
-    const dotsContainer = document.getElementById('carousel-dots');
-    
-    if (!carousel || !dotsContainer) return;
-    
-    // Clear existing content
-    carousel.innerHTML = '';
-    dotsContainer.innerHTML = '';
-    
-    // Create images
-    carouselImages.forEach((src, index) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = "Studio Peinture Figurine";
-        img.style.flex = '0 0 100%';
-        img.style.width = '100%';
-        img.style.objectFit = 'contain';
-        img.style.objectPosition = 'center 80%';
-        carousel.appendChild(img);
-        
-        // Create dot
-        const dot = document.createElement('div');
-        dot.className = 'carousel-dot';
-        if (index === 0) dot.classList.add('active');
-        dot.onclick = () => goToSlide(index);
-        dotsContainer.appendChild(dot);
-    });
-    
-    // Set initial position
-    carousel.style.transform = 'translateX(0%)';
-    
-    // Start auto-slide (right to left = next slide)
-    startAutoSlide();
-}
-
-function updateDots() {
-    const dots = document.querySelectorAll('.carousel-dot');
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentSlide);
-    });
-}
-
-function goToSlide(index) {
-    currentSlide = index;
-    const carousel = document.getElementById('carousel');
-    if (carousel) {
-        carousel.style.transition = 'transform 0.5s ease-in-out';
-        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-    updateDots();
-    resetAutoSlide();
-}
-
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % carouselImages.length;
-    goToSlide(currentSlide);
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + carouselImages.length) % carouselImages.length;
-    goToSlide(currentSlide);
-}
-
-function startAutoSlide() {
-    if (carouselInterval) clearInterval(carouselInterval);
-    carouselInterval = setInterval(() => {
-        nextSlide();
-    }, 4000); // Change every 4 seconds
-}
-
-function resetAutoSlide() {
-    if (carouselInterval) {
-        clearInterval(carouselInterval);
-    }
-    startAutoSlide();
-}
-
-// Initialize carousel when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    initializeCarousel();
-    
-    // Re-initialize if page is loaded dynamically
-    const observer = new MutationObserver(() => {
-        if (document.getElementById('carousel')) {
-            initializeCarousel();
-        }
-    });
-    observer.observe(document.getElementById('contenu-principal') || document.body, { childList: true, subtree: true });
-});
-});
