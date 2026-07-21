@@ -8,17 +8,6 @@
     justify-content: center;
     gap: 10px;f
 }
-.maintenance-box > .maintenance-box {
-    display: block !important;
-}
-
-.maintenance-box > .maintenance-box > .maintenance-header {
-    display: flex !important;
-}
-
-.maintenance-box > .maintenance-box > .maintenance-header .maintenance-title {
-    display: block !important;
-}
 
 .exemples-photos {
     display: flex;
