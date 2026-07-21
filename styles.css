@@ -692,13 +692,13 @@ h1 {
 
 h2 {
 
-     font-size: clamp(14px, 1.7vw, 30px);
+     font-size: clamp(16px, 1.7vw, 30px);
     font-weight: 800;
     line-height: 1.25;
 }
 
 h3 {
-      font-size: clamp(14px, 1.4vw, 24px);
+      font-size: clamp(16px, 1.4vw, 24px);
     font-weight: 700;
     color: #d4a76c;
 }
@@ -770,7 +770,7 @@ a:hover,
     flex-direction: column;
  
     width: 500px;
-    height: 250px;
+    height: auto;
     max-width: 100%;
     max-height: 300px;
     justify-content: center;
@@ -2258,9 +2258,9 @@ body.lightbox-open {
 :root {
     --page-max: 1900px;
     --page-gutter: clamp(8px, 1.2vw, 24px);
-    --header-icon-size: clamp(17px, 1.15vw, 22px);
+    --header-icon-size: clamp(18px, 1.15vw, 22px);
     --header-icon-gap: clamp(2px, 0.35vw, 7px);
-    --maintenance-title-size: clamp(14px, 1.65vw, 30px);
+    --maintenance-title-size: clamp(16px, 1.65vw, 30px);
 }
 
 html,
@@ -2321,8 +2321,8 @@ img {
     width: 100%;
     min-height: 0;
     margin: 0;
-    padding: clamp(3px, 0.35vw, 7px) var(--page-gutter);
-    gap: clamp(4px, 0.5vw, 10px);
+    padding: clamp(3px, 0.35vw, 8px) var(--page-gutter);
+    gap: clamp(8px, 0.5vw, 10px);
     line-height: 1;
 }
 
@@ -2332,10 +2332,10 @@ img {
 
     min-width: 0;
 
-    margin: -4px 0 0;
-    padding: 4px 0 0;
+    margin: 4px 0 0;
+    padding: 8px 0 0;
 
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .maintenance-title h1,
@@ -2351,7 +2351,7 @@ img {
 
 .maintenance-title h1,
 .maintenance-header h1 {
-    font-size: clamp(15px, 1.8vw, 34px);
+    font-size: clamp(16px, 1.8vw, 34px);
 }
 
 .maintenance-title h2,
@@ -2442,8 +2442,8 @@ img {
     --font-sm: clamp(12px, 0.74vw, 14px);
     --font-md: clamp(14px, 0.95vw, 18px);
     --font-lg: clamp(16px, 1.16vw, 22px);
-    --font-h3: clamp(15px, 1.26vw, 24px);
-    --font-h2: clamp(17px, 1.58vw, 30px);
+    --font-h3: clamp(16px, 1.26vw, 24px);
+    --font-h2: clamp(18px, 1.58vw, 30px);
     --font-h1: clamp(18px, 1.9vw, 36px);
 
     --icon-size: clamp(30px, 2.32vw, 44px);
@@ -2530,7 +2530,7 @@ svg {
 
 #contenu-principal {
     width: 100%;
-    padding-top: clamp(12px, 1.58vw, 10px);
+    padding-top: clamp(10px, 1.58vw, 10px);
     padding-inline: var(--page-gutter);
 }
 
