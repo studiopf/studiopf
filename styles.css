@@ -756,17 +756,20 @@ a:hover,
     padding: 0px;
 }
 .cardpartenaire {
-  display: flex;
-    flex-direction: column;
- 
-    width: 500px;
-    height: auto;
-    max-width: 100%;
-    max-height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-       background: rgba(255,255,255,0.45);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    max-width:500px;
+    min-height:260px;
+    height:260px;
+
+    margin:0 auto;
+    padding:15px;
+
+    background: rgba(255,255,255,0.45);
     border: 1px solid rgba(255,255,255,0.6);
     border-radius: 12px;
     overflow: hidden;
@@ -789,10 +792,17 @@ a:hover,
 }
 
 .cardpartenaire img {
-    background: #fff;
-    padding: 5px;
-    border-radius: 8px;
-   width: 100%;
+    display:block;
+    width:auto;
+    height:auto;
+    max-width:90%;
+    max-height:170px;
+    object-fit:contain;
+    object-position:center;
+    margin:auto;
+    background:#fff;
+    padding:5px;
+    border-radius:8px;
 }
 
 .cardpartenaire a {
@@ -2769,11 +2779,27 @@ body.light-mode .widget-container {
 }
 
 .cardpartenaire {
-    width: 100%;
-    min-width: 0;
-    height: clamp(auto, 13.2vw, 250px);
-    max-height: none;
-    padding: var(--space-sm);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    max-width:500px;
+    min-height:260px;
+    height:260px;
+
+    margin:0 auto;
+    padding:15px;
+
+    background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+    transition: transform .26s ease,
+                box-shadow .26s ease,
+                border-color .26s ease;
 }
 
 .cardpartenaire p {
@@ -3361,4 +3387,17 @@ body {
 
 header {
     flex-shrink: 0;
+}
+
+
+@media (max-width:800px){
+    .cardpartenaire{
+        min-height:220px;
+        height:220px;
+    }
+
+    .cardpartenaire img{
+        max-height:140px;
+        max-width:90%;
+    }
 }
