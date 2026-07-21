@@ -210,22 +210,6 @@ body {
    Barre supérieure
 ========================= */
 
-```css
-header{f
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-
-    background: var(--header-bg);
-
-    /* Important */
-    overflow: visible;
-}
-```
-
-
 .header-top{
     position:sticky;
     top:0;
@@ -3256,4 +3240,100 @@ header + .info-container,
         height: 38px;
         font-size: 22px;
     }
+}
+
+/* ========================================================================== 
+   CORRECTIONS HEADER STICKY, ALIGNEMENT DU MENU ET ACCORDÉONS MOBILE
+   ========================================================================== */
+
+/* Le header complet (header-top + bandeau info) reste toujours en haut. */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background: var(--header-bg);
+    overflow: visible;
+    isolation: isolate;
+}
+
+/* Les deux éléments restent dans le même header sticky. */
+.header-top {
+    position: relative;
+    top: auto;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.info-container {
+    position: relative;
+    top: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    z-index: 1;
+}
+
+/* Mail, téléphone et hamburger sont centrés sur le même axe. */
+.header-contact {
+    height: var(--menu-button-size);
+    margin-left: auto;
+    margin-right: 4px;
+    align-items: center;
+}
+
+.header-contact a,
+.pf-menu-button {
+    align-self: center;
+}
+
+/* Bouton placé à 10 px maximum du bord droit. */
+button.pf-menu-button {
+    position: relative !important;
+    inset: auto !important;
+    flex: 0 0 var(--menu-button-size);
+    margin: 0 !important;
+}
+
+@media (max-width: 700px) {
+    .header-top {
+        padding-right: 8px;
+    }
+
+    .header-contact {
+        margin-right: 2px;
+        gap: 2px;
+    }
+
+    /* Zone de clic plus haute et titre remonté dans le bouton. */
+    .maintenance-header {
+        min-height: 48px;
+        align-items: flex-start;
+        padding: 5px 8px 9px;
+    }
+
+    .maintenance-title {
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
+    }
+
+    .maintenance-arrow {
+        align-self: flex-start;
+        padding-top: 2px;
+    }
+}
+
+
+/* `clip` évite qu'un overflow horizontal transforme la page en conteneur
+   de défilement et empêche le sticky dans certains navigateurs. */
+html,
+body {
+    overflow-x: clip;
+}
+
+header {
+    flex-shrink: 0;
 }
