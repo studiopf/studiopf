@@ -689,9 +689,9 @@ h1 {
 
 h2 {
 
-     font-size: clamp(16px, 1.7vw, 30px);
-    font-weight: 800;
-    line-height: 1.25;
+   font-size: clamp(16px, 1.4vw, 24px);
+    font-weight: 700;
+    color: #d4a76c;
 }
 
 h3 {
@@ -2393,7 +2393,9 @@ img {
 
 .maintenance-title h2,
 .maintenance-header h2 {
-    font-size: var(--maintenance-title-size);
+     margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.08;
 }
 
 .maintenance-arrow {
@@ -2473,7 +2475,7 @@ img {
     --font-md: clamp(14px, 0.95vw, 18px);
     --font-lg: clamp(16px, 1.16vw, 22px);
     --font-h3: clamp(16px, 1.26vw, 24px);
-    --font-h2: clamp(18px, 1.58vw, 30px);
+    --font-h2: clamp(16px, 1.26vw, 24px);
     --font-h1: clamp(18px, 1.9vw, 36px);
 
     --icon-size: clamp(30px, 2.32vw, 44px);
