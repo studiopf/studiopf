@@ -208,21 +208,10 @@
                 Retrouvez ci-dessous les informations légales relatives à l’éditeur,
                 à l’hébergement, aux contenus et à l’utilisation du site Studio PF.
             </p>
-</div>
-</div>
-<section aria-labelledby="mentions-chapter-1" class="maintenance-box ajust mentions-chapter">
-<div class="maintenance-header mentions-chapter-header">
-<h2 class="maintenance-title" id="mentions-chapter-1">
+<h2>
                 🏢 Identification et hébergement
             </h2>
-</div>
-<div class="maintenance-content mentions-chapter-content">
-<div class="maintenance-box ajust is-collapsed" data-box-id="mentions-editeur">
-<button aria-controls="mentions-content-editeur" aria-expanded="false" class="maintenance-header" type="button">
-<h3 class="maintenance-title">📌 Éditeur du site</h3>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-<div class="maintenance-content" hidden="" id="mentions-content-editeur">
+<h3>📌 Éditeur du site</h3>
 <p>
 <strong>Studio PF : Peinture Figurine</strong><br/>
                         Pierre-François FRASSE<br/>
@@ -236,14 +225,9 @@
                             studiopeinturefigurine@gmail.com
                         </a>
 </p>
-</div>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="mentions-hebergeur">
-<button aria-controls="mentions-content-hebergeur" aria-expanded="false" class="maintenance-header" type="button">
+
 <h3 class="maintenance-title">💻 Hébergeur et nom de domaine</h3>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-<div class="maintenance-content" hidden="" id="mentions-content-hebergeur">
+
 <h4>Hébergement du site</h4>
 <p>
                         GitHub Inc.<br/>
@@ -266,21 +250,17 @@
 </p>
 </div>
 </div>
-</div>
-</section>
-<section aria-labelledby="mentions-chapter-2" class="maintenance-box ajust mentions-chapter">
+
+<div aria-labelledby="mentions-chapter-2" class="maintenance-box ajust mentions-chapter">
 <div class="maintenance-header mentions-chapter-header">
 <h2 class="maintenance-title" id="mentions-chapter-2">
                 ©️ Contenus et propriété intellectuelle
             </h2>
 </div>
 <div class="maintenance-content mentions-chapter-content">
-<div class="maintenance-box ajust is-collapsed" data-box-id="mentions-propriete">
-<button aria-controls="mentions-content-propriete" aria-expanded="false" class="maintenance-header" type="button">
-<h3 class="maintenance-title">🔒 Propriété intellectuelle</h3>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-<div class="maintenance-content" hidden="" id="mentions-content-propriete">
+
+<h3>🔒 Propriété intellectuelle</h3>
+
 <p>
                         Tous les contenus du site, notamment les textes, images,
                         photographies, vidéos, logos, illustrations et icônes,
@@ -291,23 +271,14 @@
                         ou utilisation, totale ou partielle, sans autorisation écrite
                         préalable de Studio PF est interdite.
                     </p>
-</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="mentions-chapter-3" class="maintenance-box ajust mentions-chapter">
-<div class="maintenance-header mentions-chapter-header">
-<h2 class="maintenance-title" id="mentions-chapter-3">
+
+
+
+<h2>
                 🛡️ Données personnelles et navigation
             </h2>
-</div>
-<div class="maintenance-content mentions-chapter-content">
-<div class="maintenance-box ajust is-collapsed" data-box-id="mentions-donnees">
-<button aria-controls="mentions-content-donnees" aria-expanded="false" class="maintenance-header" type="button">
-<h3 class="maintenance-title">📊 Données personnelles</h3>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-<div class="maintenance-content" hidden="" id="mentions-content-donnees">
+
+<h3>📊 Données personnelles</h3>
 <p>
                         Les données collectées sont utilisées uniquement dans le cadre
                         de la relation client et du traitement des demandes adressées
@@ -321,14 +292,8 @@
                             studiopeinturefigurine@gmail.com
                         </a>.
                     </p>
-</div>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="mentions-cookies">
-<button aria-controls="mentions-content-cookies" aria-expanded="false" class="maintenance-header" type="button">
-<h3 class="maintenance-title">🌐 Cookies</h3>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-<div class="maintenance-content" hidden="" id="mentions-content-cookies">
+<h3>🌐 Cookies</h3>
+
 <p>
                         Le site peut utiliser des cookies afin d’améliorer la navigation
                         et d’analyser son utilisation.
@@ -339,49 +304,17 @@
                     </p>
 </div>
 </div>
-</div>
-</section>
+ 
 <div class="maintenance-box ajust" data-box-id="mentions-footer-note">
 <div class="maintenance-content">
 <p>
                 Site vitrine créé par <strong>Studio PF</strong> —
-                dernière mise à jour : 9 mars 2026 —
+                dernière mise à jour : 21 juillet 2026 —
                 tous droits réservés.
             </p>
 </div>
 </div>
 </main>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const main = document.getElementById("contenu-principal");
-    if (!main) return;
-
-    main.querySelectorAll(".maintenance-box.is-collapsed > .maintenance-header").forEach(function (button) {
-        const contentId = button.getAttribute("aria-controls");
-        const content = contentId ? document.getElementById(contentId) : null;
-        const arrow = button.querySelector(".maintenance-arrow");
-
-        if (!content) return;
-
-        button.setAttribute("aria-expanded", "false");
-        content.hidden = true;
-        if (arrow) arrow.textContent = "▼";
-
-        button.addEventListener("click", function (event) {
-            event.preventDefault();
-            event.stopImmediatePropagation();
-
-            const isOpen = button.getAttribute("aria-expanded") === "true";
-
-            button.setAttribute("aria-expanded", String(!isOpen));
-            content.hidden = isOpen;
-            button.closest(".maintenance-box").classList.toggle("is-collapsed", isOpen);
-
-            if (arrow) arrow.textContent = isOpen ? "▼" : "▲";
-        }, true);
-    });
-});
-</script>
 <footer>
 <div class="widget-container">
 <div class="widget" data-featurable-async="" data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d"></div><script defer="" src="https://featurable.com/assets/bundle.js"></script>
