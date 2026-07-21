@@ -441,7 +441,16 @@ type="image/png">
      
     
   <body>
+    <div class="carousel-container">
+    <div class="carousel" id="carousel"></div>
     
+    <!-- Navigation arrows -->
+    <button class="carousel-arrow carousel-prev" onclick="prevSlide()" aria-label="Previous slide">❮</button>
+    <button class="carousel-arrow carousel-next" onclick="nextSlide()" aria-label="Next slide">❯</button>
+    
+    <!-- Dots -->
+    <div class="carousel-dots" id="carousel-dots"></div>
+</div>
     <!-- Contenu principal qui change dynamiquement -->
   <main id="contenu-principal">
 
