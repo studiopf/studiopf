@@ -413,7 +413,26 @@ type="image/png">
             <p>🌟 Techniques avancées : freehand, OSL, NMM, weathering</p>
             <p>Cours individuels ou collectifs. En présentiel au Studio uniquement.</p>
 
-            <a href="#formationForm" class="button">
+            <h2>🖌️🔫 Choisissez vos armes</h2>
+          
+     
+            <div class="card-container2">
+                <div class="card">
+                    <h3>🖌️ Pinceau</h3>
+                    <p>Techniques pour débutants et avancés</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔫 Aérographe</h3>
+                    <p>Techniques précises pour débutants et avancés</p>
+                </div>
+
+                <div class="card">
+                    <h3>🖌️🔫 Les deux</h3>
+                    <p>Techniques précises pour débutants et avancés</p>
+                </div>
+            </div>
+            <a href="#nom" class="button">
                 S'inscrire 💬
             </a>
         </div>
@@ -465,7 +484,7 @@ type="image/png">
                 </div>
             </div>
 
-            <a href="#formationForm" class="button">
+            <a href="#nom" class="button">
                 S'inscrire 💬
             </a>
         </div>
@@ -551,36 +570,8 @@ type="image/png">
         </div>
     </div>
 <br>
-    <div class="maintenance-box ajust fondfreezer is-collapsed" data-box-id="outils-peinture">
-        <button
-            class="maintenance-header"
-            type="button"
-            aria-expanded="false"
-            aria-controls="outils-peinture-content"
-        >
-            <h2 class="maintenance-title">🖌️🔫 Choisissez vos armes</h2>
-            <span class="maintenance-arrow" aria-hidden="true">▼</span>
-        </button>
 
-        <div class="maintenance-content" id="outils-peinture-content" hidden>
-            <div class="card-container2">
-                <div class="card">
-                    <h3>🖌️ Pinceau</h3>
-                    <p>Techniques pour débutants et avancés</p>
-                </div>
-
-                <div class="card">
-                    <h3>🔫 Aérographe</h3>
-                    <p>Techniques précises pour débutants et avancés</p>
-                </div>
-
-                <div class="card">
-                    <h3>🖌️🔫 Les deux</h3>
-                    <p>Techniques précises pour débutants et avancés</p>
-                </div>
-            </div>
-        </div>
-    </div>
+      
 <br>
     <div class="maintenance-box ajust fondmoi is-collapsed" data-box-id="materiel-fourni">
         <button
@@ -688,66 +679,6 @@ type="image/png">
 
 </main>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(
-        "#contenu-principal .maintenance-header[aria-controls]"
-    );
-
-    buttons.forEach(function (button) {
-        const contentId = button.getAttribute("aria-controls");
-        const content = document.getElementById(contentId);
-        const arrow = button.querySelector(".maintenance-arrow");
-
-        if (!content) return;
-
-        const expanded = button.getAttribute("aria-expanded") === "true";
-        content.hidden = !expanded;
-
-        if (arrow) {
-            arrow.textContent = expanded ? "▲" : "▼";
-        }
-
-        button.addEventListener("click", function () {
-            const isExpanded = button.getAttribute("aria-expanded") === "true";
-
-            button.setAttribute("aria-expanded", String(!isExpanded));
-            content.hidden = isExpanded;
-
-            if (arrow) {
-                arrow.textContent = isExpanded ? "▼" : "▲";
-            }
-        });
-    });
-
-    document.querySelectorAll('a[href="#formationForm"]').forEach(function (link) {
-        link.addEventListener("click", function () {
-            const form = document.getElementById("formationForm");
-            const reservationContent = document.getElementById("reservation-formation-content");
-            const reservationButton = document.querySelector(
-                '[aria-controls="reservation-formation-content"]'
-            );
-
-            if (reservationContent && reservationButton) {
-                reservationContent.hidden = false;
-                reservationButton.setAttribute("aria-expanded", "true");
-
-                const arrow = reservationButton.querySelector(".maintenance-arrow");
-                if (arrow) arrow.textContent = "▲";
-            }
-
-            if (form) {
-                setTimeout(function () {
-                    form.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                }, 50);
-            }
-        });
-    });
-});
-</script>
 
 <footer>
 
