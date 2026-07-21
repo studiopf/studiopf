@@ -541,15 +541,6 @@ body.light-mode .widget-container {
         box-shadow 0.25s ease;
 }
 
-#contenu-principal {
-   justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-top: 5px;
-}
-
-
-
  nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -2517,7 +2508,7 @@ svg {
 
 #contenu-principal {
     width: 100%;
-    padding-top: clamp(10px, 1.58vw, 10px);
+    padding-top: clamp(5px, 1.58vw, 5px);
     padding-inline: var(--page-gutter);
 }
 
@@ -2976,12 +2967,6 @@ body.light-mode .footer {
    ========================================================================== */
 
 /* Le contenu commence immédiatement sous le header. */
-#contenu-principal {
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
-}
-
 header + main,
 header + #contenu-principal,
 header + .info-container,
@@ -3142,9 +3127,6 @@ header + .info-container,
         width: clamp(46px, 14vw, 60px);
     }
 
-    #contenu-principal {
-        padding-top: 0;
-    }
 
     .carousel-container {
         height: clamp(150px, 48vw, 220px);
