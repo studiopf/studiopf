@@ -961,49 +961,30 @@ function initializeMaintenanceBoxes() {
     });
 }
 document.addEventListener("click", function (event) {
-
     const header = event.target.closest(".maintenance-header");
+
     if (!header) return;
 
     const box = header.closest(".maintenance-box");
+
     if (!box) return;
 
+    const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
 
-    const isCollapsed = box.classList.contains("is-collapsed");
+    const isCurrentlyOpen = !content.hidden;
 
-    if (isCollapsed) {
+    // Ton code d'ouverture / fermeture...
+    content.hidden = isCurrentlyOpen;
+    arrow.textContent = isCurrentlyOpen ? "▼" : "▲";
 
-        box.classList.remove("is-collapsed");
-        header.setAttribute("aria-expanded", "true");
+    // ← AJOUTE ICI
+    const title = box.querySelector(".maintenance-title");
 
-        if (arrow) {
-            arrow.textContent = "▲";
-        }
-
-        [...box.children].forEach(child => {
-            if (child !== header) {
-                child.hidden = false;
-            }
-        });
-
-    } else {
-
-        box.classList.add("is-collapsed");
-        header.setAttribute("aria-expanded", "false");
-
-        if (arrow) {
-            arrow.textContent = "▼";
-        }
-
-        [...box.children].forEach(child => {
-            if (child !== header) {
-                child.hidden = true;
-            }
-        });
-
-    }
-
+    window.scrollTo({
+        top: title.getBoundingClientRect().top + window.pageYOffset - 100,
+        behavior: "smooth"
+    });
 });
 document.addEventListener("DOMContentLoaded", () => {
 
