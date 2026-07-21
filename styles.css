@@ -57,7 +57,7 @@
    BOÎTES REPLIABLES
 ========================== */
 .maintenance-box {
-       font-size: 32px;
+       font-size: 18px;
     font-weight: 800;
     color: var(--text-p);
     margin: 0;
@@ -90,7 +90,7 @@
 }
 
   .maintenance-box p {
-             font-size: 32px;
+             font-size: 18px;
 text-shadow: var(--shadow-p-box-mob);
 }
 .maintenance-header {
@@ -776,7 +776,7 @@ h3 {
 }
 
 p {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 800;
     color: var(--text-p);
     margin: 0;
@@ -1530,8 +1530,8 @@ body.light-mode .cardpartenaire2 {
 }
 
     .social-icon {
-        width: 32px;
-        height: 32px;
+        width: 18px;
+        height: 18px;
            font-size: 18px;
     }
 
