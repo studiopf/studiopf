@@ -210,23 +210,25 @@ body {
    Barre supérieure
 ========================= */
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
+header{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
 }
+
 .header-top{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-
-    gap: clamp(8px,1vw,20px);
-
     width:100%;
-    padding:clamp(4px,.4vw,8px) clamp(8px,.8vw,16px);
-
     box-sizing:border-box;
+
+    padding:6px 10px;
+    gap:10px;
+
+    background:var(--header-bg);
+    border-bottom:1px solid var(--header-border);
 }
 
 
@@ -236,26 +238,45 @@ header {
     height:auto;
     width:90px;
 }
+/* Logo à gauche */
+.header-logo{
+    flex:0 0 auto;
+}
 
 /* Icônes */
 
+/* Groupe de droite */
 .header-contact{
     display:flex;
     align-items:center;
-    gap:clamp(4px,.4vw,10px);
+    justify-content:flex-end;
+
+    gap:8px;
 
     margin-left:auto;
-    margin-right:clamp(8px,.8vw,18px);
+    margin-right:8px;
+    padding:0;
 
     flex:0 0 auto;
+    height:50px;
 }
-.header-contact a {
-    padding: 10px;
-     margin-right:30px;
-    color:var(--text-a);
+/* Liens mail / téléphone */
+.header-contact a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:40px;
+    height:40px;
+
+    margin:0;
+    padding:0;
+
     font-size:1.35rem;
+    line-height:1;
+
+    color:var(--text-a);
     text-decoration:none;
-    transition:.25s ease;
 }
 
 .header-contact a:hover{
@@ -1610,19 +1631,25 @@ header {
     border-color: #d99b32;
 }
 /* Force le bouton hamburger à droite */
-button.pf-menu-button {
+/* Bouton menu juste à droite */
+button.pf-menu-button{
     position: relative !important;
-    right: auto !important;
-    left: auto !important;
-    top: auto !important;
 
-    margin-left: auto !important;
-    margin-right: 0 !important;
+    width: var(--menu-button-size) !important;
+    height: var(--menu-button-size) !important;
 
-    flex: 0 0 auto;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 var(--menu-button-size);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     align-self: center;
 
-    z-index: 20;
+    z-index: 10001;
 }
 /* Animation hamburger quand ouvert */
 .pf-menu-button.active span:nth-child(1) {
@@ -2919,13 +2946,6 @@ body.light-mode .footer {
     padding: clamp(3px, 0.3vw, 6px);
 }
 
-button.pf-menu-button {
-    top: clamp(4px, 0.45vw, 9px) !important;
-    right: var(--menu-button-right) !important;
-    width: var(--menu-button-size) !important;
-    height: var(--menu-button-size) !important;
-    z-index: 10001 !important;
-}
 
 /* Paragraphes plus lisibles, légèrement agrandis et mieux centrés. */
 .maintenance-box p,
