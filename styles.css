@@ -309,7 +309,7 @@ body {
     padding:0;
 }
 
-.contact-list li{
+.contact-list p{
     width:100%;
 }
 
@@ -326,7 +326,7 @@ body {
 }
 
 
-.contact-list li a{
+.contact-list p a{
       display: block;
 font-size: 15px;
     font-weight: 500;
