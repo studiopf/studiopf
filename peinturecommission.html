@@ -422,25 +422,5 @@
 </div>
 </footer><div aria-hidden="true" class="lightbox" id="lightbox">
 <img alt="Studio PF" id="lightbox-img" src="/img/logo.png"/>
-</div><script>
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".maintenance-header[aria-controls]").forEach((button) => {
-        const content = document.getElementById(button.getAttribute("aria-controls"));
-        const arrow = button.querySelector(".maintenance-arrow");
-        if (!content) return;
-
-        const expanded = button.getAttribute("aria-expanded") === "true";
-        content.hidden = !expanded;
-        if (arrow) arrow.textContent = expanded ? "▲" : "▼";
-
-        button.addEventListener("click", (event) => {
-            event.stopPropagation();
-            const isExpanded = button.getAttribute("aria-expanded") === "true";
-            button.setAttribute("aria-expanded", String(!isExpanded));
-            content.hidden = isExpanded;
-            button.closest(".maintenance-box")?.classList.toggle("is-collapsed", isExpanded);
-            if (arrow) arrow.textContent = isExpanded ? "▼" : "▲";
-        });
-    });
-});
-</script></body></html>
+</div>
+</body></html>
