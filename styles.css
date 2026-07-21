@@ -1230,7 +1230,12 @@ nav {
 .card p{
      font-size:10px;
 }
-
+.card {
+width:100%;
+    max-width:500px;
+    min-height:200px;
+    height:260px;
+}
 .cardlogo {
     text-align: center;
     width: auto;
@@ -2258,11 +2263,11 @@ body.lightbox-open {
 }
 
 .carousel-prev {
-    left: 15px;
+    left: 10px;
 }
 
 .carousel-next {
-    right: 15px;
+    right: 10px;
 }
 
 /* Points indicateurs */
@@ -2953,7 +2958,7 @@ th {
 .carousel-arrow,
 .lightbox-nav,
 .lightbox-close {
-    font-size: clamp(18px, 2.1vw, 40px);
+    font-size: clamp(16px, 2.1vw, 20px);
 }
 
 #scrollToTopBtn {
