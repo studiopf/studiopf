@@ -89,7 +89,10 @@
         box-shadow .35s ease;
 }
 
-
+  .maintenance-box p {
+             font-size: 32px;
+text-shadow: var(--shadow-p-box-mob);
+}
 .maintenance-header {
     display: flex;
     align-items: center;
@@ -120,18 +123,9 @@
 
 .maintenance-title,
 .maintenance-arrow {
-    text-shadow:
-        -2px  0   0 #000,
-         2px  0   0 #000,
-         0   -2px 0 #000,
-         0    2px 0 #000,
-
-        -2px -2px 0 #000,
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000,
-
-        0 0 6px rgba(0,0,0,.8);
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.8),
+    0 0 2px rgba(0,0,0,.5);
 }
 .maintenance-header:hover {
     background: rgba(244, 200, 118, 0.12);
@@ -327,6 +321,7 @@ header {
 }
 @media (max-width: 768px) {
       .maintenance-box p {
+             font-size: 16px;
 text-shadow: var(--shadow-p-box-mob);
 }
    /* bandeau défile */
@@ -752,20 +747,20 @@ strong{
     color:var(--title);
 }
 h1 {
-   font-size: clamp(28px, 2vw, 36px);
+   font-size: clamp(20px, 2vw, 36px);
     font-weight: 800;
     line-height: 1.2;
 }
 
 h2 {
 
-     font-size: clamp(24px, 1.7vw, 30px);
+     font-size: clamp(18px, 1.7vw, 30px);
     font-weight: 800;
     line-height: 1.25;
 }
 
 h3 {
-      font-size: clamp(20px, 1.4vw, 24px);
+      font-size: clamp(18px, 1.4vw, 24px);
     font-weight: 700;
     color: #d4a76c;
 }
