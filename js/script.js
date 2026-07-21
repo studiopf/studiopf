@@ -988,7 +988,7 @@ document.addEventListener("click", function (event) {
         });
 // Remonte le bloc ouvert sous le header
 setTimeout(() => {
-    const offset = 80; // adapte à la hauteur de ton header
+    const offset = 30; // adapte à la hauteur de ton header
     const y = header.getBoundingClientRect().top + window.pageYOffset - offset;
 
     window.scrollTo({
