@@ -1678,11 +1678,18 @@ button.pf-menu-button{
     --header-height: 86px;
       --header-top-height: 62px;
 }
+@media (max-width: 800px) {
+    :root {
+        --header-top-height: 52px;
+    }
+}
+
 
 .pf-mobile-nav {
     position: fixed;
 
-    top: var(--header-top-height);
+     top: var(--header-top-height);
+    height: calc(100dvh - var(--header-top-height));
     right: -100%;
 
     width: 85%;
