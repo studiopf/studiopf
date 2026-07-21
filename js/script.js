@@ -995,7 +995,7 @@ setTimeout(() => {
         top: y,
         behavior: "smooth"
     });
-}, 50);
+}, 80);
     } else {
 
         box.classList.add("is-collapsed");
