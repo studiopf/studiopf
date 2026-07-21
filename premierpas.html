@@ -137,7 +137,7 @@ type="image/png">
     <!-- Logo -->
     <div class="header-logo">
         <a href="index.html"
-           onclick="loadPage('index.html'); return false;"
+           onclick="loadPage('index.html'); return true;"
            class="logo-a"
            aria-label="Retour à l'accueil">
 
@@ -172,7 +172,7 @@ type="image/png">
         class="pf-menu-button"
         type="button"
         aria-label="Ouvrir le menu"
-        aria-expanded="false">
+        aria-expanded="true">
 
         <span></span>
         <span></span>
@@ -425,8 +425,7 @@ type="image/png">
     </p>
 
     <p>
-        <strong>La règle la plus importante reste simple : prenez votre temps,
-        expérimentez et amusez-vous.</strong>
+        <strong>La règle la plus importante reste simple : Amusez-vous!</strong>
     </p>
 
 </div>
@@ -451,8 +450,10 @@ type="image/png">
     </p>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="regle-or">
-            <h3>⭐ La règle d’or : se faire plaisir</h3>
-
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">⭐ La règle d’or : se faire plaisir</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
+        </button>
         <br>
         <p hidden>
             Choisissez une figurine qui vous plaît réellement. Un modèle motivant
@@ -462,9 +463,13 @@ type="image/png">
             Ne cherchez pas immédiatement la perfection. Une première figurine
             sert surtout à comprendre la peinture, la dilution et le comportement du pinceau.
         </p>
+    </div>
 
-            <h3>🧰 Le kit de départ essentiel</h3>
-
+    <div class="maintenance-box ajust is-collapsed" data-box-id="kit-depart">
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🧰 Le kit de départ essentiel</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
+        </button>
         <br>
         <p hidden>Pour commencer dans de bonnes conditions, prévoyez :</p>
         <p hidden>✂️ Une pince coupante pour détacher les pièces.</p>
@@ -473,9 +478,13 @@ type="image/png">
         <p hidden>🎨 Quelques peintures acryliques adaptées aux figurines.</p>
         <p hidden>🥛 Un gobelet d’eau, de l’essuie-tout et une palette.</p>
         <p hidden>🧴 De la colle adaptée au matériau de votre figurine.</p>
-  
-            <h3>💡 Espace de travail et sécurité</h3>
-           
+    </div>
+
+    <div class="maintenance-box ajust is-collapsed" data-box-id="espace-securite">
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">💡 Espace de travail et sécurité</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
+        </button>
         <br>
         <p hidden>
             Travaillez sur une surface stable avec une lumière placée face à vous
@@ -509,9 +518,9 @@ type="image/png">
     </p>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="couleurs-primaires">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>🔴 Les couleurs primaires et secondaires</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🔴 Les couleurs primaires et secondaires</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -527,9 +536,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="chaud-froid">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>🔥 Couleurs chaudes et couleurs froides</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🔥 Couleurs chaudes et couleurs froides</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -547,9 +556,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="palette-figurine">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>🎯 Construire une palette lisible</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🎯 Construire une palette lisible</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -565,9 +574,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="palette-socle">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>🏞️ Choisir les couleurs du socle</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🏞️ Choisir les couleurs du socle</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -602,9 +611,9 @@ type="image/png">
     </p>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="etape-montage">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>1️⃣ Préparer et monter la figurine</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">1️⃣ Préparer et monter la figurine</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -618,9 +627,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="etape-sous-couche">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>2️⃣ Appliquer la sous-couche</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">2️⃣ Appliquer la sous-couche</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -633,9 +642,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="etape-bases">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>3️⃣ Poser les couleurs de base</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">3️⃣ Poser les couleurs de base</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -650,9 +659,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="etape-ombres">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>4️⃣ Renforcer les ombres</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">4️⃣ Renforcer les ombres</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -665,9 +674,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="etape-eclaircissements">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>5️⃣ Ajouter les éclaircissements</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">5️⃣ Ajouter les éclaircissements</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -680,9 +689,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="etape-details">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>6️⃣ Peindre les détails</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">6️⃣ Peindre les détails</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -696,9 +705,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="etape-socle-vernis">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>7️⃣ Réaliser le socle et protéger la peinture</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">7️⃣ Réaliser le socle et protéger la peinture</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -732,9 +741,9 @@ type="image/png">
     </p>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="pinceaux">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>🖌️ Choisir ses pinceaux</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🖌️ Choisir ses pinceaux</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -746,9 +755,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="palette-dilution">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>💧 Palette, eau et dilution</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">💧 Palette, eau et dilution</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -764,9 +773,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="entretien-pinceaux">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>🧼 Entretenir ses pinceaux</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🧼 Entretenir ses pinceaux</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -791,7 +800,7 @@ type="image/png">
 
     <button class="maintenance-header" type="button" aria-expanded="true">
         <h2 class="maintenance-title">🚀 5. Progresser après ses premières figurines</h2>
-        <span class="maintenance-arrow" aria-hidden="false">▲</span>
+        <span class="maintenance-arrow" aria-hidden="true">▲</span>
     </button>
 
     <br>
@@ -801,9 +810,9 @@ type="image/png">
     </p>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="erreurs-debutants">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>⚠️ Les erreurs fréquentes des débutants</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">⚠️ Les erreurs fréquentes des débutants</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>Appliquer une peinture trop épaisse qui masque les détails.</p>
@@ -814,9 +823,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="exercices">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>🎯 Exercices simples pour progresser</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">🎯 Exercices simples pour progresser</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>Peignez plusieurs figurines similaires pour répéter les mêmes gestes.</p>
@@ -826,9 +835,9 @@ type="image/png">
     </div>
 
     <div class="maintenance-box ajust is-collapsed" data-box-id="accompagnement">
-        <button class="maintenance-header" type="button" aria-expanded="false">
-            <h3>📚 Être accompagné pour progresser plus vite</h3>
-            <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <button class="maintenance-header" type="button" aria-expanded="true">
+            <h3 class="maintenance-title">📚 Être accompagné pour progresser plus vite</h3>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
         </button>
         <br>
         <p hidden>
@@ -849,9 +858,9 @@ type="image/png">
 <br><br>
 
 <div class="maintenance-box ajust is-collapsed" data-box-id="conclusion-premiers-pas">
-    <button class="maintenance-header" type="button" aria-expanded="false">
+    <button class="maintenance-header" type="button" aria-expanded="true">
         <h2 class="maintenance-title">🎨 À vous de jouer !</h2>
-        <span class="maintenance-arrow" aria-hidden="false">▼</span>
+        <span class="maintenance-arrow" aria-hidden="true">▼</span>
     </button>
     <br>
     <p hidden>
@@ -934,9 +943,9 @@ type="image/png">
   
           <nav class="menu-mobilefoot">
             <ul class="menufoot">
-                <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
-                <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
-                <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
+                <li><a href="conditions.html" onclick="loadPage('conditions.html'); return true;">Conditions générales de vente 📜</a></li>
+                <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return true;">Mentions Légales 💼</a></li>
+                <li><a href="horaires.html" onclick="loadPage('horaires.html'); return true;">Horaires d'ouverture 🕖</a></li>
             </ul>
         </nav>
            
