@@ -1306,4 +1306,152 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     observer.observe(document.getElementById('contenu-principal') || document.body, { childList: true, subtree: true });
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+    if (typeof changelangueinfo === "function") {
+        changelangueinfo();
+    }
+
+    initializeMaintenanceBoxes();
+
+    if (typeof initializeLightboxGlobal === "function") {
+        initializeLightboxGlobal();
+    }
+
+    if (typeof initThemeToggle === "function") {
+        initThemeToggle();
+    }
+
+    if (typeof updateDebugDisplay === "function") {
+        updateDebugDisplay();
+    }
+
+    if (typeof updateAgeDisplay === "function") {
+        updateAgeDisplay();
+    }
+
+    if (typeof initScrollBehaviors === "function") {
+        initScrollBehaviors();
+    }
+
+    if (typeof hideCurrentPage === "function") {
+        hideCurrentPage();
+    }
+
+    if (
+        document.getElementById("gallery") &&
+        document.getElementById("filters") &&
+        typeof initializeGalerie === "function"
+    ) {
+        initializeGalerie();
+    }
+
+});
+// Carousel functionality - images slide from right to left, sources in JS
+let currentSlide = 0;
+let carouselInterval;
+
+const carouselImages = [
+    "img/carrousel/carrousel1.jpg",
+    "img/carrousel/carrousel2.jpg",
+    "img/carrousel/carrousel3.jpg",
+    "img/carrousel/carrousel4.jpg",
+    "img/carrousel/carrousel5.jpg",
+    "img/carrousel/carrousel6.jpg",
+    "img/carrousel/carrousel7.jpg",
+    "img/carrousel/carrousel8.jpg",
+    "img/carrousel/carrousel9.jpg"
+];
+
+function initializeCarousel() {
+    const carousel = document.getElementById('carousel');
+    const dotsContainer = document.getElementById('carousel-dots');
+    
+    if (!carousel || !dotsContainer) return;
+    
+    // Clear existing content
+    carousel.innerHTML = '';
+    dotsContainer.innerHTML = '';
+    
+    // Create images
+    carouselImages.forEach((src, index) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = "Studio Peinture Figurine";
+        img.style.flex = '0 0 100%';
+        img.style.width = '100%';
+        img.style.objectFit = 'contain';
+        img.style.objectPosition = 'center 80%';
+        carousel.appendChild(img);
+        
+        // Create dot
+        const dot = document.createElement('div');
+        dot.className = 'carousel-dot';
+        if (index === 0) dot.classList.add('active');
+        dot.onclick = () => goToSlide(index);
+        dotsContainer.appendChild(dot);
+    });
+    
+    // Set initial position
+    carousel.style.transform = 'translateX(0%)';
+    
+    // Start auto-slide (right to left = next slide)
+    startAutoSlide();
+}
+
+function updateDots() {
+    const dots = document.querySelectorAll('.carousel-dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    const carousel = document.getElementById('carousel');
+    if (carousel) {
+        carousel.style.transition = 'transform 0.5s ease-in-out';
+        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    updateDots();
+    resetAutoSlide();
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % carouselImages.length;
+    goToSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + carouselImages.length) % carouselImages.length;
+    goToSlide(currentSlide);
+}
+
+function startAutoSlide() {
+    if (carouselInterval) clearInterval(carouselInterval);
+    carouselInterval = setInterval(() => {
+        nextSlide();
+    }, 4000); // Change every 4 seconds
+}
+
+function resetAutoSlide() {
+    if (carouselInterval) {
+        clearInterval(carouselInterval);
+    }
+    startAutoSlide();
+}
+
+// Initialize carousel when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    initializeCarousel();
+    
+    // Re-initialize if page is loaded dynamically
+    const observer = new MutationObserver(() => {
+        if (document.getElementById('carousel')) {
+            initializeCarousel();
+        }
+    });
+    observer.observe(document.getElementById('contenu-principal') || document.body, { childList: true, subtree: true });
+});
 });
