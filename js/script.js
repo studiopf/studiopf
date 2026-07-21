@@ -880,21 +880,21 @@ function genererTableTarifs() {
 ===================================================== */
 
 function getMaintenanceHeader(box) {
-    return Array.from(box.children).find(child =>
-        child.classList?.contains("maintenance-header")
-    ) || null;
+    return box.querySelector(":scope > .maintenance-header, :scope > h1 > .maintenance-header, :scope > h2 > .maintenance-header, :scope > h3 > .maintenance-header");
 }
-
 function getMaintenanceTitle(box) {
     const header = getMaintenanceHeader(box);
     return header?.querySelector(".maintenance-title h1, .maintenance-title h2, .maintenance-title h3, h1, h2, h3") || null;
 }
 
 function getMaintenanceContent(box) {
-    return Array.from(box.children).filter(child =>
-        child !== getMaintenanceHeader(box) &&
-        !child.classList?.contains("maintenance-box")
-    );
+    return Array.from(box.children).filter(child => {
+        return (
+            !child.matches("h1, h2, h3") &&
+            !child.classList.contains("maintenance-header") &&
+            !child.classList.contains("maintenance-box")
+        );
+    });
 }
 
 function getDirectMaintenanceChildren(box, level) {
