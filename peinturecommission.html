@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr"><head>
-<meta charset="utf-8">
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Studio PF | Commission Peinture Figurine Haut de Gamme &amp; Warhammer</title>
 <meta content="Studio PF réalise vos commissions de peinture figurine haut de gamme : Warhammer 40K, Age of Sigmar, figurines de collection et pièces de concours. Devis gratuit." name="description">
@@ -53,13 +54,15 @@
  ]
 }
 </script>
-</head><body><header>
+</head>
+<body>
+<header>
 <div class="header-top">
 <button aria-label="Changer le thème" class="theme-toggle" id="themeToggle" type="button">🌙</button>
 <!-- Logo -->
 <div class="header-logo">
 <a aria-label="Retour à l'accueil" class="logo-a" href="index.html" onclick="loadPage('index.html'); return false;">
-<img alt="Studio PF Logo" class="logo" data-no-lightbox fetchpriority="high" src="/img/logo.png">
+<img alt="Studio PF, peintre professionnel sur figurines" class="logo" data-no-lightbox fetchpriority="high" decoding="async" src="/img/logo.png" width="320" height="121">
 </a>
 </div>
 <!-- Icônes -->
@@ -81,13 +84,13 @@
 <nav aria-label="Navigation principale" class="pf-mobile-nav" id="pf-mobile-nav">
 <div class="language-selector">
 <button aria-label="Afficher le site en français" id="french" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="Français - Euro" data-no-lightbox src="img/Flag_of_France.png">
+<img alt="Français - Euro" data-no-lightbox src="img/Flag_of_France.png" decoding="async">
 </button>
 <button aria-label="Display the site in English" id="english" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="English - USD" data-no-lightbox src="img/Flag_of_the_United_States.png">
+<img alt="English - USD" data-no-lightbox src="img/Flag_of_the_United_States.png" decoding="async">
 </button>
 <button aria-label="Mostrar el sitio en español" id="spanish" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="Español - Euro" data-no-lightbox src="img/Flag_of_Spain.png">
+<img alt="Español - Euro" data-no-lightbox src="img/Flag_of_Spain.png" decoding="async">
 </button>
 </div>
 <ul class="pf-nav-list">
@@ -177,28 +180,36 @@
 </div>
 </nav>
 <div class="info-container" id="info-container"> <p class="info" id="infoParagraph">.</p> </div>
-</header><div class="carousel-container">
+</header>
+
+<section class="carousel-container" aria-label="Galerie mise en avant">
 <div class="carousel" id="carousel"></div>
 <!-- Navigation arrows -->
-<button aria-label="Previous slide" class="carousel-arrow carousel-prev" onclick="prevSlide()">❮</button>
-<button aria-label="Next slide" class="carousel-arrow carousel-next" onclick="nextSlide()">❯</button>
+<button aria-label="Image précédente" class="carousel-arrow carousel-prev" type="button" onclick="prevSlide()">❮</button>
+<button aria-label="Image suivante" class="carousel-arrow carousel-next" type="button" onclick="nextSlide()">❯</button>
 <!-- Dots -->
 <div class="carousel-dots" id="carousel-dots"></div>
-</div><main id="contenu-principal">
-<div class="maintenance-box ajust fondmort" data-box-id="commission-introduction">
+</section>
+
+<main id="contenu-principal">
+<section class="maintenance-box ajust fondmort" data-box-id="commission-introduction" aria-labelledby="titre-commission-introduction">
+<h1>
 <button aria-controls="commission-introduction-content" aria-expanded="true" class="maintenance-header" type="button">
-<span class="maintenance-title" role="heading" aria-level="1">🎨 Peinture de figurines sur commission</span>
+<span class="maintenance-title" id="titre-commission-introduction">🎨 Peinture de figurines sur commission</span>
 <span aria-hidden="true" class="maintenance-arrow">▲</span>
 </button>
+</h1>
 <div class="maintenance-content" id="commission-introduction-content">
 <p>Je peins des armées et figurines de jeu avec deux niveaux de finition : <strong>Gold</strong> et <strong>Diamant</strong>. Chaque projet est adapté à vos figurines, à votre univers, à votre budget et au rendu recherché.</p>
 <p>Comparez les deux niveaux de finition proposés pour vos armées, unités, personnages et figurines importantes.</p>
 
-<div class="maintenance-box ajust is-collapsed" data-box-id="niveau-gold">
+<section class="maintenance-box ajust is-collapsed" data-box-id="niveau-gold" aria-labelledby="titre-niveau-gold">
+<h3>
 <button aria-controls="niveau-gold-content" aria-expanded="false" class="maintenance-header" type="button">
-<span class="maintenance-title" role="heading" aria-level="3">⭐ Gold — Finition TableTop Premium</span>
+<span class="maintenance-title" id="titre-niveau-gold">⭐ Gold — Finition TableTop Premium</span>
 <span aria-hidden="true" class="maintenance-arrow">▼</span>
 </button>
+</h3>
 <div class="maintenance-content" hidden id="niveau-gold-content">
 <p><strong>Idéal pour :</strong> les armées Warhammer, les unités et les grandes quantités de figurines.</p>
 <p>Une finition propre, efficace et homogène pour obtenir une armée avec un excellent rendu sur table tout en conservant un tarif accessible.</p>
@@ -207,9 +218,9 @@
 <p><strong>Figurine de troupe, socle 20–25 mm :</strong><br>Moins d’une heure → <strong>10 €</strong></p>
 <p><strong>Figurine de troupe, socle 28–32 mm :</strong><br>Environ 1 h ou plus → <strong>20 €</strong></p>
 <div class="exemples-photos3">
-<div class="exemples-photos"><img alt="Exemple de figurine peinte au niveau Gold" loading="lazy" src="img/gold1.jpg"></div>
-<div class="exemples-photos"><img alt="Exemple d’unité peinte au niveau Gold" loading="lazy" src="img/gold2.jpg"></div>
-<div class="exemples-photos"><img alt="Exemple d’armée peinte au niveau Gold" loading="lazy" src="img/gold3.jpg"></div>
+<div class="exemples-photos"><img alt="Exemple de figurine peinte au niveau Gold" loading="lazy" src="img/gold1.jpg" decoding="async"></div>
+<div class="exemples-photos"><img alt="Exemple d’unité peinte au niveau Gold" loading="lazy" src="img/gold2.jpg" decoding="async"></div>
+<div class="exemples-photos"><img alt="Exemple d’armée peinte au niveau Gold" loading="lazy" src="img/gold3.jpg" decoding="async"></div>
 </div>
 
   <a
@@ -222,11 +233,13 @@
 </div>
  </div>
  
-<div class="maintenance-box ajust is-collapsed" data-box-id="niveau-diamant">
+<section class="maintenance-box ajust is-collapsed" data-box-id="niveau-diamant" aria-labelledby="titre-niveau-diamant">
+<h3>
 <button aria-controls="niveau-diamant-content" aria-expanded="false" class="maintenance-header" type="button">
-<span class="maintenance-title" role="heading" aria-level="3">👑 Diamant — Finition TableTop Supérieure</span>
+<span class="maintenance-title" id="titre-niveau-diamant">👑 Diamant — Finition TableTop Supérieure</span>
 <span aria-hidden="true" class="maintenance-arrow">▼</span>
 </button>
+</h3>
 <div class="maintenance-content" hidden id="niveau-diamant-content">
 <p><strong>Idéal pour :</strong> les personnages, héros, monstres, véhicules et figurines importantes de votre collection.</p>
 <p>Une peinture plus poussée avec davantage de contraste, de profondeur et un travail renforcé sur les détails et les points focaux.</p>
@@ -235,9 +248,9 @@
 <p><strong>Figurine de troupe, socle 20–25 mm :</strong><br>Environ 1 heure → <strong>20 €</strong></p>
 <p><strong>Figurine de troupe, socle 28–32 mm :</strong><br>Environ 2 h ou plus → <strong>40 €</strong></p>
 <div class="exemples-photos3">
-<div class="exemples-photos"><img alt="Exemple de peinture au niveau Diamant" loading="lazy" src="img/diamant1.jpg"></div>
-<div class="exemples-photos"><img alt="Exemple de figurine peinte au niveau Diamant" loading="lazy" src="img/diamant2.jpg"></div>
-<div class="exemples-photos"><img alt="Exemple d’armée peinte au niveau Diamant" loading="lazy" src="img/diamant3.jpg"></div>
+<div class="exemples-photos"><img alt="Exemple de peinture au niveau Diamant" loading="lazy" src="img/diamant1.jpg" decoding="async"></div>
+<div class="exemples-photos"><img alt="Exemple de figurine peinte au niveau Diamant" loading="lazy" src="img/diamant2.jpg" decoding="async"></div>
+<div class="exemples-photos"><img alt="Exemple d’armée peinte au niveau Diamant" loading="lazy" src="img/diamant3.jpg" decoding="async"></div>
 </div>
 
   <a
@@ -250,9 +263,9 @@
 </div>
  </div>
  <div class="exemples-photos3">
-<div class="exemples-photos"><img alt="Exemple d’armée peinte sur commission par Studio PF" loading="lazy" src="img/armee1.jpg"></div>
-<div class="exemples-photos"><img alt="Exemple d’armée TableTop peinte par Studio PF" loading="lazy" src="img/armee2.jpg"></div>
-<div class="exemples-photos"><img alt="Exemple d’armée Warhammer peinte par Studio PF" loading="lazy" src="img/armee3.jpg"></div>
+<div class="exemples-photos"><img alt="Exemple d’armée peinte sur commission par Studio PF" loading="lazy" src="img/armee1.jpg" decoding="async"></div>
+<div class="exemples-photos"><img alt="Exemple d’armée TableTop peinte par Studio PF" loading="lazy" src="img/armee2.jpg" decoding="async"></div>
+<div class="exemples-photos"><img alt="Exemple d’armée Warhammer peinte par Studio PF" loading="lazy" src="img/armee3.jpg" decoding="async"></div>
 </div>
 <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines">Demander un devis personnalisé 💬</a>
 
@@ -263,11 +276,13 @@
 
  
  <br>
-<div class="maintenance-box ajust is-collapsed" data-box-id="comparaison-niveaux">
+<section class="maintenance-box ajust is-collapsed" data-box-id="comparaison-niveaux" aria-labelledby="titre-comparaison-niveaux">
+<h2>
 <button aria-controls="comparaison-niveaux-content" aria-expanded="false" class="maintenance-header" type="button">
-<span class="maintenance-title" role="heading" aria-level="3">📊 Comparaison Gold et Diamant</span>
+<span class="maintenance-title" id="titre-comparaison-niveaux">📊 Comparaison Gold et Diamant</span>
 <span aria-hidden="true" class="maintenance-arrow">▼</span>
 </button>
+</h2>
 <div class="maintenance-content" hidden id="comparaison-niveaux-content">
 <table class="tableborder1">
 <thead><tr><th scope="col">Critère</th><th scope="col">⭐ Gold</th><th scope="col">👑 Diamant</th></tr></thead>
@@ -287,7 +302,7 @@
      ⚔️ Et si votre armée devenait unique ?
 
     </a>
- <p> 💶 Tarifs et demande de devis</p>
+ <h3>💶 Tarifs et demande de devis</h3>
 <p>Les tarifs dépendent du nombre de figurines, de leur taille, de leur état, du niveau choisi et des options demandées.</p>
 <h3>📋 Tarif 2026–2027</h3>
 
@@ -296,20 +311,18 @@
 <tbody id="tarifTableBody"></tbody>
 </table>
 <p>Les prix affichés sont indicatifs. Un devis personnalisé permet de confirmer précisément le coût du projet.</p>
- <p>📝 Informations nécessaires pour le devis</p>
+ <h3>📝 Informations nécessaires pour le devis</h3>
 <p>Indiquez le jeu ou l’univers, le nom et le nombre de figurines, leur taille, le niveau souhaité, le montage à réaliser, le soclage attendu et vos références visuelles.</p>
 <p>Ajoutez des photos des figurines lorsque vous les possédez déjà, ainsi que toute contrainte ou demande particulière.</p>
 
 
  <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Projet%20de%20conversion%20de%20figurine%20Studio%20PF"> 💬 Envoyer votre demande</a>
 </div>
-</div>
+</section>
 
+</main>
 
-
-
-
-</main><footer>
+<footer>
 <div class="widget-container">
 <div class="widget" data-featurable-async data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d"></div><script defer src="https://featurable.com/assets/bundle.js"></script>
 </div>
@@ -318,7 +331,7 @@
 <div class="cardpartenaire2">
 <div class="cardpartenaire">
 <div> <a class="apartenaire" href="https://www.totalwargame.com/fr/" rel="noopener noreferrer" target="_blank">
-<img alt="Total Wargames Logo" data-no-lightbox fetchpriority="high" src="img/logo-totalwar.png">
+<img alt="Total Wargames Logo" data-no-lightbox fetchpriority="high" src="img/logo-totalwar.png" decoding="async">
 </a></div>
 <div>
 <p>Achetez moins cher d'occasion<br>5% de remise :<br><br><strong>STUDIOPF</strong></p>
@@ -326,7 +339,7 @@
 </div>
 <div class="cardpartenaire">
 <div> <a href="https://maxireves.fr/?ref=17962" rel="noopener noreferrer" target="_blank">
-<img alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high" src="img/logo-maxireve.png">
+<img alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high" src="img/logo-maxireve.png" decoding="async">
 </a></div>
 <div>
 <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><br><strong>MAXIPF</strong></p>
@@ -336,7 +349,7 @@
 <div class="cardpartenaire2">
 <div class="cardpartenaire">
 <div><a href="https://mezgike.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Mezgike Logo" data-no-lightbox fetchpriority="high" src="img/logo-mezgike.png">
+<img alt="Mezgike Logo" data-no-lightbox fetchpriority="high" src="img/logo-mezgike.png" decoding="async">
 </a></div>
 <div>
 <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><br><strong>STUDIOPF</strong></p>
@@ -344,7 +357,7 @@
 </div>
 <div class="cardpartenaire">
 <div><a class="apartenaire" href="https://wargamesceneries.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high" src="img/logo-wargamesceneries.png">
+<img alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high" src="img/logo-wargamesceneries.png" decoding="async">
 </a></div>
 <div>
 <p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% sur tous les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p>
@@ -353,7 +366,7 @@
 </div>
 </div>
 </div>
-<button id="scrollToTopBtn" onclick="scrollToTop()" title="Retour en haut ⬆️">↑</button>
+<button id="scrollToTopBtn" type="button" onclick="scrollToTop()" title="Retour en haut" aria-label="Retour en haut de la page">↑</button>
 
 <div class="footer" id="foot-contenu">
 <nav aria-label="Liens légaux" class="menu-mobilefoot">
@@ -378,6 +391,10 @@
 </div>
 </div>
 </div>
-</footer><div aria-hidden="true" class="lightbox" id="lightbox">
-<img alt="" id="lightbox-img" src="/img/logo.png">
-</div></body></html>
+</footer>
+
+<div aria-hidden="true" class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Agrandissement de l’image">
+<img alt="" id="lightbox-img" src="/img/logo.png" decoding="async">
+</div>
+</body>
+</html>
