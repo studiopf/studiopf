@@ -203,20 +203,13 @@
     </p>
    </div>
   </header>
-  <div class="carousel-container">
-   <div class="carousel" id="carousel">
-   </div>
-   <!-- Navigation arrows -->
-   <button aria-label="Diapositive précédente" class="carousel-arrow carousel-prev" onclick="prevSlide()">
-    ❮
-   </button>
-   <button aria-label="Diapositive suivante" class="carousel-arrow carousel-next" onclick="nextSlide()">
-    ❯
-   </button>
-   <!-- Dots -->
-   <div class="carousel-dots" id="carousel-dots">
-   </div>
-  </div>
+    <section class="carousel-container" aria-label="Galerie mise en avant">
+    <div class="carousel" id="carousel" aria-live="polite"></div>
+    <button class="carousel-arrow carousel-prev" type="button" onclick="prevSlide()" aria-label="Image précédente">❮</button>
+    <button class="carousel-arrow carousel-next" type="button" onclick="nextSlide()" aria-label="Image suivante">❯</button>
+    <div class="carousel-dots" id="carousel-dots"></div>
+</section>
+  
   <main id="contenu-principal">
    <section class="maintenance-box ajust fondlilia" data-box-id="horaires-introduction">
     <h1 class="maintenance-heading">
