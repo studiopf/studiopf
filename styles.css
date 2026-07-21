@@ -91,40 +91,44 @@
 
 
 .maintenance-header {
-
-    padding: 10px 0;
-    margin: 0;
-    background: var(--maintenance-bg);
-    border: none;
-    font: inherit;
-    text-align: left;
-    cursor: pointer;
-
     display: flex;
     align-items: center;
     width: 100%;
-    gap: 15px;
-    text-align: left;
-       color: var(--text-p);
-}
+    gap: 5px;
 
-.maintenance-title {
-    flex: 1;
-    min-width: 0;
+    padding: 0;
     margin: 0;
-    text-shadow:
-        0 1px 0 #000,
-        0 2px 2px rgba(0,0,0,.8),
-        0 0 6px rgba(0,0,0,.7);
-}
 
+    background: var(--maintenance-bg);
+    border: none;
+    cursor: pointer;
+
+    font: inherit;
+    color: var(--text-p);
+    text-align: left;
+
+    min-height: 0;
+    line-height: 1;
+}
+.maintenance-title,
 .maintenance-arrow {
-    flex-shrink: 0;
-    margin-left: auto;
     text-shadow:
-        0 1px 0 #000,
-        0 2px 2px rgba(0,0,0,.8),
-        0 0 6px rgba(0,0,0,.7);
+        -4px  0   0 #000,
+         4px  0   0 #000,
+         0   -4px 0 #000,
+         0    4px 0 #000,
+
+        -4px -4px 0 #000,
+         4px -4px 0 #000,
+        -4px  4px 0 #000,
+         4px  4px 0 #000,
+
+        -2px 0 0 #000,
+         2px 0 0 #000,
+         0 -2px 0 #000,
+         0  2px 0 #000,
+
+        0 0 12px rgba(0,0,0,.95);
 }
 .maintenance-header:hover {
     background: rgba(244, 200, 118, 0.12);
@@ -251,7 +255,7 @@ body {
 
 .header-logo .logo{
     height:auto;
-    width:30px;
+    width:90px;
 }
 
 /* Icônes */
@@ -615,7 +619,7 @@ body.light-mode .widget-container {
    justify-content: center;
     text-align: center;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 30px;
 }
 
 
@@ -2079,10 +2083,7 @@ header {
 /* BOUTON MENU HAMBURGER */
 /* ============================= */
 .pf-menu-button {
-    position: fixed !important;
-    top: auto !important;
-    right: auto !important;
-    left: auto !important;
+   
 
     /* Supprimer cette ligne */
     /* transform: translateY(8px); */
