@@ -60,7 +60,7 @@
     margin: 10px auto 0;
 
     position: relative;
-    
+    overflow: hidden;
 
     text-align: center;
 
@@ -154,7 +154,7 @@ body {
              background: rgba(255,255,255,0.45);
     border: 1px solid rgba(255,255,255,0.6);
     border-radius: 12px;
-    
+    overflow: hidden;
     box-shadow: 0 3px 12px rgba(0,0,0,.08);
     transition: transform .26s ease,
                 box-shadow .26s ease,
@@ -779,7 +779,7 @@ a:hover,
        background: rgba(255,255,255,0.45);
     border: 1px solid rgba(255,255,255,0.6);
     border-radius: 12px;
-    
+    overflow: hidden;
     box-shadow: 0 3px 12px rgba(0,0,0,.08);
     transition: transform .26s ease,
                 box-shadow .26s ease,
@@ -1135,7 +1135,7 @@ nav {
     position: relative;
     max-width: 600px; /* Augmenté pour plus grand sur PC */
     margin: 0 auto;
-    
+    overflow: hidden;
 }
 
 .tous {
@@ -1649,7 +1649,7 @@ button.pf-menu-button{
     position:relative !important;
 
     top:auto !important;
-    right: 10px !important;
+    right:auto !important;
     bottom:auto !important;
     left:auto !important;
 
@@ -1875,7 +1875,7 @@ a.surligne:visited {
 .fondmort,
 .fondcusto {
     position: relative;
-    
+    overflow: hidden;
     isolation: isolate;
 }
 
@@ -2034,7 +2034,7 @@ a.surligne:visited {
     justify-content: center;
     align-items: center;
 
-    
+    overflow: hidden;
 }
 
 .lightbox.active {
@@ -2158,7 +2158,7 @@ a.surligne:visited {
 /* Empêche la page de défiler derrière la lightbox */
 
 body.lightbox-open {
-    
+    overflow: hidden;
 }
 
 /* ==========================
@@ -2173,7 +2173,7 @@ body.lightbox-open {
     height: 250px; /* Hauteur sur desktop */
     margin: 0 auto;
     position: relative;
-    
+    overflow: hidden;
     border-radius: 8px;
 }
 
@@ -2259,7 +2259,7 @@ body.lightbox-open {
     --page-max: 1900px;
     --page-gutter: clamp(8px, 1.2vw, 24px);
     --header-icon-size: clamp(17px, 1.15vw, 22px);
-    --header-icon-gap: clamp(2px, 0.35vw, 5px);
+    --header-icon-gap: clamp(2px, 0.35vw, 7px);
     --maintenance-title-size: clamp(14px, 1.65vw, 30px);
 }
 
@@ -2373,7 +2373,7 @@ img {
     max-width: none;
     margin: 0 0 0 -50vw;
     padding: 0;
-    
+    overflow: hidden;
     text-align: center;
 }
 
@@ -2624,7 +2624,7 @@ li,
     margin-left: calc(50% - 50vw);
     padding: 0;
     position: relative;
-    
+    overflow: hidden;
     text-align: center;
 }
 
@@ -3041,7 +3041,7 @@ header + .info-container,
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
-    
+    overflow: hidden;
     text-align: center;
 }
 
@@ -3196,7 +3196,7 @@ header + .info-container,
             max(44px, env(safe-area-inset-top))
             8px
             max(10px, env(safe-area-inset-bottom));
-        
+        overflow: hidden;
     }
 
     .lightbox img {
