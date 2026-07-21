@@ -1,727 +1,1034 @@
-ChatGPT
-
-
-
-
-
-Texte collé(38).txt
-Document
-corrige pour etre valide w3c 
-
-Réfléchi pendant 1m 39s
-Le fichier HTML a été corrigé pour respecter la structure HTML5/W3C, notamment les titres <h1>, <h2> et <h3> qui étaient placés directement dans des boutons d’accordéon. Ils ont été remplacés par des éléments valides avec role="heading" et aria-level, sans modifier le fonctionnement attendu du script. 
-
-
-J’ai également ajouté des libellés accessibles aux boutons de langue et distingué les deux zones de navigation.
-
-premierpas-w3c.html
-
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Débuter la peinture sur figurine : guide premiers pas | Studio PF</title>
-<meta content="Guide complet pour débuter la peinture sur figurine : matériel, préparation, sous-couche, couleurs, ombres, éclaircissements, soclage et conseils de peintre." name="description"/>
-<meta content="FRASSE Pierre-François - Studio PF" name="author"/>
-<meta content="débuter peinture figurine, premiers pas peinture figurine, matériel peinture miniature, sous-couche figurine, peindre Warhammer débutant, techniques peinture figurine, pinceaux figurine, couleurs figurine, ombrage figurine, éclaircissement figurine, soclage figurine, guide Studio PF" name="keywords"/>
-<meta content="index, follow" name="robots"/>
-<link href="https://studiopf.fr/premierpas.html" rel="canonical"/>
-<!-- Open Graph -->
-<meta content="Débuter la peinture sur figurine : premiers pas | Studio PF" property="og:title"/>
-<meta content="Matériel, préparation, couleurs et techniques essentielles : apprenez les bases pour peindre vos premières figurines." property="og:description"/>
-<meta content="https://studiopf.fr/img/premier-pas-peinture-figurine.jpg" property="og:image"/>
-<meta content="https://studiopf.fr/premierpas.html" property="og:url"/>
-<meta content="article" property="og:type"/>
-<meta content="fr_FR" property="og:locale"/>
-<!-- Twitter Card -->
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Débuter la peinture sur figurine : premiers pas | Studio PF" name="twitter:title"/>
-<meta content="Découvrez le matériel et les techniques de base pour réussir vos premières figurines peintes." name="twitter:description"/>
-<meta content="https://studiopf.fr/img/premier-pas-peinture-figurine.jpg" name="twitter:image"/>
-<meta content="@studioPFfr" name="twitter:site"/>
-<!-- Optimisation connexions externes -->
-<link crossorigin="" href="https://code.jquery.com" rel="preconnect"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-<!-- Image principale (à remplacer par ton image LCP réelle) -->
-<link as="image" fetchpriority="high" href="/img/premier-pas-peinture-figurine.jpg" rel="preload"/>
-<link href="styles.css" rel="stylesheet"/>
-<!-- Favicon -->
-<link href="/img/favicon.png" rel="icon" type="image/png"/>
-<!-- Scripts -->
-<script defer="" src="/js/script.js"></script>
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"LocalBusiness",
- "name":"Studio PF",
- "image":"https://studiopf.fr/img/preview.jpg",
- "@id":"https://studiopf.fr/",
- "url":"https://studiopf.fr/",
- "telephone":"+33775860837",
- "address":{
-   "@type":"PostalAddress",
-   "streetAddress":"17 route de lare",
-   "addressLocality":"Saint Georges de Baroille",
-   "postalCode":"42510",
-   "addressCountry":"FR"
- },
- "sameAs":[
-   "https://www.instagram.com/studiopf.fr",
-   "https://www.facebook.com/studiopf.fr"
- ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Débuter la peinture sur figurine : premiers pas",
-  "description": "Guide complet pour découvrir le matériel, préparer une figurine et apprendre les techniques essentielles de peinture sur miniature.",
-  "image": "https://studiopf.fr/img/premier-pas-peinture-figurine.jpg",
-  "author": {
-    "@type": "Person",
-    "name": "Pierre-François Frasse"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Studio PF",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://studiopf.fr/img/logo.png"
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- ============================= -->
+    <!-- SEO PRINCIPAL -->
+    <!-- ============================= -->
+
+    <title>FAQ Peinture sur Figurines | Tarifs, Délais et Commandes | Studio PF</title>
+
+    <meta name="description"
+          content="Consultez la FAQ de Studio PF : tarifs de peinture sur figurines, délais, niveaux de finition, commandes Warhammer, livraison, paiement, cours et impression 3D.">
+
+    <meta name="author"
+          content="Pierre-François Frasse - Studio PF">
+
+    <meta name="keywords"
+          content="FAQ peinture figurine, questions peinture figurine, tarifs peinture Warhammer, délai peinture figurine, commission peinture figurine, commande peinture Warhammer, niveaux peinture tabletop, livraison figurines peintes, paiement commission peinture, cours peinture figurine, impression 3D résine, Studio PF">
+
+    <meta name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="googlebot"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://studiopf.fr/faq.html">
+
+
+    <!-- ============================= -->
+    <!-- INFORMATIONS GÉOGRAPHIQUES -->
+    <!-- ============================= -->
+
+    <meta name="geo.region"
+          content="FR-42">
+
+    <meta name="geo.placename"
+          content="Saint-Georges-de-Baroille">
+
+    <meta name="language"
+          content="fr">
+
+    <meta name="theme-color"
+          content="#110909">
+
+
+    <!-- ============================= -->
+    <!-- OPEN GRAPH -->
+    <!-- Facebook, LinkedIn, Discord -->
+    <!-- ============================= -->
+
+    <meta property="og:title"
+          content="FAQ Studio PF | Peinture professionnelle sur figurines">
+
+    <meta property="og:description"
+          content="Retrouvez les réponses à vos questions sur les tarifs, délais, niveaux de peinture, commandes, paiements, livraisons, cours et services de Studio PF.">
+
+    <meta property="og:image"
+          content="https://studiopf.fr/img/preview.jpg">
+
+    <meta property="og:image:secure_url"
+          content="https://studiopf.fr/img/preview.jpg">
+
+    <meta property="og:image:alt"
+          content="Studio PF - Peinture professionnelle sur figurines">
+
+    <meta property="og:image:width"
+          content="1200">
+
+    <meta property="og:image:height"
+          content="630">
+
+    <meta property="og:url"
+          content="https://studiopf.fr/faq.html">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:site_name"
+          content="Studio PF">
+
+    <meta property="og:locale"
+          content="fr_FR">
+
+
+    <!-- ============================= -->
+    <!-- TWITTER / X -->
+    <!-- ============================= -->
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="FAQ Studio PF | Peinture sur figurines">
+
+    <meta name="twitter:description"
+          content="Tarifs, délais, commandes, niveaux de finition, livraison, paiement, cours et impression 3D : retrouvez les réponses de Studio PF.">
+
+    <meta name="twitter:image"
+          content="https://studiopf.fr/img/preview.jpg">
+
+    <meta name="twitter:image:alt"
+          content="Studio PF - Peinture professionnelle sur figurines">
+
+
+    <!-- ============================= -->
+    <!-- FAVICON -->
+    <!-- ============================= -->
+
+    <link rel="icon"
+          href="/img/favicon.png"
+          type="image/png">
+
+    <link rel="apple-touch-icon"
+          href="/img/favicon.png">
+
+
+    <!-- ============================= -->
+    <!-- OPTIMISATION DES CONNEXIONS -->
+    <!-- ============================= -->
+
+    <link rel="preconnect"
+          href="https://cdnjs.cloudflare.com"
+          crossorigin>
+
+    <link rel="dns-prefetch"
+          href="https://cdnjs.cloudflare.com">
+
+
+    <!-- ============================= -->
+    <!-- PRÉCHARGEMENT IMAGE PRINCIPALE -->
+    <!-- ============================= -->
+
+    <link rel="preload"
+          as="image"
+          href="/img/preview.jpg"
+          fetchpriority="high">
+
+
+    <!-- ============================= -->
+    <!-- FEUILLES DE STYLE -->
+    <!-- ============================= -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="/styles.css">
+
+
+    <!-- ============================= -->
+    <!-- SCRIPT PRINCIPAL -->
+    <!-- ============================= -->
+
+    <script src="/js/script.js" defer></script>
+
+
+    <!-- ============================= -->
+    <!-- DONNÉES STRUCTURÉES : PAGE FAQ -->
+    <!-- ============================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://studiopf.fr/faq.html#faq",
+        "url": "https://studiopf.fr/faq.html",
+        "name": "FAQ Studio PF - Peinture professionnelle sur figurines",
+        "description": "Questions fréquentes sur les prestations de peinture sur figurines, les tarifs, les délais, les commandes, les paiements, la livraison, les cours et l'impression 3D.",
+        "inLanguage": "fr-FR",
+        "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://studiopf.fr/#website",
+            "name": "Studio PF",
+            "url": "https://studiopf.fr/"
+        },
+        "about": {
+            "@type": "LocalBusiness",
+            "@id": "https://studiopf.fr/#business",
+            "name": "Studio PF"
+        }
     }
-  },
-  "mainEntityOfPage": "https://studiopf.fr/premierpas.html",
-  "inLanguage": "fr-FR"
-}
-</script>
+    </script>
+
+
+    <!-- ============================= -->
+    <!-- DONNÉES STRUCTURÉES : ENTREPRISE -->
+    <!-- ============================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://studiopf.fr/#business",
+        "name": "Studio PF",
+        "alternateName": "Studio Peinture Figurine",
+        "description": "Atelier professionnel spécialisé dans la peinture sur figurines, les commissions Warhammer, les figurines de collection, les cours de peinture et l'impression 3D résine.",
+        "image": "https://studiopf.fr/img/preview.jpg",
+        "logo": "https://studiopf.fr/img/favicon.png",
+        "url": "https://studiopf.fr/",
+        "telephone": "+33775860837",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17 route de l'Are",
+            "addressLocality": "Saint-Georges-de-Baroille",
+            "postalCode": "42510",
+            "addressRegion": "Loire",
+            "addressCountry": "FR"
+        },
+        "areaServed": [
+            {
+                "@type": "Country",
+                "name": "France"
+            },
+            {
+                "@type": "Country",
+                "name": "Belgique"
+            },
+            {
+                "@type": "Place",
+                "name": "International"
+            }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/studiopf.fr/",
+            "https://www.facebook.com/studiopf.fr"
+        ]
+    }
+    </script>
+
+
+    <!-- ============================= -->
+    <!-- FIL D’ARIANE -->
+    <!-- ============================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://studiopf.fr/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "FAQ",
+                "item": "https://studiopf.fr/faq.html"
+            }
+        ]
+    }
+    </script>
+
+
 </head>
 <body>
-<header>
+
+<header>        
 <div class="header-top">
-<button aria-label="Changer le thème" class="theme-toggle" id="themeToggle" type="button">🌙</button>
-<!-- Logo -->
-<div class="header-logo">
-<a aria-label="Retour à l'accueil" class="logo-a" href="index.html">
-<img alt="Studio PF Logo" class="logo" data-no-lightbox="" fetchpriority="high" src="/img/logo.png"/>
-</a>
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Changer le thème">🌙</button>
+    <!-- Logo -->
+    <div class="header-logo">
+        <a href="index.html"
+           onclick="loadPage('index.html'); return false;"
+           class="logo-a"
+           aria-label="Retour à l'accueil">
+
+            <img
+                src="/img/logo.png"
+                alt="Studio PF Logo"
+                class="logo"
+                data-no-lightbox
+                fetchpriority="high">
+        </a>
+     
+    </div>
+
+    <!-- Icônes -->
+  <div class="header-contact">
+
+
+      <a href="mailto:studiopeinturefigurine@gmail.com"
+           aria-label="Envoyer un email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+      <a href="tel:+33775860837"
+           aria-label="Téléphoner">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+
+ </div>
+      <!-- Bouton hamburger -->
+    <button
+        id="pf-menu-button"
+        class="pf-menu-button"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button> 
+    
 </div>
-<!-- Icônes -->
-<div class="header-contact">
-<a aria-label="Envoyer un email" href="mailto:studiopeinturefigurine@gmail.com">
-<i class="fas fa-envelope"></i>
-</a>
-<a aria-label="Téléphoner" href="tel:+33775860837">
-<i class="fas fa-phone-alt"></i>
-</a>
-</div>
-<!-- Bouton hamburger -->
-<button aria-expanded="false" aria-label="Ouvrir le menu" class="pf-menu-button" id="pf-menu-button" type="button">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-<nav aria-label="Navigation principale" class="pf-mobile-nav" id="pf-mobile-nav">
-<div class="language-selector">
-<button aria-label="Afficher le site en français" id="french" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="Français - Euro" data-no-lightbox="" src="img/Flag_of_France.png"/>
-</button>
-<button aria-label="Display the site in English" id="english" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="English - USD" data-no-lightbox="" src="img/Flag_of_the_United_States.png"/>
-</button>
-<button aria-label="Mostrar el sitio en español" id="spanish" onclick="setLanguage(this.id); updateMeta(this.id);" type="button">
-<img alt="Español - Euro" data-no-lightbox="" src="img/Flag_of_Spain.png"/>
-</button>
-</div>
-<ul class="pf-nav-list">
-<li>
-<a href="index.html">
+
+
+  <nav id="pf-mobile-nav" class="pf-mobile-nav">
+
+    <div class="language-selector">
+
+        <button
+            type="button"
+            id="french"
+            onclick="setLanguage(this.id); updateMeta(this.id);"
+        >
+            <img
+                src="img/Flag_of_France.png"
+                alt="Français - Euro"
+                data-no-lightbox
+            >
+        </button>
+
+        <button
+            type="button"
+            id="english"
+            onclick="setLanguage(this.id); updateMeta(this.id);"
+        >
+            <img
+                src="img/Flag_of_the_United_States.png"
+                alt="English - USD"
+                data-no-lightbox
+            >
+        </button>
+
+        <button
+            type="button"
+            id="spanish"
+            onclick="setLanguage(this.id); updateMeta(this.id);"
+        >
+            <img
+                src="img/Flag_of_Spain.png"
+                alt="Español - Euro"
+                data-no-lightbox
+            >
+        </button>
+
+    </div>
+
+    <ul class="pf-nav-list">
+
+        <li>
+            <a href="index.html">
                 🏠 Accueil
             </a>
-</li>
-<li>
-<a href="quisuisje.html">
+        </li>
+
+        <li>
+            <a href="quisuisje.html">
                 👋 Qui suis-je ?
             </a>
-</li>
-<li>
-<a href="peinturecommission.html">
+        </li>
+
+        <li>
+            <a href="peinturecommission.html">
                 ⚔️ Armées &amp; TableTop+
             </a>
-</li>
-<li>
-<a href="peinturecollection.html">
+        </li>
+
+        <li>
+            <a href="peinturecollection.html">
                 🏆 Collection &amp; Concours
             </a>
-</li>
-<li>
-<a href="formation.html">
+        </li>
+
+        <li>
+            <a href="formation.html">
                 📚 Cours de peinture
             </a>
-</li>
-<li>
-<a href="galerie.html">
+        </li>
+
+        <li>
+            <a href="galerie.html">
                 🖼️ Galerie
             </a>
-</li>
-<li>
-<a href="pourquoi.html">
+        </li>
+
+        <li>
+            <a href="faq.html">
                 ❓ FAQ
             </a>
-</li>
-</ul>
-<ul class="contact-list">
-<li>
-<a href="mailto:studiopeinturefigurine@gmail.com">
-<span>
-<i class="fas fa-envelope"></i>
+        </li>
+
+    </ul>
+
+    <div class="contact-list">
+
+        <p>
+            <a href="mailto:studiopeinturefigurine@gmail.com">
+                <span>
+                    <i class="fas fa-envelope"></i>
                     studiopeinturefigurine@gmail.com
                 </span>
-</a>
-</li>
-<li>
-<a href="tel:+33775860837">
-<span>
-<i class="fas fa-phone-alt"></i>
+            </a>
+        </p>
+<br>
+        <p>
+            <a href="tel:+33775860837">
+                <span>
+                    <i class="fas fa-phone-alt"></i>
                     07 75 86 08 37
                 </span>
-</a>
-</li>
-</ul>
-<div class="pf-mobile-social">
-<div class="pf-social-container">
-<a aria-label="Facebook" class="social-icon" href="https://www.facebook.com/studiopf.fr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-<a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/studiopf.fr/" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-<a aria-label="X" class="social-icon" href="https://x.com/studioPFfr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-x-twitter"></i>
-</a>
-<a aria-label="Discord" class="social-icon" href="https://discord.gg/Jpa4yvfQVN" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-discord"></i>
-</a>
-<a aria-label="Patreon" class="social-icon" href="https://www.patreon.com/studiopf" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-patreon"></i>
-</a>
-<a aria-label="Twitch" class="social-icon" href="https://www.twitch.tv/studiopf" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-twitch"></i>
-</a>
-<a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@studiopf-fr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-youtube"></i>
-</a>
-<a aria-label="TikTok" class="social-icon" href="https://www.tiktok.com/@studiopf.fr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-</div>
-</div>
+            </a>
+        </p>
+
+    </div>
+    <div class="pf-mobile-social">
+
+        <div class="pf-social-container">
+
+            <a
+                href="https://www.facebook.com/studiopf.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Facebook"
+            >
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+                href="https://www.instagram.com/studiopf.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Instagram"
+            >
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+                href="https://x.com/studioPFfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="X"
+            >
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a
+                href="https://discord.gg/Jpa4yvfQVN"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Discord"
+            >
+                <i class="fab fa-discord"></i>
+            </a>
+
+            <a
+                href="https://www.patreon.com/studiopf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Patreon"
+            >
+                <i class="fab fa-patreon"></i>
+            </a>
+
+            <a
+                href="https://www.twitch.tv/studiopf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Twitch"
+            >
+                <i class="fab fa-twitch"></i>
+            </a>
+
+            <a
+                href="https://www.youtube.com/@studiopf-fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="YouTube"
+            >
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@studiopf.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="TikTok"
+            >
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+        </div>
+
+    </div>
+
 </nav>
-<div class="info-container" id="info-container"> <p class="info" id="infoParagraph">.</p> </div>
-</header>
-<section aria-label="Galerie mise en avant" class="carousel-container">
-<div aria-live="polite" class="carousel" id="carousel"></div>
-<button aria-label="Image précédente" class="carousel-arrow carousel-prev" onclick="prevSlide()" type="button">❮</button>
-<button aria-label="Image suivante" class="carousel-arrow carousel-next" onclick="nextSlide()" type="button">❯</button>
-<div class="carousel-dots" id="carousel-dots"></div>
-</section>
-<!-- Contenu principal qui change dynamiquement -->
+      
+<div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
+    </header>
+
+<div class="carousel-container">
+    <div class="carousel" id="carousel"></div>
+    
+    <!-- Navigation arrows -->
+    <button class="carousel-arrow carousel-prev" onclick="prevSlide()" aria-label="Diapositive précédente">❮</button>
+    <button class="carousel-arrow carousel-next" onclick="nextSlide()" aria-label="Diapositive suivante">❯</button>
+    
+    <!-- Dots -->
+    <div class="carousel-dots" id="carousel-dots"></div>
+</div>
+
 <main id="contenu-principal">
-<!-- =====================================================
-     INTRODUCTION
-===================================================== -->
-<div class="maintenance-box ajust fondlilia" data-box-id="premiers-pas-introduction">
-<button aria-expanded="true" class="maintenance-header" type="button">
-<span aria-level="1" class="maintenance-title" role="heading">
-            🎨 Débuter la peinture sur figurine : les premiers pas
-        </span>
-<span aria-hidden="true" class="maintenance-arrow">▲</span>
-</button>
-<br/>
-<p>
-        Vous souhaitez peindre vos premières figurines, mais vous ne savez pas
-        quel matériel choisir ni dans quel ordre commencer ?
-    </p>
-<p>
-        Ce guide vous accompagne étape par étape : préparation, sous-couche,
-        couleurs de base, ombres, éclaircissements, détails et soclage.
-    </p>
-<p>
-<strong>La règle la plus importante reste simple : Amusez-vous!</strong>
-</p>
-</div>
-<br/><br/>
-<!-- =====================================================
-     GROUPE PRINCIPAL 1 : BIEN COMMENCER
-===================================================== -->
-<div class="maintenance-box ajust" data-box-id="groupe-bien-commencer">
-<button aria-expanded="true" class="maintenance-header" type="button">
-<span aria-level="2" class="maintenance-title" role="heading">🧰 1. Bien commencer</span>
-<span aria-hidden="true" class="maintenance-arrow">▲</span>
-</button>
-<br/>
-<p>
-        Avant de poser la première couleur, préparez un espace simple,
-        confortable et correctement éclairé.
-    </p>
-<div class="maintenance-box ajust" data-box-id="regle-or">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">⭐ La règle d’or : se faire plaisir</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Choisissez une figurine qui vous plaît réellement. Un modèle motivant
-            vous donnera davantage envie d’aller jusqu’au bout du projet.
+
+  <!-- =========================
+     POURQUOI STUDIO PF
+========================= -->
+<section
+    class="maintenance-box ajust"
+    data-box-id="avantages"
+>
+    <h1 class="maintenance-title">⭐ Pourquoi choisir Studio PF ?</h1>
+
+    <div class="maintenance-content">
+        <p>
+            Confier ses figurines demande de la confiance.<br>
+            Chaque projet bénéficie donc d’un accompagnement
+            attentif et personnalisé.
         </p>
-<p hidden="">
-            Ne cherchez pas immédiatement la perfection. Une première figurine
-            sert surtout à comprendre la peinture, la dilution et le comportement du pinceau.
+
+        <p>💬 Conseils avant, pendant et après la réalisation</p>
+        <p>🧩 Projet adapté à votre univers et à vos attentes</p>
+        <p>🎨 Peinture entièrement réalisée à la main</p>
+        <p>🏞️ Travail personnalisé des socles et des finitions</p>
+        <p>📸 Validation du résultat à partir de photos</p>
+        <p>📦 Expédition protégée partout en France</p>
+        <p>🖼️ Plusieurs centaines de figurines déjà réalisées</p>
+    </div>
+</section>
+
+<!-- =========================
+     FONCTIONNEMENT
+========================= -->
+<section
+    class="maintenance-box ajust is-collapsed"
+    data-box-id="fonctionnement"
+>
+    <h2 class="maintenance-title">
+        <button
+            class="maintenance-header"
+            type="button"
+            aria-expanded="false"
+            aria-controls="fonctionnement-content"
+        >
+            <span class="maintenance-title">⚙️ Comment fonctionne une commande ?</span>
+            <span class="maintenance-arrow" aria-hidden="true">▼</span>
+        </button>
+    </h2>
+
+    <div
+        class="maintenance-content"
+        id="fonctionnement-content"
+        hidden
+    >
+        <p>
+            <strong>1- Vous demandez un devis.</strong><br>
+            Vous présentez vos figurines,
+            le niveau de finition souhaité,
+            vos couleurs et les particularités du projet.
         </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="kit-depart">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🧰 Le kit de départ essentiel</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">Pour commencer dans de bonnes conditions, prévoyez :</p>
-<p hidden="">✂️ Une pince coupante pour détacher les pièces.</p>
-<p hidden="">🔪 Un cutter de modélisme pour retirer les lignes de moulage.</p>
-<p hidden="">🖌️ Deux ou trois pinceaux : un moyen, un fin et une vieille brosse.</p>
-<p hidden="">🎨 Quelques peintures acryliques adaptées aux figurines.</p>
-<p hidden="">🥛 Un gobelet d’eau, de l’essuie-tout et une palette.</p>
-<p hidden="">🧴 De la colle adaptée au matériau de votre figurine.</p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="espace-securite">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">💡 Espace de travail et sécurité</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Travaillez sur une surface stable avec une lumière placée face à vous
-            ou légèrement sur le côté afin d’éviter les ombres trop fortes.
+
+        <p><strong>↓</strong></p>
+
+        <p>
+            <strong>2- Nous définissons votre projet.</strong><br>
+            Je vous conseille et nous validons ensemble
+            la prestation, le schéma de couleurs,
+            le soclage et les différentes options.
         </p>
-<p hidden="">
-            Les cutters, colles, sous-couches et vernis doivent être utilisés avec précaution.
-            Aérez la pièce et utilisez les bombes uniquement dans un espace adapté.
+
+        <p><strong>↓</strong></p>
+
+        <p>
+            <strong>3- Je réalise vos figurines.</strong><br>
+            Préparation, montage, peinture,
+            effets spéciaux, finitions
+            et réalisation des socles.
         </p>
-</div>
-</div>
-<br/><br/>
-<!-- =====================================================
-     GROUPE PRINCIPAL 2 : COULEURS
-===================================================== -->
-<div class="maintenance-box ajust" data-box-id="groupe-couleurs">
-<button aria-expanded="true" class="maintenance-header" type="button">
-<span aria-level="2" class="maintenance-title" role="heading">🌈 2. Comprendre et choisir les couleurs</span>
-<span aria-hidden="true" class="maintenance-arrow">▲</span>
-</button>
-<br/>
-<p>
-        Une palette simple et cohérente est souvent plus efficace qu’un grand nombre
-        de couleurs utilisées sans hiérarchie.
-    </p>
-<div class="maintenance-box ajust" data-box-id="couleurs-primaires">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🔴 Les couleurs primaires et secondaires</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Les couleurs primaires sont le jaune, le bleu et le rouge.
-            Elles permettent de créer les couleurs secondaires.
+
+        <p><strong>↓</strong></p>
+
+        <p>
+            <strong>4- Validation par photos puis expédition sécurisée.</strong><br>
+            Vous validez le résultat à partir de photos détaillées
+            avant la préparation et l’expédition de vos figurines.
         </p>
-<p hidden="">🟢 Jaune + bleu = vert.</p>
-<p hidden="">🟠 Jaune + rouge = orange.</p>
-<p hidden="">🟣 Rouge + bleu = violet.</p>
-<p hidden="">
-            En modifiant les proportions, vous obtenez de nombreuses nuances intermédiaires.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="chaud-froid">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🔥 Couleurs chaudes et couleurs froides</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Les rouges, oranges et jaunes donnent généralement une impression de chaleur,
-            d’énergie et de proximité.
-        </p>
-<p hidden="">
-            Les bleus, verts et violets donnent plutôt une impression de fraîcheur,
-            de calme ou de profondeur.
-        </p>
-<p hidden="">
-            Mélanger intelligemment chaud et froid permet de créer du contraste
-            et d’attirer le regard sur les zones importantes.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="palette-figurine">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🎯 Construire une palette lisible</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Choisissez une couleur principale, une couleur secondaire et une couleur d’accent.
-        </p>
-<p hidden="">
-            Exemple : une armure bleue dominante, des éléments métalliques neutres
-            et quelques détails orange pour créer un contraste complémentaire.
-        </p>
-<p hidden="">
-            Une couleur doit dominer. Les autres servent à accompagner la lecture de la figurine.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="palette-socle">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🏞️ Choisir les couleurs du socle</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Le socle doit mettre la figurine en valeur sans lui voler la vedette.
-        </p>
-<p hidden="">
-            Un socle chaud peut faire ressortir une figurine majoritairement froide,
-            et inversement. Réutilisez une petite couleur de la figurine sur le socle
-            pour relier visuellement l’ensemble.
-        </p>
-</div>
-</div>
-<br/><br/>
-<!-- =====================================================
-     GROUPE PRINCIPAL 3 : ÉTAPES
-===================================================== -->
-<div class="maintenance-box ajust" data-box-id="groupe-etapes">
-<button aria-expanded="true" class="maintenance-header" type="button">
-<span aria-level="2" class="maintenance-title" role="heading">🖌️ 3. Peindre une figurine étape par étape</span>
-<span aria-hidden="true" class="maintenance-arrow">▲</span>
-</button>
-<br/>
-<p>
-        Respecter un ordre logique facilite le travail et évite de devoir corriger
-        inutilement certaines zones.
-    </p>
-<div class="maintenance-box ajust" data-box-id="etape-montage">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">1️⃣ Préparer et monter la figurine</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Détachez les pièces proprement, retirez les lignes de moulage puis vérifiez
-            l’assemblage à blanc avant de coller.
-        </p>
-<p hidden="">
-            Une préparation soignée améliore immédiatement le résultat final,
-            même avec une peinture simple.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="etape-sous-couche">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">2️⃣ Appliquer la sous-couche</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            La sous-couche permet à la peinture d’adhérer correctement et donne une base uniforme.
-        </p>
-<p hidden="">
-            Agitez bien la bombe, travaillez dans un espace ventilé et appliquez plusieurs passages fins
-            plutôt qu’une couche épaisse qui masquerait les détails.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="etape-bases">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">3️⃣ Poser les couleurs de base</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Diluez légèrement la peinture pour qu’elle s’étale sans laisser de traces épaisses.
-        </p>
-<p hidden="">
-            Deux couches fines donnent presque toujours un meilleur résultat qu’une seule couche trop chargée.
-        </p>
-<p hidden="">
-            Commencez par les grandes zones, puis progressez vers les éléments plus petits.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="etape-ombres">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">4️⃣ Renforcer les ombres</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Placez les ombres dans les creux, sous les volumes et dans les zones moins exposées à la lumière.
-        </p>
-<p hidden="">
-            Les lavis peuvent vous aider, mais évitez d’en recouvrir automatiquement toute la figurine.
-            Contrôlez leur placement pour conserver un résultat propre.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="etape-eclaircissements">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">5️⃣ Ajouter les éclaircissements</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Éclaircissez progressivement les parties hautes et les arêtes exposées à la lumière.
-        </p>
-<p hidden="">
-            Mélangez la couleur de base avec une teinte plus claire plutôt que d’ajouter immédiatement
-            beaucoup de blanc, qui peut ternir certaines couleurs.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="etape-details">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">6️⃣ Peindre les détails</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Terminez par les yeux, lentilles, bijoux, symboles, petites pièces métalliques
-            et éventuels effets d’usure.
-        </p>
-<p hidden="">
-            Utilisez peu de peinture sur le pinceau et stabilisez vos mains l’une contre l’autre
-            pour gagner en précision.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="etape-socle-vernis">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">7️⃣ Réaliser le socle et protéger la peinture</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Ajoutez texture, sable, pierres, végétation ou pigments pour intégrer la figurine dans un décor.
-        </p>
-<p hidden="">
-            Le vernis est optionnel, mais utile pour les figurines souvent manipulées.
-            Le vernis mat convient à la majorité des surfaces, tandis que le satiné ou le brillant
-            peuvent être réservés à certains effets.
-        </p>
-</div>
-</div>
-<br/><br/>
-<!-- =====================================================
-     GROUPE PRINCIPAL 4 : OUTILS
-===================================================== -->
-<div class="maintenance-box ajust" data-box-id="groupe-outils">
-<button aria-expanded="true" class="maintenance-header" type="button">
-<span aria-level="2" class="maintenance-title" role="heading">🛠️ 4. Bien utiliser et entretenir ses outils</span>
-<span aria-hidden="true" class="maintenance-arrow">▲</span>
-</button>
-<br/>
-<p>
-        Un matériel simple mais bien utilisé est largement suffisant pour apprendre.
-    </p>
-<div class="maintenance-box ajust" data-box-id="pinceaux">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🖌️ Choisir ses pinceaux</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Un pinceau de taille moyenne avec une bonne pointe est souvent plus polyvalent
-            qu’un pinceau extrêmement petit.
-        </p>
-<p hidden="">Utilisez un vieux pinceau pour les textures, le brossage à sec et les produits agressifs.</p>
-<p hidden="">Réservez votre meilleur pinceau aux couches, éclaircissements et détails précis.</p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="palette-dilution">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">💧 Palette, eau et dilution</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Une palette humide ralentit le séchage de la peinture et facilite les mélanges.
-        </p>
-<p hidden="">
-            Changez régulièrement l’eau, surtout après avoir utilisé des peintures métalliques.
-        </p>
-<p hidden="">
-            La bonne dilution dépend de la peinture et de l’effet recherché : la peinture doit rester contrôlable
-            sans former une pâte épaisse ni couler partout.
-        </p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="entretien-pinceaux">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🧼 Entretenir ses pinceaux</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Ne laissez jamais la peinture sécher dans la virole métallique du pinceau.
-        </p>
-<p hidden="">
-            Rincez fréquemment, reformez délicatement la pointe et rangez les pinceaux sans écraser les poils.
-        </p>
-<p hidden="">
-            Un savon spécial pour pinceaux prolonge fortement leur durée de vie.
-        </p>
-</div>
-</div>
-<br/><br/>
-<!-- =====================================================
-     GROUPE PRINCIPAL 5 : PROGRESSER
-===================================================== -->
-<div class="maintenance-box ajust" data-box-id="groupe-progresser">
-<button aria-expanded="true" class="maintenance-header" type="button">
-<span aria-level="2" class="maintenance-title" role="heading">🚀 5. Progresser après ses premières figurines</span>
-<span aria-hidden="true" class="maintenance-arrow">▲</span>
-</button>
-<br/>
-<p>
-        La progression vient surtout de la régularité, de l’observation et de petits exercices ciblés.
-    </p>
-<div class="maintenance-box ajust" data-box-id="erreurs-debutants">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">⚠️ Les erreurs fréquentes des débutants</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">Appliquer une peinture trop épaisse qui masque les détails.</p>
-<p hidden="">Charger excessivement le pinceau et perdre le contrôle de la peinture.</p>
-<p hidden="">Utiliser trop de couleurs sans définir de palette principale.</p>
-<p hidden="">Vouloir terminer trop vite sans laisser sécher les couches.</p>
-<p hidden="">Comparer sa première figurine au travail d’un peintre expérimenté.</p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="exercices">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">🎯 Exercices simples pour progresser</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">Peignez plusieurs figurines similaires pour répéter les mêmes gestes.</p>
-<p hidden="">Travaillez une seule compétence à la fois : dilution, ombres, arêtes ou visages.</p>
-<p hidden="">Prenez des photos afin d’identifier plus facilement les zones à améliorer.</p>
-<p hidden="">Conservez votre première figurine pour mesurer votre progression dans quelques mois.</p>
-</div>
-<div class="maintenance-box ajust is-collapsed" data-box-id="accompagnement">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="3" class="maintenance-title" role="heading">📚 Être accompagné pour progresser plus vite</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-            Les cours personnalisés permettent de corriger directement votre posture,
-            votre dilution, votre gestuelle et votre méthode de travail.
-        </p>
-<p hidden="">
-            Les séances Studio PF s’adaptent à votre niveau, votre matériel et vos objectifs,
-            du premier coup de pinceau jusqu’aux techniques avancées.
-        </p>
-<a class="button" hidden="" href="formation.html">
-            📚 Découvrir les cours de peinture
+
+        <a
+            href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines"
+            class="button"
+        >
+            🧾 Préparer mon futur projet
         </a>
-</div>
-</div>
-<br/><br/>
-<div class="maintenance-box ajust" data-box-id="conclusion-premiers-pas">
-<button aria-expanded="false" class="maintenance-header" type="button">
-<span aria-level="2" class="maintenance-title" role="heading">🎨 À vous de jouer !</span>
-<span aria-hidden="true" class="maintenance-arrow">voir plus ▼</span>
-</button>
-<br/>
-<p hidden="">
-        Préparez votre matériel, choisissez une figurine qui vous inspire et lancez-vous.
-        Chaque projet est une nouvelle occasion d'apprendre et de progresser.
-    </p>
-<p hidden="">
-<strong>Envie d'évoluer plus rapidement ?</strong><br/>
-        Profitez d'un accompagnement personnalisé pour apprendre les bonnes techniques,
-        éviter les erreurs les plus fréquentes et progresser à votre rythme, quel que soit votre niveau.
-    </p>
-<a class="button" hidden="" href="formation.html">
-        📚 Je commence mon apprentissage
-    </a>
-</div>
-</main>
-<footer>
-<div class="widget-container">
-<div class="widget" data-featurable-async="" data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d"></div><script defer="" src="https://featurable.com/assets/bundle.js"></script>
-</div>
-<div class="center">
-<div class="maintenance-box-part">
-<div class="cardpartenaire2">
-<div class="cardpartenaire">
-<div> <a class="apartenaire" href="https://www.totalwargame.com/fr/" rel="noopener noreferrer" target="_blank">
-<img alt="Total Wargames Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-totalwar.png"/>
-</a></div>
-<div>
-<p>Achetez moins cher d'occasion<br/>5% de remise :<br/><br/><strong>STUDIOPF</strong></p>
-</div>
-</div>
-<div class="cardpartenaire">
-<div> <a href="https://maxireves.fr/?ref=17962" rel="noopener noreferrer" target="_blank">
-<img alt="Maxi Rêve Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-maxireve.png"/>
-</a></div>
-<div>
-<p>Vos figurines de rêves à Maxi remise !<br/>jusqu'à -19% :<br/><br/><strong>MAXIPF</strong></p>
-</div>
-</div>
-</div>
-<div class="cardpartenaire2">
-<div class="cardpartenaire">
-<div><a href="https://mezgike.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Mezgike Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-mezgike.png"/>
-</a></div>
-<div>
-<p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br/>-10% sur votre commande<br/>avec le code promo :<br/><br/><strong>STUDIOPF</strong></p>
-</div>
-</div>
-<div class="cardpartenaire">
-<div><a class="apartenaire" href="https://wargamesceneries.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Wargame Sceneries Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-wargamesceneries.png"/>
-</a></div>
-<div>
-<p>Des décors modulaires en impression 3D pour des parties immersives.<br/>-10% tout les modèles imprimés<br/>avec le code promo :<br/><br/><strong>STUDIOPF10</strong></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<button aria-label="Retour en haut" id="scrollToTopBtn" onclick="scrollToTop()" type="button">↑</button>
-<button aria-label="Voir Total" id="scrollTotal" onclick="scrollTotal()" type="button">Voir Total</button>
-<div class="footer" id="foot-contenu">
-<nav aria-label="Navigation légale" class="menu-mobilefoot">
-<ul class="menufoot">
-<li><a href="conditions.html">Conditions générales de vente 📜</a></li>
-<li><a href="mentionslegales.html">Mentions Légales 💼</a></li>
-<li><a href="horaires.html">Horaires d'ouverture 🕖</a></li>
-</ul>
-</nav>
-<div class="center">
-<div class="footer-adresse">
-<p><strong>STUDIO PF</strong><br/>
-            FRASSE Pierre-François<br/>
-            17 route de Lare 42510 Saint-Georges-de-Baroille<br/><br/>
-</p>
+    </div>
+</section>
+
+    <div class="maintenance-box ajust fondfreezer" data-box-id="questions-frequentes">
+        <h2 class="maintenance-title">❓ Questions fréquentes</h2>
+
+    
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-prix">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-prix-content">
+
+                    <span class="maintenance-title">💰 Combien coûte la peinture d'une figurine ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-prix-content" hidden>
+                <p>
+                    Le tarif dépend de plusieurs critères : la taille de la figurine, son niveau de détail, le niveau de peinture souhaité, le montage éventuel et les options choisies. Vous pouvez obtenir une estimation rapidement grâce au simulateur de devis ou me contacter pour un devis personnalisé et gratuit.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-delais">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-delais-content">
+
+                    <span class="maintenance-title">⏳ Quels sont les délais de réalisation ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-delais-content" hidden>
+                <p>
+                    Les délais varient selon la taille du projet et la période de l'année. En moyenne, comptez entre 2 et 12 mois selon la complexité de la commande. Un délai estimatif est toujours indiqué lors de la validation du devis.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-envoi">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-envoi-content">
+
+                    <span class="maintenance-title">📦 Dois-je vous envoyer mes figurines ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-envoi-content" hidden>
+                <p>
+                    Oui, si vous possédez déjà vos figurines, vous pouvez les expédier directement à l'atelier. Si vous ne les avez pas encore, elles peuvent être commandées chez mes partenaires et livrées directement au Studio PF afin que je prenne en charge l'ensemble du projet.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-couleurs">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-couleurs-content">
+
+                    <span class="maintenance-title">🖌️ Puis-je choisir les couleurs de mon armée ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-couleurs-content" hidden>
+                <p>
+                    Bien sûr. Chaque projet est entièrement personnalisé. Vous pouvez fournir un schéma de couleurs, des illustrations, des photos ou simplement expliquer vos envies. Je peux également vous conseiller si vous hésitez.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-photos">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-photos-content">
+
+                    <span class="maintenance-title">📸 Vais-je voir les figurines avant leur expédition ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-photos-content" hidden>
+                <p>
+                    Oui. Avant toute expédition, des photos haute définition vous sont envoyées afin que vous puissiez valider le résultat final.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-warhammer">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-warhammer-content">
+
+                    <span class="maintenance-title">🎲 Peignez-vous uniquement du Warhammer ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-warhammer-content" hidden>
+                <p>
+                    Non. Je peins également des figurines de jeux de plateau, de jeux de rôle, des figurines historiques, des bustes, des pièces de collection, des impressions 3D et de nombreuses autres gammes.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-international">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-international-content">
+
+                    <span class="maintenance-title">🚚 Expédiez-vous en dehors de la France ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-international-content" hidden>
+                <p>
+                    Oui. Les commandes peuvent être expédiées en France, en Belgique et dans de nombreux autres pays. Les frais de port sont calculés en fonction de la destination.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-paiement">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-paiement-content">
+
+                    <span class="maintenance-title">💳 Comment se déroule le paiement ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-paiement-content" hidden>
+                <p>
+                    Afin de réserver votre créneau de peinture, un acompte est demandé lors de la validation du devis. Le solde est réglé uniquement après validation des photos finales, avant l'expédition de votre commande.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-annulation">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-annulation-content">
+
+                    <span class="maintenance-title">📅 Puis-je annuler ma commande ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-annulation-content" hidden>
+                <p>
+                    Une commande peut être annulée avant son démarrage selon les conditions prévues dans les CGV. Les acomptes déjà versés correspondent à la réservation du créneau de travail et ne sont pas remboursables.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-cadeaux">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-cadeaux-content">
+
+                    <span class="maintenance-title">🎁 Réalisez-vous des cadeaux personnalisés ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-cadeaux-content" hidden>
+                <p>
+                    Oui. Une figurine peinte à la main constitue un cadeau unique pour un collectionneur, un joueur ou un passionné de peinture. N'hésitez pas à préciser votre projet lors de votre demande de devis.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-montage">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-montage-content">
+
+                    <span class="maintenance-title">🧲 Proposez-vous le montage et l'aimantation ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-montage-content" hidden>
+                <p>
+                    Oui. Le montage fait partie des prestations proposées. L'aimantation est également possible sur demande afin de faciliter le transport ou les changements d'équipement.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-cours">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-cours-content">
+
+                    <span class="maintenance-title">🧑‍🎨 Donnez-vous des cours de peinture ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-cours-content" hidden>
+                <p>
+                    Oui. Des cours individuels sont proposés pour tous les niveaux, du débutant au peintre confirmé. Les séances peuvent porter sur le pinceau, l'aérographe ou des techniques spécifiques selon vos objectifs.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-impression-3d">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-impression-3d-content">
+
+                    <span class="maintenance-title">🖨️ Proposez-vous également de l'impression 3D ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-impression-3d-content" hidden>
+                <p>
+                    Oui. Le Studio PF réalise également des impressions 3D résine à partir des fichiers STL fournis par les clients. Les droits d'utilisation des fichiers restent sous la responsabilité du client.
+                </p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed" data-box-id="faq-tabletop-collection">
+            <h3 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="faq-tabletop-collection-content">
+
+                    <span class="maintenance-title">🏆 Quelle est la différence entre une peinture TableTop et une peinture de collection ?</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h3>
+            <div class="maintenance-content" id="faq-tabletop-collection-content" hidden>
+                <p>
+                    Une peinture TableTop est pensée pour le jeu avec un excellent rendu à distance de jeu. Une peinture de collection ou de concours bénéficie d'un niveau de finition beaucoup plus poussé, avec davantage de détails, de techniques avancées et d'heures de travail.
+                </p>
+            </div>
+        </div>
+    </div>
 <p>
+   
+        <a
+       href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis%20-%20Projet%20de%20peinture%20sur%20figurines"
+        class="button"
+    >
+        🧾 Préparer mon futur projet
+    </a>
+</p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(
+        "#contenu-principal .maintenance-header[aria-controls]"
+    );
+
+    buttons.forEach(function (button) {
+        const contentId = button.getAttribute("aria-controls");
+        const content = document.getElementById(contentId);
+        const arrow = button.querySelector(".maintenance-arrow");
+
+        if (!content) return;
+
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        content.hidden = !expanded;
+
+        if (arrow) {
+            arrow.textContent = expanded ? "▲" : "▼";
+        }
+
+        button.addEventListener("click", function () {
+            const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+            button.setAttribute("aria-expanded", String(!isExpanded));
+            content.hidden = isExpanded;
+
+            if (arrow) {
+                arrow.textContent = isExpanded ? "▼" : "▲";
+            }
+        });
+    });
+});
+</script>
+
+<footer>
+
+    <div class="widget-container">
+<div  class="widget" id="featurable-58715cac-8740-4d37-9791-1757461ff35d" data-featurable-async data-location-code="fr"></div><script src="https://featurable.com/assets/bundle.js" defer></script>
+    </div>
+
+ <div class="center">
+            <div class="maintenance-box-part">
+                 <div class="cardpartenaire2">
+        <div class="cardpartenaire">
+                   <div> <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+              <div>
+                    <p>Achetez moins cher d'occasion<br>5% de remise :<br><br><strong>STUDIOPF</strong></p>
+         </div>
+            </div>
+
+            <div class="cardpartenaire">
+                
+                   <div> <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+                    <div>
+                    <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><br><strong>MAXIPF</strong></p>
+               </div>
+            </div>         
+                 </div>
+
+
+
+         <div class="cardpartenaire2">
+        <div class="cardpartenaire">
+                
+                    <div><a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+                
+               <div>
+                    <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><br><strong>STUDIOPF</strong></p>
+             </div>
+            </div>
+
+             <div class="cardpartenaire">
+                
+                    <div><a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+               
+               <div>
+                    <p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p>
+            </div>
+            </div>
+           </div>
+
+            </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
+  <div id="foot-contenu" class="footer">
+  
+          <nav class="menu-mobilefoot">
+            <ul class="menufoot">
+                <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
+                <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
+                <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
+            </ul>
+        </nav>
+           
+<div class="center">
+        <div class="footer-adresse">
+           <p><strong>STUDIO PF</strong><br>
+            FRASSE Pierre-François<br>
+            17 route de l’Are, 42510 Saint-Georges-de-Baroille<br><br>
+</p> 
+            <p>
                 Contact 📧 :
                 <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
-</p><p>Téléphone 📞 :
+               </p><p>Téléphone 📞 :
                 <a href="tel:+33775860837">07 75 86 08 37</a>
-</p>
-</div>
-</div>
-</div>
+            </p>
+        </div>
+      </div>
+   </div>
+
 </footer>
+
 <!-- Lightbox globale -->
-<div aria-hidden="true" aria-label="Aperçu de l’image" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
-<img alt="Studio PF" id="lightbox-img" src="/img/logo.png"/>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+       <img id="lightbox-img" src="/img/logo.png" alt="Studio PF">
 </div>
+
 </body>
 </html>
-
