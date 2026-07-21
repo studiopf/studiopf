@@ -960,6 +960,7 @@ function initializeMaintenanceBoxes() {
         });
     });
 }
+
 document.addEventListener("click", function (event) {
     const header = event.target.closest(".maintenance-header");
 
@@ -972,20 +973,32 @@ document.addEventListener("click", function (event) {
     const content = box.querySelector(".maintenance-content");
     const arrow = box.querySelector(".maintenance-arrow");
 
+    if (!content || !arrow) return;
+
     const isCurrentlyOpen = !content.hidden;
 
-    // Ton code d'ouverture / fermeture...
     content.hidden = isCurrentlyOpen;
+    header.setAttribute(
+        "aria-expanded",
+        isCurrentlyOpen ? "false" : "true"
+    );
+
     arrow.textContent = isCurrentlyOpen ? "▼" : "▲";
 
-    // ← AJOUTE ICI
+    // Remonte sur le titre
     const title = box.querySelector(".maintenance-title");
 
-    window.scrollTo({
-        top: title.getBoundingClientRect().top + window.pageYOffset - 100,
-        behavior: "smooth"
-    });
+    if (title) {
+        setTimeout(() => {
+            title.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }, 50);
+    }
 });
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     if (typeof changelangueinfo === "function") {
