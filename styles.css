@@ -210,27 +210,39 @@ body {
    Barre supérieure
 ========================= */
 
-header{
-    position:sticky;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:9999;
+```css
+header{f
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: var(--header-bg);
+
+    /* Important */
+    overflow: visible;
 }
+```
+
 
 .header-top{
+    position:sticky;
+    top:0;
+    z-index:10000;
+
     display:flex;
     align-items:center;
+
     width:100%;
     box-sizing:border-box;
 
-    padding:6px 10px;
-    gap:10px;
+    padding:6px 4px 6px 10px;
+    gap:8px;
 
     background:var(--header-bg);
     border-bottom:1px solid var(--header-border);
 }
-
 
 /* Logo */
 
@@ -249,16 +261,16 @@ header{
 .header-contact{
     display:flex;
     align-items:center;
-    justify-content:flex-end;
+    justify-content:center;
 
-    gap:8px;
+    gap:6px;
 
     margin-left:auto;
-    margin-right:8px;
+    margin-right:4px;
     padding:0;
 
     flex:0 0 auto;
-    height:50px;
+    height:var(--menu-button-size);
 }
 /* Liens mail / téléphone */
 .header-contact a{
@@ -1633,23 +1645,28 @@ header {
 /* Force le bouton hamburger à droite */
 /* Bouton menu juste à droite */
 button.pf-menu-button{
-    position: relative !important;
+    position:relative !important;
 
-    width: var(--menu-button-size) !important;
-    height: var(--menu-button-size) !important;
+    top:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    left:auto !important;
 
-    margin: 0 !important;
-    padding: 0 !important;
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
 
-    flex: 0 0 var(--menu-button-size);
+    width:var(--menu-button-size) !important;
+    height:var(--menu-button-size) !important;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex:0 0 var(--menu-button-size);
 
-    align-self: center;
+    margin:0 !important;
+    padding:0 !important;
 
-    z-index: 10001;
+    align-self:center;
+
+    z-index:10001 !important;
 }
 /* Animation hamburger quand ouvert */
 .pf-menu-button.active span:nth-child(1) {
@@ -2311,9 +2328,12 @@ img {
 .maintenance-title {
     display: flex;
     align-items: center;
+
     min-width: 0;
-    margin: 0;
-    padding: 0;
+
+    margin: -4px 0 0;
+    padding: 4px 0 0;
+
     line-height: 1;
 }
 
