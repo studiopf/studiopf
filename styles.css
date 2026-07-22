@@ -1000,9 +1000,9 @@ nav {
     display: flex;
     justify-content: center;
     gap: 12px;
-    padding: 0rem 0 0rem;
+    padding: 10px;
     margin-top: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .language-selector img {
