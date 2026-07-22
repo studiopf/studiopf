@@ -1279,6 +1279,9 @@ function initializeMobileMenu() {
    INITIALISATION UNIQUE
 ===================================================== */
 function initializePageFeatures(root = document) {
+    if (document.getElementById("gold-1h")) {
+    genererPrixPageCommission();
+}
     initializeMaintenanceBoxes(root);
     initializeMobileMenu();
     initializeFormationForm();
@@ -1312,4 +1315,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // À appeler après un chargement dynamique de contenu (loadPage/AJAX).
 window.reinitializePageFeatures = initializePageFeatures;
+
+function genererPrixPageCommission() {
+
+    mettreAJourTarifLangue();
+
+    const prix = {
+        "gold-05h": 0.5,
+        "gold-1h": 1,
+        "diamant-1h": 1,
+        "diamant-2h": 2
+    };
+
+    Object.entries(prix).forEach(([id, heures]) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        el.textContent = `${(tarifheure * heures).toFixed(0)}${symboleDevise}`;
+    });
+}
 
