@@ -70,15 +70,30 @@ function updateAgeDisplay() {
 // LANGUE
 // =============================
 function setLanguage(lang) {
-    const allowedLanguages = ["french", "english", "spanish"];
-    currentLanguage = allowedLanguages.includes(lang) ? lang : "french";
-    localStorage.setItem("language", currentLanguage);
 
-    highlightLanguage(currentLanguage);
-    updateDebugDisplay();
+    const folders = {
+        french: "",
+        english: "US",
+        spanish: "ES"
+    };
 
-    if (typeof changelangueinfo === "function") changelangueinfo();
-    if (typeof genererTableTarifs === "function") genererTableTarifs();
+    // Page actuelle
+    let page = currentPage || "index";
+
+    // Formation n'existe qu'en français
+    if (page === "formation" && lang !== "french") {
+        page = "index";
+    }
+
+    localStorage.setItem("language", lang);
+
+    const folder = folders[lang];
+    const url =
+        (folder ? "/" + folder : "") +
+        "/" +
+        (page === "index" ? "" : page + ".html");
+
+    window.location.href = url;
 }
 
 // =============================
@@ -1304,10 +1319,13 @@ function initializePageFeatures(root = document) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    document.getElementById("french")?.addEventListener("click", () => setLanguage("french"));
+    document.getElementById("english")?.addEventListener("click", () => setLanguage("english"));
+    document.getElementById("spanish")?.addEventListener("click", () => setLanguage("spanish"));
+
     highlightLanguage(currentLanguage);
     changelangueinfo();
-
-    hideCurrentPage();   // ← à remettre
 
     initializePageFeatures();
     startMaintenanceObserver();
