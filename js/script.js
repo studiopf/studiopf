@@ -164,7 +164,7 @@ function appelimg() {
     
    function initializeGalerie() {
     const filenames = appelimg();
-    const base = "img/";
+    const base = "../img/";
     const gallery = document.getElementById("gallery");
     const filters = document.getElementById("filters");
 
@@ -1160,15 +1160,15 @@ let currentSlide = 0;
 let carouselInterval = null;
 
 const carouselImages = [
-    "img/carrousel/carrousel1.jpg",
-    "img/carrousel/carrousel2.jpg",
-    "img/carrousel/carrousel3.jpg",
-    "img/carrousel/carrousel4.jpg",
-    "img/carrousel/carrousel5.jpg",
-    "img/carrousel/carrousel6.jpg",
-    "img/carrousel/carrousel7.jpg",
-    "img/carrousel/carrousel8.jpg",
-    "img/carrousel/carrousel9.jpg"
+    "../img/carrousel/carrousel1.jpg",
+    "../img/carrousel/carrousel2.jpg",
+    "../img/carrousel/carrousel3.jpg",
+    "../img/carrousel/carrousel4.jpg",
+    "../img/carrousel/carrousel5.jpg",
+    "../img/carrousel/carrousel6.jpg",
+    "../img/carrousel/carrousel7.jpg",
+    "../img/carrousel/carrousel8.jpg",
+    "../img/carrousel/carrousel9.jpg"
 ];
 
 function initializeCarousel() {
