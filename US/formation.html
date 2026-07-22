@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Studio PF | Cours de peinture sur figurines &amp; formation Warhammer</title>
+
+<meta name="description" content="Apprenez la peinture sur figurines avec Studio PF : cours, techniques professionnelles, Warhammer, 40K, Age of Sigmar et perfectionnement pour peintres débutants ou confirmés.">
+
+<meta name="author" content="FRASSE Pierre-François - Studio PF">
+
+<meta name="keywords" content="cours peinture figurine, formation peinture figurine, apprendre peinture miniature, techniques peinture figurine, peinture Warhammer, peinture Warhammer 40K, peinture Age of Sigmar, cours peinture miniature, Studio PF">   
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://studiopf.fr/formation.html">
+
+    <!-- Open Graph -->
+<meta property="og:title" content="Studio PF : Peinture Figurine - Tabletop supérieur et cours de peinture">
+<meta property="og:description" content="Studio PF, spécialiste de la peinture sur figurines. Prestations Gold et Diamant, peinture Warhammer, Age of Sigmar, cours au pinceau et à l'aérographe.">
+<meta property="og:image" content="https://studiopf.fr/img/preview.png">
+<meta property="og:url" content="https://studiopf.fr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Studio PF : Peinture Figurine - Tabletop supérieur et cours de peinture">
+<meta name="twitter:description" content="Studio PF, spécialiste de la peinture sur figurines. Prestations Gold et Diamant, peinture Warhammer, Age of Sigmar, cours au pinceau et à l'aérographe.">
+<meta name="twitter:image" content="https://studiopf.fr/img/preview.jpg">
+<meta name="twitter:site" content="@studioPFfr">
+
+
+<!-- Optimisation connexions externes -->
+<link rel="preconnect" href="https://code.jquery.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+<!-- Image principale (à remplacer par ton image LCP réelle) -->
+<link rel="preload" 
+      as="image"
+      href="/img/preview.png"
+      fetchpriority="high">
+
+
+
+<link rel="stylesheet" href="/styles.css">
+
+
+
+<!-- Favicon -->
+<link
+rel="icon"
+href="/img/favicon.png"
+type="image/png">
+<!-- Scripts -->
+<script src="/js/script.js" defer></script>
+
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"LocalBusiness",
+ "name":"Studio PF",
+ "image":"https://studiopf.fr/img/preview.jpg",
+ "@id":"https://studiopf.fr/",
+ "url":"https://studiopf.fr/",
+ "telephone":"+33775860837",
+ "address":{
+   "@type":"PostalAddress",
+   "streetAddress":"17 route de l’Are",
+   "addressLocality":"Saint-Georges-de-Baroille",
+   "postalCode":"42510",
+   "addressCountry":"FR"
+ },
+ "sameAs":[
+   "https://www.instagram.com/studiopf.fr",
+   "https://www.facebook.com/studiopf.fr"
+ ]
+}
+</script>
+
+
+</head>
+<body>
+
+<header>        
+<div class="header-top">
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Changer le thème">🌙</button>
+    <!-- Logo -->
+    <div class="header-logo">
+        <a href="index.html"
+           onclick="loadPage('index.html'); return false;"
+           class="logo-a"
+           aria-label="Retour à l'accueil">
+
+            <img
+                src="/img/logo.png"
+                alt="Studio PF Logo"
+                class="logo"
+                data-no-lightbox
+                fetchpriority="high">
+        </a>
+     
+    </div>
+
+    <!-- Icônes -->
+  <div class="header-contact">
+
+
+      <a href="mailto:studiopeinturefigurine@gmail.com"
+           aria-label="Envoyer un email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+      <a href="tel:+33775860837"
+           aria-label="Téléphoner">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+
+ </div>
+      <!-- Bouton hamburger -->
+    <button
+        id="pf-menu-button"
+        class="pf-menu-button"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button> 
+    
+</div>
+
+
+  <nav id="pf-mobile-nav" class="pf-mobile-nav">
+
+    <div class="language-selector">
+
+        <button
+            type="button"
+            id="french"
+            onclick="setLanguage(this.id); updateMeta(this.id);"
+        >
+            <img
+                src="img/Flag_of_France.png"
+                alt="Français - Euro"
+                data-no-lightbox
+            >
+        </button>
+
+        <button
+            type="button"
+            id="english"
+            onclick="setLanguage(this.id); updateMeta(this.id);"
+        >
+            <img
+                src="img/Flag_of_the_United_States.png"
+                alt="English - USD"
+                data-no-lightbox
+            >
+        </button>
+
+        <button
+            type="button"
+            id="spanish"
+            onclick="setLanguage(this.id); updateMeta(this.id);"
+        >
+            <img
+                src="img/Flag_of_Spain.png"
+                alt="Español - Euro"
+                data-no-lightbox
+            >
+        </button>
+
+    </div>
+
+    <ul class="pf-nav-list">
+
+        <li>
+            <a href="index.html">
+                🏠 Accueil
+            </a>
+        </li>
+
+        <li>
+            <a href="quisuisje.html">
+                👋 Qui suis-je ?
+            </a>
+        </li>
+
+        <li>
+            <a href="peinturecommission.html">
+                ⚔️ Armées &amp; TableTop+
+            </a>
+        </li>
+
+        <li>
+            <a href="peinturecollection.html">
+                🏆 Collection &amp; Concours
+            </a>
+        </li>
+
+        <li>
+            <a href="formation.html">
+                📚 Cours de peinture
+            </a>
+        </li>
+
+        <li>
+            <a href="galerie.html">
+                🖼️ Galerie
+            </a>
+        </li>
+
+        <li>
+            <a href="faq.html">
+                ❓ FAQ
+            </a>
+        </li>
+
+    </ul>
+
+    <ul class="contact-list">
+
+        <li>
+            <a href="mailto:studiopeinturefigurine@gmail.com">
+                <span>
+                    <i class="fas fa-envelope"></i>
+                    studiopeinturefigurine@gmail.com
+                </span>
+            </a>
+        </li>
+
+        <li>
+            <a href="tel:+33775860837">
+                <span>
+                    <i class="fas fa-phone-alt"></i>
+                    07 75 86 08 37
+                </span>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="pf-mobile-social">
+
+        <div class="pf-social-container">
+
+            <a
+                href="https://www.facebook.com/studiopf.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Facebook"
+            >
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+                href="https://www.instagram.com/studiopf.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Instagram"
+            >
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+                href="https://x.com/studioPFfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="X"
+            >
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a
+                href="https://discord.gg/Jpa4yvfQVN"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Discord"
+            >
+                <i class="fab fa-discord"></i>
+            </a>
+
+            <a
+                href="https://www.patreon.com/studiopf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Patreon"
+            >
+                <i class="fab fa-patreon"></i>
+            </a>
+
+            <a
+                href="https://www.twitch.tv/studiopf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Twitch"
+            >
+                <i class="fab fa-twitch"></i>
+            </a>
+
+            <a
+                href="https://www.youtube.com/@studiopf-fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="YouTube"
+            >
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@studiopf.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="TikTok"
+            >
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+      
+<div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
+    </header>
+
+<div class="carousel-container">
+    <div class="carousel" id="carousel"></div>
+    
+    <!-- Navigation arrows -->
+    <button class="carousel-arrow carousel-prev" onclick="prevSlide()" aria-label="Previous slide">❮</button>
+    <button class="carousel-arrow carousel-next" onclick="nextSlide()" aria-label="Next slide">❯</button>
+    
+    <!-- Dots -->
+    <div class="carousel-dots" id="carousel-dots"></div>
+</div>
+
+<main id="contenu-principal">
+
+    <div class="maintenance-box ajust fondstudio" data-box-id="presentation-formation">
+        <h1 class="maintenance-title">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="true"
+                aria-controls="presentation-formation-content"
+            >
+                <span class="maintenance-title">🎨 Cours de peinture sur figurines : progressez plus vite</span>
+                <span class="maintenance-arrow" aria-hidden="true">▲</span>
+            </button>
+        </h1>
+
+        <div class="maintenance-content" id="presentation-formation-content">
+            <p>
+                Vous souhaitez améliorer vos figurines, maîtriser une technique précise ou enfin obtenir le résultat que vous avez en tête ?
+            </p>
+
+            <p>
+                Chez <strong>Studio PF</strong>, chaque cours est construit autour de <strong>votre niveau</strong>, de <strong>vos objectifs</strong> et de <strong>vos propres figurines</strong>.
+            </p>
+
+            <p>
+                Débutant, joueur régulier ou peintre confirmé : vous bénéficiez d'un accompagnement concret, direct et entièrement personnalisé pour progresser sans perdre de temps.
+            </p>
+
+
+            <h2>💡 Pourquoi choisir Studio PF ?</h2>
+
+            <p>✔️ Un cours adapté à votre niveau et à votre projet</p>
+            <p>✔️ Des explications simples, concrètes et immédiatement applicables</p>
+            <p>✔️ Une correction de vos gestes et de vos erreurs en temps réel</p>
+            <p>✔️ Des techniques utilisées au quotidien sur des commandes professionnelles</p>
+            <p>✔️ Du matériel disponible sur place pour travailler dans de bonnes conditions</p>
+
+            <h2>🖌️ Les techniques que vous pouvez apprendre</h2>
+
+            <div class="card-container2">
+                <div class="card">
+                    <h3>🖌️ Pinceau</h3>
+                    <p>Dégradés, éclaircissements, glacis, précision et maîtrise des contrastes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔫 Aérographe</h3>
+                    <p>Sous-couche, dégradés rapides, lumières, effets avancés et entretien.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🛢️ Huiles</h3>
+                    <p>Fondus, filtres, jus, ombres profondes et effets de réalisme.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🪨 Pigments</h3>
+                    <p>Poussière, boue, rouille, textures de terrain et effets naturels.</p>
+                </div>
+            </div>
+
+            <p>
+                Vous pouvez également travailler le <strong>NMM</strong>, l'<strong>OSL</strong>, le <strong>freehand</strong>, le <strong>weathering</strong>, le <strong>soclage</strong>, la <strong>théorie des couleurs</strong>, la peinture d'armée ou la préparation d'une pièce de concours.
+            </p>
+
+            <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20cours%20de%20peinture%20Studio%20PF">
+                Réserver un cours 💬
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="maintenance-box ajust fondmort is-collapsed" data-box-id="forfaits-cours">
+        <h2 class="maintenance-title">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="forfaits-cours-content"
+            >
+                <span class="maintenance-title">🖍️ Choisissez la formule adaptée à votre objectif</span>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
+        </h2>
+
+        <div class="maintenance-content" id="forfaits-cours-content" hidden>
+            <div class="card">
+                <h3>🌱 Première séance</h3>
+                <p>Un premier échange pour définir votre niveau, vos objectifs et les techniques à travailler.</p>
+                <p>Une pochette d'initiation peut être remise aux débutants selon la formule choisie.</p>
+
+                <a
+                    href="premierpas.html"
+                    class="button"
+                    onclick="loadPage('premierpas.html'); return false;"
+                >
+                    🌱 Consulter le guide du débutant
+                </a>
+            </div>
+
+            <div class="card-container2">
+                <div class="card">
+                    <h3>🕐 Cours 1h</h3>
+                    <p><strong>50 €</strong></p>
+                    <p>Idéal pour débloquer un problème précis ou corriger une technique.</p>
+                </div>
+
+                <div class="card">
+                    <h3>⏳ Cours 3h</h3>
+                    <p><strong>150 €</strong></p>
+                    <p>Parfait pour apprendre une méthode complète et la mettre immédiatement en pratique.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔥 Cours 5h</h3>
+                    <p><strong>200 €</strong></p>
+                    <p>Une formule approfondie pour avancer sérieusement sur une figurine ou un projet.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📅 Journée 8h</h3>
+                    <p><strong>300 €</strong></p>
+                    <p>Une immersion complète pour progresser rapidement et travailler plusieurs techniques.</p>
+                </div>
+            </div>
+
+            <p>
+                Les cours individuels sont réalisés en présentiel au Studio. Le contenu est défini avant la séance afin d'utiliser chaque heure efficacement.
+            </p>
+
+            <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Réservation%20d'un%20cours%20individuel%20Studio%20PF">
+                Choisir ma formule 💬
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="maintenance-box ajust fondnain is-collapsed" data-box-id="stages-groupe">
+        <h2 class="maintenance-title">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="stages-groupe-content"
+            >
+                <span class="maintenance-title">📆 Stages de peinture en groupe</span>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
+        </h2>
+
+        <div class="maintenance-content" id="stages-groupe-content" hidden>
+            <p>
+                Partagez une journée de peinture entre passionnés autour d'un thème précis et progressez dans une ambiance conviviale.
+            </p>
+
+            <p>
+                Exemples de thèmes : gestion des lumières, théorie des couleurs, peinture d'un buste, choix d'un schéma d'armée, soclage, effets spéciaux ou initiation à l'aérographe.
+            </p>
+
+            <div class="card-container2">
+                <div class="card">
+                    <h3>📆 Stage 5h</h3>
+                    <p><strong>100 € par personne</strong></p>
+                    <p>Exemple : 9h-12h puis 14h-16h.</p>
+                    <p>Repas, pochette de cours et figurine inclus selon le thème.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📆 Stage 8h</h3>
+                    <p><strong>150 € par personne</strong></p>
+                    <p>Exemple : 9h-12h puis 14h-19h.</p>
+                    <p>Repas, pochette de cours et figurine inclus selon le thème.</p>
+                </div>
+            </div>
+
+            <p>Les horaires et le contenu peuvent être adaptés au groupe et au thème choisi.</p>
+
+            <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20stage%20de%20peinture%20en%20groupe%20Studio%20PF">
+                Organiser un stage 💬
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="maintenance-box ajust fondlilia is-collapsed" data-box-id="prestation-evenementielle">
+        <h2 class="maintenance-title">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="prestation-evenementielle-content"
+            >
+                <span class="maintenance-title">📆 Animations et prestations événementielles</span>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
+        </h2>
+
+        <div class="maintenance-content" id="prestation-evenementielle-content" hidden>
+            <p>
+                Vous êtes une association, une boutique, une médiathèque, une collectivité ou l'organisateur d'un événement ?
+            </p>
+
+            <p>
+                Studio PF propose des animations autour de la peinture sur figurines, du modélisme et de l'univers Warhammer : initiation, montage, peinture, découverte du jeu et accompagnement du public.
+            </p>
+
+            <div class="card-container2">
+                <div class="card">
+                    <h3>📆 1 journée</h3>
+                    <p><strong>À partir de 700 €</strong></p>
+                    <p>Environ 8 heures d'intervention.</p>
+                    <p>Trajet et matériel de peinture inclus.</p>
+                    <p>Figurines non comprises.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📆 2 journées</h3>
+                    <p><strong>À partir de 1 900 €</strong></p>
+                    <p>Deux journées complètes d'animation.</p>
+                    <p>Trajet et matériel de peinture inclus.</p>
+                    <p>Figurines non comprises.</p>
+                </div>
+            </div>
+
+            <p>
+                Chaque prestation est personnalisée selon le lieu, le public, le nombre de participants et le contenu souhaité.
+            </p>
+
+            <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20prestation%20événementielle%20Studio%20PF">
+                Demander un devis 💬
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="maintenance-box ajust fondmoi is-collapsed" data-box-id="materiel-fourni">
+        <h2 class="maintenance-title">
+            <button
+                class="maintenance-header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="materiel-fourni-content"
+            >
+                <span class="maintenance-title">🚀 Tout est prévu pour vous faire progresser</span>
+                <span class="maintenance-arrow" aria-hidden="true">▼</span>
+            </button>
+        </h2>
+
+        <div class="maintenance-content" id="materiel-fourni-content" hidden>
+            <div class="card-container2">
+                <div class="card">
+                    <h3>🎨 Matériel disponible</h3>
+                    <p>Pinceaux, aérographe, peintures, huiles, pigments et outils sont disponibles au Studio selon le programme du cours.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🚀 Un objectif concret</h3>
+                    <p>Vous repartez avec des techniques comprises, testées et directement réutilisables sur vos prochaines figurines.</p>
+                </div>
+            </div>
+
+            <h2>Prêt à passer un cap ?</h2>
+
+            <p>
+                Décrivez-moi votre niveau, votre projet et les techniques que vous souhaitez apprendre. Je vous proposerai la formule la plus adaptée.
+            </p>
+
+            <a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Je%20souhaite%20progresser%20en%20peinture%20sur%20figurines">
+                Parler de mon projet 💬
+            </a>
+        </div>
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="widget-container">
+<div  class="widget" id="featurable-58715cac-8740-4d37-9791-1757461ff35d" data-featurable-async data-location-code="fr"></div><script src="https://featurable.com/assets/bundle.js" defer></script>
+    </div>
+
+ <div class="center">
+            <div class="maintenance-box-part">
+                 <div class="cardpartenaire2">
+        <div class="cardpartenaire">
+                   <div> <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+              <div>
+                    <p>Achetez moins cher d'occasion<br>5% de remise :<br><br><strong>STUDIOPF</strong></p>
+         </div>
+            </div>
+
+            <div class="cardpartenaire">
+                
+                   <div> <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+                    <div>
+                    <p>Vos figurines de rêves à Maxi remise !<br>jusqu'à -19% :<br><br><strong>MAXIPF</strong></p>
+               </div>
+            </div>         
+                 </div>
+
+
+
+         <div class="cardpartenaire2">
+        <div class="cardpartenaire">
+                
+                    <div><a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+                
+               <div>
+                    <p>Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.<br>-10% sur votre commande<br>avec le code promo :<br><br><strong>STUDIOPF</strong></p>
+             </div>
+            </div>
+
+             <div class="cardpartenaire">
+                
+                    <div><a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+               
+               <div>
+                    <p>Des décors modulaires en impression 3D pour des parties immersives.<br>-10% tout les modèles imprimés<br>avec le code promo :<br><br><strong>STUDIOPF10</strong></p>
+            </div>
+            </div>
+           </div>
+
+            </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Retour en haut ⬆️" onclick="scrollToTop()">↑</button>
+    
+  <div id="foot-contenu" class="footer">
+  
+          <nav class="menu-mobilefoot">
+            <ul class="menufoot">
+                <li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Conditions générales de vente 📜</a></li>
+                <li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Mentions Légales 💼</a></li>
+                <li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horaires d'ouverture 🕖</a></li>
+            </ul>
+        </nav>
+           
+<div class="center">
+        <div class="footer-adresse">
+           <p><strong>STUDIO PF</strong><br>
+            FRASSE Pierre-François<br>
+            17 route de l’Are, 42510 Saint-Georges-de-Baroille<br><br>
+</p> 
+            <p>
+                Contact 📧 :
+                <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
+               </p><p>Téléphone 📞 :
+                <a href="tel:+33775860837">07 75 86 08 37</a>
+            </p>
+        </div>
+      </div>
+   </div>
+
+</footer>
+
+<!-- Lightbox globale -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+       <img id="lightbox-img" src="/img/logo.png" alt="Studio PF">
+</div>
+
+</body>
+</html>
