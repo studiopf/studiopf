@@ -1230,7 +1230,12 @@ nav {
 .card p{
      font-size:10px;
 }
-
+.card {
+width:100%;
+    max-width:500px;
+    min-height:200px;
+    height:260px;
+}
 .cardlogo {
     text-align: center;
     width: auto;
@@ -1445,7 +1450,7 @@ body.no-maintenance-bg{
 :root{
      --fond-display: block;
    --fond: 600px auto;
- --opacity-fond : 0.35; /* Ajuste entre 0 et 1 */
+ --opacity-fond : 0.25; /* Ajuste entre 0 et 1 */
    --text-p : #e8d9c0;
    --text-a : #D8B06A;
      --maintenance-bg: linear-gradient(
@@ -1533,7 +1538,7 @@ body.no-maintenance-bg{
         MODE CLAIR
 ==========================*/
 body.light-mode {
- --opacity-fond : 0.25; /* Ajuste entre 0 et 1 */
+ --opacity-fond : 0.15; /* Ajuste entre 0 et 1 */
   --maintenance-bg: linear-gradient(
         180deg,
         #F2E8D8 0%,
@@ -1890,7 +1895,7 @@ a.surligne:visited {
 /* ==========================================
    CONTENEURS AVEC IMAGE DE FOND EN FILIGRANE
 ========================================== */
-
+.fondstudio,
 .fondmoi,
 .fondorc,
 .fonddg,
@@ -1914,7 +1919,7 @@ a.surligne:visited {
 /* ==========================================
                  FILIGRANE
 ========================================== */
-
+.fondstudio::before,
 .fondmoi::before,
 .fondorc::before,
 .fonddg::before,
@@ -1945,7 +1950,7 @@ a.surligne:visited {
 /* ==========================================
        LE CONTENU PASSE DEVANT LE FILIGRANE
 ========================================== */
-
+.fondstudio > *,
 .fondmoi > *,
 .fondorc > *,
 .fonddg > *,
@@ -1968,7 +1973,9 @@ a.surligne:visited {
 /* ==========================================
            IMAGES DES DIFFÉRENTS FONDS
 ========================================== */
-
+.fondstudio::before {
+    background-image:  url("../img/studio.jpg");
+}
 .fondlilia::before {
     background-image:  url("../img/fondlilia.png");
 }
@@ -2258,11 +2265,11 @@ body.lightbox-open {
 }
 
 .carousel-prev {
-    left: 15px;
+    left: 10px;
 }
 
 .carousel-next {
-    right: 15px;
+    right: 10px;
 }
 
 /* Points indicateurs */
@@ -2953,7 +2960,7 @@ th {
 .carousel-arrow,
 .lightbox-nav,
 .lightbox-close {
-    font-size: clamp(18px, 2.1vw, 40px);
+    font-size: clamp(16px, 2.1vw, 20px);
 }
 
 #scrollToTopBtn {
