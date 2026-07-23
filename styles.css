@@ -1513,12 +1513,15 @@ body.no-maintenance-bg{
     /*  Box - Mode Sombre */
     --box-border: #8b5f3a;
    --box-bg: #331B1B;
-     --button-color: #ffda79; 
-    --button-border: #f4c876;
---button-hover: #ffda79;
-    --button-bg:#999999;
-    --button-text:#fff3d9;
-    --button-border:#f4c876;
+    
+  --button-bg: linear-gradient(to bottom, #ffe86b 0%, #ffc533 45%, #f08a00 100%);
+    --button-hover: linear-gradient(to bottom, #fff28d 0%, #ffd24a 45%, #ff9800 100%);
+
+    --button-color: #2b1600;      /* texte brun foncé */
+    --button-text: #2b1600;
+
+    --button-border: #b56b00;     /* bordure orange foncé */
+    
     --title:#ffe39b;
        --header-bg:#080404;
     --header-color:#FFFFFF;
@@ -1586,9 +1589,13 @@ body.light-mode {
     /* Mainenance Box - Mode Sombre */
     --box-border: #8b5f3a;
     --box-bg: #331B1B;
-   --button-bg:#999999;
-    --button-text:#0F0F0F;
-    --button-border:#f7d88b;
+  --button-bg: linear-gradient(to bottom, #ffe86b 0%, #ffc533 45%, #f08a00 100%);
+    --button-hover: linear-gradient(to bottom, #fff28d 0%, #ffd24a 45%, #ff9800 100%);
+
+    --button-color: #2b1600;      /* texte brun foncé */
+    --button-text: #2b1600;
+
+    --button-border: #b56b00;     /* bordure orange foncé */
     --title:#0A0A0A;
     --header-bg:#FAFAFA;
     --header-color:#2D2D2D;
