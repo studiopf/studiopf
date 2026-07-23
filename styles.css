@@ -461,8 +461,7 @@ img {
     letter-spacing: 0.5px;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
     background: linear-gradient(to bottom, #fff28d 0%, #ffd24a 45%, #ff9800 100%);
     transform: translateY(-2px);
     box-shadow:
@@ -1297,62 +1296,43 @@ body,
 =================================================== */
 
 
-.button{
-    display:inline-block;
-    padding:12px 28px;
-    margin:12px auto;
-    font-family:'Segoe UI',system-ui,sans-serif;
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:.6px;
-    color:#fff3ea;
-    text-align:center;
-    text-decoration:none;
-    background:linear-gradient(
-        180deg,
-        #C4C4C4 0%,
-        #999999 50%,
-        #696969 100%
-    );
-    border:2px solid #f4c876;
-    border-radius:12px;
-    backdrop-filter:blur(8px);
-    box-shadow:
-        0 12px 25px rgba(0,0,0,.55),
-        inset 0 1px 1px rgba(255,255,255,.16),
-        inset 0 -2px 4px rgba(0,0,0,.25);
-    text-shadow:
-        0 1px 2px rgba(0,0,0,.55);
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease,
-        background .25s ease;
-    cursor:pointer;
-}
-.button:hover{
-    color:#ffffff;
-   background:linear-gradient(
-        180deg,
-        #F2F2F2 0%,
-        #C4C4C4 50%,
-        #999999 100%
-    );
-    border-color:#F5C469;
-    transform:translateY(-2px);
-    box-shadow:
-        0 16px 34px rgba(0,0,0,.60),
-        0 0 18px rgba(157,7,7,.45),
-        inset 0 1px 1px rgba(255,255,255,.18);
-}
-.button:active{
+.button {
+    display: inline-block;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2b1600;
+    text-align: center;
+    text-decoration: none;
 
-    transform:translateY(1px);
+    background: linear-gradient(to bottom, #ffe86b 0%, #ffc533 45%, #f08a00 100%);
+    border: 2px solid #b56b00;
+    border-radius: 12px;
+
     box-shadow:
-        0 6px 12px rgba(0,0,0,.45),
-        inset 0 2px 6px rgba(0,0,0,.30);
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        inset 0 2px 0 rgba(255, 255, 255, 0.45),
+        inset 0 -2px 0 rgba(150, 70, 0, 0.25);
+
+    transition: all 0.28s ease;
+    cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
+.button:hover {
+    background: linear-gradient(to bottom, #fff28d 0%, #ffd24a 45%, #ff9800 100%);
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.4),
+        inset 0 2px 0 rgba(255, 255, 255, 0.5);
+}
+
+.button:active {
+    transform: translateY(1px);
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
 /* ===================================================
    MODE CLAIR
 =================================================== */
