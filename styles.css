@@ -487,7 +487,7 @@ img {
     background: linear-gradient(to bottom, #8B0000, #FF6347);
     width: 100%;
     position: relative;
-
+padding: clamp(2px, 0.25vw, 2px) clamp(2px, 1vw, 2px);
     margin: 0;
     padding: 0;
     border: 0;
@@ -2418,7 +2418,7 @@ img {
     width: 100%;
     min-height: clamp(24px, 2.6vw, 42px);
     margin: 0;
-    padding: clamp(2px, 0.25vw, 2px) var(--page-gutter);
+   padding: clamp(2px, 0.25vw, 2px) clamp(2px, 1vw, 2px);
     text-align: center;
     line-height: 0.85;
     animation: info 4s ease-in-out infinite alternate;
@@ -2887,7 +2887,7 @@ body.light-mode .button {
 }
 
 .language-selector {
-    gap: clamp(5px, 0.63vw, 12px);
+    gap: clamp(10px, 0.63vw, 15px);
     margin-top: var(--space-sm);
 }
 
@@ -3094,7 +3094,7 @@ header + .info-container,
     max-width: 100%;
     min-height: 0;
     margin: 0 auto;
-    padding: clamp(2px, 0.25vw, 2px) clamp(6px, 1vw, 6px);
+    padding: clamp(2px, 0.25vw, 2px) clamp(2px, 1vw, 2px);
     text-align: center;
     overflow-wrap: anywhere;
     animation: info-v4 6s ease-in-out infinite alternate;
