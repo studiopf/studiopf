@@ -443,45 +443,45 @@ img {
     font-family: 'Segoe UI', system-ui, sans-serif;
     font-size: 12px;
     font-weight: 600;
-   color: var(--button-color);
+    color: #2b1600;
     text-align: center;
     text-decoration: none;
-    background: rgba(30, 20, 12, 0.75); /* même fond que .card /  */
-   border: 2px solid var(--button-border);      /* bordure jaune/dorée principale */
+
+    background: linear-gradient(to bottom, #ffe86b 0%, #ffc533 45%, #f08a00 100%);
+    border: 2px solid #b56b00;
     border-radius: 12px;
-    backdrop-filter: blur(6px);         /* effet verre dépoli */
+
     box-shadow:
-        0 6px 20px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255, 218, 121, 0.12); /* léger reflet intérieur */
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        inset 0 2px 0 rgba(255, 255, 255, 0.45),
+        inset 0 -2px 0 rgba(150, 70, 0, 0.25);
+
     transition: all 0.28s ease;
     cursor: pointer;
     letter-spacing: 0.5px;
+}
+
+.button:hover,
+.button:focus {
+    background: linear-gradient(to bottom, #fff28d 0%, #ffd24a 45%, #ff9800 100%);
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.4),
+        inset 0 2px 0 rgba(255, 255, 255, 0.5);
+}
+
+.button:active {
+    transform: translateY(1px);
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 .social-bloc-vide
 {
   padding: 8px;
 }
 
-/* Hover + focus */
-.button:hover,
-.button:focus {
-     filter:brightness(1.08);
 
-    background: rgba(50, 35, 20, 0.85);
-    border-color: #ffda79;             /* jaune plus lumineux au survol */
-    transform: translateY(-3px) scale(1.04);
-    box-shadow:
-        0 12px 28px rgba(244, 200, 118, 0.35),
-        0 0 0 3px rgba(244, 200, 118, 0.18);
-    outline: none;
-}
-
-/* Active / clic */
-.button:active {
-    transform: translateY(-1px) scale(0.98);
-    box-shadow:
-        0 4px 12px rgba(244, 200, 118, 0.25);
-}
 
 .info {
     background: linear-gradient(to bottom, #8B0000, #FF6347);
