@@ -1,67 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://studiopf.fr/</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+    <!-- Français -->
 
-  <url>
-    <loc>https://studiopf.fr/quisuisje.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-  <url>
-    <loc>https://studiopf.fr/peinturecommission.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/quisuisje.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
-  <url>
-    <loc>https://studiopf.fr/peinturecollection.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/peinturecommission.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
-  <url>
-    <loc>https://studiopf.fr/formation.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/peinturecollection.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
-  <url>
-    <loc>https://studiopf.fr/galerie.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/formation.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://studiopf.fr/pourquoi.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/galerie.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://studiopf.fr/conditions.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/pourquoi.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
 
-  <url>
-    <loc>https://studiopf.fr/mentionslegales.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
+    <url>
+        <loc>https://studiopf.fr/conditions.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://studiopf.fr/mentionslegales.html</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <!-- Anglais -->
+
+    <url>
+        <loc>https://studiopf.fr/US/</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url><loc>https://studiopf.fr/US/quisuisje.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://studiopf.fr/US/peinturecommission.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://studiopf.fr/US/peinturecollection.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://studiopf.fr/US/formation.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://studiopf.fr/US/galerie.html</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://studiopf.fr/US/pourquoi.html</loc><lastmod>2026-07-23</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+    <url><loc>https://studiopf.fr/US/conditions.html</loc><lastmod>2026-07-23</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://studiopf.fr/US/mentionslegales.html</loc><lastmod>2026-07-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+
+    <!-- Espagnol -->
+
+    <url>
+        <loc>https://studiopf.fr/ES/</loc>
+        <lastmod>2026-07-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url><loc>https://studiopf.fr/ES/quisuisje.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://studiopf.fr/ES/peinturecommission.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://studiopf.fr/ES/peinturecollection.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://studiopf.fr/ES/formation.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://studiopf.fr/ES/galerie.html</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://studiopf.fr/ES/pourquoi.html</loc><lastmod>2026-07-23</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+    <url><loc>https://studiopf.fr/ES/conditions.html</loc><lastmod>2026-07-23</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+    <url><loc>https://studiopf.fr/ES/mentionslegales.html</loc><lastmod>2026-07-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
 
 </urlset>
