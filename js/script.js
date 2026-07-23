@@ -1294,8 +1294,8 @@ function initializeMobileMenu() {
    INITIALISATION UNIQUE
 ===================================================== */
 function initializePageFeatures(root = document) {
-    if (document.getElementById("gold-1h")) {
-    genererPrixPageCommission();
+   if (root.querySelector(".prix-dynamique")) {
+    genererPrixPageCommission(root);
 }
     initializeMaintenanceBoxes(root);
     initializeMobileMenu();
@@ -1334,22 +1334,24 @@ document.addEventListener("DOMContentLoaded", () => {
 // À appeler après un chargement dynamique de contenu (loadPage/AJAX).
 window.reinitializePageFeatures = initializePageFeatures;
 
-function genererPrixPageCommission() {
-
+function genererPrixPageCommission(root = document) {
     mettreAJourTarifLangue();
 
-    const prix = {
-        "gold-05h": 0.5,
-        "gold-1h": 1,
-        "diamant-1h": 1,
-        "diamant-2h": 2
-    };
+    root.querySelectorAll(".prix-dynamique").forEach(element => {
+        const heures = Number.parseFloat(element.dataset.heures);
 
-    Object.entries(prix).forEach(([id, heures]) => {
-        const el = document.getElementById(id);
-        if (!el) return;
+        if (!Number.isFinite(heures)) {
+            console.warn(
+                "Valeur data-heures invalide :",
+                element.dataset.heures,
+                element
+            );
+            return;
+        }
 
-        el.textContent = `${(tarifheure * heures).toFixed(0)}${symboleDevise}`;
+        const montant = tarifheure * heures;
+
+        element.textContent =
+            `${montant.toFixed(0)}${symboleDevise}`;
     });
 }
-
