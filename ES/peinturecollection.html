@@ -1,37 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Studio PF | Pintura de Figuras de Alta Gama, Colección y Warhammer</title>
-<meta content="Studio PF realiza pinturas de figuras de alta gama: Warhammer 40K, Age of Sigmar, figuras de colección, bustos, piezas de exposición y concurso. Servicio personalizado de pintura por encargo." name="description"/>
-<meta content="FRASSE Pierre-François - Studio PF" name="author"/>
-<meta content="encargo pintura figuras, pintor profesional de figuras, pintura figuras alta gama, pintura Warhammer, pintura Warhammer 40K, pintura Age of Sigmar, figuras de colección, pintura figuras concurso, busto pintado, figura de exposición, pintura resina, figura 3D pintada, figura personalizada, Studio PF" name="keywords"/>
-<meta content="index, follow" name="robots"/>
-<link href="https://studiopf.fr/ES/peinturecollection.html" rel="canonical"/>
-<meta content="Studio PF | Pintura profesional de figuras" property="og:title"/>
-<meta content="Pintura por encargo de Warhammer, figuras TableTop, piezas de colección, bustos y creaciones de exposición realizadas por Studio PF." property="og:description"/>
-<meta content="https://studiopf.fr/img/preview.jpg" property="og:image"/>
-<meta content="https://studiopf.fr/" property="og:url"/>
-<meta content="website" property="og:type"/>
-<meta content="es_ES" property="og:locale"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Studio PF | Pintura profesional de figuras" name="twitter:title"/>
-<meta content="Pintura de Warhammer, TableTop de alta gama, figuras de colección y piezas de exposición." name="twitter:description"/>
-<meta content="https://studiopf.fr/img/preview.jpg" name="twitter:image"/>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Studio PF | Pintura de Miniaturas de Alta Gama, Colección y Warhammer</title>
+
+<meta name="description" content="Studio PF realiza pinturas de miniaturas de alta gama: Warhammer 40K, Age of Sigmar, figuras de colección, bustos, piezas de exposición y concurso. Servicio de pintura personalizada.">
+<meta name="author" content="FRASSE Pierre-François - Studio PF">
+
+<meta name="keywords" content="servicio de pintura de miniaturas, pintor profesional de miniaturas, pintura de miniaturas de alta gama, pintura Warhammer, pintura Warhammer 40K, pintura Age of Sigmar, figuras de colección, pintura de miniaturas para concursos, busto de miniatura pintado, figura de exposición, pintura de resina, figura impresa en 3D pintada, figura personalizada, Studio PF">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://studiopf.fr/ES/peinturecollection.html">
+
+<meta property="og:title" content="Studio PF | Pintura profesional de miniaturas">
+<meta property="og:description" content="Servicio de pintura Warhammer, miniaturas TableTop, piezas de colección, bustos y creaciones de exposición realizadas por Studio PF.">
+<meta property="og:image" content="https://studiopf.fr/img/preview.jpg">
+<meta property="og:url" content="https://studiopf.fr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Studio PF | Pintura profesional de miniaturas">
+<meta name="twitter:description" content="Pintura Warhammer, TableTop de alta gama, figuras de colección y piezas de exposición.">
+<meta name="twitter:image" content="https://studiopf.fr/img/preview.jpg">
+
+
 <!-- Optimisation connexions externes -->
-<link crossorigin="" href="https://code.jquery.com" rel="preconnect"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://code.jquery.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
 <!-- Image principale (à remplacer par ton image LCP réelle) -->
-<link as="image" fetchpriority="high" href="/img/preview.png" rel="preload"/>
-<link href="/styles.css" rel="stylesheet"/>
+<link rel="preload" as="image" href="/img/preview.png" fetchpriority="high">
+
+
+
+<link rel="stylesheet" href="/styles.css">
+
+
+
 <!-- Favicon -->
-<link href="/img/favicon.png" rel="icon" type="image/png"/>
+<link rel="icon" href="/img/favicon.png" type="image/png">
+
 <!-- Open Graph -->
 <!-- Twitter -->
 <!-- Scripts -->
-<script defer="" src="/js/script.js"></script>
+<script src="/js/script.js" defer></script>
+
+
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -54,339 +78,434 @@
  ]
 }
 </script>
+
+
 </head>
 <body>
+
 <header>
 <div class="header-top">
-<button aria-label="Cambiar el tema" class="theme-toggle" id="themeToggle" type="button">🌙</button>
-<!-- Logo -->
-<div class="header-logo">
-<a aria-label="Volver al inicio" class="logo-a" href="ES/index.html" onclick="loadPage('index.html'); return false;">
-<img alt="Logotipo de Studio PF" class="logo" data-no-lightbox="" fetchpriority="high" src="/img/logo.png"/>
-</a>
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar el tema">🌙</button>
+    <!-- Logo -->
+    <div class="header-logo">
+        <a href="ES/index.html" class="logo-a" aria-label="Volver al inicio">
+
+            <img src="/img/logo.png" alt="Studio PF Logo" class="logo" data-no-lightbox fetchpriority="high">
+        </a>
+
+    </div>
+
+    <!-- Icônes -->
+  <div class="header-contact">
+
+
+      <a href="mailto:studiopeinturefigurine@gmail.com" aria-label="Enviar un correo electrónico">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+      <a href="tel:+33775860837" aria-label="Llamar por teléfono">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+
+ </div>
+      <!-- Bouton hamburger -->
+    <button id="pf-menu-button" class="pf-menu-button" type="button" aria-label="Abrir el menú" aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
 </div>
-<!-- Icônes -->
-<div class="header-contact">
-<a aria-label="Enviar un correo electrónico" href="mailto:studiopeinturefigurine@gmail.com">
-<i class="fas fa-envelope"></i>
-</a>
-<a aria-label="Llamar por teléfono" href="tel:+33775860837">
-<i class="fas fa-phone-alt"></i>
-</a>
+
+
+  <nav id="pf-mobile-nav" class="pf-mobile-nav" aria-label="Navegación principal">
+
+ <div class="language-selector">
+    <a id="french" href="peinturecollection.html" aria-label="Francés">
+        <img src="/img/Flag_of_France.png" alt="Francés" data-no-lightbox="">
+    </a>
+
+    <a id="english" href="/US/peinturecollection.html" aria-label="English">
+        <img src="/img/Flag_of_the_United_States.png" alt="English" data-no-lightbox="">
+    </a>
+
+    <a id="spanish" href="/ES/peinturecollection.html" aria-label="Español">
+        <img src="/img/Flag_of_Spain.png" alt="Español" data-no-lightbox="">
+    </a>
 </div>
-<!-- Bouton hamburger -->
-<button aria-expanded="false" aria-label="Abrir el menú" class="pf-menu-button" id="pf-menu-button" type="button">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-<nav aria-label="Navegación principal" class="pf-mobile-nav" id="pf-mobile-nav">
-<div class="language-selector">
-<button id="french" type="button">
-<img alt="Francés" data-no-lightbox="" src="/img/Flag_of_France.png"/>
-</button>
-<button id="english" type="button">
-<img alt="English" data-no-lightbox="" src="/img/Flag_of_the_United_States.png"/>
-</button>
-<button id="spanish" type="button">
-<img alt="Español" data-no-lightbox="" src="/img/Flag_of_Spain.png"/>
-</button>
-</div>
-<ul class="pf-nav-list">
-<li>
-<a href="ES/index.html">
+    <ul class="pf-nav-list">
+
+        <li>
+            <a href="ES/index.html">
                 🏠 Inicio
             </a>
-</li>
-<li>
-<a href="ES/quisuisje.html">
+        </li>
+
+        <li>
+            <a href="ES/quisuisje.html">
                 👋 ¿Quién soy?
             </a>
-</li>
-<li>
-<a href="ES/peinturecommission.html">
+        </li>
+
+        <li>
+            <a href="ES/peinturecommission.html">
                 ⚔️ Ejércitos y TableTop+
             </a>
-</li>
-<li>
-<a href="ES/peinturecollection.html">
+        </li>
+
+        <li>
+            <a href="ES/peinturecollection.html">
                 🏆 Colección y Concursos
             </a>
-</li>
-<li>
-<a href="ES/formation.html">
-                📚 Cursos de pintura
-            </a>
-</li>
-<li>
-<a href="ES/galerie.html">
+        </li>
+
+        <li>
+            <a href="galerie.html">
                 🖼️ Galería
             </a>
-</li>
-<li>
-<a href="ES/pourquoi.html">
+        </li>
+
+        <li>
+            <a href="pourquoi.html">
                 ❓ FAQ
             </a>
-</li>
-</ul>
-<div class="contact-list">
-<p>
-<a href="mailto:studiopeinturefigurine@gmail.com">
-<span>
-<i class="fas fa-envelope"></i>
+        </li>
+
+    </ul>
+
+   <div class="contact-list">
+
+        <p>
+            <a href="mailto:studiopeinturefigurine@gmail.com">
+                <span>
+                    <i class="fas fa-envelope"></i>
                     studiopeinturefigurine@gmail.com
                 </span>
-</a>
-</p>
+            </a>
+        </p>
 <br>
-<p>
-<a href="tel:+33775860837">
-<span>
-<i class="fas fa-phone-alt"></i>
+        <p>
+            <a href="tel:+33775860837">
+                <span>
+                    <i class="fas fa-phone-alt"></i>
                     07 75 86 08 37
                 </span>
-</a>
-</p>
-</div>
-<div class="pf-mobile-social">
-<div class="pf-social-container">
-<a aria-label="Facebook" class="social-icon" href="https://www.facebook.com/studiopf.fr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-<a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/studiopf.fr/" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-<a aria-label="X" class="social-icon" href="https://x.com/studioPFfr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-x-twitter"></i>
-</a>
-<a aria-label="Discord" class="social-icon" href="https://discord.gg/Jpa4yvfQVN" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-discord"></i>
-</a>
-<a aria-label="Patreon" class="social-icon" href="https://www.patreon.com/studiopf" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-patreon"></i>
-</a>
-<a aria-label="Twitch" class="social-icon" href="https://www.twitch.tv/studiopf" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-twitch"></i>
-</a>
-<a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@studiopf-fr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-youtube"></i>
-</a>
-<a aria-label="TikTok" class="social-icon" href="https://www.tiktok.com/@studiopf.fr" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-tiktok"></i>
-</a>
-</div>
-</div>
+            </a>
+        </p>
+
+    </div>
+
+    <div class="pf-mobile-social">
+
+        <div class="pf-social-container">
+
+            <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/studioPFfr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="https://discord.gg/Jpa4yvfQVN" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+
+            <a href="https://www.patreon.com/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Patreon">
+                <i class="fab fa-patreon"></i>
+            </a>
+
+            <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitch">
+                <i class="fab fa-twitch"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+        </div>
+
+    </div>
+
 </nav>
-<div class="info-container" id="info-container"> <p class="info" id="infoParagraph">.</p> </div>
-</header>
+
+<div id="info-container" class="info-container"> <p class="info" id="infoParagraph">.</p>   </div>
+    </header>
+
 <div class="carousel-container">
-<div class="carousel" id="carousel"></div>
-<!-- Navigation arrows -->
-<button aria-label="Diapositiva anterior" class="carousel-arrow carousel-prev" onclick="prevSlide()" type="button">❮</button>
-<button aria-label="Diapositiva siguiente" class="carousel-arrow carousel-next" onclick="nextSlide()" type="button">❯</button>
-<!-- Dots -->
-<div class="carousel-dots" id="carousel-dots"></div>
+    <div class="carousel" id="carousel"></div>
+
+    <!-- Navigation arrows -->
+    <button class="carousel-arrow carousel-prev" type="button" onclick="prevSlide()" aria-label="Diapositiva anterior">❮</button>
+    <button class="carousel-arrow carousel-next" type="button" onclick="nextSlide()" aria-label="Diapositiva siguiente">❯</button>
+
+    <!-- Dots -->
+    <div class="carousel-dots" id="carousel-dots"></div>
 </div>
+
 <main id="contenu-principal">
-<div class="maintenance-box ajust fondorc" data-box-id="collection-introduction">
-<h1 class="maintenance-title">
-<button aria-controls="collection-introduction-content" aria-expanded="true" class="maintenance-header" type="button">
-<span>🏆 Piezas únicas para Colección, Exposición y Concursos</span>
-<span aria-hidden="true" class="maintenance-arrow">▲</span>
-</button>
-</h1>
-<div class="maintenance-content" id="collection-introduction-content">
-<p>
-                Studio PF crea <strong>figuras de alta gama</strong> destinadas a coleccionistas, aficionados y competidores que desean transformar sus modelos en auténticas obras de exposición.
+
+    <div class="maintenance-box ajust fondorc" data-box-id="collection-introduction">
+        <h1 class="maintenance-title">
+
+            <button class="maintenance-header" type="button" aria-expanded="true" aria-controls="collection-introduction-content">
+
+                <span>🏆 Piezas únicas para Colección, Exposición y Concursos</span>
+
+                <span class="maintenance-arrow" aria-hidden="true">▲</span>
+
+            </button>
+
+        </h1>
+
+        <div class="maintenance-content" id="collection-introduction-content">
+            <p>
+                Studio PF realiza <strong>miniaturas de alta gama</strong> para coleccionistas,
+                aficionados y competidores que desean transformar sus modelos en auténticas obras de exposición.
             </p>
-<p>
-                Cada proyecto se personaliza por completo según la escultura, su universo y su objetivo: enriquecer una colección, exponerse en una vitrina o participar en un concurso de pintura.
+
+            <p>
+                Cada proyecto se personaliza completamente según la escultura, su universo y su objetivo:
+                enriquecer una colección, exponerse en una vitrina o participar en un concurso de pintura.
             </p>
-<p>
-                Estas creaciones requieren un trabajo artístico minucioso que puede representar
-                <strong>varias decenas e incluso varios cientos de horas de pintura</strong>, con técnicas avanzadas, atención a los detalles más pequeños y una búsqueda constante del mejor resultado posible.
-            </p>
-<div class="maintenance-box ajust is-collapsed" data-box-id="dioramas">
-<h2 class="maintenance-title">
-<button aria-controls="dioramas-content" aria-expanded="false" class="maintenance-header" type="button">
-<span>🏞️ Dioramas y Escenas de exposición</span>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-</h2>
-<div class="maintenance-content" hidden="" id="dioramas-content">
-<p>
-Me encanta crear <strong>piezas de colección únicas</strong> :
-    <strong>Bustos, figuras de cultura pop y dioramas</strong>, totalmente personalizados para coleccionistas, exposiciones y concursos.
+
+          
+  <div class="maintenance-box ajust is-collapsed" data-box-id="dioramas">
+            <h2 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="dioramas-content">
+
+                    <span>🏞️ Dioramas y Escenas de exposición</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h2>
+
+            <div class="maintenance-content" id="dioramas-content" hidden>
+               <p>
+Me encanta crear <strong>piezas de colección únicas</strong>:
+    <strong>Bustos, figuras de cultura pop y dioramas</strong>,
+    totalmente personalizados para coleccionistas, exposiciones y concursos.
 </p>
-<div class="exemples-photos3">
-<div class="exemples-photos">
-<img alt="Diorama de figuras" loading="lazy" src="img/diorama1.jpg"/>
-</div>
-<div class="exemples-photos">
-<img alt="Escena de exposición en diorama" loading="lazy" src="img/diorama2.jpg"/>
-</div>
-<div class="exemples-photos">
-<img alt="Diorama pintado por Studio PF" loading="lazy" src="img/diorama3.jpg"/>
-</div>
-</div>
-<a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20figuras&amp;body=Hola%20Studio%20PF%2C%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto%3A%0A%0A---%20Tipo%20de%20proyecto%20%28Ej%C3%A9rcito%20%2F%20Colecci%C3%B3n%20%2F%20Concurso%29%3A%0A%0A---%20Juego%20o%20universo%3A%0A%0A---%20Nombre%20de%20las%20figuras%3A%0A%0A---%20N%C3%BAmero%20de%20figuras%3A%0A%0A---%20Nivel%20de%20pintura%20deseado%20%28TableTop%20%2F%20TableTop%2B%20%2F%20Vitrina%29%3A%0A%0A---%20Montaje%20necesario%20%28S%C3%AD%20%2F%20No%29%3A%0A%0A---%20Fecha%20deseada%20%28si%20es%20urgente%29%3A%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%3A%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%3A%0A%0A%C2%A1Gracias%21">
+                <div class="exemples-photos3">
+                    <div class="exemples-photos">
+                        <img src="img/diorama1.jpg" alt="Diorama de miniaturas" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/diorama2.jpg" alt="Escena de exposición en diorama" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/diorama3.jpg" alt="Diorama pintado por Studio PF" loading="lazy">
+                    </div>
+                </div>
+
+                <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF%2C%0A%0ADeseo%20obtener%20un%20presupuesto%20para%20el%20siguiente%20proyecto%3A%0A%0A---%20Tipo%20de%20proyecto%20%28Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso%29%3A%0A%0A---%20Juego%20o%20universo%3A%0A%0A---%20Nombre%20de%20las%20miniaturas%3A%0A%0A---%20N%C3%BAmero%20de%20miniaturas%3A%0A%0A---%20Nivel%20de%20pintura%20deseado%20%28TableTop%20/%20TableTop%2B%20/%20Exposici%C3%B3n%29%3A%0A%0A---%20Montaje%20necesario%20%28S%C3%AD%20/%20No%29%3A%0A%0A---%20Fecha%20deseada%20%28si%20es%20urgente%29%3A%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%3A%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%3A%0A%0A%C2%A1Gracias%21" class="button">
      Solicitar un presupuesto personalizado 💬
 </a>
-</div>
-</div>
-<div class="maintenance-box ajust is-collapsed fondnain" data-box-id="bustes">
-<h2 class="maintenance-title">
-<button aria-controls="bustes-content" aria-expanded="false" class="maintenance-header" type="button">
-<span>🗿 Bustos y Piezas de colección</span>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-</h2>
-<div class="maintenance-content" hidden="" id="bustes-content">
-<p>
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed fondnain" data-box-id="bustes">
+            <h2 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="bustes-content">
+
+                    <span>🗿 Bustos y Piezas de colección</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h2>
+
+            <div class="maintenance-content" id="bustes-content" hidden>
+                <p>
                     Pinto <strong>bustos, estatuas en miniatura y piezas de colección</strong>
-                    destinados a exponerse en una vitrina o a enriquecer una colección personal.
+                    destinadas a exponerse en una vitrina o a enriquecer una colección personal.
                 </p>
-<p>
-                    Cada proyecto recibe un enfoque totalmente personalizado para realzar la escultura, los volúmenes, las texturas y la expresión del personaje. Tonos de piel, metales, cuero, telas, envejecimiento o efectos ambientales: cada detalle se trabaja para dar vida a la pieza.
+
+                <p>
+                    Cada proyecto recibe un tratamiento totalmente personalizado para realzar la escultura,
+                    los volúmenes, las texturas y la expresión del personaje. Piel, metales, cuero, telas,
+                    envejecimiento o efectos ambientales: cada detalle se trabaja para dar vida a la pieza.
                 </p>
-<p>
-                    Estas creaciones están dirigidas tanto a coleccionistas como a aficionados que desean poseer una pieza única, ya sea un busto histórico, de fantasía, de ciencia ficción o una creación original.
-                </p>
-<div class="exemples-photos3">
-<div class="exemples-photos">
-<img alt="Busto histórico pintado" loading="lazy" src="img/buste1.jpg"/>
-</div>
-<div class="exemples-photos">
-<img alt="Busto de fantasía pintado" loading="lazy" src="img/buste2.jpg"/>
-</div>
-<div class="exemples-photos">
-<img alt="Busto de colección pintado" loading="lazy" src="img/buste3.jpg"/>
-</div>
-</div>
-<a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20figuras&amp;body=Hola%20Studio%20PF%2C%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto%3A%0A%0A---%20Tipo%20de%20proyecto%20%28Ej%C3%A9rcito%20%2F%20Colecci%C3%B3n%20%2F%20Concurso%29%3A%0A%0A---%20Juego%20o%20universo%3A%0A%0A---%20Nombre%20de%20las%20figuras%3A%0A%0A---%20N%C3%BAmero%20de%20figuras%3A%0A%0A---%20Nivel%20de%20pintura%20deseado%20%28TableTop%20%2F%20TableTop%2B%20%2F%20Vitrina%29%3A%0A%0A---%20Montaje%20necesario%20%28S%C3%AD%20%2F%20No%29%3A%0A%0A---%20Fecha%20deseada%20%28si%20es%20urgente%29%3A%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%3A%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%3A%0A%0A%C2%A1Gracias%21">
+
+      
+                <div class="exemples-photos3">
+                    <div class="exemples-photos">
+                        <img src="img/buste1.jpg" alt="Busto histórico pintado" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/buste2.jpg" alt="Busto de fantasía pintado" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/buste3.jpg" alt="Busto de colección pintado" loading="lazy">
+                    </div>
+                </div>
+
+                <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF%2C%0A%0ADeseo%20obtener%20un%20presupuesto%20para%20el%20siguiente%20proyecto%3A%0A%0A---%20Tipo%20de%20proyecto%20%28Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso%29%3A%0A%0A---%20Juego%20o%20universo%3A%0A%0A---%20Nombre%20de%20las%20miniaturas%3A%0A%0A---%20N%C3%BAmero%20de%20miniaturas%3A%0A%0A---%20Nivel%20de%20pintura%20deseado%20%28TableTop%20/%20TableTop%2B%20/%20Exposici%C3%B3n%29%3A%0A%0A---%20Montaje%20necesario%20%28S%C3%AD%20/%20No%29%3A%0A%0A---%20Fecha%20deseada%20%28si%20es%20urgente%29%3A%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%3A%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%3A%0A%0A%C2%A1Gracias%21" class="button">
      Solicitar un presupuesto personalizado 💬
 </a>
-</div>
-</div>
-<div class="maintenance-box ajust is-collapsed fondfreezer" data-box-id="pop-culture">
-<h2 class="maintenance-title">
-<button aria-controls="pop-culture-content" aria-expanded="false" class="maintenance-header" type="button">
-<span>🎬 Figuras de cultura pop</span>
-<span aria-hidden="true" class="maintenance-arrow">▼</span>
-</button>
-</h2>
-<div class="maintenance-content" hidden="" id="pop-culture-content">
-<p>
-                    ¿Tienes una figura inspirada en tu universo favorito? También pinto piezas procedentes de
-                    <strong>mangas, películas, series, videojuegos y licencias de cultura pop</strong>, ya sean personajes icónicos o creaciones originales.
-                </p>
-<p>
-                    Dragon Ball, One Piece, Naruto, Demon Slayer, Star Wars, Marvel, DC Comics, El Señor de los Anillos, The Witcher, Elden Ring, Zelda, WarCraft... Todas las licencias son bienvenidas.
-                </p>
-<p>
-                    La mayoría de estos modelos proceden de creadores 3D independientes o están disponibles en plataformas especializadas como Etsy, MyMiniFactory u otras tiendas dedicadas a coleccionistas.
-                </p>
-<p>Información importante</p>
-<p>
-<strong>Studio PF no suministra las figuras ni realiza su impresión 3D como parte de este servicio.</strong><br>
-                    El cliente aporta la pieza o la adquiere directamente al creador o vendedor de su elección. A continuación, Studio PF se encarga de preparar, pintar y realzar la figura con un acabado de alta gama.
-                </p>
-<div class="exemples-photos3">
-<div class="exemples-photos">
-<img alt="Figura de manga pintada" loading="lazy" src="img/pop1.jpg"/>
-</div>
-<div class="exemples-photos">
-<img alt="Figura de serie pintada" loading="lazy" src="img/pop2.jpg"/>
-</div>
-<div class="exemples-photos">
-<img alt="Figura de videojuego pintada" loading="lazy" src="img/pop3.jpg"/>
-</div>
-</div>
-<a class="button" href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20figuras&amp;body=Hola%20Studio%20PF%2C%0A%0ADeseo%20solicitar%20un%20presupuesto%20para%20el%20siguiente%20proyecto%3A%0A%0A---%20Tipo%20de%20proyecto%20%28Ej%C3%A9rcito%20%2F%20Colecci%C3%B3n%20%2F%20Concurso%29%3A%0A%0A---%20Juego%20o%20universo%3A%0A%0A---%20Nombre%20de%20las%20figuras%3A%0A%0A---%20N%C3%BAmero%20de%20figuras%3A%0A%0A---%20Nivel%20de%20pintura%20deseado%20%28TableTop%20%2F%20TableTop%2B%20%2F%20Vitrina%29%3A%0A%0A---%20Montaje%20necesario%20%28S%C3%AD%20%2F%20No%29%3A%0A%0A---%20Fecha%20deseada%20%28si%20es%20urgente%29%3A%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%3A%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%3A%0A%0A%C2%A1Gracias%21">
+            </div>
+        </div>
+
+        <div class="maintenance-box ajust is-collapsed fondfreezer" data-box-id="pop-culture">
+            <h2 class="maintenance-title">
+
+                <button class="maintenance-header" type="button" aria-expanded="false" aria-controls="pop-culture-content">
+
+                    <span>🎬 Figuras de cultura pop</span>
+
+                    <span class="maintenance-arrow" aria-hidden="true">▼</span>
+
+                </button>
+
+            </h2>
+
+            <div class="maintenance-content" id="pop-culture-content" hidden>
+               <p>
+    Confíame tus figuras de colección inspiradas en tus universos favoritos.
+    Desde <strong>Dragon Ball</strong> hasta <strong>Star Wars</strong>, pasando por
+    <strong>mangas, videojuegos, películas, series, cómics y franquicias de cultura pop</strong>,
+    cada pieza se pinta a mano con el máximo cuidado.
+</p>
+          
+              
+                <div class="exemples-photos3">
+                    <div class="exemples-photos">
+                        <img src="img/pop1.jpg" alt="Figura de manga pintada" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/pop2.jpg" alt="Figura de serie pintada" loading="lazy">
+                    </div>
+                    <div class="exemples-photos">
+                        <img src="img/pop3.jpg" alt="Figura de videojuego pintada" loading="lazy">
+                    </div>
+                </div>
+
+                <a href="mailto:studiopeinturefigurine@gmail.com?subject=Solicitud%20de%20presupuesto%20-%20Proyecto%20de%20pintura%20de%20miniaturas&body=Hola%20Studio%20PF%2C%0A%0ADeseo%20obtener%20un%20presupuesto%20para%20el%20siguiente%20proyecto%3A%0A%0A---%20Tipo%20de%20proyecto%20%28Ej%C3%A9rcito%20/%20Colecci%C3%B3n%20/%20Concurso%29%3A%0A%0A---%20Juego%20o%20universo%3A%0A%0A---%20Nombre%20de%20las%20miniaturas%3A%0A%0A---%20N%C3%BAmero%20de%20miniaturas%3A%0A%0A---%20Nivel%20de%20pintura%20deseado%20%28TableTop%20/%20TableTop%2B%20/%20Exposici%C3%B3n%29%3A%0A%0A---%20Montaje%20necesario%20%28S%C3%AD%20/%20No%29%3A%0A%0A---%20Fecha%20deseada%20%28si%20es%20urgente%29%3A%0A%0A---%20Fotos%20o%20enlaces%20de%20referencia%3A%0A%0A---%20Comentarios%20o%20solicitudes%20especiales%3A%0A%0A%C2%A1Gracias%21" class="button">
      Solicitar un presupuesto personalizado 💬
 </a>
-</div>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+
+
+
 </main>
+
+
 <footer>
-<div class="widget-container">
-<div class="widget" data-featurable-async="" data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d"></div>
-<script defer="" src="https://featurable.com/assets/bundle.js"></script>
+
+    <div class="widget-container">
+<div class="widget" id="featurable-58715cac-8740-4d37-9791-1757461ff35d" data-featurable-async data-location-code="es"></div>
+<script src="https://featurable.com/assets/bundle.js" defer></script>
+    </div>
+
+ <div class="center">
+            <div class="maintenance-box-part">
+                 <div class="cardpartenaire2">
+        <div class="cardpartenaire">
+                   <div> <a href="https://www.totalwargame.com/fr/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-totalwar.png" alt="Total Wargames Logo" data-no-lightbox fetchpriority="high">
+                    </a>
 </div>
+              <div>
+                    <p>Compra artículos de segunda mano por menos<br>5 % de descuento:<br><br><strong>STUDIOPF</strong></p>
+         </div>
+            </div>
+
+            <div class="cardpartenaire">
+
+                   <div> <a href="https://maxireves.fr/?ref=17962" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-maxireve.png" alt="Maxi Rêve Logo" data-no-lightbox fetchpriority="high">
+                    </a>
+</div>
+                    <div>
+                    <p>¡Tus miniaturas soñadas con el máximo descuento!<br>hasta un -19 %:<br><br><strong>MAXIPF</strong></p>
+               </div>
+            </div>
+                 </div>
+
+
+
+         <div class="cardpartenaire2">
+        <div class="cardpartenaire">
+
+                    <div><a href="https://mezgike.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-mezgike.png" alt="Mezgike Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+
+               <div>
+                    <p>Excelentes miniaturas STL pre-soportadas para tus juegos de batalla de mesa de ciencia ficción y fantasía.<br>-10 % en tu pedido<br>con el código promocional:<br><br><strong>STUDIOPF</strong></p>
+             </div>
+            </div>
+
+             <div class="cardpartenaire">
+
+                    <div><a href="https://wargamesceneries.com/" class="apartenaire" target="_blank" rel="noopener noreferrer">
+                        <img src="img/logo-wargamesceneries.png" alt="Wargame Sceneries Logo" data-no-lightbox fetchpriority="high">
+                    </a></div>
+
+               <div>
+                    <p>Escenografía modular impresa en 3D para partidas inmersivas.<br>-10 % en todos los modelos impresos<br>con el código promocional:<br><br><strong>STUDIOPF10</strong></p>
+            </div>
+            </div>
+           </div>
+
+            </div>
+    </div>
+
+    <button id="scrollToTopBtn" type="button" title="Volver arriba ⬆️" onclick="scrollToTop()">↑</button>
+  <div id="foot-contenu" class="footer">
+
+          <nav class="menu-mobilefoot" aria-label="Navegación legal">
+            <ul class="menufoot">
+                <li><a href="ES/conditions.html">Condiciones generales de venta 📜</a></li>
+                <li><a href="ES/mentionslegales.html">Aviso legal 💼</a></li>
+                <li><a href="ES/horaires.html">Horario de apertura 🕖</a></li>
+            </ul>
+        </nav>
+
 <div class="center">
-<div class="maintenance-box-part">
-<div class="cardpartenaire2">
-<div class="cardpartenaire">
-<div> <a class="apartenaire" href="https://www.totalwargame.com/fr/" rel="noopener noreferrer" target="_blank">
-<img alt="Total Wargames Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-totalwar.png"/>
-</a>
-</div>
-<div>
-<p>Compra artículos de segunda mano a menor precio<br>5 % de descuento:<br><br><strong>STUDIOPF</strong></p>
-</div>
-</div>
-<div class="cardpartenaire">
-<div> <a href="https://maxireves.fr/?ref=17962" rel="noopener noreferrer" target="_blank">
-<img alt="Maxi Rêve Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-maxireve.png"/>
-</a>
-</div>
-<div>
-<p>¡Las figuras de tus sueños con el máximo descuento!<br>hasta un 19 % de descuento:<br><br><strong>MAXIPF</strong></p>
-</div>
-</div>
-</div>
-<div class="cardpartenaire2">
-<div class="cardpartenaire">
-<div><a href="https://mezgike.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Mezgike Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-mezgike.png"/>
-</a></div>
-<div>
-<p>Magníficas figuras STL pre-soportadas para tus juegos de batallas de mesa de ciencia ficción y fantasía.<br>10 % de descuento en tu pedido<br>con el código promocional:<br><br><strong>STUDIOPF</strong></p>
-</div>
-</div>
-<div class="cardpartenaire">
-<div><a class="apartenaire" href="https://wargamesceneries.com/" rel="noopener noreferrer" target="_blank">
-<img alt="Wargame Sceneries Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-wargamesceneries.png"/>
-</a></div>
-<div>
-<p>Escenografía modular impresa en 3D para partidas inmersivas.<br>10 % de descuento en todos los modelos impresos<br>con el código promocional:<br><br><strong>STUDIOPF10</strong></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<button id="scrollToTopBtn" onclick="scrollToTop()" title="Volver arriba ⬆️" type="button">↑</button>
-<div class="footer" id="foot-contenu">
-<nav aria-label="Navegación legal" class="menu-mobilefoot">
-<ul class="menufoot">
-<li><a href="conditions.html" onclick="loadPage('conditions.html'); return false;">Condiciones generales de venta 📜</a></li>
-<li><a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">Aviso legal 💼</a></li>
-<li><a href="horaires.html" onclick="loadPage('horaires.html'); return false;">Horario de apertura 🕖</a></li>
-</ul>
-</nav>
-<div class="center">
-<div class="footer-adresse">
-<p><strong>STUDIO PF</strong><br>
+        <div class="footer-adresse">
+           <p><strong>STUDIO PF</strong><br>
             FRASSE Pierre-François<br>
             17 route de Lare 42510 Saint-Georges-de-Baroille<br><br>
 </p>
-<p>
+            <p>
                 Contacto 📧:
                 <a href="mailto:studiopeinturefigurine@gmail.com">studiopeinturefigurine@gmail.com</a>
-</p>
+               </p>
 <p>Teléfono 📞:
                 <a href="tel:+33775860837">07 75 86 08 37</a>
-</p>
-</div>
-</div>
-</div>
+            </p>
+        </div>
+      </div>
+   </div>
+
 </footer>
+
 <!-- Lightbox globale -->
-<div aria-hidden="true" class="lightbox" id="lightbox">
-<img alt="Studio PF" id="lightbox-img" src="/img/logo.png"/>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+       <img id="lightbox-img" src="/img/logo.png" alt="Studio PF">
 </div>
+
 </body>
 </html>
