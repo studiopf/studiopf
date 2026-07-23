@@ -70,32 +70,65 @@ function updateAgeDisplay() {
 // LANGUE
 // =============================
 function setLanguage(lang) {
-
     const folders = {
         french: "",
         english: "US",
         spanish: "ES"
     };
 
-    // Page actuelle
-    let page = currentPage || "index";
+    if (!Object.prototype.hasOwnProperty.call(folders, lang)) {
+        console.warn("Langue inconnue :", lang);
+        return;
+    }
 
-    // Formation n'existe qu'en français
+    const pathParts = window.location.pathname
+        .split("/")
+        .filter(Boolean);
+
+    /*
+     * Retire le dossier de langue actuel :
+     * /US/peinturecommission.html
+     * /ES/peinturecommission.html
+     */
+    if (pathParts[0] === "US" || pathParts[0] === "ES") {
+        pathParts.shift();
+    }
+
+    const currentFile = pathParts.at(-1) || "index.html";
+
+    let page = currentFile
+        .replace(/\.html$/i, "")
+        .trim();
+
+    if (!page || page === "index") {
+        page = "index";
+    }
+
+    /*
+     * La page formation n'existe qu'en français.
+     */
     if (page === "formation" && lang !== "french") {
         page = "index";
     }
 
     localStorage.setItem("language", lang);
+    currentLanguage = lang;
+    currentPage = page;
 
-    const folder = folders[lang];
-    const url =
-        (folder ? "/" + folder : "") +
-        "/" +
-        (page === "index" ? "" : page + ".html");
+    const languageFolder = folders[lang];
+
+    let url = "/";
+
+    if (languageFolder) {
+        url += `${languageFolder}/`;
+    }
+
+    if (page !== "index") {
+        url += `${page}.html`;
+    }
 
     window.location.href = url;
 }
-
 // =============================
 // FORMULAIRE FORMATION
 // =============================
