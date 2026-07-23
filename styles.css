@@ -1007,6 +1007,7 @@ nav {
 
 .language-selector img,
 .language-selector button {
+    padding: 20px;
     width: 50px;
     height: auto;
     border: none !important;
@@ -2417,7 +2418,7 @@ img {
     width: 100%;
     min-height: clamp(24px, 2.6vw, 42px);
     margin: 0;
-    padding: clamp(2px, 0.25vw, 5px) var(--page-gutter);
+    padding: clamp(2px, 0.25vw, 2px) var(--page-gutter);
     text-align: center;
     line-height: 0.85;
     animation: info 4s ease-in-out infinite alternate;
@@ -2468,7 +2469,7 @@ img {
     --space-lg:  clamp(14px, 1.26vw, 24px);
     --space-xl:  clamp(20px, 1.9vw, 36px);
 
-    --page-gutter: clamp(8px, 1.25vw, 24px);
+    --page-gutter: clamp(2px, 1.25vw, 2px);
     --radius-fluid: clamp(6px, 0.65vw, 12px);
 
     --font-xs: clamp(10px, 0.63vw, 12px);
@@ -2669,7 +2670,7 @@ li,
     justify-content: center;
     padding: var(--space-2xs) var(--page-gutter);
     font-size: clamp(10px, 0.95vw, 18px);
-    line-height: 1.15;
+    line-height: 0.85;
     animation-name: info-fluid;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -3093,7 +3094,7 @@ header + .info-container,
     max-width: 100%;
     min-height: 0;
     margin: 0 auto;
-    padding: clamp(2px, 0.25vw, 5px) clamp(6px, 1vw, 18px);
+    padding: clamp(2px, 0.25vw, 2px) clamp(6px, 1vw, 6px);
     text-align: center;
     overflow-wrap: anywhere;
     animation: info-v4 6s ease-in-out infinite alternate;
