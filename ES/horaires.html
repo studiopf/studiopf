@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html lang="fr">
- <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>
-   Studio PF | Horaires et Informations de Contact
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Studio PF | Horarios e información de contacto
   </title>
-  <meta content="Retrouvez les horaires et informations de contact de Studio PF, peintre professionnel sur figurines. Contact pour commissions, formations et projets personnalisés." name="description">
-  <meta content="FRASSE Pierre-François - Studio PF" name="author">
-  <meta content="noindex, follow" name="robots">
-  <link href="https://studiopf.fr/horaires.html" rel="canonical">
-  <!-- Open Graph -->
-  <meta content="Studio PF : Peinture Figurine - Tabletop supérieur et cours de peinture" property="og:title">
-  <meta content="Studio PF, spécialiste de la peinture sur figurines. Prestations Gold et Diamant, peinture Warhammer, Age of Sigmar, cours au pinceau et à l'aérographe." property="og:description">
-  <meta content="https://studiopf.fr/img/preview.png" property="og:image">
-  <meta content="https://studiopf.fr/" property="og:url">
-  <meta content="website" property="og:type">
-  <meta content="fr_FR" property="og:locale">
-  <!-- Twitter Card -->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="Studio PF : Peinture Figurine - Tabletop supérieur et cours de peinture" name="twitter:title">
-  <meta content="Studio PF, spécialiste de la peinture sur figurines. Prestations Gold et Diamant, peinture Warhammer, Age of Sigmar, cours au pinceau et à l'aérographe." name="twitter:description">
-  <meta content="https://studiopf.fr/img/preview.jpg" name="twitter:image">
-  <meta content="@studioPFfr" name="twitter:site">
-  <!-- Optimisation connexions externes -->
-  <link crossorigin="" href="https://code.jquery.com" rel="preconnect">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <!-- Image principale (à remplacer par ton image LCP réelle) -->
-  <link as="image" fetchpriority="high" href="/img/preview.png" rel="preload">
-  <link href="/styles.css" rel="stylesheet">
-  <!-- Favicon -->
-  <link href="/img/favicon.png" rel="icon" type="image/png">
+<meta content="Consulte los horarios y la información de contacto de Studio PF, pintor profesional de miniaturas. Contacto para encargos, cursos y proyectos personalizados." name="description"/>
+<meta content="FRASSE Pierre-François - Studio PF" name="author"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://studiopf.fr/horaires.html" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Studio PF | Pintura de miniaturas - Tabletop superior y cursos de pintura" property="og:title"/>
+<meta content="Studio PF, especialista en pintura de miniaturas. Servicios Gold y Diamante, pintura de Warhammer, Age of Sigmar y cursos de pincel y aerógrafo." property="og:description"/>
+<meta content="https://studiopf.fr/img/preview.png" property="og:image"/>
+<meta content="https://studiopf.fr/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="es_ES" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Studio PF | Pintura de miniaturas - Tabletop superior y cursos de pintura" name="twitter:title"/>
+<meta content="Studio PF, especialista en pintura de miniaturas. Servicios Gold y Diamante, pintura de Warhammer, Age of Sigmar y cursos de pincel y aerógrafo." name="twitter:description"/>
+<meta content="https://studiopf.fr/img/preview.jpg" name="twitter:image"/>
+<meta content="@studioPFfr" name="twitter:site"/>
+<!-- Optimisation connexions externes -->
+<link crossorigin="" href="https://code.jquery.com" rel="preconnect"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<!-- Image principale (à remplacer par ton image LCP réelle) -->
+<link as="image" fetchpriority="high" href="/img/preview.png" rel="preload"/>
+<link href="/styles.css" rel="stylesheet"/>
+<!-- Favicon -->
+<link href="/img/favicon.png" rel="icon" type="image/png"/>
 <!-- Scripts -->
-  <script defer="" src="/js/script.js">
-  </script>
-  <script type="application/ld+json">
+<script defer="" src="/js/script.js">
+</script>
+<script type="application/ld+json">
    {
  "@context":"https://schema.org",
  "@type":"LocalBusiness",
@@ -56,672 +57,609 @@
  ]
 }
   </script>
- </head>
- <body>
-  <header>
-   <div class="header-top">
-    <button aria-label="Changer le thème" class="theme-toggle" id="themeToggle" type="button">
+</head>
+<body>
+<header>
+<div class="header-top">
+<button aria-label="Cambiar tema" class="theme-toggle" id="themeToggle" type="button">
      🌙
     </button>
-    <!-- Logo -->
-    <div class="header-logo">
-     <a aria-label="Retour à l'accueil" class="logo-a" href="index.html" onclick="loadPage('index.html'); return false;">
-      <img alt="Studio PF Logo" class="logo" data-no-lightbox="" fetchpriority="high" src="/img/logo.png">
-     </a>
-    </div>
-    <!-- Icônes -->
-    <div class="header-contact">
-     <a aria-label="Envoyer un email" href="mailto:studiopeinturefigurine@gmail.com">
-      <i class="fas fa-envelope">
-      </i>
-     </a>
-     <a aria-label="Téléphoner" href="tel:+33775860837">
-      <i class="fas fa-phone-alt">
-      </i>
-     </a>
-    </div>
-    <!-- Bouton hamburger -->
-    <button aria-expanded="false" aria-label="Ouvrir le menu" class="pf-menu-button" id="pf-menu-button" type="button">
-     <span>
-     </span>
-     <span>
-     </span>
-     <span>
-     </span>
-    </button>
-   </div>
-   <nav class="pf-mobile-nav" id="pf-mobile-nav">
-     <div class="language-selector">
-    <button id="french" type="button">
-        <img src="/img/Flag_of_France.png" alt="Français" data-no-lightbox="">
-    </button>
-
-    <button id="english" type="button">
-        <img src="/img/Flag_of_the_United_States.png" alt="English" data-no-lightbox="">
-    </button>
-
-    <button id="spanish" type="button">
-        <img src="/img/Flag_of_Spain.png" alt="Español" data-no-lightbox="">
-    </button>
+<!-- Logo -->
+<div class="header-logo">
+<a aria-label="Volver al inicio" class="logo-a" href="index.html" onclick="loadPage('index.html'); return false;">
+<img alt="Studio PF Logo" class="logo" data-no-lightbox="" fetchpriority="high" src="/img/logo.png"/>
+</a>
 </div>
-    <ul class="pf-nav-list">
-     <li>
-      <a href="index.html">
-       🏠 Accueil
+<!-- Icônes -->
+<div class="header-contact">
+<a aria-label="Enviar un correo" href="mailto:studiopeinturefigurine@gmail.com">
+<i class="fas fa-envelope">
+</i>
+</a>
+<a aria-label="Llamar" href="tel:+33775860837">
+<i class="fas fa-phone-alt">
+</i>
+</a>
+</div>
+<!-- Bouton hamburger -->
+<button aria-expanded="false" aria-label="Abrir menú" class="pf-menu-button" id="pf-menu-button" type="button">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+</button>
+</div>
+<nav class="pf-mobile-nav" id="pf-mobile-nav">
+<div class="language-selector">
+<button id="french" type="button">
+<img alt="Français" data-no-lightbox="" src="/img/Flag_of_France.png"/>
+</button>
+<button id="english" type="button">
+<img alt="English" data-no-lightbox="" src="/img/Flag_of_the_United_States.png"/>
+</button>
+<button id="spanish" type="button">
+<img alt="Español" data-no-lightbox="" src="/img/Flag_of_Spain.png"/>
+</button>
+</div>
+<ul class="pf-nav-list">
+<li>
+<a href="index.html">
+       🏠 Inicio
       </a>
-     </li>
-     <li>
-      <a href="quisuisje.html">
-       👋 Qui suis-je ?
+</li>
+<li>
+<a href="quisuisje.html">
+       👋 ¿Quién soy?
       </a>
-     </li>
-     <li>
-      <a href="peinturecommission.html">
+</li>
+<li>
+<a href="peinturecommission.html">
        ⚔️ Armées &amp; TableTop+
       </a>
-     </li>
-     <li>
-      <a href="peinturecollection.html">
-       🏆 Collection &amp; Concours
+</li>
+<li>
+<a href="peinturecollection.html">
+       🏆 Colección y concurso
       </a>
-     </li>
-     <li>
-      <a href="formation.html">
-       📚 Cours de peinture
+</li>
+<li>
+<a href="formation.html">
+       📚 Cursos de pintura
       </a>
-     </li>
-     <li>
-      <a href="galerie.html">
-       🖼️ Galerie
+</li>
+<li>
+<a href="galerie.html">
+       🖼️ Galería
       </a>
-     </li>
-     <li>
-      <a href="pourquoi.html">
+</li>
+<li>
+<a href="pourquoi.html">
        ❓ FAQ
       </a>
-     </li>
-    </ul>
- <div class="contact-list">
-
-        <p>
-            <a href="mailto:studiopeinturefigurine@gmail.com">
-                <span>
-                    <i class="fas fa-envelope"></i>
+</li>
+</ul>
+<div class="contact-list">
+<p>
+<a href="mailto:studiopeinturefigurine@gmail.com">
+<span>
+<i class="fas fa-envelope"></i>
                     studiopeinturefigurine@gmail.com
                 </span>
-            </a>
-        </p>
-<br>
-        <p>
-            <a href="tel:+33775860837">
-                <span>
-                    <i class="fas fa-phone-alt"></i>
+</a>
+</p>
+<br/>
+<p>
+<a href="tel:+33775860837">
+<span>
+<i class="fas fa-phone-alt"></i>
                     07 75 86 08 37
                 </span>
-            </a>
-        </p>
-
-    </div>
-    <div class="pf-mobile-social">
-     <div class="pf-social-container">
-      <a aria-label="Facebook" class="social-icon" href="https://www.facebook.com/studiopf.fr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-facebook-f">
-       </i>
-      </a>
-      <a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/studiopf.fr/" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-instagram">
-       </i>
-      </a>
-      <a aria-label="X" class="social-icon" href="https://x.com/studioPFfr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-x-twitter">
-       </i>
-      </a>
-      <a aria-label="Discord" class="social-icon" href="https://discord.gg/Jpa4yvfQVN" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-discord">
-       </i>
-      </a>
-      <a aria-label="Patreon" class="social-icon" href="https://www.patreon.com/studiopf" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-patreon">
-       </i>
-      </a>
-      <a aria-label="Twitch" class="social-icon" href="https://www.twitch.tv/studiopf" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-twitch">
-       </i>
-      </a>
-      <a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@studiopf-fr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-youtube">
-       </i>
-      </a>
-      <a aria-label="TikTok" class="social-icon" href="https://www.tiktok.com/@studiopf.fr" rel="noopener noreferrer" target="_blank">
-       <i class="fab fa-tiktok">
-       </i>
-      </a>
-     </div>
-    </div>
-   </nav>
-   <div class="info-container" id="info-container">
-    <p class="info" id="infoParagraph">
+</a>
+</p>
+</div>
+<div class="pf-mobile-social">
+<div class="pf-social-container">
+<a aria-label="Facebook" class="social-icon" href="https://www.facebook.com/studiopf.fr" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-facebook-f">
+</i>
+</a>
+<a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/studiopf.fr/" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-instagram">
+</i>
+</a>
+<a aria-label="X" class="social-icon" href="https://x.com/studioPFfr" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-x-twitter">
+</i>
+</a>
+<a aria-label="Discord" class="social-icon" href="https://discord.gg/Jpa4yvfQVN" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-discord">
+</i>
+</a>
+<a aria-label="Patreon" class="social-icon" href="https://www.patreon.com/studiopf" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-patreon">
+</i>
+</a>
+<a aria-label="Twitch" class="social-icon" href="https://www.twitch.tv/studiopf" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-twitch">
+</i>
+</a>
+<a aria-label="YouTube" class="social-icon" href="https://www.youtube.com/@studiopf-fr" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-youtube">
+</i>
+</a>
+<a aria-label="TikTok" class="social-icon" href="https://www.tiktok.com/@studiopf.fr" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-tiktok">
+</i>
+</a>
+</div>
+</div>
+</nav>
+<div class="info-container" id="info-container">
+<p class="info" id="infoParagraph">
      .
     </p>
-   </div>
-  </header>
-    <section class="carousel-container" aria-label="Galerie mise en avant">
-    <div class="carousel" id="carousel" aria-live="polite"></div>
-    <button class="carousel-arrow carousel-prev" type="button" onclick="prevSlide()" aria-label="Image précédente">❮</button>
-    <button class="carousel-arrow carousel-next" type="button" onclick="nextSlide()" aria-label="Image suivante">❯</button>
-    <div class="carousel-dots" id="carousel-dots"></div>
+</div>
+</header>
+<section aria-label="Galería destacada" class="carousel-container">
+<div aria-live="polite" class="carousel" id="carousel"></div>
+<button aria-label="Imagen anterior" class="carousel-arrow carousel-prev" onclick="prevSlide()" type="button">❮</button>
+<button aria-label="Imagen siguiente" class="carousel-arrow carousel-next" onclick="nextSlide()" type="button">❯</button>
+<div class="carousel-dots" id="carousel-dots"></div>
 </section>
-  
-  <main id="contenu-principal">
-   <section class="maintenance-box ajust fondlilia" data-box-id="horaires-introduction">
-    <h1 class="maintenance-title">
+<main id="contenu-principal">
+<section class="maintenance-box ajust fondlilia" data-box-id="horaires-introduction">
+<h1 class="maintenance-title">
+<button aria-controls="horaires-introduction-content" aria-expanded="true" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-     <button aria-controls="horaires-introduction-content" aria-expanded="true" class="maintenance-header" type="button">
-
-      <span class="maintenance-title">
-
-       🕓 Horaires du Studio PF
+       🕓 Horarios de Studio PF
 
       </span>
-
-      <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
       ▲
      </span>
-
-     </button>
-
-    </h1>
-    <div class="maintenance-content" id="horaires-introduction-content">
-     <p>
-      Retrouvez les horaires habituels du studio, les créneaux de diffusion
-      sur Twitch ainsi que les périodes de fermeture prévues.
+</button>
+</h1>
+<div class="maintenance-content" id="horaires-introduction-content">
+<p>
+      Consulte los horarios habituales del estudio, los directos de Twitch y los períodos de cierre previstos.
      </p>
-
-     <h2>🕘 Horaires d’ouverture du studio</h2>
-     <ul>
-      <li><strong>Lundi :</strong> 09:00 – 18:00</li>
-      <li><strong>Mardi :</strong> 09:00 – 18:00</li>
-      <li><strong>Mercredi :</strong> fermé</li>
-      <li><strong>Jeudi :</strong> 09:00 – 18:00</li>
-      <li><strong>Vendredi :</strong> 09:00 – 18:00</li>
-      <li><strong>Samedi :</strong> fermé</li>
-      <li><strong>Dimanche :</strong> fermé</li>
-     </ul>
-
-     <h3>🎥 Horaires habituels des lives Twitch</h3>
-     <ul>
-      <li><strong>Lundi :</strong> 13:00 – 16:00</li>
-      <li><strong>Mardi :</strong> 13:00 – 16:00</li>
-      <li><strong>Mercredi :</strong> aucun live prévu</li>
-      <li><strong>Jeudi :</strong> 13:00 – 16:00</li>
-      <li><strong>Vendredi :</strong> 13:00 – 16:00</li>
-      <li><strong>Samedi :</strong> aucun live prévu</li>
-      <li><strong>Dimanche :</strong> aucun live prévu</li>
-     </ul>
-
-     <p>
-      Les horaires des lives peuvent être modifiés selon les projets,
-      événements et contraintes du studio.
+<h2>🕘 Horario de apertura del estudio</h2>
+<ul>
+<li><strong>Lundi :</strong> 09:00 – 18:00</li>
+<li><strong>Mardi :</strong> 09:00 – 18:00</li>
+<li><strong>Mercredi :</strong> cerrado</li>
+<li><strong>Jeudi :</strong> 09:00 – 18:00</li>
+<li><strong>Vendredi :</strong> 09:00 – 18:00</li>
+<li><strong>Samedi :</strong> cerrado</li>
+<li><strong>Dimanche :</strong> cerrado</li>
+</ul>
+<h3>🎥 Horario habitual de los directos en Twitch</h3>
+<ul>
+<li><strong>Lundi :</strong> 13:00 – 16:00</li>
+<li><strong>Mardi :</strong> 13:00 – 16:00</li>
+<li><strong>Mercredi :</strong> no hay directo previsto</li>
+<li><strong>Jeudi :</strong> 13:00 – 16:00</li>
+<li><strong>Vendredi :</strong> 13:00 – 16:00</li>
+<li><strong>Samedi :</strong> no hay directo previsto</li>
+<li><strong>Dimanche :</strong> no hay directo previsto</li>
+</ul>
+<p>
+      Los horarios de los directos pueden cambiar según los proyectos, eventos y necesidades del estudio.
      </p>
-
-     <a class="button" href="https://www.twitch.tv/studiopf" rel="noopener noreferrer" target="_blank">
-      🎥 Suivre Studio PF sur Twitch
+<a class="button" href="https://www.twitch.tv/studiopf" rel="noopener noreferrer" target="_blank">
+      🎥 Seguir a Studio PF en Twitch
      </a>
-    </div>
-   </section>
-   <br>
-   <section class="maintenance-box ajust" data-box-id="chapitre-fermetures-2026">
-    <div class="maintenance-header">
-     <h2 class="maintenance-title">
-      📅 Fermetures prévues en 2026
+</div>
+</section>
+<br/>
+<section class="maintenance-box ajust" data-box-id="chapitre-fermetures-2026">
+<div class="maintenance-header">
+<h2 class="maintenance-title">
+      📅 Cierres previstos en 2026
      </h2>
-     <span class="maintenance-arrow" aria-hidden="true">▼</span>
-    </div>
-    <div class="maintenance-content">
-     <section class="maintenance-box ajust" data-box-id="fermetures-hiver-printemps-2026">
-      <h3 class="maintenance-title">
+<span aria-hidden="true" class="maintenance-arrow">▼</span>
+</div>
+<div class="maintenance-content">
+<section class="maintenance-box ajust" data-box-id="fermetures-hiver-printemps-2026">
+<h3 class="maintenance-title">
+<button aria-controls="fermetures-hiver-printemps-2026-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermetures-hiver-printemps-2026-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         ❄️ Hiver et printemps 2026
+         ❄️ Invierno y primavera de 2026
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermetures-hiver-printemps-2026-content">
-       <ul>
-        <li>
-         <strong>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermetures-hiver-printemps-2026-content">
+<ul>
+<li>
+<strong>
           Vacances d’hiver :
          </strong>
          du samedi 7 février 2026 au lundi 23 février 2026.
         </li>
-        <li>
-         <strong>
+<li>
+<strong>
           Vacances de printemps :
          </strong>
          du samedi 4 avril 2026 au lundi 20 avril 2026.
         </li>
-       </ul>
-      </div>
-     </section>
-     <section class="maintenance-box ajust is-collapsed" data-box-id="fermeture-ete-2026">
-      <h3 class="maintenance-title">
+</ul>
+</div>
+</section>
+<section class="maintenance-box ajust is-collapsed" data-box-id="fermeture-ete-2026">
+<h3 class="maintenance-title">
+<button aria-controls="fermeture-ete-2026-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermeture-ete-2026-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         ☀️ Été 2026
+         ☀️ Verano de 2026
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermeture-ete-2026-content">
-       <p>
-        <strong>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermeture-ete-2026-content">
+<p>
+<strong>
          Vacances d’été :
         </strong>
         du samedi 4 juillet 2026 au lundi 31 août 2026 inclus.
        </p>
-      </div>
-     </section>
-     <section class="maintenance-box ajust is-collapsed" data-box-id="fermetures-automne-noel-2026">
-      <h3 class="maintenance-title">
+</div>
+</section>
+<section class="maintenance-box ajust is-collapsed" data-box-id="fermetures-automne-noel-2026">
+<h3 class="maintenance-title">
+<button aria-controls="fermetures-automne-noel-2026-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermetures-automne-noel-2026-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         🎃 Automne et Noël 2026
+         🎃 Otoño y Navidad de 2026
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermetures-automne-noel-2026-content">
-       <ul>
-        <li>
-         <strong>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermetures-automne-noel-2026-content">
+<ul>
+<li>
+<strong>
           Vacances de la Toussaint :
          </strong>
          du samedi 17 octobre 2026 au lundi 2 novembre 2026.
         </li>
-        <li>
-         <strong>
+<li>
+<strong>
           Vacances de Noël :
          </strong>
          du samedi 19 décembre 2026 au lundi 4 janvier 2027.
         </li>
-       </ul>
-      </div>
-     </section>
-    </div>
-   </section>
-    <br>
-   <section class="maintenance-box ajust" data-box-id="chapitre-fermetures-2027">
-    <div class="maintenance-header">
-     <h2 class="maintenance-title">
-      📆 Fermetures prévues en 2027
+</ul>
+</div>
+</section>
+</div>
+</section>
+<br/>
+<section class="maintenance-box ajust" data-box-id="chapitre-fermetures-2027">
+<div class="maintenance-header">
+<h2 class="maintenance-title">
+      📆 Cierres previstos en 2027
      </h2>
-     <span class="maintenance-arrow" aria-hidden="true">▼</span>
-    </div>
-    <div class="maintenance-content">
-     <section class="maintenance-box ajust" data-box-id="fermetures-hiver-printemps-2027">
-      <h3 class="maintenance-title">
+<span aria-hidden="true" class="maintenance-arrow">▼</span>
+</div>
+<div class="maintenance-content">
+<section class="maintenance-box ajust" data-box-id="fermetures-hiver-printemps-2027">
+<h3 class="maintenance-title">
+<button aria-controls="fermetures-hiver-printemps-2027-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermetures-hiver-printemps-2027-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         ❄️ Hiver et printemps 2027
+         ❄️ Invierno y primavera de 2027
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermetures-hiver-printemps-2027-content">
-       <ul>
-        <li>
-         <strong>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermetures-hiver-printemps-2027-content">
+<ul>
+<li>
+<strong>
           Vacances d’hiver :
          </strong>
          du samedi 20 février 2027 au lundi 8 mars 2027.
         </li>
-        <li>
-         <strong>
+<li>
+<strong>
           Vacances de printemps :
          </strong>
          du samedi 17 avril 2027 au lundi 3 mai 2027.
         </li>
-       </ul>
-      </div>
-     </section>
-     <section class="maintenance-box ajust is-collapsed" data-box-id="fermeture-ete-2027">
-      <h3 class="maintenance-title">
+</ul>
+</div>
+</section>
+<section class="maintenance-box ajust is-collapsed" data-box-id="fermeture-ete-2027">
+<h3 class="maintenance-title">
+<button aria-controls="fermeture-ete-2027-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermeture-ete-2027-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         ☀️ Été 2027
+         ☀️ Verano de 2027
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermeture-ete-2027-content">
-       <p>
-        <strong>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermeture-ete-2027-content">
+<p>
+<strong>
          Vacances d’été :
         </strong>
         du samedi 3 juillet 2027 au lundi 30 août 2027 inclus.
        </p>
-      </div>
-     </section>
-     <section class="maintenance-box ajust is-collapsed" data-box-id="fermetures-automne-noel-2027">
-      <h3 class="maintenance-title">
+</div>
+</section>
+<section class="maintenance-box ajust is-collapsed" data-box-id="fermetures-automne-noel-2027">
+<h3 class="maintenance-title">
+<button aria-controls="fermetures-automne-noel-2027-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermetures-automne-noel-2027-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         🎃 Automne et Noël 2027
+         🎃 Otoño y Navidad de 2027
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermetures-automne-noel-2027-content">
-       <ul>
-        <li>
-         <strong>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermetures-automne-noel-2027-content">
+<ul>
+<li>
+<strong>
           Vacances de la Toussaint :
          </strong>
          du samedi 23 octobre 2027 au lundi 8 novembre 2027.
         </li>
-        <li>
-         <strong>
+<li>
+<strong>
           Vacances de Noël :
          </strong>
          du samedi 18 décembre 2027 au lundi 3 janvier 2028.
         </li>
-       </ul>
-      </div>
-     </section>
-    </div>
-   </section>
-   <section class="maintenance-box ajust" data-box-id="chapitre-fermetures-2028">
-    <div class="maintenance-header">
-     <h2 class="maintenance-title">
-      🗓️ Début de l’année 2028
+</ul>
+</div>
+</section>
+</div>
+</section>
+<section class="maintenance-box ajust" data-box-id="chapitre-fermetures-2028">
+<div class="maintenance-header">
+<h2 class="maintenance-title">
+      🗓️ Inicio del año 2028
      </h2>
-     <span class="maintenance-arrow" aria-hidden="true">▼</span>
-    </div>
-    <div class="maintenance-content">
-     <section class="maintenance-box ajust" data-box-id="fermetures-hiver-2028">
-      <h3 class="maintenance-title">
+<span aria-hidden="true" class="maintenance-arrow">▼</span>
+</div>
+<div class="maintenance-content">
+<section class="maintenance-box ajust" data-box-id="fermetures-hiver-2028">
+<h3 class="maintenance-title">
+<button aria-controls="fermetures-hiver-2028-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermetures-hiver-2028-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         ❄️ Vacances d’hiver 2028
+         ❄️ Vacaciones de invierno de 2028
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermetures-hiver-2028-content">
-       <p>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermetures-hiver-2028-content">
+<p>
         Du samedi 5 février 2028 au lundi 21 février 2028.
        </p>
-      </div>
-     </section>
-     <section class="maintenance-box ajust is-collapsed" data-box-id="fermetures-printemps-2028">
-      <h3 class="maintenance-title">
+</div>
+</section>
+<section class="maintenance-box ajust is-collapsed" data-box-id="fermetures-printemps-2028">
+<h3 class="maintenance-title">
+<button aria-controls="fermetures-printemps-2028-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="fermetures-printemps-2028-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         🌷 Vacances de printemps 2028
+         🌷 Vacaciones de primavera de 2028
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="fermetures-printemps-2028-content">
-       <p>
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="fermetures-printemps-2028-content">
+<p>
         Du samedi 1 avril 2028 au lundi 17 avril 2028.
        </p>
-      </div>
-     </section>
-     <section class="maintenance-box ajust is-collapsed" data-box-id="informations-fermetures">
-      <h3 class="maintenance-title">
+</div>
+</section>
+<section class="maintenance-box ajust is-collapsed" data-box-id="informations-fermetures">
+<h3 class="maintenance-title">
+<button aria-controls="informations-fermetures-content" aria-expanded="false" class="maintenance-header" type="button">
+<span class="maintenance-title">
 
-       <button aria-controls="informations-fermetures-content" aria-expanded="false" class="maintenance-header" type="button">
-
-        <span class="maintenance-title">
-
-         ℹ️ Informations importantes
+         ℹ️ Información importante
 
         </span>
-
-        <span aria-hidden="true" class="maintenance-arrow">
+<span aria-hidden="true" class="maintenance-arrow">
          ▼
        </span>
-
-       </button>
-
-      </h3>
-      <div class="maintenance-content" hidden="" id="informations-fermetures-content">
-       <p>
-        Pendant les périodes de fermeture, les réponses aux messages,
-                        devis et demandes peuvent être retardées.
+</button>
+</h3>
+<div class="maintenance-content" hidden="" id="informations-fermetures-content">
+<p>
+        Durante los períodos de cierre, las respuestas a mensajes, presupuestos y solicitudes pueden demorarse.
        </p>
-       <p>
-        Les dates indiquées peuvent être adaptées en fonction des
-                        événements, formations ou contraintes du studio.
+<p>
+        Las fechas indicadas pueden modificarse en función de los eventos, cursos o necesidades del estudio.
        </p>
-      </div>
-     </section>
-    </div>
-   </section>
-  </main>
-  <footer>
-   <div class="widget-container">
-    <div class="widget" data-featurable-async="" data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d">
-    </div>
-    <script defer="" src="https://featurable.com/assets/bundle.js">
-    </script>
-   </div>
-   <div class="center">
-    <div class="maintenance-box-part">
-     <div class="cardpartenaire2">
-      <div class="cardpartenaire">
-       <div>
-        <a class="apartenaire" href="https://www.totalwargame.com/fr/" rel="noopener noreferrer" target="_blank">
-         <img alt="Total Wargames Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-totalwar.png">
-        </a>
-       </div>
-       <div>
-        <p>
-         Achetez moins cher d'occasion
-         <br>
-         5% de remise :
-         <br>
-         <br>
-         <strong>
+</div>
+</section>
+</div>
+</section>
+</main>
+<footer>
+<div class="widget-container">
+<div class="widget" data-featurable-async="" data-location-code="fr" id="featurable-58715cac-8740-4d37-9791-1757461ff35d">
+</div>
+<script defer="" src="https://featurable.com/assets/bundle.js">
+</script>
+</div>
+<div class="center">
+<div class="maintenance-box-part">
+<div class="cardpartenaire2">
+<div class="cardpartenaire">
+<div>
+<a class="apartenaire" href="https://www.totalwargame.com/fr/" rel="noopener noreferrer" target="_blank">
+<img alt="Total Wargames Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-totalwar.png"/>
+</a>
+</div>
+<div>
+<p>
+         Compra de segunda mano más barata
+         <br/>
+         5 % de descuento:
+         <br/>
+<br/>
+<strong>
           STUDIOPF
          </strong>
-        </p>
-       </div>
-      </div>
-      <div class="cardpartenaire">
-       <div>
-        <a href="https://maxireves.fr/?ref=17962" rel="noopener noreferrer" target="_blank">
-         <img alt="Maxi Rêve Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-maxireve.png">
-        </a>
-       </div>
-       <div>
-        <p>
-         Vos figurines de rêves à Maxi remise !
-         <br>
-         jusqu'à -19% :
-         <br>
-         <br>
-         <strong>
+</p>
+</div>
+</div>
+<div class="cardpartenaire">
+<div>
+<a href="https://maxireves.fr/?ref=17962" rel="noopener noreferrer" target="_blank">
+<img alt="Maxi Rêve Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-maxireve.png"/>
+</a>
+</div>
+<div>
+<p>
+         ¡Las miniaturas de tus sueños al mejor precio!
+         <br/>
+         hasta un -19 %:
+         <br/>
+<br/>
+<strong>
           MAXIPF
          </strong>
-        </p>
-       </div>
-      </div>
-     </div>
-     <div class="cardpartenaire2">
-      <div class="cardpartenaire">
-       <div>
-        <a href="https://mezgike.com/" rel="noopener noreferrer" target="_blank">
-         <img alt="Mezgike Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-mezgike.png">
-        </a>
-       </div>
-       <div>
-        <p>
-         Superbes figurines STL pré-supportées pour vos jeux de bataille de table sci-fi et fantasy.
-         <br>
-         -10% sur votre commande
-         <br>
-         avec le code promo :
-         <br>
-         <br>
-         <strong>
+</p>
+</div>
+</div>
+</div>
+<div class="cardpartenaire2">
+<div class="cardpartenaire">
+<div>
+<a href="https://mezgike.com/" rel="noopener noreferrer" target="_blank">
+<img alt="Mezgike Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-mezgike.png"/>
+</a>
+</div>
+<div>
+<p>
+         Magníficas miniaturas STL pre-soportadas para tus juegos de mesa de ciencia ficción y fantasía.
+         <br/>
+         -10 % en tu pedido
+         <br/>
+         con el código promocional:
+         <br/>
+<br/>
+<strong>
           STUDIOPF
          </strong>
-        </p>
-       </div>
-      </div>
-      <div class="cardpartenaire">
-       <div>
-        <a class="apartenaire" href="https://wargamesceneries.com/" rel="noopener noreferrer" target="_blank">
-         <img alt="Wargame Sceneries Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-wargamesceneries.png">
-        </a>
-       </div>
-       <div>
-        <p>
-         Des décors modulaires en impression 3D pour des parties immersives.
-         <br>
-         -10% tout les modèles imprimés
-         <br>
-         avec le code promo :
-         <br>
-         <br>
-         <strong>
+</p>
+</div>
+</div>
+<div class="cardpartenaire">
+<div>
+<a class="apartenaire" href="https://wargamesceneries.com/" rel="noopener noreferrer" target="_blank">
+<img alt="Wargame Sceneries Logo" data-no-lightbox="" fetchpriority="high" src="img/logo-wargamesceneries.png"/>
+</a>
+</div>
+<div>
+<p>
+         Escenografía modular impresa en 3D para partidas inmersivas.
+         <br/>
+         -10 % en todos los modelos impresos
+         <br/>
+         con el código promocional:
+         <br/>
+<br/>
+<strong>
           STUDIOPF10
          </strong>
-        </p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <button id="scrollToTopBtn" onclick="scrollToTop()" title="Retour en haut ⬆️">
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button id="scrollToTopBtn" onclick="scrollToTop()" title="Volver arriba ⬆️">
     ↑
    </button>
-   <div class="footer" id="foot-contenu">
-    <nav class="menu-mobilefoot">
-     <ul class="menufoot">
-      <li>
-       <a href="conditions.html" onclick="loadPage('conditions.html'); return false;">
-        Conditions générales de vente 📜
+<div class="footer" id="foot-contenu">
+<nav class="menu-mobilefoot">
+<ul class="menufoot">
+<li>
+<a href="conditions.html" onclick="loadPage('conditions.html'); return false;">
+        Condiciones generales 📜
        </a>
-      </li>
-      <li>
-       <a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">
-        Mentions Légales 💼
+</li>
+<li>
+<a href="mentionslegales.html" onclick="loadPage('mentionslegales.html'); return false;">
+        Aviso legal 💼
        </a>
-      </li>
-      <li>
-       <a href="horaires.html" onclick="loadPage('horaires.html'); return false;">
-        Horaires d'ouverture 🕖
+</li>
+<li>
+<a href="horaires.html" onclick="loadPage('horaires.html'); return false;">
+        Horario de apertura 🕖
        </a>
-      </li>
-     </ul>
-    </nav>
-    <div class="center">
-     <div class="footer-adresse">
-      <p>
-       <strong>
+</li>
+</ul>
+</nav>
+<div class="center">
+<div class="footer-adresse">
+<p>
+<strong>
         STUDIO PF
        </strong>
-       <br>
+<br/>
        FRASSE Pierre-François
-       <br>
+       <br/>
        17 route de Lare 42510 Saint-Georges-de-Baroille
-       <br>
-       <br>
-      </p>
-      <p>
-       Contact 📧 :
+       <br/>
+<br/>
+</p>
+<p>
+       Correo electrónico 📧 :
        <a href="mailto:studiopeinturefigurine@gmail.com">
         studiopeinturefigurine@gmail.com
        </a>
-      </p>
-      <p>
-       Téléphone 📞 :
+</p>
+<p>
+       Teléfono 📞 :
        <a href="tel:+33775860837">
         07 75 86 08 37
        </a>
-      </p>
-     </div>
-    </div>
-   </div>
-  </footer>
-  <div aria-hidden="true" class="lightbox" id="lightbox">
-   <img alt="Studio PF" id="lightbox-img" src="/img/logo.png">
-  </div>
- </body>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<div aria-hidden="true" class="lightbox" id="lightbox">
+<img alt="Studio PF" id="lightbox-img" src="/img/logo.png"/>
+</div>
+</body>
 </html>
