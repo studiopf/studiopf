@@ -33,8 +33,18 @@ const pfAge = currentYear - 1987;
 // UTILITAIRES
 // =============================
 function hideCurrentPage() {
-    const url = window.location.origin + "/";
-    window.history.replaceState({}, "", url);
+    const visibleUrl = window.location.origin + "/";
+
+    if (window.location.href !== visibleUrl) {
+        window.history.replaceState(
+            {
+                page: currentPage,
+                language: currentLanguage
+            },
+            "",
+            visibleUrl
+        );
+    }
 }
 
 function highlightLanguage(langId) {
@@ -81,46 +91,26 @@ function setLanguage(lang) {
         return;
     }
 
-    const pathParts = window.location.pathname
-        .split("/")
-        .filter(Boolean);
+    let page = currentPage || "index";
 
     /*
-     * Retire le dossier de langue actuel :
-     * /US/peinturecommission.html
-     * /ES/peinturecommission.html
-     */
-    if (pathParts[0] === "US" || pathParts[0] === "ES") {
-        pathParts.shift();
-    }
-
-    const currentFile = pathParts.at(-1) || "index.html";
-
-    let page = currentFile
-        .replace(/\.html$/i, "")
-        .trim();
-
-    if (!page || page === "index") {
-        page = "index";
-    }
-
-    /*
-     * La page formation n'existe qu'en français.
+     * La page formation n’existe qu’en français.
      */
     if (page === "formation" && lang !== "french") {
         page = "index";
     }
 
     localStorage.setItem("language", lang);
+
     currentLanguage = lang;
     currentPage = page;
 
-    const languageFolder = folders[lang];
+    const folder = folders[lang];
 
     let url = "/";
 
-    if (languageFolder) {
-        url += `${languageFolder}/`;
+    if (folder) {
+        url += `${folder}/`;
     }
 
     if (page !== "index") {
@@ -1350,22 +1340,30 @@ function initializePageFeatures(root = document) {
         }
     }
 }
-
 document.addEventListener("DOMContentLoaded", () => {
+    document
+        .getElementById("french")
+        ?.addEventListener("click", () => setLanguage("french"));
 
-    document.getElementById("french")?.addEventListener("click", () => setLanguage("french"));
-    document.getElementById("english")?.addEventListener("click", () => setLanguage("english"));
-    document.getElementById("spanish")?.addEventListener("click", () => setLanguage("spanish"));
+    document
+        .getElementById("english")
+        ?.addEventListener("click", () => setLanguage("english"));
+
+    document
+        .getElementById("spanish")
+        ?.addEventListener("click", () => setLanguage("spanish"));
 
     highlightLanguage(currentLanguage);
     changelangueinfo();
 
     initializePageFeatures();
     startMaintenanceObserver();
-});
 
-// À appeler après un chargement dynamique de contenu (loadPage/AJAX).
-window.reinitializePageFeatures = initializePageFeatures;
+    /*
+     * À faire en dernier, après avoir identifié la page actuelle.
+     */
+    hideCurrentPage();
+});
 
 function genererPrixPageCommission(root = document) {
     mettreAJourTarifLangue();
