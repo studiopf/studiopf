@@ -1933,7 +1933,7 @@ a.surligne:visited {
     display: var(--fond-display);
 
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: top 50px center;
     background-size: var(--fond);
     opacity: var(--opacity-fond);
     pointer-events: none;
