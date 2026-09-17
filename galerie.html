@@ -58,17 +58,30 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="header-top">
-        
-            <div class="header-logo">
-                <a href="index.html" class="logo-a" aria-label="Retour à l'accueil">
-                    <img src="/img/logo.png" alt="Logo Studio PF" class="logo" data-no-lightbox fetchpriority="high">
-                </a>
-            </div>
+<header>        
+<div class="header-top">
+    <!-- Logo -->
+    <div class="header-logo">
+        <a href="index.html"
+          
+           class="logo-a"
+           aria-label="Retour à l'accueil">
 
-            <div class="header-contact">
-                 <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20la%20peinture%20d'une%20figurine.%0A%0AMerci%20!"
+            <img
+                src="/img/logo.png"
+                alt="Studio PF, peintre professionnel sur figurines"
+                class="logo"
+                data-no-lightbox
+                width="320" height="121" fetchpriority="high" decoding="async">
+        </a>
+     
+    </div>
+
+    <!-- Icônes -->
+  <div class="header-contact">
+
+
+      <a href="mailto:studiopeinturefigurine@gmail.com?subject=Demande%20de%20devis&body=Bonjour%20Studio%20PF,%0A%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20la%20peinture%20d'une%20figurine.%0A%0AMerci%20!"
            aria-label="Envoyer un email">
             <i class="fas fa-envelope"></i>
         </a>
@@ -78,77 +91,184 @@
            aria-label="Whatsapp">
            <i class="fab fa-whatsapp"></i>
         </a>
+    
+ </div>
+      <!-- Bouton hamburger -->
+    <button
+        id="pf-menu-button"
+        class="pf-menu-button"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false" aria-controls="pf-mobile-nav">
 
-            <button id="pf-menu-button" class="pf-menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="pf-mobile-nav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </button>
-        </div>
+        <span></span>
+        <span></span>
+        <span></span>
 
-        <nav id="pf-mobile-nav" class="pf-mobile-nav" aria-label="Navigation principale">
-       <div class="language-selector">
-    <a id="french" href="galerie.html" aria-label="Français">
+    </button> 
+    
+</div>
+
+
+  <nav id="pf-mobile-nav" class="pf-mobile-nav" aria-label="Navigation principale">
+
+   <div class="language-selector">
+    <a id="french" href="index.html" aria-label="Français">
         <img src="/img/Flag_of_France.png" alt="Français" data-no-lightbox="">
     </a>
 
-    <a id="english" href="/US/galerie.html" aria-label="English">
+    <a id="english" href="/US/index.html" aria-label="English">
         <img src="/img/Flag_of_the_United_States.png" alt="English" data-no-lightbox="">
     </a>
 
-    <a id="spanish" href="/ES/galerie.html" aria-label="Español">
+    <a id="spanish" href="/ES/index.html" aria-label="Español">
         <img src="/img/Flag_of_Spain.png" alt="Español" data-no-lightbox="">
     </a>
 </div>
-            <ul class="pf-nav-list">
-                <li><a href="index.html">🏠 Accueil</a></li>
-                <li><a href="quisuisje.html">👋 Qui suis-je ?</a></li>
-                <li><a href="peinturecommission.html">⚔️ Armées &amp; TableTop+</a></li>
-                <li><a href="peinturecollection.html">🏆 Collection &amp; Concours</a></li>
-                <li><a href="formation.html">📚 Cours de peinture</a></li>
-                <li><a href="galerie.html" aria-current="page">🖼️ Galerie</a></li>
-                <li><a href="pourquoi.html">❓ FAQ</a></li>
-            </ul>
+    <ul class="pf-nav-list">
 
-            <div class="contact-list">
-                <p>
-                    <a href="mailto:studiopeinturefigurine@gmail.com">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        studiopeinturefigurine@gmail.com
-                    </a>
-                </p>
-                <p>
-                    <a href="tel:+33775860837">
-                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                        07 75 86 08 37
-                    </a>
-                </p>
-            </div>
+        <li>
+            <a href="index.html">
+                🏠 Accueil
+            </a>
+        </li>
 
-            <div class="pf-mobile-social">
-                <div class="pf-social-container">
-                    <a href="https://www.facebook.com/studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/studiopf.fr/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                   
-             
-                    <a href="https://www.twitch.tv/studiopf" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitch"><i class="fab fa-twitch" aria-hidden="true"></i></a>
-                    <a href="https://www.youtube.com/@studiopf-fr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                    <a href="https://www.tiktok.com/@studiopf.fr" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </nav>
+        <li>
+            <a href="quisuisje.html">
+                👋 Qui suis-je ?
+            </a>
+        </li>
 
-        <div id="info-container" class="info-container">
-            <p class="info" id="infoParagraph">.</p>
+        <li>
+            <a href="peinturecommission.html">
+                ⚔️ Armées &amp; TableTop+
+            </a>
+        </li>
+
+        <li>
+            <a href="peinturecollection.html">
+                🏆 Collection &amp; Concours
+            </a>
+        </li>
+
+        <li>
+            <a href="formation.html">
+                📚 Cours de peinture
+            </a>
+        </li>
+
+        <li>
+            <a href="galerie.html">
+                🖼️ Galerie
+            </a>
+        </li>
+
+        <li>
+            <a href="pourquoi.html">
+                ❓ FAQ
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="contact-list">
+
+        <p>
+            <a href="mailto:studiopeinturefigurine@gmail.com">
+                <span>
+                    <i class="fas fa-envelope"></i>
+                    studiopeinturefigurine@gmail.com
+                </span>
+            </a>
+        </p>
+
+        <p>
+            <a href="tel:+33775860837">
+                <span>
+                    <i class="fas fa-phone-alt"></i>
+                    07 75 86 08 37
+                </span>
+            </a>
+        </p>
+
+    </div>
+
+    <div class="pf-mobile-social">
+
+        <div class="pf-social-container">
+
+            <a
+                href="https://www.facebook.com/studiopf.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Facebook"
+            >
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+                href="https://www.instagram.com/studiopf.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Instagram"
+            >
+                <i class="fab fa-instagram"></i>
+            </a>
+
+          
+
+         
+            <a
+                href="https://www.twitch.tv/studiopf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Twitch"
+            >
+                <i class="fab fa-twitch"></i>
+            </a>
+
+            <a
+                href="https://www.youtube.com/@studioPF-peinturefigurine"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="YouTube"
+            >
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@studiopf.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="TikTok"
+            >
+                <i class="fab fa-tiktok"></i>
+            </a>
+
         </div>
-    </header>
 
-    <section class="carousel-container" aria-label="Galerie mise en avant">
-    <div class="carousel" id="carousel" aria-live="polite"></div>
-    <button class="carousel-arrow carousel-prev" type="button" onclick="prevSlide()" aria-label="Image précédente">❮</button>
-    <button class="carousel-arrow carousel-next" type="button" onclick="nextSlide()" aria-label="Image suivante">❯</button>
+    </div>
+
+</nav>
+      
+<div id="info-container" class="info-container"> <p class="info" id="infoParagraph" aria-live="polite"></p>   </div>
+    </header>
+     
+      <div class="carousel-container">
+    <div class="carousel" id="carousel"></div>
+    
+    <!-- Navigation arrows -->
+    <button class="carousel-arrow carousel-prev" onclick="prevSlide()" aria-label="Previous slide">❮</button>
+    <button class="carousel-arrow carousel-next" onclick="nextSlide()" aria-label="Next slide">❯</button>
+    
+    <!-- Dots -->
     <div class="carousel-dots" id="carousel-dots"></div>
-</section>
+</div>
 
     <main id="contenu-principal">
         <div class="center">
