@@ -567,7 +567,7 @@ padding: clamp(2px, 0.25vw, 2px) clamp(2px, 1vw, 2px);
 
 .logo {
     position: relative;
-    width: 200px; /* Augmenté pour PC */
+    width: 400px; /* Augmenté pour PC */
     height: auto;
     margin-bottom: 0;
     justify-content: center;
@@ -2657,7 +2657,7 @@ li,
 }
 
 .logo {
-    width: clamp(110px, 10.5vw, 200px);
+    width: clamp(200px, 10.5vw, 200px);
     max-width: min(65vw, 200px);
 }
 
@@ -2831,7 +2831,7 @@ header + .info-container,
 }
 
 .header-logo .logo {
-    width: clamp(52px, 4vw, 76px);
+    width: clamp(200px, 4vw, 76px);
 }
 
 /* Bandeau centré et limité à la largeur réellement disponible. */
@@ -2953,7 +2953,7 @@ header + .info-container,
     }
 
     .header-logo .logo {
-        width: clamp(46px, 14vw, 60px);
+        width: clamp(400px, 14vw, 60px);
     }
 
 .carousel-container {
