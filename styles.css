@@ -8,6 +8,15 @@
     justify-content: center;
     gap: 10px;
 }
+.button {
+    max-width: 100%;
+    padding: clamp(9px, 0.63vw, 12px) clamp(14px, 1.47vw, 28px);
+    font-size: clamp(11px, 0.68vw, 13px);
+    border-radius: var(--radius-fluid);
+}
+.footer {
+    padding: clamp(10px, 0.79vw, 15px) var(--page-gutter);
+}
 
 .exemples-photos {
     display: flex;
